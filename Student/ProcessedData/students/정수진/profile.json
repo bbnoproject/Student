@@ -1,0 +1,14 @@
+{
+  "studentId": "정수진",
+  "name": "정수진",
+  "phone": "010-4758-3752",
+  "gender": "여",
+  "birthDate": "1999-12-15",
+  "education": "영남대학교 / 컴퓨터공학과",
+  "experience": "",
+  "address": "대구광역시 화랑로 80길 8, 108동 1005호",
+  "specialNote": "",
+  "attendanceMemo": "",
+  "cohort": "기획4기",
+  "course": "게임 기획 부트캠프"
+}

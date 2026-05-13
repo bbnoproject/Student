@@ -1,0 +1,336 @@
+[
+  {
+    "peerName": "곽용준",
+    "sharedProjectCount": 2,
+    "phases": [
+      {
+        "phase": "1차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      },
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "김현우A",
+    "sharedProjectCount": 2,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      },
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "정우경",
+    "sharedProjectCount": 2,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      },
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "PM"
+      }
+    ],
+    "peerRoles": [
+      "팀원",
+      "PM"
+    ]
+  },
+  {
+    "peerName": "강유민",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀장"
+      }
+    ],
+    "peerRoles": [
+      "팀장"
+    ]
+  },
+  {
+    "peerName": "김현우",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "2차 프로젝트",
+        "teamNumber": 13,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "김흥규",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "2차 프로젝트",
+        "teamNumber": 13,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "박민규",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "박현수",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "서진호",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "승정하",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "1차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀장"
+      }
+    ],
+    "peerRoles": [
+      "팀장"
+    ]
+  },
+  {
+    "peerName": "신석균",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "2차 프로젝트",
+        "teamNumber": 13,
+        "studentRole": "팀원",
+        "peerRole": "팀장"
+      }
+    ],
+    "peerRoles": [
+      "팀장"
+    ]
+  },
+  {
+    "peerName": "예인해",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀장"
+      }
+    ],
+    "peerRoles": [
+      "팀장"
+    ]
+  },
+  {
+    "peerName": "유해찬",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "이도건",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "1차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "이동현",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "이유송",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "PM"
+      }
+    ],
+    "peerRoles": [
+      "PM"
+    ]
+  },
+  {
+    "peerName": "임소영",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "3차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "장근혁",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "2차 프로젝트",
+        "teamNumber": 13,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "정수진",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "1차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "정재용",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "4차 프로젝트",
+        "teamNumber": 6,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  },
+  {
+    "peerName": "한의호",
+    "sharedProjectCount": 1,
+    "phases": [
+      {
+        "phase": "1차 프로젝트",
+        "teamNumber": 1,
+        "studentRole": "팀원",
+        "peerRole": "팀원"
+      }
+    ],
+    "peerRoles": [
+      "팀원"
+    ]
+  }
+]

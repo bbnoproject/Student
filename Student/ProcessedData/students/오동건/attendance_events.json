@@ -1,0 +1,130 @@
+[
+  {
+    "date": "2025-12-16",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-09",
+    "kind": "조퇴",
+    "detail": "조퇴 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-01-14",
+    "kind": "조퇴",
+    "detail": "조퇴 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-23",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-30",
+    "kind": "조퇴",
+    "detail": "조퇴 (동사무소)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-11",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-13",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-01",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-08",
+    "kind": "지각",
+    "detail": "지각 (법원 방문)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-15",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-16",
+    "kind": "휴가",
+    "detail": "휴가 (가족 행사)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-20",
+    "kind": "지각",
+    "detail": "지각 (치과 방문)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-27",
+    "kind": "조퇴",
+    "detail": "조퇴 (병원 진료)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-29",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-08",
+    "kind": "조퇴",
+    "detail": "조퇴 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "constructs": {
+    "self_regulation": "학습 자기조절",
+    "engagement": "학습 참여 및 지속성",
+    "collaboration": "협업 및 관계 형성",
+    "resilience": "도전 대응 및 회복탄력성",
+    "reflection": "성찰 및 피드백 활용",
+    "career_agency": "진로 목적성 및 전문성 형성"
+  },
+  "principles": [
+    "원본 데이터는 직접 점수화하지 않고 증거 레코드로 분해한다.",
+    "모든 증거 레코드는 날짜와 주차를 우선 축으로 가진다.",
+    "원본/요약/해석을 분리해 저장한다.",
+    "민감한 배경정보는 평가 근거로 직접 사용하지 않는다.",
+    "학생별 폴더 구조와 개별 overview 문서로 사람이 읽기 쉬운 형태를 유지한다."
+  ],
+  "severityScale": [
+    "stable",
+    "caution",
+    "warning"
+  ],
+  "evidenceTypes": {
+    "direct": "출결, 점수, 제출 시각처럼 운영자가 직접 기록한 데이터",
+    "reported": "학생 또는 운영자가 서술한 텍스트 기반 데이터",
+    "derived": "자동 스냅샷, 상태 구간, 요약 메타데이터"
+  },
+  "sourceDomains": [
+    "admission",
+    "attendance",
+    "project",
+    "retro",
+    "team_context",
+    "career_document",
+    "career_feedback",
+    "counseling"
+  ],
+  "dataSources": [
+    "학생 데이터.xlsx",
+    "모집 결과.xlsx",
+    "출결 기입 시트.xlsx",
+    "1~3차 프로젝트 데일리 체크인.xlsx",
+    "1~2차 프로젝트 회고.xlsx",
+    "프로젝트 팀 구성.md",
+    "이력서 및 자기소개/**/*",
+    "면담 기록/*.md",
+    "수업 시간표.xlsx"
+  ],
+  "studentArtifacts": [
+    "profile.json",
+    "admission.json",
+    "attendance_events.json",
+    "project_checkins.json",
+    "project_retrospectives.json",
+    "counselings.json",
+    "project_team_history.json",
+    "peer_relationships.json",
+    "career_documents.json",
+    "learning_evidence.json",
+    "evaluation_snapshots.json",
+    "status_periods.json",
+    "timeline_events.json",
+    "weekly_timeline.json",
+    "overview.md"
+  ]
+}

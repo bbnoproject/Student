@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-03-03",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-19",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-15",
+    "kind": "휴가",
+    "detail": "휴가 (컨디션 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "date": "2025-12-19",
+    "kind": "지각",
+    "detail": "지각",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-26",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-30",
+    "kind": "지각",
+    "detail": "지각 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-19",
+    "kind": "조퇴",
+    "detail": "조퇴 (복통)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-27",
+    "kind": "조퇴",
+    "detail": "조퇴 (건강 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-12",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-06",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-13",
+    "kind": "조퇴",
+    "detail": "조퇴 (한의원 방문)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-06",
+    "kind": "조퇴",
+    "detail": "조퇴 (부상)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-10",
+    "kind": "조퇴",
+    "detail": "조퇴 (컨디션 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-24",
+    "kind": "조퇴",
+    "detail": "조퇴 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-27",
+    "kind": "지각",
+    "detail": "지각 (병원 진료)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-30",
+    "kind": "휴가",
+    "detail": "휴가 (병원 진료)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

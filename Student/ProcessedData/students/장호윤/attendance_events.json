@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2025-12-16",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-29",
+    "kind": "휴가",
+    "detail": "휴가 (장염)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-13",
+    "kind": "조퇴",
+    "detail": "조퇴 (건강 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-16",
+    "kind": "조퇴",
+    "detail": "조퇴 (건강 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-21",
+    "kind": "조퇴",
+    "detail": "조퇴 (두통)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-23",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-04",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

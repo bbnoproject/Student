@@ -1,0 +1,716 @@
+[
+  {
+    "eventId": "ev-9329c6efdb13",
+    "date": "2025-10-30",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "지원서 응답",
+    "summary": "자기소개 편의점, 홈플러스, 다이소에서 일하다가 꿈을 쫒고 싶은 마음이 강해졌습니다. 그래서 가장 좋아하던 게임 혹은 문학에 마지막으로 불 태워보고 싶어 이곳저곳 찾다가 가장 평가가 좋은 이곳에 지원하게 되었습니다. 지원 동기 꿈과 전혀 상관없는 근무 그리고 백수로 한심스럽게 긴 시간을 보냈기에 정말 마지막이라는 생각으…",
+    "detail": "자기소개\n편의점, 홈플러스, 다이소에서 일하다가 꿈을 쫒고 싶은 마음이 강해졌습니다.\n그래서 가장 좋아하던 게임 혹은 문학에 마지막으로 불 태워보고 싶어 이곳저곳 찾다가\n가장 평가가 좋은 이곳에 지원하게 되었습니다.\n\n지원 동기\n꿈과 전혀 상관없는 근무 그리고 백수로 한심스럽게 긴 시간을 보냈기에\n정말 마지막이라는 생각으로 그동안 잃어버린 노력과 흥미를 다시 되살려 내 꿈인 게임 관련 직장을 다니기 위해 지원하게 되었습니다.\n\n관련 경험\n아쉽지만 없습니다.\n\n희망 분야\n레벨 디자인, 스토리 기획자, 이벤트 기획자, 던전 기획자\n\n수료 목표\n수료 후 게임 업계에 취직해 점점 나아가 제 꿈의 직장인 넥슨에 들어가 이름을 알리고 싶습니다.\n\n갈등 대응\n상황을 피하는 경향\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n타인에게 엄격한 편이지만 굳이 얘기하지 않음",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-7605ee4e27dc",
+    "date": "2025-12-07",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "면접 결과",
+    "summary": "합격 / 점수 65",
+    "detail": "[화상 인터뷰 합격]\n\n서브컬쳐를 매우 좋아하는 사람이라고 소개했습니다.\n이전에 공부를 너무 안해서, 마지막 기회라는 심정으로 게임 기획자 과정에 지원했다고 합니다.\n캐릭터, 시나리오 기획 쪽에 관심이 많은데, 그 중에서도 특히 시나리오 기획자가 되려면 '글을 얼마나 잘 써야 하는지' 에 대한 질문이 있었습니다.\nMS Office나 AI는 거의 사용해본적이 없다고 합니다.\n대화가 약간 어려운 정도로 낯을 매우 많이 가립니다.\n말을 잘 못합니다.\n수업을 따라오는데 어느 정도 난항이 예상됩니다.",
+    "constructs": [
+      "career_agency",
+      "engagement"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-b877b7b2ac2a",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 12세이기 때문에 스토리에 난항을 겪고 다시 처음 기획부터 시작합니다. 자유 메모 소심한 성격을 고쳐야 합니다.",
+    "detail": "작업 내용\n12세이기 때문에 스토리에 난항을 겪고 다시 처음 기획부터 시작합니다.\n\n자유 메모\n소심한 성격을 고쳐야 합니다.",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-701c616d83d8",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "6팀 / 역할 팀원 / 함께한 팀원 오동건, 이형진, 조현일, 이균호",
+    "detail": "팀: 6팀\n역할: 팀원\n팀원: 오동건, 이형진, 조현일, 이균호",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-eeb60193375d",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 연출 기획 담당인데, 붕 뜬 느낌이라, 0%인 것 같습니다. 자유 메모 다들 잘하고 제가 소심해서... 조에서 제가 너무 하는 것 없고 버스를 타는 것 같습니다. 그래서 내일부터 적극적으로 사운드 쪽을 어필해야 겠습니다.",
+    "detail": "작업 내용\n연출 기획 담당인데, 붕 뜬 느낌이라, 0%인 것 같습니다.\n\n자유 메모\n다들 잘하고 제가 소심해서...\n조에서 제가 너무 하는 것 없고 버스를 타는 것 같습니다.\n그래서 내일부터 적극적으로 사운드 쪽을 어필해야 겠습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8f32c82e5395",
+    "date": "2026-01-22",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 많이 부족함을 느끼는 중입니다. 특히 의사소통 부분에서 미숙한 부분이 많다고 느끼는 중입니다.",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n많이 부족함을 느끼는 중입니다.\n특히 의사소통 부분에서 미숙한 부분이 많다고 느끼는 중입니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-5438bc881b41",
+    "date": "2026-01-23",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1 자유 메모 이 프로젝트를 통해, 제가 뭐가 부족한지, 무엇이 문제인지 알 수 있어 확실히 좋았습니다. 이후에는 이 단점을 해결해보도록 하겠습니다.",
+    "detail": "작업 내용\n1\n\n자유 메모\n이 프로젝트를 통해, 제가 뭐가 부족한지, 무엇이 문제인지 알 수 있어 확실히 좋았습니다.\n이후에는 이 단점을 해결해보도록 하겠습니다.",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-409cc52c5881",
+    "date": "2026-01-27",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 소심한 성격 때문에 제 의도를 제대로 전달하지 못해, 방향성이 애매해지는 경우가 있었고 거기에 기획서에 대해 한 번도 생각하지 못해, 더더욱 서로 이해하기 어려웠습니다. 그래서 CG 자체는 대부분 구두로 기획했습니다. 협업에 대하여 확실한 건, 이번 프로젝트에서는 제가 스스로 생각해도 함께 일하고 싶지 않…",
+    "detail": "기획에 대하여\n소심한 성격 때문에 제 의도를 제대로 전달하지 못해, 방향성이 애매해지는 경우가 있었고\n거기에 기획서에 대해 한 번도 생각하지 못해, 더더욱 서로 이해하기 어려웠습니다.\n\n그래서 CG 자체는 대부분 구두로 기획했습니다.\n\n협업에 대하여\n확실한 건, 이번 프로젝트에서는 제가 스스로 생각해도 함께 일하고 싶지 않은 사람인 것 같습니다.\n\n대화는커녕,\n지금 잘하고 있는 건가, 혹시 부족한 실력 때문에 발목 잡을까 봐,\n작업물조차 공유를 잘하지 못했습니다.\n\n그래도 다행인 건, 프로젝트 내에서 감정을 담지 않고 남을 무시하지 않았다는 점입니다.\n\n다음 프로젝트를 위해\n소심한 성격과 미리 겁을 먹는 태도.\n이로 따라 CG에 대한 작업이 늦어지는 결과를 낳았습니다.\n\n그냥 부딪쳐 보자는 생각으로 박치기할 생각입니다.\n구체적으로 작업물이 생기면, 곧바로 보고할 겁니다.\n혹여나 이게 조금 아닌 것 같다면, 충분히 고민한 뒤, 한 번 이야기할 생각입니다.\n\n그래서 한 번쯤은 아무 주제로 발표를 해볼까, 생각하고 있습니다.\n\n칭찬합시다\n오동건 님은 중요한 순간마다 나서서 관리했습니다.\n금요일에 사정으로 오지지 못하는 것 때문에 신경 쓰지 못한 BGM 부분도 마무리하시고 가셨습니다.\n\n이균호 님은 전체적으로 관리하면서 본인의 업무였던 스토리 파트를 잘 수행했습니다.\n예를 들자면, 이야기의 소재라든지, 기본 틀을 만들었습니다.\n\n조현일 님은 스토리 파트와 캐릭터 CG에 좋은 영향을 가져왔습니다.\n예를 들자면, 고퀄리티 캐릭터 CG와 일부 스토리의 애매함이나 개연성 수정이 있습니다.\n\n이형진 님은 모든 프로그래밍을 담당했습니다.\n그래서 팀원이 이 부분 혹시 구현할 수 있을까요? 물어보면, 구현될 때까지 노력해 주시고\n문제가 생기면 서슴없이 말해줍니다.\n\n자유로운 한마디\n데이터 테이블, 창작 기획 등을 하고 있지만,\n이번 프로젝트를 통해 많은 것 특히, 심리적인 부분을 많이 배울 수 있었습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1f5724efd97d",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (할머니 간병)",
+    "detail": "휴가 (할머니 간병)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e3e27739c7ef",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "3팀 / 역할 팀원 / 함께한 팀원 김시온, 윤동현, 장윤우, 정재훈, 정우경",
+    "detail": "팀: 3팀\n역할: 팀원\n팀원: 김시온, 윤동현, 장윤우, 정재훈, 정우경",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-a6cfd6cf0b7e",
+    "date": "2026-02-19",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터 및 몬스터 관련 각종 데이터 테이블 작성함. 자유 메모 이전보다 자신있게 말하고 있지만 아직 많이 부족하고 말투 역시 어눌해서 참... 노력해야 겠네요.",
+    "detail": "작업 내용\n캐릭터 및 몬스터 관련 각종 데이터 테이블 작성함.\n\n자유 메모\n이전보다 자신있게 말하고 있지만 아직 많이 부족하고 말투 역시 어눌해서 참... 노력해야 겠네요.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b33a71fa1f29",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 정규화 작업 자유 메모 열심히 참여하긴 했지만, 다른 분에 비해 활약하는 건 없는 느낌이 듭니다. 뭐, 그래도 점점 나아질 것이라 생각이 듭니다.",
+    "detail": "작업 내용\n데이터 테이블 정규화 작업\n\n자유 메모\n열심히 참여하긴 했지만, 다른 분에 비해 활약하는 건 없는 느낌이 듭니다.\n뭐, 그래도 점점 나아질 것이라 생각이 듭니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d897cf68f4a5",
+    "date": "2026-02-23",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 Ruid로 수정, 이미지와 연출 두 가지로 나눔. 자유 메모 흠... 잘하고 있는지는 모르겠네요. 다들 잘하시는 분들이라..",
+    "detail": "작업 내용\nRuid로 수정, 이미지와 연출 두 가지로 나눔.\n\n자유 메모\n흠... 잘하고 있는지는 모르겠네요. 다들 잘하시는 분들이라..",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1f88b317acc5",
+    "date": "2026-02-24",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 수정된 특전 데이터 테이블 재작성, 이미지와 모션이 추가된 부분을 데이터 테이블에 추가 완료 몬스터 데이터 테이블 수정 시작, 버그 리포트 체크리스트의 우선순위와 위험도를 추가해 작성 자유 메모 화이팅!",
+    "detail": "작업 내용\n수정된 특전 데이터 테이블 재작성, 이미지와 모션이 추가된 부분을 데이터 테이블에 추가 완료\n몬스터 데이터 테이블 수정 시작, 버그 리포트 체크리스트의 우선순위와 위험도를 추가해 작성\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-2f3d7b266894",
+    "date": "2026-02-25",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 추가된 특전, 테이블 안에 작성함. 추가 이미지들 데이터 테이블 안에 작성 중. 티저 영상에 쓸 이미지 10장 제작함. 자유 메모 흐름이 좋습니다.",
+    "detail": "작업 내용\n추가된 특전, 테이블 안에 작성함.\n추가 이미지들 데이터 테이블 안에 작성 중.\n티저 영상에 쓸 이미지 10장 제작함.\n\n자유 메모\n흐름이 좋습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-317f58cd0dc0",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 티저 영상 제작 완료, 새로운 이미지 데이터 테이블 입력 중. 자유 메모 AI는 신입니다.",
+    "detail": "작업 내용\n티저 영상 제작 완료, 새로운 이미지 데이터 테이블 입력 중.\n\n자유 메모\nAI는 신입니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-afbe728ed70f",
+    "date": "2026-02-27",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 방향성으로 가긴 했지만 여러 가지 이유, 예시로 기술 부족, 애매함 등으로 기획한 WBS 대로 가지 않아 아쉬움을 느낍니다. 그래도 서로 기획서를 보고 바로바로 캐치해 움직이고 팀장님인 시온님 역시 바로바로 기획서에 작성해 방향성이 틀리지 않게 갈 수 있었습니다. 협업에 대하여 이전보다 나은 모습을 보였지…",
+    "detail": "기획에 대하여\n방향성으로 가긴 했지만 여러 가지 이유, 예시로 기술 부족, 애매함 등으로 기획한 WBS 대로 가지 않아 아쉬움을 느낍니다.\n그래도 서로 기획서를 보고 바로바로 캐치해 움직이고\n팀장님인 시온님 역시 바로바로 기획서에 작성해 방향성이 틀리지 않게 갈 수 있었습니다.\n\n협업에 대하여\n이전보다 나은 모습을 보였지만, 그래도 많이 부족하다 느꼈습니다.\n그래서 소통을 더 잘했다면, 게임이 더 좋아지지 않았을까 하고 생각합니다.\n\n그래서 아직은 함께 일하고 싶지 않는 사람이라 생각이 듭니다.\n\n다음 프로젝트를 위해\n적극성과 소통.\n\n다음 프로젝트 때, 지금보다 조금만 더 소통해 힘 쓰고 적극적으로 참가해,\n이런 상황인데, 뭘 하면 좋을까요? 등 물어봐 일이 없어 잡무만 하는 상황이 안 생기게 하고 싶습니다.\n\n칭찬합시다\n모두 저와 정반대인 성격과 장점을 가지고 있습니다.\n시온님과 재훈님, 윤우님은 다들 잘 하시니, 서로 말 몇 마디에 뚝딱 시작하고\n우경님은 묵묵하게 그 힘든 코딩을 하시고\n동현님은 잘 모르면 바로바로 질문하고 추가 업무했습니다.\n\n팀장 선호도 조사\n2.0\n\n이유\n아직 1인분도 제대로 못 하는 와중 팀장이 될 역량이 안 됩니다.\n\n자유로운 한마디\n전보다 나아졌다지만 많이 부족하니, 더 전진하겠습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection"
+    ],
+    "sourceLabel": "2차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f3242c6676e0",
+    "date": "2026-03-10",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e0e6fe6b5c39",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 작업 컨셉에 대해 회의함. 자유 메모 이전보다 더 적극적으로 발표함.",
+    "detail": "작업 내용\n작업 컨셉에 대해 회의함.\n\n자유 메모\n이전보다 더 적극적으로 발표함.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-30929f29b724",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "4팀 / 역할 팀원 / 함께한 팀원 장근혁, 권현민, 김현우B, 김흥규, 오종호, 조준현, 주재형",
+    "detail": "팀: 4팀\n역할: 팀원\n팀원: 장근혁, 권현민, 김현우B, 김흥규, 오종호, 조준현, 주재형",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-947488fe52ed",
+    "date": "2026-03-19",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 식당 컨셉, 벨런스에 대한 회의 자유 메모 화이팅!",
+    "detail": "작업 내용\n식당 컨셉, 벨런스에 대한 회의\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9cdd3c9cda4f",
+    "date": "2026-03-20",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 식당 파트 기획, 데이터 테이블 흐름 자유 메모 화이팅!",
+    "detail": "작업 내용\n식당 파트 기획, 데이터 테이블 흐름\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-bdac23c0e8aa",
+    "date": "2026-03-23",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-50ae098dea7d",
+    "date": "2026-03-23",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 손님 / 업그레이드 작성 자유 메모 데이터 테이블 다른 사람이 이렇게 하고, 나는 이렇게 하고. 거기에 TinyInt, SmallInt는 유니티에 안 쓰니, 빼야 하고. 머리가 아프네요.",
+    "detail": "작업 내용\n데이터 테이블 손님 / 업그레이드 작성\n\n자유 메모\n데이터 테이블 다른 사람이 이렇게 하고, 나는 이렇게 하고.\n거기에 TinyInt, SmallInt는 유니티에 안 쓰니, 빼야 하고.\n머리가 아프네요.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-cfec86a06db6",
+    "date": "2026-03-24",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 리뷰, 재작성 자유 메모 제미나이는 도움이 되지만 역시 직접 피드백 받는 것이 좋은 것 같습니다.",
+    "detail": "작업 내용\n데이터 테이블 리뷰, 재작성\n\n자유 메모\n제미나이는 도움이 되지만 역시 직접 피드백 받는 것이 좋은 것 같습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-85827e7ba8f6",
+    "date": "2026-03-25",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 정규화, 규격 수정 자유 메모 데이터 테이블과 발표는 어렵다는 걸 다시 한 번 깨닫습니다.",
+    "detail": "작업 내용\n데이터 테이블 정규화, 규격 수정\n\n자유 메모\n데이터 테이블과 발표는 어렵다는 걸 다시 한 번 깨닫습니다.",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-16ac9ba531e3",
+    "date": "2026-03-26",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블, 플로우 차트 작성 자유 메모 화이팅!!",
+    "detail": "작업 내용\n데이터 테이블, 플로우 차트 작성\n\n자유 메모\n화이팅!!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-6ca09c4fb81c",
+    "date": "2026-03-27",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 수정 자유 메모 어렵네요...",
+    "detail": "작업 내용\n데이터 테이블 수정\n\n자유 메모\n어렵네요...",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-98673d81106f",
+    "date": "2026-03-30",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 손님 입장 규칙 작성 자유 메모 화이팅!",
+    "detail": "작업 내용\n손님 입장 규칙 작성\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0d0774207264",
+    "date": "2026-03-31",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 Language 작성 자유 메모 데이터 테이블은 어렵다.",
+    "detail": "작업 내용\n데이터 테이블 Language 작성\n\n자유 메모\n데이터 테이블은 어렵다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-38db6ce6e809",
+    "date": "2026-04-01",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 물고기, 요리 설명 한국어, 영어 수정 자유 메모 화이팅!",
+    "detail": "작업 내용\n물고기, 요리 설명 한국어, 영어 수정\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-2bea917da95a",
+    "date": "2026-04-02",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 세부화 자유 메모 화이팅!",
+    "detail": "작업 내용\n데이터 테이블 세부화\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-4eae8fe81f0d",
+    "date": "2026-04-03",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 완성. 자유 메모 화이팅!",
+    "detail": "작업 내용\n데이터 테이블 완성.\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f48ce8ee951d",
+    "date": "2026-04-03",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "caution",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 마무리 자유 메모 화이팅!",
+    "detail": "작업 내용\n데이터 테이블 마무리\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e244b6a21d63",
+    "date": "2026-04-06",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 손님 TC 작성 자유 메모 화이팅!",
+    "detail": "작업 내용\n손님 TC 작성\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e0fe0c0108b2",
+    "date": "2026-04-07",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 대기 자유 메모 화이팅!",
+    "detail": "작업 내용\nQA 대기\n\n자유 메모\n화이팅!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e574754304f0",
+    "date": "2026-04-08",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 자유 메모 부족한 저를 잘 가르쳐 주신 팀원들께 감사 인사 드립니다.",
+    "detail": "작업 내용\nQA\n\n자유 메모\n부족한 저를 잘 가르쳐 주신 팀원들께 감사 인사 드립니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d63265447d65",
+    "date": "2026-04-11",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 팀원 / 함께한 팀원 이형진, 이준혁, 김현우B, 신석균, 이가현, 이균호, 오동건, 장윤우",
+    "detail": "팀: 8팀\n역할: 팀원\n팀원: 이형진, 이준혁, 김현우B, 신석균, 이가현, 이균호, 오동건, 장윤우",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-4f8e16657d2a",
+    "date": "2026-05-04",
+    "endDate": "",
+    "weekIndex": 22,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (할머니 간병)",
+    "detail": "휴가 (할머니 간병)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  }
+]

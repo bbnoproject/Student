@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2026-01-28",
+    "kind": "지각",
+    "detail": "지각 (실업급여)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-02-03",
+    "kind": "조퇴",
+    "detail": "조퇴 (지방 출장)",
+    "severity": "info",
+    "category": "external_learning",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-13",
+    "kind": "휴가",
+    "detail": "휴가 (개인 일정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-14",
+    "kind": "휴가",
+    "detail": "휴가 (개인 일정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-15",
+    "kind": "휴가",
+    "detail": "휴가 (개인 일정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-16",
+    "kind": "휴가",
+    "detail": "휴가 (개인 일정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

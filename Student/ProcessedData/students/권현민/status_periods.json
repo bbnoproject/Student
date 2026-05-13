@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "권현민-status-1",
+    "startDate": "2026-01-19",
+    "endDate": "2026-01-25",
+    "statusType": "집중 관찰",
+    "severity": "warning",
+    "reasonSummary": "집중 확인이 필요한 구간"
+  }
+]

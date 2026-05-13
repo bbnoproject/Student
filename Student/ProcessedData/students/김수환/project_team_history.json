@@ -1,0 +1,128 @@
+[
+  {
+    "phase": "1차 프로젝트",
+    "phaseOrder": 1,
+    "teamNumber": 8,
+    "teamLabel": "8팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 5,
+    "members": [
+      {
+        "name": "김시온",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "김수환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이동우",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이유송",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정재훈",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "김시온",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "이동우",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이유송",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정재훈",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "2차 프로젝트",
+    "phaseOrder": 2,
+    "teamNumber": 1,
+    "teamLabel": "1팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 6,
+    "members": [
+      {
+        "name": "이승구",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김경민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김수환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "박영성",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "유해찬",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "한의호",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "이승구",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김경민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "박영성",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "유해찬",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "한의호",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  }
+]

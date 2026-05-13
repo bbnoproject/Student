@@ -1,0 +1,18 @@
+[
+  {
+    "statusPeriodId": "한지우-status-1",
+    "startDate": "2026-01-12",
+    "endDate": "2026-01-18",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  },
+  {
+    "statusPeriodId": "한지우-status-2",
+    "startDate": "2026-03-16",
+    "endDate": "2026-03-22",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "date": "2025-12-19",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-24",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-23",
+    "kind": "조퇴",
+    "detail": "조퇴 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-16",
+    "kind": "휴가",
+    "detail": "휴가 (컨디션 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-30",
+    "kind": "휴가",
+    "detail": "휴가 (가족일정)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

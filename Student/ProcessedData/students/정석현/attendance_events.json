@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2025-12-09",
+    "kind": "결석",
+    "detail": "결석 (기말고사)",
+    "severity": "info",
+    "category": "external_learning",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-15",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-19",
+    "kind": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "category": "absence",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-06",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-19",
+    "kind": "휴가",
+    "detail": "휴가 (졸업식)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-06",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-11",
+    "kind": "외출",
+    "detail": "외출 (병원 방문)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-01",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-14",
+    "kind": "휴가",
+    "detail": "휴가 (대학교 방문)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-21",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-24",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-27",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-28",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-29",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-30",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  }
+]

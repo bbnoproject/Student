@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2025-12-23",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-26",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-07",
+    "kind": "조퇴",
+    "detail": "조퇴 (은행)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-12",
+    "kind": "지각",
+    "detail": "지각 (동사무소)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  }
+]

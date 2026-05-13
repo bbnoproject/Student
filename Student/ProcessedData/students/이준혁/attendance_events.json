@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-01-26",
+    "kind": "외출",
+    "detail": "외출 (우체국)",
+    "severity": "info",
+    "category": "logistics",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-03",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  }
+]

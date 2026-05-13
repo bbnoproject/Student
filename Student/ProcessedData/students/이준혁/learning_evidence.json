@@ -1,0 +1,913 @@
+[
+  {
+    "evidenceId": "ev-c481cdf154cc",
+    "studentId": "이준혁",
+    "date": "2025-12-01",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세요, 어린 시절 바람의 나라를 시작으로, 게임 산업 부흥기를 겪으며 다양한 게임들을 접한 이준혁이라고 합니다. 장르를 가리지 않고 다양한 게임을 즐겼으나, 가장 심도있게 파고든 장르는 RPG입니다. 깊게 파고든 게임에 대한 이해를 기반으로, 숨겨진 기획의도나 구조 및 설계 등에 대한 정보를 이해하고, 역…",
+    "detail": "자기소개\n안녕하세요, 어린 시절 바람의 나라를 시작으로, 게임 산업 부흥기를 겪으며 다양한 게임들을 접한 이준혁이라고 합니다. 장르를 가리지 않고 다양한 게임을 즐겼으나, 가장 심도있게 파고든 장르는 RPG입니다. 깊게 파고든 게임에 대한 이해를 기반으로, 숨겨진 기획의도나 구조 및 설계 등에 대한 정보를 이해하고, 역설계하는 등의 작업을 즐기며. 게임을 즐기는것 너머 제작에까지 흥미가 닿았습니다. 다양한 요소를 분해하여 재조립하거나, 완전히 새로운 장르를 개척할 게임을 만들고 싶으며. 새로운 기술에 대한 열망이 있어, 끊임없이 새로운 기술을 공부하고 발전해야하는 게임산업을 업으로 삼고자 다방면으로 조사를 했고, 그 중 경일게임아카데미가 가장 우수한 교육기관으로 보여 지원하게 되었습니다.\n\n지원 동기\n제네럴리스트를 지향하는 성격입니다. 전문성을 가지고 맡은 분야에서 최고의 작업물을 만드는것도 물론 중요하지만, 주도적으로 게임을 만들고 방향성을 제시하거나 컨텐츠를 만들어내는것을 목표로 하고 있어, 유니티 및 언리얼 엔진 프로그래밍 과정보다 기획자 과정이 적합하다 판단. 보다 넓은 시야를 통해, 각 파트의 협력을 이끌어내고 조율하는 역할을 하고싶습니다. 또한 개발 및 모델링 등에 대한 지속적인 학습을 통해 . 단순한 기획자로 남기 보다는 다방면으로 프로젝트에 깊이 관여하여 직접 기획한 게임에 심도있는 몰입감을 부여하고싶은 욕심에 본 과정에 참여를 희망하게 되었습니다.\n\n관련 경험\n학습 및 업무경험은 없으나, 게임산업에 종사하고있는 가까운 지인을 통해 간접적인 이해를 하고 있습니다.\n\n희망 분야\n밸런스, 레벨, 보상, 경제, 컨텐츠, 플레이, 시스템, 스크립트, 시나리오, 컨텐츠 등\n\n수료 목표\n최우선 목표는 입사이나, 이보다 중요한것은 경일게임아카데미의 슬로건처럼 슈퍼 신입이 되기 위해 언리얼 엔진에 대한 학습 및 규모를 떠난 다양한 게임 제작에 직접 관여해보고 싶습니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-7251758f578a",
+    "studentId": "이준혁",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 84",
+    "detail": "게임의 틀을 만드는 데 매력을 느꼈고, 게임업계에서 일하는 지인의 추천으로 게임 기획자를 지망하게 되었다고 합니다.\nRPG 장르의 기획자가 되는 것이 목표지만, 현실적으로 취업 자체를 최우선으로 생각하고 있다고 합니다.\n모바일, 콘솔쪽은 비교적 덜하지만 게임을 다양하게 해봤다고 합니다.\n기획자에게 중요한 것은 소통 능력이라고 답했습니다.\n성실함을 강점으로 꼽았고, 융통성이 떨어지는 점을 약점으로 꼽았습니다.\n학원의 다른 과정도 들을 수 있는 지 등을 질문하기 위해 부원장님께 면담을 요청했으나 성사되지 않았다고 합니다.\n정규 시간 이후의 Q&A, 비치된 책 대여 여부, 취업률, 수료 이후의 강의 열람, 업계 분위기, 기업과의 협약 여부, 포트폴리오 등 매우 다양한 질문을 했습니다.\n학원에 이미 한번 와봤다고 합니다.\n질문이 30분정도 이어졌습니다.\n많은 나이, 함께 할 다른 인원들의 퀄리티를 걱정하고 있었습니다.\n수업을 따라오는 데는 문제가 없을 것으로 보이지만, 이탈하지 않도록 관리가 필요할 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-19fd6fcc18bd",
+    "studentId": "이준혁",
+    "date": "2026-01-05",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ##### 1. 수업적응 - 전체적으로 갈피를 잘 못 잡고 있다고 합니다. TIL 통해서 복습하고 그 외 시간에 강의실에서 자습을 하고 있다고 합니다. - 데이터 테이블이나 이전 마케팅을 위주로 공부하는 중이라고 합니다. ##### 2. 목표 - 주변 친구들을 보니 지금은 자신이 없는 상태라고 합니다. -…",
+    "detail": "### 내용\n##### 1. 수업적응\n- 전체적으로 갈피를 잘 못 잡고 있다고 합니다. TIL 통해서 복습하고 그 외 시간에 강의실에서 자습을 하고 있다고 합니다.\n- 데이터 테이블이나 이전 마케팅을 위주로 공부하는 중이라고 합니다.\n\n##### 2. 목표\n- 주변 친구들을 보니 지금은 자신이 없는 상태라고 합니다.\n- 그러다보니 목표보다는 타협을 하려는 방향으로 가게 된다고 합니다.\n- 기존에는 시스템이나 전투 콘텐츠였는데 지금은 현실때문에 고민이라고 합니다.\n- A급 게임에 참여하고 싶은 마음이 있다. 수익이 많이 발생하는 모습을 경험하고 싶다.\n\n##### 3. 과정에 기대하는 점\n- 길을 찾고 싶은 마음이 있다. 노력하면 결과물이 따르는 윤곽이 보였으면 한다.\n- AI쪽 역량을 차별성으로 가져갈 수 있을 것 같다고 추천해줬습니다.\n\n---",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이준혁.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-740129193de2",
+    "studentId": "이준혁",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.15 자유 메모 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던…",
+    "detail": "작업 내용\n0.15\n\n자유 메모\n했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고 했던 말 또 하고",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5bc808bf3a69",
+    "studentId": "이준혁",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "11팀 / 역할 팀장 / 함께한 팀원 유해찬, 박기은, 한지우, 정우경, 임소영",
+    "detail": "팀: 11팀\n역할: 팀장\n팀원: 유해찬, 박기은, 한지우, 정우경, 임소영",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-165b7d58337e",
+    "studentId": "이준혁",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.25 자유 메모 인간이 밉다. 증오가 쌓인다.",
+    "detail": "작업 내용\n0.25\n\n자유 메모\n인간이 밉다. 증오가 쌓인다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ac93e59e4f8f",
+    "studentId": "이준혁",
+    "date": "2026-01-22",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 과연 이대로 괜찮을까 고민입니다.",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n과연 이대로 괜찮을까 고민입니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-35fe41296f3a",
+    "studentId": "이준혁",
+    "date": "2026-01-23",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1 자유 메모 피로는 분노를 이긴다는 깨달음",
+    "detail": "작업 내용\n1\n\n자유 메모\n피로는 분노를 이긴다는 깨달음",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-0a82d1ad5117",
+    "studentId": "이준혁",
+    "date": "2026-01-26",
+    "weekIndex": 8,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 외출",
+    "summary": "외출 (우체국)",
+    "detail": "외출 (우체국)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-3dbc2ac4b114",
+    "studentId": "이준혁",
+    "date": "2026-01-26",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 팀은 의도한 방향성이 없었습니다. 혼자만의 기획이고 모든 기획에 아무런 의견도 없이 그냥 청중뿐이었습니다. 이해가 되었는지는 모르겠습니다. 결과물을 내기 위해 같은 기획의도를 수차례에 걸쳐 계속 주입했습니다. 맡긴 역할에 대해서도 기획적 의도 없이 모든것이 저의 의사로 결정되었습니다. 기획서의 내용이 부족…",
+    "detail": "기획에 대하여\n팀은 의도한 방향성이 없었습니다.\n혼자만의 기획이고 모든 기획에 아무런 의견도 없이 그냥 청중뿐이었습니다.\n이해가 되었는지는 모르겠습니다. 결과물을 내기 위해 같은 기획의도를 수차례에 걸쳐 계속 주입했습니다. 맡긴 역할에 대해서도 기획적 의도 없이 모든것이 저의 의사로 결정되었습니다. 기획서의 내용이 부족하였습니다. 그 어떤 의견도 없어 혼자 기획서를 작성하였으나, 역부족이었습니다. 무엇이 필요하고 무엇이 빠졌고 무엇을 더해야하는지 의견이 없어 당장 혼자 생각할 수 있는 기획적인 정보만이 설명되었으며. 작업 중 누군가가 계획에 없던 요소를 넣으면 거기에 대응해 기획을 변경하였습니다. 이 부분은 실시간으로 반영되지못하고 개인의 업무와, 팀원간의 불화 등에 인해 우선순위가 밀려 누락되었을지 모릅니다.\n\n협업에 대하여\n솔직히 어디서부터 어디까지 말을 해야 할 지 모르겠습니다.\n주관적인 생각이지만. 프로젝트의 장르 선정, 방향성, 작업지시, 스토리, 코딩까지 모든 부분에 큰 기여를 하고, 팀원이 포기하고 사라진 기간동안 저는 이 프로젝트를 잡고 최소한의 형태로 완성시켰습니다.\n프로젝트를 진행하며 모든 대화가 건설적이었으며 팀 프로젝트의 핵심을 전하려고 했고, 디테일과 다른 팀원의 이해를 돕는데에, 또는 중재하는데에 사용되었습니다.\n폐쇄적인 팀원들의 성향에 맞추어 DM을 이용하기도 했지만, 모두가 알아야 하는 정보는 모두가 있는 장소에서 전달했습니다. 그 밖에도 야간에 진행된 개인의 작업물과 진행 상황을 시트에 기입하여 정리해두었습니다.\n나의 부족한 부분을 드러내고 적극적으로 사과하고, 누군가에게 도움을 청하고, 이해를 부탁드리며 작업을 부탁했습니다. 그럼에도 불구하고 그 누구의 작업물도 무시하지 않았습니다.\n프로젝트에 개인적인 감정을 담았는지 여부는 확신하지 못하겠습니다.\n이번 팀원은 그 어떤 의견을 내지 않습니다. 오직 본인이 맡은 업무에서 막히는 부분을 이야기 할 뿐. 전체적인 논의가 필요한 과정 모든것이 부정당했습니다. 답답했지만 최대한 참고 근거를 들어가며 저의 의견을 피력해 진행했습니다. 그 와중에 다소 말이 빨라지고 피로함을 드러냈을지도 모릅니다. 하지만 최선을 다해 존중하고 좋은 말로 회유했습니다.\n\n다음 프로젝트를 위해\n이번 프로젝트에서 아쉬웠던점은 너무나도 많지만. 자신의 행동이나 태도를 반성할 수 있는 어떠한 이벤트도 발생하지 않았습니다. 저는 그냥 통나무를 혼자 짊어진 사람이었습니다. 아무런 스토리텔링 능력도 없는 사람들이 스토리를 맡았으며, AI생성팀은 최선을 다했으나 그것이 모든 프로젝트 기간 내에 얼마나 열심히 참여했는지, 그리고 과연 그 결과물이 프로젝트 기간에 걸맞는 퀄리티와 수량인지, 게임 툴을 맡은 팀원은 어째서 기능이 미완성인 상태로 더 손을 대지 않았는지 모르겠습니다.\n무엇을 바꾸어야 했을까요? 더 강압적으로 팀원이 잘하는 부분을 찾아 강요해야 했을까요?\n아무런 의견을 내지 않는 사람들에게서 무엇을 얻어내는 과정부터 진행했어야 할까요?\n정말 모를 일입니다.\n이번 프로젝트를 경험하면서, 개인적인 발전이 있었습니다. 하지만 저의 어떠한 행동과 스탠스에서 비롯된 발전은 없었다 생각됩니다. 기억해주십시오. 이 조원들은 그 어떤 의견을 내지않고, 오롯이 결정된것을 따라가기만 했으며, 그 중에는 불만만 제시하고, 백그라운드에는 게임을 켜 놓은 사람이 있었습니다. 마지막 발표 및 팀명, 프로젝트 타이틀명 투표에도 '단 1명'만이 투표에 참여했습니다. 그 정믈 꼭 알아주셔야합니다.\n\n다음 프로젝트에는 인간다운 팀원을 만나고 싶습니다. 상호발전이 목적입니다. 시너지를 내고싶습니다. 의견을 주고받으면서 더 나은 결과를 만들어내는 브레인스토밍 과정이 필요합니다. 아무런 의견 없는 곳에서 혼자 의견을 내고 의견에 뒷받침되는 내용을 설명하고 이해시키고 장단점을 나열하고 선택을 부탁해도 마찬가지로 답이 없는 팀원은 정말 사람을 미치게 만드는것을 배웠습니다.\n\n최소한의 참여태도가 있는 팀원을 만나면 그 때 변화를 위해 의식적으로 실천할 요소를 알 수 있을 것 같습니다.\n\n칭찬합시다\n없습니다. 기획적인 부분은 모두 저 혼자 담당했습니다. 처음부터 끝까지 모두 다. \n만에 하나 기획의도가 담긴 무언가가 있었을지도 모릅니다. 하지만 그것을 팀원은 아무에게도 전하지 않았습니다.\n\n자유로운 한마디\n상담요청합니다. 마지막의 마지막까지 수미상관으로 이 팀은 스스로를 증명했습니다. 아무런 소통도 발전도 이루어내지 않았습니다. 다시는 마주치고싶지 않습니다. 게임이 미완성인 상태인데 그 누구도 , 아니다 단 한 명 불안해서 ZEP접속을 했을 뿐. 아무 능력이 없어 돌려보내고 혼자 마무리했습니다. 기억해주십시오.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-1051c5856d45",
+    "studentId": "이준혁",
+    "date": "2026-01-27",
+    "weekIndex": 8,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "스토리 프로젝트 이후 면담",
+    "summary": "### 내용 [면담 내용] 프로젝트를 진행하며 의견이 적고 참여가 낮은 팀원에 대한 불만을 이야기했습니다. 팀원을 '이 사람들'이라고 표현하며, 가능하면 다음에 팀으로 만나고 싶지 않다고 이야기했습니다. [조치 사항] 교육 커리큘럼상 다양한 사람들과 협업을 진행할 것이므로 이전 팀원과 만날 가능성은 낮다고 이야기해주었습…",
+    "detail": "### 내용\n[면담 내용]\n프로젝트를 진행하며 의견이 적고 참여가 낮은 팀원에 대한 불만을 이야기했습니다. 팀원을 '이 사람들'이라고 표현하며, 가능하면 다음에 팀으로 만나고 싶지 않다고 이야기했습니다.\n\n[조치 사항]\n교육 커리큘럼상 다양한 사람들과 협업을 진행할 것이므로 이전 팀원과 만날 가능성은 낮다고 이야기해주었습니다.\n팀원을 '이 사람'이라고 표현하지 말라고 했으며, 모든 사람이 자신과 같지 않다는 것을 알아야 한다고 이야기해줬습니다.\n팀원을 얼마나 알고 있는지 물어보며, 팀원에 대해서 알아가는 시간이 부족하지 않았는지 점검해보라고 했습니다.\n\n[결론]\n다음 팀 프로젝트에 '이준혁' 학생은 11팀 팀원과 겹치지 않도록 조치가 필요합니다.\n추가로 곽용준, 이석훈도 함께하지 않을 수 있으면 좋겠다는 이야기도 했습니다.\n\n[면담 영상 링크](https://drive.google.com/file/d/1NrOR5bRxKcJdMNEF2rR6eVfoJKLQW039/view?usp=drive_link)\n\n---",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이준혁.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-4255d39e10b6",
+    "studentId": "이준혁",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 파트 배분, 마지막 잔여 파트 배정. 코어루프의 핵심이 되는 요소의 기획서 작성, 컨셉에 맞게 조율, 구현 난이도에 따른 조율, 전체적인 방향성에 대한 의견 제시 (플레이어 입장에서 짐 요소를 느낄수 없는 부분 제거), 스토리와 조율, 리소스와 조율, 이펙트와 현재 이용 가능한 리소스 파악 후 추가 생성 필요…",
+    "detail": "작업 내용\n파트 배분, 마지막 잔여 파트 배정. 코어루프의 핵심이 되는 요소의 기획서 작성, 컨셉에 맞게 조율, 구현 난이도에 따른 조율, 전체적인 방향성에 대한 의견 제시 (플레이어 입장에서 짐 요소를 느낄수 없는 부분 제거), 스토리와 조율, 리소스와 조율, 이펙트와 현재 이용 가능한 리소스 파악 후 추가 생성 필요성 파악, 진행에 어려움 겪는 팀원 업무 디테일 전달, 팀 내 커뮤니케이션 활성화 주도 etc\n\n자유 메모\n재환님이 의견제시에 굉장히 애먹고있습니다. 최대한 배려해서 의견내도록, 팀 단위로 도와주려고 애쓰고있습니다. 수업에 기반한 정석적인 아이데이션, 팀 프로젝트 시트, 작업 툴 실제로 진행되는 과정을 옆에서 확인하며 배움.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-6dff0c85fbbb",
+    "studentId": "이준혁",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 팀원 / 함께한 팀원 이영우, 강유민, 권현민, 김재환, 장호윤",
+    "detail": "팀: 8팀\n역할: 팀원\n팀원: 이영우, 강유민, 권현민, 김재환, 장호윤",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-b3265efbd995",
+    "studentId": "이준혁",
+    "date": "2026-02-19",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 증강요소 35종 제안, 각 스테이지 별 레벨디자인(기획의도 포함_키워드를 두고 컨셉에 따라 정형성, 대칭성, 고저차를 어떻게 이용할 것인가, 차별성 등)가시화, 스테이지 보스전 기획 등 자유 메모 시간이 부족합니다.",
+    "detail": "작업 내용\n증강요소 35종 제안, 각 스테이지 별 레벨디자인(기획의도 포함_키워드를 두고 컨셉에 따라 정형성, 대칭성, 고저차를 어떻게 이용할 것인가, 차별성 등)가시화, 스테이지 보스전 기획 등\n\n자유 메모\n시간이 부족합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-d24f48ec180c",
+    "studentId": "이준혁",
+    "date": "2026-02-20",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 레벨디자인 완료, 각 컨텐츠를 레벨디자인과 연결시켜 얼마나 재미를 줄 수 있는지 파악(기믹적 요소와 레벨디자인의 연관성 고려), 몬스터 디자인에 따라 레벨디자인의 형태 제안 (정규전과 집단전 개인전 등), 플랫폼을 접근하는데에 있어 신중함을 요구하는 레벨 디자인, 각 마을별 퍼즐에 유의미한 형태의 변화 기믹을…",
+    "detail": "작업 내용\n레벨디자인 완료, 각 컨텐츠를 레벨디자인과 연결시켜 얼마나 재미를 줄 수 있는지 파악(기믹적 요소와 레벨디자인의 연관성 고려), 몬스터 디자인에 따라 레벨디자인의 형태 제안 (정규전과 집단전 개인전 등), 플랫폼을 접근하는데에 있어 신중함을 요구하는 레벨 디자인, 각 마을별 퍼즐에 유의미한 형태의 변화 기믹을 진행하는것이 좋아보인다. 최종전은 어떻게 진행되는가? 이 부분을 고려해 스위칭 시스템을 축소하거나 개선할 필요성, 현재 시스템에 있어 유의미한 사항을 넣으려면 쿨타임 전투가 필요해보인다. 최종전 보스의 형태와 히트박스, 크기, 공격 범위를 산정하여 플레이어블캐릭터의 기능 수정이 필요해보인다. 최종전 타이밍 논의, 스위칭 최종폼이 각 퍼즐요소 및 최종전에 있어 부적절하다고 판단. 폐기 요청 -> 폐기 완료. 캐릭터 스킬 디자인 재설정, 일반 공격 디자인 재설정, 구현 가능 범위 내에서 캐릭터 전면 수정, 스위칭 전면 수정, 적 캐릭터 디자인에 맞춰 레벨디자인 문의, 답변에 따라 수정, 플레이어블 캐릭터의 조작 구현 문의, 답변에 따라 레벨디자인 수정, 레벨디자인 설계 최종 완료, 구현중\n\n자유 메모\n무념무상",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-24763ad17923",
+    "studentId": "이준혁",
+    "date": "2026-02-23",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 내용 다듬어 기획서 제출, MSW에 Trap 및 Potal구현 맵에 맞는 형태에 맞게 구현. 자유 메모 한 명이 며칠째 결과물이 0입니다. 매일 시작과 마무리에 회고를 하지만 진전이 있는지도 모르겠습니다. 오늘은 팀원의 하...씨.. 소리까지 새어나오는것을 들었습니다. 8조의 미래는 과연 괜찮은것일까 두근두근…",
+    "detail": "작업 내용\n내용 다듬어 기획서 제출, MSW에 Trap 및 Potal구현 맵에 맞는 형태에 맞게 구현.\n\n자유 메모\n한 명이 며칠째 결과물이 0입니다. 매일 시작과 마무리에 회고를 하지만 진전이 있는지도 모르겠습니다. 오늘은 팀원의 하...씨.. 소리까지 새어나오는것을 들었습니다. 8조의 미래는 과연 괜찮은것일까 두근두근 기대가 됩니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ea15b388dd7b",
+    "studentId": "이준혁",
+    "date": "2026-02-24",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 센터 맵 구현, 튜토리얼 구현, 튜토리얼에 필요한 리소스 제작, 각 맵 연결, 변경되는 설계에 따라 레벨디자인 변경, 스테이지 클리어조건 부여, 프로젝트 전체적인 방향성 조율 요청(컨텐츠요소 등) 자유 메모 인간이 밉다",
+    "detail": "작업 내용\n센터 맵 구현, 튜토리얼 구현, 튜토리얼에 필요한 리소스 제작, 각 맵 연결, 변경되는 설계에 따라 레벨디자인 변경, 스테이지 클리어조건 부여, 프로젝트 전체적인 방향성 조율 요청(컨텐츠요소 등)\n\n자유 메모\n인간이 밉다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-aa5a3a468ddf",
+    "studentId": "이준혁",
+    "date": "2026-02-25",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 각 필드 맵에 오브젝트 배치, 팀원이 구현 실패한 작업 이어받아 진행 자유 메모 뭔가 잘못됐습니다.",
+    "detail": "작업 내용\n각 필드 맵에 오브젝트 배치, 팀원이 구현 실패한 작업 이어받아 진행\n\n자유 메모\n뭔가 잘못됐습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-991c9ab24773",
+    "studentId": "이준혁",
+    "date": "2026-02-26",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 인계받은 보스전 기획, 구현 완료. 각 지역 개방 조건 스크립트 연결 구현 완료. 신규 필요 맵 5종 제작 완료. 기획서 수정. 자유 메모 최종 결과물이 아쉽습니다.",
+    "detail": "작업 내용\n인계받은 보스전 기획, 구현 완료. 각 지역 개방 조건 스크립트 연결 구현 완료. 신규 필요 맵 5종 제작 완료. 기획서 수정.\n\n자유 메모\n최종 결과물이 아쉽습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-56fc7fd5f8c6",
+    "studentId": "이준혁",
+    "date": "2026-02-27",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 이번 프로젝트는 팀장님이 원하는 기본 틀을 정해왔고, 그 안에서 자율성을 가지고 장르나 형태에 대한 기획을 진행하게 되었습니다. 팀에서 의도한 방향성에 맞게 진화 시스템을 기획하였으나, 기획 및 컨펌 이후 시스템 기획의 진행상황에 맞추어 축소 및 폐기. 이후 바로 레벨디자인에 투입되어 각 튜토리얼 2종,…",
+    "detail": "기획에 대하여\n이번 프로젝트는 팀장님이 원하는 기본 틀을 정해왔고, 그 안에서 자율성을 가지고 장르나 형태에 대한 기획을 진행하게 되었습니다. \n팀에서 의도한 방향성에 맞게 진화 시스템을 기획하였으나, 기획 및 컨펌 이후 시스템 기획의 진행상황에 맞추어 축소 및 폐기.\n이후 바로 레벨디자인에 투입되어 각 튜토리얼 2종, 필드맵 4종, 보스맵 2종, 기타 맵 3종 등을 의도 및 시나리오에 맞추어 기획, 구현.\n마지막에 팀원 1인의 상대적 부진으로 해당 파트 전체를 팀원에게 배분. \n페리온 필드 보스전을 퍼즐형식으로 리빌딩, 구현.\n기회석의 내용에 대한 설명이 부족해 요청을받은 부분은 없으나. 각자 바빠 누군가의 기획서를 들여다볼 시간이 없던것은 아닐까 판단. 기획이 완료되고 구현으로 넘어가기 위해. 아니면 작업 중 시스템 혹은 스토리와 충돌이 있을법한 부분이라면 즉시 마이크를 열고 의견을 교환하여 충돌되는 부분을 깎아내거나 조율하였습니다.\n\n협업에 대하여\n1. 비극적이게도 전체적으로 굉장히 조용한 팀이었습니다. 학습매니저님께서 방문해 이 팀은 너무 조용하다는 우려를 나타내었을 정도입니다. 이전 팀 프로젝트의 기억이 떠올라 최대한 프로젝트와 관련한 건설적인 대화를 이끌어내기 위해 노력했습니다.\n2. 작업물과 진행상황은 항상 팀에게 공유되었습니다. 작업 진입과 완료는 즉시 공유되었으나 진행상황은 주로 그날그날 시작 전과 후에 진행된 회고에서 공유되었습니다.\n3. 부족한 부분은 솔직하게 공유하여 도움을 받거나 학습했습니다. 각 팀원이 바쁘다면 AI를 통해 자체적으로 해결해보겠다고 전달했습니다. 부진한 팀원이 있었지만 짐을 나누어받거나, 질문을 받으며 도움을 주었습니다.\n4. 프로젝트에 개인적인 감정은 전혀 담지 않았습니다. 오롯이 팀의 방향성에 맞는 기획과 구현만 진행했습니다. 사소한 히든 요소를 추가하려고 했지만 이 부분도 팀원에게 공유하고 허락을 받은 뒤 진행했습니다.\n\n다음 프로젝트를 위해\n지난 어드바이스를 통해 이번 프로젝트에 건 기대가 컸습니다.\n팀장의 입장은 아니지만 이번에 배정받은 팀에서 PM적인 요소, 문서관리, 진행도 관리, 일정 관리 등을 배우고, 소통의 중요성을 지난 팀 프로젝트를 마치고 한 면담에서 받아들이고 건설적인 피드백을 주고받고 소통을 하려고 했으나.\n두 마리 토끼를 모두 잡지 못했습니다.\n각자 맡은 역할을 열심히 하기는 했으나 전체적으로 조용하고 내성적인 분들이 많아 이번에도 마이크 사용 지분의 60%는 차지했다고 생각합니다. 다른분들의 회고를 참고바랍니다. 팀 회고때도 다른분들이 먼저 말을 꺼낸 부분입니다.\n그냥 기본적으로 조용하신분들은 소통 자체를 그리 하지 않는 느낌입니다. 다만 이번엔 그나마 나았던게 필요한 의견을 제시하는 시간에는 의견을 제시받았습니다. 지난번에는 아무런 의견도, 결정도, 심지어 투표조차 하지 않는것을 직접 캡쳐해 보여드린것을 확인하셨을겁니다.\n그런 모습에 비하면 큰 발전입니다.\n하지만 거기까지였습니다. 매니저님이 이 팀은 너무 조용하다고 소통을 종용하셨고, 그 뒤엔 걱정이 되어 별도로 파견하셨는지 서현님이 와서 친화를 위해 힘써주셨는데 어느정도 효과를 보나 했는데 오래 가진 못했습니다.\n또한 프로젝트 관리능력도 팀의 방향성에 의해 전혀 드러나지 못했습니다.\n파트를 배분하여, 맡은 파트에 대한 기획과 구현을 하자는 방향성으로 의견이 좁혀졌습니다.\n방향성 자체는 좋지만 진행에서 전혀 도움이 되지 못했습니다.\n시스템 구현을 맡은 팀장님은 본인 구현 업무에 바빠 다른 부분을 신경쓸 여력이 없었습니다.\n노력하는 모습이 보였지만, 결과적으로 팀 노션, Git 등 무엇 하나 제대로 이루어지지 못했습니다.\n자연히 소통에도 장애가 생기고, 각자 맡은 파트 기획 구현에 집중하다보니 소통도 더 줄어들었습니다.\n저는 진화 시스템 기획, 레벨 디자인 기획, 보스전투 기획, 리소스 제작 배치 등을 맡아 다른분들과 충돌되는 부분이 없도록 최대한 소통하고, 충돌하는 부분에 대한 볼륨을 줄이며 진행했습니다.\n\n결과적으로 MSW툴과 AI활용능력이 조금 상승했을 뿐 남은것이 없습니다.\n제발 좋은 팀원을 만나 많은걸 배울 수 있길 부탁드렸는데.. 이번에도 그리 만족스러운 형태는 아니었습니다. 오히려 팀프로젝트가 더 어려워졌습니다.\n\n심지어 팀원 한 분은 보고받으셨을테지만. 마지막까지 맡은 파트에 대한 기획과 구현을 완성하지 못했습니다. 심지어 그 사실을 팀에 공유한 시점이 프로젝트 마무리 이틀 전 부터였습니다.\n그 긴 기간동안 기획도 실패하고 구현도 실패하고 소통도 하지않고 끌어안고 있다가 마지막에 던지는걸 받는 기분을 아마 아실거라 믿습니다.\n\n자연스럽게 다음 프로젝트에 뭘 어떻게 해야할지 오히려 모르겠습니다.\n변화를 위해 의식적으로 무엇을 실천해야 할 지 모르겠습니다.\n그냥 안되는건 안되는거란 사실을 받아들여야 하나 고민입니다.\n팀 프로젝트에서 혼자서 바꿀 수 있는건 없습니다. 팀원을 잘 만나길 비는 수 밖에 없고\n팀원을 못만나면 그냥 개인프로젝트로 넘어가는게 낫지 않을까 합니다.\n\n칭찬합시다\n소통이 없어 기획적 장점을 알 수 없습니다. 개인 구현에 바빠 무엇이 어떻게 이루어졌는지 전혀 공유되지 않았습니다.\n저 또한 작업물을 공유하고 기획적인 요소를 설명하려고 해도 모두 바빠 공유하기 어려웠고. 그마나 공유할 수 있었던 시간은 매일 일정 시작과 끝의 프로젝트 회의에서 짤막하게밖에 전달하지 못했습니다.\n\n기획적 요소를 배제하고서라도 칭찬한다면 팀장인 영우님이 바쁜 와중에도 팀장의 임무를 소화하기 위해 열심히 해주셨고, 현민님과 유민님은 AI다루는것을 어려워하시면서도 최대한 작업물을 뽑기위해 애쓰는 모습을 봤습니다.\n호윤님은 UI파트를 맡아주셨는데 비슷하게 대략적인 작업 흐름만 회의때 공유받아 형태를 그때그때 확인하지 못했고 어떻게 구현되는지 몰랐습니다. 다만 늦게까지 열심히 작업해주신 사실은 알고있습니다.\n\n팀장 선호도 조사\n1.0\n\n이유\n팀 프로젝트 2번입니다. 첫번째는 벽 보고 혼자 떠드는 프로젝트의 팀장. 두번째는 도서관에서 개별작업하는 팀. 그 중 한명은 본인 파트를 단 하나도 소화하지 못하고 마무리. 분명 더 좋지 않은 상황에 처한 조가 있다는 사실을 알고있습니다. 사고 조에 매 번 계신 학우님이 계신것도 '소통'을 통해 알고있습니다.\n\n나름 열심히 소통하고 다른분들과 친해졌다고 생각했는데.\n번번히 팀 프로젝트때는 조용한 분들만 만납니다. \n프로젝트 단위에서는 배운걸 활용할 기회도 주어지지 않고, 개인작업을 하는 기분만 듭니다.\n따라서 팀장을 도저히 할 생각이 들지 않습니다.\n긍정적인 경험이 있어야 역할을 맡고 중책을 맡고싶어지는게 당연하지 않겠습니까?\n하지만 두 번의 팀 프로젝트는 너무나 실망이 컸습니다.\n보통 이렇게 야간과 주말과 휴일까지 소모한 프로젝트는 자신의 노력과 정성이 들어간 만큼 애정이 생겨야 하는데, 저는 그렇지 못합니다. 제가 참여한 작품이 그냥 부끄럽습니다. 다른분들께 제가 만들었으니 한번 플레이 해달라는 말조차 꺼낼수가 없습니다.\n\n자유로운 한마디\n고민을 정말 많이 했습니다. 다음 팀 프로젝트는 제발 배울게 있는 조에 배정되고싶습니다. 능력있는분들과 개별로 교류하고 있습니다만. 이것으론 부족합니다. 외에 프로젝트에서 만나 배우는것도 분명 있을것입니다. 게임이 만들어지는 과정을 옆에서 지켜보면서 학습을 하는쪽이 발전 폭이 크다고 생각합니다. 제가 개별적으로 일일히 찾아가 문의하기에는 배워야 할 것도, 알려주시는 분의 시간도, 물어야 할 부분도 너무나 많습니다. 잘 하는 분들을 만나 편하게 프로젝트를 진행하고싶은 생각은 전혀 없습니다. 그러니까 제발 수업시간에 배운것을 활용할 수 있게 정규 루트를 밟는 기획을 하는 조. 제발 소통을 좀 하는 조, 현 프로젝트와 수업 외적인 요소에 정신이 팔린 사람이 없는 조를 만나고싶습니다. 이 뒤의 남은 프로젝트는 정말 중요하다는것을 알고있습니다. 제발 부탁드리니 본 과정을 좋은 기억으로 남기면서 수료할 수 있도록 부탁드립니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-d0bca3e9a7fc",
+    "studentId": "이준혁",
+    "date": "2026-03-03",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 외출",
+    "summary": "외출 (국취제)",
+    "detail": "외출 (국취제)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-cd6d2db56e1e",
+    "studentId": "이준혁",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 배정받은 파트 아이데이션 1차 완료, 블록매치 상호작용 기획서 작성, 보스 기획, 패턴 기획, 블록 효과설정, 기타 부가효과 설정, 스파이 활동 자유 메모 세상이 아름답습니다.",
+    "detail": "작업 내용\n배정받은 파트 아이데이션 1차 완료, 블록매치 상호작용 기획서 작성, 보스 기획, 패턴 기획, 블록 효과설정, 기타 부가효과 설정, 스파이 활동\n\n자유 메모\n세상이 아름답습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-149a9c02c085",
+    "studentId": "이준혁",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 팀원 / 함께한 팀원 예인해, 이도민, 김범진, 김시온, 김윤규, 배주빈, 이승진",
+    "detail": "팀: 8팀\n역할: 팀원\n팀원: 예인해, 이도민, 김범진, 김시온, 김윤규, 배주빈, 이승진",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-c4ff18fc0d53",
+    "studentId": "이준혁",
+    "date": "2026-03-19",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전투 시스템 세부 기획, 퍼즐 시스템 세부 기획, 전투 기획 제안서 작성, 퍼즐 매칭 후처리 기획 자유 메모 불안불안합니다. 싸움이 나지 않길 바랄뿐입니다.",
+    "detail": "작업 내용\n전투 시스템 세부 기획, 퍼즐 시스템 세부 기획, 전투 기획 제안서 작성, 퍼즐 매칭 후처리 기획\n\n자유 메모\n불안불안합니다. 싸움이 나지 않길 바랄뿐입니다.",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-b8e4d0ec579a",
+    "studentId": "이준혁",
+    "date": "2026-03-20",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 너무 어색해하고 불편해하고 어려워하고 미워하길래 광대 역할을 했습니다. 작성한 기획서에 대한 설명을 했으며, 프로그래머에 대한 존중과 배려를 학습했음을 어필하며 서로 좋은 결과물을 내기 위해 최대한의 배려를 할 준비가 되어있다고 전달했습니다. 자유 메모 전반적으로 만족스럽습니다만, 컨디션에 따라 에티튜드가 나…",
+    "detail": "작업 내용\n너무 어색해하고 불편해하고 어려워하고 미워하길래 광대 역할을 했습니다. 작성한 기획서에 대한 설명을 했으며, 프로그래머에 대한 존중과 배려를 학습했음을 어필하며 서로 좋은 결과물을 내기 위해 최대한의 배려를 할 준비가 되어있다고 전달했습니다.\n\n자유 메모\n전반적으로 만족스럽습니다만, 컨디션에 따라 에티튜드가 나락으로 가는 팀원이 있습니다. 잘 케어해보겠습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-19b67a7e95d2",
+    "studentId": "이준혁",
+    "date": "2026-03-23",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 콤보 시스템 세부 기획서 작성, 보스 스킬 디자인 회의 - 최종선정, 행동력 시스템 기획서 작성 자유 메모 유료 에셋 사용 허가 시위 모집중입니다. 많은 관심과 참여 부탁드립니다.",
+    "detail": "작업 내용\n콤보 시스템 세부 기획서 작성, 보스 스킬 디자인 회의 - 최종선정, 행동력 시스템 기획서 작성\n\n자유 메모\n유료 에셋 사용 허가 시위 모집중입니다. 많은 관심과 참여 부탁드립니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-73dd0afa0984",
+    "studentId": "이준혁",
+    "date": "2026-03-24",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 행동력 기획서, 스테이터스 기획서 작성 완료. 팀 내 불화 방지, 플밍팀과 아이디어-구현 회의 주도 자유 메모 나라는 괴물",
+    "detail": "작업 내용\n행동력 기획서, 스테이터스 기획서 작성 완료. 팀 내 불화 방지, 플밍팀과 아이디어-구현 회의 주도\n\n자유 메모\n나라는 괴물",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-7288fa0ef799",
+    "studentId": "이준혁",
+    "date": "2026-03-25",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터테이블 헤메고 회의 질질 끌려다니기. 구조파악, 테이블 작성, 구조 개선 etc 자유 메모 인간 통나무가 되었어요~",
+    "detail": "작업 내용\n데이터테이블 헤메고 회의 질질 끌려다니기. 구조파악, 테이블 작성, 구조 개선 etc\n\n자유 메모\n인간 통나무가 되었어요~",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-3b7965f115d8",
+    "studentId": "이준혁",
+    "date": "2026-03-26",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 테이블작성, 무한밸런싱 자유 메모 vs 튜토리얼 30,000전 / vs 1스테이지 40,000전 / vs 2스테이지 80,000전 / vs 3스테이지 100,000전",
+    "detail": "작업 내용\n테이블작성, 무한밸런싱\n\n자유 메모\nvs 튜토리얼 30,000전 / vs 1스테이지 40,000전 / vs 2스테이지 80,000전 / vs 3스테이지 100,000전",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-a1870ff5e8a5",
+    "studentId": "이준혁",
+    "date": "2026-03-27",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 밸런싱 자유 메모 마일스톤 상 1차 목표치에 도달한 뒤, 조금 루즈해졌습니다. 주말엔 다른 팀 작업이라도 도와볼까 합니다.",
+    "detail": "작업 내용\n밸런싱\n\n자유 메모\n마일스톤 상 1차 목표치에 도달한 뒤, 조금 루즈해졌습니다. 주말엔 다른 팀 작업이라도 도와볼까 합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ebabea7af2f4",
+    "studentId": "이준혁",
+    "date": "2026-03-30",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 하루종일 번역, 밸런스 시트 자유 메모 파파고야 듀오링고야 제미나이야 네이버영어사전아 함께 가자",
+    "detail": "작업 내용\n하루종일 번역, 밸런스 시트\n\n자유 메모\n파파고야 듀오링고야 제미나이야 네이버영어사전아 함께 가자",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-41c6b22b7bd1",
+    "studentId": "이준혁",
+    "date": "2026-03-31",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 로컬라이즈, 밸런스 자유 메모 번역딸깍 밸런스 딸깍의 꿈을 꾸었습니다.",
+    "detail": "작업 내용\n로컬라이즈, 밸런스\n\n자유 메모\n번역딸깍 밸런스 딸깍의 꿈을 꾸었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-b2c4ada25275",
+    "studentId": "이준혁",
+    "date": "2026-04-01",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 번역지옥 탈출, 데이터 테이블 연결 작업(feat. 플밍팀) 자유 메모 말이 안나옵니다.",
+    "detail": "작업 내용\n번역지옥 탈출, 데이터 테이블 연결 작업(feat. 플밍팀)\n\n자유 메모\n말이 안나옵니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-252d1b09861f",
+    "studentId": "이준혁",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1차 QA, 데이터 테이블 수정 자유 메모 뒤로 갈수록 기획자가 한가할거라는 생각은 오만이었습니다.",
+    "detail": "작업 내용\n1차 QA, 데이터 테이블 수정\n\n자유 메모\n뒤로 갈수록 기획자가 한가할거라는 생각은 오만이었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-bb2e8a3d711b",
+    "studentId": "이준혁",
+    "date": "2026-04-03",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 자유 메모 특강 강의영상 구합니다.. PPT 자료라도 구합니다..",
+    "detail": "작업 내용\nQA\n\n자유 메모\n특강 강의영상 구합니다.. PPT 자료라도 구합니다..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-502ce767462b",
+    "studentId": "이준혁",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA와 밸런싱의 무한지옥 자유 메모 갑작스러운 구현 이슈 발생",
+    "detail": "작업 내용\nQA와 밸런싱의 무한지옥\n\n자유 메모\n갑작스러운 구현 이슈 발생",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-3dee02f1572a",
+    "studentId": "이준혁",
+    "date": "2026-04-07",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 밸런스 & QA 자유 메모 8조 팀원 체크인 누락되었다고 PM님께 WWE한번 부탁드립니다. 매 번 데일리 체크인 누락 안되어서 목에 힘이 빳빳하게 들어갔습니다.",
+    "detail": "작업 내용\n밸런스 & QA\n\n자유 메모\n8조 팀원 체크인 누락되었다고 PM님께 WWE한번 부탁드립니다. 매 번 데일리 체크인 누락 안되어서 목에 힘이 빳빳하게 들어갔습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-d315f3305a38",
+    "studentId": "이준혁",
+    "date": "2026-04-08",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 밸런스 최종의최종 , QA 자유 메모 밸런스 & QA 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종",
+    "detail": "작업 내용\n밸런스 최종의최종 , QA\n\n자유 메모\n밸런스 & QA 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-2529eae34d2f",
+    "studentId": "이준혁",
+    "date": "2026-04-11",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 PM / 함께한 팀원 이형진, 김현우B, 신석균, 이가현, 이균호, 오동건, 장윤우, 한재환",
+    "detail": "팀: 8팀\n역할: PM\n팀원: 이형진, 김현우B, 신석균, 이가현, 이균호, 오동건, 장윤우, 한재환",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-9214c34bd39f",
+    "studentId": "이준혁",
+    "date": "2026-04-29",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 정기 면담",
+    "summary": "### 내용 진로 방향은 아직 명확히 확정하지 못한 상태이나, 현재 관심사는 콘텐츠 기획과 시스템 기획 쪽에 가까운 것으로 보인다. 이번 기업협약 프로젝트에서는 PM 역할을 맡아볼 예정이며, 이를 통해 일정 관리와 팀 커뮤니케이션 경험을 쌓을 수 있을 것으로 보인다. 면담 과정에서 본인은 다른 학생들에 비해 관련 이력이…",
+    "detail": "### 내용\n진로 방향은 아직 명확히 확정하지 못한 상태이나, 현재 관심사는 콘텐츠 기획과 시스템 기획 쪽에 가까운 것으로 보인다. 이번 기업협약 프로젝트에서는 PM 역할을 맡아볼 예정이며, 이를 통해 일정 관리와 팀 커뮤니케이션 경험을 쌓을 수 있을 것으로 보인다.\n\n면담 과정에서 본인은 다른 학생들에 비해 관련 이력이나 포트폴리오 경험이 부족하다고 느끼고 있었으며, 무엇을 준비해야 할지 막막함을 호소하였다. 이에 수업 필기 정리, 블로그 기록, 사이드 프로젝트 진행 등을 제안하였으나, 해당 방향만으로는 불안감이 충분히 해소되지는 않는 모습이었다. 이후 보다 구체적인 목표로 메이플스토리 관련 컨테스트 참여를 권유하였고, 이를 계기로 어느 정도 방향성이 잡히며 부담이 완화된 것으로 보인다.\n\n향후에는 막연한 취업 준비보다는 본인이 관심을 보이는 콘텐츠·시스템 기획 분야와 연결되는 구체적인 산출물을 만드는 방향으로 지도할 필요가 있다. 특히 PM 경험, 블로그 기록, 외부 컨테스트 참여 등을 통해 부족한 이력과 포트폴리오 경험을 보완하도록 유도하는 것이 좋겠다.\n\n기업협약 프로젝트 진행 과정에서 불평이나 불만이 나타날 가능성은 있으나, 현재 태도상 프로젝트 이탈로 이어질 가능성은 낮아 보인다. 다만 PM 역할 수행 과정에서 책임감, 일정 관리 능력, 팀원 간 커뮤니케이션 태도는 지속적으로 관찰할 필요가 있다.\n\n--",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이준혁.md",
+      "isEstimatedDate": false
+    }
+  }
+]

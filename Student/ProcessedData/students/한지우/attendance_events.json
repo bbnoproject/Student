@@ -1,0 +1,66 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-09",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-10",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-11",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-12",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-16",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-03-20",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-05-07",
+    "kind": "휴가",
+    "detail": "휴가 (이사)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

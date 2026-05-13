@@ -1,0 +1,1075 @@
+[
+  {
+    "weekIndex": 0,
+    "label": "모집",
+    "startDate": "",
+    "endDate": "2025-12-08",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 2,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "모집 및 선발 단계",
+    "notes": [
+      {
+        "type": "admission",
+        "title": "최종 선발 결과",
+        "summary": "합격 · 면접 점수 65",
+        "severity": "success",
+        "date": "2025-12-07"
+      },
+      {
+        "type": "admission",
+        "title": "지원서 제출",
+        "summary": "어릴 때 겪은 불우한 삶을 시와 글로 써서 책을 만들다가 문득 애니메이션, PC 게임, 서브컬쳐 모바일 게임이라는 것을 접하게 되었고 그 중에서 서브컬쳐 모바일 게임의 스토리를 보면서 불우한 삶, 역경을 멋지게 극복한 사례가 있구나 나도 저런 멋있는…",
+        "severity": "info",
+        "date": "2025-10-29"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 1,
+    "label": "W01",
+    "startDate": "2025-12-08",
+    "endDate": "2025-12-14",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [
+      {
+        "type": "snapshot",
+        "title": "성향 스냅샷 갱신",
+        "summary": "자기조절 지원 필요",
+        "severity": "info",
+        "date": "2025-12-08"
+      }
+    ],
+    "snapshot": {
+      "snapshotId": "곽용준-입과 초기",
+      "snapshotDate": "2025-12-08",
+      "snapshotType": "입과 초기",
+      "scores": {
+        "selfRegulation": 1,
+        "engagement": 1,
+        "collaboration": 2,
+        "resilience": 3,
+        "reflection": 2,
+        "careerAgency": 3
+      },
+      "confidence": "Low",
+      "note": "자기조절 지원 필요"
+    }
+  },
+  {
+    "weekIndex": 2,
+    "label": "W02",
+    "startDate": "2025-12-15",
+    "endDate": "2025-12-21",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 3,
+    "label": "W03",
+    "startDate": "2025-12-22",
+    "endDate": "2025-12-28",
+    "counts": {
+      "attendance": 2,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 2,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "warning",
+    "headline": "집중 확인이 필요한 구간",
+    "notes": [
+      {
+        "type": "counseling",
+        "title": "이탈 면담 2회차",
+        "summary": "### 내용 [기획 4기] 곽용준 면담 내용 해당 교육생은 과정 진행에 대한 불만이나 수업상의 문제는 없다고 밝혔습니다. 기획자 과정을 지원한 목적은 자신이 쓰고 싶은 이야기를 게임으로 만들고, 전달하고자 하는 메시지를 사회에 전하고 싶기 때문이라고…",
+        "severity": "warning",
+        "date": "2025-12-26"
+      },
+      {
+        "type": "counseling",
+        "title": "이탈 면담",
+        "summary": "### 내용 과정 진행에 불만이 있거나 수업에 아쉬움을 느끼지는 않았다고 합니다. 기획자 과정을 지원한 목적이 쓰고 싶은 이야기를 게임으로 만들고, 연애를 하고 싶은 사람이 생겼을 때 자신이 만든 게임을 통해 그 사람이 자신을 자랑스럽게 생각해줬으면…",
+        "severity": "warning",
+        "date": "2025-12-24"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각",
+        "severity": "info",
+        "date": "2025-12-26"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각",
+        "severity": "info",
+        "date": "2025-12-23"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 4,
+    "label": "W04",
+    "startDate": "2025-12-29",
+    "endDate": "2026-01-04",
+    "counts": {
+      "attendance": 1,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "안정적인 학습 흐름",
+    "notes": [
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (버스)",
+        "severity": "info",
+        "date": "2025-12-30"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 5,
+    "label": "W05",
+    "startDate": "2026-01-05",
+    "endDate": "2026-01-11",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 6,
+    "label": "W06",
+    "startDate": "2026-01-12",
+    "endDate": "2026-01-18",
+    "counts": {
+      "attendance": 2,
+      "attendanceRisk": 1,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "caution",
+    "headline": "출결 위험 신호를 확인한 구간",
+    "notes": [
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (늦잠)",
+        "severity": "caution",
+        "date": "2026-01-12"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (개인 사정)",
+        "severity": "info",
+        "date": "2026-01-15"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 7,
+    "label": "W07",
+    "startDate": "2026-01-19",
+    "endDate": "2026-01-25",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 5,
+      "retro": 0,
+      "counseling": 1,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "면담 개입이 있었던 구간",
+    "notes": [
+      {
+        "type": "counseling",
+        "title": "1차 정기 면담",
+        "summary": "### 내용 ### 1) 현재 프로젝트 상태(난이도/속도/이해도/몰입도) AI 도구 활용에 익숙하지 않아 프로젝트 진행이 어렵게 느껴진다고 답변했습니다. 기술적 장벽으로 인해 작업 효율이 떨어지는 구간이 존재하는 것으로 보입니다. ### 2) 수업…",
+        "severity": "info",
+        "date": "2026-01-23"
+      },
+      {
+        "type": "project",
+        "title": "1차 프로젝트 데일리 체크인",
+        "summary": "1",
+        "severity": "info",
+        "date": "2026-01-23"
+      },
+      {
+        "type": "project",
+        "title": "1차 프로젝트 데일리 체크인",
+        "summary": "0.75",
+        "severity": "info",
+        "date": "2026-01-22"
+      },
+      {
+        "type": "project",
+        "title": "1차 프로젝트 데일리 체크인",
+        "summary": "0.5",
+        "severity": "info",
+        "date": "2026-01-21"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 8,
+    "label": "W08",
+    "startDate": "2026-01-26",
+    "endDate": "2026-02-01",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 1,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
+    "notes": [
+      {
+        "type": "retro",
+        "title": "1차 프로젝트 회고 제출",
+        "summary": "기획에 대하여 1. 팀에서 의도한 방향성을 기획하고 매일 확인을 받았습니다 2. 다른 팀원분들도 이해할 수 있도록 매일 화면 공유로 점검 받았습니다 3. 기획서의 내용이 부족하면 구두로 확인받고 즉각 수정, 피드백 후 반영하였습니다 협업에 대하여 1…",
+        "severity": "info",
+        "date": "2026-01-27"
+      },
+      {
+        "type": "snapshot",
+        "title": "성향 스냅샷 갱신",
+        "summary": "협업 상황 면담 권장",
+        "severity": "info",
+        "date": "2026-01-26"
+      }
+    ],
+    "snapshot": {
+      "snapshotId": "곽용준-1차 프로젝트 이후",
+      "snapshotDate": "2026-01-26",
+      "snapshotType": "1차 프로젝트 이후",
+      "scores": {
+        "selfRegulation": 4,
+        "engagement": 4,
+        "collaboration": 1,
+        "resilience": 2,
+        "reflection": 3,
+        "careerAgency": 4
+      },
+      "confidence": "High",
+      "note": "협업 상황 면담 권장"
+    }
+  },
+  {
+    "weekIndex": 9,
+    "label": "W09",
+    "startDate": "2026-02-02",
+    "endDate": "2026-02-08",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 10,
+    "label": "W10",
+    "startDate": "2026-02-09",
+    "endDate": "2026-02-15",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 2,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
+    "notes": [
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "콘텐츠 기획서 작성(연휴동안 수정 요망)",
+        "severity": "info",
+        "date": "2026-02-13"
+      },
+      {
+        "type": "project",
+        "title": "2차 프로젝트 팀 배치",
+        "summary": "4팀 · 역할 팀원 · 팀원 5명",
+        "severity": "info",
+        "date": "2026-02-13"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 11,
+    "label": "W11",
+    "startDate": "2026-02-16",
+    "endDate": "2026-02-22",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 2,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
+    "notes": [
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "인게임 채팅 UI 작업 완료",
+        "severity": "info",
+        "date": "2026-02-20"
+      },
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "아트 캐릭터 컨텐츠 정리",
+        "severity": "info",
+        "date": "2026-02-19"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 12,
+    "label": "W12",
+    "startDate": "2026-02-23",
+    "endDate": "2026-03-01",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 4,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
+    "notes": [
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "QA 종료",
+        "severity": "info",
+        "date": "2026-02-26"
+      },
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "QA 18차까지 작업",
+        "severity": "info",
+        "date": "2026-02-25"
+      },
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "상점 UI 제작",
+        "severity": "info",
+        "date": "2026-02-24"
+      },
+      {
+        "type": "project",
+        "title": "2차 프로젝트 데일리 체크인",
+        "summary": "마켓 UI (배경, 스킬 아이콘 하나씩) 피스톨, 샷건, 스나이퍼, 관통, 연사, 출혈 1, 2, 3, 4, 5, 6 선술집 배경 같은 느낌 반영 완료",
+        "severity": "info",
+        "date": "2026-02-23"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 13,
+    "label": "W13",
+    "startDate": "2026-03-02",
+    "endDate": "2026-03-08",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [
+      {
+        "type": "snapshot",
+        "title": "성향 스냅샷 갱신",
+        "summary": "협업 상황 면담 권장",
+        "severity": "info",
+        "date": "2026-03-02"
+      }
+    ],
+    "snapshot": {
+      "snapshotId": "곽용준-2차 프로젝트 이후",
+      "snapshotDate": "2026-03-02",
+      "snapshotType": "2차 프로젝트 이후",
+      "scores": {
+        "selfRegulation": 3,
+        "engagement": 4,
+        "collaboration": 2,
+        "resilience": 2,
+        "reflection": 3,
+        "careerAgency": 4
+      },
+      "confidence": "High",
+      "note": "협업 상황 면담 권장"
+    }
+  },
+  {
+    "weekIndex": 14,
+    "label": "W14",
+    "startDate": "2026-03-09",
+    "endDate": "2026-03-15",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 15,
+    "label": "W15",
+    "startDate": "2026-03-16",
+    "endDate": "2026-03-22",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 4,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
+    "notes": [
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "에셋 관련 피드백 받기",
+        "severity": "info",
+        "date": "2026-03-20"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "에셋 컨셉에 맞게 분리",
+        "severity": "info",
+        "date": "2026-03-19"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "ASSETSTORE 카테고리 분류",
+        "severity": "info",
+        "date": "2026-03-18"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 팀 배치",
+        "summary": "7팀 · 역할 팀원 · 팀원 7명",
+        "severity": "info",
+        "date": "2026-03-18"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 16,
+    "label": "W16",
+    "startDate": "2026-03-23",
+    "endDate": "2026-03-29",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 5,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
+    "notes": [
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "기획서 피드백 반영",
+        "severity": "info",
+        "date": "2026-03-27"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "UI 기획서 피그마 PPT 작성",
+        "severity": "info",
+        "date": "2026-03-26"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "피그마 PPT 기획서 슬라이드 제작",
+        "severity": "info",
+        "date": "2026-03-25"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "UI+시나리오(설명만 듣고 구상만 하기)",
+        "severity": "info",
+        "date": "2026-03-24"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 17,
+    "label": "W17",
+    "startDate": "2026-03-30",
+    "endDate": "2026-04-05",
+    "counts": {
+      "attendance": 1,
+      "attendanceRisk": 0,
+      "project": 5,
+      "retro": 0,
+      "counseling": 2,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "면담 개입이 있었던 구간",
+    "notes": [
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "QA 진행",
+        "severity": "info",
+        "date": "2026-04-03"
+      },
+      {
+        "type": "counseling",
+        "title": "개인 고민 상담",
+        "summary": "### 내용 ### 고민 - 작일 점심 시간 이후 일어나지 못하고 17시에 입실한 것과 관련해, PD, PM과 이야기를 나눴다고 합니다. - 실수에 대한 상황 설명을 해야하는데, 고질적인 심리적인 문제에 대한 부분은 털어놓지 못했다고 합니다. - 지…",
+        "severity": "info",
+        "date": "2026-04-03"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "QA 작업 진행 후 체크 리스트 작성",
+        "severity": "info",
+        "date": "2026-04-02"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 외출",
+        "summary": "외출 (자리 비움)",
+        "severity": "info",
+        "date": "2026-04-02"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 18,
+    "label": "W18",
+    "startDate": "2026-04-06",
+    "endDate": "2026-04-12",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 3,
+      "retro": 0,
+      "counseling": 1,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "면담 개입이 있었던 구간",
+    "notes": [
+      {
+        "type": "counseling",
+        "title": "개인 고민 상담 2",
+        "summary": "### 내용 1. 휴가 사용 문의 원래부터 가지고 있던 정신적 이슈가 있어, 최근 수면 패턴이 불규칙한 상황이라고 합니다. 이와 관련해 며칠 쉬면서 회복하고 와도 되는지를 물었습니다. 이에 대해 남은 휴가 일수와 사용 방법을 안내하고, 편하게 사용해…",
+        "severity": "info",
+        "date": "2026-04-10"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "TC 체크 리스트 작성, QA 진행",
+        "severity": "info",
+        "date": "2026-04-08"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "TC 체크리스트 쉼터 약 30개 작업",
+        "severity": "info",
+        "date": "2026-04-07"
+      },
+      {
+        "type": "project",
+        "title": "3차 프로젝트 데일리 체크인",
+        "summary": "TC 체크리스트 작성",
+        "severity": "info",
+        "date": "2026-04-06"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 19,
+    "label": "W19",
+    "startDate": "2026-04-13",
+    "endDate": "2026-04-19",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 20,
+    "label": "W20",
+    "startDate": "2026-04-20",
+    "endDate": "2026-04-26",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 1,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "안정적인 학습 흐름",
+    "notes": [
+      {
+        "type": "project",
+        "title": "4차 프로젝트 팀 배치",
+        "summary": "6팀 · 역할 팀원 · 팀원 8명",
+        "severity": "info",
+        "date": "2026-04-20"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 21,
+    "label": "W21",
+    "startDate": "2026-04-27",
+    "endDate": "2026-05-03",
+    "counts": {
+      "attendance": 2,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "info",
+    "headline": "출결 배경 확인이 필요한 구간",
+    "notes": [
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 외출",
+        "summary": "외출 (본가 이동)",
+        "severity": "info",
+        "date": "2026-04-30"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 외출",
+        "summary": "외출",
+        "severity": "info",
+        "date": "2026-04-29"
+      }
+    ],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 22,
+    "label": "W22",
+    "startDate": "2026-05-04",
+    "endDate": "2026-05-10",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 23,
+    "label": "W23",
+    "startDate": "2026-05-11",
+    "endDate": "2026-05-17",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 24,
+    "label": "W24",
+    "startDate": "2026-05-18",
+    "endDate": "2026-05-24",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 25,
+    "label": "W25",
+    "startDate": "2026-05-25",
+    "endDate": "2026-05-31",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 26,
+    "label": "W26",
+    "startDate": "2026-06-01",
+    "endDate": "2026-06-07",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 27,
+    "label": "W27",
+    "startDate": "2026-06-08",
+    "endDate": "2026-06-14",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 28,
+    "label": "W28",
+    "startDate": "2026-06-15",
+    "endDate": "2026-06-21",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 29,
+    "label": "W29",
+    "startDate": "2026-06-22",
+    "endDate": "2026-06-28",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 30,
+    "label": "W30",
+    "startDate": "2026-06-29",
+    "endDate": "2026-07-05",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 31,
+    "label": "W31",
+    "startDate": "2026-07-06",
+    "endDate": "2026-07-12",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 32,
+    "label": "W32",
+    "startDate": "2026-07-13",
+    "endDate": "2026-07-19",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 33,
+    "label": "W33",
+    "startDate": "2026-07-20",
+    "endDate": "2026-07-26",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 34,
+    "label": "W34",
+    "startDate": "2026-07-27",
+    "endDate": "2026-08-02",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [],
+    "snapshot": null
+  },
+  {
+    "weekIndex": 35,
+    "label": "W35",
+    "startDate": "2026-08-03",
+    "endDate": "2026-08-03",
+    "counts": {
+      "attendance": 0,
+      "attendanceRisk": 0,
+      "project": 0,
+      "retro": 0,
+      "counseling": 0,
+      "admission": 0,
+      "career": 0
+    },
+    "severity": "stable",
+    "headline": "안정적인 학습 흐름",
+    "notes": [
+      {
+        "type": "snapshot",
+        "title": "성향 스냅샷 갱신",
+        "summary": "협업 상황 면담 권장",
+        "severity": "info",
+        "date": "2026-08-03"
+      }
+    ],
+    "snapshot": {
+      "snapshotId": "곽용준-현재",
+      "snapshotDate": "2026-08-03",
+      "snapshotType": "현재",
+      "scores": {
+        "selfRegulation": 4,
+        "engagement": 4,
+        "collaboration": 2,
+        "resilience": 2,
+        "reflection": 3,
+        "careerAgency": 4
+      },
+      "confidence": "High",
+      "note": "협업 상황 면담 권장"
+    }
+  }
+]

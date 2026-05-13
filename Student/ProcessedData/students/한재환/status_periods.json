@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "한재환-status-1",
+    "startDate": "2026-03-23",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-02-23",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-03-18",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-24",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-29",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

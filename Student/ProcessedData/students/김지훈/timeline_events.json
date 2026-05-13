@@ -1,0 +1,1077 @@
+[
+  {
+    "eventId": "ev-981b634dd293",
+    "date": "2025-11-05",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "지원서 응답",
+    "summary": "자기소개 뉴미디어 엔터테인먼트, 주로 유튜브에서 10년 가까이 일했습니다. 최신 경향의 스타트업을 하다보니, 3d 애니메이션도 하게 되었는데 갈수록 현업에서 메타버스의 시대가 오고 있는 것이 느껴졌습니다. 그리고 메타버스의 끝은 결국 게임에 맞닿아있는 것 같아, 게임 교육을 받으려했으나 마음에 드는 과정을 찾지 못 했습…",
+    "detail": "자기소개\n뉴미디어 엔터테인먼트, 주로 유튜브에서 10년 가까이 일했습니다. 최신 경향의 스타트업을 하다보니, 3d 애니메이션도 하게 되었는데 갈수록 현업에서 메타버스의 시대가 오고 있는 것이 느껴졌습니다. 그리고 메타버스의 끝은 결국 게임에 맞닿아있는 것 같아, 게임 교육을 받으려했으나 마음에 드는 과정을 찾지 못 했습니다. 경일아카데미가 커리큘럼이 좋은 건 알고 있었는데, 마음에 드는 과정이 나와 신청하게 되었습니다.\n\n지원 동기\n많은 직무교육을 찾아봤지만 AI시대에 대체되지 않을 내용을 찾기 어려웠습니다. 게임 기획은 아직 인간이 할 수 있는 부분이 많고, 인디게임도 오히려 AI도움을 받아 더 활성화될 거라 생각합니다. 무엇보다 가장 고관여의 콘텐츠를 직접 만들어보고 싶습니다.\n\n관련 경험\n없습니다\n\n희망 분야\n게임PM, GM, 게임 기획자\n\n수료 목표\n게임을 만드는 법을 배워 제가 마음에 드는 게임을 만들고 싶습니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8601ddeb9c29",
+    "date": "2025-12-07",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "면접 결과",
+    "summary": "합격 / 점수 84",
+    "detail": "영상 편집 및 유튜브, 버추얼 및 3D 애니메이션 관련 사업 경험이 있습니다.\n라이어 게임, 메타버스, VR, AI를 보고 신청하여 커리큘럼과 약간의 거리감이 있어보입니다.\n그래도 게임 기획자와 관련된 질문들에 대해 긍정적으로 답변했습니다.\n본인이 가진 경험을 토대로, 논리적인 대화를 할 수 있습니다.\n리더십이 강하고 팔로워십은 상대적으로 약한 편으로 보입니다.\n또한 협업 경험이 많으나 대부분 리더로서의 경험이어서, 팀 프로젝트 단계에서 약간의 이슈가 생길 우려가 있습니다.\n게임 이력이 매우 적은편이지만, 학습에 대한 열의는 높아보입니다.\n우울증 질병 이력이 있습니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-0d256d861e4e",
+    "date": "2025-12-08",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각",
+    "detail": "지각",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-31e6821e29ba",
+    "date": "2025-12-09",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-79e7bf9931f3",
+    "date": "2025-12-10",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (건강 이슈)",
+    "detail": "결석 (건강 이슈)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-4d43581695af",
+    "date": "2025-12-11",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 외출",
+    "summary": "외출",
+    "detail": "외출",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9b4e74f67e41",
+    "date": "2025-12-15",
+    "endDate": "",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-85eb1edcf56c",
+    "date": "2025-12-16",
+    "endDate": "",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각",
+    "detail": "지각",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-691f68a551bd",
+    "date": "2025-12-17",
+    "endDate": "",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-17bfd5ff87ac",
+    "date": "2025-12-22",
+    "endDate": "",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 외출",
+    "summary": "외출",
+    "detail": "외출",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-da573a642e86",
+    "date": "2025-12-23",
+    "endDate": "",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d810cf34a40e",
+    "date": "2025-12-24",
+    "endDate": "",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 외출",
+    "summary": "외출",
+    "detail": "외출",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e7854f835ce6",
+    "date": "2025-12-29",
+    "endDate": "",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3e0021d22779",
+    "date": "2025-12-31",
+    "endDate": "",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0afff0285bc5",
+    "date": "2026-01-05",
+    "endDate": "",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-42e089575c25",
+    "date": "2026-01-07",
+    "endDate": "",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a7905039b6b3",
+    "date": "2026-01-12",
+    "endDate": "",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d12f3162b933",
+    "date": "2026-01-19",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (몸살)",
+    "detail": "결석 (몸살)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ac3546660bcc",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.1 자유 메모 높은 목표대비 진전이 안나갑니다",
+    "detail": "작업 내용\n0.1\n\n자유 메모\n높은 목표대비 진전이 안나갑니다",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-cb9f167cd431",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "7팀 / 역할 팀원 / 함께한 팀원 김민제, 강유민, 강태성, 고승주",
+    "detail": "팀: 7팀\n역할: 팀원\n팀원: 김민제, 강유민, 강태성, 고승주",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-13c666b7d320",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (병원 진료)",
+    "detail": "결석 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-cad757270728",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ### 1) 현재 프로젝트 상태(난이도/속도/이해도/몰입도) 팀 내에는 기획자 특성상 의견과 자존감(에고)이 강하게 드러나는 상황이 있으며, 본인은 팀장이 아니기 때문에 조심스럽게 의견을 내는 편이라고 정리됩니다. 팀원 강유민 관련 이슈로는 스토리 진행 속도가 느려 전체 작업이 딜레이되고 있다는 점이 공유되…",
+    "detail": "### 내용\n### 1) 현재 프로젝트 상태(난이도/속도/이해도/몰입도)\n\n팀 내에는 기획자 특성상 의견과 자존감(에고)이 강하게 드러나는 상황이 있으며, 본인은 팀장이 아니기 때문에 조심스럽게 의견을 내는 편이라고 정리됩니다.\n\n팀원 강유민 관련 이슈로는 스토리 진행 속도가 느려 전체 작업이 딜레이되고 있다는 점이 공유되었습니다.\n\n### 2) 현재 희망 직무(방향성)\n\n진로는 콘텐츠 기획과 사업(비즈/PM 계열) 사이에서 고민 중입니다.\n\n### 3) 컨디션/생활 변화(체력·정신적 부담 포함)\n\n신체 컨디션은 지난달 대비 호전되었다고 언급했습니다.\n\n완벽주의 성향으로 인해 정신과 약을 복용 중이라고 공유했습니다.\n\n### 4) 커리어/관심사 확장\n\n웹소설 작가 준비 경험이 있으며, 이는 콘텐츠/서사 역량과 연관된 배경으로 해석됩니다.\n\n### 5) 과정 만족도 및 이탈 리스크 변화\n\n과제로 인해 한때 이탈까지 고민했으나, 현재는 커리큘럼 만족도가 높아 전반적으로 만족하는 상태로 정리됩니다.\n\n---",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "김지훈.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-91db8d552433",
+    "date": "2026-01-22",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f46394607dc0",
+    "date": "2026-01-23",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (프로젝트)",
+    "detail": "조퇴 (프로젝트)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ac81b4812a77",
+    "date": "2026-01-26",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 기획에 전혀 참여할 수 없었다. 협업에 대하여 위의 3가지는 지켰으나, 4번은 리더의 지속적인 감정적 대응에 스스로도 주체할 수 없었다. 사건을 정리하면서, 그 동안 어떻게 참았나 싶기도 하고, 어떻게 했어야했나도 궁금했다. 그래서 다른조 동기들 몇명에게 물어봤지만, 그들도 내가 한 일 이상의 답변을 해주…",
+    "detail": "기획에 대하여\n기획에 전혀 참여할 수 없었다.\n\n협업에 대하여\n위의 3가지는 지켰으나, 4번은 리더의 지속적인 감정적 대응에 스스로도 주체할 수 없었다. 사건을 정리하면서, 그 동안 어떻게 참았나 싶기도 하고, 어떻게 했어야했나도 궁금했다. 그래서 다른조 동기들 몇명에게 물어봤지만, 그들도 내가 한 일 이상의 답변을 해주진 못 했다.\n\n다음 프로젝트를 위해\n아무리 생각해도 기존 상황에서는 똑같이 행동할 것 같다. 다만 모든 회의록을 녹음해서 자동 회의록을 작성해, 구두로 오간 말을 누락하거나 왜곡하지 않게 할 거 같다. 실제 다른 동기분도 그렇게 한다 그래서, 이제야 그 필요성을 깨달았다. 지난 월요일에 독감으로 출석을 못 해, 4시간 정도 아이스브레이킹과 시나리오 리스트를 뽑는 과정에 참여하지 못 했다. 스스로 시나리오 욕심이 있는 상황에서, 월요일부터 참석해서 내 아이디어와 기획이 선정될 수 있었다면 문제가 없었을 거 같다.\n\n칭찬합시다\n리더님의 열정이 좋았고, 시나리오 담당의 체계화된 시나리오 문서는 양식에서 흠 잡을 데가 없었다. 개발파트도 본인의 업무를 맡아서 묵묵히 잘 수행했다.\n\n자유로운 한마디\n윤석 강사님을 통해 첫 프로젝트는 원래 망할 걸 각오하고 진행한다고 들었다. 하지만 프로젝트 매니징을 알고 임하는 것과, 아예 모르고 임하는 것은 받아들이는데 차이가 있다고 생각한다. 각자의 경험과 지식이 차이가 있는 상황에 어울러지기 위해서는 최소한의 장치와 프로세스 교육이 필요하다고 생각한다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-457e58009ccd",
+    "date": "2026-01-27",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "스토리프로젝트 이후 면담",
+    "summary": "### 내용 경고문을 작성하고 주말동안 생각을 해봤다고 합니다. 자신의 잘못도 이해하고 있고, 김민제님과의 마찰이 그렇게 커지지 않을 수 있었다는 것도 인지하고 있다고 합니다. 반성도 하고 있기에 앞으로 잘 해보자는 이야기로 마무리했습니다. [면담 영상 링크](https://drive.google.com/file/d/1…",
+    "detail": "### 내용\n경고문을 작성하고 주말동안 생각을 해봤다고 합니다.\n자신의 잘못도 이해하고 있고, 김민제님과의 마찰이 그렇게 커지지 않을 수 있었다는 것도 인지하고 있다고 합니다.\n반성도 하고 있기에 앞으로 잘 해보자는 이야기로 마무리했습니다.\n\n[면담 영상 링크](https://drive.google.com/file/d/1pBBXRLm6QGSN0H_iUofiFP4fWRtGKSc3/view?usp=drive_link)\n\n---",
+    "constructs": [
+      "engagement",
+      "reflection"
+    ],
+    "sourceLabel": "김지훈.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-6d94fb78c976",
+    "date": "2026-01-28",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 치료)",
+    "detail": "조퇴 (병원 치료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-53d6e9c2544d",
+    "date": "2026-02-06",
+    "endDate": "",
+    "weekIndex": 9,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-380d54c6e413",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 몬스터 이미지 생성, 오픈소스/로컬 생성 모델 개발, 스프라이트 제작 서치 자유 메모 늘 챌린지해서 어렵습니다.",
+    "detail": "작업 내용\n몬스터 이미지 생성, 오픈소스/로컬 생성 모델 개발, 스프라이트 제작 서치\n\n자유 메모\n늘 챌린지해서 어렵습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ab8d4c596bbf",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "6팀 / 역할 팀원 / 함께한 팀원 이정헌, 김윤규, 김태환, 김태훈, 맹지훈",
+    "detail": "팀: 6팀\n역할: 팀원\n팀원: 이정헌, 김윤규, 김태환, 김태훈, 맹지훈",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-673a257ad846",
+    "date": "2026-02-19",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-5100f53de5af",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (병원 진료)",
+    "detail": "지각 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-23485ec2e8b4",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 보스/몬스터 다운샘플링, 스프라이트 생성 자유 메모 디자인만 하다보니 재미가 없는 거 같습니다",
+    "detail": "작업 내용\n보스/몬스터 다운샘플링, 스프라이트 생성\n\n자유 메모\n디자인만 하다보니 재미가 없는 거 같습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f0291944941d",
+    "date": "2026-02-23",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 몬스터 사망 동작/효과 구현, 기본 스프라이트 스플릿 및 완성, 기획서 완성 자유 메모 슬슬 노트북이 한계가 와서 업그레이드를 하고 있다.",
+    "detail": "작업 내용\n몬스터 사망 동작/효과 구현, 기본 스프라이트 스플릿 및 완성, 기획서 완성\n\n자유 메모\n슬슬 노트북이 한계가 와서 업그레이드를 하고 있다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-11f86d6f350b",
+    "date": "2026-02-24",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 몬스터 애니메이션 스프라이트 생성 자유 메모 컴퓨터 사양과의 싸움이었다. 덕분에 업그레이드와 서버까지 가지게 되었다.",
+    "detail": "작업 내용\n몬스터 애니메이션 스프라이트 생성\n\n자유 메모\n컴퓨터 사양과의 싸움이었다. 덕분에 업그레이드와 서버까지 가지게 되었다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-42d46b13daec",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (컨디션 이슈)",
+    "detail": "결석 (컨디션 이슈)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0b85798a4648",
+    "date": "2026-02-27",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-de2e08cdf0ab",
+    "date": "2026-03-02",
+    "endDate": "",
+    "weekIndex": 13,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 시나리오가 완성되지 않은 상태에서 기획을 들어가다 보니, 어느 정도 시나리오와 어긋나는 부분이 있었다. 조율은 금방 했지만 협업 툴로 긴밀한 소통이 되었으면 어땠을까 싶다. 협업에 대하여 피드백과 자기주장이 팀에 도움이 되는가 걸림돌이 되는가는 많은 고민이 되는 것 같다. 무조건 수용하며 업무량으로 승부하…",
+    "detail": "기획에 대하여\n시나리오가 완성되지 않은 상태에서 기획을 들어가다 보니, 어느 정도 시나리오와 어긋나는 부분이 있었다. 조율은 금방 했지만 협업 툴로 긴밀한 소통이 되었으면 어땠을까 싶다.\n\n협업에 대하여\n피드백과 자기주장이 팀에 도움이 되는가 걸림돌이 되는가는 많은 고민이 되는 것 같다. 무조건 수용하며 업무량으로 승부하는 팀원을 보면서 저런 방법도 있구나 싶었다. 반대로 의견이 들어지지 않을수록 동기부여가 줄어드는 걸 보면서 스스로에 대해서도 더 잘 알 수 있었다.\n\n다음 프로젝트를 위해\n팀플레이에서 주도적 일수록 아무래도 발언권이 더 커지는 것 같다. 양보와 팀을 위해 정해진 대로 하는 것이 진정으로 팀에 도움이 되는가 싶었다. 무엇보다 실제 프로젝트가 아닌 교육을 위한 것이라는 점에서, 모두가 조금이라도 기획에 참여할 수 있는 기회를 만들고 싶다.\n\n칭찬합시다\n시나리오가 급하다는 점에서 실시간 으로 구글 닥스로 공유 된 점과, 모두가 자기 맡은 바를 해냈다는 점, 그리고 그 이상을 열정으로 불사른 점이 있다는 것이 임팩트가 있었다\n\n팀장 선호도 조사\n5.0\n\n이유\n2번 팀 프로젝트를 하면서 기획교육과정인데 왜 개발과 아트만 해야 되는 사람이 있어야 되는가 라는 의문이 많이 들었다. 극단적으로 제작물의 퀄리티보다 기획자로서의 경험이 더 중요하다고 생각이 든다. 자신이 기획한 것을 개발하고 디자인하는 부분에서 더 적극적이고 좋은 의견들이 생길 수 있지 않을까라는 생각이 든다.\n\n자유로운 한마디\n개인적으로 장비 이슈는 너무 아쉬운 점이 많았다. 덕분에 WSL 과 업그레이드를 통해 좋은 환경을 조성 하였지만 정작 팀 활동에 도움이 되지 못했다",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-76303fc88959",
+    "date": "2026-03-06",
+    "endDate": "",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (병원 진료)",
+    "detail": "지각 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d3bf279b4413",
+    "date": "2026-03-11",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-94f87f638c8e",
+    "date": "2026-03-17",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-78438d169c96",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 생성 ai 파이프라인 세팅 자유 메모 환경 세팅에 많은 시간이 드는 거 같다",
+    "detail": "작업 내용\n생성 ai 파이프라인 세팅\n\n자유 메모\n환경 세팅에 많은 시간이 드는 거 같다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-805c3582fa73",
+    "date": "2026-03-19",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 외출",
+    "summary": "외출 (병원 진료)",
+    "detail": "외출 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-636a5aabafc1",
+    "date": "2026-03-19",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 우분투 세팅과 백업 복원만 하루종일 했습니다. 자유 메모 16기가로 개발하는 건 미친짓 같습니다",
+    "detail": "작업 내용\n우분투 세팅과 백업 복원만 하루종일 했습니다.\n\n자유 메모\n16기가로 개발하는 건 미친짓 같습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-03b5af15dabb",
+    "date": "2026-03-20",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-628eb3162ef5",
+    "date": "2026-03-24",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f8e02d51ee80",
+    "date": "2026-03-25",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 윈도우와 우분투를 오가는 환경 세팅을 마쳤다. 이제야 본작업이 가능할 거 같다. 자유 메모 급한 PC 부품 구매로 200만원 어치 중고 사기를 당해 멘탈이 나갔다. 드롭할 뻔했다.",
+    "detail": "작업 내용\n윈도우와 우분투를 오가는 환경 세팅을 마쳤다. 이제야 본작업이 가능할 거 같다.\n\n자유 메모\n급한 PC 부품 구매로 200만원 어치 중고 사기를 당해 멘탈이 나갔다. 드롭할 뻔했다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-7f997fe76151",
+    "date": "2026-03-26",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 우분투가 작업 내용이 날라가는 오류가 있어, 아무리 세팅해도 되지않아, 다시 윈도우로 옮기고 있다.. 자유 메모 거듭 쌓인 스트레스와 피로 때문에 집중력이 낮아진 거 같다. 좀 쉬어야겠다",
+    "detail": "작업 내용\n우분투가 작업 내용이 날라가는 오류가 있어, 아무리 세팅해도 되지않아, 다시 윈도우로 옮기고 있다..\n\n자유 메모\n거듭 쌓인 스트레스와 피로 때문에 집중력이 낮아진 거 같다. 좀 쉬어야겠다",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d92e43894323",
+    "date": "2026-03-27",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (병원 진료)",
+    "detail": "결석 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e4082890f2b0",
+    "date": "2026-03-30",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (병원 진료)",
+    "detail": "결석 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-2a03699a923c",
+    "date": "2026-03-31",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c099c3813586",
+    "date": "2026-04-01",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c94bfa99c5a4",
+    "date": "2026-04-02",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d4bdfecffcd9",
+    "date": "2026-04-03",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0a7eed67a6ad",
+    "date": "2026-04-06",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-bdb7f106edac",
+    "date": "2026-04-07",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c45f7192b6d0",
+    "date": "2026-04-08",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "warning",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (연락 X)",
+    "detail": "결석 (연락 X)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-5f337a35d520",
+    "date": "2026-04-09",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "warning",
+    "title": "기획 김지훈 이탈 면담",
+    "summary": "### 내용 건강상 문제가 있었던 인원으로 최근 건강 악화 및 개인적인 이슈로 등원을 하지 못했다고 합니다. 프로젝트 진행중에 우분투를 세팅하다가 작업이 날아가고, 데스크톱을 맞추다가 중고사기를 당해 경찰서에도 방문했었다고 합니다. 또한 반려견이 남은 시간이 얼마 없어 신경도 쓰는 상황에 본인이 큰 수술을 2건 앞두고…",
+    "detail": "### 내용\n건강상 문제가 있었던 인원으로 최근 건강 악화 및 개인적인 이슈로 등원을 하지 못했다고 합니다.\n프로젝트 진행중에 우분투를 세팅하다가 작업이 날아가고, 데스크톱을 맞추다가 중고사기를 당해 경찰서에도 방문했었다고 합니다.\n또한 반려견이 남은 시간이 얼마 없어 신경도 쓰는 상황에 본인이 큰 수술을 2건 앞두고 있어 병원 방문도 필요한 상황이라고 합니다.\n과정중에도 조퇴하고 병원에 가거나 치료를 미루는 상황이었다고 합니다.\n의사가 누워서 업무를 할 것을 이야기했다고 하여, 누워서 수업에 참여하고 천천히 따라오며 과정에서 얻어갈 수 있는 부분을 찾아보라고 했습니다. 그러나 누워서 캠을 키고 얼굴이 나와야하는 상황은 스스로가 하고 싶지 않다고 합니다.\n\n---",
+    "constructs": [
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "김지훈.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f1f2deed5301",
+    "date": "2026-04-16",
+    "endDate": "",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "warning",
+    "title": "이탈면담",
+    "summary": "### 내용 [기획 4기 김지훈 이탈 면담] @안중재 @양윤석 @김상준 @양현석 @유범모 결론 : 건강 상의 이유와 복합적인 개인사로 인해 최종적으로 과정 이탈(하차)을 결정했습니다. 수강생이 발급받은 '3주 집중 치료 진단서'를 활용해, 관할 부서에 유선 문의하여 수료율 '모수 제외' 신청이 가능한지 확인 후 행정 처…",
+    "detail": "### 내용\n[기획 4기 김지훈 이탈 면담]\n@안중재 @양윤석 @김상준 @양현석 @유범모\n결론 : 건강 상의 이유와 복합적인 개인사로 인해 최종적으로 과정 이탈(하차)을 결정했습니다. 수강생이 발급받은 '3주 집중 치료 진단서'를 활용해, 관할 부서에 유선 문의하여 수료율 '모수 제외' 신청이 가능한지 확인 후 행정 처리할 예정입니다.\n\n[면담내용]\n해당 수강생은 현재 큰 수술을 두 차례 앞두고 있으며, 반려견의 시한부 판정과 중고 사기 피해 등 육체적·심리적으로 감당하기 매우 벅찬 상황에 놓여있음을 확인했습니다.\n\n건강이 악화된 상태에서 캠을 켜고 화면에 얼굴을 비추는 것에 큰 부담을 느끼고 있었습니다. 이에 대해 충분히 공감하며 수강생의 마음의 짐을 덜어주었습니다. 본인의 치료에 전념할수있도록 안내하였고 3주 집중 치료 진단서를 통하여 패널티를 안받을수있는지 문의해주겠다고 안내 완료했습니다.\n\n--",
+    "constructs": [
+      "engagement",
+      "reflection"
+    ],
+    "sourceLabel": "김지훈.md",
+    "isEstimatedDate": false
+  }
+]

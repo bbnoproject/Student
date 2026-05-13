@@ -1,0 +1,11 @@
+body[data-page="student"] .topbar-copy {
+  max-width: 56ch;
+}
+
+body[data-page="student"] .app-root {
+  gap: 18px;
+}
+
+body[data-page="student"] .student-tabs {
+  margin-top: -4px;
+}

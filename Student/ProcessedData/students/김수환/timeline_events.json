@@ -1,0 +1,627 @@
+[
+  {
+    "eventId": "ev-4514d505574a",
+    "date": "2025-10-22",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세요, 저는 2년 정도 게임 QA로 근무하면서 게임의 완성도와 서비스 안정성을 검수하는 일을 해왔습니다. 업무 중에 디자인 업무에도 참여하게 되면서 자연스럽게 게임 시스템 설계나 콘텐츠 구조에 관심이 생기게 되었습니다. 그 경험을 계기로 기획자로 커리어를 전환해보고 싶다는 생각이 들어 이번 부트캠프에 지원…",
+    "detail": "자기소개\n안녕하세요, 저는 2년 정도 게임 QA로 근무하면서 게임의 완성도와 서비스 안정성을 검수하는 일을 해왔습니다. 업무 중에 디자인 업무에도 참여하게 되면서 자연스럽게 게임 시스템 설계나 콘텐츠 구조에 관심이 생기게 되었습니다. 그 경험을 계기로 기획자로 커리어를 전환해보고 싶다는 생각이 들어 이번 부트캠프에 지원하게 되었습니다. AI를 활용한 기획에 대해 배우고, 실제 포트폴리오까지 만들어보면서 제 방향성을 좀 더 구체화하고 싶습니다. 잘 부탁드립니다.\n\n지원 동기\n2년간 게임 QA로 근무하며 개발 전반의 품질 관리와 콘텐츠 구조를 검수하는 과정에서 자연스럽게 기획 업무에 관심을 가지게 되었습니다. 생성형 AI를 활용한 기획 방법을 배우고, 이를 통해 창의적이고 효율적인 게임 기획 역량을 키우기 위해 본 과정에 지원했습니다.\n\n관련 경험\n회사 게임 디자인 업무 진행\n\n희망 분야\n전투 기획자, 콘텐츠 기획자, 시스템 기획자\n\n수료 목표\n수료 후에는 배운 기획 지식과 AI 활용 능력을 바탕으로 실제 게임 개발 현장에서 창의적이고 데이터 기반의 기획자로 성장하는 것이 목표입니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n과거의 실수와 연관지어 자신감 상실\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b91916d22885",
+    "date": "2025-12-07",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "면접 결과",
+    "summary": "합격 / 점수 81",
+    "detail": "펄어비스에서 검은사막 QA (1년3개월) 붉은사막 QA (9개월)을 진행했다고 합니다.\n계약이 10월초에 만료되었고 QA만으로는 취업문이 좁아서 기획도 공부해보려고 한다고 합니다.\n붉은사막 퀘스트 제작을 도와준 경험도 있고 콘텐츠 기획을 희망한다고 합니다.\n게임 경험은 다양하게 있으며 QA경험으로서의 강점이 있습니다.\n과정중 취업활동을 진행할 예정이며 실업급여를 받는 5개월 이전에는 취업하고 싶다고 합니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-b3ef75a1c477",
+    "date": "2025-12-11",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "진로 상담",
+    "summary": "### 내용 이전에 QA를 해왔었고 앞으로도 QA도 함께 준비하려고 하는데, 어떠한 방향으로 준비해야할지 상담이 있었습니다. 이전 기수의 QA가 준비한 케이스를 이야기해주었습니다. (블로그 정리, TC, 프로젝트 경험, 분석서, 역기획서) 콘텐츠 기획도 함께 희망하고 있어 역기획서와 블로그 정리를 제안해주었습니다. 전략…",
+    "detail": "### 내용\n이전에 QA를 해왔었고 앞으로도 QA도 함께 준비하려고 하는데, 어떠한 방향으로 준비해야할지 상담이 있었습니다.\n\n이전 기수의 QA가 준비한 케이스를 이야기해주었습니다. (블로그 정리, TC, 프로젝트 경험, 분석서, 역기획서)\n콘텐츠 기획도 함께 희망하고 있어 역기획서와 블로그 정리를 제안해주었습니다.\n\n전략 제안\n- 콘텐츠 기획 전략 : 역기획서(메인) + TC, 프로젝트 경험(서브) 로 전략\n- QA 전략 : TC, 프로젝트 경험(메인) + 역기획서(서브)\n\n---",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "김수환.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-69bf74542660",
+    "date": "2025-12-23",
+    "endDate": "",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가",
+    "detail": "휴가",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-461b835c5087",
+    "date": "2025-12-29",
+    "endDate": "",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c2191a6663d6",
+    "date": "2026-01-16",
+    "endDate": "",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (면접)",
+    "detail": "결석 (면접)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-de61497a33eb",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.25 자유 메모 오랫만에 다시 프로그래밍을 하려고 하니 머리가 너무 아픕니다.",
+    "detail": "작업 내용\n0.25\n\n자유 메모\n오랫만에 다시 프로그래밍을 하려고 하니 머리가 너무 아픕니다.",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-13786a160dc3",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 팀원 / 함께한 팀원 김시온, 이동우, 이유송, 정재훈",
+    "detail": "팀: 8팀\n역할: 팀원\n팀원: 김시온, 이동우, 이유송, 정재훈",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-091daef7c085",
+    "date": "2026-01-22",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 너무 욕심을 부렸는지 업무 진행도가 조금 느린것 같습니다. ㅜ",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n너무 욕심을 부렸는지 업무 진행도가 조금 느린것 같습니다. ㅜ",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3dc1e45ec722",
+    "date": "2026-01-23",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ##### 1. 수업적응 - 배우는 것도 많고 좋다고 합니다. ##### 2. 목표 - 적성에는 QA가 맞는 것 같다고 합니다. 기획은 만든다는 것이 부담이 있다고 합니다. - 최종적으로는 큰 프로젝트의 리딩을 해보고 싶다고 합니다. ##### 3. 과정에 기대하는 점 - 그동안 일은 많이 했는데 포폴 제작…",
+    "detail": "### 내용\n##### 1. 수업적응\n- 배우는 것도 많고 좋다고 합니다.\n\n##### 2. 목표\n- 적성에는 QA가 맞는 것 같다고 합니다. 기획은 만든다는 것이 부담이 있다고 합니다.\n- 최종적으로는 큰 프로젝트의 리딩을 해보고 싶다고 합니다.\n\n##### 3. 과정에 기대하는 점\n- 그동안 일은 많이 했는데 포폴 제작에 있어서 감을 못잡고 있다고 합니다.\n- 포트폴리오나 설득하는 방법, AI를 활용한 자동화에 대해서 알아갔으면 한다고 합니다.\n\n##### 4. 기타\n- 최근 면접봤는데 QA로서 강점은 어필되었는데 PM을 하고 싶은 이유가 약해서 탈락했다고 합니다.\n- 팀에 영화 PD 하시던분 있어서 시나리오보다 코드쪽 작업을 하고 있다고 합니다.\n- QA 지원은 계속 하고 있고 계약직이라도 되면 가야할지 수료를 해야할지 고민이 되기는 한다고 합니다.\n- 과정에서 얻을 수 있는 동기들과의 관계에 대한 강점과 수료 후 채용연계를 안내해줬습니다.\n\n--",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "김수환.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-cdee053a09a6",
+    "date": "2026-01-23",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 프로젝트 일정이 너무 짧은것 같습니다!",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n프로젝트 일정이 너무 짧은것 같습니다!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b9a69ad539e7",
+    "date": "2026-01-26",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 팀에서 기획한 의도가 초기에 잘못 전달되어 시스템의 구성을 수정해야 했던 경우가 있었습니다. 좀 더 명확하고 상세하게 의도를 전달하는 것이 중요함을 깨달았습니다. 협업에 대하여 작업이 진행되는 내역을 오전/오후 한번씩 회의를 통해서 전달하였고, 그 외에도 필요한 경우 디스코드를 통해 즉각적인 피드백을 서로…",
+    "detail": "기획에 대하여\n팀에서 기획한 의도가 초기에 잘못 전달되어 시스템의 구성을 수정해야 했던 경우가 있었습니다. 좀 더 명확하고 상세하게 의도를 전달하는 것이 중요함을 깨달았습니다.\n\n협업에 대하여\n작업이 진행되는 내역을 오전/오후 한번씩 회의를 통해서 전달하였고, 그 외에도 필요한 경우 디스코드를 통해 즉각적인 피드백을 서로 주고받았습니다.\n\n다음 프로젝트를 위해\n프로젝트를 시작할 때 기술명세를 정확하게 하고 프로젝트의 방향성이 크게 수정되지 않도록 명확하게 진행할 필요를 느꼈습니다.\n\n칭찬합시다\n김시온 팀장님의 프로젝트 리드가 매우 적극적이셔서 프로젝트가 원활하게 진행되었던 것 같습니다. 각 파트별로 부족한 부분에 대한 백업을 진행해주셨고 각 파트의 업무 배분 밑 프로젝트에 대한 구상도 우선하여 제안해주셔서 매우 편하게 프로젝트를 진행할 수 있었습니다.\n\n자유로운 한마디\nMSW를 활용한 비주얼 노벨 코드에 대해 알게되었고, UI 엔티티 구조에 대해 학습할 수 있었습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection"
+    ],
+    "sourceLabel": "1차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-edbf5b558447",
+    "date": "2026-01-28",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (실업급여)",
+    "detail": "지각 (실업급여)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e8db40de5020",
+    "date": "2026-02-03",
+    "endDate": "",
+    "weekIndex": 9,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (개인 사정)",
+    "detail": "휴가 (개인 사정)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f5477b155d9b",
+    "date": "2026-02-06",
+    "endDate": "",
+    "weekIndex": 9,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (면접)",
+    "detail": "공가 (면접)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1baa15e5e0d5",
+    "date": "2026-02-11",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (실업 급여)",
+    "detail": "지각 (실업 급여)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-4e5f789a4739",
+    "date": "2026-02-12",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (개인 사정)",
+    "detail": "조퇴 (개인 사정)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-49b3a1ba1721",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아이템 드랍 시스템 기획서를 제작 및 장비, 타일 드랍과 관련한 의견을 공유하였습니다. 자유 메모 이제 프로젝트가 시작되어 앞으로 열심히 프로젝트를 진행해보겠습니다.",
+    "detail": "작업 내용\n아이템 드랍 시스템 기획서를 제작 및 장비, 타일 드랍과 관련한 의견을 공유하였습니다.\n\n자유 메모\n이제 프로젝트가 시작되어 앞으로 열심히 프로젝트를 진행해보겠습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d0b5cb8a58a8",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "1팀 / 역할 팀원 / 함께한 팀원 이승구, 김경민, 박영성, 유해찬, 한의호",
+    "detail": "팀: 1팀\n역할: 팀원\n팀원: 이승구, 김경민, 박영성, 유해찬, 한의호",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-8d24c1007182",
+    "date": "2026-02-19",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 성장 시스템 기획서 작성 / 레벨 디자인 기획서 작성 (진행중) 자유 메모 점점 프로젝트가 가시화 되어가고 있지만, 그만큼 타협해야 하는 부분도 많아져서 아쉽습니다.",
+    "detail": "작업 내용\n성장 시스템 기획서 작성 / 레벨 디자인 기획서 작성 (진행중)\n\n자유 메모\n점점 프로젝트가 가시화 되어가고 있지만, 그만큼 타협해야 하는 부분도 많아져서 아쉽습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d2962176eb6e",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 레벨디자인 및 몬스터 디자인 완료 자유 메모 게임 스테이지의 진행 방식에 대해 소통이 잘 이루어 지지 못해 다시 의견을 공유하는 시간을 가졌습니다.",
+    "detail": "작업 내용\n레벨디자인 및 몬스터 디자인 완료\n\n자유 메모\n게임 스테이지의 진행 방식에 대해 소통이 잘 이루어 지지 못해 다시 의견을 공유하는 시간을 가졌습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-51a47c5588d1",
+    "date": "2026-02-23",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 메인 타이틀 페이지 생성 자유 메모 점차 게임이 만들어 지고 있어 가시화 되고 있는 것 같습니다.",
+    "detail": "작업 내용\n메인 타이틀 페이지 생성\n\n자유 메모\n점차 게임이 만들어 지고 있어 가시화 되고 있는 것 같습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9918cebea162",
+    "date": "2026-02-24",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (면접)",
+    "detail": "공가 (면접)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-82056048bc51",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 스테이지 3 레벨디자인, 홍보 영상 제작 자유 메모 마지막 날이 되었지만 아쉬운점이 많은 것 같습니다.",
+    "detail": "작업 내용\n스테이지 3 레벨디자인, 홍보 영상 제작\n\n자유 메모\n마지막 날이 되었지만 아쉬운점이 많은 것 같습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f80bc91a094b",
+    "date": "2026-02-27",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 기획서의 내용을 구체적으로 작성하였으나, 내용이 분산되어있어서 해당 기획서를 보고 만들기가 어렵다는 피드백을 받을 수 있었습니다. 협업에 대하여 저의 작업물과 진행 상황을 지속적으로 팀원 분들께 공유하고, 서로의 작업물에 대해 비난이 아닌 비판으로 서로의 장단점을 평가하였습니다. 다음 프로젝트를 위해 프로…",
+    "detail": "기획에 대하여\n기획서의 내용을 구체적으로 작성하였으나, 내용이 분산되어있어서 해당 기획서를 보고 만들기가 어렵다는 피드백을 받을 수 있었습니다.\n\n협업에 대하여\n저의 작업물과 진행 상황을 지속적으로 팀원 분들께 공유하고, 서로의 작업물에 대해 비난이 아닌 비판으로 서로의 장단점을 평가하였습니다.\n\n다음 프로젝트를 위해\n프로젝트에 있어서 기획서를 좀 더 알아보기 편하고 쉽게 개발할 수 있도록 작성하겠습니다.\n\n칭찬합시다\n서로의 역량과 일정 및 프로젝트 진행도를 주기적으로 파악하고, 필요한 경우 일정에 맞추어 프로젝트의 볼륨과 구성을 수정할 수 있었던 대응력이 장점이라고 생각합니다.\n\n팀장 선호도 조사\n4.0\n\n이유\n팀원으로서 2번의 프로젝트를 진행했지만 적극적으로 프로젝트를 리딩해주시는 팀장님들을 보며 나도 한번 해보고싶다는 마음이 생겼습니다.\n\n자유로운 한마디\n우여곡절이 많은 프로젝트였고, 처음의 욕심에 비해 볼륨이 많이 줄어들어 아쉽지만 그만큼 배운것이 많은 프로젝트였습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d1f4b24c3526",
+    "date": "2026-03-04",
+    "endDate": "",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c86df06a9189",
+    "date": "2026-03-05",
+    "endDate": "",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f9232b987b2f",
+    "date": "2026-03-06",
+    "endDate": "",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0666032124e9",
+    "date": "2026-03-09",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-79343c191005",
+    "date": "2026-03-10",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-2b750b8ea056",
+    "date": "2026-03-11",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-888fd4d5bf65",
+    "date": "2026-03-12",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-19a9edcb7e20",
+    "date": "2026-03-13",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1ad4ace39205",
+    "date": "2026-03-16",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 기타",
+    "summary": "이탈",
+    "detail": "이탈",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  }
+]

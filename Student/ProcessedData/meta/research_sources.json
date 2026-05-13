@@ -1,0 +1,165 @@
+[
+  {
+    "id": "zimmerman_2002",
+    "title": "Becoming a Self-Regulated Learner: An Overview",
+    "authors": [
+      "Barry J. Zimmerman"
+    ],
+    "year": 2002,
+    "type": "journal article",
+    "link": "https://doi.org/10.1207/s15430421tip4102_2",
+    "focus": "self-regulated learning",
+    "appliedTo": [
+      "project_checkins",
+      "attendance_events",
+      "evaluation_snapshots"
+    ],
+    "designUse": "출결, 제출 시점, 실행 계획, 자기 점검 기록을 자기조절 학습의 증거 단위로 본다."
+  },
+  {
+    "id": "fredricks_2004",
+    "title": "School Engagement: Potential of the Concept, State of the Evidence",
+    "authors": [
+      "Jennifer A. Fredricks",
+      "Phyllis C. Blumenfeld",
+      "Alison H. Paris"
+    ],
+    "year": 2004,
+    "type": "journal article",
+    "link": "https://doi.org/10.3102/00346543074001059",
+    "focus": "behavioral, emotional, and cognitive engagement",
+    "appliedTo": [
+      "attendance_events",
+      "project_checkins",
+      "counselings"
+    ],
+    "designUse": "출결과 체크인을 단순 빈도 값이 아니라 참여 지속성의 다차원 증거로 정리한다."
+  },
+  {
+    "id": "casel_framework",
+    "title": "What Is the CASEL Framework?",
+    "authors": [
+      "CASEL"
+    ],
+    "type": "official framework",
+    "link": "https://casel.org/fundamentals-of-sel/what-is-the-casel-framework/",
+    "focus": "social and emotional learning",
+    "appliedTo": [
+      "counselings",
+      "project_retrospectives",
+      "student_overviews"
+    ],
+    "designUse": "협업, 관계 형성, 자기관리, 의사결정 관련 서술형 기록을 사회정서학습 증거로 태깅한다."
+  },
+  {
+    "id": "yeager_dweck_2012",
+    "title": "Mindsets That Promote Resilience: When Students Believe That Personal Characteristics Can Be Developed",
+    "authors": [
+      "David S. Yeager",
+      "Carol S. Dweck"
+    ],
+    "year": 2012,
+    "type": "journal article",
+    "link": "https://doi.org/10.1080/00461520.2012.722805",
+    "focus": "resilience and growth mindset",
+    "appliedTo": [
+      "admission",
+      "counselings",
+      "project_retrospectives"
+    ],
+    "designUse": "실패 대응, 스트레스 진술, 회복 시도 기록을 회복탄력성 증거로 분리한다."
+  },
+  {
+    "id": "deci_1991",
+    "title": "Motivation and Education: The Self-Determination Perspective",
+    "authors": [
+      "Edward L. Deci",
+      "Robert J. Vallerand",
+      "Luc G. Pelletier",
+      "Richard M. Ryan"
+    ],
+    "year": 1991,
+    "type": "journal article",
+    "link": "https://www.tandfonline.com/doi/abs/10.1080/00461520.1991.9653137",
+    "focus": "autonomy, competence, relatedness",
+    "appliedTo": [
+      "admission",
+      "counselings",
+      "student_overviews"
+    ],
+    "designUse": "지원 동기, 직무 목표, 선택 이유를 진로 목적성과 학습 동기의 핵심 근거로 본다."
+  },
+  {
+    "id": "boyd_fales_1983",
+    "title": "Reflective Learning: Key to Learning from Experience",
+    "authors": [
+      "Evelyn M. Boyd",
+      "Ann W. Fales"
+    ],
+    "year": 1983,
+    "type": "journal article",
+    "link": "https://doi.org/10.1177/0022167883232011",
+    "focus": "reflective learning",
+    "appliedTo": [
+      "project_retrospectives",
+      "counselings",
+      "evaluation_snapshots"
+    ],
+    "designUse": "회고, 면담, 다음 행동 계획을 성찰 과정의 연속 증거로 저장한다."
+  },
+  {
+    "id": "mislevy_2003",
+    "title": "A Brief Introduction to Evidence-Centered Design",
+    "authors": [
+      "Robert J. Mislevy",
+      "Russell G. Almond",
+      "Janice F. Lukas"
+    ],
+    "year": 2003,
+    "type": "research report",
+    "link": "https://www.ets.org/research/policy_research_reports/publications/report/2003/hsgs.html",
+    "focus": "evidence-centered design",
+    "appliedTo": [
+      "learning_evidence",
+      "validation_report",
+      "timeline_events"
+    ],
+    "designUse": "모든 가공 단위를 주장 대신 증거 단위로 설계하고, 출처와 해석을 분리한다."
+  },
+  {
+    "id": "nicol_macfarlane_dick_2006",
+    "title": "Formative assessment and self-regulated learning: a model and seven principles of good feedback practice",
+    "authors": [
+      "David J. Nicol",
+      "Debra Macfarlane-Dick"
+    ],
+    "year": 2006,
+    "type": "journal article",
+    "link": "https://doi.org/10.1080/03075070600572090",
+    "focus": "formative assessment and feedback",
+    "appliedTo": [
+      "project_checkins",
+      "project_retrospectives",
+      "evaluation_snapshots"
+    ],
+    "designUse": "체크인과 회고를 단순 제출 로그가 아니라 자기조절을 돕는 형성평가 증거로 다룬다."
+  },
+  {
+    "id": "hattie_timperley_2007",
+    "title": "The Power of Feedback",
+    "authors": [
+      "John Hattie",
+      "Helen Timperley"
+    ],
+    "year": 2007,
+    "type": "journal article",
+    "link": "https://doi.org/10.3102/003465430298487",
+    "focus": "feedback and learning",
+    "appliedTo": [
+      "counselings",
+      "project_retrospectives",
+      "student_overviews"
+    ],
+    "designUse": "면담과 회고의 피드백 기록을 학습개선의 핵심 사건으로 표준화한다."
+  }
+]

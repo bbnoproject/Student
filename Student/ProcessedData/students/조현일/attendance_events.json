@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2025-12-11",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-18",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-02",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-09",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-11",
+    "kind": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "category": "absence",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-27",
+    "kind": "조퇴",
+    "detail": "조퇴 (친척 부고)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-24",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  }
+]

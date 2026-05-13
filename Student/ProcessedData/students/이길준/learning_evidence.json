@@ -1,0 +1,326 @@
+[
+  {
+    "evidenceId": "ev-5858f30bcb70",
+    "studentId": "이길준",
+    "date": "2025-11-05",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세요, 미대입시 이후 25살 부터 6년간 의류회사에서 의류 디자인,의류 그래픽개발 및 생산을 담당하였습니다. 미래에는 회사에 종속되기 보다, 현자 '나'라는 사람을 브랜딩하고 무엇을 기획할 것인가? 가 가장 중요할것이라고 판단이 되었고, ai를 이용하여 1인개발 및 창업을 꿈꾸게 되었습니다. 제것을 만들기…",
+    "detail": "자기소개\n안녕하세요, \n미대입시 이후 25살 부터 6년간 의류회사에서 의류 디자인,의류 그래픽개발 및 생산을 담당하였습니다.\n\n미래에는 회사에 종속되기 보다, 현자 '나'라는 사람을 브랜딩하고 무엇을 기획할 것인가? 가 가장 중요할것이라고 판단이 되었고, ai를 이용하여 1인개발 및 창업을 꿈꾸게 되었습니다.\n제것을 만들기 이전에 회사에서 체계적인 실무를 쌓고싶어 지원하였습니다.\n\n바이브코딩으로 초등학생들도 미니게임을 만들고 있다고하여 많은 관심이 생겼고,\n어렸을때부터 즐겨하던 게임의 장점들을 취합하여 출시해보고, 유저들의 반응을 살피며\n아침에 일어났을때 '오늘도 시작이구나'가 아닌 '빨리가서 개발하고 싶다' 로 시작하는 하루가 되었으면 하는 바램입니다.\n\n감사합니다.\n\n지원 동기\n카이스트에서 뇌과학과 인공지능을 연구하고 계신 김대식 교수님을 유튜브 영상으로 접하게 되었습니다. AI시대에는 인간의 역할이 꼭 필요했으나, 멀지않은 시대에 AGI (인공지는 스스로 업그레이드하는) 시대가 온다고 하여, 과감하게 상향산업에 도전하고 싶다는 생각이 들었습니다.\n\n이제는 도구들이 너무 잘 개발되어있어, 무엇을 만들것이냐에 초점을 두고 움직이고 싶게 되었고,\n어려서부터 꿈꿧지만 코딩이 어려워 하지못했던 게임개발을 도전해 볼 수 있겠구나. 라는 생각이 들게 되었습니다.\n\n아주 어릴적, 레드문 / 스톤에이지 등 너무나 재밌게 했던 게임들이 있는데,\n요것들을 저의 색감에 맞게 만들어 보고 싶습니다.\n\n꼭 AI를 다루지 않더라도, 나만의 색이 담긴 개발을 하고싶습니다.\n그러기위해선 기초적인 배경지식이 필요할것이고, 꼭 배워보고 싶습니다.\n\n관련 경험\n아니오, 게임개발 관련은 없었고, 3D 모델링에 관심이 있어 지금 강의를 듣는 중입니다.\n\n희망 분야\n3D 모델러 / 게임 기획자 / 클라이언트 개발자\n\n수료 목표\n유니티 엔진에 대한 이해도와 나의 생각을 표현해 낼 수 있는 능력,\n내가 모델링한 것을 실제 게임에 적응시키는 능력을 만들고 싶습니다.\n\n초반엔 너무 거대한 프로젝트를 만들기보다, 미니게임부터 만들어서, 0원이던 소액이던 조금이라도 나의 게임에 관심을 가져주는 유저들을 모아보고싶습니다.\n바로 눈앞에 보이는것들 하나하나 과정을 겪으면서, 서비스를 경험해보고 싶습니다.\n\n1인 창작자로서의 능력이 만들어졌으면 좋겠습니다!\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-81fad660f971",
+    "studentId": "이길준",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 75",
+    "detail": "재미나 즐거움을 주는 일을 좋아하여 기획자를 목표했다고 합니다.\n미술을 전공하였고 의류회사에서 디자인 업무를 진행한 이력이 있다고 합니다.\n바이브 코딩으로 미니게임정도는 만들어본 경험이 있다고 합니다.\n게임 경험은 다양하지 않아보이나 과정에 큰 문제는 없을 것으로 판단됩니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-97470cd5810c",
+    "studentId": "이길준",
+    "date": "2025-12-08",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-fd757cd87cbb",
+    "studentId": "이길준",
+    "date": "2025-12-23",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석(연락 안됨)",
+    "detail": "결석(연락 안됨)",
+    "severity": "warning",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-72236984eb08",
+    "studentId": "이길준",
+    "date": "2026-01-02",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-7202548c55d1",
+    "studentId": "이길준",
+    "date": "2026-01-05",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각",
+    "detail": "지각",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-090a01b4717c",
+    "studentId": "이길준",
+    "date": "2026-01-13",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (건강 이슈)",
+    "detail": "결석 (건강 이슈)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-d2afa82fafeb",
+    "studentId": "이길준",
+    "date": "2026-01-14",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석 (이탈 희망)",
+    "detail": "결석 (이탈 희망)",
+    "severity": "warning",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-594504a79e1b",
+    "studentId": "이길준",
+    "date": "2026-01-15",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-7b330dcf7697",
+    "studentId": "이길준",
+    "date": "2026-01-16",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-f262b2514cd6",
+    "studentId": "이길준",
+    "date": "2026-01-16",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "이길준 이탈 면담",
+    "summary": "### 내용 면담자 : 진유록 운영매니저 결과 : 다음주 수요일(1/21)까지 고민해보고 잔류여부 확정 하겠다고 마무리했습니다. [면담내용] 본인의 전공인 패션디자인을 살려 현재 2D 그래픽 외주를 하고 있으나 3D 모델링으로 전향을 희망하고 있어 한곳에 집중을 하기위해 이탈을 희망하였습니다. 커리큘럼특성상 7~8개월간…",
+    "detail": "### 내용\n면담자 : 진유록 운영매니저\n결과 : 다음주 수요일(1/21)까지 고민해보고 잔류여부 확정 하겠다고 마무리했습니다.\n\n[면담내용]\n본인의 전공인 패션디자인을 살려 현재 2D 그래픽 외주를 하고 있으나 3D 모델링으로 전향을 희망하고 있어 한곳에 집중을 하기위해 이탈을 희망하였습니다. 커리큘럼특성상 7~8개월간 다대다로 공부를 해야하며 다양한 기획에 대해 배우기보단 본인의 전문성을 강화해서 나아가고싶다는 의견이였습니다. 본인 스스로가 멀티태스킹이 안되는 성향이라 기획공부와 모델링 공부를 병행하면 팀원들에게 민폐를 끼칠 것이라는 우려가 있었습니다. 최종적인 목표는 본인은 일본기업에 취업을 목표로 하고있어 일본 취업 시장에 대해서도 이야기를 나누었습니다.\n\n[조치내용]\n일본은 단순 기술자보단 기획과 아트 엔진을 아우르는 종합적인 사람과 커뮤니케이션을 많이 보는 시장임을 안내했으며 단순 모델러가 아닌 콘텐츠 기획자 혹은 아트디렉터 쪽의 비전을 제시했습니다. 2D/3D 능력에 기획능력이 더해지면 대체 불가능한 인재라며 인식시켜줬고 팀원에게 민폐라는 생각은 팀프로젝트에서 아트부분을 가져가면 에셋을 뒤져가면서 퀄리티가 떨어지는것을 방지할수있는 최종적으로 퀄리티를 높혀주는 좋은 역할임을 강조했습니다.\n또한 집중도에 걱정하는 점은 기획에 100점을 다 맞아야한다 보다는 본인의 취업설계를 위해 과정에서 얻어가는 것들에 대해 정립하면서 나를 팔아보는 경험을 알아가는 과정으로 생각하라고 했습니다.\n이에 따라 본인도 고민이 더 많아졌는지 조금 생각할 시간이 필요하다고 하여 결석을 하더라도 수요일까지 조금 더 고민을 해보고 저에게 재상담 요청 하겠다고 마무리 하였습니다.\n\n---",
+    "severity": "warning",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이길준.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-f5dd4ef26783",
+    "studentId": "이길준",
+    "date": "2026-01-19",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-a6fcaa4c58e4",
+    "studentId": "이길준",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-79c7c1298d15",
+    "studentId": "이길준",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 기타",
+    "summary": "이탈",
+    "detail": "이탈",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-fca355dcba47",
+    "studentId": "이길준",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "reflection"
+    ],
+    "title": "[기획 4기 이길준 이탈 공유]",
+    "summary": "### 내용 [기획 4기 이길준 이탈 공유] @안중재 @양윤석 @김상준 @유범모 @양현석 일시 : 1월 21일(수) [면담 내용] 패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망하여서 기획 과정을 병행하기보다는 아트/모델링 전문성을 강화하여 본인만의 생존 전략을 구축하기로 최종 결…",
+    "detail": "### 내용\n[기획 4기 이길준 이탈 공유]\n@안중재 @양윤석 @김상준 @유범모 @양현석\n일시 : 1월 21일(수)\n\n[면담 내용]\n패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망하여서 기획 과정을 병행하기보다는 아트/모델링 전문성을 강화하여 본인만의 생존 전략을 구축하기로 최종 결정하였습니다.\n\n[조치사항]\n지난 16일 면담 시 '일본 시장은 기술자보다 종합적 커뮤니케이션 능력을 갖춘 AD를 선호한다'는 점을 강조하며 설득하였지만 조언은 감사하다고 표했지만 과정 잔류보다는 개별적인 역량 강화를 선택하여 1/21(수) 이탈 의사를 밝힘\n이에 따라 양현석 차장님께 보고 완료하여 금일 중도포기 서류와 장비반납에대해 안내 예정입니다.\n\n--",
+    "severity": "warning",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이길준.md",
+      "isEstimatedDate": false
+    }
+  }
+]

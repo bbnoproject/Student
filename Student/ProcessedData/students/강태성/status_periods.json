@@ -1,0 +1,34 @@
+[
+  {
+    "statusPeriodId": "강태성-status-1",
+    "startDate": "2026-01-19",
+    "endDate": "2026-01-25",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  },
+  {
+    "statusPeriodId": "강태성-status-2",
+    "startDate": "2026-02-23",
+    "endDate": "2026-03-01",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  },
+  {
+    "statusPeriodId": "강태성-status-3",
+    "startDate": "2026-03-16",
+    "endDate": "2026-03-22",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  },
+  {
+    "statusPeriodId": "강태성-status-4",
+    "startDate": "2026-03-30",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  }
+]

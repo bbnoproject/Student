@@ -1,0 +1,14 @@
+{
+  "studentId": "김수환",
+  "name": "김수환",
+  "phone": "010-2570-2489",
+  "gender": "남",
+  "birthDate": "1993-08-10",
+  "education": "한국외국어대학교 사회과학전공",
+  "experience": "QA 2년",
+  "address": "경기도 안양시 동안구 동안로159번길 14 (비산동, 은하수한양아파트) 503동 208호",
+  "specialNote": "취업",
+  "attendanceMemo": "",
+  "cohort": "기획4기",
+  "course": "게임 기획 부트캠프"
+}

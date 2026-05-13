@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "이형진-status-1",
+    "startDate": "2026-03-30",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  }
+]

@@ -1,0 +1,385 @@
+[
+  {
+    "evidenceId": "ev-3dec2444dd1d",
+    "studentId": "한가영",
+    "date": "2025-10-21",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 비전공자로 초보지만 하는데까지 열심히 해보겠습니다. 게임기획자를 꿈꾸는데 꼭 취업까지 성공하고싶습니다. 지원 동기 게임기획자가 되고싶어서요 열심히 참여를 하여 좋은 게임 만들어서 제 가족들 먹여살리고 싶습니다. 열심히 하여 실질적은 결과를 만들어 내고 싶습니다. 꿈을 꾸었지만, 꿈꾸기만 하지않고 실제로 이뤄보고…",
+    "detail": "자기소개\n비전공자로 초보지만 하는데까지 열심히 해보겠습니다.\n게임기획자를 꿈꾸는데 꼭 취업까지 성공하고싶습니다.\n\n지원 동기\n게임기획자가 되고싶어서요 열심히 참여를 하여 좋은 게임 만들어서 \n제 가족들 먹여살리고 싶습니다. 열심히 하여 실질적은 결과를 만들어 내고 싶습니다.\n꿈을 꾸었지만, 꿈꾸기만 하지않고 실제로 이뤄보고싶습니다!\n\n관련 경험\n서울디지털대학교 AI소프트웨어공학과\n\n희망 분야\n게임기획자,게임개발자\n\n수료 목표\n게임 개발자 또는 기획자가 되어서 좋은 게임을 만들고싶습니다\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n상황에 대한 이해와 위로",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-5c3438f15872",
+    "studentId": "한가영",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "resilience"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 66",
+    "detail": "스타듀벨리 개발자 글을 보고 게임을 만들고 싶다는 도전을 하게 되었다고 합니다.\nPC게임 위주로 플레이해보았으며, 오래전에 플레이해본 게임(바람의나라, 카트라이더, POE1 등)이후로 많이 플레이한 게임은 없었다고 합니다.\n한부모 가정으로 딸 아이가 있으나, 부모님이 봐주고 계서서 과정에 문제는 없을 것이라고 합니다.\n스스로 할 수 있고 도전해보고 싶다고 하여, 다양한 게임 플레이로 경험을 쌓고 남들보다 2~3배 이상은 노력해야 할 것을 이야기해주었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-a1803d0dda59",
+    "studentId": "한가영",
+    "date": "2025-12-10",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-9063f36a32f0",
+    "studentId": "한가영",
+    "date": "2025-12-11",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-53a7a5db4d21",
+    "studentId": "한가영",
+    "date": "2025-12-12",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 외출",
+    "summary": "외출",
+    "detail": "외출",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-975bf3151ea9",
+    "studentId": "한가영",
+    "date": "2025-12-17",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 결석",
+    "summary": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-bbbbf24df6e6",
+    "studentId": "한가영",
+    "date": "2025-12-18",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-34ce39fd27f3",
+    "studentId": "한가영",
+    "date": "2025-12-22",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (컨디션)",
+    "detail": "지각 (컨디션)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-78f6b5c12f0a",
+    "studentId": "한가영",
+    "date": "2025-12-26",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-75bb2eb05f6d",
+    "studentId": "한가영",
+    "date": "2025-12-30",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각",
+    "detail": "지각",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-3ea3f2316776",
+    "studentId": "한가영",
+    "date": "2025-12-31",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-96103633a954",
+    "studentId": "한가영",
+    "date": "2026-01-02",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-0ffcfc6863af",
+    "studentId": "한가영",
+    "date": "2026-01-05",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-1482cfe8e4f6",
+    "studentId": "한가영",
+    "date": "2026-01-05",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "reflection",
+      "resilience"
+    ],
+    "title": "제적경고를 위한 면담",
+    "summary": "### 내용 해당 인원은 반복적인 사생활 유포,부적절한 언행,성희롱 소지 발언등으로 현재 행동이 명백한 제적 사유임을 고지하였습니다. 이에 따라 서면으로 [제적 경고문]을 작성하였고 본인 서명을 통해 위반 사실을 인정하고 재발 시 즉시 제적됨을 확인받았습니다. 향후 강사진 및 매니저 등 운영진 전원이 해당 훈련생의 발언…",
+    "detail": "### 내용\n해당 인원은 반복적인 사생활 유포,부적절한 언행,성희롱 소지 발언등으로 현재 행동이 명백한 제적 사유임을 고지하였습니다. 이에 따라 서면으로 [제적 경고문]을 작성하였고 본인 서명을 통해 위반 사실을 인정하고 재발 시 즉시 제적됨을 확인받았습니다.\n향후 강사진 및 매니저 등 운영진 전원이 해당 훈련생의 발언 예의 주시 할 예정이며 유사한 문제 행동 적발 시 별도 면담없이 즉시 제적 예정입니다.\nhttps://docs.google.com/spreadsheets/d/1XBOyd8gfV3WyFrPOLkU-v3flMrBdRyaXDmqsZB66NHM/edit?gid=0#gid=0\n\n--",
+    "severity": "warning",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/한가영.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-e4a03bff052a",
+    "studentId": "한가영",
+    "date": "2026-01-06",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-f4172139732e",
+    "studentId": "한가영",
+    "date": "2026-01-07",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각",
+    "detail": "지각",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-a52478d1704c",
+    "studentId": "한가영",
+    "date": "2026-01-08",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (치과 진료)",
+    "detail": "조퇴 (치과 진료)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-0d7932cf7786",
+    "studentId": "한가영",
+    "date": "2026-01-09",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 기타",
+    "summary": "제적",
+    "detail": "제적",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  }
+]

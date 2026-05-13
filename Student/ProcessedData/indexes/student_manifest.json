@@ -1,0 +1,407 @@
+[
+  {
+    "studentId": "강유민",
+    "name": "강유민",
+    "directory": "students/강유민"
+  },
+  {
+    "studentId": "강태성",
+    "name": "강태성",
+    "directory": "students/강태성"
+  },
+  {
+    "studentId": "고승주",
+    "name": "고승주",
+    "directory": "students/고승주"
+  },
+  {
+    "studentId": "곽용준",
+    "name": "곽용준",
+    "directory": "students/곽용준"
+  },
+  {
+    "studentId": "권수빈",
+    "name": "권수빈",
+    "directory": "students/권수빈"
+  },
+  {
+    "studentId": "권현민",
+    "name": "권현민",
+    "directory": "students/권현민"
+  },
+  {
+    "studentId": "김경민",
+    "name": "김경민",
+    "directory": "students/김경민"
+  },
+  {
+    "studentId": "김민수",
+    "name": "김민수",
+    "directory": "students/김민수"
+  },
+  {
+    "studentId": "김민제",
+    "name": "김민제",
+    "directory": "students/김민제"
+  },
+  {
+    "studentId": "김범진",
+    "name": "김범진",
+    "directory": "students/김범진"
+  },
+  {
+    "studentId": "김서현",
+    "name": "김서현",
+    "directory": "students/김서현"
+  },
+  {
+    "studentId": "김수환",
+    "name": "김수환",
+    "directory": "students/김수환"
+  },
+  {
+    "studentId": "김시온",
+    "name": "김시온",
+    "directory": "students/김시온"
+  },
+  {
+    "studentId": "김영도",
+    "name": "김영도",
+    "directory": "students/김영도"
+  },
+  {
+    "studentId": "김윤규",
+    "name": "김윤규",
+    "directory": "students/김윤규"
+  },
+  {
+    "studentId": "김재환",
+    "name": "김재환",
+    "directory": "students/김재환"
+  },
+  {
+    "studentId": "김지훈",
+    "name": "김지훈",
+    "directory": "students/김지훈"
+  },
+  {
+    "studentId": "김태환",
+    "name": "김태환",
+    "directory": "students/김태환"
+  },
+  {
+    "studentId": "김태훈",
+    "name": "김태훈",
+    "directory": "students/김태훈"
+  },
+  {
+    "studentId": "김현우a",
+    "name": "김현우A",
+    "directory": "students/김현우a"
+  },
+  {
+    "studentId": "김현우b",
+    "name": "김현우B",
+    "directory": "students/김현우b"
+  },
+  {
+    "studentId": "김흥규",
+    "name": "김흥규",
+    "directory": "students/김흥규"
+  },
+  {
+    "studentId": "맹지훈",
+    "name": "맹지훈",
+    "directory": "students/맹지훈"
+  },
+  {
+    "studentId": "박기은",
+    "name": "박기은",
+    "directory": "students/박기은"
+  },
+  {
+    "studentId": "박민규",
+    "name": "박민규",
+    "directory": "students/박민규"
+  },
+  {
+    "studentId": "박영성",
+    "name": "박영성",
+    "directory": "students/박영성"
+  },
+  {
+    "studentId": "박원우",
+    "name": "박원우",
+    "directory": "students/박원우"
+  },
+  {
+    "studentId": "박현수",
+    "name": "박현수",
+    "directory": "students/박현수"
+  },
+  {
+    "studentId": "배주빈",
+    "name": "배주빈",
+    "directory": "students/배주빈"
+  },
+  {
+    "studentId": "서진호",
+    "name": "서진호",
+    "directory": "students/서진호"
+  },
+  {
+    "studentId": "손호진",
+    "name": "손호진",
+    "directory": "students/손호진"
+  },
+  {
+    "studentId": "송아영",
+    "name": "송아영",
+    "directory": "students/송아영"
+  },
+  {
+    "studentId": "승정하",
+    "name": "승정하",
+    "directory": "students/승정하"
+  },
+  {
+    "studentId": "신석균",
+    "name": "신석균",
+    "directory": "students/신석균"
+  },
+  {
+    "studentId": "안성진",
+    "name": "안성진",
+    "directory": "students/안성진"
+  },
+  {
+    "studentId": "예인해",
+    "name": "예인해",
+    "directory": "students/예인해"
+  },
+  {
+    "studentId": "오동건",
+    "name": "오동건",
+    "directory": "students/오동건"
+  },
+  {
+    "studentId": "오종호",
+    "name": "오종호",
+    "directory": "students/오종호"
+  },
+  {
+    "studentId": "우현승",
+    "name": "우현승",
+    "directory": "students/우현승"
+  },
+  {
+    "studentId": "유해찬",
+    "name": "유해찬",
+    "directory": "students/유해찬"
+  },
+  {
+    "studentId": "윤동현",
+    "name": "윤동현",
+    "directory": "students/윤동현"
+  },
+  {
+    "studentId": "윤유나",
+    "name": "윤유나",
+    "directory": "students/윤유나"
+  },
+  {
+    "studentId": "이가현",
+    "name": "이가현",
+    "directory": "students/이가현"
+  },
+  {
+    "studentId": "이균호",
+    "name": "이균호",
+    "directory": "students/이균호"
+  },
+  {
+    "studentId": "이길준",
+    "name": "이길준",
+    "directory": "students/이길준"
+  },
+  {
+    "studentId": "이도건",
+    "name": "이도건",
+    "directory": "students/이도건"
+  },
+  {
+    "studentId": "이도민",
+    "name": "이도민",
+    "directory": "students/이도민"
+  },
+  {
+    "studentId": "이동우",
+    "name": "이동우",
+    "directory": "students/이동우"
+  },
+  {
+    "studentId": "이동현",
+    "name": "이동현",
+    "directory": "students/이동현"
+  },
+  {
+    "studentId": "이석훈",
+    "name": "이석훈",
+    "directory": "students/이석훈"
+  },
+  {
+    "studentId": "이승구",
+    "name": "이승구",
+    "directory": "students/이승구"
+  },
+  {
+    "studentId": "이승진",
+    "name": "이승진",
+    "directory": "students/이승진"
+  },
+  {
+    "studentId": "이영우",
+    "name": "이영우",
+    "directory": "students/이영우"
+  },
+  {
+    "studentId": "이원홍",
+    "name": "이원홍",
+    "directory": "students/이원홍"
+  },
+  {
+    "studentId": "이유송",
+    "name": "이유송",
+    "directory": "students/이유송"
+  },
+  {
+    "studentId": "이정헌",
+    "name": "이정헌",
+    "directory": "students/이정헌"
+  },
+  {
+    "studentId": "이준혁",
+    "name": "이준혁",
+    "directory": "students/이준혁"
+  },
+  {
+    "studentId": "이찬규",
+    "name": "이찬규",
+    "directory": "students/이찬규"
+  },
+  {
+    "studentId": "이탈자",
+    "name": "이탈자",
+    "directory": "students/이탈자"
+  },
+  {
+    "studentId": "이형진",
+    "name": "이형진",
+    "directory": "students/이형진"
+  },
+  {
+    "studentId": "임동균",
+    "name": "임동균",
+    "directory": "students/임동균"
+  },
+  {
+    "studentId": "임소영",
+    "name": "임소영",
+    "directory": "students/임소영"
+  },
+  {
+    "studentId": "장근혁",
+    "name": "장근혁",
+    "directory": "students/장근혁"
+  },
+  {
+    "studentId": "장윤우",
+    "name": "장윤우",
+    "directory": "students/장윤우"
+  },
+  {
+    "studentId": "장호윤",
+    "name": "장호윤",
+    "directory": "students/장호윤"
+  },
+  {
+    "studentId": "정석현",
+    "name": "정석현",
+    "directory": "students/정석현"
+  },
+  {
+    "studentId": "정수진",
+    "name": "정수진",
+    "directory": "students/정수진"
+  },
+  {
+    "studentId": "정우경",
+    "name": "정우경",
+    "directory": "students/정우경"
+  },
+  {
+    "studentId": "정재용",
+    "name": "정재용",
+    "directory": "students/정재용"
+  },
+  {
+    "studentId": "정재훈",
+    "name": "정재훈",
+    "directory": "students/정재훈"
+  },
+  {
+    "studentId": "조준현",
+    "name": "조준현",
+    "directory": "students/조준현"
+  },
+  {
+    "studentId": "조현일",
+    "name": "조현일",
+    "directory": "students/조현일"
+  },
+  {
+    "studentId": "주재형",
+    "name": "주재형",
+    "directory": "students/주재형"
+  },
+  {
+    "studentId": "채지형",
+    "name": "채지형",
+    "directory": "students/채지형"
+  },
+  {
+    "studentId": "천영현",
+    "name": "천영현",
+    "directory": "students/천영현"
+  },
+  {
+    "studentId": "최선동",
+    "name": "최선동",
+    "directory": "students/최선동"
+  },
+  {
+    "studentId": "한가영",
+    "name": "한가영",
+    "directory": "students/한가영"
+  },
+  {
+    "studentId": "한의호",
+    "name": "한의호",
+    "directory": "students/한의호"
+  },
+  {
+    "studentId": "한재환",
+    "name": "한재환",
+    "directory": "students/한재환"
+  },
+  {
+    "studentId": "한지우",
+    "name": "한지우",
+    "directory": "students/한지우"
+  },
+  {
+    "studentId": "홍태광",
+    "name": "홍태광",
+    "directory": "students/홍태광"
+  }
+]

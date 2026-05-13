@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-01-15",
+    "kind": "결석",
+    "detail": "결석 (건강 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-06",
+    "kind": "지각",
+    "detail": "지각 (연락 X)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-02",
+    "kind": "외출",
+    "detail": "외출 (자리 비움)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-10",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-14",
+    "kind": "결석",
+    "detail": "결석 (이탈 예정)",
+    "severity": "warning",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-15",
+    "kind": "휴가",
+    "detail": "휴가 (이탈고민)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-16",
+    "kind": "휴가",
+    "detail": "휴가 (이탈고민)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "휴가",
+    "detail": "휴가 (이탈고민)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-30",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  }
+]

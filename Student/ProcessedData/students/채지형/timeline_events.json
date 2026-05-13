@@ -1,0 +1,889 @@
+[
+  {
+    "eventId": "ev-8ce5145f2ae9",
+    "date": "2025-10-16",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세여 게임기획자가 되고 싶은 채지형입니다. 전공으로 코딩을 했지만 예전부터 꿈은 기획자에 가까웠기 때문에 기획자에 대해 공부하고 되고 싶어 신청하게 되었습니다. 감사합니다. 지원 동기 게임 개발 전공학과를 나와 기획에 대해서는 얕게 알려주시거나 거의 없었던 것으로 잘 안다뤘던 것 같습니다. 제가 원하는 분…",
+    "detail": "자기소개\n안녕하세여 게임기획자가 되고 싶은 채지형입니다. 전공으로 코딩을 했지만 예전부터 꿈은 기획자에 가까웠기 때문에 기획자에 대해 공부하고 되고 싶어 신청하게 되었습니다. 감사합니다.\n\n지원 동기\n게임 개발 전공학과를 나와 기획에 대해서는 얕게 알려주시거나 거의 없었던 것으로 잘 안다뤘던 것 같습니다. 제가 원하는 분야는 기획에 관한 분야였어서 이번 과정에 신청하게 되었습니다.\n\n관련 경험\n게임 소프트웨어전공을 해서 코딩, 유니티, 언리얼(조금),directX(조금) 경험이 있습니다.\n\n희망 분야\n시스템기획자, 콘텐츠기획자, 레벨기획자, 전투,시나리오기획자\n\n수료 목표\n취업에 성공해 기업의 mmorpg기획에 참여하고 싶습니다.\n\n갈등 대응\n분노나 감정을 억누르고 침착함을 유지\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9566784235a9",
+    "date": "2025-12-07",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "면접 결과",
+    "summary": "합격 / 점수 67",
+    "detail": "소프트웨어 학 졸업예정생입니다.\n기획 배우고 싶은데 마땅히 못찾아서 개발 배우면 뭐라도 알려주겠지 하면서 시작했다고 합니다.\n성실하진 않지만 의사소통에 문제는 없습니다.\n요즘하는게임은 배그,로아 게임은 다양하게 하려고 노력하는편 모바일은 하지 않습니다.\n게임 기획자가 되고싶었던 게임이 블소이며 가고싶은 회사는 시프트업이라고 합니다.(롤모델 김형태)\n전형적인 노베이스 인원이라 과정 진행중 잘 주입하면 되지않을까 생각됩니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-bf869bc02af9",
+    "date": "2025-12-10",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-cef0811b18c9",
+    "date": "2025-12-30",
+    "endDate": "",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-4c09baa3ef2b",
+    "date": "2026-01-07",
+    "endDate": "",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e1744bd8d0c4",
+    "date": "2026-01-14",
+    "endDate": "",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (물리치료)",
+    "detail": "조퇴 (물리치료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d55e0aae973b",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.25 자유 메모 검열이슈로 배경을 바꾸게 되었습니다.",
+    "detail": "작업 내용\n0.25\n\n자유 메모\n검열이슈로 배경을 바꾸게 되었습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-552cd0db7614",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "9팀 / 역할 팀원 / 함께한 팀원 이가현, 이동현, 주재형, 배주빈",
+    "detail": "팀: 9팀\n역할: 팀원\n팀원: 이가현, 이동현, 주재형, 배주빈",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-638292d06238",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 이슈 없고 개인이 할 것 열심히 잘 하는 것 같습니다. 저만 잘하면 될거같아요",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n이슈 없고 개인이 할 것 열심히 잘 하는 것 같습니다. 저만 잘하면 될거같아요",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-668d19c63bd6",
+    "date": "2026-01-22",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 화이팅",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n화이팅",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-313e42ee90e0",
+    "date": "2026-01-23",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.998 자유 메모 고생하셨습니다.",
+    "detail": "작업 내용\n0.998\n\n자유 메모\n고생하셨습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3e0c144ff507",
+    "date": "2026-01-26",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 팀에서 의도한 바가 잘 나왔고 기획서의 내용이 부족했던 부분은 추가하여 전달했습니다. 협업에 대하여 네 다음 프로젝트를 위해 소통은 좋았지만 진행상황을 좀 더 구체적으로 공유할 필요성을 느꼈습니다. 칭찬합시다 팀원들간의 의견수립을 잘했고, 정해진 플레이타임에 맞게 잘한거같습니다. 자유로운 한마디 본인 일이…",
+    "detail": "기획에 대하여\n팀에서 의도한 바가 잘 나왔고 기획서의 내용이 부족했던 부분은 추가하여 전달했습니다.\n\n협업에 대하여\n네\n\n다음 프로젝트를 위해\n소통은 좋았지만 진행상황을 좀 더 구체적으로 공유할 필요성을 느꼈습니다.\n\n칭찬합시다\n팀원들간의 의견수립을 잘했고, 정해진 플레이타임에 맞게 잘한거같습니다.\n\n자유로운 한마디\n본인 일이 끝나면 자발적으로 다같이 붙어 도와주는게 인상깊었습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection"
+    ],
+    "sourceLabel": "1차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-82258d10786d",
+    "date": "2026-02-04",
+    "endDate": "",
+    "weekIndex": 9,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병원 진료)",
+    "detail": "조퇴 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-82bf61f46142",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터, 스테이지, 적관련 레벨, 벨런스 데이터 테이블 작성? mlua 만져보기(오류만뜨고 연동안됨) 자유 메모 너무 어렵습니다.",
+    "detail": "작업 내용\n캐릭터, 스테이지, 적관련 레벨, 벨런스 데이터 테이블 작성? mlua 만져보기(오류만뜨고 연동안됨)\n\n자유 메모\n너무 어렵습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8c6f76a62bc3",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "7팀 / 역할 팀원 / 함께한 팀원 김영도, 권수빈, 김현우, 박원우, 송아영",
+    "detail": "팀: 7팀\n역할: 팀원\n팀원: 김영도, 권수빈, 김현우, 박원우, 송아영",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-2b774f8d7b67",
+    "date": "2026-02-19",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 스테이지 레벨디자인 및 평면도 작성, 전투및 레벨 기획서 작성, 전투 및 레벨 데이터 테이블, 팀원과 의사소통? 자유 메모 팀원 간에 좀 더 활발한 소통, 정리된 데이터",
+    "detail": "작업 내용\n스테이지 레벨디자인 및 평면도 작성, 전투및 레벨 기획서 작성, 전투 및 레벨 데이터 테이블, 팀원과 의사소통?\n\n자유 메모\n팀원 간에 좀 더 활발한 소통, 정리된 데이터",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ce0f2943fa3f",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아트 레퍼런스 생성, 플레이어, 적 스킬 디자인 자유 메모 뭔가 뒤죽박죽 우당탕탕 시작이지만 어떻게든 다 진행되네요",
+    "detail": "작업 내용\n아트 레퍼런스 생성, 플레이어, 적 스킬 디자인\n\n자유 메모\n뭔가 뒤죽박죽 우당탕탕 시작이지만 어떻게든 다 진행되네요",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-5dcfac28d274",
+    "date": "2026-02-23",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 기획쪽 얼추 된 것 같아서 데모버전이 먼저인 것같아, 코딩팀에 붙어 안티그래비티를 활용하여 도움 제공 자유 메모 안티그래비티 활용 실력이 늘은 것 같아요",
+    "detail": "작업 내용\n기획쪽 얼추 된 것 같아서 데모버전이 먼저인 것같아, 코딩팀에 붙어 안티그래비티를 활용하여 도움 제공\n\n자유 메모\n안티그래비티 활용 실력이 늘은 것 같아요",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-15fa9f1b1bbf",
+    "date": "2026-02-24",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터와 적대적 몹 스킬 확장 (보스 스킬, 강공격, 플레이어 스킬 등)시도 했지만 오류로 아직 미구현 자유 메모 ai를 사용해서 코딩을 했지만 항상 확장성을 염두해두고 해야 할 것 같습니다.. 전에는 괜찮았는데 추가하려니까 오류가 생기면서 하나둘씩 꼬이기 시작하네요 다행히 됐었던 전 버전은 깃헙에 올려놨었는…",
+    "detail": "작업 내용\n캐릭터와 적대적 몹 스킬 확장 (보스 스킬, 강공격, 플레이어 스킬 등)시도 했지만 오류로 아직 미구현\n\n자유 메모\nai를 사용해서 코딩을 했지만 항상 확장성을 염두해두고 해야 할 것 같습니다.. 전에는 괜찮았는데 추가하려니까 오류가 생기면서 하나둘씩 꼬이기 시작하네요 다행히 됐었던 전 버전은 깃헙에 올려놨었는데, 계속 오류가 나는게 어렵네요",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0936e65efec8",
+    "date": "2026-02-25",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-fd8bcf28e569",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ##### 1. 수업적응 - 만족 ##### 2. 목표 - 대학교는 졸업작품만 내면 되는 상황 - 밸런싱을 목표하고 있었고 BM도 관심이 있긴 하다고 합니다. ##### 3. 과정에 기대하는 점 - 밸런스도 배워보고 싶다고 하여, 과정에는 밸런스 교과목이 없으나 궁금한 부분이 있으면 알려주겠다고 했습니다.…",
+    "detail": "### 내용\n##### 1. 수업적응\n- 만족\n\n##### 2. 목표\n- 대학교는 졸업작품만 내면 되는 상황\n- 밸런싱을 목표하고 있었고 BM도 관심이 있긴 하다고 합니다.\n\n##### 3. 과정에 기대하는 점\n- 밸런스도 배워보고 싶다고 하여, 과정에는 밸런스 교과목이 없으나 궁금한 부분이 있으면 알려주겠다고 했습니다.\n\n##### 4. 기타\n- 프로젝트에서 아트와 레벨디자인과 밸런싱을 맡았다고 합니다.\n- 특별히 친해진 인원이나 친해지고 싶은 인원은 딱히 없다고 합니다. 어느정도 거리감을 유지하며 지내고 싶어하는 것 같습니다.\n\n---",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "채지형.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e517c83e4324",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 통합기획서 다듬기, 프로젝트QA 자유 메모 AI바이브 코딩이 할수록 이상해집니다..",
+    "detail": "작업 내용\n통합기획서 다듬기, 프로젝트QA\n\n자유 메모\nAI바이브 코딩이 할수록 이상해집니다..",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1f3f14684f84",
+    "date": "2026-02-27",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 우선 기획했던 포트리스 기획이 메이플월드랑 잘 맞지않은 것 같아 첫 기획이랑 많이 틀어졌습니다. 또한 초기 기획서에 자세한 플레이 방법과 의도, 기능이 확실하게 명시되어 있지않아, 프로그래밍 하는 사람과 소통이 늦어져 하는 수 없이 프로그래머분이 짜놓은 방향으로 기획서를 틀게 되었습니다. 거기에 맞춰 기획…",
+    "detail": "기획에 대하여\n우선 기획했던 포트리스 기획이 메이플월드랑 잘 맞지않은 것 같아 첫 기획이랑 많이 틀어졌습니다. 또한 초기 기획서에 자세한 플레이 방법과 의도, 기능이 확실하게 명시되어 있지않아, 프로그래밍 하는 사람과 소통이 늦어져 하는 수 없이 프로그래머분이 짜놓은 방향으로 기획서를 틀게 되었습니다. 거기에 맞춰 기획서를 수정하여 작업 순서가 바뀌게 되었습니다.\n\n협업에 대하여\n소통은 적었지만 할때마다 건설적인 대화가 오고가긴 했습니다만, 작업 공유가 원활하지 않아 프로젝트 제작이 늦춰졌습니다. 처음부터 기획서와 많이 달라져 합리화를 하면 안되는걸 알면서도 점점 합리화를 하는 순간이 많았던 것 같습니다.\n\n다음 프로젝트를 위해\n파트 분배를 확실하게 해야할 것 같습니다. 처음에 저희는 아무도 프로그래밍을 원치 않았습니다. 그래서 어물쩡 코딩 지식이 있는 분에게 토스한 느낌이 있어 죄송한 마음을 가지고 있습니다. 다음 프로젝트에는 파트 분배를 더욱 확실하게 하고 계속 소통하며 본인 작업을 더 디테일하게 마무리하고 작업 공유를 활발하게 하겠습니다.\n\n칭찬합시다\n박원우, 김현우 : 프로그래밍을 반강제로 토스받은 팀원입니다. 꾸역꾸역 해주셔서 감사합니다.\n송아영 : 아트 묵묵하게 기획 방향대로 책임지고 해주셔서 감사합니다\n권수빈 : 본인이 할 수 있는것은 할수있다 하시고 바로 작업 해주셨습니다. 감사합니다.\n김영도 : 팀장으로서 계속 팀원과 소통하시려고 하고 작업 현황을 계속 물어보고 붕뜨는 인원이 없는지 계속 물어보고 지켜보시고 책임감있게 행동하려고 노력하셨습니다.\n\n팀장 선호도 조사\n1.0\n\n이유\n팀장할 자질이 안됩니다.. 다른 분의 능력을 배분하는걸 못합니다.\n\n자유로운 한마디\n소통이 부족했던거 같아요",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection"
+    ],
+    "sourceLabel": "2차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-7271636ee453",
+    "date": "2026-03-12",
+    "endDate": "",
+    "weekIndex": 14,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (건강 이슈)",
+    "detail": "조퇴 (건강 이슈)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-5cdf944e2677",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전체적인 컨셉 디자인 완성, 조 역할 편성 자유 메모 채택 결단력, 아이디어를 마인드맵할때 각자의 파트별로 했으면 좋았겠다.",
+    "detail": "작업 내용\n전체적인 컨셉 디자인 완성, 조 역할 편성\n\n자유 메모\n채택 결단력, 아이디어를 마인드맵할때 각자의 파트별로 했으면 좋았겠다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-56cfa1442ba1",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "7팀 / 역할 팀원 / 함께한 팀원 김민수, 이정헌, 곽용준, 이균호, 이도건, 이승구, 최선동",
+    "detail": "팀: 7팀\n역할: 팀원\n팀원: 김민수, 이정헌, 곽용준, 이균호, 이도건, 이승구, 최선동",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-6eb535dbcd29",
+    "date": "2026-03-19",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 각 무기마다 갖는 세부적인 스탯, 정의, 기획, UI 시스템, 기획토론 자유 메모 오늘은 어려웠던 점이 없고 팀원들끼리 건강하게 토론하는게 좋은 것 같습니다.",
+    "detail": "작업 내용\n각 무기마다 갖는 세부적인 스탯, 정의, 기획, UI 시스템, 기획토론\n\n자유 메모\n오늘은 어려웠던 점이 없고 팀원들끼리 건강하게 토론하는게 좋은 것 같습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0a8886526b44",
+    "date": "2026-03-20",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 플밍반과 기획반 같이 아이스브레이킹 자유 메모 없습니다!",
+    "detail": "작업 내용\n플밍반과 기획반 같이 아이스브레이킹\n\n자유 메모\n없습니다!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0599f23a7a60",
+    "date": "2026-03-23",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 정리, 플밍반분들한테 넘길 기획서 작성, 전달 자유 메모 오늘 진행이 매끄럽게돼서 좋습니다",
+    "detail": "작업 내용\n데이터 테이블 정리, 플밍반분들한테 넘길 기획서 작성, 전달\n\n자유 메모\n오늘 진행이 매끄럽게돼서 좋습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-fd854365b257",
+    "date": "2026-03-24",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 기획 발표 및 데일리 스크럼, 다양한 컨셉방 기획 자유 메모 에셋이 한정적이라 팀원이 고른 에셋중에 제가 기획한 내용과 알맞는 에셋 찾기가 굉장히 수고스럽네요. 지금까지 나온 게임들과 차별화된 컨셉방을 기획하는게 머리아픔.(뻔함)",
+    "detail": "작업 내용\n기획 발표 및 데일리 스크럼, 다양한 컨셉방 기획\n\n자유 메모\n에셋이 한정적이라 팀원이 고른 에셋중에 제가 기획한 내용과 알맞는 에셋 찾기가 굉장히 수고스럽네요.\n지금까지 나온 게임들과 차별화된 컨셉방을 기획하는게 머리아픔.(뻔함)",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-805efbc33cd0",
+    "date": "2026-03-25",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터테이블 정규화 시작, 특수방 기획 마무리, 기획리뷰 자유 메모 데이터 테이블 정리, 정규화, 구조도 생각하기 기획 발표 준비하기",
+    "detail": "작업 내용\n데이터테이블 정규화 시작, 특수방 기획 마무리, 기획리뷰\n\n자유 메모\n데이터 테이블 정리, 정규화, 구조도 생각하기\n기획 발표 준비하기",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1e10f1694a2a",
+    "date": "2026-03-26",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 작성, 기획리뷰, 플밍분들과의 소통? 자유 메모 데이터 테이블 작성, 팀 내에서 피드백이 확실해서 편합니다.",
+    "detail": "작업 내용\n데이터 테이블 작성, 기획리뷰, 플밍분들과의 소통?\n\n자유 메모\n데이터 테이블 작성, 팀 내에서 피드백이 확실해서 편합니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-76bfd4602619",
+    "date": "2026-03-27",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 타일맵 학습, 타일맵을 통한 에셋 조합, 데이터테이블 자유 메모 서로 소통 열심히하기, 모호하게 하지말고 확실하게 전달하기",
+    "detail": "작업 내용\n타일맵 학습, 타일맵을 통한 에셋 조합, 데이터테이블\n\n자유 메모\n서로 소통 열심히하기, 모호하게 하지말고 확실하게 전달하기",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-564c596d79fe",
+    "date": "2026-03-30",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 지금까지 작성, 구현된거 플밍반과 소통 미흡한부분 보충 자유 메모 게속 정보를 주고받자",
+    "detail": "작업 내용\n지금까지 작성, 구현된거 플밍반과 소통 미흡한부분 보충\n\n자유 메모\n게속 정보를 주고받자",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-bd8f91b30be6",
+    "date": "2026-03-31",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA용 TC테이블 작성해보기, 에셋전달을 위한 문서 작성과 전달 자유 메모 없습니다.",
+    "detail": "작업 내용\nQA용 TC테이블 작성해보기, 에셋전달을 위한 문서 작성과 전달\n\n자유 메모\n없습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0702c8bde07e",
+    "date": "2026-04-01",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-53b9b70b10e6",
+    "date": "2026-04-01",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 로컬라이징, tc작성, 자유 메모 없습니다! 남은기간 화이팅",
+    "detail": "작업 내용\n로컬라이징, tc작성,\n\n자유 메모\n없습니다! 남은기간 화이팅",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-2c6418c293da",
+    "date": "2026-04-02",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 기획서 최종 수정, QA 이슈 리스트 작성 자유 메모 없습니다!",
+    "detail": "작업 내용\n기획서 최종 수정, QA 이슈 리스트 작성\n\n자유 메모\n없습니다!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-152737dbca5e",
+    "date": "2026-04-03",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA테스트 했습니다! 자유 메모 없습니다!",
+    "detail": "작업 내용\nQA테스트 했습니다!\n\n자유 메모\n없습니다!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-44d90a419747",
+    "date": "2026-04-06",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 폴리싱 작업, 밸런스 체크, 소통 자유 메모 없습니다!",
+    "detail": "작업 내용\n폴리싱 작업, 밸런스 체크, 소통\n\n자유 메모\n없습니다!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-06c15c880844",
+    "date": "2026-04-07",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA, 폴리싱 자유 메모 QA는 즐겁지가않고 버그 찾는게 은근 어렵네요",
+    "detail": "작업 내용\nQA, 폴리싱\n\n자유 메모\nQA는 즐겁지가않고 버그 찾는게 은근 어렵네요",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-60d34a403c2c",
+    "date": "2026-04-08",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 찐찐마지막 빌드 QA 자유 메모 없습니다!",
+    "detail": "작업 내용\n찐찐마지막 빌드 QA\n\n자유 메모\n없습니다!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3fb4bcdfb7e8",
+    "date": "2026-04-11",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "7팀 / 역할 PM / 함께한 팀원 김민수, 김범진, 김시온, 배주빈, 오종호, 이동우, 임소영, 최선동",
+    "detail": "팀: 7팀\n역할: PM\n팀원: 김민수, 김범진, 김시온, 배주빈, 오종호, 이동우, 임소영, 최선동",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-7f8fa2e5d63f",
+    "date": "2026-04-13",
+    "endDate": "",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (여행)",
+    "detail": "휴가 (여행)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-fdefe6234ca5",
+    "date": "2026-04-21",
+    "endDate": "",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각, 조퇴",
+    "detail": "지각, 조퇴",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-2a55da506553",
+    "date": "2026-04-27",
+    "endDate": "",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "caution",
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-34e778c2b38b",
+    "date": "2026-04-29",
+    "endDate": "",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-da9b19a31a75",
+    "date": "2026-05-11",
+    "endDate": "",
+    "weekIndex": 23,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "2차 정기 면담",
+    "summary": "### 내용 ### 기업협약 프로젝트 - 컨셉 회의, 기획 회의, 시스템 회의 진행중이라고 합니다. - PM일이 어렵다고 합니다. - 지시받는게 편한데, 지시하는 쪽이 되니 어렵다고 합니다... - PM을 제안받아서 하게 됐는데, 배울 겸 그냥 했다고 합니다. - 저번 PM이셨던 정헌님한테 연락하며 물어보는 중이라고 합…",
+    "detail": "### 내용\n### 기업협약 프로젝트\n- 컨셉 회의, 기획 회의, 시스템 회의 진행중이라고 합니다.\n- PM일이 어렵다고 합니다.\n - 지시받는게 편한데, 지시하는 쪽이 되니 어렵다고 합니다...\n - PM을 제안받아서 하게 됐는데, 배울 겸 그냥 했다고 합니다.\n- 저번 PM이셨던 정헌님한테 연락하며 물어보는 중이라고 합니다.\n - 다른 팀 PM들에게 물어보며 진행하는 것을 권장했습니다.\n\n### 취업\n- 콘텐츠, 밸런스를 메인으로 잡고 있다고 합니다.\n - 콘텐츠 기획할 때가 제일 재미있었다고 합니다.\n- 자기소개서 작성은 했는데 폐기했다고 합니다\n - 문서는 되도록 폐기하지 말라고 이야기했습니다.\n- 강점은 게임의 플레이타임, 여러 장르에 대한 취향, 사전합반에서 개발자와의 유연한 협업 및 리스크 관리라고 합니다.\n - 일정을 고려해서, 기획 분량을 조절한 경험이 있었다고 합니다.\n- 수업 외적으로 따로 준비하고 있는건 VBA라고 합니다.\n - 중재 강사님께서 보여주셨던 문서를 기준으로 생각한 부분이라, AI시대인 지금은 큰 의미가 없다고 이야기했습니다.\n\n### 질문\n없었습니다.\n\n전체적으로 취업에 대한 준비와 의지가 별로 보이지 않는 인원입니다.\n\n--",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "채지형.md",
+    "isEstimatedDate": false
+  }
+]

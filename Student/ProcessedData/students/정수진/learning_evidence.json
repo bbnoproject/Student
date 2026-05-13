@@ -1,0 +1,831 @@
+[
+  {
+    "evidenceId": "ev-0ecb24ff1747",
+    "studentId": "정수진",
+    "date": "2025-10-21",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세요. 게임 기획자 지망생 정수진입니다. 게임을 항상 즐겨하면서 게임에 대해 관심이 많아졌고 다양한 장르의 게임을 분석하며 시스템, 콘텐츠 유저의 경험에 대해 관심을 갖게 되었습니다. 이게 그치지 않고 직접 아이디어를 구체화해보고 싶어 게임 기획을 지망하게 되었습니다. 지원 동기 혼자서 준비하는 거보다 체…",
+    "detail": "자기소개\n안녕하세요. 게임 기획자 지망생 정수진입니다. 게임을 항상 즐겨하면서 게임에 대해 관심이 많아졌고 다양한 장르의 게임을 분석하며 시스템, 콘텐츠 유저의 경험에 대해 관심을 갖게 되었습니다. 이게 그치지 않고 직접 아이디어를 구체화해보고 싶어 게임 기획을 지망하게 되었습니다.\n\n지원 동기\n혼자서 준비하는 거보다 체계적이고 구조적으로 배울 필요성을 느꼈고 이 강의를 통해 이를 배울 수 있다고 생각했습니다. 또한 혼자 준비하기 때문에 협업 프로젝트를 접하기가 어려웠는데 본 커리큘럼에 포함되어 있어 실무 감각을 익힐 수 있다고 생각했습니다. 또한 최근 AI를 사용하는 추세인데 독학으로 어려운 과정을 배울 수 있어 신청했습니다.\n\n관련 경험\n2022년도 6개월간 온라인 강의를 통해 게임 기획을 배웠습니다.\n\n희망 분야\n시스템 기획자, 밸런스 기획자 , 콘텐츠 기획자, 시나리오 기획자, UI/UX 기획자, 레벨 디자이너, 설정 기획자\n\n수료 목표\n수료 후에는 강의에서 배운 기획 프로세스를 토대로 포트폴리오를 작성할 계획 입니다. 게임 제작 감각을 익혀서 개인 또는 팀 프로젝트를 진행하여 시제로 적용해보는 경험을 쌓고 싶습니다. 최종적으로는 유저의 재미를 설계할 수 있는 게임기획자로 성장하는 것이 목표입니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-1198e00e953c",
+    "studentId": "정수진",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 81",
+    "detail": "화상 인터뷰에 3분 정도 지각했습니다.\n의사소통에 무리가 없으나 태도가 소극적입니다. \n주로하는 게임은 PC - 로아, 모바일 - 세나 리버스 게임 장르는 다양하게 해보려는편입니다.\n본인이 생각하는 장점 - 꼼꼼함, 단점 - 생각이 많음...\n컴공이며 게임 기획 시스템 벨런스 사전 학습 경험있습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-c77a7de35b86",
+    "studentId": "정수진",
+    "date": "2025-12-17",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ##### 1. 수업적응 - 온라인이라 집중을 할 수 있고 적응도 할 수 있을까 걱정했는데, 채팅도 잘 활성화되있고 좋다고 합니다. - 다른 학원에서 한 번 배워봤다고 하며, 다른 학원과 달리 기초적인 목표설정부터 잡고가서 좋다고 합니다. ##### 2. 목표 - 시스템 기획자를 희망한다고 합니다. - 컴공…",
+    "detail": "### 내용\n##### 1. 수업적응\n- 온라인이라 집중을 할 수 있고 적응도 할 수 있을까 걱정했는데, 채팅도 잘 활성화되있고 좋다고 합니다.\n- 다른 학원에서 한 번 배워봤다고 하며, 다른 학원과 달리 기초적인 목표설정부터 잡고가서 좋다고 합니다.\n\n##### 2. 목표\n- 시스템 기획자를 희망한다고 합니다.\n- 컴공과에서 java, C++ 를 다뤄봤고, 시스템 기획도 배워보긴 했어서 강점이 많은 학생이라고 생각됩니다.\n- 면접까지도 갔는데 결과는 좋지 않았고 프로젝트 경험을 많이 물어봐서 경일에 다시 오게 되었다고 합니다.\n- 게임을 좋아해서 시작하긴 했다고 하며, 게임을 했을 때 감동을 느낄 수 있구나 (투더문)라고 생각되었다고 합니다. 목표를 PD가 아닌 만들고 싶은 기획자로서의 꿈으로 잡아보도록 이야기해주었습니다.\n\n##### 3. 과정에 기대하는 점\n- (깜빡하고 못 물어봄)\n\n##### 4. 기타\n- 팀실습, 나서는 성격이 아니라서 걱정했는데 이끌어줘서 좋았다고 합니다. (조장이었던 김영도님)\n- 프로젝트 할 때, 기획팀이랑 개발팀이랑만 같이 하게 되는 것인지, 아트는 없는지 질문이 있었습니다. 에셋제공과 AI로 리소스 확보를 하게 된다고 이야기해주었습니다.\n\n---",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/정수진.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-55a3e67e70ff",
+    "studentId": "정수진",
+    "date": "2025-12-23",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-3153be927a6d",
+    "studentId": "정수진",
+    "date": "2025-12-26",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가",
+    "detail": "휴가",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-c2f4e28e1e39",
+    "studentId": "정수진",
+    "date": "2026-01-07",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (은행)",
+    "detail": "조퇴 (은행)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-fec57668fb40",
+    "studentId": "정수진",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.25 자유 메모 처음쓰는 엔진인 만큼 스크립트에 대해 공부를 했습니다!",
+    "detail": "작업 내용\n0.25\n\n자유 메모\n처음쓰는 엔진인 만큼 스크립트에 대해 공부를 했습니다!",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9c1b7fbd59b7",
+    "studentId": "정수진",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "1팀 / 역할 팀원 / 함께한 팀원 승정하, 정석현, 곽용준, 한의호, 이도건",
+    "detail": "팀: 1팀\n역할: 팀원\n팀원: 승정하, 정석현, 곽용준, 한의호, 이도건",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-50f9cc4296a4",
+    "studentId": "정수진",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 엔진 코딩 구현하기 어렵습니다...",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n엔진 코딩 구현하기 어렵습니다...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-1448d1b28cda",
+    "studentId": "정수진",
+    "date": "2026-01-23",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 시간이 촉박해서 주말까지 활용해야할거같습니다..",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n시간이 촉박해서 주말까지 활용해야할거같습니다..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-556e2fafa594",
+    "studentId": "정수진",
+    "date": "2026-01-27",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience"
+    ],
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 기획서의 내용이 조금 부족하여 기획과 동시에 개발 진행을 했던 부분도 있었습니다. 협업에 대하여 나의 작업 상황에 대해 공유하고, 피드백이 필요한 부분은 받아들이며 진행했던거 같습니다. 다음 프로젝트를 위해 다른 파트 (시나리오, 사운드)의 부분에선 잘 몰라서 건설적인 피드백을 하지 못하고 넘겼던게 아쉬웠…",
+    "detail": "기획에 대하여\n기획서의 내용이 조금 부족하여 기획과 동시에 개발 진행을 했던 부분도 있었습니다.\n\n협업에 대하여\n나의 작업 상황에 대해 공유하고, 피드백이 필요한 부분은 받아들이며 진행했던거 같습니다.\n\n다음 프로젝트를 위해\n다른 파트 (시나리오, 사운드)의 부분에선 잘 몰라서 건설적인 피드백을 하지 못하고 넘겼던게 아쉬웠던거 같습니다. 제 파트도 중요하지만 같이 게임을 만드는 과정이기 때문에 다른 부분에 대한것도 신경을 써야겠다고 생각했습니다.\n\n칭찬합시다\n석현님이 사운드 부분을 맡아 진행해주셨는데, 시나리오를 보고 그 상황과 배경에 맞는 적절한 사운드를 배치해주셔서 게임의 몰입감을 높일 수 있지 않았나 싶습니다.\n\n자유로운 한마디\n개발적인 부분에 어려움을 많이 느꼈고, 그에 다른 한계도 많이 느낀 프로젝트 였습니다. 그럼에도 다른 분들과 협업하면서 팀과의 소통이 가장 중요한걸 느낄수 있었고 열심히 하는 모습들을 보며 저까지 의욕을 불태우게 되었던거 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-fc1302790af6",
+    "studentId": "정수진",
+    "date": "2026-02-12",
+    "weekIndex": 10,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (동사무소)",
+    "detail": "지각 (동사무소)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-66354b8c1c7c",
+    "studentId": "정수진",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 게임의 방향성과 핵심 시스템, 코어루프 설정. WBS 설정. 자유 메모 저희 게임의 방향성을 정확히 설정하는게 어려웠습니다. 방치형 게임이다 보니 어디까지 기준을 잡아야할지. 플레이타임을 어느정도까지 설정해야할지에 대한 고민 시간이 길어졌던거 같습니다.",
+    "detail": "작업 내용\n게임의 방향성과 핵심 시스템, 코어루프 설정. WBS 설정.\n\n자유 메모\n저희 게임의 방향성을 정확히 설정하는게 어려웠습니다. 방치형 게임이다 보니 어디까지 기준을 잡아야할지. 플레이타임을 어느정도까지 설정해야할지에 대한 고민 시간이 길어졌던거 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-474e9f1c5546",
+    "studentId": "정수진",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "10팀 / 역할 팀원 / 함께한 팀원 안성진, 우현승, 이찬규, 최선동",
+    "detail": "팀: 10팀\n역할: 팀원\n팀원: 안성진, 우현승, 이찬규, 최선동",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-d3352a580931",
+    "studentId": "정수진",
+    "date": "2026-02-19",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 개발 안티그래비티와 메이플 월드 연결하기 자유 메모 직군간의 개별 작업에 대한 경계가 없어진거 같아, 이를 바로 잡고 가는게 중요해보입니다",
+    "detail": "작업 내용\n개발 안티그래비티와 메이플 월드 연결하기\n\n자유 메모\n직군간의 개별 작업에 대한 경계가 없어진거 같아, 이를 바로 잡고 가는게 중요해보입니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-a8d2e5962e4b",
+    "studentId": "정수진",
+    "date": "2026-02-20",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시스템 기획서 세부 작성 자유 메모 시스템을 세부적으로 적으면서 생각보다 오래 걸려서 시간이 부족할거 같아 걱정됩니다!",
+    "detail": "작업 내용\n시스템 기획서 세부 작성\n\n자유 메모\n시스템을 세부적으로 적으면서 생각보다 오래 걸려서 시간이 부족할거 같아 걱정됩니다!",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-08208b3c5460",
+    "studentId": "정수진",
+    "date": "2026-02-26",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 프로젝트 개발 ( 직원 채용, 게임 개발 프로세스 시스템 ) 구현 자유 메모 AI는 좋지만 힘들어요..",
+    "detail": "작업 내용\n프로젝트 개발 ( 직원 채용, 게임 개발 프로세스 시스템 ) 구현\n\n자유 메모\nAI는 좋지만 힘들어요..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-3fc4a241b721",
+    "studentId": "정수진",
+    "date": "2026-03-02",
+    "weekIndex": 13,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 근거를 기반하여 기획했다고 생각합니다. 협업에 대하여 GIT을 통해 작업물을 공유하고 문서를 올리면서 협업했습니다. 다음 프로젝트를 위해 말할 때 조금 부드럽게 말할려고 했어야했는데, 논리적으로 말하려다 보니 조금 딱딱하게 말했던게 아쉽습니다. 칭찬합시다 누군가를 설득할때 근거를 최대한 들면서 말하려고 했…",
+    "detail": "기획에 대하여\n근거를 기반하여 기획했다고 생각합니다.\n\n협업에 대하여\nGIT을 통해 작업물을 공유하고 문서를 올리면서 협업했습니다.\n\n다음 프로젝트를 위해\n말할 때 조금 부드럽게 말할려고 했어야했는데, 논리적으로 말하려다 보니 조금 딱딱하게 말했던게 아쉽습니다.\n\n칭찬합시다\n누군가를 설득할때 근거를 최대한 들면서 말하려고 했던게 좋았습니다.\n\n팀장 선호도 조사\n4.0\n\n이유\n나도 모르게 나서서 자꾸 내용을 요약하고 정리하고 싶어합니다. PM으로서는 자신이 없긴 하지만, 이런 성격이라면 차라리 팀장인게 월권이 아니지 않을까 싶어서 입니다.\n\n자유로운 한마디\n밸런스 쪽을 맡았지만 대부분 작업을 개발에 또 시간을 많이 썼던거 같습니다. 다음엔 개발자가 있으니 이제 개발 안하고 싶어요.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-fa71222243da",
+    "studentId": "정수진",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 컨셉 기획, 파트 배분, 아트 스타일 회의 자유 메모 팀장 어렵습니다.. 컨셉기획에 대한 내용이 큰 충돌없이 빠르게 나온거 같아 다행입니다!",
+    "detail": "작업 내용\n컨셉 기획, 파트 배분, 아트 스타일 회의\n\n자유 메모\n팀장 어렵습니다.. 컨셉기획에 대한 내용이 큰 충돌없이 빠르게 나온거 같아 다행입니다!",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-044306a28c53",
+    "studentId": "정수진",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "3팀 / 역할 팀장 / 함께한 팀원 우현승, 권수빈, 김민제, 김영도, 안성진, 윤동현",
+    "detail": "팀: 3팀\n역할: 팀장\n팀원: 우현승, 권수빈, 김민제, 김영도, 안성진, 윤동현",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-f5aed9671742",
+    "studentId": "정수진",
+    "date": "2026-03-19",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 각 파트별 세부 작업 진행, 시스템_플레이어, 전투 기획서 컨펌, 무기 콘텐츠 컨펌을 진행하였습니다. 컨셉 기획서 정리와 발표 준비도 함께 진행하였습니다 자유 메모 각 파트별로 독립적으로 진행하였으면 했는데, 연계되는 내용에 있어서 동시작업되는 만큼 팀원들끼리 소통이 있었습니다. 그 과정에서 또 다른 논의 과…",
+    "detail": "작업 내용\n각 파트별 세부 작업 진행, 시스템_플레이어, 전투 기획서 컨펌, 무기 콘텐츠 컨펌을 진행하였습니다.\n컨셉 기획서 정리와 발표 준비도 함께 진행하였습니다\n\n자유 메모\n각 파트별로 독립적으로 진행하였으면 했는데, 연계되는 내용에 있어서 동시작업되는 만큼 팀원들끼리 소통이 있었습니다. 그 과정에서 또 다른 논의 과정이 나오고 이야기가 길어지면서 기획서 작업의 진행속도가 느려진 상황이 생겨서 이를 정확히 잡고 가야할거같습니다.",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-6f45ca02fcd4",
+    "studentId": "정수진",
+    "date": "2026-03-20",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 플밍반과의 매칭된 후 간단히 아이스브레이킹 후 완성된 문서를 기준으로 기획 리뷰, 및 문서 컨펌 진행. 자유 메모 구체적으로 적어야하는데 구체적으로 적는게 뭘까요.. 어렵습니다 행복합니다 ..",
+    "detail": "작업 내용\n플밍반과의 매칭된 후 간단히 아이스브레이킹 후 완성된 문서를 기준으로 기획 리뷰, 및 문서 컨펌 진행.\n\n자유 메모\n구체적으로 적어야하는데 구체적으로 적는게 뭘까요.. 어렵습니다 행복합니다 ..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-abd1fef79980",
+    "studentId": "정수진",
+    "date": "2026-03-23",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 기획서 리뷰 진행, 에셋 회의, 컨펌과정..., 중간중간 시스템 기획서 하나 같이...했습니다 자유 메모 이슈까진 아니고, 에셋에 대해서 방황했던걸 어느정도 잡은거같습니다. 그나마 마음이 편합니다.. 문서를 개별로 작업하다보니 소통의 문제가 있는거같습니다. 다같이 문서를 보는시간이 필요할거같긴 합니다. 작업내…",
+    "detail": "작업 내용\n기획서 리뷰 진행, 에셋 회의, 컨펌과정..., 중간중간 시스템 기획서 하나 같이...했습니다\n\n자유 메모\n이슈까진 아니고, 에셋에 대해서 방황했던걸 어느정도 잡은거같습니다. 그나마 마음이 편합니다..\n문서를 개별로 작업하다보니 소통의 문제가 있는거같습니다. 다같이 문서를 보는시간이 필요할거같긴 합니다. 작업내용에 대해서 공유를 하려고 했는데 시간이 부족하다보니 그렇게 까지 하질 못했고 이 때문에 소통오류가 좀 있었습니다. 결국엔 시간의 부족 문제가 제일 큰거 같습니다.. 정해진 시간안에 기획과 개발을 해야하다보니 모든 기획을 다 넣을 수 없고 그로 인해서 조금은 힘들어하는 팀원들이 있는거 같아 죄송합니다. 안된다고 말하는게 참 어렵네여",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-61ddcc6e99e3",
+    "studentId": "정수진",
+    "date": "2026-03-24",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 성장 시스템 작성 완료, 문서 컨펌, 기획 리뷰 .. 자유 메모 에셋이 가장 어려워요...",
+    "detail": "작업 내용\n성장 시스템 작성 완료, 문서 컨펌, 기획 리뷰 ..\n\n자유 메모\n에셋이 가장 어려워요...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-73d06f6dac27",
+    "studentId": "정수진",
+    "date": "2026-03-25",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 성장 시스템 기획 리뷰, 에셋 관련해서 하기.. 자유 메모 에셋 작업을 하게 되면서 기존의 에셋의 문제점에 대해서 알게되고, 확정성 오브젝트 배치의 어려움 등 생각한 만큼의 퀄리티가 나오기 힘들거같아서 오래 고민했던거같습니다. 처음부터 에셋을 다 보고나서 컨셉을 잡았더라면 하는...생각이 계속 들어서 스트레스…",
+    "detail": "작업 내용\n성장 시스템 기획 리뷰, 에셋 관련해서 하기..\n\n자유 메모\n에셋 작업을 하게 되면서 기존의 에셋의 문제점에 대해서 알게되고, 확정성 오브젝트 배치의 어려움 등 생각한 만큼의 퀄리티가 나오기 힘들거같아서 오래 고민했던거같습니다. 처음부터 에셋을 다 보고나서 컨셉을 잡았더라면 하는...생각이 계속 들어서 스트레스를 받았지만 어지저찌 팀원들을 설득해서 맵에셋을 바꾸기로 했습니다!.. 팀장으로서 성장중인거겠죠..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9158cdaec102",
+    "studentId": "정수진",
+    "date": "2026-03-26",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 에셋 찾기, 2차 기획서 검토 진행, 플밍반 수정 사항 반영 자유 메모 많은 일들이 있었지만 이제는 개발을 기다리는 단계입니다!",
+    "detail": "작업 내용\n에셋 찾기, 2차 기획서 검토 진행, 플밍반 수정 사항 반영\n\n자유 메모\n많은 일들이 있었지만 이제는 개발을 기다리는 단계입니다!",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-183cab6d0110",
+    "studentId": "정수진",
+    "date": "2026-03-27",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 2차 기획 마무리, 이펙트/사운드 에셋찾기 자유 메모 이제는 프로토타입을 기다리는 단계에서 더 퀄리티있어보이게 보강하는 단계입니다!",
+    "detail": "작업 내용\n2차 기획 마무리, 이펙트/사운드 에셋찾기\n\n자유 메모\n이제는 프로토타입을 기다리는 단계에서 더 퀄리티있어보이게 보강하는 단계입니다!",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-d3a8bafee042",
+    "studentId": "정수진",
+    "date": "2026-03-30",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA시트를 이용하여 QA 작업, 및 버그 발견 / 에셋 리스트 작업 자유 메모 에셋에 사소한 이슈는 있었지만 전체적으로 어려운 점은 없었습니다!",
+    "detail": "작업 내용\nQA시트를 이용하여 QA 작업, 및 버그 발견 / 에셋 리스트 작업\n\n자유 메모\n에셋에 사소한 이슈는 있었지만 전체적으로 어려운 점은 없었습니다!",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5f42c5a13f14",
+    "studentId": "정수진",
+    "date": "2026-03-31",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 작업 및 이펙트 컨펌 자유 메모 맵 크기가 커서 줄이고 싶은데 오류가 나지 않는 방향성이 무엇일지...고민됩니다..",
+    "detail": "작업 내용\nQA 작업 및 이펙트 컨펌\n\n자유 메모\n맵 크기가 커서 줄이고 싶은데 오류가 나지 않는 방향성이 무엇일지...고민됩니다..",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-cb8b095b91e8",
+    "studentId": "정수진",
+    "date": "2026-04-01",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오프닝 연출, 엔딩, 세계관 등 연출적인 부분에 대한 정리를 하였습니다! 자유 메모 맵 크기.. 아직도 해결 못했습니다 ㅠ",
+    "detail": "작업 내용\n오프닝 연출, 엔딩, 세계관 등 연출적인 부분에 대한 정리를 하였습니다!\n\n자유 메모\n맵 크기.. 아직도 해결 못했습니다 ㅠ",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-304885a867fd",
+    "studentId": "정수진",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 연출, 캐릭터 등의 아트 작업 자유 메모 개발이 거의 마무리가 되었고 QA와 추가적인 연출작업이 남았습니다. 게임이 만들어진거보니 좀 더 깔끔하면 어떨까 하는 아쉬움이 계속 남아서 주말에도 계속 작업하지 않을까해요.. 아자아자..",
+    "detail": "작업 내용\n연출, 캐릭터 등의 아트 작업\n\n자유 메모\n개발이 거의 마무리가 되었고 QA와 추가적인 연출작업이 남았습니다. 게임이 만들어진거보니 좀 더 깔끔하면 어떨까 하는 아쉬움이 계속 남아서 주말에도 계속 작업하지 않을까해요.. 아자아자..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-86771b6d8541",
+    "studentId": "정수진",
+    "date": "2026-04-03",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 연출 및 이츠아이오에 올린 자료 준비 자유 메모 드디어 최종 빌드가 나왔습니다! 연출이 없어 아쉽지만.. 주말에 보강하는걸로 하고 게임 핵심요소들은 다 나와서 뿌듯하네요",
+    "detail": "작업 내용\n연출 및 이츠아이오에 올린 자료 준비\n\n자유 메모\n드디어 최종 빌드가 나왔습니다! 연출이 없어 아쉽지만.. 주말에 보강하는걸로 하고 게임 핵심요소들은 다 나와서 뿌듯하네요",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-1763a9f9bcf0",
+    "studentId": "정수진",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA, 연출, 튜토리얼 자유 메모 거의 끝이 보이네여",
+    "detail": "작업 내용\nQA, 연출, 튜토리얼\n\n자유 메모\n거의 끝이 보이네여",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-abb35ecd9afa",
+    "studentId": "정수진",
+    "date": "2026-04-07",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 홈페이지 꾸미기, 발표자료 준비, 자유 메모 열심히 한 결과들이 나오는거 같아서 뿌듯합니다!",
+    "detail": "작업 내용\n홈페이지 꾸미기, 발표자료 준비,\n\n자유 메모\n열심히 한 결과들이 나오는거 같아서 뿌듯합니다!",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-61a603ec4684",
+    "studentId": "정수진",
+    "date": "2026-04-08",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 및 발표 준비 / 홈페이지 보완 자유 메모 짧은거같기도 했지만 길기도 했던 사전합반 프로젝트가 이제 끝났습니다! 첫 팀장이니만큼 잔뜩 기합넣어서 했지만 의도하지 않게 이리저리 휘청거렸던거같습니다. 그래도 나름 잘 이겨내고 팀원들과 함께 극복해낸거 같아서 다행입니다! 결과물을 보니 뿌듯하고 내일 있을 게임…",
+    "detail": "작업 내용\nQA 및 발표 준비 / 홈페이지 보완\n\n자유 메모\n짧은거같기도 했지만 길기도 했던 사전합반 프로젝트가 이제 끝났습니다! 첫 팀장이니만큼 잔뜩 기합넣어서 했지만 의도하지 않게 이리저리 휘청거렸던거같습니다. 그래도 나름 잘 이겨내고 팀원들과 함께 극복해낸거 같아서 다행입니다! 결과물을 보니 뿌듯하고 내일 있을 게임콘에서도 다른 분들이 재밌게 즐겨주셨으면 좋겠습니다ㅎㅎ 처음이니만큼 쉽지 않았지만 이번을 계기로 더 성장할 수 있었던거 같습니다! 잘 믿고 따라와준 팀원들에게 감사하네요ㅎㅎ",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-15f47837346a",
+    "studentId": "정수진",
+    "date": "2026-04-11",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "5팀 / 역할 팀장 / 함께한 팀원 천영현, 고승주, 권수빈, 김재환, 박기은, 박현수, 윤유나, 안성진",
+    "detail": "팀: 5팀\n역할: 팀장\n팀원: 천영현, 고승주, 권수빈, 김재환, 박기은, 박현수, 윤유나, 안성진",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-941b938d3817",
+    "studentId": "정수진",
+    "date": "2026-04-17",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 정기 면담",
+    "summary": "### 내용 • 지금까지의 수업에서 어려운 점은 없었는지 없습니다! • 수업에서 본인에게 잘 맞는 점 / 어려운 점은 무엇인지 없습니다! • 4개월동안의 수업에서, 체력·정신력에는 문제가 없는지 없습니다! • 현재 희망하는 직무는 무엇인지 시스템 • 본인의 강점은 어떤 것인지 컴공을 통한 시스템적 사고 • 그 강점을 위…",
+    "detail": "### 내용\n• 지금까지의 수업에서 어려운 점은 없었는지\n없습니다!\n\n• 수업에서 본인에게 잘 맞는 점 / 어려운 점은 무엇인지\n없습니다!\n\n• 4개월동안의 수업에서, 체력·정신력에는 문제가 없는지\n없습니다!\n\n• 현재 희망하는 직무는 무엇인지\n시스템\n\n• 본인의 강점은 어떤 것인지\n컴공을 통한 시스템적 사고\n\n• 그 강점을 위해, 어떤 노력을 했거나 할 예정인지\nAI 역량을 위한 바이브코딩 게임 개발\n\n• 사전합반 / 기업협약 프로젝트에서 목표하고 있는 바가 있는지\n협업에 대한 경험을 더 챙겨가고싶습니다 플밍과도 소통을 해보고싶어요 더 많이\n\n• 지금까지의 프로젝트에서 어떤 것들을 얻었는지\n협업에 대한 이해\n\n• 마지막으로 강사진들에게 하고싶은 말\n없습니다\n\n• 추가 기록사항\n 바이브 코딩을 이용해서 AI 이용에 대한 차별점을 만들려고한다.\n\n• 후기\n웹젠 준비중이라고 합니다. 추가적으로 본인 의 강점을 모르길래 컴공과 시스템이 스텐다드 하다고 생각하는데 그 만큼 하기 좋다라고 생각하라고 안내햇습니다.\n큰 특이사항은 없는듯 합니다.\n\n--",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/정수진.md",
+      "isEstimatedDate": false
+    }
+  }
+]

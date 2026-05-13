@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-11",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-09",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  }
+]

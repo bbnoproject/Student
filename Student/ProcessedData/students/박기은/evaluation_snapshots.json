@@ -1,0 +1,92 @@
+[
+  {
+    "snapshotId": "박기은-m1",
+    "snapshotDate": "2025-12-07",
+    "snapshotType": "모집 ~ 개강",
+    "scores": {
+      "self_regulation": 1,
+      "engagement": 1,
+      "collaboration": 3,
+      "resilience": 3,
+      "reflection": 2,
+      "career_agency": 3
+    },
+    "confidence": "Low",
+    "note": "자기조절 지원 필요"
+  },
+  {
+    "snapshotId": "박기은-m2",
+    "snapshotDate": "2026-01-23",
+    "snapshotType": "개강 ~ 1차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 2,
+      "engagement": 3,
+      "collaboration": 3,
+      "resilience": 2,
+      "reflection": 3,
+      "career_agency": 4
+    },
+    "confidence": "High",
+    "note": "자기조절 지원 필요"
+  },
+  {
+    "snapshotId": "박기은-m3",
+    "snapshotDate": "2026-02-27",
+    "snapshotType": "1차 프로젝트 종료 ~ 2차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 1,
+      "engagement": 2,
+      "collaboration": 2,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "자기조절 지원 필요"
+  },
+  {
+    "snapshotId": "박기은-m4",
+    "snapshotDate": "2026-04-08",
+    "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 2,
+      "engagement": 3,
+      "collaboration": 2,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "자기조절 지원 필요"
+  },
+  {
+    "snapshotId": "박기은-m5",
+    "snapshotDate": "2026-06-05",
+    "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 2,
+      "engagement": 3,
+      "collaboration": 2,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "자기조절 지원 필요"
+  },
+  {
+    "snapshotId": "박기은-m6",
+    "snapshotDate": "2026-08-03",
+    "snapshotType": "4차 프로젝트 종료 ~ 종강",
+    "scores": {
+      "self_regulation": 2,
+      "engagement": 3,
+      "collaboration": 2,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "자기조절 지원 필요"
+  }
+]

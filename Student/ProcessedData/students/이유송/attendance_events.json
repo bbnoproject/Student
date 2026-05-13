@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2025-12-26",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-01-09",
+    "kind": "조퇴",
+    "detail": "조퇴 (건강 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-04",
+    "kind": "휴가",
+    "detail": "휴가 (지인 장례식)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-14",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-08",
+    "kind": "휴가",
+    "detail": "휴가 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-11",
+    "kind": "결석",
+    "detail": "결석 (컨디션 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

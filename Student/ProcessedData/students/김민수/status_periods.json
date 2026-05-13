@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "김민수-status-1",
+    "startDate": "2026-03-16",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "checkinId": "checkin-510c87be349a",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-20",
+    "originalDate": "2026-01-20",
+    "submittedAt": "2026-01-21T09:42:15.132000",
+    "team": "5팀",
+    "workText": "0.5",
+    "noteText": "시간이..부족해오...",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-5ad74762340a",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-21",
+    "originalDate": "2026-01-21",
+    "submittedAt": "2026-01-22T17:56:46.848000",
+    "team": "5팀",
+    "workText": "0.75",
+    "noteText": "매우 순항중입니다",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-70fb50e6855a",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-22",
+    "originalDate": "2026-01-22",
+    "submittedAt": "2026-01-22T17:57:41.607000",
+    "team": "5팀",
+    "workText": "1",
+    "noteText": "구현하고자 하는건 전부구현하였고 내일 디테일작업만 들어가면 좋은데 요즘 초등학생컷이 높아서 죽을것 같습니다. 오류 수정 어떻게하는지..",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-5b332a39f27d",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-23",
+    "originalDate": "2026-01-23",
+    "submittedAt": "2026-01-23T17:53:30.373000",
+    "team": "5팀",
+    "workText": "1",
+    "noteText": "5팀 다들 고생많으셨습니다!!",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-2398b9e3dcaf",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-20",
+    "originalDate": "2026-02-20",
+    "submittedAt": "2026-02-20T17:57:34.027000",
+    "team": "7팀",
+    "workText": "게임내용 변경 실시간 액션슈팅 전투시스템 구현및 확장성 고려",
+    "noteText": "코드 정신 나갈것같아요",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-2a69f999ced6",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-20",
+    "originalDate": "2026-02-20",
+    "submittedAt": "2026-02-20T17:58:37.190000",
+    "team": "7팀",
+    "workText": "실시간액션전투시스템구현완료 > 몬스터 스폰및 배치 시스템, 몬스터ai로직, 스테이지 리셋및 스테이지이동기능 구현",
+    "noteText": "이거 플밍반으로 전과해야할거같은데요",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-9161cc494d92",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-23",
+    "originalDate": "2026-02-23",
+    "submittedAt": "2026-02-24T17:57:11.901000",
+    "team": "7팀",
+    "workText": "vns코드 작업",
+    "noteText": "개발자가 보고싶어요",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-f8f228d53375",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-24",
+    "originalDate": "2026-02-24",
+    "submittedAt": "2026-02-24T17:58:03.005000",
+    "team": "7팀",
+    "workText": "전체 시스템 안정화/ 스테이지구분/vns디버그버튼 전투시스템 확립/",
+    "noteText": "점점 익숙해지는 저를 칭찬하고싶어요",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-6fd5f87b1bc0",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-18",
+    "originalDate": "2026-03-18",
+    "submittedAt": "2026-03-18T17:34:06.942000",
+    "team": "9팀",
+    "workText": "원페이지 기획 컨셉공유 역할배분 회의",
+    "noteText": "매우 좋은 진행인것같아서 안심됩니다",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-d848c825f1d4",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-19",
+    "originalDate": "2026-03-19",
+    "submittedAt": "2026-03-19T17:50:41.458000",
+    "team": "9팀",
+    "workText": "인원분배, 개인면담, 일정회의, 프로토타입 피드백, 역할관리 배치, 기타등",
+    "noteText": "이대로만 갑시다!",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-cb69800ee632",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-23",
+    "originalDate": "2026-03-23",
+    "submittedAt": "2026-03-23T17:33:20.106000",
+    "team": "9팀",
+    "workText": "시스템흐름도 및 시스템기획서 작성",
+    "noteText": "세부화 회의관련 내용진행도가 적극적으로 진행되어 좋습니다",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-1233fcf65d61",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-24",
+    "originalDate": "2026-03-24",
+    "submittedAt": "2026-03-24T17:49:57.175000",
+    "team": "9팀",
+    "workText": "시스템 기획 마무리, 레벨디자인 기획서(이벤트 발생, 콘텐츠포함) 초안 작성",
+    "noteText": "내일 방향성 회의가 적합하게 이루어지기를...",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-4a4f8e6fe330",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-25",
+    "originalDate": "2026-03-25",
+    "submittedAt": "2026-03-25T17:43:19.259000",
+    "team": "9팀",
+    "workText": "팀 방향성회의 이후 콘텐츠 기획서와 이벤트기획서 테이블 구조 정리본 작성",
+    "noteText": "좋아요 좋아요",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-be162fc31a32",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-26",
+    "originalDate": "2026-03-26",
+    "submittedAt": "2026-03-26T17:31:54.745000",
+    "team": "9팀",
+    "workText": "총괄기획서 재정립 회의후 기획서 취합",
+    "noteText": "화이팅",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-e0f0f6869fd1",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-27",
+    "originalDate": "2026-03-27",
+    "submittedAt": "2026-03-30T10:28:24.971000",
+    "team": "9팀",
+    "workText": "세부기획서 제작 방향성회의",
+    "noteText": "회의가 더욱 원할하게 소통되는 방향으로 진행되어서 만족스럽습니다",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-7f89b15a9041",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-30",
+    "originalDate": "2026-03-30",
+    "submittedAt": "2026-03-31T11:28:12.469000",
+    "team": "9팀",
+    "workText": "소통 재검토 회의 재진행 , 프로젝트진행도 체크 및 인원할당 재분배",
+    "noteText": "살려주세요",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-e05b9258ce87",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-31",
+    "originalDate": "2026-03-31",
+    "submittedAt": "2026-03-31T17:31:31.947000",
+    "team": "9팀",
+    "workText": "이벤트 테이블및 기획서 재설립..",
+    "noteText": "화이티잉...",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-35bf1d9a18a2",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-01",
+    "originalDate": "2026-04-01",
+    "submittedAt": "2026-04-01T17:41:19.039000",
+    "team": "9팀",
+    "workText": "이벤트 테이블 기획 마무리및 데이터 시트정리 테이블 작성",
+    "noteText": "해피 만우절~",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-4c2bda12cddc",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-02",
+    "originalDate": "2026-04-02",
+    "submittedAt": "2026-04-02T18:00:21.801000",
+    "team": "9팀",
+    "workText": "기획서 재정립 및 플밍소통 회의",
+    "noteText": "일했음 청년...",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-a7942c74361f",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-03",
+    "originalDate": "2026-04-03",
+    "submittedAt": "2026-04-03T17:34:25.851000",
+    "team": "9팀",
+    "workText": "tc작성 이벤트확정",
+    "noteText": "하하호호 즐거운작업",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-5b4d842adba1",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-08",
+    "originalDate": "2026-04-08",
+    "submittedAt": "2026-04-08T17:53:14.569000",
+    "team": "9팀",
+    "workText": "qa tc체크 개인회고록 작성",
+    "noteText": "마무리까지 화이팅",
+    "onTime": true
+  }
+]

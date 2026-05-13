@@ -1,0 +1,14 @@
+{
+  "studentId": "김범진",
+  "name": "김범진",
+  "phone": "010-4322-3137",
+  "gender": "남",
+  "birthDate": "1989-06-23",
+  "education": "가천대학교 컴퓨터공학과",
+  "experience": "",
+  "address": "경기도 성남시 수정구 창업로 40번길 6 101동 703호",
+  "specialNote": "백엔드 개발 7년차",
+  "attendanceMemo": "",
+  "cohort": "기획4기",
+  "course": "게임 기획 부트캠프"
+}

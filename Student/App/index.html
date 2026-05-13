@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>학생 분석 대시보드</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/lobby.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-topbar">
+        <div class="brand-block">
+          <p class="eyebrow">Student Intelligence Desk</p>
+          <h1>학생 성장 분석 대시보드</h1>
+          <p class="topbar-copy">
+            메인 로비에서 전체 학생 흐름을 보고, 학생 상세에서 마일스톤별 성장과 특이사항을 함께 읽습니다.
+          </p>
+        </div>
+
+        <div class="topbar-actions">
+          <label class="search-stack" for="global-search">
+            <span>학생 검색</span>
+            <input
+              id="global-search"
+              type="search"
+              autocomplete="off"
+              placeholder="이름, 연락처, 학력, 분류 태그 검색"
+            />
+          </label>
+          <button id="theme-toggle" class="theme-toggle" type="button">다크 모드</button>
+        </div>
+      </header>
+
+      <div id="quick-search" class="quick-search"></div>
+      <main id="app-root" class="app-root"></main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/lobby.js"></script>
+  </body>
+</html>

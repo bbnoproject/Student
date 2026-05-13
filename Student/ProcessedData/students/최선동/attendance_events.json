@@ -1,0 +1,130 @@
+[
+  {
+    "date": "2025-12-15",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-17",
+    "kind": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "category": "absence",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-18",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-22",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-24",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-02",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-01-14",
+    "kind": "조퇴",
+    "detail": "조퇴 (건강 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-26",
+    "kind": "조퇴",
+    "detail": "조퇴 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-03",
+    "kind": "휴가",
+    "detail": "휴가 (반려동물)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-04",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-12",
+    "kind": "휴가",
+    "detail": "휴가 (개인 사정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-18",
+    "kind": "조퇴",
+    "detail": "조퇴 (가족 행사)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-08",
+    "kind": "조퇴",
+    "detail": "조퇴 (반려견 병원)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-13",
+    "kind": "조퇴",
+    "detail": "조퇴 (컨디션 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "조퇴",
+    "detail": "조퇴 (보건소 방문)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-06",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

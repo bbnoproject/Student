@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-09",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-10",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-11",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-12",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-15",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-16",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-17",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-18",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-19",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-22",
+    "kind": "지각",
+    "detail": "지각",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-30",
+    "kind": "지각",
+    "detail": "지각 (건강 검진)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-06",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-07",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

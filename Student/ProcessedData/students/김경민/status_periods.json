@@ -1,0 +1,18 @@
+[
+  {
+    "statusPeriodId": "김경민-status-1",
+    "startDate": "2026-02-09",
+    "endDate": "2026-02-15",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  },
+  {
+    "statusPeriodId": "김경민-status-2",
+    "startDate": "2026-03-16",
+    "endDate": "2026-04-05",
+    "statusType": "경고",
+    "severity": "warning",
+    "reasonSummary": "집중 확인이 필요한 구간"
+  }
+]

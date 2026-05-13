@@ -1,0 +1,1167 @@
+[
+  {
+    "evidenceId": "ev-5615c0a41b26",
+    "studentId": "김영도",
+    "date": "2025-11-27",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 저는 어릴적부터 다양한 콘텐츠를 좋아해서 그런 콘텐츠를 기획해보고 싶다는 생각을 가지고 살았습니다. 드라마 영화 만화 등 여러가지 콘텐츠를 좋아하고 즐겼지만, 가장 좋아했던건 게임이었습니다. 게임이랑 장르는 재미있고 흥미로운 스토리를 기반으로 나의 선택과 경험이 세계의 모습을 바꿀 수 있다는 점이 저에게 매력적…",
+    "detail": "자기소개\n저는 어릴적부터 다양한 콘텐츠를 좋아해서 그런 콘텐츠를 기획해보고 싶다는 생각을 가지고 살았습니다. 드라마 영화 만화 등 여러가지 콘텐츠를 좋아하고 즐겼지만, 가장 좋아했던건 게임이었습니다. 게임이랑 장르는 재미있고 흥미로운 스토리를 기반으로 나의 선택과 경험이 세계의 모습을 바꿀 수 있다는 점이 저에게 매력적으로 다가왔습니다. 저는 그 때문에 게임을 기획하는 기획자의 길을 가고 싶다는 생각을 했습니다. 게임에 대한 흥미와 열정은 남들보다 더 강하리라는 확신을 가지고 있습니다.\n\n지원 동기\n저는 앞서 말한 것처럼 게임에 대한 애정과 흥미는 깊지만, 당장 게임을 기획하고 그것을 실제로 만들어나가는 기술과 지식이 없다는 것이 저의 단점이라고 생각했습니다. 이런 단점을 보안하고 싶다는 생각이들었고 그렇기 때문에 이번 과정을 참여하고 싶다는 생각이 들었습니다.\n\n관련 경험\n학교에서 콘텐츠 기획에서 게임에 대한 기획을 해본적은 있지만, 명확한 지식과 기술없이 기획만 해본 적은 있습니다.\n\n희망 분야\n게임기획 (콘텐츠 기획자, 레벨 디자이너, 전투디자인, 시스템 기획자)\n\n수료 목표\n제가 이 과정을 수료한 이후에는 이곳에서 배운 지식을 통하여 취업에 대한 목표와 계획에 대해서 더 세부적으로 준비할 생각입니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-2882d72f0e26",
+    "studentId": "김영도",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 94",
+    "detail": "어릴 때부터 드라마, 영화 등의 콘텐츠를 좋아하여 콘텐츠학과로 진학을 했고, 지금은 게임 콘텐츠에 관심이 생겨 지원하게 됐다고 합니다.\n게임 기획에 대해 배운 적은 없지만, 학부에서 마케팅, 후킹 포인트, 고객 분석 등을 배웠다고 합니다.\nRPG,TCG, 서브컬쳐, 패키지 게임 등 다양한 게임을 플레이하는 편이라고 합니다.\n강점으로는 한 번 시작하면 끝을 보는 성격을, 약점으로는 사회화된 내향인이라 사람들과 깊은 관계를 맺지는 못하는 성격을 꼽았습니다.\n현재 아르바이트를 하고 있으나, 수업이 시작하면 그만둘 예정이라고 합니다.\n게임업계에 취업을 해도 당장 엄청난 게임을 만들 수 있진 않겠지만, 현실에서 느낄 수 없는 경험을 전달하는 게임을 만들고 싶다고 합니다.\n통일부에서 주관하는 대학생 토론 대회를 나가본 적이 있다고 합니다.\n온라인 수업에 대한 걱정을 질문했는데, 그리 큰 걱정은 아니었습니다.\n생각을 정리해서 말하는 데 능숙하며, 게임 기획자에 대한 확신이 있어보이는 인원입니다.\n무난하게 수업을 잘 따라오고, 팀원들을 리드할 것으로 보입니다.\n다만 팀 프로젝트에서 어떤 역할을 맡는 지는 지켜볼 필요가 있어보입니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-862755119144",
+    "studentId": "김영도",
+    "date": "2025-12-08",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-1aa59f52ea94",
+    "studentId": "김영도",
+    "date": "2025-12-09",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-a1041b626c4d",
+    "studentId": "김영도",
+    "date": "2025-12-10",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴",
+    "detail": "조퇴",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-c74e57187d29",
+    "studentId": "김영도",
+    "date": "2026-01-05",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 조퇴",
+    "summary": "조퇴 (병문안)",
+    "detail": "조퇴 (병문안)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-2a3d72aa18c7",
+    "studentId": "김영도",
+    "date": "2026-01-07",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ### 1) 현재 수업 만족도(난이도/속도/이해도/몰입도) 현재까지는 수업을 무리 없이 따라가고 있으며 전반적으로 양호하다고 답변했습니다. ### 2) 수업 방식 적합도(맞는 점/어려운 점) 오프라인이 아닌 온라인 수업 환경에서 발생하는 단점(집중/소통/몰입 등)이 학습 측면에서 어렵게 느껴진다고 답변했습니…",
+    "detail": "### 내용\n### 1) 현재 수업 만족도(난이도/속도/이해도/몰입도)\n\n현재까지는 수업을 무리 없이 따라가고 있으며 전반적으로 양호하다고 답변했습니다.\n\n### 2) 수업 방식 적합도(맞는 점/어려운 점)\n\n오프라인이 아닌 온라인 수업 환경에서 발생하는 단점(집중/소통/몰입 등)이 학습 측면에서 어렵게 느껴진다고 답변했습니다.\n\n### 3) 9~6 일정 적응도(생활 리듬)\n\n18시 이후 개인 시간을 활용하기가 다소 어렵지만, 큰 문제로 이어지지는 않는다고 답변했습니다.\n\n### 4) 체력/집중력/과제 처리 패턴\n\n전반적으로는 괜찮으나 가끔 체력이 부족하다고 느끼는 경우가 있다고 언급했습니다.\n\n### 5) 현재 희망 직무\n\n1지망은 시나리오 기획, 다만 콘텐츠 기획도 함께 고려 중이라고 답변했습니다.\n\n### 6) 직무 선택 이유\n\n대학 시절부터 관련 분야를 학습해 왔으며, 글 작성으로 수상 경력도 있으며, 전공/학습 경험이 해당 직무 방향과 맞닿아 있다고 답변했습니다.\n\n### 7) 향후 성장 목표 역량\n\n향후에는 문서 작업(문서화) 역량을 강화하고 싶다고 답변했습니다.\n\n### 8) 과정에 대한 기대(목표)\n\n과정을 통해 실무에 가까운 기획자로 성장하는 것을 목표로 제시했습니다.\n\n---",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/김영도.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-20ac840787f0",
+    "studentId": "김영도",
+    "date": "2026-01-12",
+    "weekIndex": 6,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-7e35598dc34d",
+    "studentId": "김영도",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.25 자유 메모 팀에 한번도 유니티나 코딩 메이플 스토리 월드를 한번도 사용해 본 적이 없어서 그런 면에서는 조금 어려움이 있었다고 생각합니다. 다른 면에서는 수월하게 진행이 되어서 문제는 없었습니다.",
+    "detail": "작업 내용\n0.25\n\n자유 메모\n팀에 한번도 유니티나 코딩 메이플 스토리 월드를 한번도 사용해 본 적이 없어서 그런 면에서는 조금 어려움이 있었다고 생각합니다. 다른 면에서는 수월하게 진행이 되어서 문제는 없었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-233d6ee5374d",
+    "studentId": "김영도",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "10팀 / 역할 팀장 / 함께한 팀원 임동균, 권현민, 윤동현, 신석균",
+    "detail": "팀: 10팀\n역할: 팀장\n팀원: 임동균, 권현민, 윤동현, 신석균",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-89904056b1c6",
+    "studentId": "김영도",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 오늘 순조롭게 진행되었다고 생각합니다.",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n오늘 순조롭게 진행되었다고 생각합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-674ea3ec38e6",
+    "studentId": "김영도",
+    "date": "2026-01-22",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 이제 배경 아트만 추가하면 되는 상황이며 이것 관련에서 잘 끝낼 수 있다면 좋을 것 같습니다.",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n이제 배경 아트만 추가하면 되는 상황이며 이것 관련에서 잘 끝낼 수 있다면 좋을 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ce79e9dc7593",
+    "studentId": "김영도",
+    "date": "2026-01-23",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 85프로 정도입니다. 자유 메모 오늘 6시 이후에도 잠깐 남아서 완성까지 할 것 같습니다.",
+    "detail": "작업 내용\n85프로 정도입니다.\n\n자유 메모\n오늘 6시 이후에도 잠깐 남아서 완성까지 할 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-7636d39f821f",
+    "studentId": "김영도",
+    "date": "2026-01-26",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 기본적으로는 잘 진행되었다고 생각합니다. 처음 기획이었다 보니 만드는 도중에 필요한 점이 생기기도 해서 조금 작업이 지연되었다는 생각이 듭니다. 협업에 대하여 일단 이번에 pd라는 중요한 역할을 맡았습니다. 가장 기본적으로 팀원분들의 의견을 중요하게 생각했고 반영할 수 있는 한 반영하기 위해서 노력했고 원…",
+    "detail": "기획에 대하여\n기본적으로는 잘 진행되었다고 생각합니다. 처음 기획이었다 보니 만드는 도중에 필요한 점이 생기기도 해서 조금 작업이 지연되었다는 생각이 듭니다.\n\n협업에 대하여\n일단 이번에 pd라는 중요한 역할을 맡았습니다. 가장 기본적으로 팀원분들의 의견을 중요하게 생각했고 반영할 수 있는 한 반영하기 위해서 노력했고 원하는 기획이 있다면 최대한 적용시켰다는 생각이 듭니다. 또 웬만하면 정해진 시간 안에서 팀원분들이 쉬면서 작업을 하는 것을 중요하게 생각해서 조금 잡스러운 일들은 제가 혼자 남아서 처리했던 것 같습니다.\n\n다음 프로젝트를 위해\n다음번에도 pd라는 역할을 할 수 있을지는 모르겠고 이번 프로젝트에서 비슷한 역할을 할 수 있을지는 모르겠지만, 다음에도pd의 역할을 수행해야 한다면 명확한 기획과 그 기획의도를 전할 수 있는 커뮤니케이션 능력이 가장 중요하다고 느꼈습니다.\n\n칭찬합시다\n제가 아트를 맡아주신 임동균님께 폐를 많이 끼쳤다는 생각이 듭니다. 하지만 제가 중간에 몇 번 수정을 원했는데 수정 내용을 최대한 반영시켜 주었던 점이 기억에 많이 남고 ui 부분적으로 감각이 좋으셔서 도움을 꽤 받았습니다.\n\n자유로운 한마디\n이번에 재미있기도 하고 힘들기도 했다고 생각합니다. 다음 프로젝트도 열심히 참여해서 더 좋은 결과를 만들면 좋겠다는 생각이 듭니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-aca1bbcab171",
+    "studentId": "김영도",
+    "date": "2026-02-02",
+    "weekIndex": 9,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (병가)",
+    "detail": "공가 (병가)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-ac0540e1a87f",
+    "studentId": "김영도",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 세계관 작성, 캐릭터 기획,팀원들 논의,시나리오 작성, 원페이지 기획 가볍게 작성 자유 메모 프로그램 구현 이슈가 있었습니다. 좀 더 명확하게 의도 전달하는 것 방향성을 더 명확하게 전하기",
+    "detail": "작업 내용\n세계관 작성, 캐릭터 기획,팀원들 논의,시나리오 작성, 원페이지 기획 가볍게 작성\n\n자유 메모\n프로그램 구현 이슈가 있었습니다. 좀 더 명확하게 의도 전달하는 것 방향성을 더 명확하게 전하기",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-00c76beed49f",
+    "studentId": "김영도",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "7팀 / 역할 팀장 / 함께한 팀원 권수빈, 김현우, 박원우, 송아영, 채지형",
+    "detail": "팀: 7팀\n역할: 팀장\n팀원: 권수빈, 김현우, 박원우, 송아영, 채지형",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-a20972c4e488",
+    "studentId": "김영도",
+    "date": "2026-02-19",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시나리오 데이터 테이블,스테이지 테이블 자유 메모 그래도 현재는 잘 진행되고 있는 것 같고, 팀원 분들이 열심히 해주셔서 더 탄탄하게 진행방향성을 잡아주면서 간다면 충분히 완성 가능할 것 같다는 생각이 듭니다.",
+    "detail": "작업 내용\n시나리오 데이터 테이블,스테이지 테이블\n\n자유 메모\n그래도 현재는 잘 진행되고 있는 것 같고, 팀원 분들이 열심히 해주셔서 더 탄탄하게 진행방향성을 잡아주면서 간다면 충분히 완성 가능할 것 같다는 생각이 듭니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-fd661f169d7f",
+    "studentId": "김영도",
+    "date": "2026-02-20",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 통합 기획서 데이터 테이블 작성 자유 메모 아직 메이플 월드 시스템 구축에 좀 힘든 점이 있는 것 같다는 생각이 듭니다.",
+    "detail": "작업 내용\n통합 기획서\n데이터 테이블 작성\n\n자유 메모\n아직 메이플 월드 시스템 구축에 좀 힘든 점이 있는 것 같다는 생각이 듭니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ee663054b820",
+    "studentId": "김영도",
+    "date": "2026-02-23",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시스템 타이틀 작업 스테이지 분류 진행 작업 통합기획서 작성 추가 콘텐츠 구상 자유 메모 메이플 월드가 참 이상합니다. 차라리 유니티면 ai가 더 잘 설명해 줄텐데 이런 생각이 듭니다",
+    "detail": "작업 내용\n시스템 타이틀 작업 스테이지 분류 진행 작업\n통합기획서 작성\n추가 콘텐츠 구상\n\n자유 메모\n메이플 월드가 참 이상합니다. 차라리 유니티면 ai가 더 잘 설명해 줄텐데 이런 생각이 듭니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-3f0991eb76f3",
+    "studentId": "김영도",
+    "date": "2026-02-24",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 통합 기획서 추가 마케팅 기획서 작성 기획서 통합 정리 자유 메모 이제 거의 마무리 단계라서 테이블 적용시키면 될 것 같고 구현 된다면 아마 새로운 콘텐츠 추가할 것 같다는 생각이 듭니다.",
+    "detail": "작업 내용\n통합 기획서 추가\n마케팅 기획서 작성\n기획서 통합 정리\n\n자유 메모\n이제 거의 마무리 단계라서 테이블 적용시키면 될 것 같고 구현 된다면 아마 새로운 콘텐츠 추가할 것 같다는 생각이 듭니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-0c97d131b83c",
+    "studentId": "김영도",
+    "date": "2026-02-25",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아트 리소스 배경 cg 작업 자유 메모 거의 완성이 다 된 것 같습니다 배운점이라고 하면 팀장으로 활동하면서 일의 배분을 잘 못했다는 생각이 듭니다.",
+    "detail": "작업 내용\n아트 리소스 배경 cg 작업\n\n자유 메모\n거의 완성이 다 된 것 같습니다 배운점이라고 하면 팀장으로 활동하면서 일의 배분을 잘 못했다는 생각이 듭니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-1e6f326aa0dd",
+    "studentId": "김영도",
+    "date": "2026-02-26",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아트 리소스 작업 UI 정비 자유 메모 진짜 조금 남아서 오늘 중에 끝내지 않을까? 생각합니다.",
+    "detail": "작업 내용\n아트 리소스 작업\nUI 정비\n\n자유 메모\n진짜 조금 남아서 오늘 중에 끝내지 않을까? 생각합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-684582b25f4e",
+    "studentId": "김영도",
+    "date": "2026-02-27",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience"
+    ],
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 일단 기본적으로 팀원들이 이해하기 쉬운 방향으로 최대한 전문 용어라던지 나만 아는 용어를 최대한 배제하고 작성했고 이해하기 어려운 점은 구두로 설명했습니다. 협업에 대하여 기본적으로 팀원들의 의견을 최대한 나눴고 어떤 부분에서 힘든지에 대해서 자주 물어봤던 것 같습니다. 하지만 팀원 한 분 한 분에 대해서…",
+    "detail": "기획에 대하여\n일단 기본적으로 팀원들이 이해하기 쉬운 방향으로 최대한 전문 용어라던지 나만 아는 용어를 최대한 배제하고 작성했고 이해하기 어려운 점은 구두로 설명했습니다.\n\n협업에 대하여\n기본적으로 팀원들의 의견을 최대한 나눴고 어떤 부분에서 힘든지에 대해서 자주 물어봤던 것 같습니다. 하지만 팀원 한 분 한 분에 대해서 적절하게 대하지 못했다는 부분이 후회되는 부분이고 소통이란 것이 내가 받을 준비가 되어 있어도 상대가 준비가 되어 있어야 한다는 것을 고려하지 못했다는 생각이 듭니다. 이런 부분이 정말 후회스럽고 이번 프로젝트의 문제라고 생각합니다.\n\n다음 프로젝트를 위해\n이번 프로젝트에서 개발부터 아트 기획 대부분에 참여해서 진행했습니다. 그러다 보니 개발 부분에서 힘든 점에 대해서 잘 알게되었습니다. 기획서가 작성될 때 규칙과 순서를 명확하고 정확하게 설명되어야 하고 레퍼런스 부분에서 잘 설명되어야 한다는 생각이 들었습니다. 그리고 아트에서는 최대한 버러지지 않는 방향으로 노력했는데 결국 버려지는 부분이 있어서 많이 죄송스러웠습니다. 그리고 가장 중요한 기획에서는 최대한 구두로 설명하지 않아도 가능할 정도의 기획을 추구하는 쪽으로 진행했습니다. 다음에도 이런 점을 고려하고 생각하며 진행하고 싶습니다.\n\n칭찬합시다\n이번에 지형님께서 정말 정신적 많이 도와주셨다고 생각합니다. 딱히 위로라던지 뭔가 해주신 것은 아니지만, 주말에도 혼자 작업하고 있을 때 자신을 할 일은 없냐고 물어봐 주신 게 다들 열심히 하고 있구나라는 생각을 받았습니다.\n\n팀장 선호도 조사\n3.0\n\n이유\n다시 하고 싶다는 생각도 있습니다. 하지만 다음 번에도 뭔가 실수해서 팀원들에게 피해를 주지 않을까 무서운 점이 있습니다.\n\n자유로운 한마디\n저번 프로젝트보다 이번 프로젝트에 대해서 더 힘든 점이 많았다는 생각이 들었습니다. 정신적이든 몸이든 개발이나 기획이 쉽지 않다는 점을 느꼈습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-2fbff892cbac",
+    "studentId": "김영도",
+    "date": "2026-03-04",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (휴식)",
+    "detail": "휴가 (휴식)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-4901cc96c192",
+    "studentId": "김영도",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 컨셉 기획 자유 메모 컨셉 기획에서 제가 기존에 생각한 컨셉이 되어서 조금 기뻤습니다. 오늘 에셋을 찾아봤는데 기획과 정확하게 매치되는 것은 없었지만 그래도 나쁘지 않은 엣셋이 있어서 다행이라고 느끼기도 했습니다",
+    "detail": "작업 내용\n컨셉 기획\n\n자유 메모\n컨셉 기획에서 제가 기존에 생각한 컨셉이 되어서 조금 기뻤습니다. 오늘 에셋을 찾아봤는데 기획과 정확하게 매치되는 것은 없었지만 그래도 나쁘지 않은 엣셋이 있어서 다행이라고 느끼기도 했습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-39738aec8c59",
+    "studentId": "김영도",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "3팀 / 역할 팀원 / 함께한 팀원 정수진, 우현승, 권수빈, 김민제, 안성진, 윤동현",
+    "detail": "팀: 3팀\n역할: 팀원\n팀원: 정수진, 우현승, 권수빈, 김민제, 안성진, 윤동현",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-06483687fac2",
+    "studentId": "김영도",
+    "date": "2026-03-19",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 무기 기획서 작성, 콘텐츠 컨셉 시스템 관련 회의 진행 자유 메모 여러 기획서가 나오다보니 여러가지 회의를 하게 되었던 것 같습니다.",
+    "detail": "작업 내용\n무기 기획서 작성, 콘텐츠 컨셉 시스템 관련 회의 진행\n\n자유 메모\n여러 기획서가 나오다보니 여러가지 회의를 하게 되었던 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9ef16bd336bb",
+    "studentId": "김영도",
+    "date": "2026-03-20",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 근접무기 시스템 구조에 맞게 기획 수정 세계관 정립 자유 메모 다른 기획이 변화함에 따라서 기획이 변화되는 점이 조금 골치 아팠습니다. 다른 기획이 진행되기 전에 진행되기 어려운 기획도 많아서 조금 힘든 점이 있었다고 생각합니다.",
+    "detail": "작업 내용\n근접무기 시스템 구조에 맞게 기획 수정 세계관 정립\n\n자유 메모\n다른 기획이 변화함에 따라서 기획이 변화되는 점이 조금 골치 아팠습니다. 다른 기획이 진행되기 전에 진행되기 어려운 기획도 많아서 조금 힘든 점이 있었다고 생각합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-bfe390c80def",
+    "studentId": "김영도",
+    "date": "2026-03-23",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 근접무기 디테일 강화, 일반 몬스터 디테일 강화 에셋 변화와 시스템 변화에 맞춘 기획 변경 자유 메모 월요일이라서 피곤했습니다.",
+    "detail": "작업 내용\n근접무기 디테일 강화, 일반 몬스터 디테일 강화 에셋 변화와 시스템 변화에 맞춘 기획 변경\n\n자유 메모\n월요일이라서 피곤했습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-dd11ee1ee22d",
+    "studentId": "김영도",
+    "date": "2026-03-24",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 소모품 기획,보스 기획 자유 메모 오늘 순조롭게 작업 했던 것 같고 오늘 대기업 기밀 프로젝트 기대되는 것 같습니다.",
+    "detail": "작업 내용\n소모품 기획,보스 기획\n\n자유 메모\n오늘 순조롭게 작업 했던 것 같고 오늘 대기업 기밀 프로젝트 기대되는 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-7375d70b4410",
+    "studentId": "김영도",
+    "date": "2026-03-25",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 이벤트 방 설정 보스기획 수정 자유 메모 어려운 일은 없던 것 같습니다.",
+    "detail": "작업 내용\n이벤트 방 설정 보스기획 수정\n\n자유 메모\n어려운 일은 없던 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-6ef0dc86bd49",
+    "studentId": "김영도",
+    "date": "2026-03-26",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 보스 패턴 보스 컨셉 설계 기획 자유 메모 보스가 각 특색이 한정된 애셋 안에서 각자 개성 있게 달라야 한다는 점이 좀 힘들었습니다",
+    "detail": "작업 내용\n보스 패턴 보스 컨셉 설계 기획\n\n자유 메모\n보스가 각 특색이 한정된 애셋 안에서 각자 개성 있게 달라야 한다는 점이 좀 힘들었습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-4570abd8c14e",
+    "studentId": "김영도",
+    "date": "2026-03-27",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘 3스테이지 보스 기획이랑 에셋 찾아봤습니다. 자유 메모 없습니다",
+    "detail": "작업 내용\n오늘 3스테이지 보스 기획이랑 에셋 찾아봤습니다.\n\n자유 메모\n없습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5f044d76519c",
+    "studentId": "김영도",
+    "date": "2026-03-30",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 에셋 찾기 자유 메모 시간이 빨리 갔습니다",
+    "detail": "작업 내용\n에셋 찾기\n\n자유 메모\n시간이 빨리 갔습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-312e5edc8ae9",
+    "studentId": "김영도",
+    "date": "2026-03-31",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 에셋찾기,세계관 기획 자유 메모 컨셉이 완전히 변경 되어서 컨셉부터 다시 설정하느라고 세계관이 오래걸렸습니다. 내일 완료할 것 같습니다",
+    "detail": "작업 내용\n에셋찾기,세계관 기획\n\n자유 메모\n컨셉이 완전히 변경 되어서 컨셉부터 다시 설정하느라고 세계관이 오래걸렸습니다. 내일 완료할 것 같습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-7aa5c9929752",
+    "studentId": "김영도",
+    "date": "2026-04-01",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 에셋 작업,세계관 기획서 완성 자유 메모 순조롭게 진행되었습니다,",
+    "detail": "작업 내용\n에셋 작업,세계관 기획서 완성\n\n자유 메모\n순조롭게 진행되었습니다,",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-3b93473d54bb",
+    "studentId": "김영도",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 타이틀 화면 제작 제목 제작, 캐릭터 제작 자유 메모 거의 완성 단계라서 순조로운면도 있었지만 완성단계기 때문에 어려운 면도 있는 것 같습니다.",
+    "detail": "작업 내용\n타이틀 화면 제작 제목 제작, 캐릭터 제작\n\n자유 메모\n거의 완성 단계라서 순조로운면도 있었지만 완성단계기 때문에 어려운 면도 있는 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-fdf6e5ff2f3c",
+    "studentId": "김영도",
+    "date": "2026-04-03",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 이치아이오 썸네일 제작 자유 메모 순조로웠습니다",
+    "detail": "작업 내용\n이치아이오 썸네일 제작\n\n자유 메모\n순조로웠습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-8af750c3a19c",
+    "studentId": "김영도",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 정기 면담",
+    "summary": "### 내용 ### 프로젝트 - 현재는 QA 진행중이며, 이미 많이 진행됐다고 합니다. - PM이 있으니까 프로젝트가 너무 편하다고 합니다. - 이전 프로젝트의 팀장은 너무 힘들었다고 합니다. ### 취업 - 시나리오 기획을 제일 희망하긴 하지만, 현실적으로 레벨 디자인, PM을 제외한 나머지 직무에 대해 모두 열려있다…",
+    "detail": "### 내용\n### 프로젝트\n- 현재는 QA 진행중이며, 이미 많이 진행됐다고 합니다.\n- PM이 있으니까 프로젝트가 너무 편하다고 합니다.\n- 이전 프로젝트의 팀장은 너무 힘들었다고 합니다.\n\n### 취업\n- 시나리오 기획을 제일 희망하긴 하지만, 현실적으로 레벨 디자인, PM을 제외한 나머지 직무에 대해 모두 열려있다고 합니다.\n- 캐주얼 장르를 제외하고, 오래할 수 있는 하나의 큰 프로젝트에 가고 싶다고 합니다.\n- 뮤지컬 연출, 배우, 웹소설 연재 및 수상 경험을 통한 스토리텔링을 강점으로 보여줄 예정이라고 합니다.\n- 협업 프로젝트에서의 경험을 통해, 커뮤니케이션 경험을 강점으로 가져갈 예정이라고 합니다.\n- 기획적인 역량은 사이드 프로젝트로 게임을 직접 만들어보며 만들어가겠다고 합니다.\n- 엑셀 공부중인데, AI 시대에서 큰 의미가 있을까 싶다고 하여 적당한 수준까지만 공부해두는 것도 괜찮다고 이야기했습니다.\n- 여건이 되는대로, 최대한 빠르게 취업하고 싶다고 이야기했습니다.\n\n### 수업\n- 좀더 깊이 있는 수업을 원하는데, 수업 기간이 너무 짧은 것 같아 아쉽다고 합니다.\n- 본인이 잘하고 있는 지에 대한 확신이 조금 부족해보입니다.\n- 이후 기업협약 프로젝트에서 팀장에 지원할 계획이 있다고 합니다.\n\n전체적으로 취업 준비가 잘 되어있는 인원이며, 취업 방향에 대한 확신이 있는 편입니다. 빠르게 취업이 가능할 것으로 예상됩니다.\n\n--",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/김영도.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-2d22f9a6a4aa",
+    "studentId": "김영도",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 에셋 만들기 qa 자유 메모 순조롭게 진행되었습니다.",
+    "detail": "작업 내용\n에셋 만들기 qa\n\n자유 메모\n순조롭게 진행되었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-1ea3a1101f9f",
+    "studentId": "김영도",
+    "date": "2026-04-07",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 튜토리얼 에셋 제작 자유 메모 순조롭습니다.",
+    "detail": "작업 내용\n튜토리얼 에셋 제작\n\n자유 메모\n순조롭습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-d7ebb89ddf6b",
+    "studentId": "김영도",
+    "date": "2026-04-08",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 자유 메모 순조로웠습니다",
+    "detail": "작업 내용\nQA\n\n자유 메모\n순조로웠습니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-589b3414b71b",
+    "studentId": "김영도",
+    "date": "2026-04-11",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "3팀 / 역할 팀원 / 함께한 팀원 주재형, 권현민, 김민제, 우현승, 윤동현, 이승진, 이원홍, 장근혁",
+    "detail": "팀: 3팀\n역할: 팀원\n팀원: 주재형, 권현민, 김민제, 우현승, 윤동현, 이승진, 이원홍, 장근혁",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-f1bfdef0d4b8",
+    "studentId": "김영도",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 자기소개서 자기소개서 작성",
+    "summary": "자소서 _ 김영도 [입체적인 스토리텔링과 구조적 기획력으로 텍스트에 생명력을 불어넣는 시나리오 기획자] 성장배경 어릴 적부터 저는 소설에 깊이 빠져들었습니다. 제가 독서를 사랑했던 가장 큰 이유는 단순 한 지식의 습득을 넘어, 책 속 인물들의 삶을 생생하게 체험하고 느낄 수 있다는 점이었습니 다. 활자를 통해 여러 인물…",
+    "detail": "자소서 _ 김영도\n\n[입체적인 스토리텔링과 구조적 기획력으로 텍스트에 생명력을 불어넣는 시나리오 기획자]\n\n성장배경 어릴 적부터 저는 소설에 깊이 빠져들었습니다. 제가 독서를 사랑했던 가장 큰 이유는 단순 한 지식의 습득을 넘어, 책 속 인물들의 삶을 생생하게 체험하고 느낄 수 있다는 점이었습니 다. 활자를 통해 여러 인물의 서사와 감정선을 따라가다 보니 자연스럽게 세상을 바라보는 시야가 넓어졌고, 깊이 사색하는 습관을 바탕으로 어떤 문제든 창의적인 시각으로 접근하는 방식을 기를 수 있었습니다. 이러한 관찰적이고 사색적인 성향 덕분에 고등학교 시절에는 고등학교 홍보팀으로 활동하여 중학생들을 대상으로 제가 관찰하고 생각한 학교의 매력을 알렸고, 교지 편집부에서 학교를 정보를 짜임새 있게 모아서 글을 쓰는 기자 겸 작가의 역할도 수행했습니다. 책 속 인물의 삶을 간접 체험하며 길러온 공감 능력과 넓은 시야는 단순히 글을 쓰는 것을 넘 어, 정보를 논리적으로 구조화하고 이를 창의적으로 대중에게 전달하는 글을 쓰는 것에 튼튼 한 뼈대가 되었습니다. 다양한 삶의 형태를 이해하고 이를 흥미로운 아이디어로 풀어내는 과 정에서 큰 즐거움을 느끼게 되었습니다. 이는 훗날 유저들에게 깊은 몰입감과 새로운 경험을 선사하는 시나리오 기획자가 되겠다는 뚜렷한 목표로 이어졌습니다. 지원동기 게임 시나리오 기획의 핵심은 텍스트로 이루어진 서사를 유저가 직접 체감할 수 있는 경험으 로 보여주는 것이라고 생각합니다. 그리고 저는 이런 부분에 자신감이 있습니다. 대학교 입학 첫해, 학교 대표 인물을 주제로 한 콘텐츠 공모전에 참가하여 대중성과 접근성 이 있는 웹소설을 기획했습니다. 해당 인물과 관련된 평전과 논문을 분석하고, 웹소설의 분 위기가 무거워질 수 있는 역사적 사실에 저만의 상상력을 더해 대중들이 등장인물과 서사에 집중할 수 있는 재미를 주고자 노력했습니다. 그 결과 개인 참가자 중 유일하게 수상에 성공 했고 우수상을 받으며 저의 스토리텔링 기획력에 대한 확신을 얻었습니다. 또한 대학교 시절 뮤지컬 동아리에 속하여 500 명 수준의 관객을 수용한 공연에서 연출과 배 우의 역할을 동시에 맡은 적이 있습니다. 대본에 담긴 인물의 심리를 심층적으로 분석해 저 만의 캐릭터 해석을 완성했고, 이를 무대 동선으로 표현했습니다. 거리와 구도 무대의 미장 센 등을 이용하여 시각적으로 연출했고 기존에 기획과 실제 결과물 사이의 오차를 줄인 결 자 소 서 _ 김 영 도 1 과, 공연을 직접 보러 온 원작자로부터 자신이 생각한 것과 거의 똑같은 무대와 캐릭터였다 는 메세지를 받았습니다. 제가 시나리오 기획자가 된다면 텍스트에 숨겨진 서사를 깊이 있게 분석하고 구조적으로 구 현해 낸 이러한 경험을 바탕으로, 단순히 글을 쓰는 데 그치지 않고 유저가 연출을 통해 서사 를 온전히 체감하고 설계하고 싶습니다. 장단점 저의 가장 큰 장점은 존중과 명확한 소통을 바탕인 협업능력입니다. 저는 통일부 주최 남북모의회담 토론 대회 참가 당시, 일면식도 없는 타 대학 학생들과 연합 팀을 결성했습니다. 제가 여기서 가장 중요하게 생각한 것은 함께 한 학생들과 토론 전략을 만드는 과정에서 승리를 위한 정답을 찾기보다는, 어떤 의견이든 수용되는 분위기를 만들고 자 긍정적인 체스처와 리액션으로 회의를 주도했습니다. 편안한 환경 속에서 자유롭게 나온 여러 아이디어들을 하나의 논리로 만들어 대회에서 장려상을 수상했습니다. 또한 학원에서 진행한 비주얼 노벨 프로젝트에서 팀장 겸 시나리오 라이터로 활동하여 제가 생각한 기획 내용을 팀원들에게 명확하게 전달하기 위해서 게임 제작에 방해가 되지 않는 선 에서 레퍼런스에 최대한 시간 투자를 했고 ai 로 만든 레퍼런스와 피그마, 프레젠테이션 등의 여러가지 도구를 사용하여 소통의 간극을 좁혔습니다. 이런 시청각 자료를 통하여 직관적으 로 기획에 대해서 이해할 수 있도록 했으며, 팀장의 시선으로 다양한 작업을 맞아준 팀원들 과 함께 고민하며 어떤 부분에서 작업이 힘든지 파악하기 위해 하루 30 분 식 2 번 회의시간 을 가졌습니다. 이런 명화한 소통 덕에 제가 만든 첫 번째 프로젝트는 좋은 결과로 남았습니 다. 반면, 저는 어떤 일을 할 때 때 쉽게 만족하는 경향이 있습니다. 이런 점 때문에 1 차 빌드가 나 오거나 완성이 눈 앞에 보였을 때 현재에 만족하여 뒷심이 빠지는 경우가 많았습니다. 이런 점은 기획자에게 있어서 발전에 큰 걸림돌이 될 수 있다고 판단하여, 이를 극복하기 위해 저 를 객관화 할 수 있는 규칙을 정했습니다. 현재는 프로젝트 완료 후 구글 폼을 통하여 유저들 의 피드백을 적극적으로 수집 및 수용하고 있으며, 평소 게임을 즐겨하는 지인이나 학원 동 기들에게 제작 게임에 대한 리뷰를 받고 있습니다. 스스로의 만족에 갇히지 않고 외부의 시선을 열린 자세로 받아들임으로써, 콘텐츠의 완성도 를 마지막까지 끌어올리기 위해서 책임감 있고 겸허한 자세로 노력하고 있습니다. 입사 후 포부 입사 후 저는 유저의 몰입을 극대화 할 수 있는 입체적인 시나리오 기획력과 협업자 동료들 에게 누구와도 환영 받을 수 있는 소통 능력을 바탕으로 프로젝트의 중심을 잡는 인재가 되 겠습니다. 자 소 서 _ 김 영 도 2 앞선 공모전과 연출 경험에서 증명했듯, 저는 단순히 텍스트만 적어내는 라이터가 아닙니다. 다양한 프로젝트 경험을 통해서 캐릭터의 서사와 감정선을 깊이 있게 분석하고, 그것이 게임 내 시스템, 퀘스트 구조, 아트 연출과 어떻게 맞물려야 유저에게 가장 효과적으로 전달될지 시각적이고 논리적으로 설계할 수 있습니다. 무엇보다 저는 타 직군과의 협업이 얼마나 중요한지 누구보다 잘 알고 있습니다. 여러 프로 젝트를 통해서 아트의 역할과 프로그래머의 역할을 수행해 보았기 때문에 개발과 아트의 고 충을 충분히 이해하고 있습니다. 그런 점까지 고려하며 막연하고 추상적인 설명이 아닌, 명 확한 시청각 레퍼런스를 활용해 프로그래머 및 아티스트 동료들과 오해 없이 소통하겠습니 다. 나아가 팀원들의 아이디어를 존중하고 기획에 유기적으로 녹여내는 열린 자세를 통해, 동료들이 가장 소통하기 편하고 함께 일하고 싶은 기획자로 꼽는 사람이 되겠습니다. 저의 단점을 보안하기 위해 구축해 둔 피드백 수용 자세를 잃지 않고, 현재에 만족하지 않고 끝없 이 유저와 팀원들의 목소리를 듣고 발전하는 기획자가 되겠습니다. 자 소 서 _ 김 영 도 3",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/1차(260420)/자소서 모음집/김영도_자기소개서.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-012020a96aba",
+    "studentId": "김영도",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 자기소개서 피드백",
+    "summary": "# 김영도_자기소개서 ## 종합 판단 시나리오 기획자를 지망하는 방향은 분명하지만, 성장 배경과 독서 경험의 비중이 커서 게임 기획자로서의 실제 행동 근거가 늦게 드러납니다. 글쓰기 역량이 장면, 갈등, 플레이 흐름을 바라보는 본인의 기준으로 어떻게 이어지는지 더 분명히 연결해보는 방향을 제안합니다. ## 잘 한 부분…",
+    "detail": "# 김영도_자기소개서\n\n## 종합 판단\n시나리오 기획자를 지망하는 방향은 분명하지만, 성장 배경과 독서 경험의 비중이 커서 게임 기획자로서의 실제 행동 근거가 늦게 드러납니다. 글쓰기 역량이 장면, 갈등, 플레이 흐름을 바라보는 본인의 기준으로 어떻게 이어지는지 더 분명히 연결해보는 방향을 제안합니다.\n\n## 잘 한 부분\n- 책 속 인물의 삶을 따라가며 공감 능력과 시야를 길렀다는 점은 시나리오 기획자에게 좋은 소재입니다.\n- 교지 편집부, 홍보팀 경험은 정보를 구조화하고 대중에게 전달하는 능력으로 연결할 수 있습니다.\n- “입체적인 스토리텔링과 구조적 기획력”이라는 방향은 시나리오 기획자 캐릭터로 발전 가능성이 있습니다.\n\n## 개선 방향 제안\n- 독서 경험이 길지만, 그 경험이 게임 속 장면이나 캐릭터 갈등을 판단하는 기준으로 어떻게 바뀌었는지가 조금 더 설명되면 좋습니다.\n- “깊은 몰입감과 새로운 경험” 같은 표현은 추상적입니다. 본인이 몰입을 만든다고 볼 때 무엇을 중요하게 보는지, 예를 들어 선택, 갈등, 반전, 관계 변화 중 어떤 요소를 중시하는지 설명해보는 것을 추천합니다.\n- 게임 기획자로서의 행동이 늦게 나옵니다. 성장 배경을 짧게 정리하고, 실제로 관찰하고 판단하고 바꾼 경험을 앞쪽에 배치해보는 편이 좋습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/1차(260420)/개인 피드백/김영도.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-d118362ada54",
+    "studentId": "김영도",
+    "date": "2026-04-28",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-9d479f9e2532",
+    "studentId": "김영도",
+    "date": "2026-04-29",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-577e49198144",
+    "studentId": "김영도",
+    "date": "2026-04-30",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-65f4bfa375c0",
+    "studentId": "김영도",
+    "date": "2026-05-03",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 취업 문서 이력서 작성",
+    "summary": "--- page 1 --- 서사를 구조화하고 연출로 구현해 , 유저가 체감하는 이야기를 만드는 기획자 # 서사구조 # 연출이해 # 유저이해 2. 인적 사항 구분 내용 성명 김영도 연락처 ( 휴대폰 ) / ( 이메일 ) 주소 3. 학력 (Education) 기간 학교명 전공 졸업 여부 2020.03.01. ~ 2026.0…",
+    "detail": "--- page 1 ---\n \n서사를 구조화하고 연출로 구현해 , 유저가 체감하는 이야기를 \n만드는\n \n기획자\n \n#\n서사구조\n \n#\n연출이해\n \n#\n유저이해\n 2. 인적 사항 구분 내용 \n성명 김영도 \n연락처 ( 휴대폰 ) / ( 이메일 ) \n주소 \n 3. 학력 (Education) 기간 학교명 전공 졸업 여부 \n2020.03.01. ~ 2026.02. \n( 대학교명 ) 문화콘텐츠학과 ( 졸업 / 졸업예정 ) \n2017.03.01~2020.02 ( 고등학교명 ) 인문계 ( 문과 ) ( 졸업 ) \n 4. 교육 이수 (Training/Course Completion) 기간 교육 과정명 교육 기관 주요 내용 / 이수 시간 \n ~ 2025-12-08. 2026-08-01\n생성형 AI 를 활용한 게임 기획자 4 기 \n디벨롯켓 ( 전 경일 ) ( 학습 목표와 결과 요약 ) \n 5. 프로젝트 경험 (Project Experience) 기간 프로젝트명 역할 \n2026 메이플 월드 비주얼노벨 프로젝트 \npd, 시나리오 기획 \n2026 메이플 월드 프로젝트 pd, 시나리오 기획 , 컨셉 기획 \n2026 이치아이오 프로젝트 콘텐츠 기획 \n\n--- page 2 ---\n6. 보유 역량 및 사용 가능 툴 (Skills & Tools) 구분 상세 내용 \n보유 역량 기획 문서화 , AI 활용능력 \n사용 가능 툴 Figma, Unity, Google Workspace, Notion, \n 7. 대외활동 기간 활동명 기관 / 주최 주요 내용 및 역할 \n2021.09~2021.10 대학생모의남북토론대회 \n통일부 토론팀원 ( 문화체육관광부장관역 ) \n 8. 수상 날짜 수상명 수여 기관 \n2021 대학토론대회장려상 \n통일부 \n2020 웹소설 : 우수상 \n대학교",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/2차(260503)/피드백/_추출텍스트/김영도_이력서.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-22e06c59894a",
+    "studentId": "김영도",
+    "date": "2026-05-03",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 취업 문서 자기소개서 작성",
+    "summary": "--- page 1 --- [ 서사를 구조화 하고 이를 효과적으로 전달하는 기획자 ]_ 김영도 성장배경 제 인생을 생각해보면 , 저는 누구보다도 스토리를 사랑하는 사람입니다 . 그리고 저는 이런 사랑하는 이야기를 그저 보고 읽는 사람에서 설계하는 사람으로 발전해 왔습니다 . 어릴 적부터 저는 소설을 즐겨 읽으며 어떤 인…",
+    "detail": "--- page 1 ---\n[ 서사를 구조화 하고 이를 효과적으로 전달하는 기획자 ]_ 김영도 성장배경 제 인생을 생각해보면 , 저는 누구보다도 스토리를 사랑하는 사람입니다 . 그리고 저는 이런 \n사랑하는\n \n이야기를\n \n그저\n \n보고\n \n읽는\n \n사람에서\n \n설계하는\n \n사람으로\n \n발전해\n \n왔습니다\n.\n 어릴 적부터 저는 소설을 즐겨 읽으며 어떤 인물의 선택과 그로 인한 갈등 , 관계 변화를 \n자세하고\n \n깊게\n \n관찰했습니다\n.\n \n이\n \n과정에서\n \n이야기와\n \n스토리텔링이라는\n \n한\n \n가지의\n \n틀\n \n자체를\n \n이해하고\n \n설계할\n \n수\n \n있는\n \n힘을\n \n가지게\n \n되었다고\n \n생각합니다\n.\n 이러면 성취는 단순한 독서 경험에 머무르지 않고 , 고등학교 시절에는 교지 편집부의 \n작가로서\n \n활동을\n \n하여\n \n학교의\n \n홍보를\n \n스토리를\n \n담은\n \n문학적\n \n홍보\n \n방식으로\n \n표현하였고\n,\n \n대학교\n \n시절에는\n \n문화콘텐츠를\n \n전공하여\n \n영상이나\n \n매체에서\n \n보여지는\n \n구도\n \n연출의\n \n디테일과\n \n스토리텔링의\n \n흐름에\n \n대해서\n \n공부하며\n \n이런\n \n역량을\n \n강화하였습니다\n.\n 이 경험들을 통해 저는 단순한 정보를 이야기로 재구성하고 , 이를 전달 가능한 형태로 \n설계하는\n \n능력을\n \n기를\n \n수\n \n있었으며\n,\n \n이는\n \n제가\n \n사랑하고\n \n좋아하는\n \n이야기를\n \n유저가\n \n직접\n \n전달하여\n \n선택하고\n \n체험하는\n \n게임\n \n시나리오\n \n기획으로\n \n관심을\n \n확장하는\n \n계기가\n \n되었습니다\n.\n \n지원동기 제가 생각하는 시나리오 기획자는 단순 이야기를 작성하는 역할이 아닌 , 서사를 구조화하고 \n이를\n \n다양한\n \n방식으로\n \n구현해\n \n전달하는\n \n것이라고\n \n생각합니다\n.\n 대학 입학 후 학교 홍보 콘텐츠 공모전 웹소설 부분에 참가하였습니다 . 그 공모전에서 저는 \n단순한\n \n스토리\n \n작성이\n \n아닌\n,\n \n독자가\n \n몰입할\n \n수\n \n있는\n \n서사의\n \n흐름을\n \n설계하는\n \n것에\n \n집중하였습니다\n.\n \n역사적\n \n인물을\n \n기반으로\n \n한\n \n콘텐츠에서\n \n자칫\n \n무거워질\n \n수\n \n있는\n \n요소를\n \n그대로\n \n전달하기보다\n,\n \n갈등의\n \n배치와\n \n사건의\n \n전개\n \n방식을\n \n조정하여\n \n보다\n \n몰입도\n \n있는\n \n이야기로\n \n재구성\n \n하였고\n,\n \n그\n \n결과\n \n개인\n \n참가자\n \n중\n \n유일하게\n \n수상하여\n \n우수상을\n \n받을\n \n수\n \n있었습니다\n.\n \n 또한 뮤지컬 동아리에서 연출과 배우를 맡으며 , 텍스트를 실제 장면으로 구현하는 과정도 \n경험하였습니다\n.\n \n인물의\n \n감정선을\n \n분석하고\n \n이를\n \n동선\n,\n \n거리\n,\n \n구도\n,\n \n무대\n \n연출로\n \n풀어내며\n,\n \n글로\n \n존재하던\n \n이야기가\n \n전달\n \n방식에\n \n따라\n \n어떤식으로\n \n달라지는지\n \n체감할\n \n수\n \n있었습니다\n.\n 이러한 경험을 통해 저는 이야기를 단순히 만들어내는 것에 그치지 않고 ., 어떻게 구성하고 \n어떤\n \n방식으로\n \n전달하느냐에\n \n따라\n \n완성도가\n \n달라진다는\n \n점에\n \n매력을\n \n느끼게\n \n되었고\n,\n \n이를\n \n가장\n \n다양한\n \n방식으로\n \n다룰\n \n수\n \n있는\n \n시나리오\n \n기획\n \n직무에\n \n지원하게\n \n되었습니다\n.\n \n장단점 저의 가장 큰 장점은 유동적인 기획과 명확한 소통을 기반으로 한 협업 능력이라고 \n생각합니다\n.\n 학원에서 진행한 이치아이오 프로젝트에서 저는 콘텐츠 기획자로 참여했습니다 . 그 \n과정에서\n \n저는\n \n기획은\n \n언제든\n \n수정될\n \n수\n \n있다는\n \n전제를\n \n두고\n \n작업을\n \n진행하였습니다\n.\n \n초기\n \n기획에\n \n집착하기보다는\n \n개발\n \n과정에서\n \n발생하는\n \n피드백을\n \n반영해\n \n지속적으로\n \n구조를\n \n개선하였습니다\n.\n \n\n--- page 2 ---\n 특히 기획 의도를 명확하게 전달하기 위해 html 기반 레퍼런스 게임과 ui 등을 제작하였고 , \nai\n를\n \n할용하여\n \n아트\n \n방향성을\n \n시각화했습니다\n.\n \n또한\n \n피그마와\n \n프레젠테이션을\n \n활용해\n \n텍스트보다\n \n시청각\n \n중심의\n \n커뮤니케이션으로\n \n개발팀과\n \n기획팀원\n \n간의\n \n이해도를\n \n높힐\n \n수\n \n있었습니다\n.\n 이런 장점은 단순히 콘텐츠 기획을 넘어서 시나리오 기획에서도 활용할 수 있다고 생각하고 \n있습니다\n.\n 그리고 단점으로는 결과가 보이기 시작하면 쉽게 만족하는 경향이 있다는 점입니다 . 프로젝트가 일정 수준 이상으로 완성되었을 때 스스로 기준을 낮추고 마무리하려는 성향이 \n있었고\n,\n \n이는\n \n결과물의\n \n완성이\n \n미흡해지거나\n \n완성도를\n \n끌어올리는\n \n것에\n \n대해서\n \n큰\n \n약점으로\n \n작용했습니다\n.\n 이를 개선하기 위해 현재는 작업을 완료한 이후 반드시 외부 피드백을 수집하는 과정을 \n거치고\n \n있습니다\n.\n \n구글\n \n폼을\n \n활용하여\n \n유저\n \n의견을\n \n정리하고\n,\n \n게임을\n \n즐겨하는\n \n지인과\n \n학원\n \n동기들에게\n \n플레이\n \n리뷰를\n \n받아\n \n객관적인\n \n시각에서\n \n결과물을\n \n점검하고\n \n있습니다\n.\n 이러한 과정을 통해 스스로의 기준에 머무르지 않고 , 다양한 관점에서 콘텐츠를 바라보며 \n완성도를\n \n지속적으로\n \n개선하고\n \n있습니다\n.\n \n입사 후 포부 입사 후 저는 서사를 구조화하고 이를 효과적으로 전달할 수 있는 시나리오 기획자로 \n성장하고자\n \n합니다\n.\n 그동안의 경험을 통해 저는 이야기는 단순히 잘 쓰는 것보다 , 어떤 구조로 구성하고 어떤 \n방식으로\n \n전달하느냐에\n \n따라\n \n완성도가\n \n달라진다느\n \n점을\n \n배웠습니다\n.\n \n이를\n \n바탕으로\n \n캐릭터의\n \n감정선과\n \n서사를\n \n설계하는\n \n것에\n \n그치지\n \n않고\n,\n \n그것이\n \n연출\n,\n \n시스템\n,\nui\n \n흐름과\n \n어떻게\n \n연결될\n \n때\n \n가장\n \n효과적으로\n \n전달되는지까지\n \n함께\n \n고민하며\n \n시나리오를\n \n기획하는\n \n기획자가\n \n되겠습니다\n.\n 또한 기획은 완성된 결과물이 아니라 , 개발 과정 속에서 지속적으로 발전해야 하는 것이라 \n생각합니다\n.\n \n따라서\n \n초기\n \n기획에\n \n집착하지\n \n않고\n,\n \n피드백과\n \n협업을\n \n통해\n \n유연하게\n \n개선해\n \n나가며\n \n프로젝트의\n \n완성도를\n \n높이겠습니다\n.\n 특히 다양한 직군과의 협업 과정에서 명확한 레퍼런스와 시각 자료를 화용해 기획 의도를 \n명확하게\n \n전달하고\n,\n \n해석의\n \n차이에서\n \n발생하는\n \n오류를\n \n줄이는\n \n것에\n \n기여하겠습니다\n.\n 아울러 저의 단점을 보완하기 위해 구축해 온 피드백 수용 과정을 유지하며 , 유저와 팀원의 \n의견을\n \n적극적으로\n \n반영해\n \n결과물의\n \n완성도를\n \n끝까지\n \n끌어올리는\n \n기획자가\n \n되겠습니다\n.\n 궁극적으로는 이야기를 단순히 전달하는 것을 넘어 , 유저가 자연스럽게 몰입하고 공감할 수 \n있는\n \n경험을\n \n설계하는\n \n시나리오\n \n기획자로\n \n성장하겠습니다\n.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/2차(260503)/피드백/_추출텍스트/김영도_자기소개서_2차.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-c53c0f2cbd42",
+    "studentId": "김영도",
+    "date": "2026-05-03",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 취업 문서 피드백",
+    "summary": "﻿# 김영도 ## 이력서 ### 종합 판단 시나리오 기획 방향은 보입니다. 다만 템플릿 흔적이 문서 신뢰도를 낮춥니다. ### 개선사항 #### 1. 템플릿 흔적 ```text \"학습 목표와 결과 요약\" ``` - 제출 전 정리되지 않은 문구처럼 보입니다. - 시나리오 기획자 문서에서는 완성도가 더 중요하게 읽힙니다.…",
+    "detail": "﻿# 김영도\n\n## 이력서\n\n### 종합 판단\n\n시나리오 기획 방향은 보입니다.\n다만 템플릿 흔적이 문서 신뢰도를 낮춥니다.\n\n### 개선사항\n\n#### 1. 템플릿 흔적\n\n```text\n\"학습 목표와 결과 요약\"\n```\n\n- 제출 전 정리되지 않은 문구처럼 보입니다.\n- 시나리오 기획자 문서에서는 완성도가 더 중요하게 읽힙니다.\n\n<br><br>\n\n## 자기소개서\n\n### 종합 판단\n\n시나리오 직무 이해는 보입니다.\n시나리오 방향을 뒷받침하는 사례는 이어집니다.\n다만 문장 호응과 표현 정확도는 더 정리될 필요가 있습니다.\n\n### 좋은 점\n\n#### 1. 시나리오 직무 관점\n\n```text\n\"시나리오 기획자는 단순 이야기를 작성하는 역할이 아닌, 서사를 구조화하고 이를 다양한 방식으로 구현해 전달하는 것이라고 생각합니다.\"\n```\n\n- 시나리오를 구조와 전달 방식으로 이해했습니다.\n- 글쓰기 이상의 직무 관점이 보입니다.\n\n### 개선사항\n\n#### 1. 문장 완성도와 표현 정확성\n\n```text\n\"이러면 성취는 단순한 독서 경험에 머무르지 않고\"\n```\n\n- 앞뒤 내용은 독서, 교지 편집부, 문화콘텐츠 전공 경험으로 이어집니다.\n- 따라서 사례 연결이 없는 문제로 보기는 어렵습니다.\n- 다만 문장 호응이 어색해 좋은 흐름의 신뢰도가 낮아질 수 있습니다.\n\n## 결론\n\n`서사와 연출을 연결하는 시나리오 기획자`로 읽힐 수 있습니다.\n문서 완성도와 구체 사례가 보강되어야 합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/2차(260503)/피드백/김영도.md",
+      "isEstimatedDate": false
+    }
+  }
+]

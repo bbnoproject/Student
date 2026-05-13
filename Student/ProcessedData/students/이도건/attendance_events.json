@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2025-12-12",
+    "kind": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "category": "absence",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-15",
+    "kind": "결석",
+    "detail": "결석 (늦잠)",
+    "severity": "warning",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2025-12-26",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-16",
+    "kind": "휴가",
+    "detail": "휴가 (지인 결혼)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

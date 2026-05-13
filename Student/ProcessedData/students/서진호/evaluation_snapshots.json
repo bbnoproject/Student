@@ -1,0 +1,92 @@
+[
+  {
+    "snapshotId": "서진호-m1",
+    "snapshotDate": "2025-12-07",
+    "snapshotType": "모집 ~ 개강",
+    "scores": {
+      "self_regulation": 1,
+      "engagement": 1,
+      "collaboration": 2,
+      "resilience": 3,
+      "reflection": 2,
+      "career_agency": 2
+    },
+    "confidence": "Low",
+    "note": "자기조절 지원 필요"
+  },
+  {
+    "snapshotId": "서진호-m2",
+    "snapshotDate": "2026-01-23",
+    "snapshotType": "개강 ~ 1차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 4,
+      "engagement": 4,
+      "collaboration": 3,
+      "resilience": 3,
+      "reflection": 3,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "전반적으로 안정적인 성장 흐름"
+  },
+  {
+    "snapshotId": "서진호-m3",
+    "snapshotDate": "2026-02-27",
+    "snapshotType": "1차 프로젝트 종료 ~ 2차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 3,
+      "engagement": 4,
+      "collaboration": 2,
+      "resilience": 2,
+      "reflection": 3,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
+  },
+  {
+    "snapshotId": "서진호-m4",
+    "snapshotDate": "2026-04-08",
+    "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 4,
+      "engagement": 4,
+      "collaboration": 3,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 3
+    },
+    "confidence": "High",
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
+  },
+  {
+    "snapshotId": "서진호-m5",
+    "snapshotDate": "2026-06-05",
+    "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
+    "scores": {
+      "self_regulation": 4,
+      "engagement": 4,
+      "collaboration": 3,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 4
+    },
+    "confidence": "High",
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
+  },
+  {
+    "snapshotId": "서진호-m6",
+    "snapshotDate": "2026-08-03",
+    "snapshotType": "4차 프로젝트 종료 ~ 종강",
+    "scores": {
+      "self_regulation": 4,
+      "engagement": 4,
+      "collaboration": 3,
+      "resilience": 2,
+      "reflection": 4,
+      "career_agency": 4
+    },
+    "confidence": "High",
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
+  }
+]

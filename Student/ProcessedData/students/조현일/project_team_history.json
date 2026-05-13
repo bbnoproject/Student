@@ -1,0 +1,118 @@
+[
+  {
+    "phase": "1차 프로젝트",
+    "phaseOrder": 1,
+    "teamNumber": 6,
+    "teamLabel": "6팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 5,
+    "members": [
+      {
+        "name": "오동건",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "한재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이형진",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "조현일",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이균호",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "오동건",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "한재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이형진",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이균호",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "2차 프로젝트",
+    "phaseOrder": 2,
+    "teamNumber": 12,
+    "teamLabel": "12팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 5,
+    "members": [
+      {
+        "name": "강태성",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "윤유나",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "임동균",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "조준현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "조현일",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "강태성",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "윤유나",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "임동균",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "조준현",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  }
+]

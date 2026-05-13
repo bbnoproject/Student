@@ -1,0 +1,857 @@
+[
+  {
+    "date": "2025-12-08",
+    "subject": "게임 기획 직무의 이해",
+    "lessonTitle": "오리엔테이션"
+  },
+  {
+    "date": "2025-12-09",
+    "subject": "게임 기획 직무의 이해",
+    "lessonTitle": "게임 업계의 이해"
+  },
+  {
+    "date": "2025-12-10",
+    "subject": "게임 기획 직무의 이해",
+    "lessonTitle": "게임 개발 직무 준비"
+  },
+  {
+    "date": "2025-12-11",
+    "subject": "게임 기획 직무의 이해",
+    "lessonTitle": "게임의 정의 및 장르의 이해"
+  },
+  {
+    "date": "2025-12-12",
+    "subject": "게임 기획 직무의 이해",
+    "lessonTitle": "게임 아이디어 도출 방안"
+  },
+  {
+    "date": "2025-12-15",
+    "subject": "게임 기획 직무의 이해",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2025-12-16",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "게임 컨셉의 이해 개요"
+  },
+  {
+    "date": "2025-12-17",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "게임 콘텐츠의 이해 개요"
+  },
+  {
+    "date": "2025-12-18",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "콘텐츠 순환 구조"
+  },
+  {
+    "date": "2025-12-19",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "동기부여 이론"
+  },
+  {
+    "date": "2025-12-22",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2025-12-23",
+    "subject": "게임 시스템 설계 기초",
+    "lessonTitle": "게임 시스템 설계 개요"
+  },
+  {
+    "date": "2025-12-24",
+    "subject": "게임 시스템 설계 기초",
+    "lessonTitle": "게임 메카닉스 프레임워크"
+  },
+  {
+    "date": "2025-12-25",
+    "subject": "크리스마스",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2025-12-26",
+    "subject": "게임 시스템 설계 기초",
+    "lessonTitle": "데이터 테이블 기초"
+  },
+  {
+    "date": "2025-12-29",
+    "subject": "게임 시스템 설계 기초",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2025-12-30",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "지표 기반 게임 마케팅의 이해 01"
+  },
+  {
+    "date": "2025-12-31",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "지표 기반 게임 마케팅의 이해 02"
+  },
+  {
+    "date": "2026-01-01",
+    "subject": "신정",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-01-02",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "게임 지표 및 마케팅 실무 01"
+  },
+  {
+    "date": "2026-01-05",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "게임 지표 및 마케팅 실무 02"
+  },
+  {
+    "date": "2026-01-06",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "게임 BM 설계"
+  },
+  {
+    "date": "2026-01-07",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "업데이트 제안서 작성"
+  },
+  {
+    "date": "2026-01-08",
+    "subject": "AI를 활용한 게임 지표 분석과 BM 기획",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2026-01-09",
+    "subject": "생성형 AI와 게임 기획 기초",
+    "lessonTitle": "생성형 AI와 게임 기획"
+  },
+  {
+    "date": "2026-01-12",
+    "subject": "생성형 AI와 게임 기획 기초",
+    "lessonTitle": "언어생성형 AI 활용"
+  },
+  {
+    "date": "2026-01-13",
+    "subject": "생성형 AI와 게임 기획 기초",
+    "lessonTitle": "이미지 생성형 AI 활용"
+  },
+  {
+    "date": "2026-01-14",
+    "subject": "생성형 AI와 게임 기획 기초",
+    "lessonTitle": "AI 기초 활용 실습"
+  },
+  {
+    "date": "2026-01-15",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "게임 세계관 및 시나리오 설정"
+  },
+  {
+    "date": "2026-01-16",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "게임 캐릭터 설정과 스토리텔링"
+  },
+  {
+    "date": "2026-01-19",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "게임 스토리보드 작성"
+  },
+  {
+    "date": "2026-01-20",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "AI를 활용한 스토리텔링 창작 01"
+  },
+  {
+    "date": "2026-01-21",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "AI를 활용한 스토리텔링 창작 02"
+  },
+  {
+    "date": "2026-01-22",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "AI를 활용한 스토리텔링 창작 03"
+  },
+  {
+    "date": "2026-01-23",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "AI를 활용한 스토리텔링 창작 04"
+  },
+  {
+    "date": "2026-01-26",
+    "subject": "AI를 활용한 게임 스토리텔링",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2026-01-27",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "프로젝트 회고"
+  },
+  {
+    "date": "2026-01-28",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "게임 개발 프로세스"
+  },
+  {
+    "date": "2026-01-29",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "프로젝트 개발 방법론"
+  },
+  {
+    "date": "2026-01-30",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "협업에 대한 이해 01"
+  },
+  {
+    "date": "2026-02-02",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "협업에 대한 이해 02"
+  },
+  {
+    "date": "2026-02-03",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "QA 개론"
+  },
+  {
+    "date": "2026-02-04",
+    "subject": "AI를 활용한 게임 개발 업무 관리",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2026-02-05",
+    "subject": "AI를 활용한 게임 레벨 디자인",
+    "lessonTitle": "게임 공간 설계 개요"
+  },
+  {
+    "date": "2026-02-06",
+    "subject": "AI를 활용한 게임 레벨 디자인",
+    "lessonTitle": "레벨 디자인"
+  },
+  {
+    "date": "2026-02-09",
+    "subject": "AI를 활용한 게임 레벨 디자인",
+    "lessonTitle": "레벨 디자인"
+  },
+  {
+    "date": "2026-02-10",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 이해"
+  },
+  {
+    "date": "2026-02-11",
+    "subject": "로브록스 활용",
+    "lessonTitle": "Lua 스크립트 기초"
+  },
+  {
+    "date": "2026-02-12",
+    "subject": "로브록스 활용",
+    "lessonTitle": "Lua 스크립트 기초"
+  },
+  {
+    "date": "2026-02-13",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 01"
+  },
+  {
+    "date": "2026-02-16",
+    "subject": "설날",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-02-17",
+    "subject": "설날",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-02-18",
+    "subject": "설날",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-02-19",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 02"
+  },
+  {
+    "date": "2026-02-20",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 03"
+  },
+  {
+    "date": "2026-02-23",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 04"
+  },
+  {
+    "date": "2026-02-24",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 05"
+  },
+  {
+    "date": "2026-02-25",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 06"
+  },
+  {
+    "date": "2026-02-26",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 07"
+  },
+  {
+    "date": "2026-02-27",
+    "subject": "로브록스 활용",
+    "lessonTitle": "게임 제작 플랫폼의 활용 08"
+  },
+  {
+    "date": "2026-03-02",
+    "subject": "삼일절 대체",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-03-03",
+    "subject": "로브록스 활용",
+    "lessonTitle": "프로젝트 회고"
+  },
+  {
+    "date": "2026-03-04",
+    "subject": "게임 UI/UX 설계",
+    "lessonTitle": "게임 UI/UX 설계"
+  },
+  {
+    "date": "2026-03-05",
+    "subject": "게임 UI/UX 설계",
+    "lessonTitle": "게임 UI 목업 제작"
+  },
+  {
+    "date": "2026-03-06",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "유니티 UI"
+  },
+  {
+    "date": "2026-03-09",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "C# 스크립트 기초 01"
+  },
+  {
+    "date": "2026-03-10",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "C# 스크립트 기초 02"
+  },
+  {
+    "date": "2026-03-11",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "C# 스크립트 기초 03"
+  },
+  {
+    "date": "2026-03-12",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "C# 스크립트 활용"
+  },
+  {
+    "date": "2026-03-13",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "유니티 엔진 활용"
+  },
+  {
+    "date": "2026-03-16",
+    "subject": "유니티 엔진 기초",
+    "lessonTitle": "유니티 엔진 활용"
+  },
+  {
+    "date": "2026-03-17",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "사접합반 컨셉기획 01"
+  },
+  {
+    "date": "2026-03-18",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "사접합반 컨셉기획 02"
+  },
+  {
+    "date": "2026-03-19",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "사접합반 컨셉기획 03"
+  },
+  {
+    "date": "2026-03-20",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 01"
+  },
+  {
+    "date": "2026-03-23",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 02"
+  },
+  {
+    "date": "2026-03-24",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 03"
+  },
+  {
+    "date": "2026-03-25",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 04"
+  },
+  {
+    "date": "2026-03-26",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 05"
+  },
+  {
+    "date": "2026-03-27",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 06"
+  },
+  {
+    "date": "2026-03-30",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 07"
+  },
+  {
+    "date": "2026-03-31",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 08"
+  },
+  {
+    "date": "2026-04-01",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 09"
+  },
+  {
+    "date": "2026-04-02",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 10"
+  },
+  {
+    "date": "2026-04-03",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 11"
+  },
+  {
+    "date": "2026-04-06",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 12"
+  },
+  {
+    "date": "2026-04-07",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 13"
+  },
+  {
+    "date": "2026-04-08",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 14"
+  },
+  {
+    "date": "2026-04-09",
+    "subject": "미니게임 합반 프로젝트",
+    "lessonTitle": "미니게임 합반 프로젝트 15"
+  },
+  {
+    "date": "2026-04-10",
+    "subject": "유니티 엔진 활용",
+    "lessonTitle": "유니티 프로젝트 회고"
+  },
+  {
+    "date": "2026-04-13",
+    "subject": "유니티 엔진 활용",
+    "lessonTitle": "유니티 3D 기능 활용 01"
+  },
+  {
+    "date": "2026-04-14",
+    "subject": "유니티 엔진 활용",
+    "lessonTitle": "유니티 3D 기능 활용 02"
+  },
+  {
+    "date": "2026-04-15",
+    "subject": "유니티 엔진 활용",
+    "lessonTitle": "유니티 3D 기능 활용 03"
+  },
+  {
+    "date": "2026-04-16",
+    "subject": "유니티 엔진 활용",
+    "lessonTitle": "유니티 3D 기능 활용 04"
+  },
+  {
+    "date": "2026-04-17",
+    "subject": "유니티 엔진 활용",
+    "lessonTitle": "유니티 3D 기능 활용 05"
+  },
+  {
+    "date": "2026-04-20",
+    "subject": "게임 시스템 설계 심화",
+    "lessonTitle": "UML을 활용한 시스템 설계 01"
+  },
+  {
+    "date": "2026-04-21",
+    "subject": "게임 시스템 설계 심화",
+    "lessonTitle": "UML을 활용한 시스템 설계 02"
+  },
+  {
+    "date": "2026-04-22",
+    "subject": "게임 시스템 설계 심화",
+    "lessonTitle": "게임 데이터 설계 및 테이블 작성 01"
+  },
+  {
+    "date": "2026-04-23",
+    "subject": "게임 시스템 설계 심화",
+    "lessonTitle": "게임 데이터 설계 및 테이블 작성 02"
+  },
+  {
+    "date": "2026-04-24",
+    "subject": "게임 시스템 설계 심화",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2026-04-27",
+    "subject": "AI를 활용한 게임 캐릭터 설계",
+    "lessonTitle": "플레이어 캐릭터 설계"
+  },
+  {
+    "date": "2026-04-28",
+    "subject": "AI를 활용한 게임 캐릭터 설계",
+    "lessonTitle": "NPC와 적 캐릭터 설계 01"
+  },
+  {
+    "date": "2026-04-29",
+    "subject": "AI를 활용한 게임 캐릭터 설계",
+    "lessonTitle": "NPC와 적 캐릭터 설계 02"
+  },
+  {
+    "date": "2026-04-30",
+    "subject": "AI를 활용한 게임 캐릭터 설계",
+    "lessonTitle": "캐릭터 AI 설계"
+  },
+  {
+    "date": "2026-05-01",
+    "subject": "근로자",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-05-04",
+    "subject": "AI를 활용한 게임 캐릭터 설계",
+    "lessonTitle": "교과목 마무리"
+  },
+  {
+    "date": "2026-05-05",
+    "subject": "어린이날",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-05-06",
+    "subject": "AI를 활용한 게임 레벨 디자인",
+    "lessonTitle": "엔진을 활용한 레벨디자인"
+  },
+  {
+    "date": "2026-05-07",
+    "subject": "AI를 활용한 게임 레벨 디자인",
+    "lessonTitle": "엔진을 활용한 레벨디자인"
+  },
+  {
+    "date": "2026-05-08",
+    "subject": "AI를 활용한 게임 레벨 디자인",
+    "lessonTitle": "엔진을 활용한 레벨디자인"
+  },
+  {
+    "date": "2026-05-11",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "기업협약 컨셉기획 (분석,방향성)"
+  },
+  {
+    "date": "2026-05-12",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "기업협약 컨셉기획 (핵심 사이클)"
+  },
+  {
+    "date": "2026-05-13",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "기업협약 컨셉기획"
+  },
+  {
+    "date": "2026-05-14",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "실개발 문서, 팀장은 최종발표 문서 준비"
+  },
+  {
+    "date": "2026-05-15",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "실개발 문서, 팀장은 최종발표 문서 준비"
+  },
+  {
+    "date": "2026-05-18",
+    "subject": "AI를 활용한 게임 컨셉 기획",
+    "lessonTitle": "실개발 문서, 리허설"
+  },
+  {
+    "date": "2026-05-19",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-20",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-21",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-22",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-25",
+    "subject": "초파일 대체",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-05-26",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-27",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-28",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-05-29",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-01",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-02",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-03",
+    "subject": "지방선거",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-06-04",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-05",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-08",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-09",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-10",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-11",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-12",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-15",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-16",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-17",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-18",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-19",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-22",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-23",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-24",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-25",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-26",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-29",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-06-30",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-01",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-02",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-03",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-06",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-07",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-08",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-09",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-10",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "(XR)VR/AR 게임 개발 합반 프로젝트",
+    "lessonTitle": "기업 협약 프로젝트"
+  },
+  {
+    "date": "2026-07-17",
+    "subject": "제헌절",
+    "lessonTitle": ""
+  },
+  {
+    "date": "2026-07-20",
+    "subject": "프로젝트 결과 개선",
+    "lessonTitle": "발표회 평가 리뷰"
+  },
+  {
+    "date": "2026-07-21",
+    "subject": "프로젝트 결과 개선",
+    "lessonTitle": "개선사항 도출"
+  },
+  {
+    "date": "2026-07-22",
+    "subject": "프로젝트 결과 개선",
+    "lessonTitle": "개선 적용 01"
+  },
+  {
+    "date": "2026-07-23",
+    "subject": "프로젝트 결과 개선",
+    "lessonTitle": "개선 적용 02"
+  },
+  {
+    "date": "2026-07-24",
+    "subject": "생성형 AI를 활용한 게임 서비스 운영",
+    "lessonTitle": "게임 서비스 운영 개요 01"
+  },
+  {
+    "date": "2026-07-27",
+    "subject": "생성형 AI를 활용한 게임 서비스 운영",
+    "lessonTitle": "게임 서비스 운영 개요 02"
+  },
+  {
+    "date": "2026-07-28",
+    "subject": "생성형 AI를 활용한 게임 서비스 운영",
+    "lessonTitle": "AI를 활용한 게임 서비스 운영 실무 01"
+  },
+  {
+    "date": "2026-07-29",
+    "subject": "생성형 AI를 활용한 게임 서비스 운영",
+    "lessonTitle": "AI를 활용한 게임 서비스 운영 실무 02"
+  },
+  {
+    "date": "2026-07-30",
+    "subject": "생성형 AI를 활용한 게임 서비스 운영",
+    "lessonTitle": "AI를 활용한 게임 서비스 운영 실무 03"
+  },
+  {
+    "date": "2026-07-31",
+    "subject": "취업을 위한 준비",
+    "lessonTitle": "취업 준비서류 작성하기"
+  },
+  {
+    "date": "2026-08-03",
+    "subject": "취업을 위한 준비",
+    "lessonTitle": "모의 면접"
+  }
+]

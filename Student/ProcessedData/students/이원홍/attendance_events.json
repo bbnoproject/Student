@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "결석",
+    "detail": "결석 (기말고사)",
+    "severity": "info",
+    "category": "external_learning",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-23",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-24",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-26",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-30",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-06",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-07",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-08",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-09",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

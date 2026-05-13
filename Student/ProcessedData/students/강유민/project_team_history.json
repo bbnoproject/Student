@@ -1,0 +1,216 @@
+[
+  {
+    "phase": "1차 프로젝트",
+    "phaseOrder": 1,
+    "teamNumber": 7,
+    "teamLabel": "7팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 5,
+    "members": [
+      {
+        "name": "김민제",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "강유민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "강태성",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김지훈",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "고승주",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "김민제",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "강태성",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김지훈",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "고승주",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "2차 프로젝트",
+    "phaseOrder": 2,
+    "teamNumber": 8,
+    "teamLabel": "8팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 6,
+    "members": [
+      {
+        "name": "이영우",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "강유민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "권현민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이준혁",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "장호윤",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "이영우",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "권현민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이준혁",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "장호윤",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "3차 프로젝트",
+    "phaseOrder": 3,
+    "teamNumber": 1,
+    "teamLabel": "1팀",
+    "role": "team_lead",
+    "roleLabel": "팀장",
+    "teamSize": 8,
+    "members": [
+      {
+        "name": "강유민",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "이유송",
+        "role": "pm",
+        "roleLabel": "PM"
+      },
+      {
+        "name": "김현우A",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "박현수",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이동현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "임소영",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정석현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정우경",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "이유송",
+        "role": "pm",
+        "roleLabel": "PM"
+      },
+      {
+        "name": "김현우A",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "박현수",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이동현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "임소영",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정석현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정우경",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  }
+]

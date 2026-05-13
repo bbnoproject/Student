@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-04-15",
+    "kind": "결석",
+    "detail": "결석 (QR 안찍음)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  }
+]

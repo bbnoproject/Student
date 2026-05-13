@@ -1,0 +1,186 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-09",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-10",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-15",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-16",
+    "kind": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "category": "absence",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-17",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-18",
+    "kind": "외출",
+    "detail": "외출",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-26",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-08",
+    "kind": "조퇴",
+    "detail": "조퇴 (부동산 방문)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-28",
+    "kind": "외출",
+    "detail": "외출 (부동산 방문)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-29",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-30",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-04",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-02-20",
+    "kind": "휴가",
+    "detail": "휴가 (가족 여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-23",
+    "kind": "결석",
+    "detail": "결석 (가족 여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-05",
+    "kind": "지각",
+    "detail": "지각 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-11",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-18",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-03",
+    "kind": "조퇴",
+    "detail": "조퇴 (가족 행사)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-08",
+    "kind": "조퇴",
+    "detail": "조퇴 (안과 방문)",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-22",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-30",
+    "kind": "휴가",
+    "detail": "휴가 (컨디션 관리)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-07",
+    "kind": "휴가",
+    "detail": "휴가 (아버지 생신)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

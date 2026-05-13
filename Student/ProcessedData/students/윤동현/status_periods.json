@@ -1,0 +1,26 @@
+[
+  {
+    "statusPeriodId": "윤동현-status-1",
+    "startDate": "2026-01-05",
+    "endDate": "2026-01-11",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  },
+  {
+    "statusPeriodId": "윤동현-status-2",
+    "startDate": "2026-02-16",
+    "endDate": "2026-02-22",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  },
+  {
+    "statusPeriodId": "윤동현-status-3",
+    "startDate": "2026-03-02",
+    "endDate": "2026-03-08",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  }
+]

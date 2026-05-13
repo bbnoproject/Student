@@ -1,0 +1,90 @@
+[
+  {
+    "checkinId": "checkin-39e47555d90a",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-20",
+    "originalDate": "2026-01-20",
+    "submittedAt": "2026-01-20T17:53:40.914000",
+    "team": "8팀",
+    "workText": "0.25",
+    "noteText": "오랫만에 다시 프로그래밍을 하려고 하니 머리가 너무 아픕니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-616e373a90e6",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-22",
+    "originalDate": "2026-01-22",
+    "submittedAt": "2026-01-22T17:58:37.292000",
+    "team": "8팀",
+    "workText": "0.5",
+    "noteText": "너무 욕심을 부렸는지 업무 진행도가 조금 느린것 같습니다. ㅜ",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-26c699ebd580",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-23",
+    "originalDate": "2026-01-23",
+    "submittedAt": "2026-01-23T18:03:23.534000",
+    "team": "8팀",
+    "workText": "0.75",
+    "noteText": "프로젝트 일정이 너무 짧은것 같습니다!",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-b2c452a1d717",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-13",
+    "originalDate": "2026-02-13",
+    "submittedAt": "2026-02-13T17:56:18.134000",
+    "team": "1팀",
+    "workText": "아이템 드랍 시스템 기획서를 제작 및 장비, 타일 드랍과 관련한 의견을 공유하였습니다.",
+    "noteText": "이제 프로젝트가 시작되어 앞으로 열심히 프로젝트를 진행해보겠습니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-3c4ebd51b9f7",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-19",
+    "originalDate": "2026-02-19",
+    "submittedAt": "2026-02-19T17:54:29.926000",
+    "team": "1팀",
+    "workText": "성장 시스템 기획서 작성 / 레벨 디자인 기획서 작성 (진행중)",
+    "noteText": "점점 프로젝트가 가시화 되어가고 있지만, 그만큼 타협해야 하는 부분도 많아져서 아쉽습니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-46df37e1b671",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-20",
+    "originalDate": "2026-02-20",
+    "submittedAt": "2026-02-20T17:57:03.713000",
+    "team": "1팀",
+    "workText": "레벨디자인 및 몬스터 디자인 완료",
+    "noteText": "게임 스테이지의 진행 방식에 대해 소통이 잘 이루어 지지 못해 다시 의견을 공유하는 시간을 가졌습니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-a7093b4c87f2",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-23",
+    "originalDate": "2026-02-23",
+    "submittedAt": "2026-02-23T17:58:26.198000",
+    "team": "1팀",
+    "workText": "메인 타이틀 페이지 생성",
+    "noteText": "점차 게임이 만들어 지고 있어 가시화 되고 있는 것 같습니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-d3ee843fa038",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-26",
+    "originalDate": "2026-02-26",
+    "submittedAt": "2026-02-26T18:02:38.875000",
+    "team": "1팀",
+    "workText": "스테이지 3 레벨디자인, 홍보 영상 제작",
+    "noteText": "마지막 날이 되었지만 아쉬운점이 많은 것 같습니다.",
+    "onTime": true
+  }
+]

@@ -1,0 +1,1099 @@
+[
+  {
+    "evidenceId": "ev-0ec47956b902",
+    "studentId": "이가현",
+    "date": "2025-11-21",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 대학교 생활동안 다양한 아르바이트와 학생회를 병행하며 업무 적응 능력과 커뮤니케이션 능력을 키웠습니다. 졸업 후 학과 조교와 중견 기업의 전략기획 팀에서 실무 경험을 쌓으며 기획의 기초를 배울 수 있었습니다. 이후 본격적으로 취준을 하면서, 평소에 게임을 좋아하는 만큼 해당 업계에서 저의 전문성을 길러 안정적인…",
+    "detail": "자기소개\n대학교 생활동안 다양한 아르바이트와 학생회를 병행하며 업무 적응 능력과 커뮤니케이션 능력을 키웠습니다.\n\n졸업 후 학과 조교와 중견 기업의 전략기획 팀에서 실무 경험을 쌓으며 기획의 기초를 배울 수 있었습니다.\n\n이후 본격적으로 취준을 하면서, 평소에 게임을 좋아하는 만큼 해당 업계에서 저의 전문성을 길러 안정적인 직장 생활을 하고자 합니다.\n\n지원 동기\n게임 업계의 직무를 알아보면서 게임 기획자에 대해 알게 되었습니다. 게임을 분석하고 장기적인 시각으로 설계하는 게임 기획자가 되고 싶습니다.\n\n혼자 준비하고 공부하는 과정에서 한계를 느끼며 전문가의 강의와 피드백을 받고자 훈련 교육을 신청하였습니다.\n\n관련 경험\n개인적으로 유튜브를 통해 게임 직무와 관련하여 조사했습니다.\n\n희망 분야\n게임 기획자라는 직군에 대해서 세부적으로 굉장히 다양하게 나뉘고 있습니다.\n\n게임 기획자는 큰 맥락으로 게임을 디자인하는 직무로 세부적인 게임 요소를 분석하여 구성하는 업무입니다. \n\n시스템 기획자는 게임의 UI, 규칙, 기능 등을 설계하여 가장 전체적인 시각으로 게임 유형과 기능, 변수 요소 등을 담당합니다.\n\n밸런스 기획자는 게임 속 레벨 시스템, 아이템, 퀘스트와 보상 등을 각 단계별로 적확한 수준을 설계합니다.\n\n컨텐츠 기획자는 게임 내용을 기획합니다. 스토리, 퀘스트 등의 내용을 담당합니다.\n\n수료 목표\n게임 분석력을 강화하고 이를 바탕으로 나만의 기획서, 포트폴리오를 완성하고 싶습니다.\n\n갈등 대응\n분노나 감정을 억누르고 침착함을 유지\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n상황에 대한 이해와 위로",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-2a2d18ed0203",
+    "studentId": "이가현",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 80",
+    "detail": "게임 기획에 흥미와 적성이 맞을 것 같아 지원하게 됐다고 합니다.\n게임을 할 때 게임의 요소를 분석하는 걸 좋아하고, 스토리를 찾아보는 것도 좋아한다고 합니다.\n쿠키런은 9년 했고, 최근 TFT를 자주 한다고 합니다. 이외에도 스팀에서 다양한 게임을 플레이하거나 플레이 영상을 시청한다고 합니다.\n한 회사에서 안정적으로 오래 일하고 싶다고 해서, 이직이 잦다는 이야기를 했으나 크게 개의치 않아 했습니다.\n책임감이 강하지만 계획적이지 못한 편이라고 했고, 단점을 보완하기 위한 체크리스트, 근거 등을 생각하는 편이라고 합니다.\n대학 생활에서의 발표 경험과 학생회에서의 협업 경험이 있고, 조교 생활을 1년 하면서 문서 툴은 어느 정도 다룰 수 있게 됐다고 합니다.\n넥슨에서 일하는 친척이 있다고 합니다.\n논리가 완벽하진 않지만 조리 있게 말하는 편이며, 매우 침착한 성격으로 보입니다.\n과정을 무난하게 따라올 것으로 보입니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-4de7fc84987d",
+    "studentId": "이가현",
+    "date": "2025-12-16",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각",
+    "detail": "지각",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-9736081c5604",
+    "studentId": "이가현",
+    "date": "2025-12-22",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-7cb8a1e5f787",
+    "studentId": "이가현",
+    "date": "2026-01-02",
+    "weekIndex": 4,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (국취제)",
+    "detail": "지각 (국취제)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-3f1480d50fff",
+    "studentId": "이가현",
+    "date": "2026-01-07",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ### 1) 현재 수업 만족도(난이도/속도/이해도/몰입도) 개념 이해 자체는 가능하나, 용어/개념 어휘가 익숙하지 않아 학습 내용을 즉시 적용하는 데 어려움이 있다고 답변했습니다. ### 2) 수업 방식 적합도(맞는 점/어려운 점) 수업에 예시가 많아 이해하기 편하다고 긍정적으로 평가했습니다. ### 3)…",
+    "detail": "### 내용\n### 1) 현재 수업 만족도(난이도/속도/이해도/몰입도)\n\n개념 이해 자체는 가능하나, 용어/개념 어휘가 익숙하지 않아 학습 내용을 즉시 적용하는 데 어려움이 있다고 답변했습니다.\n\n### 2) 수업 방식 적합도(맞는 점/어려운 점)\n\n수업에 예시가 많아 이해하기 편하다고 긍정적으로 평가했습니다.\n\n### 3) 9~6 일정 적응도(생활 리듬)\n\n복습을 하다 늦게 잠드는 경우가 있어, 다음 날 늦잠으로 지각하는 상황이 간헐적으로 발생한다고 언급했습니다.\n\n### 4) 체력/집중력/과제 처리 패턴\n\n내용이 어려운 파트에서는 자연스럽게 집중력이 떨어지는 편이라고 답변했습니다.\n\n### 5) 현재 희망 직무\n\n희망 직무는 콘텐츠 기획으로 답변했습니다.\n\n### 6) 직무 선택 이유\n\n평소 게임을 할 때 파고들며 분석하는 것을 좋아했다고 언급했습니다.\n또한 수업을 들으면서 콘텐츠 분야가 더 끌리게 되었다고 답변했습니다.\n\n### 7) 향후 성장 목표 역량\n\n성장 목표로 분석력 강화와 구조화 습관 형성을 제시했습니다.\n\n### 8) 과정에 대한 기대\n\n특히 프로젝트 진행을 매우 기대하고 있다고 답변했습니다.\n\n### 9) 강사진에게 전하고 싶은 말(질문/요청)\n\n과제 수행 중 “정도가 이상하거나(방향/품질/기준이 어긋난 경우)” 따로 피드백이나 안내를 받을 수 있는지 문의했습니다. 정 이상하면 말할거다 라고 답변 했습니다.\n\n양윤석 강사님 특강 또 언제하나요? 라고 문의 했습니다. 긍정적으로 검토해보겠다고 답변했습니다.\n\n---",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이가현.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-20f6419b07f3",
+    "studentId": "이가현",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 항상 일이 잘 풀릴 것 같을 때 조심하라고 했습니다. 생각지 못한 수위 조절 유의하겠습니다. 감사합니다.",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n항상 일이 잘 풀릴 것 같을 때 조심하라고 했습니다. 생각지 못한 수위 조절 유의하겠습니다. 감사합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-cc4efa88bec0",
+    "studentId": "이가현",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "9팀 / 역할 팀장 / 함께한 팀원 이동현, 주재형, 채지형, 배주빈",
+    "detail": "팀: 9팀\n역할: 팀장\n팀원: 이동현, 주재형, 채지형, 배주빈",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-fe108eb7f5a6",
+    "studentId": "이가현",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 스토리 2명, 아트 2, 코딩 1로 배분했는데 스토리에 3명 배정하지 않은 점을 후회했습니다. 팀장은 아트랑 코딩 쪽도 확인해야 하는데, 스토리 짜는데 급급해서 체크를 못한 부분이 아쉽습니다.",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n스토리 2명, 아트 2, 코딩 1로 배분했는데 스토리에 3명 배정하지 않은 점을 후회했습니다. 팀장은 아트랑 코딩 쪽도 확인해야 하는데, 스토리 짜는데 급급해서 체크를 못한 부분이 아쉽습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9d21993be2ac",
+    "studentId": "이가현",
+    "date": "2026-01-22",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 저는 데이터 테이블이 어렵습니다. 끝도 없는 것처럼 느껴지는 군요",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n저는 데이터 테이블이 어렵습니다. 끝도 없는 것처럼 느껴지는 군요",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-bf21b3fbabb6",
+    "studentId": "이가현",
+    "date": "2026-01-23",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.99 자유 메모 기획안을 스토리와 동일하게 진행해서 일정 조율이 아쉬웠습니다. 추가로 팀장인 제가 코딩 관련 지식이 없어 원활한 업무 및 일정분배가 이뤄지지 않은 것 같습니다.",
+    "detail": "작업 내용\n0.99\n\n자유 메모\n기획안을 스토리와 동일하게 진행해서 일정 조율이 아쉬웠습니다. 추가로 팀장인 제가 코딩 관련 지식이 없어 원활한 업무 및 일정분배가 이뤄지지 않은 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ae713fc5110b",
+    "studentId": "이가현",
+    "date": "2026-01-27",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 공동으로 회의한 내용에서 생략되거나 변화된 요소가 많았습니다. 이 과정에서 실시간으로 공유 및 안내를 진행하였지만, 작업자들이 해당 사항을 제대로 이해했는지 확인이 미흡했습니다. 기획서는 거의 없었다고 볼 수 있었습니다. 스토리 문서를 기획서로 생각하며 진행했었는데, 점차 스토리 문서는 스크립트 정리본이…",
+    "detail": "기획에 대하여\n공동으로 회의한 내용에서 생략되거나 변화된 요소가 많았습니다.\n이 과정에서 실시간으로 공유 및 안내를 진행하였지만, 작업자들이 해당 사항을 제대로 이해했는지 확인이 미흡했습니다. \n\n기획서는 거의 없었다고 볼 수 있었습니다. 스토리 문서를 기획서로 생각하며 진행했었는데, 점차 스토리 문서는 스크립트 정리본이 되어가면서 명확한 설명이나 묘사가 사라진 점이 그 원인입니다.\n\n협업에 대하여\n프로젝트 중에 작업물은 실시간으로 공유하며 변동 사항에 대해서 공지 해왔었습니다.\n그 과정에서 적극적으로 피드백을 요청 및 수용하는 자세를 보이며 팀원의 의견을 반영해왔습니다.\n서로의 부족한 부분을 잡아주고 보완해주며 건설적인 협업이 되었습니다.\n\n다음 프로젝트를 위해\n가장 큰 아쉬운 점은 초기 단계에서 팀원이 공동으로 정한 기획서가 부실했다는 점입니다. 컨셉과 메인 줄거리 이외에 세부 줄거리, 분기점, 구성 요소와 등장 오브젝트 등을 구체적으로 정하고 업무 분담이 진행 되었어야 한다고 생각합니다.\n\n계획적이거나 꼼꼼하지 못한 점을 바꿔나가기 위해서는 팀 회의 전에 미리 결정해야 될 사항에 대해서 체크리스트로 확인하는 방법이 필요하다고 생각합니다.\n\n칭찬합시다\n주재형님이 스토리 완성 후 데이터 테이블 입력 전에 먼저 아트팀과 함께 아트 리소스와 매치 해보자고 의견 주셨습니다. 이 과정에서 어느 배경과 표정, 오브젝트를 활용할지 다같이 테이블에 정리하는 시간이 되었으며, 추가로 필요한 리소스를 파악 할 수 있었습니다.\n\n업무 현황을 파악하고 아트와 스토리를 합치는 과정이 막막했는데 먼저 방향을 잡아준 점에 대해서 기획을 이끌어가는 모습을 보여주었습니다.\n\n자유로운 한마디\n우유부단하고 모두의 의견을 듣는다고 결정하지 못하는 등의 미숙한 팀장이었습니다. 훌룡한 팀원들이 저의 단점을 보완하고 노력해주어서 좋은 결과물이 나왔다고 생각합니다. 다음에 팀장이 된다면 지금보다는 잘 할 수 있도록 이번의 경험을 밑거름 삼겠습니다. 다만, 리더에 역량은 아직 부족하다고 생각합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-5be3f872f78e",
+    "studentId": "이가현",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 메월드 엔진 내에서 코드 넣는 법 정리 팀원에게 게임 방향성 설명 및 규칙 정리 캐릭터 무기 및 공격 방법 구체화_ 컨텐츠정리 자유 메모 제작하는 게임에 대해서 방향성이 다른 팀원을 케어했습니다. 레퍼런스 게임을 같이 플레이 하고, 해당 요소 중 저희가 활용하는 부분과 변형하는 부분 등을 설명하였습니다. 이후…",
+    "detail": "작업 내용\n메월드 엔진 내에서 코드 넣는 법 정리\n팀원에게 게임 방향성 설명 및 규칙 정리\n캐릭터 무기 및 공격 방법 구체화_ 컨텐츠정리\n\n자유 메모\n제작하는 게임에 대해서 방향성이 다른 팀원을 케어했습니다. 레퍼런스 게임을 같이 플레이 하고, 해당 요소 중 저희가 활용하는 부분과 변형하는 부분 등을 설명하였습니다. 이후 해당 팀원과 캐릭터의 공격 방법 및 스타일을 체계화하며 세부 규칙을 설정하였습니다. 업무 종료 전 해당 건을 팀장님과 소통하며 진행방향을 논의하고 업무 분담을 새롭게 했습니다. 이후 회의록 정리 및 플레이어2의 기획을 진행하고자 합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-963a90315549",
+    "studentId": "이가현",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "4팀 / 역할 팀원 / 함께한 팀원 이형진, 곽용준, 이승진, 오종호, 임소영",
+    "detail": "팀: 4팀\n역할: 팀원\n팀원: 이형진, 곽용준, 이승진, 오종호, 임소영",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-19fca0af2f40",
+    "studentId": "이가현",
+    "date": "2026-02-19",
+    "weekIndex": 11,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-a678f75df3ae",
+    "studentId": "이가현",
+    "date": "2026-02-19",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 몬스터 디자인 : 컨셉, 이미지 리소스, 체력, 이동 속도, 데미지, 등장 비율 밸런싱 디자인 : 몬스터 체력을 기준으로 플레이 타임을 고려하여 캐릭터 공격 수치 조정 자유 메모 체력의 한계라기 보다는 집중력의 한계가 있는 것 같습니다. 그리고 개발 담당의 부담을 줄이고자 개발된 기능의 활용을 중점으로 생각하…",
+    "detail": "작업 내용\n몬스터 디자인 : 컨셉, 이미지 리소스, 체력, 이동 속도, 데미지, 등장 비율 \n밸런싱 디자인 : 몬스터 체력을 기준으로 플레이 타임을 고려하여 캐릭터 공격 수치 조정\n\n자유 메모\n체력의 한계라기 보다는 집중력의 한계가 있는 것 같습니다. 그리고 개발 담당의 부담을 줄이고자 개발된 기능의 활용을 중점으로 생각하면서 다양한 기믹이 나오게 하고 싶었습니다. 코딩 관련으로 좀 더 공부하고 짜여진 코드를 분석하면서 새로운 기능이나 부담이 가지 않는 방향으로 진행하고자 합니다;.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-e909fd6e08f3",
+    "studentId": "이가현",
+    "date": "2026-02-20",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 밸런스 디자인 및 QA (무기 데미지, 무기 투사체 개수, 속성 데미지, 적 체력, 적 이동속도, 웨이브 당 등장하는 적 분량, 웨이브 당 등장하는 적 종류 및 비율, 적 처치 후 획득 골드) 엔진 코드 해석 적 모델 추가 (1~3스테이지 용 약한 모델) 자유 메모 밸런스 디자인에 너무 다양한 요소가 얽혀 있…",
+    "detail": "작업 내용\n밸런스 디자인 및 QA\n(무기 데미지, 무기 투사체 개수, 속성 데미지, 적 체력, 적 이동속도, 웨이브 당 등장하는 적 분량, 웨이브 당 등장하는 적 종류 및 비율, 적 처치 후 획득 골드)\n\n엔진 코드 해석\n\n적 모델 추가 (1~3스테이지 용 약한 모델)\n\n자유 메모\n밸런스 디자인에 너무 다양한 요소가 얽혀 있어 특정한 값을 지정하기가 어려웠습니다. 무기 1가지의 공격력을 강화하면 다른 무기와의 조합과 밸런스가 무너지고, 적을 약화하자니 이후 스테이지를 위해 적 모델 생성의 공수가 올라가는 등의 고민이 많았습니다. 특히 타자 게임으로 유저의 타자 속도에 따라 격차가 강하기 때문에 팀원들에게 잦은 QA를 요청하며 의견을 듣는 과정이 필수적이었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-7e840a64a4ac",
+    "studentId": "이가현",
+    "date": "2026-02-23",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 경제 밸런싱 디자인 : 웨이브당 등장하는 적의 수, 적 처치 시 획득하는 보상, 강화에 필요한 재화, 유저의 예상 레벨 등을 고려하여 재화 가치를 조정했습니다. 최종 스테이지 직전에 전체 만렙이 아닌 6개의 항목 중 3개 이상 만렙이고 4개까지는 만렙이 되지 않도록 조정하는 것이 목표였습니다. 이를 위해서,…",
+    "detail": "작업 내용\n경제 밸런싱 디자인 : 웨이브당 등장하는 적의 수, 적 처치 시 획득하는 보상, 강화에 필요한 재화, 유저의 예상 레벨 등을 고려하여 재화 가치를 조정했습니다.\n\n최종 스테이지 직전에 전체 만렙이 아닌 6개의 항목 중 3개 이상 만렙이고 4개까지는 만렙이 되지 않도록 조정하는 것이 목표였습니다. \n\n이를 위해서, 최대 획득 재화량과 각 스테이지별 분배, 몬스터 스폰 개수를 정리했습니다.\n\n자유 메모\n3일 동안 밸런스만 만지고 있어서 조금 답답하고 막막합니다.\n정말 너무 많은 요소들이 연계되어 있어서 한 가지를 확정 지을 수 없는데, 기준점이 없다는 것이 진행을 더디게하니 진행이 안되고 있는 것 같습니다.\n\n우선 오늘 강화 비용과 재화 기준을 확정하고 이후 공격력과 몬스터 체력을 조정하며 레벨 벨런스가 진행될 것이라 기대해봅니댜",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-f7b948af8097",
+    "studentId": "이가현",
+    "date": "2026-02-24",
+    "weekIndex": 12,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-0c2946915867",
+    "studentId": "이가현",
+    "date": "2026-02-24",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 벨런싱 마무리 작업 완료, 팀원들과 QA 하며 웨이브별 세부 벨런스를 조정하고 있습니다. 벨런스를 조절하는 방법이 다양해서 여러 의견을 들으며 조정 할 수 있었습니다. 하지만 제한된 인원에서 반복된 QA로 난이도나 루즈해지는 주관적인 평가가 퇴색됨을 느끼고 있습니다. 자유 메모 오늘의 플래그 : 이거 금방 끝…",
+    "detail": "작업 내용\n벨런싱 마무리 작업 완료, 팀원들과 QA 하며 웨이브별 세부 벨런스를 조정하고 있습니다.\n벨런스를 조절하는 방법이 다양해서 여러 의견을 들으며 조정 할 수 있었습니다.\n하지만 제한된 인원에서 반복된 QA로 난이도나 루즈해지는 주관적인 평가가 퇴색됨을 느끼고 있습니다.\n\n자유 메모\n오늘의 플래그 : 이거 금방 끝나서, 끝나면 도와드릴게요\nQA 나 세부 사항 보완 작업이 끝날 듯 끝나지 않고 있습니다. 지루한 작업이기도 하고 노가다성 작업도 많은데 그렇다고 간단간단하게 하기에는 게임에 영향력이 작지 않은 부분이더군요.\n늘 현실에 맞춰서 중요하고 필요한 부분을 포기해야하는데 그러한 가치판단 합의가 어려웠습니다. 될때까지 해보자는 분과 만들어진 걸 보완하자는 의견이 달라서 조금 방황하기도 했습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-d30f34d30c7d",
+    "studentId": "이가현",
+    "date": "2026-02-25",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘도 밸런싱...어제도 밸런싱... 내일도 밸런싱.... 목표를 바꾸니 작업에 속도가 붙었습니다. 재화를 넉넉하게 넣어주고 추가 보상 몬스터를 만들어 유저의 실력에 따른 강화 레벨 격차를 완화하고자 했습니다. 자유 메모 게임의 난이도 자체는 너무 주관적이라 의견을 통일하기가 어려웠습니다.",
+    "detail": "작업 내용\n오늘도 밸런싱...어제도 밸런싱... 내일도 밸런싱....\n목표를 바꾸니 작업에 속도가 붙었습니다. 재화를 넉넉하게 넣어주고 추가 보상 몬스터를 만들어 유저의 실력에 따른 강화 레벨 격차를 완화하고자 했습니다.\n\n자유 메모\n게임의 난이도 자체는 너무 주관적이라 의견을 통일하기가 어려웠습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9eeb80b69d28",
+    "studentId": "이가현",
+    "date": "2026-02-26",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 및 밸런싱 / UI 보조 이미지 적용 오류와 엔딩 시나리오 마무리 작업을 진행했습니다. 전체적으로 퀄리티 보완을 위해 세부적인 요소를 교체하고 수정했습니다. 개연성을 위해 스토리에 설명을 추가하거나, 투사체와 오브젝트 별 히트박스 수정을 진행했습니다. 게임의 진행 속도가 빨라 전체적으로 어렵다는 평을 반…",
+    "detail": "작업 내용\nQA 및 밸런싱 / UI 보조\n\n이미지 적용 오류와 엔딩 시나리오 마무리 작업을 진행했습니다.\n전체적으로 퀄리티 보완을 위해 세부적인 요소를 교체하고 수정했습니다. 개연성을 위해 스토리에 설명을 추가하거나, 투사체와 오브젝트 별 히트박스 수정을 진행했습니다. \n게임의 진행 속도가 빨라 전체적으로 어렵다는 평을 반영하여 대폭 너프 후 점차 난이도가 올라가는 방향으로 균형을 잡았습니다.\n\n이 외에 아트 리소스 보완이 완료되면 기존 리소스를 교체하며 프로그래머를 도와 엔진 쪽 작업을 보조 했습니다.\n\n자유 메모\n프로그램을 담당할 개발자가 따로 있었다면 처음에 기획했던 게임에서 제외하는 요소가 적어지지 않았을까 생각이 계속 듭니다. 기획자끼리 이기 때문에 아쉬움도 있고 같이 머리 부딪히며 해보는 즐거움도 있었습니다. \n이번에는 팀 분위기가 좋아서 힘들지만 재밌었다고 느끼지만, 팀 과제에서 팀 분위기 만큼 영향을 강하게 끼치지만 운에 맡기는 요소는 없다고 생각합니다. 내가 잘하거나 열심히 한다고 해결될 일은 아니라고 생각해서 더욱 어렵게 느껴지는 것 같습니다. 이러한 고민을 하는 만큼 제가 분위기에 영향을 많이 받는 성향임을 상기하곤 합니다.\n\n프로젝트가 끝나가니 시원섭섭하고 보람찬 기간이었다고 생각합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-8c5d154f74e4",
+    "studentId": "이가현",
+    "date": "2026-02-27",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 이번 프로젝트에서 작성한 기획서는 협업 팀원 맞춤용 이었습니다. 개발자와 주로 함께 협업한 용준님이 이해 하시고 활용하기 편한 방향으로 생각하여 제작하였기에 제 기준으로 이해하기 쉬운 기획서는 아니었다고 생각합니다. 그래도 데이터 테이블 형식을 분석하고 활용하면서 새로운 양식으로 제 생각을 담아내는 법을…",
+    "detail": "기획에 대하여\n이번 프로젝트에서 작성한 기획서는 협업 팀원 맞춤용 이었습니다. 개발자와 주로 함께 협업한 용준님이 이해 하시고 활용하기 편한 방향으로 생각하여 제작하였기에 제 기준으로 이해하기 쉬운 기획서는 아니었다고 생각합니다. \n\n그래도 데이터 테이블 형식을 분석하고 활용하면서 새로운 양식으로 제 생각을 담아내는 법을 연습 할 수 있었던 시간이었습니다. \n\n다음에는 독스나 피피티를 활용하여 가독성을 챙기는 방향으로 테이블 작업과 병행하고자 합니다.\n\n협업에 대하여\n프로젝트 진행에서 현실적인 측면을 고려했습니다. \n사전에 버그와 기능 개선 개발을 담당하기로 했던 제가 개발에서 나오게 되면서 팀장님의 1인 개발과 PM이 병행되는 상황이 되었습니다. 이에 대한 현실적인 완성을 위해 개발 취소되는 요소들이 많았습니다.\n\n의외로 큰 볼륨의 시스템 (펫, 증강 등)에 대한 취소는 기획 담당과 원활한 합의가 있었지만, 적의 HP 바, 코인 획득 UI, 웨이브 제한 시간 표시 등 인게임 내 세부적인 요소에 대해서 합의에 시간이 길었습니다.\n\n다음 프로젝트를 위해\n가장 이상적인 팀 작업을 기준으로 보면 업무 분담이 큰 원인이라고 생각됩니다.\n연휴라는 자율적인 업무 기간, PM을 할 수 없는 리더의 조건이 겹쳐서 손이 비면 일이 생기고 붙들고 있으면 일이 없는 팀이었다고 생각합니다. 손이 느린 팀원과 빠른 팀원, 각자의 상황과 속도를 고려하여 업무의 볼륨과 마감 기한이 있었어야 한다고 생각합니다. \n\n돌이켜 생각해보면 제가 맡은 일을 다른 팀원들에게 분업하고 PM이나 개발 하나를 보조 했으면 좋았겠다고 생각합니다.\n생각보다 게임의 볼륨과 컨텐츠가 커져서 조급함을 느껴 시야가 좁아졌다고 생각합니다. 문제의 원인과 원인에 직접적인 영향을 끼치는 것이 무엇인지 분리해서 생각하는 법의 필요성을 체감할 수 있었습니다.\n\n칭찬합시다\n용준님을 칭찬하고 싶습니다. 처음부터 많이 어려워하시고 방향을 못 잡으셔서 같이 많이 이야기하게 되었습니다. 용준님의 속도와 방법에 맞춰 대화하며 그만의 장점을 알 수 있고 어떤 점을 고민하는 지 알 수 있었습니다. 오래 같이 작업하지는 못했지만 다음에 또 하게 된다면 더 좋은 퍼포먼스가 나올 것이라 기대하게 됩니다.\n레퍼런스 게임 분석을 메인으로 담당하시며 쿨타임, 연사 사이클 속도, 타이핑 난이도 등 밸런싱 과정에서 기초적인 틀을 잡을 수 있었습니다. 그리고 QA를 진행해주시면서 생각지도 못한 방법으로 진행하며 버그를 발견하거나 오버 파워 요소를 찾을 수 있었습니다.\n\n그리고 개발과 PM을 담당한 팀장 형진님도 정말 대단하고 고생하셨습니다.\n\n팀장 선호도 조사\n1.0\n\n이유\n팀장은 기본적으로 프로젝트와 팀을 거시적인 관점에서 흐름을 파악하고 관리하는 역할이라고 생각합니다. 저는 그러기엔 나무에 집중하는 사람이라 팀장으로서 봐야하는 큰 흐름을 놓치는 일이 많았습니다. 다른 팀원은 팀장의 권리를 존중하고 신의하기에 의구심이 있어도 넘어가는 경우가 많습니다. 특히, 업무 과정이나 프로젝트 흐름처럼 전체적이고 본질적인 부분에 있어서 일수록 눈에 띄지 않고 잔잔하게 쌓이는 문제라 더욱 위험하다고 생각합니다. 그렇기 때문에 저는 팀장의 역할에는 맞지 않다고 생각합니다.\n\n자유로운 한마디\n밸런싱 담당인데 타이핑 게임을 못해서 후반부 밸런스를 체감하지 못하였습니다. 팀원 후기와 데이터 값만 보며 추측하는데 직접 플레이하고 다양한 경우를 해보면서 여러 데이터를 반영하지 못한 것이 아쉽습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-30c0777cdb3f",
+    "studentId": "이가현",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시스템 및 컨셉 방향성을 팀 단위로 정리하면서 퍼즐에서 활용될 수 있는 기믹을 정리했다. 정리된 방향에 따라 HTML 버전 프로토타입을 제작하였다. POC를 목적으로 논의된 기믹의 시각화를 목적으로 진행했다. 자유 메모 익숙한 팀원과 새로운 팀원이 섞여 있어서 새로웠습니다. 이전에는 새로운 팀원들을 주로 만났…",
+    "detail": "작업 내용\n시스템 및 컨셉 방향성을 팀 단위로 정리하면서 퍼즐에서 활용될 수 있는 기믹을 정리했다.\n정리된 방향에 따라 HTML 버전 프로토타입을 제작하였다. POC를 목적으로 논의된 기믹의 시각화를 목적으로 진행했다.\n\n자유 메모\n익숙한 팀원과 새로운 팀원이 섞여 있어서 새로웠습니다. 이전에는 새로운 팀원들을 주로 만났었는데 친한 분들이 계시니 좀 더 편하게 작업 할 수 있었습니다. 추가로 팀원 개개인의 문서 역량 뿐만 아니라 피드백이나 부족한 팀원을 이끌고 진행하는 리더십 역량에 대해서 체감 할 수 있었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-47ff84211710",
+    "studentId": "이가현",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "5팀 / 역할 팀원 / 함께한 팀원 이형진, 승정하, 김재환, 신석균, 윤유나, 이동우",
+    "detail": "팀: 5팀\n역할: 팀원\n팀원: 이형진, 승정하, 김재환, 신석균, 윤유나, 이동우",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-6321f2374e79",
+    "studentId": "이가현",
+    "date": "2026-03-19",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시스템 기획서_이동 조작 시스템 (완성) 시스템 기획서_되돌리기(undo) 시스템 (R&D) 자유 메모 막상 시스템 기획서를 시작할 때는 시스템의 구조와 컨텐츠를 분리하는 기준에 대해서 고민이 많이 있었습니다. 실제 스터디를 해보면서 익숙한 게임의 시스템을 기획서로 정리해보면서 컨텐츠와 시스템을 구분하지 못하…",
+    "detail": "작업 내용\n시스템 기획서_이동 조작 시스템 (완성)\n시스템 기획서_되돌리기(undo) 시스템 (R&D)\n\n자유 메모\n막상 시스템 기획서를 시작할 때는 시스템의 구조와 컨텐츠를 분리하는 기준에 대해서 고민이 많이 있었습니다. 실제 스터디를 해보면서 익숙한 게임의 시스템을 기획서로 정리해보면서 컨텐츠와 시스템을 구분하지 못하는 것을 깨닫고 조언을 구하러 다니던 차에 시스템을 담당하게 되었습니다. \n\n제가 개발의 플로우를 이해하고 있는 시스템의 경우 기획서가 막히지 않고 작성할 수 있었습니다.\n하지만, 개발 과정을 이해하지 못한 시스템의 작성을 시작하는 경우 R&D부터 시작해서 많은 시간 공수가 필요함을 알 수 있었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5006838b8e48",
+    "studentId": "이가현",
+    "date": "2026-03-20",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 되돌리기(Undo) 기획서 R&D 및 초안 작성 자유 메모 개발 과정을 모르는 분야이기 때문에 작업 진행 속도가 늦어졌습니다. 다양한 시스템과 개발 플로우에 빠른 이해와 기본 지식에 대한 습득이 필요하다고 생각했습니다.",
+    "detail": "작업 내용\n되돌리기(Undo) 기획서 R&D 및 초안 작성\n\n자유 메모\n개발 과정을 모르는 분야이기 때문에 작업 진행 속도가 늦어졌습니다. 다양한 시스템과 개발 플로우에 빠른 이해와 기본 지식에 대한 습득이 필요하다고 생각했습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5db23642f14c",
+    "studentId": "이가현",
+    "date": "2026-03-23",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 밀기(Push) 시스템 기획서 1차 완성 카메라워킹 & 태그 시스템 기획서 작성 중 기획 리뷰 > 이동 / 밀기 / 되돌리기 시스템 개발자에게 리뷰 및 질의 응답 자유 메모 시스템 기획서가 고민하고 들인 시간에 비해 볼륨이 작게 보입니다. 제가 생각이 느린 부분도 영향을 끼치는 것 같습니다. 관련 시스템에 깊…",
+    "detail": "작업 내용\n밀기(Push) 시스템 기획서 1차 완성\n카메라워킹 & 태그 시스템 기획서 작성 중\n기획 리뷰 > 이동 / 밀기 / 되돌리기 시스템 개발자에게 리뷰 및 질의 응답\n\n자유 메모\n시스템 기획서가 고민하고 들인 시간에 비해 볼륨이 작게 보입니다. 제가 생각이 느린 부분도 영향을 끼치는 것 같습니다. 관련 시스템에 깊은 고민을 미리 할수록 업무의 속도와 질이 달라질 수 있음을 실감 하였습니다.\n플밍팀의 개발 속도가 생각보다 빨라서 더 조급해지고 불안해지는 마음이 있었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-1ce414382f77",
+    "studentId": "이가현",
+    "date": "2026-03-24",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 되돌리기(undo)시스템_undo 총량 한계 설정 기획서 태그 시스템 기획서 카메라 워킹 시스템 기획서 스테이지 오버 및 클리어 기획서 자유 메모 분명 여유롭게 하진 않았는데 시간이 부족하게 느껴졌습니다. 고민하는 시간에 비해 문서 아웃풋에 담겼는지 의문이 들었습니다. 다른 분들이 기획서 좋다고 하셨는데 받아…",
+    "detail": "작업 내용\n되돌리기(undo)시스템_undo 총량 한계 설정 기획서\n태그 시스템 기획서\n카메라 워킹 시스템 기획서\n스테이지 오버 및 클리어 기획서\n\n자유 메모\n분명 여유롭게 하진 않았는데 시간이 부족하게 느껴졌습니다. 고민하는 시간에 비해 문서 아웃풋에 담겼는지 의문이 들었습니다. 다른 분들이 기획서 좋다고 하셨는데 받아들이지 못하고 불안해 하는 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-a0773d74ceae",
+    "studentId": "이가현",
+    "date": "2026-03-25",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전체 시스템 기획서 피드백 반영 및 보강 플밍팀과 기획 리뷰 자유 메모 플밍팀과 기획 리뷰에서 제가 제안 드린 부분이 칭찬 받았습니다. 보람이 느껴졌습니다. 시스템이 끝나질 않습니다. 저번 플젝 때 레벨 디자인이 끝나질 않았는데 이번에는 시스템이군요. 막바지로 갈수록 힘이 떨어지는지 마무리가 안되니 스트레스가…",
+    "detail": "작업 내용\n전체 시스템 기획서 피드백 반영 및 보강\n플밍팀과 기획 리뷰\n\n자유 메모\n플밍팀과 기획 리뷰에서 제가 제안 드린 부분이 칭찬 받았습니다. 보람이 느껴졌습니다. 시스템이 끝나질 않습니다. 저번 플젝 때 레벨 디자인이 끝나질 않았는데 이번에는 시스템이군요. 막바지로 갈수록 힘이 떨어지는지 마무리가 안되니 스트레스가 쌓이는 듯합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-8ab098934cff",
+    "studentId": "이가현",
+    "date": "2026-03-26",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 에셋 리소스 조사 및 컨셉 기획 자유 메모 시스템이 끝나니 긴장이 확 풀려서 머리가 안 돌아갔습니다. 균등한 집중력과 업무 속도를 유지 할 수 있도록 마인드 컨트롤이 중요하다고 생각했습니다.",
+    "detail": "작업 내용\n에셋 리소스 조사 및 컨셉 기획\n\n자유 메모\n시스템이 끝나니 긴장이 확 풀려서 머리가 안 돌아갔습니다. 균등한 집중력과 업무 속도를 유지 할 수 있도록 마인드 컨트롤이 중요하다고 생각했습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-0e7b35d5ba63",
+    "studentId": "이가현",
+    "date": "2026-03-27",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터 에셋 확정 및 줄거리 작성 자유 메모 휴식기였습니다. 머리가 상쾌해지는 기분이네요. 스토리 초안을 잡고 월요일부터 스토리 보드를 작성할 예정입니다.",
+    "detail": "작업 내용\n캐릭터 에셋 확정 및 줄거리 작성\n\n자유 메모\n휴식기였습니다. 머리가 상쾌해지는 기분이네요. 스토리 초안을 잡고 월요일부터 스토리 보드를 작성할 예정입니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-b6c580339564",
+    "studentId": "이가현",
+    "date": "2026-03-30",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 스토리 연출 및 볼륨 회의 컷씬, 노벨, 크래딧 와이어 프레임 스토리 플롯 작성 자유 메모 스토리 연출 및 볼륨 관련으로 기획팀도 개발팀도 제대로 하고 싶은 욕심은 있었습니다. 하지만 저희가 원하는 연출을 하기에 적절한 에셋이 부족하다 판단하여 에셋과 아트 상황에 맞추어 스토리 작업이 진행 될 것 같습니다.",
+    "detail": "작업 내용\n스토리 연출 및 볼륨 회의\n컷씬, 노벨, 크래딧 와이어 프레임\n스토리 플롯 작성\n\n자유 메모\n스토리 연출 및 볼륨 관련으로 기획팀도 개발팀도 제대로 하고 싶은 욕심은 있었습니다. 하지만 저희가 원하는 연출을 하기에 적절한 에셋이 부족하다 판단하여 에셋과 아트 상황에 맞추어 스토리 작업이 진행 될 것 같습니다.",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-f4f88104b644",
+    "studentId": "이가현",
+    "date": "2026-03-31",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오프닝 스토리보드 작성 자유 메모 스토리 및 아트 쪽이 기획과 직관적으로 연관된 부분이 아닌 이상 이부분에 공수를 얼마나 들여야 할지 고민이 되었습니다. 팀장님과 pm 님은 아무래도 스토리 및 아트 쪽으로 많은 공수가 저에게 좋을 지 우려하셨습니다. 아직 작업이 마무리 되지도 않았으며 레벨 디자인이나 qa 보…",
+    "detail": "작업 내용\n오프닝 스토리보드 작성\n\n자유 메모\n스토리 및 아트 쪽이 기획과 직관적으로 연관된 부분이 아닌 이상 이부분에 공수를 얼마나 들여야 할지 고민이 되었습니다. 팀장님과 pm 님은 아무래도 스토리 및 아트 쪽으로 많은 공수가 저에게 좋을 지 우려하셨습니다. 아직 작업이 마무리 되지도 않았으며 레벨 디자인이나 qa 보다는 이 작업이 재미있기도 해서 진행 중이긴 하나, 저 스스로도 이래도 괜찮을지 하는 불안이 있습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-bf73e7dd194b",
+    "studentId": "이가현",
+    "date": "2026-04-01",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오프닝 스토리 및 컷씬 배경 작업 자유 메모 게임의 완성도를 위해 스토리에 비중을 높이기로 하였습니다. 작업 공수가 올라간 만큼 시간이 꽤 걸리게 되었는데, 제가 지금 qa나 레벨 디자인이 아닌 스토리에 집중하는 것이 옳은지 고민이었습니다. 우선 팀장님과 pm님과 논의하여 나온 결론인 만큼 최대한 빠르게 작업…",
+    "detail": "작업 내용\n오프닝 스토리 및 컷씬 배경 작업\n\n자유 메모\n게임의 완성도를 위해 스토리에 비중을 높이기로 하였습니다. 작업 공수가 올라간 만큼 시간이 꽤 걸리게 되었는데, 제가 지금 qa나 레벨 디자인이 아닌 스토리에 집중하는 것이 옳은지 고민이었습니다. 우선 팀장님과 pm님과 논의하여 나온 결론인 만큼 최대한 빠르게 작업물을 내고 다른 파트에 힘을 보태는게 맞다고 생각하여 작업에 집중하고 있습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-6127532b2d69",
+    "studentId": "이가현",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 엔딩 스토리 기획 및 아트 작업 자유 메모 되려 메월드 때는 개발이 될지 안될지 불안이 적었는데, 규모가 커지고 기능이 많아지면서 개발에 대한 불안과 걱정이 조금 있었습니다. 구현의 여부가 아닌, 게임의 퀄리티 부분으로 이후 QA 과정에서 수정 반영이 일정 상 불가한 경우 등에 대해서 잡생각이 많아졌습니다.",
+    "detail": "작업 내용\n엔딩 스토리 기획 및 아트 작업\n\n자유 메모\n되려 메월드 때는 개발이 될지 안될지 불안이 적었는데, 규모가 커지고 기능이 많아지면서 개발에 대한 불안과 걱정이 조금 있었습니다. 구현의 여부가 아닌, 게임의 퀄리티 부분으로 이후 QA 과정에서 수정 반영이 일정 상 불가한 경우 등에 대해서 잡생각이 많아졌습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-be9316ce9e92",
+    "studentId": "이가현",
+    "date": "2026-04-03",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 스토리 일러스트 및 텍스트 (로컬라이징) 마무리 자유 메모 10살 어린이의 말투를 몰라서 힘들었습니다. 계속 쓰면서 제가 더 접한 영유아 수준으로 글짓기가 되었습니다. 여러 사람들에게 피드백을 받고 ai 통해 검증도 해보면서 보완 작업을 진행했습니다",
+    "detail": "작업 내용\n스토리 일러스트 및 텍스트 (로컬라이징) 마무리\n\n자유 메모\n10살 어린이의 말투를 몰라서 힘들었습니다. 계속 쓰면서 제가 더 접한 영유아 수준으로 글짓기가 되었습니다. 여러 사람들에게 피드백을 받고 ai 통해 검증도 해보면서 보완 작업을 진행했습니다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-f849cb2cba56",
+    "studentId": "이가현",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 게임 제목 선정 및 홍보 페이지 배경, 로고 제작 자유 메모 개발팀이 꼼꼼하고 열정 있다는 점이 항상 좋은 건 아닌 듯합니다. 충분히 기획팀 내에서도 확인하고 진행할 수 있는 부분이고 그것이 효율적이라 판단 되는데 개발팀에서 마무리 하고자 하니 할 수 있는 것이 없군요",
+    "detail": "작업 내용\n게임 제목 선정 및 홍보 페이지 배경, 로고 제작\n\n자유 메모\n개발팀이 꼼꼼하고 열정 있다는 점이 항상 좋은 건 아닌 듯합니다. 충분히 기획팀 내에서도 확인하고 진행할 수 있는 부분이고 그것이 효율적이라 판단 되는데 개발팀에서 마무리 하고자 하니 할 수 있는 것이 없군요",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ccf9e0f832d1",
+    "studentId": "이가현",
+    "date": "2026-04-07",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 웹페이지 디자인 및 마케팅 용 유튜버 리스트업 자유 메모 팀의 진행 방향에 대해서 어디까지 의견을 내야 할지 고민이었습니다. 팔로우십에 대해서 많이 고민하게되었습니다",
+    "detail": "작업 내용\n웹페이지 디자인 및 마케팅 용 유튜버 리스트업\n\n자유 메모\n팀의 진행 방향에 대해서 어디까지 의견을 내야 할지 고민이었습니다. 팔로우십에 대해서 많이 고민하게되었습니다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-20720cab3d26",
+    "studentId": "이가현",
+    "date": "2026-04-08",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 웹페이지 이미지 및 시연 영상, 홍보용 배너 제작 자유 메모 qa 진행 과정에 참여를 거의 안해서 이후 아쉬움이 있긴합니다. 일정 상 포기해야하는 부분과 우선순위에 대해서 팀장님과의 의견 조율이 있었습니다. 팀장님 방향성에 대해서 이해하고 납득 할 수 있는 시간이었습니다.",
+    "detail": "작업 내용\n웹페이지 이미지 및 시연 영상, 홍보용 배너 제작\n\n자유 메모\nqa 진행 과정에 참여를 거의 안해서 이후 아쉬움이 있긴합니다. 일정 상 포기해야하는 부분과 우선순위에 대해서 팀장님과의 의견 조율이 있었습니다. 팀장님 방향성에 대해서 이해하고 납득 할 수 있는 시간이었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-e3c6f6f5aca2",
+    "studentId": "이가현",
+    "date": "2026-04-11",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 팀원 / 함께한 팀원 이형진, 이준혁, 김현우B, 신석균, 이균호, 오동건, 장윤우, 한재환",
+    "detail": "팀: 8팀\n역할: 팀원\n팀원: 이형진, 이준혁, 김현우B, 신석균, 이균호, 오동건, 장윤우, 한재환",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-a9a6ae22f74f",
+    "studentId": "이가현",
+    "date": "2026-04-15",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience"
+    ],
+    "title": "2차 정기 면담",
+    "summary": "### 내용 ### 진로 - 패키지 게임같이 완성도 높은 게임을 만들고 싶다. - 라이브 서비스하면서 이익에 치중되는 것을 선호하지는 않는다. - 커뮤니케이션이 강점인데 추상적이라고 느낀다고 한다. 선호도나 의견을 이야기할 때 화법이 다른데, 말하는 사람의 성향에 따라 다르게 이야기한다. - 가감없이 이야기하는 사람,…",
+    "detail": "### 내용\n### 진로\n- 패키지 게임같이 완성도 높은 게임을 만들고 싶다.\n- 라이브 서비스하면서 이익에 치중되는 것을 선호하지는 않는다.\n- 커뮤니케이션이 강점인데 추상적이라고 느낀다고 한다. 선호도나 의견을 이야기할 때 화법이 다른데, 말하는 사람의 성향에 따라 다르게 이야기한다.\n- 가감없이 이야기하는 사람, 부드러운 사람, 할 말만 하는 사람,\n- 화법에 정답은 없다고 생각하여 서로에게 맞는 다양한 화법으로 이야기하고 있다고 합니다.\n- 협업, 커뮤니케이션에서 강점으로 이야기할 가치관이 잡혀가는 것으로 보입니다. 취업 준비때 이러한 부분은 살려볼 수 있을 것 같습니다.\n\n### 프로젝트\n- 다음 프로젝트에 시스템을 맡아서 강점을 살릴지, 밸런스나 레벨디자인과 같은 약점을 보완할지 질문이 있었습니다.\n- 강점을 더 강화시켜보며, 시스템의 의도나 깊이감을 챙겨가볼 것을 이야기해줬습니다.\n\n--",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/이가현.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-c29d2fe964f2",
+    "studentId": "이가현",
+    "date": "2026-04-17",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (가족 일정)",
+    "detail": "휴가 (가족 일정)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-cbfa455e5806",
+    "studentId": "이가현",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "1차 자기소개서 자기소개서 작성",
+    "summary": "이상의 현실 구현을 위해서 노력하는 자세가 가장 이상적이라고 생각합니다. 1. 지원동기 (왜 게임 기획자인가) 기획자는 추상적인 그림에 대한 청사진을 만드는 사람이라 생각했습니다. 저만의 색깔이 담긴 기획에 대해서 욕심이 생기는 계기이기도 했습니다. 기획자란 직무에 대해서 늘 관심이 많았습니다. 그 중에서도 왜 게임 기…",
+    "detail": "이상의 현실 구현을 위해서 노력하는 자세가 가장 이상적이라고 생각합니다.\n\n1. 지원동기 (왜 게임 기획자인가) 기획자는 추상적인 그림에 대한 청사진을 만드는 사람이라 생각했습니다. 저만의 색깔이 담긴 기획에 대해서 욕심이 생기는 계기이기도 했습니다. 기획자란 직무에 대해서 늘 관심이 많았습니다. 그 중에서도 왜 게임 기획자인가 하면, 게임이라는 매체만 이 가진 양방향 소통에 집중하였습니다. 공급자와 수급자가 실시간으로 가장 소통 되는 매체라 생각하였고, 소통의 힘을 극대화 할 수 있다고 생각하여 게임 기획자 를 희망하게 됐습니다.\n\n2. 나의 장점 앞서 말했듯이 저는 소통의 힘을 강하게 생각합니다. 소통의 과정과 방법 에 따라서 최선과 최악이 갈릴 수 있다고 생각합니다. 이는, 현대 사회에 서 협업을 피할 수 없는 상황에서 협업의 과정과 결과에 대한 효율적인 투자라고 생각합니다. 저는 소통에 대해서 많은 고민을 하는 만큼 소통적 인 능력이 저의 강점이라고 생각합니다. 소통의 과정에서 저는 늘 상대방 의 화법과 상대방만의 언어를 이해하고자 노력합니다. 그리고 저의 언어가 상대방에게 오해되지 않도록 노력합니다. 저는 이러한 노력이 저의 강점이 된다고 생각합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/1차(260420)/자소서 모음집/이가현_자기소개서.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-ff5c539d8f1e",
+    "studentId": "이가현",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 자기소개서 피드백",
+    "summary": "# 이가현_자기소개서 ## 종합 판단 문서 분량과 근거가 매우 적어 지원자의 강점을 판단하기 어렵습니다. 소통을 강조하는 방향은 보이지만, 실제로 어떤 상황에서 어떻게 소통했고 왜 그렇게 판단했는지가 더 드러나면 좋습니다. ## 잘 한 부분 - 게임 매체의 양방향 소통에 집중했다는 관점은 출발점으로 사용할 수 있습니다.…",
+    "detail": "# 이가현_자기소개서\n\n## 종합 판단\n문서 분량과 근거가 매우 적어 지원자의 강점을 판단하기 어렵습니다. 소통을 강조하는 방향은 보이지만, 실제로 어떤 상황에서 어떻게 소통했고 왜 그렇게 판단했는지가 더 드러나면 좋습니다.\n\n## 잘 한 부분\n- 게임 매체의 양방향 소통에 집중했다는 관점은 출발점으로 사용할 수 있습니다.\n- 기획자를 “추상적인 그림에 대한 청사진을 만드는 사람”으로 본 점은 기획 직무에 대한 관심을 보여줍니다.\n- 상대방의 언어를 이해하고 오해되지 않게 말하려 한다는 태도는 협업형 기획자로 발전시킬 수 있는 소재입니다.\n\n## 개선 방향 제안\n- “소통적인 능력이 강점”이라는 주장은 있지만 실제 근거가 약합니다. 어떤 상황에서 오해를 줄였고, 그때 본인이 어떤 기준으로 말했는지 더해보면 좋습니다.\n- 게임 기획과 연결되는 경험이 거의 보이지 않습니다. 게임을 보며 느낀 문제의식, 팀 활동에서의 역할, 재미를 분석한 경험 중 하나라도 자기소개서 안에 구체적으로 제시해보는 것을 추천합니다.\n- 현재 문서는 제출용 자기소개서로는 많이 짧습니다. 지원동기, 직무 관심, 강점, 개선점, 포부를 모두 보강해보는 방향을 제안합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/1차(260420)/개인 피드백/이가현.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-b94f8ff3a25e",
+    "studentId": "이가현",
+    "date": "2026-05-03",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "self_regulation"
+    ],
+    "title": "2차 취업 문서 이력서 작성",
+    "summary": "--- page 1 --- KHF4624 이 가 현 게 임 개 발 프 로 젝 트 경 험 시 스 템 및 컨 텐 츠 기 획 데 이 터 테 이 블 구 조 화 웹 페 이 지 기 획 경 험 기 타 - 자 사 제 품 모 니 터 링 - 교 육 과 정 개 정 비 교 분 석 - 홍 보 키 워 드 관 리 외 부 거 래 처 계 약 체 결…",
+    "detail": "--- page 1 ---\nKHF4624\n이 가 현\n게 임 개 발 프 로 젝 트 경 험\n시 스 템 및 컨 텐 츠 기 획\n데 이 터 테 이 블 구 조 화\n웹 페 이 지 기 획 경 험\n기 타\n- 자 사 제 품 모 니 터 링\n- 교 육 과 정 개 정 비 교 분 석\n- 홍 보 키 워 드 관 리\n외 부 거 래 처 계 약 체 결 - 외 부 거 래 처 에 계 약 서\n안 내 및 체 결 진 행 했 다 . - 관 련 하 여 우 편 업 무\n및 계 약 서 검 수 를 담 당 했 다 .\n온 라 인 서 점 운 영 및 관 리 - 참 고 서 재 고 관 리 를 위\n한 발 주 및 판 매 를 담 당 했 다 . - 월 별 이 벤 트 를 기 획\n하 여 운 영 했 다 . - 다 양 한 주 제 로 홍 보 페 이 지 기 획\n하 고 관 리 했 다 .\n인 적 사 항 여 성 (2001 년 생 )\n전 화 번 호 01089345730\n이 메 일 allishalee07@gmail.com\n분 석 을 기 반 으 로 논 리 적 인 의 사 결 정 과 합 리 적 인 소 통 을 하 는 기 획 자 입 니 다 .\n유 저 와 소 통 하 며 유 저 의 능 동 적 인 시 도 를 유 도 하 는 기 획 을 하 고 자 합 니 다 .\n문 제 은 행 서 비 스 운 영\n- 온 라 인 문 제 은 행 을 위 해 문 항 을 조 판 하 여 DB 에 업 데 이 트 했 다 .\n- 문 항 노 출 에 이 상 이 있 는 지 검 수 하 고 관 련 기 능 모 니 터 링 을 했 다 .\n경 력\n \n메 가 스 터 디 교 육 ( 주 )\n사 원 / 전 략 기 획 2 팀총 2 년\n2024.09 ~ 2025.09\n1 년\n\n--- page 2 ---\n학 력\n외 국 어\n을 지 대 학 교\n조 교 / 유 아 교 육 학 과\n을 지 대 학 교 ( 성 남 )\n학 사 / 유 아 교 육 학\n2019 ~ 2023\n2023.02 ~ 2024.02\n1 년\n· 일 본 어 일 상 회 화 가 능\n· 영 어 일 상 회 화 가 능\n기 타\n- 학 생 상 담 및 민 원 관 리\n- 재 학 생 실 습 안 내 및 결 과 정 리\n문 제 분 석 및 효 율 성 향 상\n- 분 산 된 학 생 데 이 터 를 취 합 하 여 관 리 했 다 .\n- 자 격 증 조 건 충 족 여 부 에 맞 춰 서 식 을 활 용 하 여 미 달 성 학 생 을 구 분 했 다 .\n예 비 유 아 교 사 의 플 립 러 닝 수 업 효 과 탐 색 : 놀 이 지 도 수 업 을 중 심 으 로 (2023) \n유 아 동 의 놀 이 중 심 교 육 및 전 인 적 발 달 을 위 한 교 사 의 역 할 학 습 교 육 학 , 교 육\n평 가 등 교 육 의 기 본 체 계 와 성 장 을 평 가 하 는 방 법 을 학 습 4 년 간 봉 사 및 실 습 으\n로 현 장 을 경 험 하 며 이 론 을 다 양 한 사 례 에 적 용\n자 격 증 조 사 및 분 석 - 새 로 운 자 격 증 관 련 교 과 목 추 가 를 위 해 관 련 자 격 증 의 종\n류 와 요 구 사 항 파 악 했 다 . - 자 격 증 의 취 득 율 과 취 업 연 계 성 을 근 거 로 도 입 할 자 격\n증 을 선 별 했 다 .\n학 과 교 육 과 정 조 정\n- 자 격 증 발 급 처 에 게 유 사 교 과 목 을 인 정 받 아 과 목 수 를 최 소 화 해 학 생 부 담 이 감 소 했 다 .\n- 기 존 의 교 과 목 과 새 로 운 교 과 목 의 조 화 를 고 려 하 여 학 년 과 학 기 를 조 정 및 배 치 했 다 .\n- 재 학 생 의 교 육 과 정 표 제 작 및 관 리 했 다 .\n자 격 증\n·MOS EXPERT_EXCEL\n· 보 육 교 사 자 격 증 2 급\n· 교 원 자 격 증 2 급",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/2차(260503)/피드백/_추출텍스트/이가현_이력서.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-1a2f1e788146",
+    "studentId": "이가현",
+    "date": "2026-05-03",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 취업 문서 자기소개서 작성",
+    "summary": "--- page 1 --- 유저와 상호작용의 청사진을 그리는 기획자 게임 기획은 추상적인 기획 의도를 유저의 행동으로 구체화하는 것이라고 생각합니다 . 특히 , 양방향 소통이 가능한 게임 매체를 활용하여 유저의 능동적인 행동을 유도하는 게임을 기획하고자 합니다 . 학원에서 진행한 프로젝트에서 컨텐츠 시스템 및 밸런싱을…",
+    "detail": "--- page 1 ---\n 유저와 상호작용의 청사진을 그리는 기획자 \n게임 기획은 추상적인 기획 의도를 유저의 행동으로 구체화하는 것이라고 생각합니다 . 특히 , 양방향 소통이 가능한 게임 매체를 활용하여 유저의 능동적인 행동을 유도하는 게임을 기획하고자 합니다 . 학원에서 진행한 프로젝트에서 컨텐츠 시스템 및 밸런싱을 전담하여 유저가 다양한 강화 빌드를 진행할 수 있도록 구성하였습니다 . 이를 위해 기본 무기 3 종과 버프 효과 3 종으로 구성하였으며 , 기본 무기의 강화 비용을 저렴하게 책정 하였습니다 . 이후 실제 유저를 대상으로 돌린 설문지에서 선택하는 빌드가 각각 약 30% 씩 균등하게 분포된 점을 확인할 수 있었습니다 . 공급되는 게임 속에서 수급자인 유저의 선택이 서로 영향을 주며 완성되는 시스템으로 재미를 완성하는 기획자가 되고자 합니다 . \n \n비전문가의 한계를 보완하는 기획자 \n타 직무의 작업을 이해하고 작업자와 원활히 소통하기 위해서 비 전문 분야에 대해 꾸준히 탐구해왔습니다 . 바이브 코딩을 활용한 시스템 활용 스터디를 진행하며 시스템과 컨텐츠의 분리 , 데이터의 논리구조 등을 탐구하며 HTML 프로토타입을 제작하였습니다 . 이 과정에서 코딩의 기초 지식과 시스템의 논리 구조를 병합하여 이해도를 높였습니다 . 이후 학원 프로젝트 과정에서 시스템 기획을 담당하여 기본 조작과 되돌리기 , 카메라 워킹 등의 기획서를 작성하였습니다 . 개발자의 시선에서 필요한 정보와 예외 처리를 구분하고 각 항목마다 번호를 매겨 추후 수정 및 관리에 편리성도 확보하였습니다 . 개발자와 자주 소통하며 각 실무자들이 작업에 편리함을 보장 받을 수 있도록 다양한 양식과 방법으로 기획서를 작성했습니다 . 이러한 저의 다양한 시도와 경험 속에서 타 작업자들과 원활히 소통하며 성장할 수 있음을 인식하고 자기 주도적으로 자기 개발을 할 수 있었습니다 . \n \n여러 이해관계를 조율 할 수 있는 기획자 \n다양한 알바와 전공의 경험에서 안정적인 소통 방식을 구축 할 수 있었습니다 . 사람마다 선호하는 화법과 이해하는 방식을 파악하며 소통하고자 합니다 . 조교로 근무하며 실습 지원비 입금이 누락되어 기관에서 민원이 들어 왔었습니다 . 정해진 절차를 중시하는 학교와 기한 내 입금을 요구하는 기관 사이에서 적극적으로 의견을 조율했습니다 . 두 집단의 합의점을 파악하여 조정에 성공하였습니다 . 학원 프로젝트를 진행하며 컨텐츠와 관련된 데이터 테이블을 작성해야 했습니다 . 먼저 개발 담당자와 소통하며 테이블 구조와 칼럼에 대해 편안한 방식을 정리하여 무기 , 강화 , 상점 , 캐릭터 용 테이블을 구분하여 제작하였습니다 . 구조화된 틀을 팀원들에게 공유하며 이해가 부족한 팀원과 자주 햇갈리는 부분을 파악하여 추가 설명이나 메모를 작성하는 등의 원활한 업무 공유와 진행을 이룰 수 있었습니다 . 이는 단순히 친화력이 아닌 , 프로젝트의 안정적인 진행과 마무리라는 목표를 위해서 \n\n--- page 2 ---\n실무적인 커뮤니케이션 역량을 강화 할 수 있었습니다 .",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/2차(260503)/피드백/_추출텍스트/이가현_자기소개서_2차.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-96301a999253",
+    "studentId": "이가현",
+    "date": "2026-05-03",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience"
+    ],
+    "title": "2차 취업 문서 피드백",
+    "summary": "﻿# 이가현 ## 이력서 ### 종합 판단 분석과 소통 방향은 보입니다. 게임 프로젝트 정보는 키워드 수준에 머뭅니다. ### 개선사항 #### 1. 프로젝트 정보 약함 ```text \"게임 개발 프로젝트 경험\" ``` - 프로젝트명, 기간, 역할이 보이지 않습니다. - 교육과 운영 경험은 튜토리얼 설계나 유저 이해로…",
+    "detail": "﻿# 이가현\n\n## 이력서\n\n### 종합 판단\n\n분석과 소통 방향은 보입니다.\n게임 프로젝트 정보는 키워드 수준에 머뭅니다.\n\n### 개선사항\n\n#### 1. 프로젝트 정보 약함\n\n```text\n\"게임 개발 프로젝트 경험\"\n```\n\n- 프로젝트명, 기간, 역할이 보이지 않습니다.\n- 교육과 운영 경험은 튜토리얼 설계나 유저 이해로 연결할 수 있습니다.\n- 게임 프로젝트 항목에는 본인이 맡은 기획 역할을 붙여야 준비 흐름이 살아납니다.\n\n<br><br>\n\n## 자기소개서\n\n### 종합 판단\n\n유저 선택과 데이터 테이블 경험이 보입니다.\n분량이 짧아 판단 과정은 제한적으로 남습니다.\n\n### 좋은 점\n\n#### 1. 유저 선택 구조 설계\n\n```text\n\"유저가 다양한 강화 빌드를 진행할 수 있도록 구성하였습니다.\"\n```\n\n- 유저 행동을 설계하려는 의도가 보입니다.\n- 데이터 기반 기획 방향과 연결되는 지점은 매력적입니다.\n\n### 개선사항\n\n#### 1. 수치 해석 약함\n\n```text\n\"선택하는 빌드가 각각 약 30% 씩 균등하게 분포된 점\"\n```\n\n- 유저 선택을 설계한 의도는 좋은 점으로 읽힙니다.\n- 다만 이 수치가 왜 의미 있는 결과인지 바로 설명되지는 않습니다.\n- 그래서 설계 의도보다 결과 해석의 힘은 약하게 보일 수 있습니다.\n\n## 결론\n\n`데이터와 소통으로 유저 선택을 설계하려는 기획자`로 읽힐 수 있습니다.\n게임 프로젝트 근거가 구체화되어야 합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/2차(260503)/피드백/이가현.md",
+      "isEstimatedDate": false
+    }
+  }
+]

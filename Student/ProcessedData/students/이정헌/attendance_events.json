@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-01-09",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-24",
+    "kind": "휴가",
+    "detail": "휴가 (컨디션 관리)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "studentId": "김영도",
+  "name": "김영도",
+  "phone": "010-5591-6055",
+  "gender": "남",
+  "birthDate": "2001-10-30",
+  "education": "한신대학교 한중문화콘텐츠학과",
+  "experience": "",
+  "address": "경기도 시흥시 수인로 3409번길 58, 가동 504호",
+  "specialNote": "",
+  "attendanceMemo": "",
+  "cohort": "기획4기",
+  "course": "게임 기획 부트캠프"
+}

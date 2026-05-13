@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-01-19",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-16",
+    "kind": "휴가",
+    "detail": "휴가 (밭일)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "휴가",
+    "detail": "휴가 (밭일)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "박현수-status-1",
+    "startDate": "2026-03-23",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "면담 개입이 있었던 구간"
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "checkinId": "checkin-538901eeb3d6",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-20",
+    "originalDate": "2026-01-20",
+    "submittedAt": "2026-01-20T17:55:30.616000",
+    "team": "2팀",
+    "workText": "0.1",
+    "noteText": "팀원들과 방식을 맞춰가며 작업을 하는게 힘들었습니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-53cc9529f741",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-13",
+    "originalDate": "2026-02-13",
+    "submittedAt": "2026-02-15T12:23:01.180000",
+    "team": "1팀",
+    "workText": "맵, 타일 시스템 설계 초안 작성",
+    "noteText": "개발이 가능한 정도의 구체적인 시스템 기획이 낯설어 힘듦",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-61f2f71e7eb8",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-24",
+    "originalDate": "2026-02-24",
+    "submittedAt": "2026-02-24T17:58:08.648000",
+    "team": "1팀",
+    "workText": "사운드 리소스 작업 마무리, QA 후 간략한 전투UI 구상도 완성, 스테이지1 맵 배경과 타일 배치및 구상",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-05c21190ceb5",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-25",
+    "originalDate": "2026-02-25",
+    "submittedAt": "2026-02-25T18:07:33.307000",
+    "team": "1팀",
+    "workText": "바나나와 전투",
+    "noteText": "아직 디자이너는 먹고 살만하다고 생각합니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-3530c1d962ac",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-25",
+    "originalDate": "2026-02-25",
+    "submittedAt": "2026-02-25T18:08:21.249000",
+    "team": "1팀",
+    "workText": "바나나와의 전투",
+    "noteText": "아직 디자이너는 먹고살만하다고 생각합니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-38ea599b90ba",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-18",
+    "originalDate": "2026-03-18",
+    "submittedAt": "2026-03-18T17:51:41.418000",
+    "team": "9팀",
+    "workText": "원페이지, 기획서 작성, 타이쿤게임의 기본적인 UI/UX 와이어 프레임 피그마로 작성",
+    "noteText": "음.. 다른 부분은 모두 순조롭지만 초기 구상 분량이 많아 어느정도까지 구현이 될지 조금 걱정이 됩니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-2ae246ac08f0",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-19",
+    "originalDate": "2026-03-19",
+    "submittedAt": "2026-03-19T18:03:19.353000",
+    "team": "9팀",
+    "workText": "초기UI플로우차트",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-6d1fc5f31a66",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-24",
+    "originalDate": "2026-03-24",
+    "submittedAt": "2026-03-24T17:48:00.119000",
+    "team": "9팀",
+    "workText": "[타이틀, 세이브, 로드] UI 기획서, 플로우 차트",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-d95629eded53",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-25",
+    "originalDate": "2026-03-25",
+    "submittedAt": "2026-03-25T22:44:31.772000",
+    "team": "9팀",
+    "workText": "인게임 플로우 차트",
+    "noteText": "개발 시간까지 생각을 해야니 시간이 너무 촉박해서 걱정됩니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-45a1bf2b8070",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-26",
+    "originalDate": "2026-03-26",
+    "submittedAt": "2026-03-26T22:18:04.935000",
+    "team": "9팀",
+    "workText": "플로우 차트 작성, UI구조도 작성",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-400a9041d23a",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-27",
+    "originalDate": "2026-03-27",
+    "submittedAt": "2026-03-27T17:33:15.208000",
+    "team": "9팀",
+    "workText": "목업/ 플로우 수정/ 기획서 수정",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-2ac724014658",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-31",
+    "originalDate": "2026-03-31",
+    "submittedAt": "2026-03-31T11:28:54.878000",
+    "team": "9팀",
+    "workText": "UI",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-257bcaee3100",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-31",
+    "originalDate": "2026-03-31",
+    "submittedAt": "2026-03-31T17:37:20.085000",
+    "team": "9팀",
+    "workText": "UI",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-9222df7b7ac3",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-01",
+    "originalDate": "2026-04-01",
+    "submittedAt": "2026-04-02T09:27:59.966000",
+    "team": "9팀",
+    "workText": "UI",
+    "noteText": "-",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-f353aeb7035b",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-02",
+    "originalDate": "2026-04-02",
+    "submittedAt": "2026-04-02T17:33:49.876000",
+    "team": "9팀",
+    "workText": "UI",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-b18b3fc0e02e",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-03",
+    "originalDate": "2026-04-03",
+    "submittedAt": "2026-04-03T18:01:12.770000",
+    "team": "9팀",
+    "workText": "사운드, 테스트케이스",
+    "noteText": "-",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-b24a7e8e16e0",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-07",
+    "originalDate": "2026-04-07",
+    "submittedAt": "2026-04-07T21:23:00.991000",
+    "team": "9팀",
+    "workText": "QA",
+    "noteText": "-",
+    "onTime": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "date": "2026-04-17",
+    "kind": "공가",
+    "detail": "공가 (민방위)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-05-04",
+    "kind": "휴가",
+    "detail": "휴가 (컨디션 관리)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

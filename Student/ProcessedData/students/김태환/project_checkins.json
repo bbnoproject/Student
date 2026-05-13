@@ -1,0 +1,233 @@
+[
+  {
+    "checkinId": "checkin-32aaec7c8525",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-20",
+    "originalDate": "2026-01-20",
+    "submittedAt": "2026-01-20T17:57:29.552000",
+    "team": "5팀",
+    "workText": "0.25",
+    "noteText": "진행이 순서대로 이루어져야 하기 때문에 분업이 어려웠음. 카테고리별로 업무를 나누면 대기를 해야하는 상황 발생. 서로 시간에 쫓기는 작업이 어려웠음.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-e814d6546e2a",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-21",
+    "originalDate": "2026-01-21",
+    "submittedAt": "2026-01-21T17:59:49.825000",
+    "team": "5팀",
+    "workText": "1",
+    "noteText": "작업 안정화 첫날에 서두른 덕에 마감일보다 조금 더 빨리 완성할 수 있을 것 같음",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-18cba03285f3",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-22",
+    "originalDate": "2026-01-22",
+    "submittedAt": "2026-01-22T17:57:03.566000",
+    "team": "5팀",
+    "workText": "1",
+    "noteText": "주말까지 프로젝트가 넘어가지는 않을 것 같아 다행입니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-7319874e2958",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-23",
+    "originalDate": "2026-01-23",
+    "submittedAt": "2026-01-23T17:53:44.061000",
+    "team": "5팀",
+    "workText": "1",
+    "noteText": "시간내에 완성해서 좋아요~",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-f0d93b7c0a43",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-19",
+    "originalDate": "2026-02-19",
+    "submittedAt": "2026-02-19T17:53:55.269000",
+    "team": "6팀",
+    "workText": "스테이지 선택/진입 구현",
+    "noteText": "메이플 월드 넌 대체 뭐냐. 어째서 코드는 똑같이 복사했는데 새 월드를 만들면 정상작동 하는거냐..........................................................",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-b3d2b2ad2a03",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-20",
+    "originalDate": "2026-02-20",
+    "submittedAt": "2026-02-20T17:58:28.677000",
+    "team": "6팀",
+    "workText": "스테이지 선택 / 대화창 프리셋 완성",
+    "noteText": "바이브 코딩은 꼭 하나하나 점검해나가면서 작성하자... 나중에 고치려고하면 코드내용을 확실하게 아는 것이 아니라 고치기 너무 힘들다..........",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-84d81623d32a",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-23",
+    "originalDate": "2026-02-23",
+    "submittedAt": "2026-02-23T17:58:38.591000",
+    "team": "6팀",
+    "workText": "작성한 코드 합치기 전체 사이클 구현하기",
+    "noteText": "작업이 진행될수록 시간의 압박을 느끼는중... 정리가 중요하다. 언제나 내가 지금 하고 있는 일, 해야하는 일을 시각화 할 수 있기를. 나중에 뭐랑 같이 해야지가 늘어나면 기간에 맞출 수 없다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-1282448597cc",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-24",
+    "originalDate": "2026-02-24",
+    "submittedAt": "2026-02-24T17:51:50.762000",
+    "team": "6팀",
+    "workText": "코드 합치기, 임시로 채워놨던 이미지들 교체, 전체적인 마무리",
+    "noteText": "아트나 다른 쪽에서 작업해주시는 내용을 개발에 다 담지 못하고 있는게 부담스럽다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-a118ec2a8049",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-25",
+    "originalDate": "2026-02-25",
+    "submittedAt": "2026-02-25T17:48:11.391000",
+    "team": "6팀",
+    "workText": "화면전환시 트랜지션 효과 사용",
+    "noteText": "컨디션 관리 잘하기...",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-ed9ef4351095",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-26",
+    "originalDate": "2026-02-26",
+    "submittedAt": "2026-02-26T18:00:24.785000",
+    "team": "6팀",
+    "workText": "화면전환 구성 추가, 엔딩 로그 추가",
+    "noteText": "어떻게든...만들었다...? 하려던걸 다 하진 못했지만 그래도 나름 붙여놓고 보니까 제작물이 만들어진거 같아 만족스럽다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-3146525eeb5b",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-18",
+    "originalDate": "2026-03-18",
+    "submittedAt": "2026-03-18T23:34:01.597000",
+    "team": "2팀",
+    "workText": "업무 분담, 기획서 초안 확인",
+    "noteText": "기획 방향을 크게 틀게 되었지만 그럼에도 불구하고 이제 가닥이 잡혀가는 것 같아서 다행입니다.\n다만, 볼륨에 대해 얼마나 협의를 볼 수 있을지 걱정입니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-64c61c59b16a",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-20",
+    "originalDate": "2026-03-20",
+    "submittedAt": "2026-03-20T10:36:44.420000",
+    "team": "2팀",
+    "workText": "킥오프전 기획서 내용 취합. 현재 작업 달성도 확인",
+    "noteText": "일부 인원의 담당 업무 변경을 고려하고 있습니다.........",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-5429168fe6d8",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-23",
+    "originalDate": "2026-03-23",
+    "submittedAt": "2026-03-23T17:48:52.984000",
+    "team": "2팀",
+    "workText": "마일스톤 재정립. 공정률 확인",
+    "noteText": "눈으로 보는 기획서가 제일 편하다... 편집으로 만든 목업 제공중...",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-a8e30da704cc",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-24",
+    "originalDate": "2026-03-24",
+    "submittedAt": "2026-03-24T18:00:06.961000",
+    "team": "2팀",
+    "workText": "일정 정리, 개발팀 프로토타입 공정률 확인, 다양한 의견 내기",
+    "noteText": "사운드를 내가 담당해야한다고...? 믿을 수 없어...",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-1e7d09328c2d",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-25",
+    "originalDate": "2026-03-25",
+    "submittedAt": "2026-03-25T19:05:27.820000",
+    "team": "2팀",
+    "workText": "작업 관리, 사운드 기본 작업 세팅",
+    "noteText": "프로토타입 빌드를 받았으나... 오늘 정규과정이 끝나고 받게 되었음. 전반적으로 오늘 하려던 내용 대부분이 내일로 이월될 예정.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-184bd2dda5da",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-27",
+    "originalDate": "2026-03-27",
+    "submittedAt": "2026-03-30T10:15:26.484000",
+    "team": "2팀",
+    "workText": "작업 정리, 사운드 제작",
+    "noteText": "슬슬 작업이 밀리는 느낌. AI 쉐이딩작업이 갑자기 추가되어서 어떻게 될지 모르겠음... 이거까지 해야 게임이 예뻐보일거 같긴한데...",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-6cd6aaa8faa2",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-30",
+    "originalDate": "2026-03-30",
+    "submittedAt": "2026-03-31T11:27:29.581000",
+    "team": "2팀",
+    "workText": "마일스톤 및 작업 공정률 체크 / 작업 재분배",
+    "noteText": "프로젝트가 길어짐에 있어서 컨디션 이슈가 여러곳에서 발생하고 있는 것 같음. 전반적인 분위기가 초기에 비해 많이 다운되어있는 모습. 제발 야근하지 말라고요~~~~~~~~",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-2f4f95f2c637",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-31",
+    "originalDate": "2026-03-31",
+    "submittedAt": "2026-04-01T10:24:18.932000",
+    "team": "2팀",
+    "workText": "사운드 제작, 작업 공정 관리",
+    "noteText": "AI를 사용해서 쉐이더를 적용하는 것들의 일부 가능한 기능들을 살펴볼 수 있었다. 꽤... 괜찮은듯? 오히려 이게 공정 시간을 많이 줄일 수 있는거 같음",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-07db3a08b84f",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-01",
+    "originalDate": "2026-04-01",
+    "submittedAt": "2026-04-02T09:14:14.390000",
+    "team": "2팀",
+    "workText": "사운드 제작, 공정 확인",
+    "noteText": "사운드는 적용되지 않은 상태로 선출시 예정. 기존에 기획서에도 포함되어 있지 않은 내용이다 보니 가능여부는 따로 프로그래밍측에 여쭤봐야함. 이슈가 발생한 것은 아니나 다른 팀에 비해 플밍반과의 소통이 적지 않나 고민. 뭔가 더 해줄 수 있는게 없을까.",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-b3e8c3c385b9",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-02",
+    "originalDate": "2026-04-02",
+    "submittedAt": "2026-04-03T09:16:49.530000",
+    "team": "2팀",
+    "workText": "사운드 파일 정리, QA TC 작성 초안 진행중",
+    "noteText": "아마 월요일로 밀리지 않을가 출시는... 플머분들한테 너무 많은 작업량을 준거 같은데 항상 괜찮다고 해서 불만사항이 있지는 않은지 확인하기가 좀 어렵다. 아직 거리두는 느낌.",
+    "onTime": false
+  },
+  {
+    "checkinId": "checkin-d363127b27f4",
+    "phase": "3차 프로젝트",
+    "date": "2026-04-03",
+    "originalDate": "2026-04-03",
+    "submittedAt": "2026-04-06T11:30:16.327000",
+    "team": "2팀",
+    "workText": "TC 작성 / 사운드 작업",
+    "noteText": "소통에 있어서 다소 공격적인 워딩을 사용하는 팀원이 있어 당황스러웠다... 최대한 직접 말하지 않고 누군가를 거쳐 소통할 수 있도록 안내드렸지만 가끔 돌발행동을 해서 당황스러움..................",
+    "onTime": false
+  }
+]

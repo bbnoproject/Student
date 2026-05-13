@@ -1,0 +1,18 @@
+[
+  {
+    "statusPeriodId": "김지훈-status-1",
+    "startDate": "2026-03-16",
+    "endDate": "2026-03-22",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 배경 확인이 필요한 구간"
+  },
+  {
+    "statusPeriodId": "김지훈-status-2",
+    "startDate": "2026-03-30",
+    "endDate": "2026-04-19",
+    "statusType": "경고",
+    "severity": "warning",
+    "reasonSummary": "집중 확인이 필요한 구간"
+  }
+]

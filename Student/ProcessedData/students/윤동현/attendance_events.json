@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-01-09",
+    "kind": "지각",
+    "detail": "지각 (연락 안됨)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-02-20",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-03-03",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-30",
+    "kind": "휴가",
+    "detail": "휴가 (개인 일정)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

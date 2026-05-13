@@ -1,0 +1,101 @@
+[
+  {
+    "checkinId": "checkin-04a8efe773c9",
+    "phase": "1차 프로젝트",
+    "date": "2026-01-20",
+    "originalDate": "2026-01-20",
+    "submittedAt": "2026-01-20T17:54:21.407000",
+    "team": "7팀",
+    "workText": "0.1",
+    "noteText": "높은 목표대비 진전이 안나갑니다",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-3f3512cb89d5",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-13",
+    "originalDate": "2026-02-13",
+    "submittedAt": "2026-02-13T17:58:30.802000",
+    "team": "6팀",
+    "workText": "몬스터 이미지 생성, 오픈소스/로컬 생성 모델 개발, 스프라이트 제작 서치",
+    "noteText": "늘 챌린지해서 어렵습니다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-b8cbeb09e7a1",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-20",
+    "originalDate": "2026-02-20",
+    "submittedAt": "2026-02-20T17:48:31.923000",
+    "team": "6팀",
+    "workText": "보스/몬스터 다운샘플링, 스프라이트 생성",
+    "noteText": "디자인만 하다보니 재미가 없는 거 같습니다",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-e1300d3f60c5",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-23",
+    "originalDate": "2026-02-23",
+    "submittedAt": "2026-02-23T17:47:43.675000",
+    "team": "6팀",
+    "workText": "몬스터 사망 동작/효과 구현, 기본 스프라이트 스플릿 및 완성, 기획서 완성",
+    "noteText": "슬슬 노트북이 한계가 와서 업그레이드를 하고 있다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-e6a912ac9f87",
+    "phase": "2차 프로젝트",
+    "date": "2026-02-24",
+    "originalDate": "2026-02-24",
+    "submittedAt": "2026-02-24T17:38:59.164000",
+    "team": "6팀",
+    "workText": "몬스터 애니메이션 스프라이트 생성",
+    "noteText": "컴퓨터 사양과의 싸움이었다. 덕분에 업그레이드와 서버까지 가지게 되었다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-6d04ca51113f",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-18",
+    "originalDate": "2026-03-18",
+    "submittedAt": "2026-03-18T17:40:58.262000",
+    "team": "개인 프로젝트",
+    "workText": "생성 ai 파이프라인 세팅",
+    "noteText": "환경 세팅에 많은 시간이 드는 거 같다",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-3b1c3a9c6caf",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-19",
+    "originalDate": "2026-03-19",
+    "submittedAt": "2026-03-19T17:58:24.733000",
+    "team": "개인 프로젝트",
+    "workText": "우분투 세팅과 백업 복원만 하루종일 했습니다.",
+    "noteText": "16기가로 개발하는 건 미친짓 같습니다",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-7984ba97be2a",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-25",
+    "originalDate": "2026-03-25",
+    "submittedAt": "2026-03-25T18:20:17.885000",
+    "team": "개인 프로젝트",
+    "workText": "윈도우와 우분투를 오가는 환경 세팅을 마쳤다. 이제야 본작업이 가능할 거 같다.",
+    "noteText": "급한 PC 부품 구매로 200만원 어치 중고 사기를 당해 멘탈이 나갔다. 드롭할 뻔했다.",
+    "onTime": true
+  },
+  {
+    "checkinId": "checkin-d2593fb29524",
+    "phase": "3차 프로젝트",
+    "date": "2026-03-26",
+    "originalDate": "2026-03-26",
+    "submittedAt": "2026-03-26T18:00:01.015000",
+    "team": "개인 프로젝트",
+    "workText": "우분투가 작업 내용이 날라가는 오류가 있어, 아무리 세팅해도 되지않아, 다시 윈도우로 옮기고 있다..",
+    "noteText": "거듭 쌓인 스트레스와 피로 때문에 집중력이 낮아진 거 같다. 좀 쉬어야겠다",
+    "onTime": true
+  }
+]

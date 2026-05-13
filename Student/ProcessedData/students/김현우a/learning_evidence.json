@@ -1,0 +1,652 @@
+[
+  {
+    "evidenceId": "ev-96a722e852f4",
+    "studentId": "김현우a",
+    "date": "2025-11-19",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 저는 비록 게임이 전공도 아니며 게임업계에 대해서 아는것이 없지만 저의 열정은 누구보다 높다고 자부하며 반드시 게임업계에 취업해서 게임개발자 라는 타이틀을 얻고싶습니다 지원 동기 게임업계 취업 희망하며 게임이 현재 자신과 가장 적성에 맞다고 판다하여 본과종에 참여하여 자신의 능력을 향상시켜서 게임업계 진출을 위…",
+    "detail": "자기소개\n저는 비록 게임이 전공도 아니며 게임업계에 대해서 아는것이 없지만 저의 열정은 누구보다 높다고 자부하며 반드시 게임업계에 취업해서 게임개발자 라는 타이틀을 얻고싶습니다\n\n지원 동기\n게임업계 취업 희망하며 게임이 현재 자신과 가장 적성에 맞다고 판다하여 본과종에 참여하여 자신의 능력을 향상시켜서 게임업계 진출을 위한 능력을 습득하고 나아가 실제 게임업계에 취업을 희망하여 본 과정에 참여를 신청함\n\n관련 경험\n전무\n\n희망 분야\n게임 기획자(벨런스, 경제, 콘텐츠, 스토리), 원화가, 모델가, 개발자\n\n수료 목표\n게임기확자를 희망하고 있으며 기획자주에서도 가급적 스토리 기획자를 희망하여 실제 게임 기획자로서 취업을 목표로 하고 있음\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n과거의 실수와 연관지어 자신감 상실\n\n타인 대응\n상황에 대한 이해와 위로",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-429ad0a60221",
+    "studentId": "김현우a",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 79",
+    "detail": "웹툰 작가를 희망했으나, 현실적으로 맞지 않다고 느끼고 게임 기획을 공부하기로 함.\n세계관을 만드는 것을 좋아해 스토리 기획을 희망하지만, 다른 기획에 대해서도 열려있는 편.\n유니티로 간단한 게임을 만들며 게임 기획에 흥미를 느낌 (모델링, 코딩 쪽은 흥미가 없어졌다고 함)\n강점은 팀 작업에서 마찰없이 지낼 수 있다를, 단점은 회피 성향이 있다를 꼽음\n문서 툴 사용 역량은 거의 없다고 함.\n게임, 또는 게임 업게에 '흔적을 남기는 것' 을 목표로 한다고 함.\n소통에 큰 문제는 없었으나 약간 말이 어눌했고, 마음이 여려 보임.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-df91fb35954f",
+    "studentId": "김현우a",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-85353db9eb8f",
+    "studentId": "김현우a",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "3팀 / 역할 팀원 / 함께한 팀원 박영성, 맹지훈, 손호진, 김흥규, 정재용",
+    "detail": "팀: 3팀\n역할: 팀원\n팀원: 박영성, 맹지훈, 손호진, 김흥규, 정재용",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-9ebe97f5ac66",
+    "studentId": "김현우a",
+    "date": "2026-01-26",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection"
+    ],
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 아트컨셉에 부합하는 아트를 ai를 통해서 알맞게 생성하는데 성공하였다고 자평한다 협업에 대하여 팀 모두가 열성적이었으며 모두가 최상의 결과를 도출하기위해 밤낮으로 열심히 하였다 다음 프로젝트를 위해 아트팀을 당당하여 필연적으로 ai를 많이 사용하였는데 그 때문에 정작 중요한 나 자신이 무언가 했다는 느낌은…",
+    "detail": "기획에 대하여\n아트컨셉에 부합하는 아트를 ai를 통해서 알맞게 생성하는데 성공하였다고 자평한다\n\n협업에 대하여\n팀 모두가 열성적이었으며 모두가 최상의 결과를 도출하기위해 밤낮으로 열심히 하였다\n\n다음 프로젝트를 위해\n아트팀을 당당하여 필연적으로 ai를 많이 사용하였는데 그 때문에 정작 중요한 나 자신이 무언가 했다는 느낌은 들지 않았다 다음 프로젝트에는 기획단계에서 더 열성적으로 참여하고 싶다\n\n칭찬합시다\n모두가 자기 전문분야의 직책을 맞아 자신의 능력을 최대한 발휘하였다\n\n자유로운 한마디\n뭔가 이번 프로젝트는 기획자에게 있어 아쉬은 프로젝트였다고 생각합니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-32c77f5c3c01",
+    "studentId": "김현우a",
+    "date": "2026-02-20",
+    "weekIndex": 11,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ### 1) 현재 프로젝트 현황(난이도/속도/이해도/몰입도) 본인은 현재 프로젝트를 “너무 어렵다”고 표현했습니다. 첫 프로젝트에서 기획자로 얻어가는 것이 적었다는 문제의식이 있었고, 해결하고 싶었지만 이번 프로젝트에서는 프로그래밍 작업을 병행하고 있습니다. ### 2) 희망 직무 및 방향성 희망 직무는 시…",
+    "detail": "### 내용\n### 1) 현재 프로젝트 현황(난이도/속도/이해도/몰입도)\n\n본인은 현재 프로젝트를 “너무 어렵다”고 표현했습니다.\n\n첫 프로젝트에서 기획자로 얻어가는 것이 적었다는 문제의식이 있었고, 해결하고 싶었지만 이번 프로젝트에서는 프로그래밍 작업을 병행하고 있습니다.\n\n### 2) 희망 직무 및 방향성\n\n희망 직무는 시스템 & 콘텐츠 기획입니다.\n\n원래는 시나리오 직무를 희망했으나, 체감 난이도/현실성을 고려해 시스템&콘텐츠로 전환했습니다.\n\n### 3) 성장 목표(역량)\n\n앞으로 성장하고 싶은 역량으로 문서 작성 능력을 명확히 언급했습니다.\n\n문서 역량은 단순 작성이 아니라, 실무에서 통하는 가독성/구조/전달력 개선 니즈로 이해됩니다.\n\n### 4) 과정에서 기대하는 것(목표)\n\n이번 과정을 통해 얻고 싶은 핵심은 “실무 경험”입니다.\n\n“프로젝트를 통해 실제로 해봤다”는 경험 축적을 중요하게 두고 있습니다.\n\n앞으로 취직에 있어서 실무에 준하는 프로젝트 경험이 필수라고 생각합니다.\n\n### 5) 강사진에게 요청/확인 사항\n\n기업협약 종료 이후 포트폴리오 피드백 가능 여부를 질문했습니다.\n답변: 가능\n\n피드백 범위에 대해서도 추가 질문했습니다.\n답변: 가독성부터 내용까지, 필요한 만큼 전반적으로 확인/피드백 진행\n\n---",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/김현우A.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-6c73301fa9aa",
+    "studentId": "김현우a",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전투시스템 기획이 완료 자유 메모 대략적인 전투 회의를 마쳤다 12시 까지 회의를 한 강행군이었다. 중간에 게임 시스템이 갈아업어져서 팀원간 충돌이 있었고 분의기가 살벌해졌지만 그래도 강사님이 수습을 해주어서 어느정도 수습이 되었고긴 회의 끝내 전투시스템 기획이 완료되었다",
+    "detail": "작업 내용\n전투시스템 기획이 완료\n\n자유 메모\n대략적인 전투 회의를 마쳤다 12시 까지 회의를 한 강행군이었다. 중간에 게임 시스템이 갈아업어져서 팀원간 충돌이 있었고 분의기가 살벌해졌지만 그래도 강사님이 수습을 해주어서 어느정도 수습이 되었고긴 회의 끝내 전투시스템 기획이 완료되었다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5afa1ac2769e",
+    "studentId": "김현우a",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "1팀 / 역할 팀원 / 함께한 팀원 강유민, 이유송, 박현수, 이동현, 임소영, 정석현, 정우경",
+    "detail": "팀: 1팀\n역할: 팀원\n팀원: 강유민, 이유송, 박현수, 이동현, 임소영, 정석현, 정우경",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-cf0a61a4d71e",
+    "studentId": "김현우a",
+    "date": "2026-03-19",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 스킬 플레이어 캐릭터에게 기본으로 제공하게 될 스킬을 우선적으로 작업해주세요! 1플레이어 캐릭터가 사용할 수 있는 스킬 별 컨셉 기획 2공격 방식 3공격 범위, 공격 사거리 4재사용 대기시간 5주사위 1~6에 따라 변화 작업 -> 해당 스킬을 얻을 수 있는 스테이지 제한 요소가 필요하다면 해당 요소도 획득 조…",
+    "detail": "작업 내용\n스킬 \n플레이어 캐릭터에게 기본으로 제공하게 될 스킬을 우선적으로 작업해주세요!\n\n1플레이어 캐릭터가 사용할 수 있는 스킬 별 컨셉 기획\n2공격 방식\n3공격 범위, 공격 사거리\n4재사용 대기시간\n5주사위 1~6에 따라 변화 작업\n-> 해당 스킬을 얻을 수 있는 스테이지 제한 요소가 필요하다면 해당 요소도 획득 조건으로 포함할 것 (ex. n스테이지 이상에서만 해당 장비가 드랍된다는 조건, 상점에서 구매를 통해서만 획득할 수 있다, 히든 요소를 추가하고싶다면 해당 부분에 대해서도 작성 필요)\n\n자유 메모\n철야 다운 철야를 오늘 했다고 생각합니다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-1fb981d30900",
+    "studentId": "김현우a",
+    "date": "2026-03-20",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 스킬 기획문서 작성 자유 메모 내가 재대로 기획문서를 작성한것이 만든지 모르겠다",
+    "detail": "작업 내용\n스킬 기획문서 작성\n\n자유 메모\n내가 재대로 기획문서를 작성한것이 만든지 모르겠다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-0ab2cd91b1de",
+    "studentId": "김현우a",
+    "date": "2026-03-23",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-23 스킬 6개 문서 작성->WBS 표 아직 업데이트 안함->할줄몰라서 기회서 검토도 필요 액셀? 로 작성해도 됨? 스킬 이외의 공격 없음 기획서 파트장과 검토 필요 플밍팅 기획서 기다리는 중 플레이어 자채적 데미지? 기획서 작성에 협의 필요시 우경님과 대화 지금상황애서-크게 문제는 없음 당장은 -----…",
+    "detail": "작업 내용\n3-23\n스킬 6개 문서 작성->WBS 표 아직 업데이트 안함->할줄몰라서\n기회서 검토도 필요\n액셀? 로 작성해도 됨?\n\n스킬 이외의 공격 없음\n\n기획서 파트장과 검토 필요\n플밍팅 기획서 기다리는 중\n\n플레이어 자채적 데미지?\n\n기획서 작성에 협의 필요시 우경님과 대화\n\n지금상황애서-크게 문제는 없음 당장은\n\n--------------------------------------------------------------------------------------------\n버젼 넘버 업데이트\n\n차별적인 또는 근거리 2이상개 정도\n\n기획의도 설명->어떤 플레이 유형의 플레이어 가 플레잉 할지@\n\n스킬들 장애물 관통 유무 정하기=장애물 또는 적과 붙이칠시 파괴 혹은 계속 진행?\n폭탄 컨셉 스킬일 경우 장애물 또는 적과 충돌시 곧바로 폭발?@\n\n쿨타임=공격딜레이\n스킬 재사용 충전 시간 전부 5로 통일\n시간 에 전부 단위 넣기 \"S\"\n스킬 재사용 대기시간\n\n--------------------------------------------------------------------------------------------\n던전 테마 결정-다이스, 왜계인, \n던전 총3개\n방-스테이지-던전\n스토리-참고\n\n최종보스ㅡ 전용 방 따로 디자인\n\n자유 메모\n진도네 전진이 없는거 갔다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-3c9615f33c2c",
+    "studentId": "김현우a",
+    "date": "2026-03-24",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-24 ----------------------------------------------------------------------------------------------- 스킬 기획서 컴펌 스탯 정리 튜토리얼 정리 주사의 정리/레벨업 주사위 테마 기획서 필요 내용 핵심 키워드/서사/색상/타일셋 및 오…",
+    "detail": "작업 내용\n3-24\n-----------------------------------------------------------------------------------------------\n\n스킬 기획서 컴펌\n\n스탯 정리\n튜토리얼 정리\n주사의 정리/레벨업 주사위\n\n테마 기획서 필요 내용\n핵심 키워드/서사/색상/타일셋 및 오브젝트(애셋)/연출/방의 종류\n\n맵 레이아웃 및 상호작용\n\n테마 나눌때 층이 밑애서 아래로 올라가는 구조 3층애 대한 테마는 이를 고려\n\n치명타 확률, 치명타 수치\n\n보스전용 스클 로직\n\n1.1=(int)\n1.2=(float)\n1.3=(string)\n1.4=(UnityEngine.UI.Image)\n2.1=따로 구현하셔애 합니다 이들은 주사위 별 달리 적용되는 효과 입니디\n2.2=참고용입니다\n2.3=카테고리화 피요하며 변하는 동작 자체는 업습니다 스킬은 원거리, 근접, 그리고 원거리 폭발 등이 있습니다\n2.4=어느 애셋의 어느 링크인지 표현한것입니다 아이콘은 교체 예정입니다\n\n아이콘 폴더 어디?\n\n이제 테마 파트- 진행상황\n몬스터 참고해야한거 갔은대 어디서?\n\n한 스테이지 당 2종류 일반 1종류 보스\n\n엣셋-\n\n초반 스테이지-오크\n후반 스테이지-좀비\n\n아래층애서 위로 탈출 \n-------------------------------------더전-------------------------------------\n1스테이지-용암-(방8개)\n2스테이지-지상-(방8개)\n3스테이지-산 정상-(방8개)\n최종스테이지-최종 보스-달-(방8개)\n\n필드 무슨 스테이즈에 장애물이 나올지 정해야함 확실시\n\n자유 메모\n겨우겨우 스킬 기획서가 통과했습니다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-37c28d74802e",
+    "studentId": "김현우a",
+    "date": "2026-03-25",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-25 로비=주사위 세계안 스테이지는 포탈로 이동 타일, 장애물, 벽 어떤 타일 쓸지 타일 크기 바닥 타일 숫자 늘리기 자유 메모 오늘은 새로운 작업을 했다",
+    "detail": "작업 내용\n3-25\n로비=주사위 세계안\n\n스테이지는 포탈로 이동\n\n타일, 장애물, 벽 어떤 타일 쓸지\n\n타일 크기\n\n바닥 타일 숫자 늘리기\n\n자유 메모\n오늘은 새로운 작업을 했다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-6642aace7100",
+    "studentId": "김현우a",
+    "date": "2026-03-26",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-26 스테이지 별 보스 격파 드랍 상자 오브젝트 지정해서 기회서 추가 튜토리얼 방 추가 상점 오브젝트? 상점과 강화 보류 자유 메모 전보다 탈력을 받은 느낌이다",
+    "detail": "작업 내용\n3-26\n스테이지 별 보스 격파 드랍 상자 오브젝트 지정해서 기회서 추가\n\n튜토리얼 방 추가\n\n상점 오브젝트?\n\n상점과 강화 보류\n\n자유 메모\n전보다 탈력을 받은 느낌이다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ec5e7f67a38b",
+    "studentId": "김현우a",
+    "date": "2026-03-27",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-27 아이콘 수정 완료 업데이트 완료-크기, 누끼따기(배경재거) 완료 서현님 하고 ui 아트생성 상점 판매 아이템 동현님과 협의 필요 ui 작업 에셋 필요ui 레벨업 후 선택지 데이터 테이블? 레벨업 후 선택지 백그라운드 ui 게임 이용할 폰트 영어, 숫자 폰트 위주 한글 고려 안해도 어떤 느낌의 나눔고딕…",
+    "detail": "작업 내용\n3-27\n\n아이콘 수정 완료 업데이트 완료-크기, 누끼따기(배경재거) 완료\n\n서현님 하고 ui 아트생성 상점 판매 아이템 동현님과 협의 필요\n\nui 작업\n에셋\n필요ui\n\n레벨업 후 선택지\n데이터 테이블?\n\n레벨업 후 선택지 백그라운드 ui\n\n게임 이용할 폰트 영어, 숫자 폰트 위주 한글 고려 안해도 \n어떤 느낌의 나눔고딕 도트 느낌의 폰트 추천\n\n영문\nhttps://www.dafont.com/early-gameboy.font\n\nhttps://assetstore.unity.com/packages/2d/fonts/pixel-font-tripfive-64734 \n\n한글\nhttps://noonnu.cc/font_page/800 갈무리9\n\n선택지 전용 ui 폰트 필요-한글 폰트\n\n폰트 선택후 드라이브 넣기\n\n--------------------------------------------------------------------------------------------\n최종보스 방\n\n기회서\n\n최종 보스패턴 설계\n공격패턴\n컨셉이미지(이미 있음)\n스킬 기회서 비슷하게 작성\n공격 패턴\n앨리트보스 몹\n스킬-4개\n그중 3개는 던전 고유 보스 스킬 사용\n마지막 1~2~4 개만 설계\n\n보스 패턴 나오면 프로토 타입을 만들어야 하니 자세한 설명이 필요\n\n컨셉이미지 참고\n\n자유 메모\n개발에 속도가 나오고 있다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9366254f9855",
+    "studentId": "김현우a",
+    "date": "2026-03-30",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-29 스프라이트 이미지 용어 정리 보스 컨셉-전투 스킬 기획서 이후 컨셉 정의 기획서 지위: 신 성격: 게으름, 장난을 좋아함, 선악 구분 존재하지 않음 캐릭터 테마: 주사위, 운, 조월적 존재 스토리: 언재 뭐가 나가고 그것을 지정 필요 초반 1@ └ 맵 유형 세부 설계 (로비 등)-튜토리얼 추가 필요…",
+    "detail": "작업 내용\n3-29\n스프라이트 이미지\n용어 정리\n\n보스 컨셉-전투\n\n스킬 기획서 이후 컨셉 정의 기획서\n\n지위: 신\n성격: 게으름, 장난을 좋아함, 선악 구분 존재하지 않음\n캐릭터 테마: 주사위, 운, 조월적 존재\n스토리:\n\n언재 뭐가 나가고 그것을 지정 필요\n초반\n\n1@　└ 맵 유형 세부 설계 (로비 등)-튜토리얼 추가 필요\n2@　　　맵 레이아웃 및 상호작용-무슨 문서?(작성 취소)\n3@　└ 환경 및 타일셋 (맵 구분 제작)-?(작성 취소)\n4@　　└ 타격 / 스킬 이펙트-?(작성 완료)(플레이어나 적 이 공격에 피격 됬을때 발생하는 타격의 임팩트 기획서?)\n　플레이어 캐릭터 전투 방식 기획서\n\n5 ? -레벨업 콘텐츠 다일 기획서(추가)-보상 내용 동현님 작성한 문서의 4번 만 각고 오면 됨\n\n허수아비, 포탈X2, 튜토리얼 재시작 용 오브젝트, 목 나가는 공간(울타리도 가능)\n \n\n동현님 작성 한거 구채적인 로직 방법 설명 4번 항목\n\n레벨할떄마다 무슨 보상이?\n선택=플레이어 스탯\n\n최종보스 스킬\n최종보스 컨셉 정의\n\n튜토리얼기획서 현재 추가해야할 정보\n\n자유 메모\n초반애 비해서 많이 작업이 낳아진거 갔지만 아직 잘 모르겠다 데이터 테이블 작업 관련 회의할때 나 때고 하던대 이유가 있겠지만 역시 불안하다 내 작업이 많이 나쁜가 지금 내가 기획자로서 재대로 된 능력을 가추어 나가고 있는건가? 모르겠다 나는 시스템, 콘텐츠 디자인을 하고 싶은대 뭔지 모르겠다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-bba37e903b3e",
+    "studentId": "김현우a",
+    "date": "2026-03-31",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 3-31 적의 공격애 플레이어가 타격받았을때 나오는 임팩트 - 스킬 타격 임팩트 새시트 만들어서 추가 4번 스킬 gif 다시 뽑기 우경님과 오전회의 끝나고 따로 회의 래벨업 포탈 오브젝트 통일 로컬라이징 필요 영문 스킬 이름 필요 모든 기획서의 이름들을 영문으로 수정 -----------------------…",
+    "detail": "작업 내용\n3-31\n적의 공격애 플레이어가 타격받았을때 나오는 임팩트\n- 스킬 타격 임팩트 새시트 만들어서 추가\n4번 스킬 gif 다시 뽑기\n\n우경님과 오전회의 끝나고 따로 회의\n\n래벨업 \n\n포탈 오브젝트 통일\n\n로컬라이징 필요 영문 스킬 이름 필요\n\n모든 기획서의 이름들을 영문으로 수정\n\n---------------------------------------------------------------------------------------------\n\n주사위 시스템 및\n확률 테이블일치?-눈금별 확률\n주사위 종류별 기능-재대로 된 효과\n레벨업 상태 통제-레벨업시 ui 게임 정지\n\n플레이어 조작 및 피격 판정\n이동\n벽 통과 여부\n적 피격-피격 철리, 반응\n사망-게임오버\n환경설정의 이동 변경 기능\n\n플레이어 스킬\n투사채 크기\n스킬 이동 속도\n스킬 이동 거리\n스킬 데미지\n스킬 발동횟수\n\n전투 시스탬\n몬스터 감지 범위\n몬스터 공격 행위 작동\n보스 스킬 데미지\n보스 스킬 확률\n보스 스킬 절차\n각 스킬이 기획의도와 동일한 성능?\n\n대사 진행순서\n최종보스 패배시?\n\n자유 메모\n오늘 아무것도 안한 기분",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-2f7ca5eb880e",
+    "studentId": "김현우a",
+    "date": "2026-04-01",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 4-1 qa 작업 우경님 작업 전투, 맵 픽스=우경님 꺼 기준 내 파트 추가 수정해서 확정해 자유 메모 오늘은 한거 자채는 많지않다",
+    "detail": "작업 내용\n4-1\n\nqa 작업\n우경님 작업\n\n전투, 맵\n\n픽스=우경님 꺼 기준 내 파트 추가 수정해서 확정해\n\n자유 메모\n오늘은 한거 자채는 많지않다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-386ef3d4cc4d",
+    "studentId": "김현우a",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 4-2 우선순의 반드시 설정하기 중복 내용 재거 내일 오전 또는 토요일 까지 체크리스트 항목 완성 우경님 36 40 43 46 현재 나온것 중애서 더 추가 해야 하는거, ui특히 레벨업 ui 정상적으로 작동 자유 메모 좀 여유가 생겼다",
+    "detail": "작업 내용\n4-2\n우선순의 반드시 설정하기\n중복 내용 재거\n내일 오전 또는 토요일 까지 체크리스트 항목 완성\n\n우경님\n\n36\n40\n43\n46\n\n현재 나온것 중애서 더 추가 해야 하는거, ui특히\n레벨업 ui 정상적으로 작동\n\n자유 메모\n좀 여유가 생겼다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-e1c67d1f4fca",
+    "studentId": "김현우a",
+    "date": "2026-04-03",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 4-3 4-정밀 장거리 6-중거리/6의 행운 10근접/확산 11 단계별 근접 자격 자유 메모 QA 체크리스트 작성을 했다",
+    "detail": "작업 내용\n4-3\n\n4-정밀 장거리\n6-중거리/6의 행운\n\n10근접/확산\n11 단계별 근접\n자격\n\n자유 메모\nQA 체크리스트 작성을 했다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-09d33b3e6a97",
+    "studentId": "김현우a",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 4-3 4-정밀 장거리 6-중거리/6의 행운 10근접/확산 11 단계별 근접 자격 -GitHub issue 등록- 1. 레벨업 했을 때, 눈금 1이 더큰 보상이 된다. (눈금이 높을수록 좋게 기획이 되어있는데) 레벨업 시스템 문제 2. UI 줄임말 사용 금지 (치속/치확/이속/공속/치확/치피) 3. 레벨업 3…",
+    "detail": "작업 내용\n4-3\n\n4-정밀 장거리\n6-중거리/6의 행운\n\n10근접/확산\n11 단계별 근접\n자격\n\n-GitHub issue 등록-\n1. 레벨업 했을 때, 눈금 1이 더큰 보상이 된다. (눈금이 높을수록 좋게 기획이 되어있는데) 레벨업 시스템 문제 \n\n2. UI 줄임말 사용 금지 (치속/치확/이속/공속/치확/치피)\n\n3. 레벨업 3장 선택 시 중복 선택 가능하게 되어있음 (기획서상에는 중복선택 안됨)\n\n4. 레벨업 UI 선택 개수 표시 안됨 (레벨업시 조건도 같이 기재함)\n\n5. UI가 시야를 가림 (하단 스킬 텝/ 왼쪽 상단)\n 게임 플레이이에 제한이 있음\n\n- UI 새로 디자인해야함 (정석현)\n- 투명도\n\n6. 전투방 클리어 했을 때 클리어 표시 또는 문 열고 닫히는 소리 추가했으면 좋겠다.\n(사운드로)\n\n7. 스테이지 이동시 경험치 초기화 (진행님)\n\n8. 캐릭터 대시 재사용 대기시간 UI 표시\n\n9. 레벨업 밸런스 수치 조절 (우경님)\n\n10. 보스급(일반보스/최종보스) hp바 (승열님)\n \n11. 플레이어 캐릭터 쿨타임에 시계바 ( 유찬님)\n\n\"\n12. 최종보스 맵이 너무 커서 플레이어 캐릭터가 너무 작아보임 (진행님)\n\n13. 최종보스 흐려짐 (유찬님)\n\n14. 체력바(현재 체력/최대 체력) /능력치바 수치 적용 (유찬님)\n\"\n\n트레킹 계속하기\n당담자\n나현수 님창 테그\n\n자유 메모\nQA는 체크리스트는 마무리 된 느낌이고 이제 실제 테스트 인거 갔다",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-a16b0944762c",
+    "studentId": "김현우a",
+    "date": "2026-04-11",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "6팀 / 역할 팀원 / 함께한 팀원 예인해, 정우경, 곽용준, 박민규, 서진호, 유해찬, 정석현, 정재용",
+    "detail": "팀: 6팀\n역할: 팀원\n팀원: 예인해, 정우경, 곽용준, 박민규, 서진호, 유해찬, 정석현, 정재용",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-f20e83a63396",
+    "studentId": "김현우a",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-7ec1670c9c46",
+    "studentId": "김현우a",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "1차 자기소개서 자기소개서 작성",
+    "summary": "자기소개서 목차 1. 지원동기 2. 경험 3. 직무 역량 4. 마무리 저는 게임과 콘텐츠를 연결하는 기획자 입니다 지원동기 저는 처음에는 웹툰 작가를 목표로 했습니다. 제가 직접 만든 세계관 건설을 원했기 때문입니다. 그러나 그림체 발전에 한계를 부딪혔고, 결국 다른 직업을 찾게 되었습니다. 그 과정에서 게임 제작에 관…",
+    "detail": "자기소개서 목차\n\n1. 지원동기\n\n2. 경험\n\n3. 직무 역량\n\n4. 마무리 저는 게임과 콘텐츠를 연결하는 기획자 입니다 지원동기 저는 처음에는 웹툰 작가를 목표로 했습니다. 제가 직접 만든 세계관 건설을 원했기 때문입니다. 그러나 그림체 발전에 한계를 부딪혔고, 결국 다른 직업을 찾게 되었습니다. 그 과정에서 게임 제작에 관심을 가지게 되었고, 이를 준비하면서 1 인 게임 제작과 게임 협업 제작 과정을 경험하였고 콘텐츠 기획이 세계관을 건설하고 이야기를 전달하는 데 중요한 역할을 한다는 것을 깨닫게 되었습니다. 이는 제가 기존에 추구하던 세계관 건설과도 방향성이 일치한다고 생각했습니다. 이러한 경험을 바탕으로, 세계관 건설을 희망하며 저는 게임 콘텐츠 기획자를 지원하게 되었습니다. 경험 저는 게임업계에 발을 들이기 위해서는 게임에 대한 기초 지식이 필요하다고 느꼈고, 이를 위해 경험과 배움이 필요하다고 생각했습니다.\n\n1. 실제 게임 제작 저는 게임 엔진 공부를 겸해서 실제 인디 게임 제작을 했습니다. “Loop School” 이라는 게임으로서 총 2 년에 걸쳐 게임 엔진, 모델링을 병행하면서 제작하였고 곧 출시 예정에 있습니다.\n\n2. 협업 게임 제작 1 인 개발이 아닌 기획과 프로그래밍이 서로 협업하는 방식의 게임 제작 경험을 가지고 있습니다. “lolling-dicemaster” 게임으로서 itch.io 에 출시되어 있습니다. 이 프로젝트에서 저는 콘텐츠 기획을 담당하였고, 이 과정에서 저는 콘텐츠 기획자로서 큰 관심을 가지게 되었고 실제 업무 방식과 문서 작성 요령을 얻는 데 성공하였습니다.\n\n3. 유저 스킨 모드 제작 “ 워썬더 ” 게임의 유저 스킨 제작을 통해 실제 게임에 적용되는 비주얼 콘텐츠를 제작하고 구현한 경험이 있습니다. 이를 통해 사용자의 요구를 반영하여 실제 구현을 하는 능력을 가지고 있습니다. 직무 역량\n\n1. 콘텐츠 기획 및 구조 설계 능력 콘텐츠 기획자로서 게임의 핵심 재미를 구성하는 시스템과 콘텐츠 구조를 설계할 수 있는 능력을 가지고 있습니다. 협업 프로젝트 ‘lolling-dicemaster’ 에서 콘텐츠 기획을 담당하며 게임에 필요한 콘텐츠와 이를 설계할 능력을 획득하였으며, 이를 문서화하는 능력을 보유하고 있습니다.\n\n2. 세계관 및 설정 구축 능력 웹툰 작가를 목표로 했던 경험을 가지고 있어 세계관 설정과 서사 구조를 기획하는 데 감각을 가지고 있으며, 게임 콘텐츠 기획에서도 이러한 역량을 활용할 수 있습니다.\n\n3. 실제 개발 이해도 1 인 게임 ‘Loop School’ 을 제작하며 게임 엔진과 모델링을 직접 다뤄본 경험을 가지고 있으며, 이러한 경험으로 개발자에게 어떠한 정보를 제공해야 하는지 또한 알고 있습니다.\n\n4. 유저 관점 및 구현 경험 ‘ 워썬더 ’ 유저 스킨 제작을 통해 실제 유저가 원하는 콘텐츠 제작 경험을 가지고 있으며, 이를 통해 사용자 관점의 요구사항을 파악하는 능력을 가지고 있습니다. 마무리 저는 게임업계 진출을 위해 많은 노력을 해왔고. 그 노력이 곧 기획자로서 도움이 되는 경험으로 이루어져 왔습니다 저는 귀하의 회사 에 이러한 경험을 을 이용해 크나큰 기여를 할 수 있다고 자랑스럽게 밝힙니다",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/1차(260420)/자소서 모음집/김현우A_자기소개서.txt",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-cd702739c576",
+    "studentId": "김현우a",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "1차 자기소개서 피드백",
+    "summary": "# 김현우A_자기소개서 ## 종합 판단 세계관과 콘텐츠 기획을 희망하는 방향은 보이지만, 문서가 전체적으로 짧고 근거가 다소 약하게 보입니다. 경험을 나열하는 수준에서 멈추어 본인의 기획자 캐릭터가 강하게 남지 않습니다. ## 잘 한 부분 - `Loop School`을 2년에 걸쳐 제작했다는 경험은 좋은 소재입니다. 1…",
+    "detail": "# 김현우A_자기소개서\n\n## 종합 판단\n세계관과 콘텐츠 기획을 희망하는 방향은 보이지만, 문서가 전체적으로 짧고 근거가 다소 약하게 보입니다. 경험을 나열하는 수준에서 멈추어 본인의 기획자 캐릭터가 강하게 남지 않습니다.\n\n## 잘 한 부분\n- `Loop School`을 2년에 걸쳐 제작했다는 경험은 좋은 소재입니다. 1인 개발 경험은 게임 엔진과 제작 과정을 이해한다는 근거가 될 수 있습니다.\n- 웹툰 작가를 목표로 했던 경험을 세계관/콘텐츠 기획으로 연결한 점은 자연스럽습니다.\n- `워썬더` 유저 스킨 제작 경험은 유저가 원하는 비주얼 콘텐츠를 직접 구현한 사례로 활용할 수 있습니다.\n\n## 개선 방향 제안\n- `lolling-dicemaster`에서 콘텐츠 기획을 담당했다고 하지만, 어떤 재미를 만들고 싶었는지가 잘 드러나지 않습니다. 규칙, 보상, 캐릭터, 스테이지 중 하나를 골라 판단 이유를 설명해보면 좋습니다.\n- 현재 문서가 `목차` 중심의 개요형 구조라 자기소개서 완성본보다는 정리 메모처럼 읽힐 수 있습니다. 항목 나열보다 대표 사례 하나를 조금 더 구체적으로 풀어 쓰는 편이 좋습니다.\n- “능력을 가지고 있습니다”라는 표현이 반복됩니다. 주장보다 실제 행동과 결과 중심으로 바꿔보는 것을 추천합니다.\n- 마무리 문장의 “경험을 을” 같은 표현은 문장 호응이 어색하게 읽힙니다. 이런 문장이 남아 있으면 실제 경험보다 문장 완성도의 아쉬움이 먼저 보일 위험이 있습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/이력서 및 자기소개/1차(260420)/개인 피드백/김현우A.md",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-cdb77b93f7d3",
+    "studentId": "김현우a",
+    "date": "2026-04-21",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-46366375988b",
+    "studentId": "김현우a",
+    "date": "2026-04-22",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-404c1e80c489",
+    "studentId": "김현우a",
+    "date": "2026-04-23",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-3da58afb49d3",
+    "studentId": "김현우a",
+    "date": "2026-05-07",
+    "weekIndex": 22,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection"
+    ],
+    "title": "2차 정기 면담",
+    "summary": "### 내용 ### 사전합반 프로젝트 - 나름 만족스럽게 마무리했다고 합니다. 특히 실무를 어느정도 경험한 것 같아서 그렇다고 합니다. - 실제 게임 제작 과정을 알게 되서 재밋었다고 합니다. ### 기업협약 프로젝트 - 현재는 코어 루프 러프하게 작성중이라고 합니다. - 레퍼런스 게임 플레이하며, 그 게임에서 어떤 요…",
+    "detail": "### 내용\n### 사전합반 프로젝트\n- 나름 만족스럽게 마무리했다고 합니다. 특히 실무를 어느정도 경험한 것 같아서 그렇다고 합니다.\n- 실제 게임 제작 과정을 알게 되서 재밋었다고 합니다.\n\n### 기업협약 프로젝트\n- 현재는 코어 루프 러프하게 작성중이라고 합니다.\n- 레퍼런스 게임 플레이하며, 그 게임에서 어떤 요소를 가져올 수 있을지 찾아보는 작업을 하고 있다고 합니다.\n\n### 수업\n- 그나마 이유송님, 정우경님이랑 친한데, 그렇게 친한 것은 아니라고 합니다.\n### 취업\n### 텐츠 기획\n- 콘텐츠 기획을 메인으로 잡고 있다고 합니다.컬쳐 선호\n- 장르는 서브컬쳐를 선호한다고 합니다.\n- 글을 잘 못 쓰는 편이라, 자기소개서도 잘 못 쓰겠다고 합니다.예정인 공포 게임 프로젝트가 있음\n- 곧 스팀에 출시 예정인 공포 게임 프로젝트가 있다고 합니다.\n- 강점을 우선으로 잡을 것을 이야기했습니다.\n\n### 질문\n- '컨셉 기획자'는 어떻게 준비해야하는지? 를 질문했습니다.\n - 시나리오 기획이 현실적으로 어려운 것에 대한 대안을 생각한 것으로 보입니다.\n - 프로젝트 초기 단계에서 컨셉을 잡는 기획자가 있을 수는 있지만, 일반적으로 '컨셉 기획자'를 따로 뽑지는 않는다고 이야기했습니다.\n\n--",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/면담 기록/김현우A.md",
+      "isEstimatedDate": false
+    }
+  }
+]

@@ -1,0 +1,12 @@
+body[data-page="lobby"] .topbar-copy {
+  max-width: 62ch;
+}
+
+body[data-page="lobby"] .app-root {
+  gap: 18px;
+}
+
+body[data-page="lobby"] .spotlight-caption {
+  display: inline-flex;
+  max-width: 100%;
+}

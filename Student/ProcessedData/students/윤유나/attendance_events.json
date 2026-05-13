@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2026-01-13",
+    "kind": "조퇴",
+    "detail": "외출 + 조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-06",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-06",
+    "kind": "조퇴",
+    "detail": "조퇴 (컨디션 이슈)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-28",
+    "kind": "휴가",
+    "detail": "휴가 (병원 검진)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-04",
+    "kind": "외출",
+    "detail": "외출 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-05-14",
+    "kind": "휴가",
+    "detail": "휴가 (가족 여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-05-15",
+    "kind": "휴가",
+    "detail": "휴가 (가족 여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

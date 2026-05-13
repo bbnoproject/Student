@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "한의호-status-1",
+    "startDate": "2026-01-19",
+    "endDate": "2026-01-25",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  }
+]

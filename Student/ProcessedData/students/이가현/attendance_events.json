@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2025-12-16",
+    "kind": "지각",
+    "detail": "지각",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-22",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-01-02",
+    "kind": "지각",
+    "detail": "지각 (국취제)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-02-19",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-02-24",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "휴가",
+    "detail": "휴가 (가족 일정)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "statusPeriodId": "장호윤-status-1",
+    "startDate": "2026-03-30",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  }
+]

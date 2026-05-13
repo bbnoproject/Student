@@ -1,0 +1,294 @@
+[
+  {
+    "phase": "1차 프로젝트",
+    "phaseOrder": 1,
+    "teamNumber": 10,
+    "teamLabel": "10팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 5,
+    "members": [
+      {
+        "name": "김영도",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "임동균",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "권현민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "윤동현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "신석균",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "김영도",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "임동균",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "권현민",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "윤동현",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "2차 프로젝트",
+    "phaseOrder": 2,
+    "teamNumber": 13,
+    "teamLabel": "13팀",
+    "role": "team_lead",
+    "roleLabel": "팀장",
+    "teamSize": 5,
+    "members": [
+      {
+        "name": "신석균",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "김현우",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김흥규",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "장근혁",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정석현",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "김현우",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "김흥규",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "장근혁",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "정석현",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "3차 프로젝트",
+    "phaseOrder": 3,
+    "teamNumber": 5,
+    "teamLabel": "5팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 7,
+    "members": [
+      {
+        "name": "이형진",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "승정하",
+        "role": "pm",
+        "roleLabel": "PM"
+      },
+      {
+        "name": "김재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "신석균",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "윤유나",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이가현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이동우",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "이형진",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "승정하",
+        "role": "pm",
+        "roleLabel": "PM"
+      },
+      {
+        "name": "김재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "윤유나",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이가현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이동우",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  },
+  {
+    "phase": "4차 프로젝트",
+    "phaseOrder": 4,
+    "teamNumber": 8,
+    "teamLabel": "8팀",
+    "role": "member",
+    "roleLabel": "팀원",
+    "teamSize": 9,
+    "members": [
+      {
+        "name": "이형진",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "이준혁",
+        "role": "pm",
+        "roleLabel": "PM"
+      },
+      {
+        "name": "김현우B",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "신석균",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이가현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이균호",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "오동건",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "장윤우",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "한재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ],
+    "teammates": [
+      {
+        "name": "이형진",
+        "role": "team_lead",
+        "roleLabel": "팀장"
+      },
+      {
+        "name": "이준혁",
+        "role": "pm",
+        "roleLabel": "PM"
+      },
+      {
+        "name": "김현우B",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이가현",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "이균호",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "오동건",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "장윤우",
+        "role": "member",
+        "roleLabel": "팀원"
+      },
+      {
+        "name": "한재환",
+        "role": "member",
+        "roleLabel": "팀원"
+      }
+    ]
+  }
+]

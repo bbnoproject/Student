@@ -1,0 +1,905 @@
+[
+  {
+    "eventId": "ev-0257f8f4d1f7",
+    "date": "2025-12-07",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "면접 결과",
+    "summary": "합격 / 점수 86",
+    "detail": "7년차 백엔드 개발자 하다 권고 사직으로 나왔다고 합니다.\n게임을 만들고 싶었지만 현실적인 취업으로 플밍으로 일을 했었다 합니다. \n일을 와중 미니게임들을 제작했지만 게임 적인 재미가 없어서 고민을 많이 했다고 합니다.\n마침 회사도 망한참에 게임 만들고싶어서 더 기획적으로 공부를 하고 싶어서 지원했습니다.\n본인에 대한 현실도 인지하고 있고 그 부분에 대해서 마음가짐도 다잡고 신청했습니다.\n게임 플레이는 다양한 플렛폼을 경험해보았지만. 장르가 한정적이라고 합니다.\n본인이 생각하는 강점 시스템적 사고 약점 소통 경험이 적다.\n나이가 취업에 문제되긴 하지만 인디 개발도 생각이 있다고 합니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-4be4162f3865",
+    "date": "2025-12-08",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-768438a000f4",
+    "date": "2025-12-09",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-78e23fe07d10",
+    "date": "2025-12-10",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c10fd2c011e3",
+    "date": "2025-12-11",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-6df866fdfd84",
+    "date": "2025-12-12",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세요! 저는 항상 새로운 것을 배우고 성장하려 노력하는 사람입니다. 긍정적인 태도로 다양한 경험을 즐기며 꾸준한 자기 계발을 통해 더 나은 모습을 만들어가고자 합니다. 이번 교육과정을 통해 평소에 관심이 있었던 게임 자체를 배우게 되는 기회로 삼고 있습니다. 지원 동기 게임을 스스로 만들어보기 위해 여러…",
+    "detail": "자기소개\n안녕하세요! 저는 항상 새로운 것을 배우고 성장하려 노력하는 사람입니다. 긍정적인 태도로 다양한 경험을 즐기며 꾸준한 자기 계발을 통해 더 나은 모습을 만들어가고자 합니다. 이번 교육과정을 통해 평소에 관심이 있었던 게임 자체를 배우게 되는 기회로 삼고 있습니다.\n\n지원 동기\n게임을 스스로 만들어보기 위해 여러 방면으로 시도를 한 적이 있고, 간단한 미니 게임 정도는 만들 수 있을 것 같았지만, 만들고 난 결과물 확인해보니, 게임에 대한 이해 자체가 부족하다고 생각되었습니다. 결국 게임을 만드는건 하나의 세계를 만드는 것과 같은데 개발만으로는 이해할 수 없는 영역이 있기 때문에 게임 기획 수업을 찾고 있었습니다.\n\n관련 경험\n인터넷 강의로 유니티 엔진을 독학한 적이 있습니다.\n\n희망 분야\n클라이언트 개발자, 서버 개발자, 밸런스 기획자, 컨텐츠 기획자, 퀘스트 기획자, 시스템 기획자, 아트\n\n수료 목표\n게임 자체에 대한 이해도를 높여 게임과 관련된 일을 하는 사람들과 새로운 관계를 맺고 싶습니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1e040de7b5d3",
+    "date": "2025-12-12",
+    "endDate": "",
+    "weekIndex": 1,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8be937abe683",
+    "date": "2025-12-15",
+    "endDate": "",
+    "weekIndex": 2,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 기타",
+    "summary": "-",
+    "detail": "-",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-21e5edffee4c",
+    "date": "2025-12-24",
+    "endDate": "",
+    "weekIndex": 3,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가",
+    "detail": "휴가",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-707749fedd91",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 이미지생성에 어려움이 있지만 팀원들의 응원이 있어서 좋았습니다.",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n이미지생성에 어려움이 있지만 팀원들의 응원이 있어서 좋았습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a1a4cf5120f1",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "13팀 / 역할 팀원 / 함께한 팀원 박현수, 윤유나, 이승진, 김윤규",
+    "detail": "팀: 13팀\n역할: 팀원\n팀원: 박현수, 윤유나, 이승진, 김윤규",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-129f88c71141",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 이미지 만드는 워크 플로우를 알게되어 티져 영상을 만드려고 했는데, 생각보다 잘 안되서 어려웠습니다.",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n이미지 만드는 워크 플로우를 알게되어 티져 영상을 만드려고 했는데, 생각보다 잘 안되서 어려웠습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8560a60965bc",
+    "date": "2026-01-22",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 이미지를 삽입하고 시트에 작성하는 단계입니다. 군데군데 없는 이미지가 보여서 작업을 마저 해야할것 같습니다.",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n이미지를 삽입하고 시트에 작성하는 단계입니다. 군데군데 없는 이미지가 보여서 작업을 마저 해야할것 같습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-6117336f7a0e",
+    "date": "2026-01-26",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 팀에서는 개그물로 경쾌한 애니메이션으로 가자고 했는데 이에 따라 모든 제작이 잘 진행되었습니다. 협업에 대하여 제 담당은 아트, 배경이었습니다. 새로운 리소스가 생길때 마다 디스코드를 사용하다가 구글 드라이브로 변경하여 알렸습니다. 이에 따라 팀원들의 리소스 교환이 유연해졌다고 생각합니다. 다른 분들의 작…",
+    "detail": "기획에 대하여\n팀에서는 개그물로 경쾌한 애니메이션으로 가자고 했는데 이에 따라 모든 제작이 잘 진행되었습니다.\n\n협업에 대하여\n제 담당은 아트, 배경이었습니다. 새로운 리소스가 생길때 마다 디스코드를 사용하다가 구글 드라이브로 변경하여 알렸습니다. 이에 따라 팀원들의 리소스 교환이 유연해졌다고 생각합니다.\n다른 분들의 작업물에 대해 대체적으로 만족했으며, 의견교환은 서로 조심스러웠습니다.\n아트쪽에서는 새로운 수정사항이 생기면 적극 반영했습니다.\n\n다음 프로젝트를 위해\n이미지나, 배경을 너무 많이 만들어서 리소스 관리에 어려움을 겪게 한게 아쉬웠습니다.\n다음에는 리소스 관리보다는 개발이나 시나리오 기획파트쪽을 담당하여 이런 부분을 언급하여 해당 사고를 피하고 싶다는 마음입니다.\n\n칭찬합시다\n박현수님을 칭찬합니다. 게임 프로젝트의 조장으로서 할 일을 분명하게 정해줘서 프로젝트 개발이 이루어지게 기여했기 때문입니다.\n\n자유로운 한마디\n여기서 다양한 경험을 하게 되었습니다.\nai로 이미지를 만드는 방법이 급격하게 늘었습니다.\n서로 다른 ai를 유기적으로 사용하여 원하는 리소스를 만들게 되었습니다.\nai 툴들의 의식을 열었다기 보다는 내가 원하는 방향대로 ai를 컨트롤 해간다는 성취감이 있었습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-32958bbcd85d",
+    "date": "2026-01-30",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (게임잼)",
+    "detail": "휴가 (게임잼)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-aa27ca8c37a4",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시스템 통일, 컨셉 기획 진행, 역할 및 인원 배분 자유 메모 팀 내 인원 한분과 의사소통으로 인해 프로젝트의 지연이 있었지만 최소 목표인 인원배분과 시스템 및 게임 컨셉 기획을 진행한 상태입니다. 인원끼리의 의사소통을 할 떄, 입장차이가 있기 때문에 그것을 조율하는 것이 생각보다 너무 어렵다는 것을 알았습니…",
+    "detail": "작업 내용\n시스템 통일, 컨셉 기획 진행, 역할 및 인원 배분\n\n자유 메모\n팀 내 인원 한분과 의사소통으로 인해 프로젝트의 지연이 있었지만 최소 목표인 인원배분과 시스템 및 게임 컨셉 기획을 진행한 상태입니다.\n인원끼리의 의사소통을 할 떄, 입장차이가 있기 때문에 그것을 조율하는 것이 생각보다 너무 어렵다는 것을 알았습니다. PM은 대단하다고 생각합니다. 내 적성이 아닌가 싶기도 하고 뭐 그렇습니다. ㅎㅎㅎ\n남은 기간 프로젝트 화이팅하겠습니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1dc7b8de43a0",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "2팀 / 역할 팀장 / 함께한 팀원 박현수, 이균호, 이석훈, 손호진, 정재용",
+    "detail": "팀: 2팀\n역할: 팀장\n팀원: 박현수, 이균호, 이석훈, 손호진, 정재용",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-90149b189de9",
+    "date": "2026-02-19",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1. 게임 시스템 방향성 설정. 2. 시스템 플로우 차트 출력 3. 이미지 컨셉 확정 SD: 카툰 스타일 자유 메모 팀장이라는 자리가 너무 어렵다고 느꼈습니다. 사람이 가장 힘든 것 같습니다. 게임 디테일에 대한 방향을 오늘 오전에 설정해서 완성이 될지 불안한 마음이 있습니다.",
+    "detail": "작업 내용\n1. 게임 시스템 방향성 설정.\n2. 시스템 플로우 차트 출력\n3. 이미지 컨셉 확정 SD: 카툰 스타일\n\n자유 메모\n팀장이라는 자리가 너무 어렵다고 느꼈습니다. 사람이 가장 힘든 것 같습니다.\n게임 디테일에 대한 방향을 오늘 오전에 설정해서 완성이 될지 불안한 마음이 있습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e6320e759782",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ##### 1. 수업적응 - 수업은 만족하고 있다고 합니다. ##### 2. 목표 & 과정에 기대하는 점 - 나이가 있어서 게임업계를 간다면 경쟁력이 없다고 인지하고 있음 - 현실에 대한 대비책도 생각해야해서 취업 준비를 병행하게 될 것 같아 개인 프로젝트 고민이 있었습니다. - 3월부터 한 두군데 내보고,…",
+    "detail": "### 내용\n##### 1. 수업적응\n- 수업은 만족하고 있다고 합니다.\n\n##### 2. 목표 & 과정에 기대하는 점\n- 나이가 있어서 게임업계를 간다면 경쟁력이 없다고 인지하고 있음\n- 현실에 대한 대비책도 생각해야해서 취업 준비를 병행하게 될 것 같아 개인 프로젝트 고민이 있었습니다.\n- 3월부터 한 두군데 내보고, 4월 쯤 개인 프로젝트 버티컬 슬라이스 완성할 수 있을 것 같음.\n\n##### 4. 기타\n- 팀 프로젝트는 방향성을 정하고 업무 들어가는 중이라고 합니다.\n- 개입을 안하려고 하는데 균호님이 어려워해서 서포팅해주고 있다고 합니다.\n- 사전합반에서는 아트 기획을 하고 싶고, 기업협약은 QA도 생각중이라고 합니다.\n- 이석훈님이 사사건건 걸고 넘어가는데 설득하는 것에 코스트가 많이 들었다고 합니다. 처음에는 고생을 했는데 지금은 해탈한 것 같습니다.\n\n---",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "김범진.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b19a9f7fdcab",
+    "date": "2026-02-23",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 게임 로직 진행, 팀원간의 작업 분배 시작했습니다. 자유 메모 오늘 작업이 많이 바빠서 회고를 짧게 올리겠습니다. 여유되면 제대로 작성하겠습니다.",
+    "detail": "작업 내용\n게임 로직 진행, 팀원간의 작업 분배 시작했습니다.\n\n자유 메모\n오늘 작업이 많이 바빠서 회고를 짧게 올리겠습니다. 여유되면 제대로 작성하겠습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a838618ad1a2",
+    "date": "2026-02-24",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 진행하고 있고 에러 수정 중 입니다. 자유 메모 많은 점이 있지만, 특히나 프로젝트 막바지에 있어서 팀원들과의 대화가 많아져서 좋았습니다.",
+    "detail": "작업 내용\nQA 진행하고 있고 에러 수정 중 입니다.\n\n자유 메모\n많은 점이 있지만, 특히나 프로젝트 막바지에 있어서 팀원들과의 대화가 많아져서 좋았습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e99c6f5ebf92",
+    "date": "2026-02-25",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 개발 마무리 단계입니다. 주요한 버그를 잡고 마무리 작업을 할 예정입니다. 자유 메모 팀원들이 합심해서 마무리되어가고 있습니다. 제가 생각하는 분위기가 나와서 좋았습니다.",
+    "detail": "작업 내용\n개발 마무리 단계입니다. 주요한 버그를 잡고 마무리 작업을 할 예정입니다.\n\n자유 메모\n팀원들이 합심해서 마무리되어가고 있습니다. 제가 생각하는 분위기가 나와서 좋았습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a163a77b0235",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA진행 및 게임 기본 사이클 구성 자유 메모 게임을 만드는데 있어서, 다른 조원분들의 작은 도움이 너무 크게 다가 와서 좋았습니다. 이제 마무리 단계입니다. 저와 함께 고생해준 모든 팀원들에게 감사합니다.",
+    "detail": "작업 내용\nQA진행 및 게임 기본 사이클 구성\n\n자유 메모\n게임을 만드는데 있어서, 다른 조원분들의 작은 도움이 너무 크게 다가 와서 좋았습니다.\n이제 마무리 단계입니다.\n저와 함께 고생해준 모든 팀원들에게 감사합니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3c2193c7c287",
+    "date": "2026-02-27",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 의도한 방향성은 '먼저 완성하자' 입니다. 그 이유는 결국 구축하는 사람이 필요하고, 제가 구축을 전부 하게 된다면 조원들의 개발적 사고가 향상되지 않기 때문입니다. 그래서 최소한의 개발단위로 완성을 하여 조원들이 향후 개발적 사고를 가지고 프로그래머와 소통을 더 잘할 수 있기를 바랬습니다. 한 명을 제외…",
+    "detail": "기획에 대하여\n의도한 방향성은 '먼저 완성하자' 입니다.\n그 이유는 결국 구축하는 사람이 필요하고, 제가 구축을 전부 하게 된다면 조원들의 개발적 사고가 향상되지 않기 때문입니다. 그래서 최소한의 개발단위로 완성을 하여 조원들이 향후 개발적 사고를 가지고 프로그래머와 소통을 더 잘할 수 있기를 바랬습니다.\n\n한 명을 제외하고 전부 이해했습니다. 그 한명의 주장이 팀 전체한테 해를 끼칠 정도로 너무 강하고 설득하는데 시간과 에너지가 너무 많이 들어가기 때문에 기간내에 프로젝트 전체를 완성하기 위해 그 하명의 의견을 일부 수용할 수 밖에 없어서 너무 아쉬웠습니다. 그 덕분에 재가 기획하던 팀의 방향성이 전부 깨지고 제가 거의 모든 개발을 도맡아 하게 되었습니다.\n\n개발중 짧은 기간내에 원하는 것을 구현하지 못할때 실시간으로 기획서에 반영할 여유가 부족하여 디스코드나 구두로 제시했습니다.\n\n협업에 대하여\n프로젝트의 의견을 진행할 때 팀원들과 함께 게임을 기획하여 제작을 진행했습니다. 팀원들이 개발하는것을 별로 좋아하지 않아도 개발적인 사고를 가지고 나갔으면 좋다고 생각했지만 생각보다 잘 되지 않아 제가 개발을 시작하게 되었습니다. \n\n이때 제가 개발한 모든 내용을 다른 사람과 공유했습니다.\n그리고 마찰이 있는 팀원에게도 배울점은 빠르게 흡수하여, 팀 프로젝트에 적용해보기도 했습니다.\n장점만 있는 팀원도 없고 단점만 있는 팀원도 없습니다.\n\n이 모든걸 아우르는 시야를 가지는것이 협업의 기본이라고 보고 있습니다.\n\n다음 프로젝트를 위해\n팀원 개개인의 역량을 파악하는 시간이 부족하여, 일을 처리하는 속도를 가늠하지 못해 한 사람에게 일이 몰리는 현상이 발생하게 되었습니다.\n\n또한 짧은 기간이었지만, 한 명과의 마찰이 너무 심해 화가 올라오기도 했습니다.\n프로젝트의 중요성이 많고 처음 팀장이기도 해 모든 조원과 함께하고 싶었지만,\n다음부터는 이런 마찰의 상황이 오면 냉정하게 에너지를 쓰지 않고 내보낼 생각입니다.\n\n또한 문저 제작능력을 함양하지 못해 아쉬웠습니다. 다른 분들의 문저 작성능력이 너무 부러워서 다음에는 이런 능력을 개선하려고 합니다.\n\n이를 위해 팀원들과의 대화 모든 내용을 기록하는 습관을 가져 보려고 합니다.\n\n칭찬합시다\n박현수 팀원을 칭찬합니다. 제가 팀장으로서 심적으로 힘들때 친근하게 다가와 주기도 했고, 그리고 기획적으로도 컨텐츠와 시스템에 대한 결과물을 분명히 해주었습니다.\n또한 개발적으로 어려운 부분에 대해 기획을 일부 변경하는 유연함도 보여주었습니다.\n그리고 개발을 하는 상황을 매번 디스코드를 통해 등록했는데, 현수님이 그걸 기록해 주었습니다.\n개발은 제가 진행했지만, 실질적인 게임 기획의 완성을 담당했다고 생각하여 이 팀원을 칭찬합니다.\n\n팀장 선호도 조사\n2.0\n\n이유\n제가 팀 멤버를 고를 수 있는 자유가 없기 때문입니다.\n\n자유로운 한마디\n왜 팀장이 되고 싶었을까?\n1. 프로젝트의 실패 부담이 적을 때 해보는 것도 경험이라고 생각함.\n2. 나는 어떤 유형이 팀장인지 스스로 궁금해졌음.\n3. 프로젝트를 혼자 앞서서 이끌어 나갈 수 있는 역량이 있다고 생각함.\n4. 팀장이 되는것에 대한 두려움을 극복하고 싶었음.\n5. 내가 구상하는 방안대로 2인 이상의 프로젝트 제작 과정을 컨트롤 해보고 싶었음. \n6. 나는 몇명의 팀원으로 프로젝트를 진행하는 것이 가능한지 가늠해 보고 싶었음.\n\n프로젝트에서 무엇이 가장 힘들었는가\n1. 초반의 의사결정이 부드럽게 흘러가지 않고, 통제가능하지 않은 상황들이 나와서 힘들었다.\n화가나는 상황도 있었지만, 내가 처음에 정했던 방향을 일정부분 수정하기로 하고 대화를 시도함.\n2. 기술적으로 뛰어났다고 생각한 팀원 한분이 주말포함 4일 동안 휴가로 인한 부재.\n\n내가 생각하는 팀의 가치?\n조화로움이다. 결과도 결과지만 이후에는 사람에 대한 감정과 분위기만 남기 때문에 조화로움이 있어야 다시한번 힘을 내서 같이 일을 할 수 있는 원동력이 되기 때문입니다.\n\n팀장으로서 무엇을 얻었나?\n실패를 얻었습니다. 완성에는 성공했으나 처음부터 저의 뜻을 끝까지 관철하는 전략이 부족했습니다. 마찰이 일어날 것이라는 상상을 하지 못했기 때문에, 그래서 저는 실패를 얻었다고 생각합니다.\n팀원의 역량을 파악하지 못하고 일을 분배하여 제가 거의 모든 게임 개발을 담당하게 되어 제가 생각하는것보다 많은 시간을 이 프로젝트에 할애 했다는 점입니다.\n문서화에 실패했습니다. 모든 상황에 대한 기록을 누락했기 때문입니다. 기획자가 주로 표현하는 것이 문서인데, 아직은 개발자의 사고에서 기획자의 사고로 유연하게 전환하지 못했던 것 같습니다.\n메모를 기본 소양으로 삼아야 할 것 같습니다.\n\n나는 어떤 유형의 리더라고 생각하는가?\n먼저 앞서 이끌어가는 리더라고 생각합니다. 신기한 점은 제가 먼저 나서서 만들자 다른 팀원들이 저를 따라 제가 미처 챙기지 못한 점을 도와주게 되는 것이었습니다. 이 점은 정말 감사하게 생각하고 있습니다. 그래서 좋은 마음으로 프로젝트를 마무리 할 수 있었다고 생각합니다.\n부족한 부분을 격려하고 잘한 부분을 칭찬할 수 있는 사람이며, 상황에 맞게 적응할 줄 아는 유연함도 가지고 있었습니다.\n저는 그동안 소통의 부족함이 있었다고 지적을 받아왔지만, 사실 소통은 리더의 능력중 하나이지 전부는 아닌것 같습니다. 무엇보다 중요한건 일을 임하는 태도와 진정성이 팀원들에게 크게 각인되어 나쁘지 않은 리더가 될 수 있었다고 생각했습니다. 다음에 기회가 된다면 팀장의 역할을 좀 더 잘 수행할 수 있을 거라는 자신감을 얻었지만, 너무 힘이 들어 한동안은 팀원을 해야 할것 같습니다.\n\n마지막 한마디\n이런 경험을 준 데브로켓 관계자 분들께 감사말씀 드립니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f71f9541d1d1",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전투 시스템 플로우 차트 작성, 전투 밸런싱 보조 자유 메모 팀원들이 제 역활에 맞게 잘해주고 있습니다. 너무 깔끔합니다. 특히 팀장이란 이런거구나 라는걸 배우는 중입니다.",
+    "detail": "작업 내용\n전투 시스템 플로우 차트 작성, 전투 밸런싱 보조\n\n자유 메모\n팀원들이 제 역활에 맞게 잘해주고 있습니다. 너무 깔끔합니다. 특히 팀장이란 이런거구나 라는걸 배우는 중입니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8f1ec669e20f",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "8팀 / 역할 팀원 / 함께한 팀원 예인해, 이도민, 김시온, 김윤규, 배주빈, 이승진, 이준혁",
+    "detail": "팀: 8팀\n역할: 팀원\n팀원: 예인해, 이도민, 김시온, 김윤규, 배주빈, 이승진, 이준혁",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-9618d89b3836",
+    "date": "2026-03-19",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (실업 급여)",
+    "detail": "휴가 (실업 급여)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-6d2a3328a408",
+    "date": "2026-03-20",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 세부 전투 시스템 플로우 차트 작성, 스테이지 1 공격 전투 플로우 차트 작성 자유 메모 여러운점 없이 팀장님의 설계대로 잘 진행되고 있는것 같습니다.",
+    "detail": "작업 내용\n세부 전투 시스템 플로우 차트 작성, 스테이지 1 공격 전투 플로우 차트 작성\n\n자유 메모\n여러운점 없이 팀장님의 설계대로 잘 진행되고 있는것 같습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3c3a52ebf692",
+    "date": "2026-03-20",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 보스 세부 전투기획, 전투 기획 발표 자유 메모 프로그래머 분들과는 처음 만납니다. 뜻깊은 시간이 되었으면 좋겠습니다.",
+    "detail": "작업 내용\n보스 세부 전투기획, 전투 기획 발표\n\n자유 메모\n프로그래머 분들과는 처음 만납니다. 뜻깊은 시간이 되었으면 좋겠습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b74cfc976134",
+    "date": "2026-03-23",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전투 기획서 플로우 상세 수정, 보스 컨텐츠 회의 자유 메모 기획서를 실제로 작성해보니 어려운 점이 많긴해도 큰 배움이 되는것 같습니다.",
+    "detail": "작업 내용\n전투 기획서 플로우 상세 수정, 보스 컨텐츠 회의\n\n자유 메모\n기획서를 실제로 작성해보니 어려운 점이 많긴해도 큰 배움이 되는것 같습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-91352d4f85c4",
+    "date": "2026-03-24",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 개별로 보스 전투 플로우 차트 완성, 컨텐츠 설계 보조 자유 메모 할일을 좀 빨리 끝내서 다른 분들을 도와주는 중입니다.",
+    "detail": "작업 내용\n개별로 보스 전투 플로우 차트 완성, 컨텐츠 설계 보조\n\n자유 메모\n할일을 좀 빨리 끝내서 다른 분들을 도와주는 중입니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b63b43c94ac1",
+    "date": "2026-03-25",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 데이터 테이블 시트 작성 자유 메모 지금 근황 너무 편하고 좋습니다. 편안합니다.",
+    "detail": "작업 내용\n데이터 테이블 시트 작성\n\n자유 메모\n지금 근황 너무 편하고 좋습니다. 편안합니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c1db0c37e12b",
+    "date": "2026-03-26",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 테이블 시트 작성 및 수정, 맵 리소스 그리기 자유 메모 오늘도 무사히 하루를 마쳤습니다. 감사합니다.",
+    "detail": "작업 내용\n테이블 시트 작성 및 수정, 맵 리소스 그리기\n\n자유 메모\n오늘도 무사히 하루를 마쳤습니다. 감사합니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c5061b71aae1",
+    "date": "2026-03-27",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 지도 리소스, 캐릭터 리소스 그렸습니다. 자유 메모 오늘 하루도 행복하시길 바랍니다. ㅎㅎ",
+    "detail": "작업 내용\n지도 리소스, 캐릭터 리소스 그렸습니다.\n\n자유 메모\n오늘 하루도 행복하시길 바랍니다. ㅎㅎ",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8bfab6a68ff5",
+    "date": "2026-03-30",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 인게임 배경화면, 텍스트 그렸습니다. 자유 메모 그림 그리는게 너무 재밌는 것 같습니다. 기분이 좀 좋아집니다.",
+    "detail": "작업 내용\n인게임 배경화면, 텍스트 그렸습니다.\n\n자유 메모\n그림 그리는게 너무 재밌는 것 같습니다. 기분이 좀 좋아집니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-7a3353ef3a37",
+    "date": "2026-03-31",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 주인공 방어모션 추가, 및 엔딩 이미지 추가 자유 메모 계속 미술치료를 하면서 다른 분들의 기획을 체크하는 중입니다.",
+    "detail": "작업 내용\n주인공 방어모션 추가, 및 엔딩 이미지 추가\n\n자유 메모\n계속 미술치료를 하면서 다른 분들의 기획을 체크하는 중입니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0e0634fd59c5",
+    "date": "2026-04-01",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전반적인 UI 리소스 그리기를 했습니다. 자유 메모 아트를 보는 눈과 스킬이 전반적으로 상승해서 좋았습니다. 또한 게임 기획의 전반적인 흐름을 볼수 있으니 좋습니다.",
+    "detail": "작업 내용\n전반적인 UI 리소스 그리기를 했습니다.\n\n자유 메모\n아트를 보는 눈과 스킬이 전반적으로 상승해서 좋았습니다. 또한 게임 기획의 전반적인 흐름을 볼수 있으니 좋습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-56ada89e96aa",
+    "date": "2026-04-02",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아트 리소스 추가, 베너 이미지 추가 자유 메모 게임이 만들기 위한 전반적인 과정이 파악된것 같습니다. 초반 빌드가 나왔고, 모든 팀원분들에게 감사합니다.",
+    "detail": "작업 내용\n아트 리소스 추가, 베너 이미지 추가\n\n자유 메모\n게임이 만들기 위한 전반적인 과정이 파악된것 같습니다. 초반 빌드가 나왔고, 모든 팀원분들에게 감사합니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ab58f78b610b",
+    "date": "2026-04-03",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA작업으로 이슈 트래킹, 밸런싱 조절 보조 작업을 하였습니다. 자유 메모 프로젝트가 마무리 단계입니다 모두 화이팅입니다.",
+    "detail": "작업 내용\nQA작업으로 이슈 트래킹, 밸런싱 조절 보조 작업을 하였습니다.\n\n자유 메모\n프로젝트가 마무리 단계입니다 모두 화이팅입니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f2b488c4df2f",
+    "date": "2026-04-06",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 이미지 작업, 밸런스 및 기획 보조 자유 메모 개발단에서 구현이 어려운 부분이 생겨서 회의를 진행했습니다. 슬기롭게 잘 조율해서 해결해야 할 것 같습니다.",
+    "detail": "작업 내용\n이미지 작업, 밸런스 및 기획 보조\n\n자유 메모\n개발단에서 구현이 어려운 부분이 생겨서 회의를 진행했습니다. 슬기롭게 잘 조율해서 해결해야 할 것 같습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-abeebd383fdf",
+    "date": "2026-04-07",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 커버 이미지 작업을 하는 중입니다. 자유 메모 오늘 하루도 이상무 좋은 마무리가 될것 같습니다.",
+    "detail": "작업 내용\n커버 이미지 작업을 하는 중입니다.\n\n자유 메모\n오늘 하루도 이상무 좋은 마무리가 될것 같습니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-5462c766a6e5",
+    "date": "2026-04-08",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 게임 플레이 테스트를 진행했습니다. 자료 정리를 진행했습니다. 자유 메모 마지막으로 함께해서 즐거웠습니다. 감사합니다.",
+    "detail": "작업 내용\n게임 플레이 테스트를 진행했습니다. 자료 정리를 진행했습니다.\n\n자유 메모\n마지막으로 함께해서 즐거웠습니다. 감사합니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-378038d750a4",
+    "date": "2026-04-08",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 게임 테스트 해보기 자유 메모 함께해서 좋았습니다. 8조분들 감사합니다.",
+    "detail": "작업 내용\n게임 테스트 해보기\n\n자유 메모\n함께해서 좋았습니다. 8조분들 감사합니다.",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-74f91adf9cd1",
+    "date": "2026-04-11",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "7팀 / 역할 팀원 / 함께한 팀원 김민수, 채지형, 김시온, 배주빈, 오종호, 이동우, 임소영, 최선동",
+    "detail": "팀: 7팀\n역할: 팀원\n팀원: 김민수, 채지형, 김시온, 배주빈, 오종호, 이동우, 임소영, 최선동",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-60adaf05e12e",
+    "date": "2026-04-20",
+    "endDate": "",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "severity": "stable",
+    "title": "1차 자기소개서 자기소개서 작성",
+    "summary": "0 에서 1 을 만들어 낼 수 있는 지원자, 김범진입니다. 1. [핵심 가치] 기술의 토대 위에 설계하는 ' 살아있는 경험 ' 저는 게임을 단순한 오락의 집합체가 아닌, 유저가 새로운 세상과 교감하며 감정을 전이받는 ' 정교하게 설계된 상호작용의 총합 ' 이라고 믿습니다. 개발자로 활동하며 서비스의 뼈대를 만드는 법을…",
+    "detail": "0 에서 1 을 만들어 낼 수 있는 지원자, 김범진입니다.\n\n1. [핵심 가치]\n\n기술의 토대 위에 설계하는 ' 살아있는 경험 ' 저는 게임을 단순한 오락의 집합체가 아닌, 유저가 새로운 세상과 교감하며 감정을 전이받는 ' 정교하게 설계된 상호작용의 총합 ' 이라고 믿습니다. 개발자로 활동하며 서비스의 뼈대를 만드는 법을 익혔다면, 이제는 그 토대 위에 유저의 영혼을 흔드는 서사와 시스템을 입히는 기획자로 나아가고자 합니다. 저의 강점은 ' 무 (無) ' 에서 아이디어를 구체화하는 단계를 넘어, 기술적 실현 가능성을 즉각적으로 검토하고 이를 ' 지속 가능한 재미의 구조 ' 로 재구성하는 것입니다. 기존의 문법을 깊이 이해하되, 이를 유저가 예상치 못한 방식으로 비틀어 새로운 경험 (UX) 으로 치환하는 과정에서 기획자로서의 진정한 가치를 증명합니다.\n\n2. [도전 정신]\n\n48 시간의 한계 속에서 피어난 ' 전천후 해결사 ' 의 면모 최근 참여한 'GGJ 2026 부산 게임잼 ' 은 극한의 상황에서 기획자가 가져야 할 책임감과 실행력을 증명한 무대였습니다. 공식 주제였던 'MASK' 를 단순한 소품이 아닌 ' 인식의 제약과 확장 ' 이라는 기획적 기믹으로 해석하여, 1 인칭 심리 추격 스릴러인 < 조각난 시선 > 을 기획했습니다. 개발 도중 아트 직군 부재라는 큰 위기에 직면했지만, 저는 주저하지 않고 직접 픽셀 아트를 소화하며 기획과 아트를 병행하는 결단을 내렸습니다. \" 개발 효율을 극대화한 리소스 설계 \" 와 \" 핵심 재미에 집중한 미니멀리즘 기획 \" 이라는 원칙 하에 프로그래머와 실시간으로 소통하며 최종 빌드를 성공적으로 완성했습니다. 이러한 ' 완성을 향한 집념 ' 은 어떤 돌발 상황에서도 프로젝트를 침몰시키지 않고 항구까지 이끄는 저만의 독보적인 강점입니다.\n\n3. [직무 철학]\n\n개발 언어와 유저 감성을 잇는 ' 통합적 커뮤니케이터 ' 제가 정의하는 게임 기획자는 모든 제작 요소의 기준을 수립하고, 팀원들의 에너지를 한곳으로 모으는 ' 프로젝트의 심장 ' 입니다. 개발자의 경험으로 다른 개발자와의 소통 비용을 획기적으로 줄여주는 강력한 무기가 되었습니다. 기술적 한계 (Technical Debt) 를 고려한 기획안을 제시함으로써 불필요한 리소스 낭비를 막고, 팀 전체의 개발 속도를 높입니다. 동시에 저는 유저의 관점에서 시스템의 짜임새를 끊임없이 의심합니다. 기획자는 단순히 기능을 나열하는 명세서 작성자가 아니라, \" 이 기능이 왜 유저에게 즐거운가 \" 에 대한 본질적인 답을 컨셉과 비주얼로 증명해내는 사람이어야 합니다. 기술을 이해하는 기획자로서 개발팀과 유저 사이의 간극을 메우는 가장 단단한 가교가 되겠습니다.\n\n4. [미래 역량]\n\nAI 워크플로우를 통한 ' 초고효율 창작 ' 의 실현 급변하는 게임 제작 환경에서 AI 는 기획자의 상상력을 실체화하는 가장 스마트한 파트너입니다. 저는 제미나이 (Gemini) 와 미드저니 (Midjourney) 를 활용해 아이디어의 프로토타이핑 시간을 단축하고, 기획서의 목차와 로직을 정교화하는 워크플로우를 구축했습니다. 특히 픽셀 아트 작업 시 AI 를 보조 도구로 활용해 리소스 제작 효율을 비약적으로 높인 경험은, 1 인 제작 혹은 소규모 팀에서도 대형 프로젝트 못지않은 밀도를 만들어낼 수 있는 가능성을 보여주었습니다. 기술을 도구 삼아 기획의 깊이를 더하고, 반복적인 작업 대신 ' 세계관의 확장 ' 과 ' 내러티브의 심화 ' 라는 창의적인 본질에 더 많은 시간을 투자하는 스마트한 기획자가 되겠습니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "김범진_자기소개서.txt",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a19c8ff5cfe3",
+    "date": "2026-04-20",
+    "endDate": "",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "severity": "stable",
+    "title": "1차 자기소개서 피드백",
+    "summary": "# 김범진_자기소개서 ## 종합 판단 개발 경험을 바탕으로 기획자로 전환하려는 방향은 보입니다. 하지만 문장 전반이 과하게 웅장해 실제 경험과 판단보다 표현이 먼저 보입니다. ## 잘 한 부분 - “GGJ 2026 부산 게임잼” 경험은 결과 규모보다도, 제한된 시간 안에서 주제를 어떻게 해석하고 무엇을 남기고 무엇을 덜…",
+    "detail": "# 김범진_자기소개서\n\n## 종합 판단\n개발 경험을 바탕으로 기획자로 전환하려는 방향은 보입니다. 하지만 문장 전반이 과하게 웅장해 실제 경험과 판단보다 표현이 먼저 보입니다.\n\n## 잘 한 부분\n- “GGJ 2026 부산 게임잼” 경험은 결과 규모보다도, 제한된 시간 안에서 주제를 어떻게 해석하고 무엇을 남기고 무엇을 덜어냈는지가 보인다는 점에서 의미가 있습니다.\n- 아트 직군 부재 상황에서 직접 픽셀 아트를 맡았다는 점은 협업 공백을 메우는 실행력으로 볼 수 있습니다.\n- 개발 경험을 바탕으로 기술적 한계와 리소스 낭비를 고려한다는 방향은 시스템/기술 친화적 기획자로 어필할 수 있습니다.\n\n## 개선 방향 제안\n- “유저의 영혼을 흔드는”, “프로젝트의 심장”, “독보적인 강점” 같은 표현은 과합니다. 실제 역량보다 표현이 앞서면 내용의 신뢰도가 떨어질 수 있습니다.\n- 게임잼 완성 경험 자체를 크게 포장하기보다, 짧은 시간과 제한된 리소스 안에서 어떤 판단을 했는지로 설명하는 편이 현업 시선에서 더 설득력 있게 읽힐 수 있습니다.\n- 기획한 게임의 핵심 규칙, 유저 행동, 피드백이 조금 더 설명되면 좋습니다. 어떤 재미를 만들고 싶었고 왜 그런 규칙을 선택했는지 구체적으로 써보는 것을 추천합니다.\n- 개발자 출신 기획자라는 강점은 좋지만, 시나리오/UX/시스템 등 어떤 세부 직무를 희망하는지 더 명확히 해보는 것을 추천합니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "김범진.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9d50339ce24d",
+    "date": "2026-04-23",
+    "endDate": "",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (행사 방문)",
+    "detail": "휴가 (행사 방문)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-77d4a290e035",
+    "date": "2026-04-30",
+    "endDate": "",
+    "weekIndex": 21,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "2차 정기 면담",
+    "summary": "### 내용 김범진 학생은 시스템 기획과 캐릭터 기획 분야에 관심이 있으며, 여러 분야에 대한 경험이 많다는 점을 자신의 강점으로 인식하고 있다. 현재는 개인 프로젝트와 사이드 프로젝트를 병행하고 있으며, 개인 블로그도 정기적으로 운영하고 있다. 수업을 통해 기획에 대한 사고방식이 열리게 되었고, 다른 사람들과의 상호작…",
+    "detail": "### 내용\n김범진 학생은 시스템 기획과 캐릭터 기획 분야에 관심이 있으며, 여러 분야에 대한 경험이 많다는 점을 자신의 강점으로 인식하고 있다. 현재는 개인 프로젝트와 사이드 프로젝트를 병행하고 있으며, 개인 블로그도 정기적으로 운영하고 있다. 수업을 통해 기획에 대한 사고방식이 열리게 되었고, 다른 사람들과의 상호작용을 통해 다양한 관점과 경험을 얻을 수 있었다고 평가하였다.\n\n진로와 관련해서는 게임 기획자로 나아가도 괜찮을지에 대한 고민이 있으며, 취업 방향성이 아직 명확하게 정리되지는 않은 상태이다. 다만 단순히 취업을 목표로 하기보다는, 자신이 생각하는 것을 직접 만들어보고 싶다는 성향이 강하게 나타났다. 특히 게임 자체에 대해 알아가고 공부하는 과정은 흥미롭게 느끼고 있으나, 기존의 취업 중심 진로가 본인의 성향과 완전히 맞는지에 대해서는 고민이 있는 것으로 보인다.\n\n면담 과정에서 학생이 공모전 중심의 도전을 고려하고 있다는 점을 확인하였고, 이에 따라 메월드 글로벌 개발 콘테스트 참여를 제안하였다. 학생은 해당 제안을 진지하고 긍정적으로 검토하고 있으며, 향후에는 일반적인 취업 지원보다는 창업, 프로젝트 제작, 공모전 준비 등 직접 결과물을 만들어가는 방향의 지원이 더 적합할 것으로 판단된다. 앞으로는 학생이 스스로 게임을 만들 수 있는 역량을 키우기 위해 어떤 활동을 이어가야 하는지, 어떤 사람들과 협업하거나 어떤 도움을 받아야 하는지에 대한 구체적인 방향 설정이 필요하다.\n\n--",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "김범진.md",
+    "isEstimatedDate": false
+  }
+]

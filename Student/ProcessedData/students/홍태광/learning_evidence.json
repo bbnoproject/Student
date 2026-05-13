@@ -1,0 +1,891 @@
+[
+  {
+    "evidenceId": "ev-eef45bcdc8c2",
+    "studentId": "홍태광",
+    "date": "2025-10-21",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "지원서 응답",
+    "summary": "자기소개 안녕하세요. 홍태광이라고 합니다. 저는 디자인 쪽을 전공했으며 이때까지 캐릭터 디자인을 연습해왔으며 최근까지 그림 커미션을 받으며 지내왔습니다. 지원 동기 나라의 부름을 받아 사회복무를 진행하는 도중에 잠시 그 길에서 멈추게 되었고 문득, 한 생각이 떠오르게 되었습니다. '나는 왜 캐릭터를 잘 그리려 했을까?'…",
+    "detail": "자기소개\n안녕하세요. 홍태광이라고 합니다. 저는 디자인 쪽을 전공했으며 이때까지 캐릭터 디자인을 연습해왔으며 최근까지 그림 커미션을 받으며 지내왔습니다.\n\n지원 동기\n나라의 부름을 받아 사회복무를 진행하는 도중에 잠시 그 길에서 멈추게 되었고 문득, 한 생각이 떠오르게 되었습니다. \n'나는 왜 캐릭터를 잘 그리려 했을까?' \n그런 생각이 들자, 저는 제가 관성적으로 해오던 일들을 멈추고, 생각을 해봤지만 실행해보지는 않은 일들을 시도해보기 시작했습니다. 그 중 하나가 게임 기획이었습니다.\n머릿속으로 생각하며 메모장에 끄적이는 어줍잖은 기획은 상당히 재밌었습니다. 그리고 제가 미처 생각하지 못한 부분까지 설계를 해야한다는 사실을 배웠으며 이 기획을 검증하기 위해서는 코딩 지식이 필요하다고 느꼈습니다. 이는 자연스레 적절한 교육의 필요성을 체감하였고 이 부트캠프에 신청을 하게되는 계기가 되었습니다.\n\n관련 경험\n학원과 대학교에서 2d 캐릭터 디자인, 3ds max와 Blender를 이용한 객체 모델링, Spine을 이용한 캐릭터 애니메이션 방법을 배웠습니다.\n\n희망 분야\n게임 밸런스 기획자, BM 설계 기획자, 이벤트 콘텐츠 기획자, 프론트엔드, 백엔드 개발자\n\n수료 목표\n넥슨, 펄어비스 같은 기업의 인턴십을 신청하여 합격하는 것이 당장의 목표입니다.\n\n갈등 대응\n상황을 피하는 경향\n\n실패 대응\n자신을 비난하고 자책하는 경향\n\n타인 대응\n상황에 대한 이해와 위로",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트1"
+    }
+  },
+  {
+    "evidenceId": "ev-ce127f02b012",
+    "studentId": "홍태광",
+    "date": "2025-12-07",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "evidenceType": "direct",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "면접 결과",
+    "summary": "합격 / 점수 71",
+    "detail": "디자인 전공으로 모델링과 애니메이션에 대한 이해도가 있으며, 게임 기획에 대해서도 노베이스지만 어느정도 이해도가 있는 편입니다.\n 다양한 게임을 플레이하지는 않지만 경험하려 노력하며, 특히 워프레임을 1,400시간 이상 플레이했다고 합니다.\n본인이 생각하는 강점으로는 경청을 잘한다고 합니다, 단점으로는 시간 개념이 다소 약한 편이라고 합니다.\n생각이 깊어보이며 말할 때 약간의 딜레이는 있으나 의사소통에는 문제가 없습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/모집 결과.xlsx",
+      "isEstimatedDate": true,
+      "sourceSheet": "면접 결과 관리"
+    }
+  },
+  {
+    "evidenceId": "ev-ab7ebbff009e",
+    "studentId": "홍태광",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 이야기의 토대를 짜는 것이 많이 어려웠습니다. 4일이라는 짧은 기간이다보니 생각했던 이야기 볼륨에서 많이 축소를 해야 했던 것 같습니다.",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n이야기의 토대를 짜는 것이 많이 어려웠습니다. 4일이라는 짧은 기간이다보니 생각했던 이야기 볼륨에서 많이 축소를 해야 했던 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-4f0a3ed695e2",
+    "studentId": "홍태광",
+    "date": "2026-01-20",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "5팀 / 역할 팀원 / 함께한 팀원 이정헌, 박원우, 김민수, 김태환",
+    "detail": "팀: 5팀\n역할: 팀원\n팀원: 이정헌, 박원우, 김민수, 김태환",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-ecec2db0a016",
+    "studentId": "홍태광",
+    "date": "2026-01-21",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1 자유 메모 서로가 같은 목표를 정했다 보니 생각보다 빠르게 나아갈 수 있는 것 같습니다.",
+    "detail": "작업 내용\n1\n\n자유 메모\n서로가 같은 목표를 정했다 보니 생각보다 빠르게 나아갈 수 있는 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-a90d8ecc95f0",
+    "studentId": "홍태광",
+    "date": "2026-01-22",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 스토리 설정을 명확하게 정해놓지 않고 시작하다보니 이와 관련한 의견충돌이 있었습니다.",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n스토리 설정을 명확하게 정해놓지 않고 시작하다보니 이와 관련한 의견충돌이 있었습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5445800da2b1",
+    "studentId": "홍태광",
+    "date": "2026-01-23",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1 자유 메모 스토리 부분 신입을 뽑지 않는 이유를 이번에 배우게 되었습니다...",
+    "detail": "작업 내용\n1\n\n자유 메모\n스토리 부분 신입을 뽑지 않는 이유를 이번에 배우게 되었습니다...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-66bc2aa8e80c",
+    "studentId": "홍태광",
+    "date": "2026-01-26",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 시나리오나 대사는 적어서 보여주는 것이 가장 효과적이었지만 화면 효과, 연출 등은 아무래도 구두로 부연설명을 덧붙여야 했던 경우도 있었습니다. 협업에 대하여 프로젝트에 열정적으로 참여했으나 엔딩과 관련된 의견 토론에서 개인적인 감정이 조금 들어간 것 같습니다. 다음 프로젝트를 위해 다음에는 회의 내용에 대…",
+    "detail": "기획에 대하여\n시나리오나 대사는 적어서 보여주는 것이 가장 효과적이었지만 화면 효과, 연출 등은 아무래도 구두로 부연설명을 덧붙여야 했던 경우도 있었습니다.\n\n협업에 대하여\n프로젝트에 열정적으로 참여했으나 엔딩과 관련된 의견 토론에서 개인적인 감정이 조금 들어간 것 같습니다.\n\n다음 프로젝트를 위해\n다음에는 회의 내용에 대한 기록을 더 꼼꼼히 작성해볼 생각입니다.\n\n칭찬합시다\n이정헌 팀장님의 기획적 장점은 명확한 목표 설정(프로젝트 완성)및 제시, 그것을 위해 팀이 감당하기 힘든 의견을 잘라내는 결단력이라 생각했습니다.\n\n자유로운 한마디\n스토리를 개연성 있게 짜는 것은 너무 어렵습니다...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/1차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-a018355021fb",
+    "studentId": "홍태광",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 팀원분들이 각자 하나씩 가져온 원페이지 기획서 중 하나를 채택하여 역할 분배, 대략적인 화면구상을 위주로 작업하였습니다. 자유 메모 탈락된 아이디어인 테트리스 탑쌓기는 팀프로젝트가 끝난 이후 개인적으로 올려보려 합니다.",
+    "detail": "작업 내용\n팀원분들이 각자 하나씩 가져온 원페이지 기획서 중 하나를 채택하여 역할 분배, 대략적인 화면구상을 위주로 작업하였습니다.\n\n자유 메모\n탈락된 아이디어인 테트리스 탑쌓기는 팀프로젝트가 끝난 이후 개인적으로 올려보려 합니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-dbc3496477b9",
+    "studentId": "홍태광",
+    "date": "2026-02-13",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "14팀 / 역할 팀원 / 함께한 팀원 이동현, 김서현, 박기은, 이도건",
+    "detail": "팀: 14팀\n역할: 팀원\n팀원: 이동현, 김서현, 박기은, 이도건",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-35d80ffac21d",
+    "studentId": "홍태광",
+    "date": "2026-02-19",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터 설정 협력, 필요한 이미지 파일 리스트업 자유 메모 오늘은 팀원분들과 함께 게임 구현에 필요한 요소들만 간추리고 간추렸습니다.",
+    "detail": "작업 내용\n캐릭터 설정 협력, 필요한 이미지 파일 리스트업\n\n자유 메모\n오늘은 팀원분들과 함께 게임 구현에 필요한 요소들만 간추리고 간추렸습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-6e0282e1e1ca",
+    "studentId": "홍태광",
+    "date": "2026-02-20",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터 이미지 제작 자유 메모 오늘까지, 제 파트의 최소 완성도 30%를 달성했습니다.",
+    "detail": "작업 내용\n캐릭터 이미지 제작\n\n자유 메모\n오늘까지, 제 파트의 최소 완성도 30%를 달성했습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5bd3f165d3bc",
+    "studentId": "홍태광",
+    "date": "2026-02-23",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터 포트레이트 생성, 캐릭터 헤어 스프라이트 제작 자유 메모 설날 때 생체리듬이 바뀌어서 힘들군요...",
+    "detail": "작업 내용\n캐릭터 포트레이트 생성, 캐릭터 헤어 스프라이트 제작\n\n자유 메모\n설날 때 생체리듬이 바뀌어서 힘들군요...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-8db7f645d416",
+    "studentId": "홍태광",
+    "date": "2026-02-24",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 캐릭터 스프라이트 제작 자유 메모 필요한 아트 리소스가 최소치만큼 제작이 완료되어 내일부터 QA 리스트를 작성해볼 계획입니다.",
+    "detail": "작업 내용\n캐릭터 스프라이트 제작\n\n자유 메모\n필요한 아트 리소스가 최소치만큼 제작이 완료되어 내일부터 QA 리스트를 작성해볼 계획입니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-edb5f45578d9",
+    "studentId": "홍태광",
+    "date": "2026-02-25",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 플레이 테스트 및 버그 리포트 작성 자유 메모 다른 팀원 분들이 바이브코딩 하는 모습을 지켜보니 세세한 것 까지 작성한 기획서의 필요성을 느꼈습니다.",
+    "detail": "작업 내용\n플레이 테스트 및 버그 리포트 작성\n\n자유 메모\n다른 팀원 분들이 바이브코딩 하는 모습을 지켜보니 세세한 것 까지 작성한 기획서의 필요성을 느꼈습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-d20fd8a008e3",
+    "studentId": "홍태광",
+    "date": "2026-02-26",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 리스트 작성, 메인 화면 이미지 제작, 자유 메모 그래도 끝이 보이는 것 같습니다;;",
+    "detail": "작업 내용\nQA 리스트 작성, 메인 화면 이미지 제작,\n\n자유 메모\n그래도 끝이 보이는 것 같습니다;;",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-5f2637adce02",
+    "studentId": "홍태광",
+    "date": "2026-02-27",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 나린과 오금의 이미지는 기획서에서 크게 벗어나지는 않게 구현되었다. 나린의 경우 팀원들의 의견을 받기 위해 4개의 헤어스타일을 제작해 가장 어울리는 헤어스타일에 대한 투표를 했었다. 나린의 아버지의 경우 20대의 모습이 시나리오 변경으로 기획서 제작 없이 추가 작업했던 기억이 있음 ‘성장을 했는가’ 라는…",
+    "detail": "기획에 대하여\n나린과 오금의 이미지는 기획서에서 크게 벗어나지는 않게 구현되었다.\n나린의 경우 팀원들의 의견을 받기 위해 4개의 헤어스타일을 제작해 가장 어울리는 헤어스타일에 대한 투표를 했었다.\n나린의 아버지의 경우 20대의 모습이 시나리오 변경으로 기획서 제작 없이 추가 작업했던 기억이 있음\n‘성장을 했는가’ 라는 관점에서 바라보면 아니다 라고 답변할 것 같다. 이미 과정에 참여하기 전에 여러번 해왔던 작업이기에 ‘팀원과의 협력 경험’ 이상의 의미를 가지지는 못한 것 같다.\n\n협업에 대하여\n진행상황 공유는 디스코드와 업무 진행상황 시트를 통해 꾸준히 공유하였다.\n아트 리소스 제작에 내 개인적인 감정은 오금을 제외하고는 포함하지 않은 것 같다.\n기획자로서 보다 아트팀원의 입장에서 팀원들과 협업을 한 것 같다.\n\n다음 프로젝트를 위해\n분업이 깔끔하게 되어서 바빠보이는 팀원의 일감 품앗이가 원활하지 않았던 것 같다.\n다음에는 아트를 서브포지션으로 가져가고 싶다. (다른 팀원의 아트 작업에 방향성 조언만 해주는 정도)\n\n칭찬합시다\n팀원들의 역량 파악, 그로 인한 실현 가능한 계획 수립\n\n팀장 선호도 조사\n2.0\n\n이유\n누군가를 이끌어간다는 것이 얼마나 어려운지 알고있기에 팀장이라는 역을 맡고싶지는 않습니다.\n\n자유로운 한마디\n이번 주말은 쉴 겁니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/2차 프로젝트 회고.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-5df08359d6ef",
+    "studentId": "홍태광",
+    "date": "2026-03-03",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 지각",
+    "summary": "지각 (늦잠)",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-97816dedbe8e",
+    "studentId": "홍태광",
+    "date": "2026-03-04",
+    "weekIndex": 13,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 외출",
+    "summary": "외출 (국취제)",
+    "detail": "외출 (국취제)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-8c753ad0cd25",
+    "studentId": "홍태광",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 1. 팀원분들과 함께 게임 컨셉을 구체화 후 확정. WBS를 작성하는 시간을 가졌습니다. 2. 전투화면 UI의 기본적인 레이아웃, 팝업 레이아웃을 구상하였습니다. 자유 메모 저희 조 주제가 다른 주제와 비교해 범위가 작은 덕분에 빠르게 컨셉을 확정할 수 있었던 것 같습니다.",
+    "detail": "작업 내용\n1. 팀원분들과 함께 게임 컨셉을 구체화 후 확정. WBS를 작성하는 시간을 가졌습니다.\n2. 전투화면 UI의 기본적인 레이아웃, 팝업 레이아웃을 구상하였습니다.\n\n자유 메모\n저희 조 주제가 다른 주제와 비교해 범위가 작은 덕분에 빠르게 컨셉을 확정할 수 있었던 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-b5708a8a2233",
+    "studentId": "홍태광",
+    "date": "2026-03-18",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "10팀 / 역할 팀원 / 함께한 팀원 장호윤, 천영현, 이영우, 정재용, 정재훈, 한의호",
+    "detail": "팀: 10팀\n역할: 팀원\n팀원: 장호윤, 천영현, 이영우, 정재용, 정재훈, 한의호",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-d0fbc11b94d0",
+    "studentId": "홍태광",
+    "date": "2026-03-19",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 전투화면 UI, 환경설정 UI 와이어프레임 구성 자유 메모 오늘 우리 팀이 진도가 빠르다는 소식을 듣고 꽤나 놀랐습니다.",
+    "detail": "작업 내용\n전투화면 UI, 환경설정 UI 와이어프레임 구성\n\n자유 메모\n오늘 우리 팀이 진도가 빠르다는 소식을 듣고 꽤나 놀랐습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-c132596a80a8",
+    "studentId": "홍태광",
+    "date": "2026-03-20",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아이스브레이킹, 게임기획 및 UI 공유 자유 메모 갑작스런 한의호님의 결혼선언...(진짜로 결혼하는 것이 아닙니다.)",
+    "detail": "작업 내용\n아이스브레이킹, 게임기획 및 UI 공유\n\n자유 메모\n갑작스런 한의호님의 결혼선언...(진짜로 결혼하는 것이 아닙니다.)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-8cf48aed30cf",
+    "studentId": "홍태광",
+    "date": "2026-03-23",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 UI 에셋 테스트 자유 메모 UI의 픽셀을 어떻게 맞춰야 할지 감도 안잡히는 것 같네요...ㅎㅎ",
+    "detail": "작업 내용\nUI 에셋 테스트\n\n자유 메모\nUI의 픽셀을 어떻게 맞춰야 할지 감도 안잡히는 것 같네요...ㅎㅎ",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-54dcd76baadd",
+    "studentId": "홍태광",
+    "date": "2026-03-24",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 UI에 관한 프로그래머와의 협업, 피그마 및 문서 최적화 자유 메모 에셋을 어떻게 정확히 배치해야할지 고민이 많습니다.",
+    "detail": "작업 내용\nUI에 관한 프로그래머와의 협업, 피그마 및 문서 최적화\n\n자유 메모\n에셋을 어떻게 정확히 배치해야할지 고민이 많습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-9a711aa0ba7e",
+    "studentId": "홍태광",
+    "date": "2026-03-25",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 유니티 꾸미기(UI 에셋을 이용하여 화면에 배치 후 담당 프로그래머께 인수인계) 자유 메모 화면 내에 표시할 정보를 어떻게 배치해야할지 고민하는게 많이 어려웠습니다.",
+    "detail": "작업 내용\n유니티 꾸미기(UI 에셋을 이용하여 화면에 배치 후 담당 프로그래머께 인수인계)\n\n자유 메모\n화면 내에 표시할 정보를 어떻게 배치해야할지 고민하는게 많이 어려웠습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-35248a665edf",
+    "studentId": "홍태광",
+    "date": "2026-03-26",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시작 화면, 로비 화면, 와이어프레임 작업 후 유니티 UI 작업 자유 메모 체력이 조금씩 떨어지는게 느껴지는 하루였습니다..",
+    "detail": "작업 내용\n시작 화면, 로비 화면, 와이어프레임 작업 후 유니티 UI 작업\n\n자유 메모\n체력이 조금씩 떨어지는게 느껴지는 하루였습니다..",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-74905e05cb47",
+    "studentId": "홍태광",
+    "date": "2026-03-27",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 로비화면 UI 에셋 작업 및 기능 설명 기획서 작성 자유 메모 UI가 고려해야 할 것들이 생각보다 많은 것 같습니다...",
+    "detail": "작업 내용\n로비화면 UI 에셋 작업 및 기능 설명 기획서 작성\n\n자유 메모\nUI가 고려해야 할 것들이 생각보다 많은 것 같습니다...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-ea580b177667",
+    "studentId": "홍태광",
+    "date": "2026-03-30",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 로비 화면 UI 에셋 제작 후 전달 자유 메모 이제 환경설정과 시작화면 UI만 전달하면 설정한 목표 일단 완수될 것 같습니다.",
+    "detail": "작업 내용\n로비 화면 UI 에셋 제작 후 전달\n\n자유 메모\n이제 환경설정과 시작화면 UI만 전달하면 설정한 목표 일단 완수될 것 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-8fbab734554e",
+    "studentId": "홍태광",
+    "date": "2026-03-31",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 시작화면 및 환경설정 UI 이미지 자유 메모 UI는 끝이 보이는 것 같으니 이제 밸런스나 다른 파트를 담당하신 분들 백업으로 들어갈 것 같습니다...?",
+    "detail": "작업 내용\n시작화면 및 환경설정 UI 이미지\n\n자유 메모\nUI는 끝이 보이는 것 같으니 이제 밸런스나 다른 파트를 담당하신 분들 백업으로 들어갈 것 같습니다...?",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-96faef1023a9",
+    "studentId": "홍태광",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 번역 시트 작성 자유 메모 이제 버그가 많이 나지 않게 물 떠놓고 기도할 수 밖에 없습니다.",
+    "detail": "작업 내용\n번역 시트 작성\n\n자유 메모\n이제 버그가 많이 나지 않게 물 떠놓고 기도할 수 밖에 없습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-83385b28dada",
+    "studentId": "홍태광",
+    "date": "2026-04-02",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 UI 폴리싱 자유 메모 접시에 물 떠놓고 플밍분들 작업이 원만히 이루어지도록 빌고 있습니다.",
+    "detail": "작업 내용\nUI 폴리싱\n\n자유 메모\n접시에 물 떠놓고 플밍분들 작업이 원만히 이루어지도록 빌고 있습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-245bb867f634",
+    "studentId": "홍태광",
+    "date": "2026-04-03",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 자유 메모 본의아니게 쉬었음 청년이 되버리고 말았읍니다...",
+    "detail": "작업 내용\nQA\n\n자유 메모\n본의아니게 쉬었음 청년이 되버리고 말았읍니다...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-982623184464",
+    "studentId": "홍태광",
+    "date": "2026-04-06",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 게임 QA 자유 메모 같은 게임 또 하고 또 하는게 어려운 일이긴 하네요..;;",
+    "detail": "작업 내용\n게임 QA\n\n자유 메모\n같은 게임 또 하고 또 하는게 어려운 일이긴 하네요..;;",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-e7a23b5ded69",
+    "studentId": "홍태광",
+    "date": "2026-04-07",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "evidenceType": "reported",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 QA 보조 자유 메모 드디어 내일이군요...",
+    "detail": "작업 내용\nQA 보조\n\n자유 메모\n드디어 내일이군요...",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/3차 프로젝트 데일리 체크인.xlsx",
+      "isEstimatedDate": false,
+      "sourceSheet": "설문지 응답 시트"
+    }
+  },
+  {
+    "evidenceId": "ev-adf6ea29743a",
+    "studentId": "홍태광",
+    "date": "2026-04-11",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration"
+    ],
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "1팀 / 역할 팀원 / 함께한 팀원 맹지훈, 박영성, 손호진, 송아영, 이동현, 조준현, 한의호",
+    "detail": "팀: 1팀\n역할: 팀원\n팀원: 맹지훈, 박영성, 손호진, 송아영, 이동현, 조준현, 한의호",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/프로젝트 팀 구성.md",
+      "isEstimatedDate": true
+    }
+  },
+  {
+    "evidenceId": "ev-3b75fe2fce36",
+    "studentId": "홍태광",
+    "date": "2026-04-20",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-a44a3d4b8d19",
+    "studentId": "홍태광",
+    "date": "2026-04-21",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-bc3f90a6faf1",
+    "studentId": "홍태광",
+    "date": "2026-04-22",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-05c43c139ed8",
+    "studentId": "홍태광",
+    "date": "2026-04-23",
+    "weekIndex": 20,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (예비군)",
+    "detail": "공가 (예비군)",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  }
+]

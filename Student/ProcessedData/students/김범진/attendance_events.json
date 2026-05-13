@@ -1,0 +1,82 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-09",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-10",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-11",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-12",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-15",
+    "kind": "기타",
+    "detail": "-",
+    "severity": "info",
+    "category": "unknown",
+    "impact": "contextual"
+  },
+  {
+    "date": "2025-12-24",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-30",
+    "kind": "휴가",
+    "detail": "휴가 (게임잼)",
+    "severity": "info",
+    "category": "external_learning",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-19",
+    "kind": "휴가",
+    "detail": "휴가 (실업 급여)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-23",
+    "kind": "휴가",
+    "detail": "휴가 (행사 방문)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "statusPeriodId": "이유송-status-1",
+    "startDate": "2025-12-22",
+    "endDate": "2025-12-28",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  },
+  {
+    "statusPeriodId": "이유송-status-2",
+    "startDate": "2026-03-23",
+    "endDate": "2026-03-29",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "프로젝트 활동이 밀집된 구간"
+  },
+  {
+    "statusPeriodId": "이유송-status-3",
+    "startDate": "2026-04-13",
+    "endDate": "2026-04-19",
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "출결 위험 신호를 확인한 구간"
+  }
+]

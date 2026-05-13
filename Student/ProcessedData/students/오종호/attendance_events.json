@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2026-02-23",
+    "kind": "외출",
+    "detail": "외출 (미팅)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-13",
+    "kind": "공가",
+    "detail": "공가 (민방위)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-16",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-20",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-21",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-22",
+    "kind": "휴가",
+    "detail": "휴가 (여행)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  }
+]

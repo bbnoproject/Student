@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-01-30",
+    "kind": "휴가",
+    "detail": "휴가 (게임잼)",
+    "severity": "info",
+    "category": "external_learning",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-11",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-04-15",
+    "kind": "휴가",
+    "detail": "휴가",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-28",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  }
+]

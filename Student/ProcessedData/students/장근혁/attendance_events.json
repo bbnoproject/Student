@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2025-12-24",
+    "kind": "조퇴",
+    "detail": "조퇴",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-02",
+    "kind": "결석",
+    "detail": "결석",
+    "severity": "caution",
+    "category": "absence",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-14",
+    "kind": "지각",
+    "detail": "지각 (연락 안됨)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-01-29",
+    "kind": "휴가",
+    "detail": "휴가 (이사)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-30",
+    "kind": "휴가",
+    "detail": "휴가 (이사)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-04",
+    "kind": "결석",
+    "detail": "결석 (이사 처리)",
+    "severity": "info",
+    "category": "personal",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-02-13",
+    "kind": "휴가",
+    "detail": "휴가 (실업 급여)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-11",
+    "kind": "휴가",
+    "detail": "휴가 (제사)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-04-17",
+    "kind": "휴가",
+    "detail": "휴가 (컨디션 관리)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

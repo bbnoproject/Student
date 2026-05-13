@@ -1,0 +1,815 @@
+[
+  {
+    "eventId": "ev-b6bc67d67b39",
+    "date": "2025-10-27",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "지원서 응답",
+    "summary": "자기소개 24년도 12월부터 25년도 9월초 까지 게임업계 준비를 하다, 올해 하반기 면접 전형까지는 갔으나 부족한 점을 느껴 다시 배우고자 하는 학생입니다 지원 동기 제 실력에 부족함을 느끼고 면접 당시 포트폴리오 부분에서 노력은 많이 한 티가 보이지만 어쩔 수 없이 신인과 무 경험자의 느낌이 난다는 이야기를 많이 받…",
+    "detail": "자기소개\n24년도 12월부터 25년도 9월초 까지 게임업계 준비를 하다, 올해 하반기 면접 전형까지는 갔으나 부족한 점을 느껴 다시 배우고자 하는 학생입니다\n\n지원 동기\n제 실력에 부족함을 느끼고 면접 당시 포트폴리오 부분에서 노력은 많이 한 티가 보이지만 어쩔 수 없이 신인과 무 경험자의 느낌이 난다는 이야기를 많이 받아 그것을 보완하고 더 발전 하기 위해 지원 했습니다, 또한 서브컬처 게임과 액션 게임에 특별한 애정을 가지고 있으며 추후 그런 프로젝트에 참여하기 원합니다.\n\n관련 경험\n지금까지 관련 학습은 24년도 12월부터 9월초 까지 다른 학원 (메가스터디)에서 수업을 받은적이 있습니다.\n\n희망 분야\n게임 기획 전형에서 컨탠츠 기획 부분과 시스템 기획 중 전투 기획 분야를 목표로 포트폴리오를 작성했으며 습작 형태이긴 하지만 전체적인 게임 기획서와 시나리오 포트폴리오를 만들어 본 경험이 있습니다.\n\n수료 목표\n가장 큰 목표는 서브컬처 계열 프로젝트로 취직하는 것이 큰 목표이지만 취업이 목표입니다.\n\n갈등 대응\n대화와 타협을 통한 해결\n\n실패 대응\n배움과 성장으로 받아들임\n\n타인 대응\n문제 해결에 필요한 실질적 도움 제공",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-956f9d35af1f",
+    "date": "2025-12-07",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "admission",
+    "severity": "stable",
+    "title": "면접 결과",
+    "summary": "합격 / 점수 80",
+    "detail": "철도학과를 올 해 졸업했으나, 사고로 인해 외근직이 불가능(목디스크, 어지러움증)하다고 하여 옛날 꿈을 찾다가 기획자를 도전했다고 합니다.\n메가스터디에서 9개월동안 기획 과정을 진행한 이력이 있다고 합니다.\n다만, 3시간씩 주 3회 진행되었으며 포폴만 7개월을 써와서 기초가 부족하다고 느꼈다고 합니다.\n면접까지 보기는 했는데 면접에서 부족함이 많다는 피드백을 받았다고 합니다.\n전투 기획자를 희망하고 있으며, 다양한 장르와 플랫폼의 게임을 즐겨왔다고 합니다.\n사이퍼즈, 이터널리턴 등 1000시간 이상 플레이해본 게임도 있고 최근 나온 카오스제로나이트메이도 해보고 있다고 합니다.\n대학생때 학과 대표도 했으며, 창업 PR대회에서 우수상도 받아봤다고 합니다.\n기존에 준비해본 것이 있어서 스타트라인은 약간 앞에 있으나, 협업 역량이 괜찮을지는 지켜봐야 할 것 같습니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "모집 결과.xlsx",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-722e4cf4aa64",
+    "date": "2026-01-07",
+    "endDate": "",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "1차 정기 면담",
+    "summary": "### 내용 ### 1) 현재 수업 만족도(난이도/속도/이해도/몰입도) 전반적으로 수업은 무리 없이 따라갈 수 있었고 괜찮았다고 답변했습니다. 다만 지표 분석 파트는 이해 과정에서 부담은 있었다고 언급했습니다. ### 2) 수업 방식 적합도(맞는 점/어려운 점) 수업에서 제공되는 수업 시트와 기사 읽기가 학습에 도움이…",
+    "detail": "### 내용\n### 1) 현재 수업 만족도(난이도/속도/이해도/몰입도)\n\n전반적으로 수업은 무리 없이 따라갈 수 있었고 괜찮았다고 답변했습니다.\n\n다만 지표 분석 파트는 이해 과정에서 부담은 있었다고 언급했습니다.\n\n### 2) 수업 방식 적합도(맞는 점/어려운 점)\n\n수업에서 제공되는 수업 시트와 기사 읽기가 학습에 도움이 되어 매우 긍정적으로 느껴졌다고 답변했습니다.\n\n### 3) 9~6 일정 적응도(생활 리듬)\n\n온보딩 덕분에 생활 루틴이 잡히며 체력적인 부담이 줄었다고 답변했습니다.\n\n### 4) 체력/집중력/과제 처리 패턴\n\n현재까지는 체력·집중력·과제 처리에서 특이사항 없이 안정적이라고 답변했습니다.\n\n### 5) 현재 희망 직무(우선순위)\n\n희망 직무 우선순위를 다음과 같이 제시했습니다.\n\n1순위: 전투 기획\n2순위: 캐릭터 기획\n3순위: 보스 기획\n\n### 6) 직무 선택 이유(동기/계기)\n\n서브컬처 장르에서 캐릭터 자체에 대한 선호가 강해, “캐릭터를 만들고 싶다”는 욕구가 출발점이 되었습니다.\n\n이후 게임 기획 진로를 고민하던 시기에 젠레스 존 제로가 출시되었고, 해당 게임의 전투 경험을 통해 전투 기획을 직접 해보고 싶다는 목표가 구체화되었다고 정리됩니다.\n\n### 7) 향후 성장 목표 역량\n\n궁극적으로 전투 기획자로 성장하는 것을 목표로 하고 있습니다.\n\n### 8) 과정에서 기대하는 학습 요소\n\n과정 교안 중 캐릭터 설계 파트와 메이플 월드 실습을 특히 기대하고 있다고 답변했습니다.\n\n### 9) 강사진에게 전하고 싶은 말\n\n과거 면접 과정에서 탈락 경험이 있으며, 그때 “포트폴리오에 의도가 없다”는 피드백을 반복적으로 들었다고 공유했습니다.\n\n따라서 앞으로는 포트폴리오에 의도(설계 목적/판단 근거/기대 효과)가 드러나도록 채워 나가고 싶다는 의지를 전달했습니다.\n\n그리고 신나는 서브컬쳐(학원 아이돌마스터) 이야기를 나눴습니다.\n(공식방송, 굿즈, 캐릭터 픽업 관련)\n\n---",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f0352b355024",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.5 자유 메모 중간 팀내에서 건설적인 토론 과정이 있었습니다",
+    "detail": "작업 내용\n0.5\n\n자유 메모\n중간 팀내에서 건설적인 토론 과정이 있었습니다",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f354952cf0e4",
+    "date": "2026-01-20",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "1차 프로젝트 팀 배치",
+    "summary": "4팀 / 역할 팀원 / 함께한 팀원 이석훈, 이승구, 장근혁, 서진호",
+    "detail": "팀: 4팀\n역할: 팀원\n팀원: 이석훈, 이승구, 장근혁, 서진호",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-d1b08d2ba6f4",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 0.75 자유 메모 프로토타입 개발이 완료 되었으며 수정부분과 추가할 부분이 생겨 그것을 작업해야합니다",
+    "detail": "작업 내용\n0.75\n\n자유 메모\n프로토타입 개발이 완료 되었으며 수정부분과 추가할 부분이 생겨 그것을 작업해야합니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-69857c47f401",
+    "date": "2026-01-22",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 베타버전 출시후 마지막 공정들어갑니다! 자유 메모 팀 활동이 너무 즐겁습니다!",
+    "detail": "작업 내용\n베타버전 출시후 마지막 공정들어갑니다!\n\n자유 메모\n팀 활동이 너무 즐겁습니다!",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-b33cfccd0d53",
+    "date": "2026-01-23",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "1차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 다 완성되었지만 프로그램 부분을 담당 하신 분이 추가 하고 싶은 것이 있다고 하여 추가 작업이 있을 예정입니다. 자유 메모 오늘 중간 회의가 있었을 때 특정 인원이 다른 조원의 도움요청을 그저 모른다고 답하며 거부하였고 자기 의견만 피력해서 분위기가 가열된적이 있었습니다.",
+    "detail": "작업 내용\n다 완성되었지만 프로그램 부분을 담당 하신 분이 추가 하고 싶은 것이 있다고 하여 추가 작업이 있을 예정입니다.\n\n자유 메모\n오늘 중간 회의가 있었을 때 특정 인원이 다른 조원의 도움요청을 그저 모른다고 답하며 거부하였고 자기 의견만 피력해서 분위기가 가열된적이 있었습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "1차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-be4a87a1a418",
+    "date": "2026-01-26",
+    "endDate": "",
+    "weekIndex": 8,
+    "phase": "1차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "1차 프로젝트 회고",
+    "summary": "기획에 대하여 다행이 GEMS를 만들 때 사용한 문서들이 있어 그 문서들을 바탕으로 만들었습니다. 협업에 대하여 프로젝트에서 아트적인 부분을 전반적으로 맡아했으며 다른 작업자 분들의 요구 사항에 맞춰 아트를 제작했고 바로 공유해 피드백을 받았습니다, 만들며 건설적인 대화를 많이 나누었습니다. 다음 프로젝트를 위해 아트…",
+    "detail": "기획에 대하여\n다행이 GEMS를 만들 때 사용한 문서들이 있어 그 문서들을 바탕으로 만들었습니다.\n\n협업에 대하여\n프로젝트에서 아트적인 부분을 전반적으로 맡아했으며 다른 작업자 분들의 요구 사항에 맞춰 아트를 제작했고 바로 공유해 피드백을 받았습니다, 만들며 건설적인 대화를 많이 나누었습니다.\n\n다음 프로젝트를 위해\n아트 보고를 명확하게 하지 않아 중간에 혼선이 있었습니다, 완성 보고를 정확히 해야겠습니다.\n\n칭찬합시다\n이승구님 께서 스토리 보완 작업을 완벽히 하셨습니다, 스토리 작성 능력이 뛰어난 것 같습니다.\n\n자유로운 한마디\nPD직을 맡은 팀장이 상당 부분 부재 중인 경우가 많아서 개발 이슈와 소통 이슈가 있었습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience"
+    ],
+    "sourceLabel": "1차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e6d3b9dfd959",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 메이플 월드로 만들 게임의 전체적인 기획서와 개인이 만들어야할 미니게임 2가지 기획서와 게임을 만들었습니다, 자유 메모 저희 절대로 부정출발 아닙니다!!",
+    "detail": "작업 내용\n메이플 월드로 만들 게임의 전체적인 기획서와 개인이 만들어야할 미니게임 2가지 기획서와 게임을 만들었습니다,\n\n자유 메모\n저희 절대로 부정출발 아닙니다!!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9f0bfbfc95e6",
+    "date": "2026-02-13",
+    "endDate": "",
+    "weekIndex": 10,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "2차 프로젝트 팀 배치",
+    "summary": "9팀 / 역할 팀장 / 함께한 팀원 서진호, 오동건, 이도민, 이유송",
+    "detail": "팀: 9팀\n역할: 팀장\n팀원: 서진호, 오동건, 이도민, 이유송",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-eb5d4b5fd05e",
+    "date": "2026-02-19",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 아트 담당자를 선출하고 아트 담당자를 위한 아트 기획서를 만들었습니다, 또한 각 팀원들이 만든 미니게임을 플레이 하고 간단한 QA를 진행하였습니다. 자유 메모 65% 된거 같습니다?",
+    "detail": "작업 내용\n아트 담당자를 선출하고 아트 담당자를 위한 아트 기획서를 만들었습니다, 또한 각 팀원들이 만든 미니게임을 플레이 하고 간단한 QA를 진행하였습니다.\n\n자유 메모\n65% 된거 같습니다?",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-799facea48e6",
+    "date": "2026-02-20",
+    "endDate": "",
+    "weekIndex": 11,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 미니게임 10개중 4개가 메이플 랜드 이식에 성공하였습니다 자유 메모 다른 팀과 비교해 말수는 적지만 트러블은 적은팀 인거 같습니다.",
+    "detail": "작업 내용\n미니게임 10개중 4개가 메이플 랜드 이식에 성공하였습니다\n\n자유 메모\n다른 팀과 비교해 말수는 적지만 트러블은 적은팀 인거 같습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9198097575f0",
+    "date": "2026-02-23",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 10개의 게임 중 6개가 이식 되었습니다. 자유 메모 완성이 점점 보이기 시작했습니다",
+    "detail": "작업 내용\n10개의 게임 중 6개가 이식 되었습니다.\n\n자유 메모\n완성이 점점 보이기 시작했습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-94015d9c2466",
+    "date": "2026-02-24",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 포팅 작업이 8개가 완료 되었고 UI 제작 및 배치만 하면 게임이 완성 될거같습니다. 이번주 목요일 오전을 데드라인으로 잡고 진행중입니다. 자유 메모 완성이 보입니다!",
+    "detail": "작업 내용\n포팅 작업이 8개가 완료 되었고 UI 제작 및 배치만 하면 게임이 완성 될거같습니다.\n이번주 목요일 오전을 데드라인으로 잡고 진행중입니다.\n\n자유 메모\n완성이 보입니다!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8c9ff6584195",
+    "date": "2026-02-25",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 UI는 이제 인게임 적용만 남았고 게임 포팅도 2개 남았습니다, 잘하면 내일 완성 가능할지도 모르겠습니다. 자유 메모 살려주세요!",
+    "detail": "작업 내용\nUI는 이제 인게임 적용만 남았고 게임 포팅도 2개 남았습니다, 잘하면 내일 완성 가능할지도 모르겠습니다.\n\n자유 메모\n살려주세요!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-7fc109cc9780",
+    "date": "2026-02-26",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "2차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 멀티 플레이 QA와 홍보자료 제작을 했습니다 자유 메모 助けてください！",
+    "detail": "작업 내용\n오늘은 멀티 플레이 QA와 홍보자료 제작을 했습니다\n\n자유 메모\n助けてください！",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-fd54c0c7a147",
+    "date": "2026-02-27",
+    "endDate": "",
+    "weekIndex": 12,
+    "phase": "2차 프로젝트",
+    "sourceDomain": "retro",
+    "severity": "stable",
+    "title": "2차 프로젝트 회고",
+    "summary": "기획에 대하여 모든 작업에 기획서를 같이 제출해야 한다 팀원들에게 전달하였고 제가 맡은 업무는 전부 기획서와 같이 전달하였습니다. 협업에 대하여 하루에 최소 2번 전체 회의를 하였지만 그 외 소통이 없어 많이 부족하다 느꼈습니다. 다음 프로젝트를 위해 만약 다음프로젝트에서 팀장을 다시하게 된다면 소통 위주의 팀을 만들겠…",
+    "detail": "기획에 대하여\n모든 작업에 기획서를 같이 제출해야 한다 팀원들에게 전달하였고 제가 맡은 업무는 전부 기획서와 같이 전달하였습니다.\n\n협업에 대하여\n하루에 최소 2번 전체 회의를 하였지만 그 외 소통이 없어 많이 부족하다 느꼈습니다.\n\n다음 프로젝트를 위해\n만약 다음프로젝트에서 팀장을 다시하게 된다면 소통 위주의 팀을 만들겠습니다.\n\n칭찬합시다\n기획서에 미니게임의 핵심적 재미요소와 기획 의도들이 녹아져있었습니다.\n\n팀장 선호도 조사\n4.0\n\n이유\n힘들었지만 또 하고 싶은 느낌입니다\n\n자유로운 한마디\n다들 고생하셨습니다.",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "2차 프로젝트 회고.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ec47169ca830",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 컨샙 기획과 프로토 타입 개발 기획을 마쳤습니다! 자유 메모 캐릭터를 많이 만들고싶습니다!",
+    "detail": "작업 내용\n컨샙 기획과 프로토 타입 개발 기획을 마쳤습니다!\n\n자유 메모\n캐릭터를 많이 만들고싶습니다!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0ee90133fc18",
+    "date": "2026-03-18",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "3차 프로젝트 팀 배치",
+    "summary": "9팀 / 역할 팀원 / 함께한 팀원 서진호, 강태성, 고승주, 김경민, 박원우, 임동균",
+    "detail": "팀: 9팀\n역할: 팀원\n팀원: 서진호, 강태성, 고승주, 김경민, 박원우, 임동균",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-5b255bccdb40",
+    "date": "2026-03-19",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 사용할 에셋 분류와 캐릭터 기획을 들어갔습니다. 자유 메모 내일은 드디어 플밍분들이 오는날 기대가 됩니다!",
+    "detail": "작업 내용\n오늘은 사용할 에셋 분류와 캐릭터 기획을 들어갔습니다.\n\n자유 메모\n내일은 드디어 플밍분들이 오는날 기대가 됩니다!",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-116237e77eb0",
+    "date": "2026-03-20",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 플밍분들과 만나서 아이스 브레이킹 작업을 했습니다 자유 메모 기대가 됩니다",
+    "detail": "작업 내용\n플밍분들과 만나서 아이스 브레이킹 작업을 했습니다\n\n자유 메모\n기대가 됩니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-64740690fbd9",
+    "date": "2026-03-23",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 캐릭터 디자인 2종과 PM님께서 오늘안으로 끝내 달라한 UI목업을 진행하였습니다 자유 메모 손이 빠르다는 말을 들어서 기쁩니다1",
+    "detail": "작업 내용\n오늘은 캐릭터 디자인 2종과 PM님께서 오늘안으로 끝내 달라한 UI목업을 진행하였습니다\n\n자유 메모\n손이 빠르다는 말을 들어서 기쁩니다1",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-60eed7e168ee",
+    "date": "2026-03-24",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 주요 등장인물 디자인 하고 기본적인 시나리오 플롯 을 작성했습니다. 자유 메모 타이쿤에서 시나리오가 중요한가? 라는 생각이 들고있습니다",
+    "detail": "작업 내용\n주요 등장인물 디자인 하고 기본적인 시나리오 플롯 을 작성했습니다.\n\n자유 메모\n타이쿤에서 시나리오가 중요한가? 라는 생각이 들고있습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-70121c32102f",
+    "date": "2026-03-25",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 기획 방향성 회의 , 플로우 차트 제작 , 평판 이벤트 플롯을 작성했습니다 자유 메모 저는 5분 대기조 입니다",
+    "detail": "작업 내용\n오늘은 기획 방향성 회의 , 플로우 차트 제작 , 평판 이벤트 플롯을 작성했습니다\n\n자유 메모\n저는 5분 대기조 입니다",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-d35d4a6c892c",
+    "date": "2026-03-26",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 어제 작성한 플로우 차트에 대해 설명서를 적는 작업을 했습니다. 자유 메모 오늘은 특이사항 없습니다",
+    "detail": "작업 내용\n오늘은 어제 작성한 플로우 차트에 대해 설명서를 적는 작업을 했습니다.\n\n자유 메모\n오늘은 특이사항 없습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-45f14a8c718d",
+    "date": "2026-03-27",
+    "endDate": "",
+    "weekIndex": 16,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 플로우 차트 설명서 수정과 게임 프로토 타입 QA , 그리고 튜토리얼 파트 플로우 차트까지 만들었습니다. 자유 메모 시간이 참 빠르군요",
+    "detail": "작업 내용\n오늘은 플로우 차트 설명서 수정과 게임 프로토 타입 QA , 그리고 튜토리얼 파트 플로우 차트까지 만들었습니다.\n\n자유 메모\n시간이 참 빠르군요",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-576a22744542",
+    "date": "2026-03-30",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 튜토리얼 시나리오 작업을했습니다. 자유 메모 정체성에 혼란이 옵니다",
+    "detail": "작업 내용\n오늘은 튜토리얼 시나리오 작업을했습니다.\n\n자유 메모\n정체성에 혼란이 옵니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-42e13f62d087",
+    "date": "2026-03-31",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 UI 목업 수정 작업을 했습니다 자유 메모 대신 모든 걸 잃었습니다",
+    "detail": "작업 내용\nUI 목업 수정 작업을 했습니다\n\n자유 메모\n대신 모든 걸 잃었습니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8a1ca47d0a75",
+    "date": "2026-04-01",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 플로우차트와 컷씬 작업을했습니다 자유 메모 전 금요일에 민방위갑니다 히히",
+    "detail": "작업 내용\n플로우차트와 컷씬 작업을했습니다\n\n자유 메모\n전 금요일에 민방위갑니다 히히",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-ec7e453b3bbb",
+    "date": "2026-04-02",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 이벤트 컷신에 필요한 일러스트 작업을 했습니다 자유 메모 내일은 민방위 교육을 갑니다",
+    "detail": "작업 내용\n오늘은 이벤트 컷신에 필요한 일러스트 작업을 했습니다\n\n자유 메모\n내일은 민방위 교육을 갑니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-8db9810a5ee2",
+    "date": "2026-04-03",
+    "endDate": "",
+    "weekIndex": 17,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 공가",
+    "summary": "공가 (민방위)",
+    "detail": "공가 (민방위)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-1902ae5f8704",
+    "date": "2026-04-06",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 오늘은 게임 디버깅 작업과 일러스트 제작을 했습니다 자유 메모 행복합니다",
+    "detail": "작업 내용\n오늘은 게임 디버깅 작업과 일러스트 제작을 했습니다\n\n자유 메모\n행복합니다",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-892cbbad894e",
+    "date": "2026-04-07",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 홍보자료 제작 보조로 있었습니다 자유 메모 시간이 빨라요",
+    "detail": "작업 내용\n홍보자료 제작 보조로 있었습니다\n\n자유 메모\n시간이 빨라요",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-9d48ca896469",
+    "date": "2026-04-08",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "3차 프로젝트",
+    "sourceDomain": "project",
+    "severity": "stable",
+    "title": "3차 프로젝트 데일리 체크인",
+    "summary": "작업 내용 회고작성했습니다 자유 메모 고생많으셨습니다!",
+    "detail": "작업 내용\n회고작성했습니다\n\n자유 메모\n고생많으셨습니다!",
+    "constructs": [
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "3차 프로젝트 데일리 체크인.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-e24201012c4c",
+    "date": "2026-04-11",
+    "endDate": "",
+    "weekIndex": 18,
+    "phase": "4차 프로젝트",
+    "sourceDomain": "team_context",
+    "severity": "stable",
+    "title": "4차 프로젝트 팀 배치",
+    "summary": "6팀 / 역할 팀원 / 함께한 팀원 예인해, 정우경, 곽용준, 김현우A, 서진호, 유해찬, 정석현, 정재용",
+    "detail": "팀: 6팀\n역할: 팀원\n팀원: 예인해, 정우경, 곽용준, 김현우A, 서진호, 유해찬, 정석현, 정재용",
+    "constructs": [
+      "collaboration"
+    ],
+    "sourceLabel": "프로젝트 팀 구성.md",
+    "isEstimatedDate": true
+  },
+  {
+    "eventId": "ev-2288f21f47be",
+    "date": "2026-04-15",
+    "endDate": "",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "attendance",
+    "severity": "stable",
+    "title": "출결 이슈 - 휴가",
+    "summary": "휴가 (병원 진료)",
+    "detail": "휴가 (병원 진료)",
+    "constructs": [
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-c2e67bc09173",
+    "date": "2026-04-17",
+    "endDate": "",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "counseling",
+    "severity": "stable",
+    "title": "2차 정기 면담",
+    "summary": "### 내용 ### 진로 - 이전에 취업준비를 했었고 서류통과까지는 했었다고 합니다. 면접에서 자기 생각이 강하다, 기획의도가 안보여서 아쉬움이 있었다라는 피드백이 있었다고 합니다. - 가고 싶은 회사 크로노 스튜디오, 시프트업 차기작을 목표로 하고 있다고 합니다. - 초기에는 전투를 희망했는데, 지금은 어디든 갈 수…",
+    "detail": "### 내용\n### 진로\n- 이전에 취업준비를 했었고 서류통과까지는 했었다고 합니다. 면접에서 자기 생각이 강하다, 기획의도가 안보여서 아쉬움이 있었다라는 피드백이 있었다고 합니다.\n- 가고 싶은 회사 크로노 스튜디오, 시프트업 차기작을 목표로 하고 있다고 합니다.\n- 초기에는 전투를 희망했는데, 지금은 어디든 갈 수 있을 것 같다고 합니다.\n- 자신감이 많이 떨어져있어서 응원해줬습니다.\n\n### 프로젝트\n- 사전합반때 중요도가 낮은 부분을 맡았고 기획의도를 가져가지 못했다고 합니다.\n- 지금까지 캐릭터 컨셉, 시나리오 면으로 했어서, 그 부분으로 강점을 살려볼까 생각중이라고 합니다.\n\n--",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-668dea877726",
+    "date": "2026-04-20",
+    "endDate": "",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "severity": "stable",
+    "title": "1차 자기소개서 자기소개서 작성",
+    "summary": "오타쿠의 예리한 감각으로 유저의 기대를 앞서 읽는 기획자 박민규 입니다. 저는 이런 사람입니다! 저는 장르를 불문하고 새로운 게임을 언제나 분석하는 신입 기획자입니다. 제 게임 인생은 초등학교 1 학년 무렵, 큰아버지 댁에서 함께 즐긴 삼국지 9 로 시작되었습니다. 그때의 즐거움은 제 삶에 큰 영향을 주었고, 이후 스타…",
+    "detail": "오타쿠의 예리한 감각으로 유저의 기대를 앞서 읽는 기획자 박민규 입니다. 저는 이런 사람입니다! 저는 장르를 불문하고 새로운 게임을 언제나 분석하는 신입 기획자입니다. 제 게임 인생은 초등학교 1 학년 무렵, 큰아버지 댁에서 함께 즐긴 삼국지 9 로 시작되었습니다. 그때의 즐거움은 제 삶에 큰 영향을 주었고, 이후 스타크래프트, 문명 시리즈, 배틀필드 시리즈 등 다양한 장르의 게임을 접하며 시야를 넓혔습니다. 협업과 성장을 통한 문제 해결을 몸소 체험한 저의 대학 생활 저는 어떠한 난관 앞에서도 팀원과 유기적으로 소통하며, 실패를 성장의 발판으로 삼아 반드시 결과물을 만들어내는 책임감 있는 기획자입니다. 지난 1 년, 캡스톤 디자인 팀장을 맡았을 때 제 목표는 단순한 완성이 아닌 팀원 모두가 제 역량을 발휘하는 프로젝트였습니다. 하지만 순탄치만은 않았습니다. 프로젝트 중 건강상의 문제로 2 주간 입원하는 위기를 맞았지만, 저는 포기하는 대신 팀원들과 병실에서 전화 회의를 주도하며 실시간 공유 체계를 정비했습니다. 이 과정에서 혼자 짊어지는 리더십이 아닌, 팀원이 서로의 고민을 바로 해결할 수 있는 수평적 협업 구조를 구축했습니다. 이러한 협업은 결국 교내 대회 장려상이라는 값진 결실로 이어졌습니다. 하지만 여기서 멈추지 않았습니다. 저는 심사위원들의 날카로운 피드백을 실패가 아닌 성장의 단서로 삼아 팀원들을 독려하며 작품을 전면 보완했습니다. 그 결과, 교외 대회 우수상 수상과 이사장 표창이라는 성과를 거둘 수 있었습니다. 위기를 능동적으로 해결하고, 피드백을 성장의 동력으로 삼는 저의 이러한 열정으로, 게임 기획자로서 함께하는 팀의 가치를 극대화하겠습니다 서브컬쳐를 좋아하는 오타쿠의 까다로운 입맛 과 항상 열려있는 최신 게임 레이더망 제가 가장 좋아하는 장르는 서브컬처로, 초등학교 3 학년 때 동방요요몽을 처음 접하며 이 세계에 입문했고, 이후 수많은 라이트 노벨과 만화에 빠져 지내며 아이돌마스터 시리즈, FGO, 소녀전선, 프린세스 커넥트, 우마무스메, 승리의 여신 니케 등 다양한 모바일 서브컬처 게임을 꾸준히 즐겨왔습니다. 신작이 출시되면 최소 일주일은 직접 플레이해 보고, 흥미가 생기면 관련 굿즈 수집까지 이어질 만큼 깊은 애정을 가지고 있습니다. 이러한 깊은 애정은 때로는 까다로운 오타쿠의 입맛으로 나타나기도 합니다. 최근 유행하는 방치형 서브컬처 게임, 흔히 분재겜이라 불리는 장르는 유저가 많은 조작 없이 캐릭터 성장과 재화가 누적되는 간편함을 제공합니다. 하지만 저는 이러한 정적인 게임플레이 경험에 흥미를 쉽게 잃는 편이라, 최근에는 캐릭터만 소비하고 있습니다. 오히려 젠레스 존 제로나 이터널 리턴처럼 전투 혹은 PvP 위주로 유저의 능동적인 조작과 깊이 있는 플레이를 요구하는 서브컬처 게임을 주로 플레이하며 더욱 깊이 몰입합니다. 특히 젠레스 존 제로의 전투 연출과 시스템에 깊은 인상을 받아 캐릭터 한 명의 전투 역기획서를 포트폴리오로 제작하기도 했습니다. 이 같은 애정은 자연스럽게 일본 문화에 대한 관심으로 확장되었고, 아케이드 리듬 게임에 빠져 주기적으로 일본을 방문하면서 현지 서브컬처 소비 흐름을 직접 체감해 왔습니다. 현재 JLPT N1 을 목표로 일본어를 공부 중이며, 초급 수준의 독해와 작문, 여행 회화가 가능합니다. 저는 게임 개발에 있어 유저 감각과 트렌드의 이해가 무엇보다 중요하다고 생각하며, 이를 위해 ' 항상 열려있는 최신 게임 레이더망 ' 을 가동하고 있습니다. 신작이 출시되면 직접 체험하거나, 플레이 영상과 커뮤니티 반응을 수집하며 흐름을 분석합니다. 또한 PX4, AGF, 서울 POPCON 등 국내 게임 행사에 정기적으로 참여하며 인디 게임부터 대형 타이틀까지 폭넓은 시야로 흐름을 파악해 왔습니다. 동인 행사에도 참여해 어떤 게임이 유저들의 2 차 창작 의욕을 자극하는지 체감하며, 이러한 습관은 새로운 기획 아이디어나 개선 포인트를 생각하는 데 큰 밑거름이 되었습니다. 서브컬처는 더 이상 마니아층의 전유물이 아니라, 글로벌로 확장할 수 있는 대중 장르라고 확신합니다. 저는 이러한 유저의 까다로운 입맛까지 만족시킬 수 있는 감각과 애정, 그리고 다양한 장르에 대한 실전 경험을 바탕으로 유저의 기대를 앞서 읽고, 그들만의 즐거움 ' 을 넘어 새로운 재미를 제시할 수 있는 기획자로 성장하고 싶습니다 10 년의 액션 게임 플레이, 플레이어의 경험을 기획의 언어로 번역하다 10 년 넘게 액션 게임을 즐기며, 유저에게 강렬한 카타르시스를 제공하는 세 가지 핵심 요소를 정립했습니다. 첫째, 능동적 긴장감을 만드는 피격감입니다. 타격 모션만큼 중요한 것은 피격 시의 확실한 피드백입니다. 적의 공격을 회피하고 흐름을 되찾는 과정에서 유저는 비로소 게임에 몰입합니다. 둘째, 몰입을 극대화하는 사운드 설계입니다. 상황에 최적화된 BGM 은 별도의 조작 없이도 전투의 긴장감을 유지하는 중요한 기획 요소입니다. 셋째, 단계적 조작 난이도 설계입니다. 입문은 쉽지만 심화 운용이 가능한 캐릭터 구조를 통해 라이트 유저의 진입 장벽을 낮추고, 헤비 유저에게는 성장의 재미를 제공해야 합니다. 저는 특히 회피와 패링의 비중을 7:3 정도로 조율하여 쾌적한 플레이 환경을 구축하는 것을 이상적으로 생각합니다. 이러한 철학은 최근 신작 데드록 분석으로 이어졌습니다. PvE 와 PvP 가 결합된 독특한 구조를 탐구하는 한편, 초보자의 진입 장벽이 되는 디나이 시스템과 지나치게 복잡한 맵 구조를 문제로 포착했습니다. 저는 이를 단순 비판에 그치지 않고, 협력 기반의 상호작용 강화와 전략적 동선 단순화라는 대안을 도출하며 기획자로서의 비판적 사고를 단련해 왔습니다. 플레이어의 즐거움을 설계하는 기획자로서, 유저의 피로도는 낮추고 재미는 극대화하는 최적의 게임 경험을 만들겠습니다. 유저의 기대를 넘어서는 색다른 재미를 설계하는 핵심 기획자가 되겠습니다. 저는 유저에게 단순한 재미를 넘어, 일상을 환기하는 예상치 못한 즐거움을 선사하는 것이 게임의 가장 큰 가치라고 믿습니다. 특히 누구보다 서브컬처 장르를 깊이 탐구하며 쌓아온 분석력은, 빠르게 변하는 시장 트렌드 속에서 우리 회사만의 차별화된 콘텐츠를 발굴하는 강력한 엔진이 될 것입니다. 입사 후, 다음과 같은 단계로 성장하겠습니다. 단기적으로 회사와 게임의 철학을 깊이 체화하겠습니다. 신입으로서 기존의 성공적인 시스템 구조를 빠르게 학습하고, 견고하면서도 확장성 있는 설계를 뒷받침하는 든든한 기획자가 되겠습니다. 선배님들의 노하우를 빠르게 흡수하여 팀 내에서 가장 신뢰할 수 있는 소통 창구가 되겠습니다. 장기적으로는 유저에게 깊이 각인되는 장수 IP 의 토대를 닦겠습니다. 아이돌마스터의 제작진처럼 유저와 두터운 신뢰를 쌓으며 오랫동안 사랑받는 세계관을 구축하고 싶습니다. 또한, 기존의 장르 문법에 얽매이지 않고 새로운 시스템을 제안했던 개발자들처럼, 저 또한 새로운 장르를 개척하여 전 세계 유저들에게 ' 기획자 박민규 ' 만의 독창적인 색깔을 증명해 보이겠습니다. 단순히 유행을 모방하는 것이 아니라, 짧은 플레이 시간에도 유저의 마음을 관통하는 강렬한 경험을 설계하겠습니다. 혁신적인 도전을 두려워하지 않고, 유저들에게 잊지 못할 즐거움을 선사하는 핵심 기획자로 성장하겠습니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규_자기소개서.txt",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f7717143abba",
+    "date": "2026-04-20",
+    "endDate": "",
+    "weekIndex": 20,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "severity": "stable",
+    "title": "1차 자기소개서 피드백",
+    "summary": "# 박민규_자기소개서 ## 종합 판단 서브컬처 유저 감각과 액션 게임 분석 경험이 장점입니다. 그러나 “오타쿠의 예리한 감각”이라는 표현이 호불호가 강하고, 기획자로서의 판단 기준과 행동 근거보다 취향 설명이 길어집니다. ## 잘 한 부분 - “젠레스 존 제로의 전투 연출과 시스템에 깊은 인상을 받아 캐릭터 한 명의 전…",
+    "detail": "# 박민규_자기소개서\n\n## 종합 판단\n서브컬처 유저 감각과 액션 게임 분석 경험이 장점입니다. 그러나 “오타쿠의 예리한 감각”이라는 표현이 호불호가 강하고, 기획자로서의 판단 기준과 행동 근거보다 취향 설명이 길어집니다.\n\n## 잘 한 부분\n- “젠레스 존 제로의 전투 연출과 시스템에 깊은 인상을 받아 캐릭터 한 명의 전투 역기획서를 별도 자료로 제작”했다는 부분은 좋습니다. 취향을 분석 문서로 전환한 사례입니다.\n- 서브컬처 게임을 장기간 플레이하고 현지 행사와 동인 행사까지 관찰한 점은 유저 감각을 보여줄 수 있습니다.\n- 액션 게임의 재미를 피격감, 사운드, 단계적 조작 난이도로 나누어 정리한 점은 기획자로서의 관점으로 발전 가능성이 있습니다.\n\n## 개선 방향 제안\n- “오타쿠의 예리한 감각”은 캐릭터가 선명하지만 기업 자기소개서에서는 가볍게 보일 수 있습니다. “서브컬처 감각을 분석으로 전환하는 기획자”처럼 정제하는 편이 좋습니다.\n- 게임과 굿즈 소비 경험이 길어질수록 기획자로서의 관점보다 취향 소개처럼 보입니다. 어떤 장면에서 무엇을 관찰했고 왜 매력적이라고 판단했는지 중심으로 바꿔보는 것을 추천합니다.\n- 액션 게임 분석이 이론 설명에 머무르는 편입니다. 본인이 재미를 느낀 전투 루프, 피드백, 조작 난이도의 기준을 더 자기 언어로 풀어보면 좋습니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-dc62f0c22656",
+    "date": "2026-05-03",
+    "endDate": "",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "severity": "stable",
+    "title": "2차 취업 문서 이력서 작성",
+    "summary": "--- page 1 --- 서브컬처의 감성을 연결하여 , 유저의 ' 덕심 ' 을 ' 확신 ' 으로 바꾸는 박민규입니다 . # 서브컬쳐 , # 레이더 , # 오타쿠 이력서 사진 이름 : 박민규 주소 : @@ 도 @@ 시 @@ 동 생년월일 : @@@@ 년 @@ 월 @@ 일 이메일 : @@@@@@ @ @@@@@@ 휴대전화 :…",
+    "detail": "--- page 1 ---\n서브컬처의 감성을 연결하여 , 유저의 ' 덕심 ' 을 ' 확신 ' 으로 바꾸는 \n박민규입니다\n.\n # 서브컬쳐 , # 레이더 , # 오타쿠 이력서 \n사진 이름 : 박민규 \n주소 : @@ 도 @@ 시 @@ 동 \n생년월일 : @@@@ 년 @@ 월 @@ 일 \n이메일 : @@@@@@ @ @@@@@@ \n휴대전화 : @@@ @@@@ @@@@ \n학력 사항 \n고등학교 의정부 공업 고등학교 졸업 ( 전기과 ) \n대학교 가톨릭 상지 대학 [3 년제 ] ( 철도 전기과 , 학점 3.5) \n교육 이수 \n디벨로켓 ( 경일 ) 생성형 AI 를 활용한 게임 기획자 4 기 (2025-12-08 ~ 2026-07-31) \n대외 활동 및 수상 \n기관 수상 • 활동 내역 년도 \n가톨릭 상지 대학 상지 학원 이사장 표창 2025.02 \n경북북부지식제산센터 안동상공회의소 공동 \n 2024 스타트업 IR 경진대회 ( 우수상 ) \n 2024.10 \n가톨릭 상지 대학 2024 교내 창업 아이디어 경진 대회 ( 장려상 ) 2024.08 \n가톨릭 상지 대학 철도 전기과 학과 대표 2024.03 ~ 11",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규_이력서.txt",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a99862101905",
+    "date": "2026-05-03",
+    "endDate": "",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_document",
+    "severity": "stable",
+    "title": "2차 취업 문서 자기소개서 작성",
+    "summary": "--- page 1 --- 서브컬처 감각을 분석으로 전환하는 기획자 박민규 입니다 . 저는 이런 사람입니다 ! 저는 장르를 불문하고 새로운 게임을 언제나 분석하는 신입 기획자입니다 . 제 게임 인생은 큰아버지 댁에서 함께 즐긴 삼국지 9 로 시작되었습니다 . 그때의 즐거움은 제 삶에 큰 영향을 주었고 , 이후 스타크래프…",
+    "detail": "--- page 1 ---\n서브컬처 감각을 분석으로 전환하는 기획자 박민규 입니다 . 저는 이런 사람입니다 ! 저는 장르를 불문하고 새로운 게임을 언제나 분석하는 신입 기획자입니다 . 제 게임 인생은 큰아버지 댁에서 함께 즐긴 삼국지 9 로 시작되었습니다 . 그때의 즐거움은 제 \n삶에\n \n큰\n \n영향을\n \n주었고\n,\n \n이후\n \n스타크래프트\n,\n \n문명\n \n시리즈\n,\n \n배틀필드\n \n시리즈\n \n등\n \n다양한\n \n장르의\n \n게임을\n \n접하며\n \n시야를\n \n넓혔습니다\n.\n \n \n협업과 성장을 통한 문제 해결을 몸소 체험한 저의 대학 생활 저는 어떠한 난관 앞에서도 팀원과 유기적으로 소통하며 , 실패를 성장의 발판으로 삼아 \n반드시\n \n결과물을\n \n만들어내는\n \n책임감\n \n있는\n \n기획자입니다\n.\n 대학 시절 , 캡스톤 디자인 팀장을 맡았을 때 제 목표는 단순한 완성이 아닌 팀원 모두가 제 \n역량을\n \n발휘하는\n \n프로젝트였습니다\n.\n \n하지만\n \n순탄치만은\n \n않았습니다\n.\n \n프로젝트\n \n중\n \n컨디션\n \n관리의\n \n문제로\n \n2\n주간\n \n입원하는\n \n위기를\n \n맞았지만\n,\n \n저는\n \n포기하는\n \n대신\n \n팀원들과\n \n병실에서\n \n전화\n \n회의를\n \n주도하며\n \n실시간\n \n공유\n \n체계를\n \n정비했습니다\n.\n \n이\n \n과정에서\n \n혼자\n \n짊어지는\n \n리더십이\n \n아닌\n,\n \n팀원이\n \n서로의\n \n고민을\n \n바로\n \n해결할\n \n수\n \n있는\n \n수평적\n \n협업\n \n구조를\n \n구축했습니다\n.\n 이러한 협업은 결국 교내 대회 장려상이라는 값진 결실로 이어졌습니다 . 하지만 여기서 \n멈추지\n \n않았습니다\n.\n \n저는\n \n심사위원들의\n \n날카로운\n \n피드백을\n \n실패가\n \n아닌\n \n성장의\n \n단서로\n \n삼아\n \n팀원들을\n \n독려하며\n \n작품을\n \n전면\n \n보완했습니다\n.\n \n그\n \n결과\n,\n \n교외\n \n대회\n \n우수상\n \n수상과\n \n이사장\n \n표창이라는\n \n성과를\n \n거둘\n \n수\n \n있었습니다\n.\n \n위기를\n \n능동적으로\n \n해결하고\n,\n \n피드백을\n \n성장의\n \n동력으로\n \n삼는\n \n저의\n \n이러한\n \n열정으로\n,\n \n게임\n \n기획자로서\n \n함께하는\n \n팀의\n \n가치를\n \n극대화하겠습니다\n \n서브컬쳐를 좋아하는 오타쿠의 항상 열려있는 최신 게임 레이더망 제가 가장 좋아하는 장르는 서브컬처로 , 초등학교 3 학년 때 동방요요몽을 처음 접하며 이 \n세계에\n \n입문했고\n,\n \n이후\n \n수많은\n \n라이트\n \n노벨과\n \n만화에\n \n빠져\n \n지내며\n \n아이돌마스터\n \n시리즈\n,\n \nFGO,\n \n소녀전선\n,\n \n프린세스\n \n커넥트\n,\n \n우마무스메\n,\n \n승리의\n \n여신\n \n니케\n \n등\n \n다양한\n \n모바일\n \n서브컬처\n \n게임을\n \n꾸준히\n \n즐겨왔습니다\n.\n \n신작이\n \n출시되면\n \n최소\n \n일주일은\n \n직접\n \n플레이해\n \n보고\n,\n \n흥미가\n \n생기면\n \n관련\n \n굿즈\n \n수집까지\n \n이어질\n \n만큼\n \n깊은\n \n애정을\n \n가지고\n \n있습니다\n.\n 특히 젠레스 존 제로의 전투 연출과 시스템에 깊은 인상을 받아 캐릭터 한 명의 전투 \n역기획서를\n \n포트폴리오로\n \n제작하기도\n \n했습니다\n.\n \n이\n \n같은\n \n애정은\n \n자연스럽게\n \n서브컬쳐의\n \n주요\n \n시장인\n \n일본에\n \n대한\n \n관심으로\n \n확장\n \n되었고\n,\n \n주기적으로\n \n일본을\n \n방문하면서\n \n현지에서\n \n현재\n \n인기가\n \n있는\n \n작품이나\n \n어떠한\n \n캐릭터\n \n성을\n \n가진\n \n캐릭터가\n \n인기가\n \n있으며\n \n시장은\n \n어떻게\n \n대응하는지\n \n관찰해왔습니다\n.\n \n 현재 JLPT N1 을 목표로 일본어를 공부 중이며 , 초급 수준의 독해와 작문 , 여행 회화가 \n가능합니다\n.\n 저는 게임 개발에 있어 유저 감각과 트렌드의 이해가 무엇보다 중요하다고 생각하며 , 이를 \n위해\n \n항상\n \n열려있는\n \n최신\n \n게임\n \n레이더망을\n \n가동하고\n \n있습니다\n.\n \n \n\n--- page 2 ---\n최근 서브컬처 시장의 성패는 숏폼을 통한 바이럴과 유저의 자발적인 공유 문화에 \n달려있다고\n \n분석합니다\n.\n \n올해\n \n초\n \n트릭컬\n \n리바이브의\n \n스피키\n \n쪼아요\n \n밈이\n \n한\n·\n일\n \n양국에서\n \n유행하며\n \n신규\n \n유저\n \n유입과\n \n동인\n \n활동\n \n폭발로\n \n이어진\n \n사례를\n \n목격했습니다\n.\n \n저는\n \n이를\n \n통해\n \n유저의\n \n2\n차\n \n창작\n \n의욕을\n \n자극하는\n \n포인트가\n \n곧\n \nIP\n의\n \n생명력임을\n \n깨달았습니다\n.\n \nAGF,\n \nPX4,\n서울\n \nPOPCON\n \n등\n \n국내외\n \n행사에\n \n참여하며\n \n얻은\n \n정보들를\n \n바탕으로\n,\n \n유저가\n \n스스로\n \n놀거리를\n \n찾게\n \n만드는\n \n기획을\n \n실무에\n \n적용하고자\n \n합니다\n.\n 서브컬처는 더 이상 마니아층의 전유물이 아니라 , 글로벌로 확장할 수 있는 대중 장르라고 \n확신합니다\n.\n \n저는\n \n이러한\n \n유저의\n \n까다로운\n \n입맛까지\n \n만족시킬\n \n수\n \n있는\n \n감각과\n \n애정\n,\n \n그리고\n \n다양한\n \n장르에\n \n대한\n \n실전\n \n경험을\n \n바탕으로\n \n유저의\n \n기대를\n \n앞서\n \n읽고\n,\n \n그들만의\n \n즐거움을\n \n넘어\n \n새로운\n \n재미를\n \n제시할\n \n수\n \n있는\n \n기획자로\n \n성장하고\n \n싶습니다\n 10 년의 액션 게임 플레이 , 플레이어의 경험을 기획의 언어로 번역하다 10 년 넘게 액션 게임을 즐기며 , 유저에게 강렬한 카타르시스를 제공하는 세 가지 핵심 \n요소를\n \n정립\n \n했습니다\n.\n \n첫째 , 능동적 긴장감을 만드는 피드백 설계입니다 . 단순한 타격감보다 중요한 것은 ' 내가 \n적의\n \n흐름을\n \n끊었다\n'\n는\n \n확실한\n \n인지입니다\n.\n \n젠레스\n \n존\n \n제로에서\n \n회피\n \n시\n \n배경을\n \n흑백으로\n \n전환하거나\n,\n \n패링\n \n시\n \n카메라를\n \n줌인하여\n \n유저에게\n \n공격\n \n주도권이\n \n넘어왔음을\n \n알리는\n \n연출은\n \n유저에게\n \n강력한\n \n성공\n \n경험을\n \n즉각적으로\n \n전달합니다\n.\n \n저는\n \n이러한\n \n시각적\n \n강조가\n \n유저의\n \n몰입도를\n \n결정짓는\n \n핵심\n \n요소라고\n \n생각합니다\n.\n \n둘째 , 자원 관리를 통한 공격적인 전투 루프 유도입니다 . 액션 게임의 재미는 공격과 방어의 \n선택에서\n \n옵니다\n.\n \n젠레스\n \n존\n \n제로가\n \n일반\n \n패턴에서\n \n패링\n \n횟수를\n \n6\n회로\n \n제한하고\n,\n \n이를\n \n콤보\n \n시스템으로\n \n회복하게\n \n만든\n \n설계는\n \n매우\n \n인상적이었습니다\n.\n \n이는\n \n방어적\n \n플레이를\n \n지양하고\n \n공격을\n \n해야\n \n방어\n \n자원을\n \n얻는\n \n공격적\n \n리스크\n \n관리를\n \n유도합니다\n.\n \n저는\n \n이처럼\n \n시스템\n \n간의\n \n유기적\n \n연결을\n \n통해\n \n유저의\n \n플레이\n \n스타일을\n \n설계하는\n \n기획을\n \n지향합니다\n.\n \n셋째 , 전략적 변곡점을 만드는 그로기 시스템의 최적화입니다 . 제가 생각하는 가장 \n이상적인\n \n전투\n \n루프는\n \n학습\n-\n누적\n-\n폭발의\n \n과정입니다\n.\n \n회피를\n \n통해\n \n적의\n \n패턴을\n \n학습하며\n \n공격하여\n \n그로기\n \n게이지를\n \n누적시키고\n,\n \n결정적인\n \n순간에\n \n패링으로\n \n게이지를\n \n폭발시켜\n \n확실한\n \n공격\n \n턴을\n \n획득하는\n \n구조입니다\n.\n \n이\n \n과정에서\n \n유저는\n \n단순\n \n조작을\n \n넘어\n \n전략적\n \n성취감을\n \n느낍니다\n.\n \n플레이어의 즐거움을 설계하는 기획자로서 , 감각적인 액션 연출과 치밀한 시스템 설계를 \n결합하여\n \n유저의\n \n기대를\n \n뛰어넘는\n \n최적의\n \n전투\n \n경험을\n \n만들겠습니다\n.\n \n 유저의 기대를 넘어서는 색다른 재미를 설계하는 핵심 기획자가 \n되겠습니다\n.\n 저는 유저에게 단순한 재미를 넘어 , 일상을 환기하는 예상치 못한 즐거움을 선사하는 것이 \n게임의\n \n가장\n \n큰\n \n가치라고\n \n믿습니다\n.\n \n특히\n \n누구보다\n \n서브컬처\n \n장르를\n \n깊이\n \n탐구하며\n \n쌓아온\n \n분석력은\n,\n \n빠르게\n \n변하는\n \n시장\n \n트렌드\n \n속에서\n \n우리\n \n회사만의\n \n차별화된\n \n콘텐츠를\n \n발굴하는\n \n강력한\n \n엔진이\n \n될\n \n것입니다\n.\n \n\n--- page 3 ---\n입사 후 , 다음과 같은 단계로 성장하겠습니다 . 단기적으로 회사와 게임의 철학을 깊이 체화하겠습니다 . 신입으로서 기존의 성공적인 \n시스템\n \n구조를\n \n빠르게\n \n학습하고\n,\n \n견고하면서도\n \n확장성\n \n있는\n \n설계를\n \n뒷받침하는\n \n든든한\n \n기획자가\n \n되겠습니다\n.\n \n선배님들의\n \n노하우를\n \n빠르게\n \n흡수하여\n \n팀\n \n내에서\n \n가장\n \n신뢰할\n \n수\n \n있는\n \n소통\n \n창구가\n \n되겠습니다\n.\n 장기적으로는 유저에게 깊이 각인되는 장수 IP 의 토대를 닦겠습니다 . 아이돌마스터의 \n제작진처럼\n \n유저와\n \n두터운\n \n신뢰를\n \n쌓으며\n \n오랫동안\n \n사랑받는\n \n세계관을\n \n구축하고\n \n싶습니다\n.\n \n또한\n,\n \n기존의\n \n장르\n \n문법에\n \n얽매이지\n \n않고\n \n새로운\n \n시스템을\n \n제안했던\n \n개발자들처럼\n,\n \n저\n \n또한\n \n새로운\n \n장르를\n \n개척하여\n \n전\n \n세계\n \n유저들에게\n \n'\n기획자\n \n박민규\n'\n만의\n \n독창적인\n \n색깔을\n \n증명해\n \n보이겠습니다\n.\n 단순히 유행을 모방하는 것이 아니라 , 짧은 플레이 시간에도 유저의 마음을 관통하는 \n강렬한\n \n경험을\n \n설계하겠습니다\n.\n \n혁신적인\n \n도전을\n \n두려워하지\n \n않고\n,\n \n유저들에게\n \n잊지\n \n못할\n \n즐거움을\n \n선사하는\n \n핵심\n \n기획자로\n \n성장하겠습니다\n.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규_자기소개서_2차.txt",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-a7defbf7fafb",
+    "date": "2026-05-03",
+    "endDate": "",
+    "weekIndex": 21,
+    "phase": "career_preparation",
+    "sourceDomain": "career_feedback",
+    "severity": "stable",
+    "title": "2차 취업 문서 피드백",
+    "summary": "﻿# 박민규 ## 이력서 ### 종합 판단 서브컬처 지향은 보입니다. 게임 기획 경험의 객관적 근거는 약합니다. ### 개선사항 #### 1. 기획 근거 약함 ```text \"학과 대표\" ``` - 활동 경험은 보입니다. - 학과 대표 경험은 일정 조율이나 의견 조율 경험으로 연결할 수 있습니다. - 다만 게임 기획 직…",
+    "detail": "﻿# 박민규\n\n## 이력서\n\n### 종합 판단\n\n서브컬처 지향은 보입니다.\n게임 기획 경험의 객관적 근거는 약합니다.\n\n### 개선사항\n\n#### 1. 기획 근거 약함\n\n```text\n\"학과 대표\"\n```\n\n- 활동 경험은 보입니다.\n- 학과 대표 경험은 일정 조율이나 의견 조율 경험으로 연결할 수 있습니다.\n- 다만 게임 기획 직무와 연결하려면 프로젝트 안에서 어떤 조율을 했는지가 함께 보이는 편이 좋습니다.\n\n<br><br>\n\n## 자기소개서\n\n### 종합 판단\n\n서브컬처 애정은 강하게 남습니다.\n다만 취향 설명이 길어 기획 판단이 늦게 보입니다.\n\n### 좋은 점\n\n#### 1. 취향에서 분석으로 이어진 경험\n\n```text\n\"젠레스 존 제로의 전투 연출과 시스템에 깊은 인상을 받아 캐릭터 한 명의 전투 역기획서를 포트폴리오로 제작하기도 했습니다.\"\n```\n\n- 취향이 실제 분석 행동으로 이어졌습니다.\n- 전투 기획 방향과 연결되는 지점은 매력적입니다.\n\n### 개선사항\n\n#### 1. 취향 목록 과다\n\n```text\n\"아이돌마스터 시리즈, FGO, 소녀전선, 프린세스 커넥트, 우마무스메, 승리의 여신 니케\"\n```\n\n- 게임 목록이 길게 제시됩니다.\n- 기획 역량보다 취향 소개로 읽힐 수 있습니다.\n\n## 결론\n\n`서브컬처 감각을 가진 전투/콘텐츠 기획자`로 보일 수 있습니다.\n취향보다 분석 기준이 먼저 보이면 더 강해집니다.",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "reflection",
+      "resilience",
+      "self_regulation"
+    ],
+    "sourceLabel": "박민규.md",
+    "isEstimatedDate": false
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-02-12",
+    "kind": "지각",
+    "detail": "지각 (연락 X)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-03-03",
+    "kind": "지각",
+    "detail": "지각 (QR 실수)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-06",
+    "kind": "결석",
+    "detail": "결석 (늦잠)",
+    "severity": "warning",
+    "category": "behavioral",
+    "impact": "behavioral"
+  }
+]

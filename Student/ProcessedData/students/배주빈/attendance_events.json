@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2025-12-08",
+    "kind": "지각",
+    "detail": "지각",
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-01-28",
+    "kind": "휴가",
+    "detail": "휴가 (행사 참여)",
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-25",
+    "kind": "공가",
+    "detail": "공가 (병가)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

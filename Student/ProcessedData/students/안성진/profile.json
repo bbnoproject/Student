@@ -1,0 +1,14 @@
+{
+  "studentId": "안성진",
+  "name": "안성진",
+  "phone": "010-3035-7206",
+  "gender": "남",
+  "birthDate": "1998-04-20",
+  "education": "영남대학교 컴퓨터공학과",
+  "experience": "게임기획 1년",
+  "address": "서울특별시 관악구 신림동 1631-22 102호",
+  "specialNote": "",
+  "attendanceMemo": "",
+  "cohort": "기획4기",
+  "course": "게임 기획 부트캠프"
+}

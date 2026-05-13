@@ -1,0 +1,34 @@
+[
+  {
+    "date": "2026-02-13",
+    "kind": "휴가",
+    "detail": "휴가 (할머니 간병)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  },
+  {
+    "date": "2026-03-10",
+    "kind": "공가",
+    "detail": "공가 (예비군)",
+    "severity": "info",
+    "category": "administrative",
+    "impact": "exempt"
+  },
+  {
+    "date": "2026-03-23",
+    "kind": "지각",
+    "detail": "지각 (늦잠)",
+    "severity": "caution",
+    "category": "behavioral",
+    "impact": "behavioral"
+  },
+  {
+    "date": "2026-05-04",
+    "kind": "휴가",
+    "detail": "휴가 (할머니 간병)",
+    "severity": "info",
+    "category": "health",
+    "impact": "contextual"
+  }
+]

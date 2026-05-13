@@ -1,0 +1,14 @@
+{
+  "studentId": "김태환",
+  "name": "김태환",
+  "phone": "010-8890-9894",
+  "gender": "남",
+  "birthDate": "1998-04-18",
+  "education": "건국대학교 컴퓨터공학",
+  "experience": "",
+  "address": "서울특별시 강동구 성안로 13길 59, 406호",
+  "specialNote": "",
+  "attendanceMemo": "",
+  "cohort": "기획4기",
+  "course": "게임 기획 부트캠프"
+}
