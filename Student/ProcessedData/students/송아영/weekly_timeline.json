@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "제가 좋아하는 일과 관련된 일에 종사하고 싶습니다. 나는 비전공이니까, 할 수 있는 것 부터 해야지! 하고 시나리오 라이터를 목표로 했는데요. 시나리오 라이터도 많은 것들을 알고 있어야 되더라고요. 그래서 신청하게 되었습니다.",
         "severity": "info",
         "date": "2025-11-03"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "10년 동안 아래에서 굴렀으니,아래에서만 굴러도 좋아하는 일에서 구르는게 좋지않을까… 전공도 창의력도 하나도 못 살리던 인생.참지 않기로 했습니다!",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "참여는 활발하나 성취도는 평범한 편.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

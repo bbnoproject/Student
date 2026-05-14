@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "지금까지 다양한 게임을 플레이하며 자연스레 게임 기획자에 대한 관심이 깊어졌습니다. 하지만 독학으로는 한계를 느껴, 기초부터 실무까지 체계적으로 배우고 싶고, 다양한 협업 과정을 경험해 보고 싶어 이 과정에 참여하게 되었습니다.",
         "severity": "info",
         "date": "2025-10-19"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임 기획자라는 길을 도전해 보고 싶어서 이번 프로그램에 지원하게 되었습니다. 이번 과정을 겪으면서 여러 가지 경험도 해보고 많이 배워서 정말 재미있는 게임을 만드는 좋은 기획자가 되고 싶습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "성취도 양호.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -66,11 +80,11 @@
         "selfRegulation": 1,
         "engagement": 1,
         "collaboration": 3,
-        "resilience": 2,
+        "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -282,7 +296,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
+        "summary": "전반적으로 안정적인 성장 흐름",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -295,12 +309,12 @@
         "selfRegulation": 4,
         "engagement": 4,
         "collaboration": 3,
-        "resilience": 2,
+        "resilience": 3,
         "reflection": 3,
         "careerAgency": 3
       },
       "confidence": "High",
-      "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
+      "note": "전반적으로 안정적인 성장 흐름"
     }
   },
   {
@@ -478,7 +492,7 @@
         "selfRegulation": 3,
         "engagement": 3,
         "collaboration": 2,
-        "resilience": 1,
+        "resilience": 2,
         "reflection": 4,
         "careerAgency": 3
       },

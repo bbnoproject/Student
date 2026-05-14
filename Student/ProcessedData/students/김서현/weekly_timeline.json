@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "저는 20년도에 대학을 졸업하고, 졸업시기에 맞춰 코로나19의 발생으로 취업의 문이 좁아졌습니다. 가정형편상 오랜기간 구직활동을 할 수 없었기에 게임 기획자의 꿈을 잠시 내려놓고, 사회의 경험을 쌓게 되었습니다. 그럼에도 저는 꿈을 포기하지 않고,…",
         "severity": "info",
         "date": "2025-12-02"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "기획 포트폴리오를 혼자 준비하는 막연함을 떨치고 싶어서 이 과정에 들어오게 되었습니다. 대학에서 게임을 전공했고, 게임을 단순히 좋아하는 걸 넘어 이전 전공 과정을 체계적으로 되새김질하고 최신 기획 트렌드와 현업의 노하우를 함께 배우고 싶다는 갈증이…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "성취도와 참여도 높고, 소통도 양호함. 다만 에고가 어느 정도 있는 편.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

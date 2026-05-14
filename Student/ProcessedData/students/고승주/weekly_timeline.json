@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "평소 즐겨보던 유튜브\"G식백과\"를 통해 본 프로그램에 대한 인지는 전부터 있었습니다. 게임과는 상관없는 업계에서 커리어를 시작하여 일을 배울수록 해당 업계 및 적성에 대한 회의가 생겼고, 그 결과 게임업계에 대한 커리어 전환을 목표로 하게 되었습니다…",
         "severity": "info",
         "date": "2025-10-13"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "좋아하는 일이 직업이 되면 더 좋은 삶이 될 거 같아서 과정을 신청하게 됐습니다. 이번 기회를 통해 그럴싸한 게임업계 종사자로 전직해보고 싶습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "친절함",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

@@ -1,5 +1,23 @@
 [
   {
+    "eventId": "ev-cf99dd6fad98",
+    "date": "",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "course",
+    "sourceDomain": "staff_profile",
+    "severity": "stable",
+    "title": "운영진 학생 정보 기록",
+    "summary": "총평 🔖 (업데이트 날짜 : ) Good 날짜 - 내용 Bad 날짜 - 내용 💡특이 사항 날짜 - 내용 💻 Zep 날짜 - 내용 💬 DM 날짜 - 내용 12/2",
+    "detail": "총평\n🔖 (업데이트 날짜 : )\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n날짜 - 내용\n💻 Zep\n날짜 - 내용\n💬 DM\n날짜 - 내용\n12/2",
+    "constructs": [
+      "collaboration",
+      "engagement"
+    ],
+    "sourceLabel": "한가영 2be1c30b8ab381f39a03fd614e0f46ee.html",
+    "isEstimatedDate": false
+  },
+  {
     "eventId": "ev-3dec2444dd1d",
     "date": "2025-10-21",
     "endDate": "",
@@ -324,6 +342,23 @@
       "self_regulation"
     ],
     "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-f6aa39d4af48",
+    "date": "2026-01-09",
+    "endDate": "",
+    "weekIndex": 5,
+    "phase": "course",
+    "sourceDomain": "management_status",
+    "severity": "caution",
+    "title": "과정이탈 기록",
+    "summary": "노답",
+    "detail": "유형: 제적 처리\n사유: 노답\n기타: \n출석 일수: ",
+    "constructs": [
+      "engagement"
+    ],
+    "sourceLabel": "이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
     "isEstimatedDate": false
   }
 ]

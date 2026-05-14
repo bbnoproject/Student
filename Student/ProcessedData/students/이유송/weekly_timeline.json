@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "30대의 저는 영화기획자가 되기 위해 고군분투했지만 원하는 목표에 도달하지 못했습니다. 30대 후반에 다시 제 인생과 진로를 되돌아보게 되었습니다. 그 과정에서 결국 제가 하고싶은 일은 스토리를 만드는 창작자가 되고싶다는걸 다시 확인했습니다. 이제는…",
         "severity": "info",
         "date": "2025-11-21"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "영화 기획개발 하다가 제 세계관을 더 넓은 매체로 확장하고 싶어 게임 기획에 도전하게 되었습니다. 장기적인 목표는 인디게임을 직접 기획 제작하는 것이며, 이번 과정에서 그 기반을 제대로 쌓고 싶습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "본인의 역량이 많이 부족하다고 생각하고 있음. 그래도 소통이 원활하고, 성격도 유한 것으로 확인됨.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -457,7 +471,7 @@
         "selfRegulation": 3,
         "engagement": 3,
         "collaboration": 2,
-        "resilience": 3,
+        "resilience": 2,
         "reflection": 4,
         "careerAgency": 3
       },

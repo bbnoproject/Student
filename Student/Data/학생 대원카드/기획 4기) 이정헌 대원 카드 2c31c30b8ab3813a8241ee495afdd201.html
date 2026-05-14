@@ -1,0 +1,771 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>기획 4기) 이정헌 대원 카드</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2c31c30b-8ab3-813a-8241-ee495afdd201" class="page sans"><header><h1 class="page-title" dir="auto">기획 4기) 이정헌 대원 카드</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>취미</th><td><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-pink">고양이</span><span class="selected-value select-value-color-green">산책</span><span class="selected-value select-value-color-orange">운동 </span><span class="selected-value select-value-color-orange">추론</span></td></tr><tr class="property-row property-row-status"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/burst_gray.svg" style="width:14px;height:14px;display:block"/></span>상태</th><td><span class="status-value"><div class="status-dot"></div>시작 전</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2c31c30b-8ab3-8142-8af5-c29076818fc1"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8160-97b9-dc80c73805a1" class="">많은 순간에 이성적이고 합리적인 사람이 되려 노력하고 있습니다.</p></div></div></figure></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8145-9b93-dcc72be62cd2" class="">🧐 나를 가장 잘 표현한 사진<strong>*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8194-9311-efbd9abdb547" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-810a-866c-fcf0296cbeda" class="image"><a href="image%2012.png"><img style="width:240px" src="image%2012.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8143-88d2-d1287701bc0f" class="">음… 사진을 잘 안 찍기도 하고, 제 사진은 거의 없어서 옛날 사진 밖에 없네요…</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8140-874b-e261e44627ff" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8171-9029-de7ef2a3983f" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81ab-9fe4-d682b25c5fee" class="">🎯 <strong>과정을 들어오게 된 계기와 포부*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81d8-85e2-db052b5e4ab9" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8181-9411-e1df6eadeef9" class=""> 직전회사를 다니며 ‘아 이렇게 회사를 다녀서는 안되겠다.’  <strong>‘나는 결국 내가 하고 싶은걸 따라가야 하는 사람이구나.’</strong> 하는 생각이 들어서 내가 뭘 잘하는지 뭘 하고싶은 지에 대해서 많이 고민해 보았습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-814c-a3b8-ef42a87f2194" class=""> 평소 하고싶은것을 찾아야겠다 라는 막연한 생각을 갖고는 있었으나 구체적으로 뭘 해야 할지 모르겠던 차에 스스로를 돌아보고 스스로에게 많은 질문을 해가며(대개는 GPT를 통한 스스로의 문답이 되었지만) 최종적으로는 기획직무에 대해서 흥미를 갖게 되었습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81db-af49-c8f5dfbd547f" class=""> 어릴적에 기획이라는 업무에 대해서 잠깐 생각해 보았을 때는, 그냥 단순히 ‘아이디어를 내는 사람’이라고만 생각을 했어서 큰 흥미가 없었는데, 다시 이 시점에 흥미를 갖고 겪었던 경험들을 통해 되돌아보니 그럴수가 없다는 생각이 들었습니다. 단순히 아이디어만 내는 직업이 존재할리가 없으니까요.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-810d-b443-ddb3e0123e48" class=""> 하지만 기획이라는 업무는 버젓히 존재하는데, 그럼 이 직무는 도대체 무엇을 하는 걸까 생각해보았습니다. 아마 <strong>좋은 아이디어를 구체화하는, 일종의 설계 도면을 만드는 작업</strong>을 하겠구나. 그럴려면 이 <strong>도면을 보고 작업을 하는 사람들도 조율</strong>해줘야 할 수도 있겠고 하는 생각이 들었습니다. 그렇다면 기획직무는 비슷하다고 가정하면 결국에는 도메인에 따라 갈리는 것이 아닐까? 하는 생각에, 그럼 내가 <strong>좋아하고, 흥미있어 하는 분야</strong>로 가야겠다 싶어서 게임분야의 기획쪽으로 방향을 잡게 되었습니다. 과정 참여 전 매니저님과의 면담을 통해 제 생각이 크게 틀리지 않았음을 확신하게 되자, 다행이라는 생각이 들었습니다. 왜냐하면 대개는 새로운 직무에 대한 생각을 할 때 예상과 다른 경우가 빈번하게 발생하니까요.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-817e-9a4d-e78c92a64464" class=""> 그러던 차에 정말 우연히도 광고를 보게 되었는데, 제가 사는 곳은 오프라인을 통한 교육이 거의 없고 온라인도 잘 없었기에 온라인을 통해서도 진행할 수 있다는 것을 보고 망설임 없이 지원했습니다. </p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8163-bfd8-e71261470f59" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8138-baf1-e20d1b942fad" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8149-b346-faa5108ddfc0" class="">😄 <strong>간단한 자기소개*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a7-a9da-cccf888b4879" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-81ee-be89-e1e29bb01cb8" class="image"><a href="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-12-03_213053.png"><img style="width:537.96875px" src="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-12-03_213053.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81dc-83fc-da74ee6dc744" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8141-aed5-cb68de7467ec" class=""> 무색, 무취, 무미.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81e0-a040-cbde5dc1ce7b" class="">실제로 취향이 없진 않겠습니다만… 아마 제 스스로 평가하기에 이런 느낌이라고 생각합니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81be-afd5-cf8f1b6860a7" class="">이런 부분들이 다양한 여러사람과 무리없이 어울리는데 충분한 장점으로 작용할 것 같아요.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-810c-a0db-ceb331ef8b88" class="">🔍 <strong>나의 강점과 약점 *</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8148-8925-d30ad4132527" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c2-9dc5-dd4ac0eac16c" class=""> 평소에 <strong>생각이 많은 </strong>편이고, 그에 따라 되게 많은 부분에 대해서 <strong>‘왜?’에 대한 의문</strong>을 갖는것 같은데 이 부분이 기획분야에 대한 강점이 될 것이라 생각합니다. 또한 짧게나마 <strong>중간관리자를 해 보았고</strong>, 부서나 업체간 <strong>조율을 해본 경험</strong>이 있기에 해당 부분들에 대해서 조금 더 잘 대처할 수 있을 것이라 생각하고 있습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-819c-9d69-f46911836e70" class=""> 약점으로는 생각이 많다보니 이를 <strong>문서화 하는게 어렵다</strong>고 느껴졌습니다. 해당 부분에 대해서는 경험이 많지 않다보니, 특히 <strong>‘어디서 어떤 정보를 빼면서도 타인을 납득시킬 수 있는가?’</strong>에 대해서 조금 어렵다고 느꼈습니다. </p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a6-a427-fa0b952a4152" class=""> 다른 하나는 스스로 생각하기에 스트레스에 좀 취약한 것 같습니다. 평소에 크게 스트레스를 받진 않는 것 같은데, 누적된 스트레스가 어떤 임계점을 넘어가면 급속도로 흔들리는 경향이 있는 것 같습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a0-a96f-c393a0cbdaec" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8124-8d6d-cf0406f76767" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8130-98f2-e8bfeb14b51d" class="">💬 <strong>협업 스타일/협업 시 팀원에게 바라는점</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8169-aabe-d4660ac67d56" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81db-9f17-e7f48c47158e" class=""> 대부분의 경우에서<strong> ‘다 같이 잘 진행해보자.’</strong> 이고, </p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81d6-89d9-f74cdda880bc" class="">적극적이지만 <strong>자기의 의견만을 고집하지 않는</strong> 사람이 좋습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8156-a239-d94e801258eb" class="">적극적인 면모는 제 경험상 협업시의 좋은 원동력이 되고, 자기의견만 고집하지 않는 부분은 그 그룹이 매끄럽게 굴러갈 수 있는 윤활 역할을 하기 때문이라 생각합니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81f7-9ab0-e3cba4b3eaaf" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-814b-b05a-c4f9584e8968" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81da-9cae-fc8706c28b5c" class="">💻 <strong>관심 있는 기술 스택 / 배우고 싶은 분야</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-811c-be33-e44ff91455a6" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-814e-9f83-cc6b9e862acf" class="">  기획에 대한 얕은 공부를 조금 진행해 보았을 때는, 시스템 기획에 대한 흥미가 가장 컸던 것 같습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-811a-98c2-e6114669a48d" class=""><strong>시스템 기획을 기반으로 옆의 여러 분야 들을 얕고 넓게</strong> 배우는 방향을 생각하고 있습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8183-9314-eb44fd4a3f22" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-815e-92b3-d2255119de90" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8110-869d-f940c80caba7" class="">🚀 <strong>과정에서 이루고 싶은 목표*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81b0-9cd0-f1c1a476f7dc" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81f0-9d50-ff5edca96215" class=""> 무사히 수료하고, 직군 내에서 잘 안착하는 것</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8164-933f-e94a29ef5ccb" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81d9-b3fa-d738565d3324" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81e6-9892-f3ee80b712a8" class="">✏️ <strong>나를 표현하는 한마디 / 좌우명*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8125-a160-f44a7f551fc3" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8189-a418-fcfa43291f1d" class="">‘세상은 평면이 아니라 입체고, 사람과 상황 또한 마찬가지다. 내가 알고, 본 모든 것이 전부는 아니다.’</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8157-ae8a-cfa0e73fac61" class="">문장 그대로 보고 알고 있는 게 전부 일수도 있지만, 아닐 수도 있겠죠? </p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81f2-9ac6-d6bb7625ba1c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81cb-8227-dc54bc9a29f5" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81f0-92e9-d76f2059867d" class="">🎲 <strong>TMI 모든 것 가능 /</strong> <strong>내가 좋아하는 것들 (음식/영화/게임/</strong>자랑<strong> 등)</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81be-8531-f38d4d38d495" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-813e-8b41-cbf778cb5ef9" class=""> 게임? 고양이? 탄산음료? 극동적인것? 극정적인것?</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8129-ab31-dfe86edb227f" class="">그때 그때 흥미를 따라가서 그런가 음… 딱히 떠오르는게 없네요…</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81d4-8259-d8c6a6caca35" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8171-9cd3-fa3d8329bc1e" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8135-8ab0-f5f6b987921e" class="">🎓 <strong>과정 수료 후 나의 모습 상상</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-814b-a491-c2c8f559cfbd" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-814a-95f4-ea00ae416d85" class="">해당 직군 내에 있으면서 저의 팀이나, 혹은 저와 같이 열정적으로 일 할 수 있는 동료가 있었으면 좋겠습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c8-bd58-defb42005813" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

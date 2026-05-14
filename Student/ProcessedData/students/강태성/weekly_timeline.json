@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "순전히 우연이었습니다. 인터넷에 뜬 광고를 보아 신청을 하긴 했는데 직원분과 통화하며, 또 직접 알아보며 이번 과정에 대해 살펴보니 생각보다 좋은 기회라 여겨 참여를 희망하게 된것 같습니다.",
         "severity": "info",
         "date": "2025-11-12"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임컨텐츠학과에서 기획 과정을 전공했지만 대 다수의 수업 내용이 이론에 대한 부분이었습니다. 이로 인해, 실전에 대한 갈증이 느껴져 조별 과제 등을 통하여 이를 해소하고자 했지만 대부분 프로토타입 단계에서 끝날 뿐 생각만큼 좋은 결과가 나오진 않았던…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "조용히 우직하게 일하는 타입이나, 라포르가 쌓이면 말이 많아지는 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 2
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

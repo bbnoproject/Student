@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "게임 업계의 직무를 알아보면서 게임 기획자에 대해 알게 되었습니다. 게임을 분석하고 장기적인 시각으로 설계하는 게임 기획자가 되고 싶습니다. 혼자 준비하고 공부하는 과정에서 한계를 느끼며 전문가의 강의와 피드백을 받고자 훈련 교육을 신청하였습니다.",
         "severity": "info",
         "date": "2025-11-21"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임을 좋아하지만 잘하지는 못해서 매번 찾아보기만 했습니다. 게임은 막연히 취미생활로 여기며 관련 직무로는 개발이나 프로게이머 정도로만 생각했었습니다. 취준을 하며 게임 직무의 다양성과 게임을 제작하는 것이 개발자에 국한되지 않음을 깨달으며 도전하게…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "에고가 강한 사람들 사이에서 소통을 잘하는 편. 항상 따뜻한 인원(?)",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -276,7 +290,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "전반적으로 안정적인 성장 흐름",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -288,13 +302,13 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 4,
         "resilience": 3,
-        "reflection": 2,
+        "reflection": 3,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "회고 구조화 필요"
+      "note": "전반적으로 안정적인 성장 흐름"
     }
   },
   {

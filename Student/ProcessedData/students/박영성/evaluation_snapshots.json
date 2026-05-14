@@ -6,12 +6,12 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 3,
       "reflection": 2,
       "career_agency": 4
     },
-    "confidence": "Low",
+    "confidence": "Medium",
     "note": "자기조절 지원 필요"
   },
   {
@@ -21,7 +21,7 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 4,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 3,
       "career_agency": 4

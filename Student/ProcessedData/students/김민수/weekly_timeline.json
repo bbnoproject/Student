@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "운좋게 취업에 성공하며 자만하며 시간을 지내왔는데, 배움이 부족하다고 생각이 되어 지원하게 되었습니다. 부트캠프의 커리큘럼이 제가 부족하다고 느낀 가려운 부분을 긁어줄 수 있다고 생각하게 되어 신청하게 되었습니다.",
         "severity": "info",
         "date": "2025-10-18"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "혼자서 취업 준비를 해왔지만 취업 준비 전 그 자리에 멈춰 있다는 생각이 들었습니다. 그래서 본 과정을 통해 새로운 분야를 학습하며 더 나아가기 위해 과정을 신청하게 되었습니다. 과정을 통해 배운 지식을 통해 쓸만한 기획자로 거듭나 울림 있는 게임을…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "게임 기획자가 되기 위한 준비를 많이한 편. 발표, 대화 스타일 양호.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -68,9 +82,9 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -272,10 +286,10 @@
       "scores": {
         "selfRegulation": 2,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"

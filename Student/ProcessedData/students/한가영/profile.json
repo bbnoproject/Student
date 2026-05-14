@@ -10,5 +10,56 @@
   "specialNote": "",
   "attendanceMemo": "",
   "cohort": "기획4기",
-  "course": "게임 기획 부트캠프"
+  "course": "게임 기획 부트캠프",
+  "managementStatus": "이탈",
+  "dropoutInfo": {
+    "sourceFile": "학생 정보/이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
+    "type": "제적 처리",
+    "reason": "노답",
+    "date": "2026-01-09",
+    "attendanceDays": "",
+    "joinedAt": "",
+    "note": "",
+    "traits": "경제문제, 교우관계문제, 멘탈문제, 불안형, 소통문제, 우울증, 자신감부족",
+    "gamePreference": ""
+  },
+  "staffProfile": {
+    "sourceFile": "학생 정보/한가영 2be1c30b8ab381f39a03fd614e0f46ee.html",
+    "title": "한가영",
+    "properties": {
+      "유형": "제적 처리",
+      "이탈 사유": "노답",
+      "이탈 일자": "2026년 1월 9일",
+      "게임 선호": "",
+      "부정적관계": "",
+      "특징": "경제문제 교우관계문제 멘탈문제 불안형 소통문제 우울증 자신감부족"
+    },
+    "summary": "",
+    "traits": [
+      "경제문제",
+      "교우관계문제",
+      "멘탈문제",
+      "불안형",
+      "소통문제",
+      "우울증",
+      "자신감부족"
+    ],
+    "positiveRelations": [],
+    "negativeRelations": [],
+    "sections": {
+      "본문": "한가영\n한가영\n유형\n제적 처리\n이탈 사유 노답\n이탈 일자 2026년 1월 9일\n게임 선호\n부정적관계\n특징 경제문제 교우관계문제 멘탈문제 불안형 소통문제 우울증 자신감부족",
+      "총평": "🔖 (업데이트 날짜 : )",
+      "Good": "날짜 - 내용",
+      "Bad": "날짜 - 내용\n💡특이 사항\n날짜 - 내용\n💻 Zep\n날짜 - 내용\n💬 DM\n날짜 - 내용\n12/2"
+    },
+    "fullText": "한가영 \n 한가영 \n \n \n \n 유형 \n \n 제적 처리 \n \n 이탈 사유 노답 \n \n 이탈 일자 2026년 1월 9일 \n \n 게임 선호 \n \n 부정적관계 \n \n 특징 경제문제 교우관계문제 멘탈문제 불안형 소통문제 우울증 자신감부족 \n \n \n \n \n \n 🔖 총평(업데이트 날짜 : ) \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 👍 Good \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 👎 Bad \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💡특이 사항 \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💻 Zep \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💬 DM \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n 12/2"
+  },
+  "cadetCardSummary": {
+    "sourceFile": "",
+    "status": "",
+    "hobbies": "",
+    "intro": "",
+    "motivation": "",
+    "goal": ""
+  }
 }

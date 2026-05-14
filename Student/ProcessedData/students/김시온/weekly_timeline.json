@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "최근 GameAIfy에서 주최한 AI 에셋 활용 게임잼에 참여하면서, AI가 게임 기획 작업의 효율을 크게 높일 수 있다는 것을 체감했습니다. 특히 현업 기획자 분께 멘토링을 받으며 GPT-머메이드를 활용해 스크립트 구조도와 관계도를 정리해 보니,…",
         "severity": "info",
         "date": "2025-11-16"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "GameAIfy 공모전에서 직접 게임을 만들어본 후 기획자로서 문서 작성 능력이 부족하고, 게임 시스템 짜는 걸 공부해야겠다는 생각이 들어 들어오게 됐습니다! 이전에도 필요성은 느꼈지만 기획을 혼자 공부하는 게 쉽지 않더라고요. 같이 성장하고 게임…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "게임 잼 참가 경험 다수. 열심히 하는 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -68,9 +82,9 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -283,7 +297,7 @@
         "collaboration": 4,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -452,7 +466,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 2
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"

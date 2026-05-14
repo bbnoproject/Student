@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "제가 기획하고 만들어서 게임을 출시해보고 싶어서 이 부트캠프를 신청했는데요, 타학원에 비해 Ai와 기획이 일부 포함된다는 점과 커리큘럼도 재미있게 배울 수 있어보였습니다. 또, 실무에서는 어떻게 하고 있는데 궁금했는데 그부분도 해결해줄 것으로 보였습…",
         "severity": "info",
         "date": "2025-10-23"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "영상을 제작하는 곳에서 영상제작에 일부를 맡았다가 게임제작쪽으로 이직을 하려고 했는데, 이제 제작보다는 기획을 해보고 싶어서 기획과정에 참여하게 되었습니다!!!! 개강일까지 열심히 놀다가 해야지 했는데 이렇게 오티가 있다는 것을 알게되어 부랴부랴 준…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "아직 갈피를 잡지 못한 인원",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -68,9 +82,9 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -274,7 +288,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "전반적으로 안정적인 성장 흐름"
@@ -442,7 +456,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "도전 대응 지원 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -455,12 +469,12 @@
         "selfRegulation": 3,
         "engagement": 4,
         "collaboration": 2,
-        "resilience": 1,
+        "resilience": 2,
         "reflection": 4,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {

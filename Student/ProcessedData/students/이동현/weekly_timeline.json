@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "독학으로 기획 공부나 포트폴리오를 제작하고 있으나 실무 없이 만드는 탓에 너무 현실성이 없거나, 구조가 분명치 않거나, 가독성이 떨어지는 등의 문제가 인식되었습니다. 그렇기에 현업의 방식을 알기 위해 본 과정에 신청했습니다.",
         "severity": "info",
         "date": "2025-12-06"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "비전공자이고, 게임 개발 경험은 없고, 인턴으로 배워보려하니 포트폴리오가 필요하다고 합니다. 독학으로 해보려 했으나 가독성도 별로고 제 역량이 잘 드러나는지도 잘 모르겠어서, 본 강의를 신청했습니다. 다른 분들에 비해 아는 것도 적고 할 줄 아는 것…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "에고가 상당히 강한 편이나 운영진에 대한 신뢰가 있는 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -72,12 +86,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 2
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -279,10 +293,10 @@
       "scores": {
         "selfRegulation": 2,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
-        "reflection": 2,
-        "careerAgency": 4
+        "reflection": 3,
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -466,7 +480,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"

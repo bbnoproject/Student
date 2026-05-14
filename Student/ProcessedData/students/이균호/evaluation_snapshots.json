@@ -11,7 +11,7 @@
       "reflection": 2,
       "career_agency": 3
     },
-    "confidence": "Low",
+    "confidence": "Medium",
     "note": "자기조절 지원 필요"
   },
   {
@@ -24,7 +24,7 @@
       "collaboration": 3,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 3
+      "career_agency": 4
     },
     "confidence": "High",
     "note": "전반적으로 안정적인 성장 흐름"
@@ -39,7 +39,7 @@
       "collaboration": 2,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 4
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"

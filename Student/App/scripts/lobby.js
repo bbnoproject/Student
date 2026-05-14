@@ -9,12 +9,19 @@
     theme: App.getSavedTheme(),
     query: "",
     activeTag: "all",
+    managementStatus: "general",
     sortKey: "profile",
   };
 
   function filteredStudents() {
     const query = state.query.trim().toLowerCase();
     let students = [...App.rawData.students];
+
+    if (state.managementStatus === "general") {
+      students = students.filter((student) => !App.hasDropoutRecord(student));
+    } else if (state.managementStatus === "dropout") {
+      students = students.filter((student) => App.hasDropoutRecord(student));
+    }
 
     if (state.activeTag !== "all") {
       students = students.filter((student) => (student.derived?.tags || []).includes(state.activeTag));
@@ -62,6 +69,7 @@
 
   function renderLobbyStudentCard(student) {
     const primaryMeta = App.TAG_META[student.derived?.primaryTag] || App.TAG_META.steady_path;
+    const managementStatus = App.effectiveManagementStatus(student);
     return `
       <a class="student-tile" href="${App.studentPageHref(student.id)}">
         <div class="student-tile-head">
@@ -72,6 +80,7 @@
           <span class="status-badge ${App.toneClass(App.statusTone(student.stats?.currentStatus))}">
             ${App.escapeHtml(student.stats?.currentStatus || "-")}
           </span>
+          ${App.managementStatusBadge(managementStatus)}
         </div>
         <div class="pill-row">
           ${App.tagBadge(student.derived?.primaryTag)}
@@ -95,6 +104,7 @@
             <strong>${App.escapeHtml(String(student.stats?.projectSubmissionRate || 0))}%</strong>
           </div>
         </div>
+        <p class="tile-summary">관리 상태: ${App.escapeHtml(App.managementStatusLabel(managementStatus))}</p>
         <p class="tile-summary">${App.escapeHtml(primaryMeta.description)}</p>
       </a>
     `;
@@ -105,24 +115,21 @@
     const students = filteredStudents();
     const activeSort = App.SORT_OPTIONS[state.sortKey];
     const total = dashboard.studentCount || App.rawData.students.length;
+    const managedTotal = dashboard.managedStudentCount ?? App.rawData.students.filter((student) => !App.hasDropoutRecord(student)).length;
 
     return `
       <section class="hero-panel lobby-hero">
         <div class="hero-copy">
           <p class="eyebrow">Main Lobby</p>
           <h2>메인 로비 = 전체 학생 대시보드</h2>
-          <p>
-            학생 검색, 분류, 비교를 한 화면에서 진행합니다. 총점 줄세우기보다
-            현재 프로파일과 시간에 따른 성장 변화를 함께 보도록 설계했습니다.
-          </p>
+          <p>학생 검색, 분류, 비교를 한 화면에서 빠르게 확인합니다.</p>
         </div>
         <div class="hero-stats">
           ${App.metricCard("전체 학생", `${total}명`, "현재 분석 대상 전체 학생 수", "brand")}
-          ${App.metricCard("안정", `${dashboard.stableCount || 0}명`, "현재 상태가 안정으로 분류된 학생", "success")}
-          ${App.metricCard("주의", `${dashboard.cautionCount || 0}명`, "운영 관찰과 개입이 필요한 학생", "warning")}
-          ${App.metricCard("경고/집중 관찰", `${dashboard.warningCount || 0}명`, "즉시 확인이 필요한 학생", "danger")}
-          ${App.metricCard("진로 문서 진행", `${dashboard.studentsWithCareerDocuments || 0}명`, "이력서 또는 자기소개 학습 이력이 있는 학생", "violet")}
-          ${App.metricCard("마일스톤", `${dashboard.milestoneCount || App.rawData.milestones.length}단계`, "현재 페이지가 읽는 성장 구간 수", "mint")}
+          ${App.metricCard("관리 대상", `${managedTotal}명`, "이탈을 제외하고 현재 관리가 필요한 학생", "success")}
+          ${App.metricCard("일반", `${dashboard.generalCount || 0}명`, "일반 교육 운영 대상 학생", "mint")}
+          ${App.metricCard("취업", `${dashboard.employedCount || 0}명`, "취업 또는 채용 연계 확인 학생", "violet")}
+          ${App.metricCard("과정이탈", `${dashboard.dropoutCount || 0}명`, "관리 제외 상태지만 통계에 포함되는 학생", "neutral")}
         </div>
       </section>
 
@@ -133,6 +140,11 @@
             <h3>학생 필터와 정렬</h3>
           </div>
           <p class="panel-copy">${App.escapeHtml(activeSort.label)} 기준으로 정렬 중</p>
+        </div>
+        <div class="chip-filter-row">
+          <button type="button" class="filter-chip ${state.managementStatus === "general" ? "is-active" : ""}" data-management="general">일반 인원</button>
+          <button type="button" class="filter-chip ${state.managementStatus === "dropout" ? "is-active" : ""}" data-management="dropout">과정이탈 인원</button>
+          <button type="button" class="filter-chip ${state.managementStatus === "all" ? "is-active" : ""}" data-management="all">전체 인원</button>
         </div>
         <div class="chip-filter-row">
           <button type="button" class="filter-chip ${state.activeTag === "all" ? "is-active" : ""}" data-tag="all">전체</button>
@@ -203,6 +215,13 @@
   }
 
   document.addEventListener("click", (event) => {
+    const managementButton = event.target.closest("[data-management]");
+    if (managementButton) {
+      state.managementStatus = managementButton.getAttribute("data-management") || "general";
+      render();
+      return;
+    }
+
     const tagButton = event.target.closest("[data-tag]");
     if (tagButton) {
       state.activeTag = tagButton.getAttribute("data-tag") || "all";

@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "여러 부트캠프 후기를 찾아보고 비교했을 때 이 과정이 가장 체계적이고 실무 중심이라는 느낌을 받았습니다. 또한 앞으로는 AI를 활용할 줄 아는 기획자가 더욱 중요해질 것이라 판단해서 생성형 AI를 실제로 활용해보는 커리큘럼에 큰 매력을 느껴 참여하게…",
         "severity": "info",
         "date": "2025-11-20"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "대원카드가 작성되었습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "성취도 보통, 참여도는 다소 낮은 편으로 파악중.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

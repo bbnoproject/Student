@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "원래 게임 프로그래머를 목표로 취업 준비를 했었습니다. 하지만 결과가 원하는 대로 잘 나오지 않았습니다. 또한 포트폴리오를 위한 개인 작업물을 만드는 과정에서, 기획 능력이 없는 채로 게임을 만드는 것이 정말 힘들다는 것을 실감했습니다. 그래서 기획…",
         "severity": "info",
         "date": "2025-10-21"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임 서버 개발자가 되기 위해서 공부를 했었습니다. 그리고 깨달았습니다. 서버 개발자는 신입을 안 뽑는다는 걸. 계획했던 취업 준비 기간이 끝났기에 다른 일을 하고 살았습니다. 하지만 이루지 못한 목표는 저를 계속 따라다녔습니다. 다시 한 번 게임업…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "참여도는 미진하나, 팀을 잘 이끌고 있는 것으로 보임. 개인적으로 다른 작업들을 많이 준비하는 편.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -256,7 +270,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 1,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 4

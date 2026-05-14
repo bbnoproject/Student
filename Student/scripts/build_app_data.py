@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+import csv
 import json
 import math
 import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta
+from html import unescape
+from html.parser import HTMLParser
 from pathlib import Path
 from statistics import mean
 from typing import Any
@@ -140,6 +143,109 @@ def normalize_name(name: Any) -> str:
     return re.sub(r"\s+", "", str(name or "")).strip()
 
 
+class NotionTextExtractor(HTMLParser):
+    BLOCK_TAGS = {"p", "div", "li", "h1", "h2", "h3", "tr", "br", "summary"}
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.parts: list[str] = []
+        self.skip_depth = 0
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in {"style", "script"}:
+            self.skip_depth += 1
+        elif tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag in {"style", "script"} and self.skip_depth:
+            self.skip_depth -= 1
+        elif tag in self.BLOCK_TAGS:
+            self.parts.append("\n")
+
+    def handle_data(self, data: str) -> None:
+        if not self.skip_depth:
+            self.parts.append(data)
+
+    def text(self) -> str:
+        return clean_text(unescape(" ".join(self.parts)))
+
+
+def html_fragment_text(fragment: str) -> str:
+    parser = NotionTextExtractor()
+    parser.feed(fragment)
+    return parser.text()
+
+
+def html_file_text(path: Path) -> str:
+    parser = NotionTextExtractor()
+    parser.feed(path.read_text(encoding="utf-8", errors="ignore"))
+    return parser.text()
+
+
+def parse_notion_properties(raw_html: str) -> dict[str, str]:
+    properties: dict[str, str] = {}
+    for match in re.finditer(r"<tr class=\"property-row[^\"]*\">(.*?)</tr>", raw_html, flags=re.S):
+        row_html = match.group(1)
+        th_match = re.search(r"<th[^>]*>(.*?)</th>", row_html, flags=re.S)
+        td_match = re.search(r"<td[^>]*>(.*?)</td>", row_html, flags=re.S)
+        if not th_match or not td_match:
+            continue
+        key = html_fragment_text(th_match.group(1))
+        value = html_fragment_text(td_match.group(1))
+        if key:
+            properties[key] = value
+    return properties
+
+
+def page_title_from_html(raw_html: str, fallback: str) -> str:
+    match = re.search(r"<h1 class=\"page-title\"[^>]*>(.*?)</h1>", raw_html, flags=re.S)
+    if match:
+        return html_fragment_text(match.group(1))
+    title_match = re.search(r"<title>(.*?)</title>", raw_html, flags=re.S)
+    if title_match:
+        return html_fragment_text(title_match.group(1))
+    return clean_text(fallback)
+
+
+def match_student_from_text(value: str, students_by_name: dict[str, dict[str, Any]]) -> dict[str, Any] | None:
+    normalized = normalize_name(value).lower()
+    for key in sorted(students_by_name.keys(), key=len, reverse=True):
+        if key.lower() in normalized:
+            return students_by_name[key]
+    return None
+
+
+def split_notion_sections(text: str) -> dict[str, str]:
+    section_names = [
+        "총평",
+        "Good",
+        "Bad",
+        "과정을 들어오게 된 계기와 포부",
+        "간단한 자기소개",
+        "나의 강점과 약점",
+        "관심 있는 기술 스택 / 배우고 싶은 분야",
+        "과정에서 이루고 싶은 목표",
+        "스트레스 해소 방법",
+        "TMI",
+        "과정 수료 후 나의 모습 상상",
+    ]
+    lines = [clean_text(line) for line in text.splitlines() if clean_text(line)]
+    sections: dict[str, list[str]] = {}
+    current = "본문"
+    for line in lines:
+        matched = next((name for name in section_names if name in line), "")
+        if matched:
+            current = matched
+            sections.setdefault(current, [])
+            remainder = clean_text(line.replace(matched, ""))
+            if remainder and re.search(r"[0-9A-Za-z가-힣]", remainder):
+                sections[current].append(remainder)
+            continue
+        sections.setdefault(current, []).append(line)
+    return {key: clean_text("\n".join(value)) for key, value in sections.items() if clean_text("\n".join(value))}
+
+
 def phase_order_key(label: str) -> int:
     match = re.search(r"(\d+)", clean_text(label))
     return int(match.group(1)) if match else 999
@@ -226,6 +332,9 @@ def parse_date(value: Any) -> date | None:
         except ValueError:
             continue
     match = re.search(r"(\d{4})-(\d{2})-(\d{2})", text)
+    if match:
+        return date(int(match.group(1)), int(match.group(2)), int(match.group(3)))
+    match = re.search(r"(\d{4})\s*년\s*(\d{1,2})\s*월\s*(\d{1,2})\s*일", text)
     if match:
         return date(int(match.group(1)), int(match.group(2)), int(match.group(3)))
     return None
@@ -413,7 +522,10 @@ def build_students() -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
     for row in ws.iter_rows(min_row=2, values_only=True):
         name = clean_text(row[0])
         phone = clean_text(row[1])
+        has_student_details = any(clean_text(value) for value in row[1:9])
         if not name:
+            continue
+        if not has_student_details:
             continue
         student = {
             "id": slugify_name(name),
@@ -438,6 +550,10 @@ def build_students() -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
             "projectTeamHistory": [],
             "peerRelationships": [],
             "careerDocuments": {"rounds": [], "summary": {}},
+            "staffProfile": {},
+            "cadetCard": {},
+            "managementStatus": "일반",
+            "dropoutInfo": {},
             "evaluationSnapshots": [],
             "statusPeriods": [],
         }
@@ -630,6 +746,200 @@ def add_admission_data(students_by_name: dict[str, dict[str, Any]], course_start
                 "sourceLabel": "모집 결과.xlsx",
                 "relatedWeek": 0,
                 "isEstimated": True,
+            }
+        )
+
+
+def add_staff_student_info(students_by_name: dict[str, dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
+    base_dir = DATA_DIR / "학생 정보"
+    if not base_dir.exists():
+        return
+
+    for path in sorted(base_dir.glob("*.html")):
+        raw_html = path.read_text(encoding="utf-8", errors="ignore")
+        title = page_title_from_html(raw_html, path.stem)
+        student = match_student_from_text(f"{title} {path.stem}", students_by_name)
+        if not student:
+            continue
+
+        properties = parse_notion_properties(raw_html)
+        full_text = html_file_text(path)
+        sections = split_notion_sections(full_text)
+        staff_profile = {
+            "sourceFile": str(path.relative_to(DATA_DIR)).replace("\\", "/"),
+            "title": title,
+            "properties": properties,
+            "summary": properties.get("한줄평", ""),
+            "traits": [item for item in re.split(r"\s+", properties.get("특징", "")) if item],
+            "positiveRelations": [item for item in re.split(r"\s+", properties.get("긍정적관계", "")) if item],
+            "negativeRelations": [item for item in re.split(r"\s+", properties.get("부정적관계", "")) if item],
+            "sections": sections,
+            "fullText": full_text,
+        }
+        student["staffProfile"] = staff_profile
+        if properties.get("한줄평") and not student.get("specialNote"):
+            student["specialNote"] = properties["한줄평"]
+
+        detail = "\n\n".join(
+            filter(
+                None,
+                [
+                    f"한줄평\n{staff_profile['summary']}" if staff_profile["summary"] else "",
+                    f"총평\n{sections.get('총평', '')}" if sections.get("총평") else "",
+                    f"Good\n{sections.get('Good', '')}" if sections.get("Good") else "",
+                    f"Bad\n{sections.get('Bad', '')}" if sections.get("Bad") else "",
+                ],
+            )
+        )
+        student["timelineEvents"].append(
+            {
+                "id": f"staff-profile-{student['id']}",
+                "date": "",
+                "endDate": "",
+                "type": "staff_profile",
+                "severity": "info",
+                "title": "운영진 학생 정보 기록",
+                "summary": short_text(staff_profile["summary"] or sections.get("총평", "") or "운영진 학생 정보가 기록되었습니다."),
+                "detail": detail or full_text,
+                "projectPhase": "",
+                "sourceLabel": "학생 정보",
+                "relatedWeek": 0,
+                "isEstimated": False,
+            }
+        )
+
+    for csv_path in sorted(base_dir.glob("이탈자 LIST*.csv")):
+        with csv_path.open("r", encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                student = students_by_name.get(normalize_name(row.get("이름", "")))
+                if not student:
+                    continue
+                dropout_date = parse_date(row.get("이탈 일자"))
+                student["managementStatus"] = "이탈"
+                student["dropoutInfo"] = {
+                    "sourceFile": str(csv_path.relative_to(DATA_DIR)).replace("\\", "/"),
+                    "type": clean_text(row.get("유형")),
+                    "reason": clean_text(row.get("이탈 사유")),
+                    "date": dropout_date.isoformat() if dropout_date else clean_text(row.get("이탈 일자")),
+                    "attendanceDays": clean_text(row.get("출석 일수")),
+                    "joinedAt": clean_text(row.get("합류 일자")),
+                    "note": clean_text(row.get("기타")),
+                    "traits": clean_text(row.get("특징")),
+                    "gamePreference": clean_text(row.get("게임 선호")),
+                }
+                student["timelineEvents"].append(
+                    {
+                        "id": f"dropout-{student['id']}",
+                        "date": student["dropoutInfo"]["date"],
+                        "endDate": "",
+                        "type": "management_status",
+                        "severity": "caution",
+                        "title": "과정이탈 기록",
+                        "summary": short_text(student["dropoutInfo"]["reason"] or student["dropoutInfo"]["type"] or "과정이탈 기록"),
+                        "detail": "\n".join(
+                            filter(
+                                None,
+                                [
+                                    f"유형: {student['dropoutInfo']['type']}",
+                                    f"사유: {student['dropoutInfo']['reason']}",
+                                    f"기타: {student['dropoutInfo']['note']}",
+                                ],
+                            )
+                        ),
+                        "projectPhase": "",
+                        "sourceLabel": "학생 정보 이탈자 LIST",
+                        "relatedWeek": week_for_date(dropout_date, weeks) if dropout_date else 0,
+                        "isEstimated": False,
+                    }
+                )
+
+
+def add_cadet_card_data(students_by_name: dict[str, dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
+    base_dir = DATA_DIR / "학생 대원카드"
+    if not base_dir.exists():
+        return
+
+    csv_rows: dict[str, dict[str, str]] = {}
+    for csv_path in sorted(base_dir.glob("*.csv")):
+        with csv_path.open("r", encoding="utf-8-sig", newline="") as handle:
+            for row in csv.DictReader(handle):
+                student = match_student_from_text(row.get("이름", ""), students_by_name)
+                if student:
+                    csv_rows[student["nameKey"]] = {
+                        "sourceFile": str(csv_path.relative_to(DATA_DIR)).replace("\\", "/"),
+                        "status": clean_text(row.get("상태")),
+                        "hobbies": clean_text(row.get("취미")),
+                    }
+
+    for path in sorted(base_dir.glob("*.html")):
+        raw_html = path.read_text(encoding="utf-8", errors="ignore")
+        title = page_title_from_html(raw_html, path.stem)
+        student = match_student_from_text(f"{title} {path.stem}", students_by_name)
+        if not student:
+            continue
+
+        properties = parse_notion_properties(raw_html)
+        full_text = html_file_text(path)
+        sections = split_notion_sections(full_text)
+        csv_meta = csv_rows.get(student["nameKey"], {})
+        motivation = sections.get("과정을 들어오게 된 계기와 포부", "")
+        intro = sections.get("간단한 자기소개", "")
+        strengths = sections.get("나의 강점과 약점", "")
+        goal = sections.get("과정에서 이루고 싶은 목표", "")
+        interests = sections.get("관심 있는 기술 스택 / 배우고 싶은 분야", "")
+        cadet_card = {
+            "sourceFile": str(path.relative_to(DATA_DIR)).replace("\\", "/"),
+            "title": title,
+            "status": properties.get("상태", "") or csv_meta.get("status", ""),
+            "hobbies": properties.get("취미", "") or csv_meta.get("hobbies", ""),
+            "motto": sections.get("본문", ""),
+            "motivation": motivation,
+            "intro": intro,
+            "strengthsAndWeaknesses": strengths,
+            "interests": interests,
+            "goal": goal,
+            "stressRelief": sections.get("스트레스 해소 방법", ""),
+            "tmi": sections.get("TMI", ""),
+            "futureSelf": sections.get("과정 수료 후 나의 모습 상상", ""),
+            "sections": sections,
+            "fullText": full_text,
+        }
+        student["cadetCard"] = cadet_card
+        if motivation and not student["admission"].get("motivation"):
+            student["admission"]["motivation"] = motivation
+        if intro and not student["admission"].get("intro"):
+            student["admission"]["intro"] = intro
+        if goal and not student["admission"].get("goal"):
+            student["admission"]["goal"] = goal
+        if interests and not student["admission"].get("career"):
+            student["admission"]["career"] = interests
+
+        detail = "\n\n".join(
+            filter(
+                None,
+                [
+                    f"자기소개\n{intro}" if intro else "",
+                    f"지원 계기와 포부\n{motivation}" if motivation else "",
+                    f"강점과 약점\n{strengths}" if strengths else "",
+                    f"관심 분야\n{interests}" if interests else "",
+                    f"과정 목표\n{goal}" if goal else "",
+                ],
+            )
+        )
+        student["timelineEvents"].append(
+            {
+                "id": f"cadet-card-{student['id']}",
+                "date": "",
+                "endDate": "",
+                "type": "admission",
+                "severity": "info",
+                "title": "대원카드 자기소개",
+                "summary": short_text(motivation or intro or "대원카드가 작성되었습니다."),
+                "detail": detail or full_text,
+                "projectPhase": "",
+                "sourceLabel": "학생 대원카드",
+                "relatedWeek": 0,
+                "isEstimated": False,
             }
         )
 
@@ -1340,6 +1650,10 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
             admission.get("conflict", ""),
             admission.get("failure", ""),
             admission.get("peer", ""),
+            student.get("cadetCard", {}).get("fullText", ""),
+            student.get("staffProfile", {}).get("fullText", "") if label == "현재" else "",
+            student.get("dropoutInfo", {}).get("reason", ""),
+            student.get("dropoutInfo", {}).get("note", ""),
             "\n".join(item["detail"] for item in retros),
             "\n".join(item["content"] for item in counselings),
             "\n".join(item["workText"] + "\n" + item["noteText"] for item in checkins),
@@ -1461,6 +1775,10 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
         if value:
             sources += 1
     if admission:
+        sources += 1
+    if student.get("cadetCard"):
+        sources += 1
+    if student.get("staffProfile"):
         sources += 1
     if len(exempt_attendance_issues) >= 2 and risk_attendance_count == 0:
         confidence = "High" if sources >= 4 else "Medium" if sources >= 2 else "Low"
@@ -1697,6 +2015,11 @@ def build_evaluation_and_status(students: list[dict[str, Any]], curriculum: dict
             "leadershipRoleCount": sum(1 for item in student.get("projectTeamHistory", []) if item.get("role") in {"team_lead", "pm"}),
             "repeatedPeerCount": len([item for item in student.get("peerRelationships", []) if item.get("count", 0) >= 2]),
             "careerDocumentRounds": student.get("careerDocuments", {}).get("summary", {}).get("roundCount", 0),
+            "managementStatus": student.get("managementStatus", "일반"),
+            "dropoutDate": student.get("dropoutInfo", {}).get("date", ""),
+            "dropoutReason": student.get("dropoutInfo", {}).get("reason", ""),
+            "hasStaffProfile": bool(student.get("staffProfile")),
+            "hasCadetCard": bool(student.get("cadetCard")),
             "currentStatus": student["statusPeriods"][-1]["statusType"] if student["statusPeriods"] else "안정",
         }
 
@@ -2145,6 +2468,8 @@ def build_payload() -> dict[str, Any]:
         raise RuntimeError("커리큘럼 시작일을 찾을 수 없습니다.")
 
     add_admission_data(students_by_name, course_start, weeks)
+    add_staff_student_info(students_by_name, weeks)
+    add_cadet_card_data(students_by_name, weeks)
     phase_dates = add_project_data(students_by_name, weeks)
     add_project_team_data(students_by_name, weeks, phase_dates)
     add_attendance_data(students_by_name, weeks)

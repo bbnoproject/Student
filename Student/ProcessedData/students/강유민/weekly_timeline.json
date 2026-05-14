@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "저는 영화와 애니메이션을 제작하면서 관객들이 결과물을 수동적으로 받아들이는 한계를 느끼곤 했습니다. 창작자가 아무리 의도와 의미를 담아도 그것이 온전히 전달되지 않는 경우가 있습니다. 게임도 어떤 면에선 동일한 한계가 있을 수 있으나, 유저가 캐릭터…",
         "severity": "info",
         "date": "2025-10-28"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "영화와 애니메이션 작업을 하면서 늘 아쉬웠던 점은, 관객이 이미 완성된 결과물을 수동적으로 받아들이는 한계였습니다. 게임 역시 한계를 가질 수 있지만, 유저가 캐릭터를 조작하고 선택하고 성취하는 과정 자체가 서사의 일부가 된다는 점에서, 창작자와 유…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "열심히 하고, 조용, 잔잔한 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

@@ -1,5 +1,25 @@
 [
   {
+    "eventId": "ev-b37402f70d43",
+    "date": "",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "course",
+    "sourceDomain": "staff_profile",
+    "severity": "stable",
+    "title": "운영진 학생 정보 기록",
+    "summary": "타의적인 이탈 가능성이 존재하지만, 과정에 열심히 참여하려는 의지가 있음.",
+    "detail": "한줄평\n타의적인 이탈 가능성이 존재하지만, 과정에 열심히 참여하려는 의지가 있음.\n\n총평\n🔖 (업데이트 날짜 : 3/9(월))\n취업으로 인한 이탈 우려 인원\n스토리 프로젝트 이후 수업에 잘 참여하고 있는 것으로 확인, 다만 지속적인 이탈 우려\n적극적으로 발표하는 만큼, 의향 자체는 이탈과 거리가 멀어진 것으로 파악\n\nGood\n날짜 - 내용\n\nBad\n1/19(월) - 이탈 관련으로 양윤석 강사님과 면담 진행\n우선 스토리 프로젝트까지는 진행해보는 것으로 결정\n💡특이 사항\n1/6~1/7 - 회사 면접 일정으로 휴가, 조퇴 사용\n3/4 발표 예정 - [ 게임과 머물기 - ambience]\n2/12(목) - 이탈 우려 → 평균으로 조정\n3/9(월) - 평균 → 우수로 조정\n이탈에 대한 우려 감소\nTIL, 발표에서 확인된 모습\n💻 Zep\n3/9(월) - Ambience, 게임 속 ‘머물기’ 라는 주제로 발표 진행\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "engagement",
+      "self_regulation"
+    ],
+    "sourceLabel": "권현민 2d11c30b8ab38060abcbff6df463c1f3.html",
+    "isEstimatedDate": false
+  },
+  {
     "eventId": "ev-8f32ad85221d",
     "date": "2025-12-07",
     "endDate": "",

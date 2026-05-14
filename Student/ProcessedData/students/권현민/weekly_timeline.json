@@ -22,6 +22,13 @@
         "summary": "합격 · 면접 점수 92",
         "severity": "success",
         "date": "2025-12-07"
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "타의적인 이탈 가능성이 존재하지만, 과정에 열심히 참여하려는 의지가 있음.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null

@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "몇안되는 게임잼 참여경력과 여러 게임제작과 관련한 잡지식이나 수업등을 두루 찾아다니며 대학생활을 하고 있으며 졸업을 앞두고 직접 프로그래머 지망생들과 프로젝트를 연결해주시고 기본부터 알려주시는 이번 기회를 알게 되어 신청하게 되었습니다. 스스로 포트…",
         "severity": "info",
         "date": "2025-10-29"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "다양한 경험을 대학교 졸업전에 하고 싶어 지원하게 되었습니다",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "기술 역량은 뛰어날 것으로 보이지만, 협업 단계에서의 태도 관찰 필요. 남을 가르치려고 하는 성향이 있음.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -279,7 +293,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 4,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 3

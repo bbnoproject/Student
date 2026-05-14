@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "UX/UI 디자이너 직군으로 취업 준비를 하던 중 조금 더 제 적성에 맞는 게임 업계 직군을 찾다가 신청하게 되었습니다. 제 백그라운드 특성상 데이터를 기반으로 한 기획 및 개발이 조금 더 적성에 맞다고 생각했고, 게임 제작 및 운영에 직관적인 영향…",
         "severity": "info",
         "date": "2025-11-13"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "계기: 미국 심리학 연구소에서 연구원으로 일을 하며 취미로만 즐겨왔던 게임 플레이 및 개발을 지인의 소개로 본격적으로 공부하게 되었습니다. 다른 여러 형태의 부트캠프들을 통해 게임 관련 개인 프로젝트들을 만들면서 기획의 중요성과 제 적성을 잘 살릴…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "생각이 깊고 소통이 잘되는 편이나 기획적 지식은 다소 부족. 잘 키우면 좋은 성과 이룰 것으로 보임.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -435,7 +449,7 @@
         "selfRegulation": 1,
         "engagement": 2,
         "collaboration": 4,
-        "resilience": 1,
+        "resilience": 2,
         "reflection": 4,
         "careerAgency": 4
       },

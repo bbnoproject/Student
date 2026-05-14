@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "게임 프로젝트도 여러번 만들어봤고, 다양한 팀 프로젝트도 해봤지만 아직 실무경험이 없어서 이곳에서 직간접적으로나마 배우고, 부족한 점을 채우고자 지원하게 되었습니다. 특히 팀 프로젝트의 경우는 다양한 팀, 다양한 사람들을 겪으면 겪을수록 성장하는 것…",
         "severity": "info",
         "date": "2025-12-02"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "대학교 졸업 후, 약간의 번아웃과 방황으로 헤메고 있을 때, 마음을 다잡고 다시 나아가야겠다라고 생각했습니다. 그러던중 마침 경일게임아카데미에서 기획자 부트캠프 수강생을 구하고 있길래 신청하게 되었습니다. 꼭 취업해서 나가겠습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "본인이 하고 싶은 것에 대한 고집이 강한 편",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -244,7 +258,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "회고 구조화 필요",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -256,13 +270,13 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Medium",
-      "note": "협업 상황 면담 권장"
+      "confidence": "High",
+      "note": "회고 구조화 필요"
     }
   },
   {

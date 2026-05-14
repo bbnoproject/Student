@@ -6,12 +6,12 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 2,
       "career_agency": 3
     },
-    "confidence": "Low",
+    "confidence": "Medium",
     "note": "자기조절 지원 필요"
   },
   {
@@ -51,13 +51,13 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 2,
-      "resilience": 2,
+      "collaboration": 3,
+      "resilience": 1,
       "reflection": 4,
       "career_agency": 3
     },
     "confidence": "High",
-    "note": "협업 상황 면담 권장"
+    "note": "도전 대응 지원 필요"
   },
   {
     "snapshotId": "신석균-m5",
@@ -67,7 +67,7 @@
       "self_regulation": 4,
       "engagement": 4,
       "collaboration": 3,
-      "resilience": 2,
+      "resilience": 1,
       "reflection": 4,
       "career_agency": 3
     },
@@ -82,7 +82,7 @@
       "self_regulation": 4,
       "engagement": 4,
       "collaboration": 3,
-      "resilience": 2,
+      "resilience": 1,
       "reflection": 4,
       "career_agency": 3
     },

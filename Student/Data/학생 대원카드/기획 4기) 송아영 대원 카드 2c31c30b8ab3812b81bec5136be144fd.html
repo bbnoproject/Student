@@ -1,0 +1,762 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>기획 4기) 송아영 대원 카드</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2c31c30b-8ab3-812b-81be-c5136be144fd" class="page sans"><header><h1 class="page-title" dir="auto">기획 4기) 송아영 대원 카드</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>취미</th><td><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">그림</span><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-brown">수다</span></td></tr><tr class="property-row property-row-status"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/burst_gray.svg" style="width:14px;height:14px;display:block"/></span>상태</th><td><span class="status-value"><div class="status-dot"></div>시작 전</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-815b-acf5-c71ad9eef05e" class="">💡 한 줄로 소개</h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8187-8c3d-e22ad3d8028a" class="">게임 잡식 퍼리 오타쿠✌(타이쿤싫어)</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-811d-9644-d25eb7c88700" class="">🧐 나를 가장 잘 표현한 사진(필수)</h2></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-8165-8e29-d62184931ddf" class="image"><a href="KakaoTalk_20251117_112436004.jpg"><img style="width:432px" src="KakaoTalk_20251117_112436004.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8188-9da6-ee9d1a549fb4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-812e-91f7-dd3ece40c0d7" class="">퍼리퍼리야…</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8196-ae17-cbc115e801e5" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-81ec-a50f-fc9301bfc52f" class="image"><a href="aeb20951-a580-4e7a-a299-e80781fd420e.png"><img style="width:336px" src="aeb20951-a580-4e7a-a299-e80781fd420e.png"/></a></figure></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81a2-8338-deda49a11a47" class="">🎯 <strong>과정을 들어오게 된 계기와 포부</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8179-92cf-c316b0fe66a4" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c6-adb1-defd4a8f9167" class=""> 10년 동안 아래에서 굴렀으니,아래에서만 굴러도 좋아하는 일에서 구르는게 좋지않을까…</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8115-9463-e72b91ded8b4" class="">전공도 창의력도 하나도 못 살리던 인생.참지 않기로 했습니다!</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8121-ba45-d4939a2f8da9" class="">😄 <strong>간단한 자기소개</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81b2-80bf-da5646f0a9af" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-817d-aef9-dc6173b72fa8" class=""> 안녕하세요, 청강대 만화창작 전공 13학번😅 출신 송아영 입니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81bd-819b-c2867c0f781c" class="">전공으로 돈을 벌지못해 특기를 살리지 못하고 판매직을 전전해왔습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81df-ab22-ddc91cda3865" class="">어느 날 제게 이런 생각이 새처럼 날아들어 왔습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8114-9de8-f662bd618dca" class="">‘이럴거면 내가 가장 좋아하는 것 가까이에서 일하는게 좋지않을까?’</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-810d-80f0-fb53fba6c853" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8181-882d-dfd575d3917f" class=""> 사실 만화,그림보다도 더 좋아했던 게 게임이 아닐까,라고 생각할 정도로</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8105-95ac-e0c0c39d5b46" class="">많이 해왔는데요. 왜 게임 업계에서 일해볼 생각은 못 해봤을까요?</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8180-ad5b-eedbb5fe236a" class="">게임 일러스트 관련은 넘보지 못할 정도의 그림실력을 가진 분들만 있었기에 생각조차 못했고,</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81dc-8268-c703560cd22f" class="">코딩은 두려운 영역이었거든요. 사실 지금도 두렵습니다😢</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-812f-9002-ed31ffd30380" class="">하지만, 미숙할 건 있어도 안되는 건 없다고 생각합니다. 지금까지 그래왔거든요😊</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-815d-a449-d617b0d3350a" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-810b-8027-d1d1303616ad" class="">늦게나마 새로운 영역으로 도전해보고자 합니다. 잘 부탁드립니다!</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81b9-85df-c3b7c6cb7318" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81e3-bf35-cb4388952577" class="">아래로는 지금까지 해왔던 게임들 입니다:</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c0-9439-e0f2efc94d09" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-81fb-9a61-e3468f31f5a1" class="image"><a href="image%208.png"><img style="width:337.99444580078125px" src="image%208.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-810c-9328-d16295d928c8" class="image"><a href="image%209.png"><img style="width:338px" src="image%209.png"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-8130-b445-e6188546c728" class="image"><a href="image%2010.png"><img style="width:337.99444580078125px" src="image%2010.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81e3-ab79-c91b89d82499" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-815f-8394-e42184d52861" class="">그 외</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8154-970a-d27c40b0e707" class="">닌텐도 게임 : 포켓몬스터 시리즈(기존 시리즈 및 불가사의 던전), 동물의 숲 시리즈, 스플래툰,</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81f7-a4d3-caafc3610dfc" class="">천수의 사쿠나히메 등등</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c7-a137-cc523ca62d52" class="">스팀 제외 PC 게임 : 디아블로 시리즈,마비노기 시리즈, 그랜드 체이스, 퍼피레드, 던전 앤 파이터, 사이퍼즈,</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81b5-ae86-f6e5696b7962" class="">파이널 판타지 14,아메리칸 맥기의 앨리스 시리즈 등등</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81ea-9b3e-ea55dbf82b73" class="">모바일 게임 : 마비노기 모바일,밀리언 아서 시리즈,데빌메이커,디스라이트,냥코대전쟁,라테일 플러스,</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8176-92d9-fc1436acc3e9" class="">몬스터 스트라이크, 크래시 피버, 원신, 운빨존많겜 등등</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81fb-a92b-e427c37376e7" class="">🔍 <strong>나의 강점과 약점 </strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81bb-b03b-db368ae38bb9" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a2-9f0e-dcc2d4f2ce93" class="">강점 : 게임을 정말 많이 해왔다…?!</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8176-865a-e6046ce91bed" class="">약점 : 나이😭, 비전공에 뛰어든 점</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81cb-b259-d13801ab28e8" class="">💬 <strong>협업 스타일 / 협업 시 팀원에게 바라는 점</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a7-9a2d-fd6d87060652" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8150-a44e-c641caa6a586" class="">협업스타일 : 고집이 좀 많은 편 이라서 이것 만은 안된다! 할 때가 있을 거에요.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81de-af5b-fb66afe6125b" class="">서로 조율했으면 좋겠어요😇</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-817d-84e9-d126226f62a9" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81ed-9de4-ed2503f8d47d" class="">팀원에게 바라는 점 : 마음에 안 드는 점이 있다면 제발 그 때 그 때 피드백 하기!</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81b6-ac19-c6d0c6726a5f" class="">참거나 말하지 않고 있다가, 나중에 가서 이게 마음에 안 들었다, 하시면 슬퍼요😢</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8157-81f7-f634c530f3ee" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81da-b1a4-c1914d335da8" class="">이런 사람과 함께 하고싶다 : 서로의 의견 중 상반된 부분이 있을때,</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8134-814e-e13a6930f79d" class="">타협해서 중간점을 찾을 수 있는 사람과 함께 하고싶습니다😚</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8195-b223-d24d9489c787" class=""><del>퍼리 찾습니다</del></p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8144-818b-d72122c6442c" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81f8-985f-df0a49466378" class="">💻 <strong>관심 있는 기술 스택 / 배우고 싶은 분야</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8105-b7c0-fb86f740bded" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8105-ab6a-f932ce9ccf78" class=""> 크로스 플랫폼, 멀티 플랫폼, ai 와의 대화를 게임에 접목시키는 쪽에 관심이 있습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-812b-9479-d6170956cdd1" class="">퀘스트 디자인 분야에 대해 배우고 싶고요.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81da-947d-d60a2a43dfb9" class="">다만,제 지식이 아직 얕아서 더 알게되고 관심분야도 바뀔 수도 있습니다!</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8145-a293-ccb45b9461fb" class="">🚀 <strong>과정에서 이루고 싶은 목표</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-817d-98f3-cf2ea4ddd9bf" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c3-82b0-f87e8866d49f" class="">  이거 내가 참여해서 만든 게임이다!</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a4-9c9a-de7e4e12bc30" class="">라고 자랑하고 싶어요.ㅋㅋ</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81b0-a386-efacc881803f" class="">🎧 <strong>스트레스 해소 방법</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81e8-b9b2-e52c204ac896" class=""> </p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-819c-a95e-ea3dd6b18de8" class=""> 그림, 게임, 음악 감상, 디스코드로 좋아하는 친구들과 이야기</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-814d-920f-fe38b1666d5b" class="">✏️ <strong>나를 표현하는 한 마디 / 좌우명</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8120-ba66-ee959abd6495" class="">  </p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81d7-8b54-fdcf11ebb4be" class=""><em><mark class="highlight-red">이제는 더 이상 </mark></em><em><mark class="highlight-red"><strong>물러날 곳이 없 다</strong></mark></em></p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8194-9c58-d1a5604f8463" class="">🎓 <strong>과정 수료 후 나의 모습 상상</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-810e-898e-f8d99811f56c" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-812a-9c44-e4178a18057c" class="">아직 상상이 잘 안 돼요.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8174-8d35-df6eb1a58852" class="">내가…회사원? 내가…게임을 만드는 사람중 하나?!</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81f0-8a42-ddff70710322" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81d3-8330-d75bf7036fd3" class="">😹퍼리 하실래요?</h2></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-8179-b7b8-dfc8b94abf53" class="image"><a href="KakaoTalk_20251203_113944020_03.jpg"><img style="width:709.96875px" src="KakaoTalk_20251203_113944020_03.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8156-99e0-f38f44a5a834" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-814a-9f6f-f36a4e48c6c2" class="image"><a href="KakaoTalk_20251203_113944020_02.jpg"><img style="width:384px" src="KakaoTalk_20251203_113944020_02.jpg"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-815c-8677-d119cec1969c" class="image"><a href="KakaoTalk_20251203_113944020.jpg"><img style="width:480px" src="KakaoTalk_20251203_113944020.jpg"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-8177-866e-e0d323235ae9" class="image"><a href="KakaoTalk_20251203_113944020_05.jpg"><img style="width:710px" src="KakaoTalk_20251203_113944020_05.jpg"/></a></figure></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-8154-97b0-e4f78fa9b4fe" class="image"><a href="KakaoTalk_20251203_114526465_01.jpg"><img style="width:710px" src="KakaoTalk_20251203_114526465_01.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81fa-bc17-ff3b7618604b" class="">작년 AGF 사진!</p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-8106-b851-cd60e6b8419c" class="image"><a href="KakaoTalk_20251203_114526465.jpg"><img style="width:709.96875px" src="KakaoTalk_20251203_114526465.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8100-8c54-c14d377d284a" class="">최애 미코쟝이랑ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

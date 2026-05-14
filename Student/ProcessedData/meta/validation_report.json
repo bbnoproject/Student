@@ -1,20 +1,23 @@
 {
-  "generatedAt": "2026-05-13T17:49:55",
-  "studentCount": 81,
+  "generatedAt": "2026-05-13T20:08:57",
+  "studentCount": 80,
   "curriculumWeekCount": 35,
   "curriculumSessionCount": 171,
-  "learningEvidenceCount": 3515,
+  "learningEvidenceCount": 3675,
   "learningEvidenceByDomain": {
     "admission": 160,
     "attendance": 678,
+    "cadet_card": 75,
     "career_document": 71,
     "career_feedback": 55,
     "counseling": 163,
+    "management_status": 5,
     "project": 1938,
     "retro": 152,
+    "staff_profile": 80,
     "team_context": 298
   },
-  "blankDateEvidenceCount": 0,
+  "blankDateEvidenceCount": 157,
   "duplicateEvidenceIdCount": 0,
   "estimatedTimelineEventCount": 378,
   "teamAssignmentCount": 298,
@@ -23,13 +26,10 @@
   "studentsWithCareerDocuments": 41,
   "careerDocumentRoundCount": 55,
   "warningStatusPeriodCount": 13,
-  "studentsWithoutAdmissionData": [
-    "이탈자"
-  ],
+  "studentsWithoutAdmissionData": [],
   "studentsWithoutCounselingData": [
     "김시온",
     "이정헌",
-    "이탈자",
     "한의호",
     "한재환",
     "한지우",
@@ -58,11 +58,8 @@
       "note": "학생별 폴더와 overview.md를 함께 생성해 읽기 쉽게 분리했습니다."
     },
     "dataCoverage": {
-      "result": "caution",
-      "note": "증거가 비어 있는 학생 1명이 있습니다.",
-      "studentIds": [
-        "이탈자"
-      ]
+      "result": "pass",
+      "note": "모든 학생에게 최소 1개 이상의 증거 레코드가 있습니다."
     }
   },
   "filesWritten": [
@@ -945,21 +942,6 @@
     "ProcessedData/students/이찬규/status_periods.json",
     "ProcessedData/students/이찬규/timeline_events.json",
     "ProcessedData/students/이찬규/weekly_timeline.json",
-    "ProcessedData/students/이탈자/admission.json",
-    "ProcessedData/students/이탈자/attendance_events.json",
-    "ProcessedData/students/이탈자/career_documents.json",
-    "ProcessedData/students/이탈자/counselings.json",
-    "ProcessedData/students/이탈자/evaluation_snapshots.json",
-    "ProcessedData/students/이탈자/learning_evidence.json",
-    "ProcessedData/students/이탈자/overview.md",
-    "ProcessedData/students/이탈자/peer_relationships.json",
-    "ProcessedData/students/이탈자/profile.json",
-    "ProcessedData/students/이탈자/project_checkins.json",
-    "ProcessedData/students/이탈자/project_retrospectives.json",
-    "ProcessedData/students/이탈자/project_team_history.json",
-    "ProcessedData/students/이탈자/status_periods.json",
-    "ProcessedData/students/이탈자/timeline_events.json",
-    "ProcessedData/students/이탈자/weekly_timeline.json",
     "ProcessedData/students/이형진/admission.json",
     "ProcessedData/students/이형진/attendance_events.json",
     "ProcessedData/students/이형진/career_documents.json",

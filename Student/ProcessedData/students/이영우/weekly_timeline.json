@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "반년 정도 일본과 한국 취업을 위해 노력하였지만 실패하였습니다. 혼자 여러방면으로 노력해 봤지만 1차 2번 통과가 저의 결과 였습니다. 어디가 문제인지 무엇이 부족한지 알 방법이 없어 여러가지 답답한 점이 있었는데 부트캠프 과정을 수료한 친구를 보고…",
         "severity": "info",
         "date": "2025-10-28"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "반년 취직을 위해 한일 양국의 회사에 지원하였지만 2승/약98패의 처참한 승률로 내가 놓치고 있는 부분을 배워보고자 지원하게 되었습니다. 제 꿈은 언제나 “사람들이 더 이상 울지 않았으면 좋겠다. 즐거운 일을 만들고 싶다.” 였습니다. 꿈을 이루는…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "방향성에 대한 확신은 없으나, 일단 열심히 하려는 인원",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -72,12 +86,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -301,7 +315,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 3
@@ -486,7 +500,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "전반적으로 안정적인 성장 흐름",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -498,13 +512,13 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
-        "resilience": 2,
+        "collaboration": 3,
+        "resilience": 3,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "전반적으로 안정적인 성장 흐름"
     }
   },
   {

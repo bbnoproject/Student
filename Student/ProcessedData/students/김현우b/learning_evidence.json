@@ -1,5 +1,48 @@
 [
   {
+    "evidenceId": "ev-ecdc648d61b2",
+    "studentId": "김현우b",
+    "date": "",
+    "weekIndex": 0,
+    "phase": "admission",
+    "sourceDomain": "cadet_card",
+    "evidenceType": "reported",
+    "constructs": [
+      "career_agency",
+      "collaboration",
+      "reflection"
+    ],
+    "title": "대원카드 자기소개",
+    "summary": "강점과 약점 💬 협업 스타일/협업 시 팀원에게 바라는점 자신의 의견을 말하기 보다는 먼저 듣고 이야기하는 스타일인거 같습니다.",
+    "detail": "강점과 약점\n💬 협업 스타일/협업 시 팀원에게 바라는점\n자신의 의견을 말하기 보다는 먼저 듣고 이야기하는 스타일인거 같습니다.",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "학생 대원카드/기획 4기) 김현우B 대원 카드 2c31c30b8ab3811d9ccbd6a0798a55f0.html",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-683992d04d95",
+    "studentId": "김현우b",
+    "date": "",
+    "weekIndex": 0,
+    "phase": "course",
+    "sourceDomain": "staff_profile",
+    "evidenceType": "direct",
+    "constructs": [
+      "collaboration",
+      "engagement"
+    ],
+    "title": "운영진 학생 정보 기록",
+    "summary": "성취도 보통, 참여도는 다소 낮은 편으로 파악중.",
+    "detail": "한줄평\n성취도 보통, 참여도는 다소 낮은 편으로 파악중.\n\n총평\n🔖 (업데이트 날짜 : 2/12(목))\n성취도 보통, 참여도는 다소 낮은 편으로 파악중.\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n12/17(수) - 컴공\n💻 Zep\n1/12(월) - 중국에서 대학교 나옴\n3/9(월) - 메월드 프로젝트 설문지에 대한 발표 진행\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
+    "severity": "stable",
+    "provenance": {
+      "sourceFile": "학생 정보/김현우B 2be1c30b8ab381e18667d87fd2c3f7f2.html",
+      "isEstimatedDate": false
+    }
+  },
+  {
     "evidenceId": "ev-a26863209486",
     "studentId": "김현우b",
     "date": "2025-11-20",

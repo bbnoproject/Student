@@ -10,5 +10,50 @@
   "specialNote": "",
   "attendanceMemo": "",
   "cohort": "기획4기",
-  "course": "게임 기획 부트캠프"
+  "course": "게임 기획 부트캠프",
+  "managementStatus": "이탈",
+  "dropoutInfo": {
+    "sourceFile": "학생 정보/이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
+    "type": "자진 이탈",
+    "reason": "패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망",
+    "date": "2026-01-21",
+    "attendanceDays": "",
+    "joinedAt": "",
+    "note": "",
+    "traits": "친화적",
+    "gamePreference": ""
+  },
+  "staffProfile": {
+    "sourceFile": "학생 정보/이길준 2c41c30b8ab38089bb83e815a18a723c.html",
+    "title": "이길준",
+    "properties": {
+      "유형": "자진 이탈",
+      "이탈 사유": "패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망",
+      "이탈 일자": "2026년 1월 21일",
+      "게임 선호": "",
+      "부정적관계": "",
+      "특징": "친화적"
+    },
+    "summary": "",
+    "traits": [
+      "친화적"
+    ],
+    "positiveRelations": [],
+    "negativeRelations": [],
+    "sections": {
+      "본문": "이길준\n이길준\n유형\n자진 이탈\n이탈 사유 패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망\n이탈 일자 2026년 1월 21일\n게임 선호\n부정적관계\n특징 친화적",
+      "총평": "🔖 (업데이트 날짜 : )",
+      "Good": "날짜 - 내용",
+      "Bad": "날짜 - 내용\n💡특이 사항\n1/14(수) - 이탈 문의\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용"
+    },
+    "fullText": "이길준 \n 이길준 \n \n \n \n 유형 \n \n 자진 이탈 \n \n 이탈 사유 패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망 \n \n 이탈 일자 2026년 1월 21일 \n \n 게임 선호 \n \n 부정적관계 \n \n 특징 친화적 \n \n \n \n \n \n 🔖 총평(업데이트 날짜 : ) \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 👍 Good \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 👎 Bad \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💡특이 사항 \n \n \n \n \n \n \n 1/14(수) - 이탈 문의 \n \n \n \n \n \n \n \n \n \n \n \n 💻 Zep \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💬 DM \n \n \n \n \n \n \n ~ 12/8 : 개강 전 : \n \n \n \n \n \n 날짜 - 내용"
+  },
+  "cadetCardSummary": {
+    "sourceFile": "",
+    "status": "",
+    "hobbies": "",
+    "intro": "",
+    "motivation": "",
+    "goal": ""
+  }
 }

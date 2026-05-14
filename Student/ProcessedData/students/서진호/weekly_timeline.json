@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "언제부턴가 1인 개발이라도 게임을 만들어보고 싶다는 생각을 줄곧 해왔습니다. 기획은 어떻게 해야 하는지, 아트는 어떻게 해야하는지, 코딩은 어떻게 할지에 대해 생각하다 보면 막연해지는 느낌이 강하게 느껴져서 포기하곤 했었습니다. 그러다가 이번에 모집…",
         "severity": "info",
         "date": "2025-11-25"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "사실 과정은 굉장히 허무맹랑한데 당근 앱을 보다가 광고로 나오길래 신청했습니다. 평소에 게임을 개발을 하고싶단 생각을 원래도 가지고 있었지만, 할까 말까 생각만 하다간 생각만으로 끝날 거 같아서 신청했습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "분위기 잘 풀어주는 편. 소통 역량, 기술 역량 모두 우수.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -79,12 +93,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

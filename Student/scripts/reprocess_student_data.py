@@ -359,6 +359,9 @@ def build_admission_output(student: dict[str, Any]) -> dict[str, Any]:
                 f"갈등 대응\n{clean_text(admission.get('conflict'))}" if admission.get("conflict") else "",
                 f"실패 대응\n{clean_text(admission.get('failure'))}" if admission.get("failure") else "",
                 f"타인 대응\n{clean_text(admission.get('peer'))}" if admission.get("peer") else "",
+                f"대원카드 자기소개\n{clean_text(student.get('cadetCard', {}).get('intro'))}" if student.get("cadetCard", {}).get("intro") else "",
+                f"대원카드 지원 계기\n{clean_text(student.get('cadetCard', {}).get('motivation'))}" if student.get("cadetCard", {}).get("motivation") else "",
+                f"대원카드 목표\n{clean_text(student.get('cadetCard', {}).get('goal'))}" if student.get("cadetCard", {}).get("goal") else "",
             ],
         )
     )
@@ -369,6 +372,7 @@ def build_admission_output(student: dict[str, Any]) -> dict[str, Any]:
         "interviewScore": admission.get("interviewScore", ""),
         "interviewResult": admission.get("interviewResult", ""),
         "interviewSummary": admission.get("interviewSummary", ""),
+        "cadetCard": student.get("cadetCard", {}),
     }
 
 
@@ -769,6 +773,102 @@ def build_learning_evidence(
             }
         )
 
+    cadet_card = student.get("cadetCard", {})
+    cadet_detail = "\n\n".join(
+        filter(
+            None,
+            [
+                f"자기소개\n{clean_text(cadet_card.get('intro'))}" if cadet_card.get("intro") else "",
+                f"지원 계기와 포부\n{clean_text(cadet_card.get('motivation'))}" if cadet_card.get("motivation") else "",
+                f"강점과 약점\n{clean_text(cadet_card.get('strengthsAndWeaknesses'))}" if cadet_card.get("strengthsAndWeaknesses") else "",
+                f"관심 분야\n{clean_text(cadet_card.get('interests'))}" if cadet_card.get("interests") else "",
+                f"과정 목표\n{clean_text(cadet_card.get('goal'))}" if cadet_card.get("goal") else "",
+            ],
+        )
+    )
+    if cadet_detail:
+        evidence.append(
+            {
+                "evidenceId": f"ev-{stable_id(student_id, 'cadet-card')}",
+                "studentId": student_id,
+                "date": "",
+                "weekIndex": 0,
+                "phase": "admission",
+                "sourceDomain": "cadet_card",
+                "evidenceType": "reported",
+                "constructs": infer_constructs(cadet_detail, "대원카드", {"career_agency", "reflection"}),
+                "title": "대원카드 자기소개",
+                "summary": short_text(cadet_card.get("motivation") or cadet_card.get("intro") or cadet_detail),
+                "detail": cadet_detail,
+                "severity": "stable",
+                "provenance": build_provenance(cadet_card.get("sourceFile", "Data/학생 대원카드")),
+            }
+        )
+
+    staff_profile = student.get("staffProfile", {})
+    staff_detail = "\n\n".join(
+        filter(
+            None,
+            [
+                f"한줄평\n{clean_text(staff_profile.get('summary'))}" if staff_profile.get("summary") else "",
+                f"총평\n{clean_text(staff_profile.get('sections', {}).get('총평'))}" if staff_profile.get("sections", {}).get("총평") else "",
+                f"Good\n{clean_text(staff_profile.get('sections', {}).get('Good'))}" if staff_profile.get("sections", {}).get("Good") else "",
+                f"Bad\n{clean_text(staff_profile.get('sections', {}).get('Bad'))}" if staff_profile.get("sections", {}).get("Bad") else "",
+            ],
+        )
+    )
+    if staff_detail:
+        evidence.append(
+            {
+                "evidenceId": f"ev-{stable_id(student_id, 'staff-profile')}",
+                "studentId": student_id,
+                "date": "",
+                "weekIndex": 0,
+                "phase": "course",
+                "sourceDomain": "staff_profile",
+                "evidenceType": "direct",
+                "constructs": infer_constructs(staff_detail, "운영진 학생 정보", {"collaboration", "engagement"}),
+                "title": "운영진 학생 정보 기록",
+                "summary": short_text(staff_profile.get("summary") or staff_detail),
+                "detail": staff_detail,
+                "severity": "stable",
+                "provenance": build_provenance(staff_profile.get("sourceFile", "Data/학생 정보")),
+            }
+        )
+
+    dropout_info = student.get("dropoutInfo", {})
+    if dropout_info.get("reason") or dropout_info.get("date"):
+        dropout_date = dropout_info.get("date", "")
+        parsed = to_date(dropout_date)
+        detail = "\n".join(
+            filter(
+                None,
+                [
+                    f"유형: {dropout_info.get('type', '')}",
+                    f"사유: {dropout_info.get('reason', '')}",
+                    f"기타: {dropout_info.get('note', '')}",
+                    f"출석 일수: {dropout_info.get('attendanceDays', '')}",
+                ],
+            )
+        )
+        evidence.append(
+            {
+                "evidenceId": f"ev-{stable_id(student_id, 'dropout', dropout_date)}",
+                "studentId": student_id,
+                "date": dropout_date,
+                "weekIndex": source.week_for_date(parsed, weeks) if parsed else 0,
+                "phase": "course",
+                "sourceDomain": "management_status",
+                "evidenceType": "direct",
+                "constructs": ["engagement"],
+                "title": "과정이탈 기록",
+                "summary": short_text(dropout_info.get("reason") or dropout_info.get("type") or "과정이탈 기록"),
+                "detail": detail,
+                "severity": "caution",
+                "provenance": build_provenance(dropout_info.get("sourceFile", "Data/학생 정보")),
+            }
+        )
+
     for index, item in enumerate(attendance_events, start=1):
         event_date = item.get("date", "")
         parsed = to_date(event_date)
@@ -998,6 +1098,17 @@ def build_profile(student: dict[str, Any]) -> dict[str, Any]:
         "attendanceMemo": student.get("attendanceMemo", ""),
         "cohort": student.get("cohort", ""),
         "course": student.get("course", ""),
+        "managementStatus": student.get("managementStatus", "일반"),
+        "dropoutInfo": student.get("dropoutInfo", {}),
+        "staffProfile": student.get("staffProfile", {}),
+        "cadetCardSummary": {
+            "sourceFile": student.get("cadetCard", {}).get("sourceFile", ""),
+            "status": student.get("cadetCard", {}).get("status", ""),
+            "hobbies": student.get("cadetCard", {}).get("hobbies", ""),
+            "intro": student.get("cadetCard", {}).get("intro", ""),
+            "motivation": student.get("cadetCard", {}).get("motivation", ""),
+            "goal": student.get("cadetCard", {}).get("goal", ""),
+        },
     }
 
 

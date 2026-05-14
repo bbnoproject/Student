@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "본과정에 참여를 신청한이유는 독자적으로 개발과 기획을 학습하던중 어려움을 느끼고 어려움을 느끼던중 관심과 흥미가 더욱 생기게 되어서 타 지인들과 현재 개발 기획자로 업계종사자들 에게 자문을 구해본 결과 이러한 프로그램들이 저에게 성장의 기회와 큰 도…",
         "severity": "info",
         "date": "2025-11-18"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "어릴적부터 게임을 좋아했고 플레이하며 여러사람들과 협력하는 게임을 즐겨했는데 로스트아크라는 게임을 하면서 금강선 디렉터의 말중 게임을하며 얻어가는 추억이 남으면 좋겠다라는 말을 듣고 나도 언젠가 저러한 게임을 만들어서 나도플레이하고 여러사람들이 플레…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "실력과 소통은 양호하나, 과정 외에 관심이 많아 참여도는 낮은 편.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 1,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -272,10 +286,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 1,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "협업 상황 면담 권장"
@@ -465,7 +479,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"

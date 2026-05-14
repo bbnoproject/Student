@@ -1,5 +1,24 @@
 [
   {
+    "eventId": "ev-d38156fa5326",
+    "date": "",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "course",
+    "sourceDomain": "staff_profile",
+    "severity": "stable",
+    "title": "운영진 학생 정보 기록",
+    "summary": "선발 보류였던 인원. 스스로의 의지가 약하고 수업을 따라가기 어렵다고 함.",
+    "detail": "한줄평\n선발 보류였던 인원. 스스로의 의지가 약하고 수업을 따라가기 어렵다고 함.\n\n총평\n🔖 (업데이트 날짜 : )\n본인의 작업물, 나아가 스스로에게 믿음이 없다고 이야기함\n\nGood\n날짜 - 내용\n\nBad\n12/22 - 1차 면담 진행\n팀 활동에 어려움\n💡특이 사항\n화상 인터뷰 단계에서 보류였던 인원\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n2/20(금) - 스스로에게 믿음이 없다고 이야기함",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience"
+    ],
+    "sourceLabel": "김재환 2c51c30b8ab380e88e41d591f1261a4c.html",
+    "isEstimatedDate": false
+  },
+  {
     "eventId": "ev-e1a20453ace1",
     "date": "2025-12-01",
     "endDate": "",

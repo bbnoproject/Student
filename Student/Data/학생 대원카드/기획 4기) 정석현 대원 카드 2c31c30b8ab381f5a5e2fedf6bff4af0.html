@@ -1,0 +1,748 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>기획 4기) 정석현 대원 카드</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2c31c30b-8ab3-81f5-a5e2-fedf6bff4af0" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💜</span></div><h1 class="page-title" dir="auto">기획 4기) 정석현 대원 카드</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>취미</th><td><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-yellow">악기</span><span class="selected-value select-value-color-orange">음악감상</span><span class="selected-value select-value-color-gray">작곡</span><span class="selected-value select-value-color-red">콘서트가기</span><span class="selected-value select-value-color-yellow">혼자여행</span></td></tr><tr class="property-row property-row-status"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/burst_gray.svg" style="width:14px;height:14px;display:block"/></span>상태</th><td><span class="status-value"><div class="status-dot"></div>시작 전</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81bd-ab79-f1b908f91219" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81df-a7fa-d13fe06ea6c5" class="">🧐 나를 가장 잘 표현한 사진<strong>*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8113-a2df-c2a0add18ffd" class=""><em><mark class="highlight-gray">본인의 얼굴이 들어간 사진</mark></em></p></div><div style="display:contents" dir="ltr"><figure id="2c31c30b-8ab3-813a-a7bc-f22dfc2d5fe5" class="image"><a href="KakaoTalk_20250918_161103576.jpg"><img style="width:384px" src="KakaoTalk_20250918_161103576.jpg"/></a></figure></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81d5-80d3-c341e76db823" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81db-a1ef-c34731c8ae82" class="">🎯 <strong>과정을 들어오게 된 계기와 포부*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-812e-984b-d61181693cdf" class=""> 대학에서 게임 사운드 디자인을 공부하다가 점점 줄어드는 사운드 디자이너 TO와 과열되는 경쟁률을 보며 신입인 내가 게임 사운드 디자이너가 되는 것이 무리가 있겠다는 생각에 다른 길을 찾아보게 되었습니다.<br/>대학 교양이나 전공 수업에서 기획과 관련된 다양한 수업에서 큰 흥미를 느끼고 좋은 성적을 받은 것을 되돌아보며, 게임 기획자가 되어보고 싶다는 생각이 들게 되어 AI기획 과정에 참여하게 되었습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8144-a5b5-f9b577620612" class="">😄 <strong>간단한 자기소개*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81fc-bd7f-d897109153ea" class=""> 실용음악음향학과에서 사운드 디자인을 공부하고 있는 2000년생 정석현 입니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8188-8fbb-dc5b4f4794b4" class=""> 5살 무렵부터 게임을 접하며 지금까지 살아오는 동안 게임에 대한 흥미와 열정을 늘 품은 채 살아왔습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-816a-9526-fb49dbec6ef9" class="">다양한 장르의 게임을 즐기며 “언젠가 나도 이런 멋진 게임을 만드는 사람이 되고 싶다”는 생각을 하며 게임 업계를 지망해왔습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81ba-bac0-f2e1c2aa2a5d" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-814f-b83c-d2633a18e45e" class="">🔍 <strong>나의 강점과 약점 *</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8159-91c8-f2836d034de3" class="">저의 강점은</p></div><div style="display:contents" dir="auto"><ol type="1" id="2c31c30b-8ab3-816b-9741-ef3f8f3c48e8" class="numbered-list" start="1"><li>다양한 분야에 흥미가 높고 취미가 많습니다. 그리고 흥미있는 분야에 강한 열정을 보입니다.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2c31c30b-8ab3-81f4-a314-d509ea049da1" class="numbered-list" start="2"><li>성실하고 차분한 성격입니다. 주변 사람들에게 착한 사람이라는 말을 자주 듣습니다.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2c31c30b-8ab3-81bd-855d-ef6c091d4235" class="numbered-list" start="3"><li>피드백을 잘 수용합니다.</li></ol></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8141-aa48-f22f5084d034" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-813c-af31-f3baf1af0e79" class="">저의 약점은</p></div><div style="display:contents" dir="auto"><ol type="1" id="2c31c30b-8ab3-8168-81e4-fb93aee8c59c" class="numbered-list" start="1"><li>생각이 너무 많습니다. 주변의 도움이 없으면 생각이 과해 프로젝트가 산으로 가는 경우가 가끔 있습니다.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2c31c30b-8ab3-819e-8a84-fe9e49d24b59" class="numbered-list" start="2"><li>내성적인 성격입니다. 지금은 많이 고치려고 노력중이지만 아직 낯가림이 좀 있는 편입니다.</li></ol></div><div style="display:contents" dir="auto"><ol type="1" id="2c31c30b-8ab3-818b-91b5-c0ffd7020636" class="numbered-list" start="3"><li>두마리 토끼를 잡으려다가 놓치는 성격입니다.</li></ol></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81b5-ae7d-e4d5a3dcbc88" class="">💬 <strong>협업 스타일/협업 시 팀원에게 바라는점</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81e5-821f-f73654cc1a78" class="">대학에서 조별 과제를 할 때 아이디어를 적극적으로 내려 하고 프로젝트의 기획부터 발표까지 모든 파트에 가담하며 우리 조의 프로젝트에 대해 많이 이해하려 노력합니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-819f-8f8d-d3a2d27d495b" class="">혼자서는 산으로 가는 프로젝트가 될 때가 많아 팀원분들의 적극적인 아이디어 제출이 필요합니다.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-812c-8bb0-f9e6ea6e5c8a" class="">💻 <strong>관심 있는 기술 스택 / 배우고 싶은 분야</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8156-8746-c65df1a48631" class="">시스템, 컨텐츠 기획에 관심이 있고 기회가 된다면 시나리오를 작성해보고싶습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81be-81f6-ed45e9e7200c" class="">🚀 <strong>과정에서 이루고 싶은 목표*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81a8-8862-dde274f0331e" class="">게임 개발에 대한 전반적인 이해와 좋은 기획자가 되는 방법을 많이 배우고 싶습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81b1-b6e6-e89f6c97df01" class="">🎧 <strong>스트레스 해소 방법</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8138-ba6b-ec135a16ff53" class="">조용한 국내 여행지로 혼자 여행을 가서 맛있는 음식 먹기</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81e5-be04-ff5defb3c209" class="">아무도 없을 때 소리 지르기</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8160-ae69-eee26ca7a4b0" class="">아무 생각 안하고 자기</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-8133-8d89-f7eae74b8ace" class="">✏️ <strong>나를 표현하는 한마디 / 좌우명*</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81c9-aea7-fdfea289031d" class="">내일 죽어도 후회하지 않도록 살기.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81a4-ac4a-df1bc11befa8" class="">🎲 <strong>TMI 모든 것 가능 /</strong> <strong>내가 좋아하는 것들 (음식/영화/게임/</strong>애완동물 자랑<strong> 등)</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-814f-a995-efa3eceb90f1" class="">게임 발할라를 플레이하고 칵테일을 만드는 것에 관심이 생겨 다양한 술을 구해 홈텐딩을 하는 것을 좋아합니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8152-8d1d-c1eeab4f6c24" class="">인생 게임 3가지는 투 더 문 시리즈, 팀 포트리스 2, 언더테일 입니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81dd-b045-f308a4cd1c43" class="">베이스, 드럼 연주가 가능합니다. 또한 취미로 미디 작곡을 하고 있어 직접 게임 음악을 만들어보고싶습니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-81f6-9528-e67477682fb8" class="">고양이 한마리를 키우고 있습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2c31c30b-8ab3-81dd-827d-e9148b4ff0c4" class="">🎓 <strong>과정 수료 후 나의 모습 상상</strong></h2></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8142-a46f-cc6c2c976bbc" class="">늘 꿈만 꿔오던 게임 업계에 몸담으며 상상을 현실로 만드는 기획자가 될것입니다.</p></div><div style="display:contents" dir="auto"><p id="2c31c30b-8ab3-8146-aa33-ca055c804f29" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

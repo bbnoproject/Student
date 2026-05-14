@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "친구들과 게임 프로젝트를 처음 진행하게 되었을 때 팀장인 친구가 “너 아이디어도 많은 거 같은데 기획 한 번 해보는 거 어때?”에서 호기롭게 시작을 하여 기획을 맡게 되었습니다. 만들어지는 과정에서 여러 힘든 점도 많았지만 그래도 제 손으로부터 그림…",
         "severity": "info",
         "date": "2025-10-31"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "친구들이랑 프로젝트를 하나 하면서 게임 기획을 해보다가 저랑 잘 맞는 거 같아서 게임 기획을 계속하게 되었습니다. 하지만 그 과정 동안 하고 있는 것들이 잘하고 있는 건지 갈피를 잡지 못해 어영부영하다 시간이 많이 흘러버렸고, 다행히도 이런 좋은 기…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "장난기가 많은 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -244,7 +258,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "도전 대응 지원 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -256,13 +270,13 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 3,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {

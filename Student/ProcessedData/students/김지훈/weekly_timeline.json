@@ -10,12 +10,19 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
-    "severity": "stable",
+    "severity": "caution",
     "headline": "모집 및 선발 단계",
     "notes": [
+      {
+        "type": "management_status",
+        "title": "과정이탈 기록",
+        "summary": "수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.",
+        "severity": "caution",
+        "date": ""
+      },
       {
         "type": "admission",
         "title": "최종 선발 결과",
@@ -29,6 +36,13 @@
         "summary": "많은 직무교육을 찾아봤지만 AI시대에 대체되지 않을 내용을 찾기 어려웠습니다. 게임 기획은 아직 인간이 할 수 있는 부분이 많고, 인디게임도 오히려 AI도움을 받아 더 활성화될 거라 생각합니다. 무엇보다 가장 고관여의 콘텐츠를 직접 만들어보고 싶습니…",
         "severity": "info",
         "date": "2025-11-05"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "미래 콘텐츠는 결국 게임이고, 특히 AI가 게임제작을 유튜브 수준으로 대중화시킬 것이라 생각하고 있습니다. 계속 게임쪽 교육과정을 찾아왔으나, 마음에 드는 커리큘럼이 없었고, 이번에서야 알고 신청하게 되었습니다. 실무보다 계속 비지니스 관련된 일을…",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -86,12 +100,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 3
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -373,7 +387,7 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 3
@@ -578,7 +592,7 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 3
@@ -1150,7 +1164,7 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 3

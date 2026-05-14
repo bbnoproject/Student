@@ -29,6 +29,13 @@
         "summary": "게임기획자가 되고싶어서요 열심히 참여를 하여 좋은 게임 만들어서 제 가족들 먹여살리고 싶습니다. 열심히 하여 실질적은 결과를 만들어 내고 싶습니다. 꿈을 꾸었지만, 꿈꾸기만 하지않고 실제로 이뤄보고싶습니다!",
         "severity": "info",
         "date": "2025-10-21"
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "🔖 (업데이트 날짜 : )",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -91,7 +98,7 @@
         "reflection": 2,
         "careerAgency": 2
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -229,6 +236,13 @@
         "date": "2026-01-05"
       },
       {
+        "type": "management_status",
+        "title": "과정이탈 기록",
+        "summary": "노답",
+        "severity": "caution",
+        "date": "2026-01-09"
+      },
+      {
         "type": "attendance",
         "title": "출결 이슈 · 기타",
         "summary": "제적",
@@ -241,13 +255,6 @@
         "summary": "조퇴 (치과 진료)",
         "severity": "info",
         "date": "2026-01-08"
-      },
-      {
-        "type": "attendance",
-        "title": "출결 이슈 · 지각",
-        "summary": "지각",
-        "severity": "info",
-        "date": "2026-01-07"
       }
     ],
     "snapshot": null
@@ -327,7 +334,7 @@
         "reflection": 2,
         "careerAgency": 2
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -444,7 +451,7 @@
         "reflection": 2,
         "careerAgency": 2
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -884,7 +891,7 @@
         "reflection": 2,
         "careerAgency": 2
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   }

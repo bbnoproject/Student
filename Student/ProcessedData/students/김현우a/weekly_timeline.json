@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "게임업계 취업 희망하며 게임이 현재 자신과 가장 적성에 맞다고 판다하여 본과종에 참여하여 자신의 능력을 향상시켜서 게임업계 진출을 위한 능력을 습득하고 나아가 실제 게임업계에 취업을 희망하여 본 과정에 참여를 신청함",
         "severity": "info",
         "date": "2025-11-19"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "대원카드가 작성되었습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "하려는 의지는 있으나 성취도가 많이 떨어지는 편.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

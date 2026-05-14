@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "앞서 적었듯이 저는 다른 분야를 전공했고 이 분야는 정말 처음입니다. 그렇지만 분야를 배우고 일해보고 싶다는 것도 처음이라서 공부를 시작했습니다. 이제껏 혼자 공부하고 취업준비를 나름 해보려 했지만 기초지식부터 취업방향성 같은 부분에서 너무 갈피를…",
         "severity": "info",
         "date": "2025-10-21"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임을 보는 것도, 하는 것도 너무 좋아해서 자연스럽게 게임제작에 관심을 갖게 되었습니다. 당연히 게임 기획에도 관심을 가졌습니다. 하지만 어떻게 준비해야 할지 무슨 스펙을 쌓아야 하는 건지 감이 오지도 않고 비슷한 일을 하는 사람조차 주변에 없어서…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "🔖 (업데이트 날짜 : )",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -72,12 +86,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -282,7 +296,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "참여 지속성 점검 필요"

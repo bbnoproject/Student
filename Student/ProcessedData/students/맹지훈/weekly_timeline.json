@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "제가 본 과정에 참여를 신청한 계기는 꿈에 대한 도전을 처음이자 마지막으로 싶기 때문입니다. 고등학생 시절 다문화 센터의 봉사활동 중 ui 디자이너를 지망하던 대학생분과 만난적이 있었습니다. 그분은 당시 제가 말하는 상상속 게임 디자인에 관련한 잡담…",
         "severity": "info",
         "date": "2025-12-03"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "어렸을 때 만난 분의 권유에 의해 관심에서 꿈이 되었던 게임기획을 이번이 마지막 기회일거란 마음으로 들어오게 되었습니다. 혼자 하는 것이 아닌만큼 모두의 의견과 바람이 어우러져 이번 교육기간동안 유의미한 결과를 만들 수 있게 노력하겠습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "성취도가 뛰어나진 않으나, 열심히 하고 성격 좋은 편. 다만 가끔 감정 컨트롤이 미숙할 때가 있는 것으로 보임.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -252,7 +266,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "도전 대응 지원 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -264,13 +278,13 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 3,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {
@@ -428,7 +442,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "도전 대응 지원 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -440,13 +454,13 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {

@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "게임 기획이라는 꿈을 꾸고 있지만서도, 막상 게임을 직접 기획하거나 제작하여 만들어 낸 결과물은 아직까지 없었습니다. 소위, 포트폴리오로 내세울 만한 것이 하나도 없다고도 할 수 있습니다. 또한, 게임 기획이라는 직업이 무엇인지에 대하여 탐구하면 할…",
         "severity": "info",
         "date": "2025-11-22"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "세상의 다양한 문화와 콘텐츠에 대해서 공부하던 중 게임이라는 콘텐츠의 매력에 푹 빠지게 되었습니다. 그렇게 게임 산업과 관련된 여러 직종들에 대해서 찾아보게 되었고, 게임 기획이라는 직무가 저와 잘 맞는 직무라고 생각하게 되었습니다. 게임 기획자가…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "적극적이고, 분위기 좋게 만드는 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -77,7 +91,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -278,7 +292,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 4,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 3

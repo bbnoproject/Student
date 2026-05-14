@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 1,
+      "admission": 2,
       "career": 0
     },
     "severity": "stable",
@@ -22,6 +22,20 @@
         "summary": "합격 · 면접 점수 85",
         "severity": "success",
         "date": "2025-12-07"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "다른 게임 기획 학원들을 전전하며 포트폴리오를 제작한 경험이 있으나, 스스로 모자란 부분들이 자꾸만 보여서 어려움을 겪고 있었습니다. 그러던 중 AI를 활용해 게임 기획을 배울 수 있다는 것을 보고 관심이 생겨 기회를 놓치고 싶지 않아 지원하게 되었…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "학습 자체는 중간정도의 열의. 처음에는 소통이 미진했으나 점차 열정적으로 참여",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -79,12 +93,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -295,7 +309,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -307,13 +321,13 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
-        "reflection": 2,
+        "reflection": 3,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "회고 구조화 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {

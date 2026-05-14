@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "저는 게임기획이 모든 것의 시작이라고 생각하고 그 점에 매료되었습니다. 그렇게 게임기획에 관한 꿈을 가지게 되었습니다. 하지만, 비전공자이고 경력도 없어서 어떻게 배우고 시작해야 할 지 검색하고 찾아보던 와중에 경일게임아카데미 기획자 과정을 알게되어…",
         "severity": "info",
         "date": "2025-11-28"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "평소에 게임하며 지내다가 나도 게임을 만드거나, 사람들에게 게임으로 여러 경험을 주고 싶어졌고 그에 관해 검색하며 찾아보다가 경겜아를 알게되어 지원하게 되었고 꼭 수료하여 현업자분들과 동등한 실력이 되어 게임업계에 이바지하며 언젠간 내가 여러한 경험…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "무난하고 성실함. 좀더 파악 필요.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -267,7 +281,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "전반적으로 안정적인 성장 흐름"

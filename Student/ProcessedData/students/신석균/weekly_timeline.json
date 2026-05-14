@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "평소에도 게임에 관심이 많으며 즐겨하고 있습니다. 그리고 아주 가벼운 소설등을 쓰면서 소설 설정이나 게임 설정 등을 구상하고 만들고 있었습니다. 다만 이는 아주 취미의 영역이었으나 현재 다시 일을 구하게 되면서 '내가 정말 하고 싶은 일은 무엇인가…",
         "severity": "info",
         "date": "2025-12-02"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "반드시 게임 기획에 대한 지식과 실력을 쌓아 취직하겠습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "참여도는 미진하나, 메월드 프로젝트 팀장 역할을 무난하게 수행하고 있는 것으로 확인",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -427,7 +441,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "도전 대응 지원 필요",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -439,13 +453,13 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "도전 대응 지원 필요"
     }
   },
   {
@@ -1020,7 +1034,7 @@
         "selfRegulation": 4,
         "engagement": 4,
         "collaboration": 3,
-        "resilience": 2,
+        "resilience": 1,
         "reflection": 4,
         "careerAgency": 3
       },

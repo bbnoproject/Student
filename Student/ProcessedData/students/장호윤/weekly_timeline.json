@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "앞서 자기소개에서 얘기했듯 평소 만드는걸 좋아하는 편입니다! 그러다 유튜브나 인스타 등에서 유니티나 기타 게임 개발툴로 게임을 만드는 영상을 접하고 제가 상상한 세계관을 게임으로 만들 수 있으면 좋을 것 같다는 생각을 했고, 혼자서 기획을 하다가 어…",
         "severity": "info",
         "date": "2025-10-10"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임 기획에 관심이 많았는데 마침 인스타 광고를 보고 이거다 싶어서 바로 상담! 많은 것을 배우고 가고 싶습니당.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "🔖 (업데이트 날짜 : )",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 2
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -287,7 +301,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 2

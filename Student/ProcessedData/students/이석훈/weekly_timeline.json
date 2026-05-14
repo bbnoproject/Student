@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "1. [알게 된 경로] G식백과 광고 보고 시기가 적절하여 신청하게 되었습니다. 2. [현재의 상황과 부족한 점의 깨달음] 심리상담에서 게임 기획자를 목표로 변경하면서 소통을 위한 CS지식 습득을 위해서 심리학에서 컴공으로 전과를 했습니다. 그러나…",
         "severity": "info",
         "date": "2025-12-01"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "지식백과의 김성회 아저씨가 유튜브에서 광고하는거 보고 학업 스케쥴이랑 맞아서 참가하게 되었습니다. 기획서를 쓰는 것 보다 직접 프로토타입을 제작하고 스크립트를 쓰는등의 구현에 좀 더 관심이 많아서 유니티 활용해서 게임을 만드는 경험을 많이 해보고싶네…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "주관이 강하고, 본인이 틀렸다는 것을 인정하지 못하는 성격",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -86,12 +100,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 4
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -308,7 +322,7 @@
         "selfRegulation": 1,
         "engagement": 1,
         "collaboration": 1,
-        "resilience": 1,
+        "resilience": 2,
         "reflection": 3,
         "careerAgency": 4
       },

@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "어릴 때부터 했습니게임을 좋아다. 아버지와 함께하던 콘솔게임부터 초등학생때 부터 즐겨왔던 온라인 rpg, 그리고 유희왕/하스스톤등의 카드게임과 수집형 모바일게임 등등 여러 장르의 게임을 하면서 이런 요소는 이랬으면 더 좋았을텐데 를 생각하다보니 게임…",
         "severity": "info",
         "date": "2025-11-28"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "광고를 통해 보게 되었으나 게임 기획이 저와 잘 맞을수도 있을 것이라는 생각이 들어 신청하게되었습니다. 열심히, 그리고 잘 해보겠습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "열심히 하나 소통은 약간 미숙한 인원.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -75,9 +89,9 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },

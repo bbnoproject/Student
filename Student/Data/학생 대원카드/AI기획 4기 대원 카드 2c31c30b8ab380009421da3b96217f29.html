@@ -1,0 +1,745 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>AI기획 4기 대원 카드</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2c31c30b-8ab3-8000-9421-da3b96217f29" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📄</span></div><h1 class="page-title" dir="auto">AI기획 4기 대원 카드</h1><p class="page-description" dir="auto"></p></header><div class="page-body"><div style="display:contents" dir="ltr"><div id="2c31c30b-8ab3-8091-afce-de2f164a93a1" class="collection-content"><h4 class="collection-title">📣 AI기획 4기 대원 카드</h4><div class="collection-content-wrapper"><table class="collection-content"><thead><tr><th><span class="icon property-icon"><img src="https://www.notion.so/icons/font_gray.svg" style="width:14px;height:14px;display:block"/></span>이름</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>취미</th></tr></thead><tbody><tr id="2c31c30b-8ab3-818e-8ff3-f2604fde908c"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B0%95%EC%9C%A0%EB%AF%BC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3818e8ff3f2604fde908c.html">기획 4기) 강유민 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-orange">YouTube</span><span class="selected-value select-value-color-blue">드라마 &amp; 영화 시청</span><span class="selected-value select-value-color-blue">애니메이션</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-81cb-b97f-f2575f3a8a3b"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B0%95%ED%83%9C%EC%84%B1%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381cbb97ff2575f3a8a3b.html">기획 4기) 강태성 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-gray">YoutTube 감상</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">영상편집</span><span class="selected-value select-value-color-orange">인터넷 방송 보기</span></td></tr><tr id="2c31c30b-8ab3-81f2-9838-ff2a6549674b"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B3%A0%EC%8A%B9%EC%A3%BC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381f29838ff2a6549674b.html">기획 4기) 고승주 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-green">웹소설/웹툰</span><span class="selected-value">음악</span></td></tr><tr id="2c31c30b-8ab3-8145-ac44-dd655c316239"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B3%BD%EC%9A%A9%EC%A4%80%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38145ac44dd655c316239.html">기획 4기) 곽용준 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">게임/운동</span><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value select-value-color-blue">아이디어 구현😁</span><span class="selected-value select-value-color-blue">요리</span><span class="selected-value select-value-color-brown">잠자기</span><span class="selected-value">👟운동</span></td></tr><tr id="2c31c30b-8ab3-814b-a8b4-c8c1fa46b0ee"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B6%8C%EC%88%98%EB%B9%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3814ba8b4c8c1fa46b0ee.html">기획 4기) 권수빈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">독서📕</span><span class="selected-value select-value-color-green">산책</span></td></tr><tr id="2c91c30b-8ab3-80c9-96b5-c75aa0d9aed7"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EA%B2%BD%EB%AF%BC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c91c30b8ab380c996b5c75aa0d9aed7.html">기획 4기) 김경민 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">미드 시청</span><span class="selected-value select-value-color-yellow">보드게임</span><span class="selected-value">수영</span><span class="selected-value select-value-color-blue">여행</span><span class="selected-value">영화</span><span class="selected-value select-value-color-blue">요리</span><span class="selected-value select-value-color-orange">음악감상</span><span class="selected-value select-value-color-yellow">잠</span><span class="selected-value">주식투자</span></td></tr><tr id="2c31c30b-8ab3-81f4-bcdc-d28ca64d1a5f"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EB%AF%BC%EC%88%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381f4bcdcd28ca64d1a5f.html">기획 4기) 김민수 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-blue">닌텐도.</span><span class="selected-value select-value-color-blue">드라마 &amp; 영화 시청</span><span class="selected-value select-value-color-blue">아이디어 구현😁</span><span class="selected-value select-value-color-blue">애니메이션</span><span class="selected-value select-value-color-blue">요리</span></td></tr><tr id="2c31c30b-8ab3-8196-bb70-fe2b8458a958"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EB%AF%BC%EC%A0%9C%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38196bb70fe2b8458a958.html">기획 4기) 김민제 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">그림그리기</span><span class="selected-value select-value-color-purple">드라마시청</span><span class="selected-value">만화보기</span><span class="selected-value">영화 감상</span><span class="selected-value select-value-color-blue">요리</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2ca1c30b-8ab3-806e-b1a8-c42f9331883e"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EB%B2%94%EC%A7%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202ca1c30b8ab3806eb1a8c42f9331883e.html">기획 4기) 김범진 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-yellow">게임 프로그래밍</span><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">그림그리기</span><span class="selected-value select-value-color-red">도전</span><span class="selected-value">새로운 것 배우기</span><span class="selected-value select-value-color-brown">잠자기</span></td></tr><tr id="2c31c30b-8ab3-8052-a797-c3c2d5071c8d"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EC%84%9C%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38052a797c3c2d5071c8d.html"><span class="icon">🐾</span>기획 4기) 김서현 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value">걷기</span><span class="selected-value">그림</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value select-value-color-yellow">사진</span><span class="selected-value select-value-color-green">영화감상</span><span class="selected-value select-value-color-pink">🎮게임</span></td></tr><tr id="2c31c30b-8ab3-8164-9688-e02916f5b5d3"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EC%88%98%ED%99%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381649688e02916f5b5d3.html">기획 4기) 김수환 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-default">INFJ</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">영화 감상</span></td></tr><tr id="2c31c30b-8ab3-81f6-a1d2-cb484ab0f3ff"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EC%8B%9C%EC%98%A8%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381f6a1d2cb484ab0f3ff.html"><span class="icon">🫠</span>기획 4기) 김시온 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">맛있는 커피 마시기</span><span class="selected-value">맛집투어</span><span class="selected-value select-value-color-blue">여행</span><span class="selected-value select-value-color-blue">요리</span></td></tr><tr id="2c31c30b-8ab3-81fb-bf89-db06de1663b2"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EC%98%81%EB%8F%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381fbbf89db06de1663b2.html">기획 4기) 김영도 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">RPG/추리 게임</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">노래부르기</span><span class="selected-value">만화보기</span><span class="selected-value">영화보기</span><span class="selected-value select-value-color-blue">음악듣기</span></td></tr><tr id="2c31c30b-8ab3-81ec-9c60-c66f959ac53b"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EC%9C%A4%EA%B7%9C%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381ec9c60c66f959ac53b.html">기획 4기) 김윤규 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value">게임/운동</span></td></tr><tr id="2c61c30b-8ab3-8041-8478-ee1349acc699"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%EC%A7%80%ED%9B%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c61c30b8ab380418478ee1349acc699.html">기획 4기) 김지훈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-pink">사주</span><span class="selected-value select-value-color-orange">인터넷 방송 보기</span></td></tr><tr id="2c91c30b-8ab3-8082-85c8-df3095783f95"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%ED%83%9C%ED%99%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c91c30b8ab3808285c8df3095783f95.html">기획 4기) 김태환 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-gray">노래</span></td></tr><tr id="2de1c30b-8ab3-80be-aedf-f0fc8afe7533"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%ED%83%9C%ED%9B%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202de1c30b8ab380beaedff0fc8afe7533.html">기획 4기) 김태훈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-gray">노래</span><span class="selected-value">농구</span><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-blue">드라마 &amp; 영화 시청</span><span class="selected-value select-value-color-green">드라이브</span><span class="selected-value select-value-color-pink">야구보기</span><span class="selected-value select-value-color-gray">일렉기타연주</span><span class="selected-value select-value-color-brown">축구</span></td></tr><tr id="2c31c30b-8ab3-8137-a359-e78d8ba005f9"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%ED%98%84%EC%9A%B0A%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38137a359e78d8ba005f9.html">기획 4기) 김현우A 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-blue">닌텐도.</span><span class="selected-value">만화보기</span><span class="selected-value select-value-color-blue">아이디어 구현😁</span><span class="selected-value">영화보기</span></td></tr><tr id="2c31c30b-8ab3-811d-9ccb-d6a0798a55f0"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%ED%98%84%EC%9A%B0B%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3811d9ccbd6a0798a55f0.html">기획 4기) 김현우B 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-pink">멍때리기</span><span class="selected-value">영화 감상</span><span class="selected-value select-value-color-purple">유튜브시청</span><span class="selected-value">주식투자</span></td></tr><tr id="2c31c30b-8ab3-8199-b13b-d07fd994f76d"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EA%B9%80%ED%9D%A5%EA%B7%9C%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38199b13bd07fd994f76d.html"><span class="icon">👉</span>기획 4기) 김흥규 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-purple">ENTP</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-811b-a30a-fbeef79521c8"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%A7%B9%EC%A7%80%ED%9B%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3811ba30afbeef79521c8.html">기획 4기) 맹지훈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-gray">INTJ</span><span class="selected-value select-value-color-blue">RPG/추리 게임</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value">노래부르기</span><span class="selected-value">누워서 유튜브보기</span><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-orange">덕후</span><span class="selected-value select-value-color-green">산책</span><span class="selected-value select-value-color-green">웹소설/웹툰</span><span class="selected-value select-value-color-purple">유튜브시청</span><span class="selected-value select-value-color-orange">음악감상</span><span class="selected-value select-value-color-red">힙합</span></td></tr><tr id="2c31c30b-8ab3-819e-9af0-e1b58b4587f4"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%B0%95%EA%B8%B0%EC%9D%80%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3819e9af0e1b58b4587f4.html">기획 4기) 박기은 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-green">산책</span><span class="selected-value select-value-color-blue">여행</span><span class="selected-value select-value-color-blue">요리</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-81d7-9f20-f3e72bb96ee7"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%B0%95%EB%AF%BC%EA%B7%9C%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381d79f20f3e72bb96ee7.html">기획 4기) 박민규 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-blue">서브컬쳐</span></td></tr><tr id="2cb1c30b-8ab3-80be-9047-f8cf4d0b786d"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%B0%95%EC%98%81%EC%84%B1%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202cb1c30b8ab380be9047f8cf4d0b786d.html">기획 4기) 박영성 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value">걷기</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-red">게임 세계관 덕질</span><span class="selected-value">그림</span><span class="selected-value select-value-color-red">미디어 시청</span><span class="selected-value select-value-color-green">밀리터리</span></td></tr><tr id="2c31c30b-8ab3-8154-8b19-fb39603df67b"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%B0%95%EC%9B%90%EC%9A%B0%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381548b19fb39603df67b.html">기획 4기) 박원우 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-blue">여행</span><span class="selected-value select-value-color-orange">운동 </span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-8132-aee0-f4fab456f26e"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%B0%95%ED%98%84%EC%88%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38132aee0f4fab456f26e.html">기획 4기) 박현수 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">독서📕</span><span class="selected-value select-value-color-green">산책</span><span class="selected-value select-value-color-orange">음악감상</span><span class="selected-value">커피</span></td></tr><tr id="2c31c30b-8ab3-817e-9b16-d6dbf12320b6"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EB%B0%B0%EC%A3%BC%EB%B9%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3817e9b16d6dbf12320b6.html">기획 4기) 배주빈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-gray">YoutTube 감상</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value select-value-color-default">글쓰기</span><span class="selected-value select-value-color-blue">글쓰기 준비</span><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-blue">서브컬쳐</span><span class="selected-value select-value-color-blue">애니메이션</span><span class="selected-value select-value-color-green">웹소설/웹툰</span><span class="selected-value select-value-color-green">카드게임</span><span class="selected-value select-value-color-red">헬스</span></td></tr><tr id="2c31c30b-8ab3-810b-899d-d17d29a13d0c"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%84%9C%EC%A7%84%ED%98%B8%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3810b899dd17d29a13d0c.html">기획 4기) 서진호 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">IT관련 유튜브 시청</span><span class="selected-value">IT덕후</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">번역</span><span class="selected-value select-value-color-orange">음악감상</span><span class="selected-value select-value-color-brown">자전거타기</span></td></tr><tr id="2c91c30b-8ab3-80bb-aa7e-f8ac8e0bc494"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%86%90%ED%98%B8%EC%A7%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c91c30b8ab380bbaa7ef8ac8e0bc494.html">기획 4기) 손호진 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-default">INFP</span><span class="selected-value select-value-color-orange">YouTube</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-pink">야구보기</span><span class="selected-value select-value-color-orange">인터넷 방송 보기</span><span class="selected-value select-value-color-yellow">잠</span></td></tr><tr id="2c31c30b-8ab3-812b-81be-c5136be144fd"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%86%A1%EC%95%84%EC%98%81%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3812b81bec5136be144fd.html">기획 4기) 송아영 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">그림</span><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-brown">수다</span></td></tr><tr id="2c31c30b-8ab3-8175-b2e8-c1225c0765d8"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%8A%B9%EC%A0%95%ED%95%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38175b2e8c1225c0765d8.html">기획 4기) 승정하 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">아이디어 구현😁</span><span class="selected-value">운동하는걸 좋아해요</span></td></tr><tr id="2c31c30b-8ab3-8189-9aff-ee55ddff44ae"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%8B%A0%EC%84%9D%EA%B7%A0%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381899affee55ddff44ae.html">기획 4기) 신석균 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value">독서📕</span><span class="selected-value select-value-color-purple">미니어처 도색</span><span class="selected-value select-value-color-green">웹소설/웹툰</span></td></tr><tr id="2e91c30b-8ab3-8094-be4f-cdcacfb7bea4"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%95%88%EC%84%B1%EC%A7%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202e91c30b8ab38094be4fcdcacfb7bea4.html">기획 4기) 안성진 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">기타연주</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value select-value-color-pink">야구보기</span><span class="selected-value select-value-color-brown">축구</span></td></tr><tr id="2d91c30b-8ab3-80d8-9e4f-ed54def558c3"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%98%88%EC%9D%B8%ED%95%B4%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202d91c30b8ab380d89e4fed54def558c3.html">기획 4기) 예인해 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-green">독서</span><span class="selected-value select-value-color-blue">요리</span></td></tr><tr id="2c31c30b-8ab3-81db-a86f-c8fe9d7d07be"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%98%A4%EB%8F%99%EA%B1%B4%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381dba86fc8fe9d7d07be.html">기획 4기) 오동건 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value select-value-color-blue">닌텐도.</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-8184-ae2d-e9c4c0eacacb"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%98%A4%EC%A2%85%ED%98%B8%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38184ae2de9c4c0eacacb.html">기획 4기) 오종호 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-blue">서브컬쳐</span></td></tr><tr id="2c51c30b-8ab3-80d3-add8-d2f59aa17f74"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9A%B0%ED%98%84%EC%8A%B9%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c51c30b8ab380d3add8d2f59aa17f74.html">기획 4기) 우현승 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-gray">노래</span><span class="selected-value select-value-color-brown">축구</span><span class="selected-value select-value-color-red">헬스</span></td></tr><tr id="2c31c30b-8ab3-8153-8ea3-e6b72b03f71e"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9C%A0%ED%95%B4%EC%B0%AC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381538ea3e6b72b03f71e.html"><span class="icon">🐱</span>기획 4기) 유해찬 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value">사진찍기</span><span class="selected-value">영화보기</span><span class="selected-value select-value-color-blue">음악듣기</span><span class="selected-value select-value-color-red">콘서트가기</span></td></tr><tr id="2c31c30b-8ab3-8158-acc9-d1a261d51ed0"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9C%A4%EB%8F%99%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38158acc9d1a261d51ed0.html">기획 4기) 윤동현 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-default">INFP</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value">누워서 유튜브보기</span><span class="selected-value select-value-color-pink">멍때리기</span><span class="selected-value select-value-color-blue">애니메이션</span><span class="selected-value select-value-color-gray">운전</span></td></tr><tr id="2c31c30b-8ab3-8186-945e-dc937b325e94"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9C%A4%EC%9C%A0%EB%82%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38186945edc937b325e94.html">기획 4기) 윤유나 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-default">노래듣기</span></td></tr><tr id="2c31c30b-8ab3-81a6-b43b-d527acdf2938"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EA%B0%80%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381a6b43bd527acdf2938.html"><span class="icon">💜</span>기획 4기) 이가현 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">독서📕</span><span class="selected-value">만화보기</span><span class="selected-value">영상시청</span></td></tr><tr id="2c31c30b-8ab3-81a8-9e41-e4c506c508f1"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EA%B7%A0%ED%98%B8%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381a89e41e4c506c508f1.html">기획 4기) 이균호 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">F1</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-green">독서</span><span class="selected-value">영화 감상</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-8148-977f-dee158b3ced4"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EB%8F%84%EA%B1%B4%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38148977fdee158b3ced4.html">기획 4기) 이도건 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-default">경치감상</span><span class="selected-value">누워서 유튜브보기</span><span class="selected-value">술 마시기🍸</span></td></tr><tr id="2c31c30b-8ab3-8159-9119-c7ac926178f7"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EB%8F%84%EB%AF%BC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381599119c7ac926178f7.html">기획 4기) 이도민 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">클라이밍</span></td></tr><tr id="2c31c30b-8ab3-815d-8267-f917efe32cb8"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EB%8F%99%EC%9A%B0%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3815d8267f917efe32cb8.html">기획 4기) 이동우 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">복싱</span><span class="selected-value select-value-color-orange">운동 </span><span class="selected-value select-value-color-gray">포켓몬</span></td></tr><tr id="2c31c30b-8ab3-8044-9e8a-d7e936244ff6"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EB%8F%99%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab380449e8ad7e936244ff6.html">기획 4기) 이동현 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-blue">서브컬쳐</span><span class="selected-value select-value-color-purple">전략/턴제/퍼즐 게임</span></td></tr><tr id="2c31c30b-8ab3-8134-81fc-edd8ed3aefb0"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%84%9D%ED%9B%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3813481fcedd8ed3aefb0.html">기획 4기) 이석훈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span></td></tr><tr id="2c31c30b-8ab3-819f-aca7-ea484dcee5f7"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%8A%B9%EA%B5%AC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3819faca7ea484dcee5f7.html">기획 4기) 이승구 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-orange">운동 </span><span class="selected-value select-value-color-red">철학</span></td></tr><tr id="2c31c30b-8ab3-811e-80a5-f9ff5b820445"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%8A%B9%EC%A7%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3811e80a5f9ff5b820445.html">기획 4기) 이승진 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-8158-b29b-fc463309c38e"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%98%81%EC%9A%B0%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38158b29bfc463309c38e.html"><span class="icon">💜</span>기획 4기) 이영우 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">게임/운동</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-green">독서</span><span class="selected-value">독서 / 운동</span><span class="selected-value select-value-color-blue">아이디어 구현😁</span><span class="selected-value">영화 감상</span></td></tr><tr id="2c31c30b-8ab3-8101-b86d-ccc7f01d3be8"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%9B%90%ED%99%8D%20%EB%8C%80%EC%9B%90%EC%B9%B4%EB%93%9C%202c31c30b8ab38101b86dccc7f01d3be8.html">기획 4기) 이원홍 대원카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">RPG/추리 게임</span><span class="selected-value select-value-color-orange">intp</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-pink">고양이</span></td></tr><tr id="2c31c30b-8ab3-81dd-bfd9-cf2516818c13"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%9C%A0%EC%86%A1%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381ddbfd9cf2516818c13.html">기획 4기) 이유송 대원 카드</a></td><td class="cell-TzgJ"></td></tr><tr id="2c31c30b-8ab3-813a-8241-ee495afdd201"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%A0%95%ED%97%8C%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3813a8241ee495afdd201.html">기획 4기) 이정헌 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-pink">고양이</span><span class="selected-value select-value-color-green">산책</span><span class="selected-value select-value-color-orange">운동 </span><span class="selected-value select-value-color-orange">추론</span></td></tr><tr id="2c51c30b-8ab3-8087-852d-e5cc4da7786a"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%A4%80%ED%98%81%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c51c30b8ab38087852de5cc4da7786a.html">기획 4기) 이준혁 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-orange">intp</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-yellow">게임 프로그래밍</span><span class="selected-value select-value-color-blue">글쓰기 준비</span><span class="selected-value">대용량/실험적 요리하기</span><span class="selected-value select-value-color-orange">데이터분석</span><span class="selected-value select-value-color-orange">러닝</span><span class="selected-value">만화감상</span><span class="selected-value select-value-color-orange">먹기</span><span class="selected-value select-value-color-yellow">일중독</span><span class="selected-value select-value-color-orange">추론</span><span class="selected-value select-value-color-red">헬스</span><span class="selected-value">👟운동</span></td></tr><tr id="2c31c30b-8ab3-81b9-92b9-dd2227a629b0"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%EC%B0%AC%EA%B7%9C%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381b992b9dd2227a629b0.html"><span class="icon">🫠</span>기획 4기) 이찬규 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">독서📕</span><span class="selected-value">영화 감상</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-811a-905e-c797e9016794"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9D%B4%ED%98%95%EC%A7%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3811a905ec797e9016794.html">기획 4기) 이형진 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-pink">강아지랑 산책🐶</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value">넷플릭스</span><span class="selected-value select-value-color-purple">덕질</span><span class="selected-value select-value-color-gray">술</span><span class="selected-value">영화 감상</span><span class="selected-value">커피</span><span class="selected-value">탁구</span></td></tr><tr id="2c91c30b-8ab3-80cf-8bbd-d688e9a349e9"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9E%84%EC%86%8C%EC%98%81%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c91c30b8ab380cf8bbdd688e9a349e9.html">기획 4기) 임소영 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-red">Netfilx</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-gray">노래</span></td></tr><tr id="2c31c30b-8ab3-8156-93dd-ddc12c10df09"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9E%A5%EA%B7%BC%ED%98%81%20%EB%8C%80%EC%9B%90%EC%B9%B4%EB%93%9C%202c31c30b8ab3815693ddddc12c10df09.html">기획 4기) 장근혁 대원카드</a></td><td class="cell-TzgJ"><span class="selected-value">노래 부르기</span><span class="selected-value select-value-color-red">야구보기⚾️</span><span class="selected-value">정리를 좋...좋아합니다</span></td></tr><tr id="2c41c30b-8ab3-80e6-a279-ca7b4aea041a"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9E%A5%EC%9C%A4%EC%9A%B0%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c41c30b8ab380e6a279ca7b4aea041a.html">기획 4기) 장윤우 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value">개발</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value select-value-color-default">경치감상</span><span class="selected-value select-value-color-blue">글쓰기 준비</span><span class="selected-value select-value-color-gray">노래</span><span class="selected-value select-value-color-blue">서브컬쳐</span><span class="selected-value select-value-color-brown">잠자기</span></td></tr><tr id="2c31c30b-8ab3-81c2-82cd-f9d185a00e1d"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%9E%A5%ED%98%B8%EC%9C%A4%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381c282cdf9d185a00e1d.html">기획 4기) 장호윤 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">RPG/추리 게임</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-brown">공상🤔</span><span class="selected-value select-value-color-blue">아이디어 구현😁</span><span class="selected-value select-value-color-default">제로투</span></td></tr><tr id="2c31c30b-8ab3-81f5-a5e2-fedf6bff4af0"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A0%95%EC%84%9D%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381f5a5e2fedf6bff4af0.html"><span class="icon">💜</span>기획 4기) 정석현 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-yellow">악기</span><span class="selected-value select-value-color-orange">음악감상</span><span class="selected-value select-value-color-gray">작곡</span><span class="selected-value select-value-color-red">콘서트가기</span><span class="selected-value select-value-color-yellow">혼자여행</span></td></tr><tr id="2de1c30b-8ab3-80b3-820b-cd4754c2b7d5"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A0%95%EC%9A%B0%EA%B2%BD%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202de1c30b8ab380b3820bcd4754c2b7d5.html">기획 4기) 정우경 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-green">독서</span><span class="selected-value select-value-color-green">산책</span></td></tr><tr id="2c31c30b-8ab3-81f4-950c-ccc8868014af"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A0%95%EC%9E%AC%EC%9A%A9%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381f4950cccc8868014af.html">기획 4기) 정재용 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value">노래부르기</span><span class="selected-value select-value-color-orange">덕후</span><span class="selected-value select-value-color-blue">애니메이션</span><span class="selected-value select-value-color-red">야구보기⚾️</span><span class="selected-value select-value-color-purple">유튜브시청</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-81fb-8af5-cf719d9f880c"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A0%95%EC%9E%AC%ED%9B%88%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381fb8af5cf719d9f880c.html">기획 4기) 정재훈 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">RPG/추리 게임</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">독서📕</span><span class="selected-value select-value-color-green">영화감상</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-81a5-a09d-f42b1c6de972"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A1%B0%EC%A4%80%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381a5a09df42b1c6de972.html">기획 4기) 조준현 대원 카드</a></td><td class="cell-TzgJ"></td></tr><tr id="2c31c30b-8ab3-8175-898f-c1400fb4062b"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A1%B0%ED%98%84%EC%9D%BC%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38175898fc1400fb4062b.html">기획 4기) 조현일 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-green">드라이브</span><span class="selected-value select-value-color-red">심레이싱</span><span class="selected-value select-value-color-orange">음악감상</span></td></tr><tr id="2c31c30b-8ab3-81b4-9120-c0139bc104cf"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%A3%BC%EC%9E%AC%ED%98%95%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381b49120c0139bc104cf.html">기획 4기) 주재형 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-orange">intp</span><span class="selected-value select-value-color-yellow">게임 프로그래밍</span><span class="selected-value">게임/운동</span><span class="selected-value">영화</span></td></tr><tr id="2c31c30b-8ab3-8107-b3b9-f7ffdea2ae0f"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%B1%84%EC%A7%80%ED%98%95%20%ED%83%9C%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab38107b3b9f7ffdea2ae0f.html"><span class="icon">💜</span>기획 4기) 채지형 태원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-default">노래듣기</span><span class="selected-value select-value-color-yellow">잠</span><span class="selected-value">커피</span></td></tr><tr id="2c31c30b-8ab3-8199-9669-c9aead474068"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%B2%9C%EC%98%81%ED%98%84%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381999669c9aead474068.html">기획 4기) 천영현 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">여행</span><span class="selected-value select-value-color-orange">운동 </span></td></tr><tr id="2c31c30b-8ab3-8111-9239-f3cc2942268d"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%EC%B5%9C%EC%84%A0%EB%8F%99%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381119239f3cc2942268d.html"><span class="icon">🐕</span>기획 4기) 최선동 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">기타연주</span><span class="selected-value select-value-color-blue">드라마 &amp; 영화 시청</span><span class="selected-value select-value-color-blue">요리</span><span class="selected-value">음악</span></td></tr><tr id="2c31c30b-8ab3-8192-9aa7-ca3597c71d69"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%ED%95%9C%EC%9D%98%ED%98%B8%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381929aa7ca3597c71d69.html"><span class="icon">💜</span>기획 4기) 한의호 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">그림</span><span class="selected-value select-value-color-blue">애니메이션</span><span class="selected-value select-value-color-purple">유튜브시청</span></td></tr><tr id="2c31c30b-8ab3-811b-96e4-c8b0fa9fa3ad"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%ED%95%9C%EC%9E%AC%ED%99%98%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab3811b96e4c8b0fa9fa3ad.html">기획 4기) 한재환 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-orange">덕후</span><span class="selected-value">번역</span><span class="selected-value select-value-color-blue">서브컬쳐</span></td></tr><tr id="2de1c30b-8ab3-8021-b7b3-f28840ba0576"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%ED%95%9C%EC%A7%80%EC%9A%B0%20%EB%8C%80%EC%9B%90%EC%B9%B4%EB%93%9C%202de1c30b8ab38021b7b3f28840ba0576.html">기획 4기) 한지우 대원카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-brown">게임하기</span><span class="selected-value">누워서 유튜브보기</span><span class="selected-value select-value-color-blue">닌텐도.</span><span class="selected-value">커피</span></td></tr><tr id="2c31c30b-8ab3-81c5-a3e4-fde695866079"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D%204%EA%B8%B0)%20%ED%99%8D%ED%83%9C%EA%B4%91%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381c5a3e4fde695866079.html">기획 4기) 홍태광 대원 카드</a></td><td class="cell-TzgJ"><span class="selected-value select-value-color-blue">게임</span><span class="selected-value">그림</span><span class="selected-value select-value-color-green">카드게임</span></td></tr><tr id="2c31c30b-8ab3-8194-8b5d-f4636e44688b"><td class="cell-title"><a href="%EA%B8%B0%ED%9A%8D4%EA%B8%B0)%20%EC%9E%84%EB%8F%99%EA%B7%A0%20%EB%8C%80%EC%9B%90%20%EC%B9%B4%EB%93%9C%202c31c30b8ab381948b5df4636e44688b.html">기획4기) 임동균 대원 카드</a></td><td class="cell-TzgJ"></td></tr></tbody></table></div><br/><br/></div></div><div style="display:contents" dir="auto"><p id="2c61c30b-8ab3-8027-bbd7-ecc67b8949ee" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2e91c30b-8ab3-8077-b66f-f5b8ca9aaee1" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

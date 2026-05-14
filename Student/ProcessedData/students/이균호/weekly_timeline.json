@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "본 과정에 지원하여 수많은 사람과 함께 협업하며 게임을 직접 만들어보고 그 과정에서 맞닥뜨릴 역경을 뛰어넘는 경험을 해보고 싶습니다. 저의 부족한 경험을 채우고 꼭 게임 기획의 길을 걷고 싶어 해당 과정에 신청하게 되었습니다.",
         "severity": "info",
         "date": "2025-12-02"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "어릴 적 친구들과 두툼한 나뭇가지 하나 주워들고 동네 뒷산을 누비던 모험의 추억이 있습니다. 그래서 그런지 지금도 탐험하는 게임을 정말 좋아해요. 그렇게 게이머로 오래 살다보니 어느 날부터 게임을 만든 사람의 의도가 보이고 왜 그런 선택을 했는지 스…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "열심히 하려는 편. 성취도 양호.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -274,7 +288,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "전반적으로 안정적인 성장 흐름"
@@ -457,7 +471,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 4
       },
       "confidence": "High",
       "note": "협업 상황 면담 권장"

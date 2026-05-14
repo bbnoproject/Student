@@ -1,0 +1,750 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>기획 4기) 박영성 대원 카드</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+/* Override strong tags inside headings to maintain consistent weight */
+h1 strong,
+h2 strong,
+h3 strong {
+	font-weight: 600;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+
+	table.collection-content {
+		width: 100%;
+		table-layout: fixed;
+	}
+
+	table.collection-content th,
+	table.collection-content td {
+		overflow-wrap: anywhere;
+	}
+
+	table.collection-content td > .user,
+	table.collection-content td > time {
+		white-space: pre-wrap;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content-wrapper {
+	overflow-x: auto;
+}
+
+@media only print {
+	.collection-content-wrapper {
+		overflow-x: visible;
+	}
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	gap: 46px;
+}
+
+.column {
+	min-width: 0;
+	overflow: hidden;
+}
+
+.column > *:first-child {
+	margin-top: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+table {
+	border-collapse: collapse;
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol.numbered-list.numbered-list-digits-2 {
+	padding-inline-start: 2em;
+}
+
+ol.numbered-list.numbered-list-digits-3plus {
+	padding-inline-start: 2.4em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", "Noto Sans Arabic", "Noto Sans Hebrew", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 124, 215, 0.094);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(125, 122, 117, 1);
+	fill: rgba(125, 122, 117, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(56, 125, 201, 1);
+	fill: rgba(56, 125, 201, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(229, 242, 252, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 118, 217, 0.203); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2cb1c30b-8ab3-80be-9047-f8cf4d0b786d" class="page sans"><header><h1 class="page-title" dir="auto">기획 4기) 박영성 대원 카드</h1><p class="page-description" dir="auto"></p><table class="properties"><tbody><tr class="property-row property-row-multi_select"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/list_gray.svg" style="width:14px;height:14px;display:block"/></span>취미</th><td><span class="selected-value">걷기</span><span class="selected-value select-value-color-blue">게임</span><span class="selected-value select-value-color-red">게임 세계관 덕질</span><span class="selected-value">그림</span><span class="selected-value select-value-color-red">미디어 시청</span><span class="selected-value select-value-color-green">밀리터리</span></td></tr><tr class="property-row property-row-status"><th><span class="icon property-icon"><img src="https://www.notion.so/icons/burst_gray.svg" style="width:14px;height:14px;display:block"/></span>상태</th><td><span class="status-value"><div class="status-dot"></div>시작 전</span></td></tr></tbody></table></header><div class="page-body"><div style="display:contents" dir="ltr"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2cb1c30b-8ab3-8032-9364-ebd8a027fe59"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80bc-9e7d-ded830f0e881" class="">한 줄로 소개</p></div></div></figure></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-8047-9e2e-e96c430c14d0" class="">🧐 나를 가장 잘 표현한 사진<strong>*</strong></h2></div><div style="display:contents" dir="ltr"><figure id="2cb1c30b-8ab3-80d3-b8f1-fe8acf8a013f" class="image"><a href="image%2030.png"><img style="width:709.984375px" src="image%2030.png"/></a></figure></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-807c-93a0-fd85b2e008e5" class="">
+</p></div><div style="display:contents" dir="ltr"><figure id="2cb1c30b-8ab3-8051-a857-d70d06fea8b0" class="image"><a href="image%2031.png"><img style="width:709.984375px" src="image%2031.png"/></a></figure></div><div style="display:contents" dir="auto"><ul id="2cb1c30b-8ab3-8092-ad5b-e8430c771977" class="toggle"><li><details open=""><summary>고등학교 졸업 사진 찍을 때 사진 입니다… 전문가 급으로 파는건 아니지만 밀리터리를 좋아합니다.</summary></details></li></ul></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-803f-b912-dd7d84be76c9" class="">🎯 <strong>과정을 들어오게 된 계기와 포부*</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-8052-9fd9-f06d373381c5" class=""> 저는 어려서부터 공상이 많았습니다. 특히 세계관에 몰입하고, 제가 좋아하는 세계 속에서 어떤 역할을 가져보는 상상을 하는 것을 즐겼습니다. 5살 때 부터 스타크래프트, 메이플 스토리, 카트라이더, A.V.A. , 던전앤 파이터 같은 게임을 하면서 그런 상상을 하는 것들이 너무나 좋았습니다. 미디어 매체 중에 게임이 가장 비슷한 경험을 제공했고, 게임을 할수록 이런 성향과 맞물려 더더욱 게임에 빠져들 수 있었습니다. <br/><br/> 그러던 중 지인들과 TRPG를 하게 되었는데, 저 말고도 밀리터리를 좋아하는 지인이 밀리터리를 테마로 TRPG를 진행하고자 하여 사람들을 모으게 되었습니다. 하지만 저희가 사용한 TRPG 룰이 밀리터리 테마와는 맞지 않아 여러 문제가 발생하였고, 제가 이러한 점을 해결 하기 위해 저희 사이에서만 통용되는 하우스 룰을 추가하는 것을 시작으로, 세계관을 확립하고, 스토리와 추가되는 하우스 룰에 맞는 게임 레벨 디자인을 고려해볼 것을 GM에게 권유해보며, 다양한 수요를 파악, 아이디어를 모으고 다듬어 여러 추가 룰을 제작해보는 경험에서 큰 성취감을 얻고 있었고, 비슷한 활동들을 취미삼아 하던 차, 지인들에게 이 과정을 알게되어 지원하게 되었습니다. <br/><br/> 제가 좋아하고 성취를 느낄 수 있던 일을, 취미로서는 더 완결성과 완성도 있게, 그리고 사회적으로는 이것을 제 능력삼아 이것과 함께 사회인으로서 나아가고 싶습니다. 늦게 합류한 만큼 성실히 하겠습니다 잘 부탁드리겠습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-802e-891b-ebc95763eb8a" class="">😄 <strong>간단한 자기소개*</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-808e-9e47-efb3d10f64e8" class=""> 제 이름은 박영성입니다. 2004년 생입니다. 오랫동안 진로와 개인적인 문제로 방황해오며, 남들이 진로를 위해 스스로를 다질 학창 시간을 놓치고, 그나마 당장이라도 손에 붙들 수 있던 그림을 잡고 만화 애니메이션 학부를 전공으로 선택했습니다. 그러나 재능과 노력의 부족도 있고, 그 이전에 제 스스로 무언가 그림을 통해 하고 싶은 이야기가 별로 없다는 것을 크게 느끼며, 방황하다가 이 길을 알고 지원하게 되었습니다.</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-803a-ab46-e67826b9a131" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-8006-a1a2-d0a60eb1fe37" class=""> 저는 무언가 제가 좋아하는 것들에 대해 남들과 공유하고 이야기 하길 좋아합니다. 하지만 이것은 때때로 남들에게 관심이 없는 이야기를 혼자 들떠 떠드는 모습이었을지도 모릅니다. 하지만 그것을 컨텐츠로 만들어내면, 사람들과 함께 즐거워하며, 제가 그것의 어디에 즐거워 하는지 함께 나누고 즐길 수 있다고 생각합니다. 그런 점에서 저는 게임 기획을 통해, 제가 다른 사람들에게 제가 아는 즐거움을, 보다 즐겁게 공유하는 능력을 기르고 싶고, 이를 통해 제 오랜 방황을 끝내고 싶다는 생각을 하고 있습니다. 그리고 그것이 제 인생에 정말 큰 즐거움을 줘왔던 게임이었으면 좋겠습니다.<br/><br/> 부족한 점이 정말 많은 사람이지만, 앞으로 잘 부탁드리겠습니다. </p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-8013-9239-e5e6174c3ae9" class="">🔍 <strong>나의 강점과 약점 *</strong></h2></div><div style="display:contents" dir="auto"><ul id="2cb1c30b-8ab3-802f-b880-ef9b56cc8341" class="bulleted-list"><li style="list-style-type:disc">강점 <br/>- 생각이 많다 : 다방면으로 사고를 확장하고, 단계를 나누고 넓히는 능력이 있다고 생각합니다.<br/>- 표현력이 있다 : 대학과 군대에서의 경험으로, 발표를 통해 다수의 사람에게 제가 표현하고자 하는 바를 표현하는데에 있어서 평균 이상의 능력을 갖췄다고 생각합니다.<br/>- 세계관에 대한 구상력 : 다수가 세계관을 형성하는 작업등에 참여하였을 때, 핍진성과 개연성을 확립하고 세계관 내 요소들을 확장하는 경험을 여럿 가지고 있습니다. <br/>- 밀리터리 테마에 대한 관심 : 비록 전문가 수준으로 깊게 알고 있는것은 아니고, 대략적인 분위기나 콘셉트에 대해서 알고 있는 정도지만 밀리터리에 대한 관심이 많아 이러한 소재를 활용할 때 강점이 될거라 생각합니다.</li></ul></div><div style="display:contents" dir="auto"><ul id="2cb1c30b-8ab3-80e3-a8bd-fb3a822639fc" class="bulleted-list"><li style="list-style-type:disc">약점<br/>- 생각이 많다 : 오히려 생각이 많아서 지나치게 4차원적이라는 소리를 듣거나, 생각 중인 것 외의 영역에 있어서 빈틈을 보이는 점이 많습니다. 이러한 부분에 대해서는 스스로도 더 넓은 시야를 가지려고 노력하고, 함께 해주시는 분들이 지적해주시면 경청하겠습니다.<br/>- 경험의 폭이 좁다 : 살면서 다양한 경험을 해보지 않은 축에 속한다 생각하고, 이로 인해서 영감의 원천이나 어떤 사고가 제한되는 점이 있다고 생각합니다. 저 스스로도 더 다양한 경험을 해보려 노력하고, 함께 해주시는 분들의 경험을 말씀해주시면 보다 경청하겠습니다.<br/>- 말이 많다 : 종종 지나치게 말이 많고 길다는 이야기를 듣습니다. 필요한 이야기를 최대한 잘 정리하여 말하는 습관을 들이려 노력하겠습니다.</li></ul></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-801e-bf9b-e75884ab307c" class="">💬 <strong>협업 스타일/협업 시 팀원에게 바라는점</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-8061-a689-dc16aee5501b" class=""> 저는 기본적으로 정말 아니다 싶은 부분을 제하면 다른 분들의 의견을 우선하거나, 가능한 포함 시키고 싶은 성향입니다. 따라서 편하게 대해주시고 유익한 아이디어들 많이 공유해주시면 좋겠습니다. 많이 배우는 입장인지라 말씀해주시는 부분들은 비판, 아이디어, 어떤 점이든 열심히 경청하겠습니다.<br/><br/> 팀원 분들께 바라는 점은 물론 팀원 간에 어느 정도 예의는 있어야겠지만, 일적인 영역에서 서로 결과물을 위해 편하게 할 수 있었으면 좋겠습니다. 또 만약 제가 마음에 안드는 점이 있으시다면 참지 말고 바로바로 말씀해주시면 경청하고 정정할 수 있도록 하겠습니다. 서로 조율하고 대화할 수 있는 자세로 일할 수 있다면 그외 어떤 요소든 차차 함께 헤쳐 나갈 수 있다고 생각합니다.<br/><br/> 또 어떤 의견 간에 충돌이 있을 때, 혹은 무언가를 건의할 때, 서로 감정 상하지 않는 선에서 타당성을 가지고 이야기하여 다른 쪽을 설득해줄 수 있거나, 혹은 함께 어떤 타협점을 생각해서 결과물 자체가 긍정적인 방향으로 끌고 갈 수 있는 분들과 일하고 싶습니다. 저 자신도 부족한 점이 많아서 이런 과정을 통해 다양한 의견과 경험에 경청하고 싶고, 또 앞서 말씀 드렸 듯 대화할 수 있는 사람들이 모여있다면, 다른 요소에서 충돌이 일어나더라도 얼마든 조율 할 수 있다고 생각하기 때문입니다.</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-8031-b35b-d8cf93d39a97" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-80a4-9a98-fcce7e519f95" class="">💻 <strong>관심 있는 기술 스택 / 배우고 싶은 분야</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80e8-9a2e-c21e77a38405" class="">시나리오나 세계관에 대해 구상하고, 이를 구성하는 캐릭터들의 캐릭터 성을 다듬는 역량에 대해 관심이 많습니다. 또한 그 외에도, 제가 구상한 시스템이나 게임적 요소들을 실제 게임으로 구현할 수 있고, 실제 기획에 들어갔을때 프로그래밍적 사고를 갖추고 다른 분야의 전문가분들과 소통할 수 있도록 어느정도의 코딩 역량 등에도 관심이 있습니다. </p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-807b-95b9-d79bb34e16d1" class="">🚀 <strong>과정에서 이루고 싶은 목표*</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-807c-9ee9-d26147b8dbd1" class=""> 제가 구상한 시스템과 세계관, 제가 좋아하는 테마와 콘셉트가 다른 사람들에게 호응받고, 그 사람들과 함께 즐거움을 공유하고 싶습니다.<br/><br/> 또 그와 별개로, 제 진로를 위한 능력과 역량을 갖추고 사회인으로서 나아가는 계기가 되고 싶습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-800c-8dbb-f3ad0aa81b6e" class="">✏️ <strong>나를 표현하는 한마디 / 좌우명*</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-8018-ba91-f829fe86660b" class=""> 후회는 뭘 해도 남게 되지만, 미련은 남기지 말자.</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80d5-8edd-dd17cf2bf027" class="">
+</p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-8057-8717-eecef051b45d" class="">🎲 <strong>TMI 모든 것 가능 /</strong> <strong>내가 좋아하는 것들 (음식/영화/게임/</strong>자랑<strong> 등)</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-8007-ba5e-f27da5b9993e" class="">앞서 말씀 드린 바와 같이 밀리터리를 좋아하고, 마찬가지로 깊게 알진 못하지만 역사적인 것들도 좋아해서 대체 역사 소설도 즐기고는 했습니다. 밀리터리도 뭔가 “단순히 군인이/무기가 나온다” 보다는 “이러이러한 환경에서 이런 국가/세력들의 이해관계가 작용해 이러이러한 배경이 일어나고 있다.” 같은 구도적인 맥락도 좋아하는 것 같습니다. 비슷한 맥락에서 메탈기어 솔리드 시리즈를 좋아했고, 그 안에서 캐릭터 성을 보여주는 연출들도 좋아했던 것 같습니다. </p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-802d-a4cf-f4fd931af2f1" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80e9-b396-e02a43438498" class="">장르는 정말 다양하게 조금씩 즐기는 것 같습니다. 기본적으로 게임을 하나의 게임에 고인물이 되기보단, 이것을 충분히 즐겨보고 저것도 충분히 즐겨보고…. 조금씩 다양하게 해보는 것 같습니다. </p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80fe-84b2-f949a5da3888" class="">
+</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-808d-a3cd-e6ae1c34fb8d" class="">특히 세계관 적인 요소와 캐릭터적인 요소를 많이 좋아한다고 생각합니다. 항상 애니메이션 등을 볼때도, 애니메이션 자체를 직접 시청하는 것보다, 그 애니메이션의 설정과 세계관을 파고드는 것을 좋아했고, 그래서 핍진성이 갖춰지고 밀도감 있는 세계관을 구축한 작품들의 세계관을 공부하듯 좋아했던 것 같습니다. 그런 배경 위에서 일어나는 캐릭터들의 서사성도 좋아했습니다.<br/><br/>이런 맥락에서 직접 시청을 하거나, 하지 않았더라도 좋아하며 파본 세계관들이<br/>- 워해머 40k<br/>- 반지의 제왕<br/>- 스타크래프트<br/>- 스타워즈 <br/>- 주술회전<br/>- 체인소 맨 <br/>- 다크소울 시리즈<br/>- 아머드코어 시리즈 (특히 4계)<br/>- 건담 우주세기<br/>- 폴아웃 시리즈 (특히 뉴베가스)<br/>- 데스티니 가디언즈<br/>- 이스케이프 프롬 타르코프 <br/>- 사이버펑크  엣지러너<br/>- 다키스트 던전<br/>- 헤일로 시리즈<br/> <br/>등이 있는 것 같습니다. 그 외에도 즐겨본 것 자체론 더 다양해서 혹시 취향 맞으시는 분 계시면 즐겁게 이야기 해보고 싶습니다.</p></div><div style="display:contents" dir="auto"><h2 id="2cb1c30b-8ab3-8067-847b-e66c0acf3137" class="">🎓 <strong>과정 수료 후 나의 모습 상상</strong></h2></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80ed-88c2-e995e7e4b690" class="">사실 아직 상상이 잘 안됩니다. 이 과정을 거치며 더욱 구체적인 목표와 길을 잡게 되면 좋겠고… 당장 떠오르는 것은 이 과정을 통해 구상한, 작업중이던 개인 TRPG 룰로 지인들하고 멋진 게임 한판 하고 싶습니다.</p></div><div style="display:contents" dir="auto"><p id="2cb1c30b-8ab3-80ca-9524-de0622112681" class="">
+</p></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

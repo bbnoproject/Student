@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "어릴때부터 게임을 굉장히 좋아했고, 관심을 가지고 있는 분야였지만 용기가 부족해 시작조차도 해보지 않았었는데 혼자만의 시간을 보내면서 많은 고민과 나의 진로에 대해 생각을 해보았습니다. 그렇게 내가 좋아했고 평소에도 가장 많이 접하고 있는 게임분야쪽…",
         "severity": "info",
         "date": "2025-11-19"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "저 또한 여기 신청하신 분들과 다 비슷하게 게임을 좋아하고, 이 교육 과정에 신청하게 된 건 내가 게임 제작의 과정에 참여해보고 싶다는 생각에서 출발하였습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "많이 어린 인원. 하지만 열심히 하려고 하는 편으로 보임",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -252,7 +266,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "전반적으로 안정적인 성장 흐름",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -264,13 +278,13 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 4,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 3
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "전반적으로 안정적인 성장 흐름"
     }
   },
   {

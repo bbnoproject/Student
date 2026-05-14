@@ -10,5 +10,42 @@
   "specialNote": "",
   "attendanceMemo": "",
   "cohort": "기획4기",
-  "course": "게임 기획 부트캠프"
+  "course": "게임 기획 부트캠프",
+  "managementStatus": "일반",
+  "dropoutInfo": {},
+  "staffProfile": {
+    "sourceFile": "학생 정보/채지형 2be1c30b8ab381b9a4d5c889e8421da2.html",
+    "title": "채지형",
+    "properties": {
+      "이해도": "평균",
+      "특징": "전공자",
+      "나이": "29세(98년생)",
+      "긍정적관계": "",
+      "부정적관계": "",
+      "게임 선호": "로스트아크 배틀그라운드",
+      "MBTI": "INTP",
+      "희망 직무": ""
+    },
+    "summary": "",
+    "traits": [
+      "전공자"
+    ],
+    "positiveRelations": [],
+    "negativeRelations": [],
+    "sections": {
+      "본문": "채지형\n채지형\n이해도\n평균\n특징 전공자\n나이 29세(98년생)\n긍정적관계\n부정적관계\n게임 선호 로스트아크 배틀그라운드\nMBTI INTP\n희망 직무",
+      "총평": "🔖 (업데이트 날짜 : )",
+      "Good": "날짜 - 내용",
+      "Bad": "날짜 - 내용\n💡특이 사항\n12/10(수) - 게임소프트웨어학과 졸업 예정\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용"
+    },
+    "fullText": "채지형 \n 채지형 \n \n \n \n 이해도 \n \n 평균 \n \n 특징 전공자 \n \n 나이 29세(98년생) \n \n 긍정적관계 \n \n 부정적관계 \n \n 게임 선호 로스트아크 배틀그라운드 \n \n MBTI INTP \n \n 희망 직무 \n \n \n \n \n \n 🔖 총평(업데이트 날짜 : ) \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 👍 Good \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n 👎 Bad \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💡특이 사항 \n \n \n \n \n \n \n 12/10(수) - 게임소프트웨어학과 졸업 예정 \n \n \n \n \n \n \n \n \n \n \n \n 💻 Zep \n \n \n \n \n \n \n 날짜 - 내용 \n \n \n \n \n \n \n \n \n \n 💬 DM \n \n \n \n \n \n \n ~ 12/8 : 개강 전 : \n \n \n \n \n \n 날짜 - 내용"
+  },
+  "cadetCardSummary": {
+    "sourceFile": "학생 대원카드/기획 4기) 채지형 태원 카드 2c31c30b8ab38107b3b9f7ffdea2ae0f.html",
+    "status": "시작 전",
+    "hobbies": "게임 노래듣기 잠 커피",
+    "intro": "게임 코딩,개발쪽 전공을 나왔지만 하나만 공부하고 진로를 결정하기에는 아쉬워서 학교를 휴학하고 휴식하면서 여러가지를 경험하고 게임쪽이 적성에 맞는거같아 다시 기획쪽으로 오게됐습니다. 잘부탁드립니다.",
+    "motivation": "게임 개발을 전공으로 했지만 코딩 개발 보다 기획이 저에게 잘 맞는 것 같아 신청하게 되었습니다.\n기획으로 포트폴리오도 만들고 취업하고 싶습니다. 잘 부탁드립니다.",
+    "goal": "ai를 활용하는 법\n포트폴리오를 쌓고 제 결과물을 만들고 싶습니다."
+  }
 }

@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 3,
+      "admission": 4,
       "career": 0
     },
     "severity": "caution",
@@ -36,6 +36,13 @@
         "summary": "지금까지 게임을 즐기기만 했고, 현생과는 다른 세계라고 생각했었습니다. 우연히 유튜브에서 아카데미를 접하게 되었는데, 내가 배운 전공이랑 거리가 있지만 단순히 전공을 따라가 취업하는 것 보다는 내가 진짜 관심있고, 하고 싶은 업을 배우는 것이 더 중…",
         "severity": "info",
         "date": "2025-12-05"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "원래도 게임 관련 학과에 재학중이여서 대략적인 지식은 어느정도 알고 있었지만 기획에 관련해서 더 다양한 지식과 취업을 위해 들어오게 되었습니다. 제가 다른분들보다 조금 늦게 합류하게 되었는데 늦게 합류한 만큼 더 열심히 해보겠습니다!",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -54,9 +61,16 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "info",
+    "severity": "caution",
     "headline": "출결 배경 확인이 필요한 구간",
     "notes": [
+      {
+        "type": "management_status",
+        "title": "과정이탈 기록",
+        "summary": "가정사로 인한 이탈",
+        "severity": "caution",
+        "date": "2025-12-10"
+      },
       {
         "type": "attendance",
         "title": "출결 이슈 · 기타",
@@ -77,13 +91,6 @@
         "summary": "-",
         "severity": "info",
         "date": "2025-12-10"
-      },
-      {
-        "type": "attendance",
-        "title": "출결 이슈 · 기타",
-        "summary": "-",
-        "severity": "info",
-        "date": "2025-12-09"
       }
     ],
     "snapshot": {
@@ -96,9 +103,9 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -301,7 +308,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "전반적으로 안정적인 성장 흐름",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -315,11 +322,11 @@
         "engagement": 4,
         "collaboration": 3,
         "resilience": 3,
-        "reflection": 2,
+        "reflection": 3,
         "careerAgency": 4
       },
       "confidence": "High",
-      "note": "회고 구조화 필요"
+      "note": "전반적으로 안정적인 성장 흐름"
     }
   },
   {

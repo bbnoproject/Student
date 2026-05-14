@@ -1,5 +1,113 @@
 (function () {
   const rawData = window.STUDENT_TIMELINE_DATA || { students: [], dashboard: {}, milestones: [] };
+  const STUDENT_EDIT_STORAGE_KEY = "student-manual-profile-edits";
+  const EDITABLE_STUDENT_FIELDS = ["name", "gender", "birthDate", "address", "phone", "education", "course", "cohort", "specialNote"];
+  const originalStudentValues = new Map(
+    rawData.students.map((student) => [
+      student.id,
+      {
+        ...Object.fromEntries(EDITABLE_STUDENT_FIELDS.map((field) => [field, student[field] || ""])),
+        managementStatus: student.managementStatus || "일반",
+      },
+    ])
+  );
+  const sourceDropoutStudentIds = new Set(rawData.students.filter(hasDropoutRecord).map((student) => student.id));
+
+  const MANAGEMENT_STATUS_META = {
+    "일반": {
+      label: "일반",
+      tone: "success",
+      description: "현재 교육 운영과 관찰 대상에 포함되는 학생",
+    },
+    "취업": {
+      label: "취업",
+      tone: "violet",
+      description: "취업 또는 채용 연계가 확인되어 진로 관리 중심으로 보는 학생",
+    },
+    "이탈": {
+      label: "과정이탈",
+      tone: "neutral",
+      description: "과정 이탈로 일반 관리 대상에서는 제외하되 통계에는 표시되는 학생",
+    },
+  };
+
+  function loadStudentEdits() {
+    try {
+      return JSON.parse(localStorage.getItem(STUDENT_EDIT_STORAGE_KEY) || "{}") || {};
+    } catch (error) {
+      return {};
+    }
+  }
+
+  function hasDropoutRecord(student) {
+    if (!student) return false;
+    if (student.managementStatus === "이탈") return true;
+    const dropoutInfo = student.dropoutInfo || {};
+    return Object.values(dropoutInfo).some((value) => typeof value === "string" && value.trim());
+  }
+
+  function effectiveManagementStatus(student) {
+    if (hasDropoutRecord(student)) return "이탈";
+    return MANAGEMENT_STATUS_META[student?.managementStatus] ? student.managementStatus : "일반";
+  }
+
+  function saveStudentEdit(studentId, payload) {
+    const edits = loadStudentEdits();
+    edits[studentId] = {
+      ...(edits[studentId] || {}),
+      ...payload,
+      updatedAt: new Date().toISOString(),
+    };
+    localStorage.setItem(STUDENT_EDIT_STORAGE_KEY, JSON.stringify(edits));
+    applyStudentEdits();
+  }
+
+  function clearStudentEdit(studentId) {
+    const edits = loadStudentEdits();
+    delete edits[studentId];
+    localStorage.setItem(STUDENT_EDIT_STORAGE_KEY, JSON.stringify(edits));
+    applyStudentEdits();
+  }
+
+  function applyStudentEdits() {
+    const edits = loadStudentEdits();
+    rawData.students.forEach((student) => {
+      const edit = edits[student.id] || {};
+      const originalValues = originalStudentValues.get(student.id) || {};
+      const managementStatus = sourceDropoutStudentIds.has(student.id)
+        ? "이탈"
+        : MANAGEMENT_STATUS_META[edit.managementStatus]
+          ? edit.managementStatus
+          : originalValues.managementStatus || "일반";
+
+      EDITABLE_STUDENT_FIELDS.forEach((field) => {
+        student[field] = originalValues[field] || "";
+        if (typeof edit[field] === "string" && edit[field].trim()) {
+          student[field] = edit[field].trim();
+        }
+      });
+
+      student.managementStatus = managementStatus;
+      student.manual = edit;
+    });
+
+    rawData.dashboard = {
+      ...(rawData.dashboard || {}),
+      ...buildManagementSummary(rawData.students),
+    };
+  }
+
+  function buildManagementSummary(students) {
+    const activeStudents = students.filter((student) => !hasDropoutRecord(student));
+    return {
+      managedStudentCount: activeStudents.length,
+      generalCount: students.filter((student) => effectiveManagementStatus(student) === "일반").length,
+      employedCount: students.filter((student) => effectiveManagementStatus(student) === "취업").length,
+      dropoutCount: students.filter((student) => hasDropoutRecord(student)).length,
+    };
+  }
+
+  applyStudentEdits();
   const studentsById = new Map(rawData.students.map((student) => [student.id, student]));
 
   const PROFILE_KEYS = [
@@ -27,6 +135,51 @@
     resilience: "회복탄력",
     reflection: "성찰",
     careerAgency: "진로목적성",
+  };
+
+  const PROFILE_CRITERIA = {
+    selfRegulation: {
+      question: "목표와 우선순위를 세우고 실행 결과를 수정하는가",
+      evidence: "프로젝트 체크인, 제출 시점, 회고의 실행 계획, 면담 후속 실천",
+      rubric: "수행 과정, 실행 지속성, 결과 점검을 분리해 보는 분석적 루브릭을 적용합니다.",
+      rating: "1점 긴급 지원, 2점 교사 안내 필요, 3점 독립 수행 가능, 4점 자기주도 개선 수준입니다.",
+      caution: "출결만으로 판단하지 않고 반복 무연락, 미제출, 계획 후 미이행을 함께 봅니다.",
+    },
+    engagement: {
+      question: "과정에 꾸준히 참여하고 흔들릴 때 복귀하는가",
+      evidence: "체크인 응답률, 회고 지속 여부, 면담 이후 참여 회복, 행동/관리형 출결",
+      rubric: "참여 빈도, 과제 지속성, 이탈 후 복귀 행동을 구분해 평정합니다.",
+      rating: "1점 참여 단절, 2점 불안정 참여, 3점 대체로 지속, 4점 꾸준한 몰입과 회복 수준입니다.",
+      caution: "건강형·행정형 출결은 참여 저하 근거로 직접 쓰지 않습니다.",
+    },
+    collaboration: {
+      question: "팀 안에서 역할을 이해하고 관계를 조율하는가",
+      evidence: "팀 구성, 반복 협업 팀원, 팀 관련 회고, 갈등·관계 면담",
+      rubric: "역할 수행, 의사소통, 갈등 조정, 동료 기여를 별도 준거로 관찰합니다.",
+      rating: "1점 협업 저해, 2점 제한적 역할 수행, 3점 안정적 협업, 4점 팀 성과를 촉진하는 수준입니다.",
+      caution: "팀장 경험만으로 강점 처리하지 않고 역할 수행과 조율 정황을 함께 봅니다.",
+    },
+    resilience: {
+      question: "실패나 압박 후 다시 시도하고 방향을 조정하는가",
+      evidence: "프로젝트 체크인과 회고, 면담 기록, 모집 단계 실패 대응 문항",
+      rubric: "어려움 인식, 정서 조절, 대안 탐색, 재시도 행동을 단계적으로 봅니다.",
+      rating: "1점 회피 또는 중단, 2점 외부 촉진 시 재시도, 3점 스스로 회복, 4점 실패를 전략 개선으로 전환하는 수준입니다.",
+      caution: "실패 여부보다 실패를 해석하고 다음 행동으로 연결했는지를 봅니다.",
+    },
+    reflection: {
+      question: "경험을 원인 분석과 다음 행동으로 연결하는가",
+      evidence: "프로젝트 회고, 면담 기록, 자기소개·이력서 수정 이력",
+      rubric: "사실 나열, 원인 해석, 피드백 수용, 다음 행동 설계를 구분해 평가합니다.",
+      rating: "1점 단순 진술, 2점 부분적 원인 인식, 3점 개선 행동 제시, 4점 피드백을 체계적으로 반영하는 수준입니다.",
+      caution: "문장 길이가 아니라 원인 분석, 다음 행동, 피드백 반영 흔적을 봅니다.",
+    },
+    careerAgency: {
+      question: "희망 방향이 구체적이고 현재 학습과 연결되는가",
+      evidence: "모집 단계 목표, 취업 문서, 진로 면담, 프로젝트와 진로 연결 서술",
+      rubric: "진로 목표의 구체성, 역량 인식, 포트폴리오 연결, 실행 계획을 나누어 봅니다.",
+      rating: "1점 방향 불명확, 2점 관심 분야 수준, 3점 목표와 준비 행동 연결, 4점 직무 기준에 맞춰 전략화하는 수준입니다.",
+      caution: "문서 제출 여부 자체보다 초안, 피드백, 수정, 방향 구체화를 봅니다.",
+    },
   };
 
   const TAG_META = {
@@ -99,15 +252,79 @@
     return `${formatDate(start)} - ${formatDate(end)}`;
   }
 
+  function shortMilestoneLabel(label) {
+    const value = String(label || "");
+    if (value.includes("모집")) return "모집/개강";
+    if (value.includes("1차 프로젝트 종료") && !value.includes("2차")) return "실습(1차)";
+    if (value.includes("2차 프로젝트 종료") && value.includes("1차")) return "실습(2차)";
+    if (value.includes("3차 프로젝트 종료") && value.includes("2차")) return "실습(3차)";
+    if (value.includes("4차 프로젝트 종료") && value.includes("3차")) return "실습(4차)";
+    if (value.includes("종강")) return "종강";
+    return value.replaceAll(" 프로젝트 종료", "").replaceAll(" ~ ", "/");
+  }
+
   function toneClass(tone) {
     return tone ? `tone-${tone}` : "tone-neutral";
   }
 
   function statusTone(status) {
+    if (status === "취업") return "violet";
+    if (status === "이탈") return "neutral";
     if (status === "경고") return "danger";
     if (status === "집중 관찰") return "warning";
     if (status === "주의") return "warning";
     return "success";
+  }
+
+  function statusReason(student) {
+    const status = student.stats?.currentStatus || "안정";
+    const attendanceRisk = student.stats?.attendanceRiskIssues || 0;
+    const projectRate = student.stats?.projectSubmissionRate || 0;
+    const counselingCount = student.stats?.counselingCount || 0;
+    const profileAverage = averageScore(student.currentProfile);
+    const reasons = [];
+
+    if (attendanceRisk > 0) reasons.push(`판단 반영 위험 출결 ${attendanceRisk}건`);
+    if (projectRate && projectRate < 70) reasons.push(`프로젝트 제출률 ${projectRate}%`);
+    if (profileAverage && profileAverage < 2.6) reasons.push(`최근 프로파일 평균 ${profileAverage.toFixed(2)}`);
+    if (counselingCount > 0) reasons.push(`면담 기록 ${counselingCount}건`);
+
+    if (!reasons.length) {
+      return status === "안정"
+        ? "최근 데이터에서 반복 위험 신호가 크지 않아 안정으로 표시합니다."
+        : "상태 구간, 출결, 프로젝트 기록을 종합해 관찰 상태로 표시합니다.";
+    }
+
+    return `${reasons.join(", ")}을 함께 확인해 ${status} 상태로 표시합니다.`;
+  }
+
+  function profileReason(key, value, student) {
+    const score = Number(value || 0);
+    const stats = student?.stats || {};
+    const ratingLabel = score <= 1 ? "긴급 지원" : score === 2 ? "형성 중" : score === 3 ? "안정" : "확장";
+    if (key === "selfRegulation") {
+      if ((stats.attendanceRiskIssues || 0) > 0) return `${ratingLabel} 평정입니다. 행동/관리형 출결 위험 ${stats.attendanceRiskIssues}건을 실행 지속성 루브릭에 반영했습니다.`;
+      return score >= 3 ? `${ratingLabel} 평정입니다. 실행 지속성과 후속 점검에서 큰 위험 신호가 낮습니다.` : `${ratingLabel} 평정입니다. 계획 수립보다 실행 후 점검 근거가 부족합니다.`;
+    }
+    if (key === "engagement") {
+      if ((stats.projectSubmissionRate || 0) < 70) return `${ratingLabel} 평정입니다. 프로젝트 제출률 ${stats.projectSubmissionRate || 0}%를 참여 지속성 준거에 반영했습니다.`;
+      return score >= 3 ? `${ratingLabel} 평정입니다. 참여 빈도와 과제 지속성이 비교적 유지됩니다.` : `${ratingLabel} 평정입니다. 흔들린 뒤 복귀 행동을 더 확인해야 합니다.`;
+    }
+    if (key === "collaboration") {
+      if ((stats.repeatedPeerCount || 0) > 0) return `${ratingLabel} 평정입니다. 반복 협업 팀원 ${stats.repeatedPeerCount}명과 역할 수행 기록을 함께 봤습니다.`;
+      return score >= 3 ? `${ratingLabel} 평정입니다. 역할 수행과 의사소통 준거에서 큰 위험 신호가 낮습니다.` : `${ratingLabel} 평정입니다. 팀 기여와 갈등 조정 근거가 부족합니다.`;
+    }
+    if (key === "resilience") {
+      return score >= 3 ? `${ratingLabel} 평정입니다. 압박 구간 이후 재시도와 방향 조정 흐름이 관찰됩니다.` : `${ratingLabel} 평정입니다. 실패 해석과 대안 실행의 연결 근거를 보강해야 합니다.`;
+    }
+    if (key === "reflection") {
+      return score >= 3 ? `${ratingLabel} 평정입니다. 회고가 원인 분석과 다음 행동으로 이어진 흔적이 있습니다.` : `${ratingLabel} 평정입니다. 사실 나열을 넘어 개선 행동으로 연결되는 근거가 약합니다.`;
+    }
+    if (key === "careerAgency") {
+      if ((stats.careerDocumentRounds || 0) > 0) return `${ratingLabel} 평정입니다. 진로 문서 라운드 ${stats.careerDocumentRounds}회를 목표 구체화 준거에 반영했습니다.`;
+      return score >= 3 ? `${ratingLabel} 평정입니다. 진로 방향과 현재 학습의 연결이 비교적 드러납니다.` : `${ratingLabel} 평정입니다. 직무 목표와 프로젝트 경험의 연결 근거가 부족합니다.`;
+    }
+    return "관련 기록을 종합해 산정한 보조 지표입니다.";
   }
 
   function averageScore(scores) {
@@ -128,6 +345,11 @@
       student.education,
       student.address,
       student.specialNote,
+      student.managementStatus,
+      student.manual?.managementMemo,
+      student.manual?.employmentCompany,
+      student.manual?.employmentRole,
+      student.manual?.dropoutReason,
       student.stats?.currentStatus,
       student.course,
       student.cohort,
@@ -292,9 +514,9 @@
 
     const labels = points
       .map(
-        (point, index) => `
-          <text x="${point.x}" y="${height - 8}" class="growth-label" text-anchor="middle">
-            M${index + 1}
+        (point) => `
+          <text x="${point.x}" y="${height - 12}" class="growth-label" text-anchor="middle">
+            ${escapeHtml(shortMilestoneLabel(point.label))}
           </text>
         `
       )
@@ -462,6 +684,43 @@
     return (TAG_META[student.derived?.primaryTag] || TAG_META.steady_path).label;
   }
 
+  function renderProfileReasonBars(student) {
+    return `
+      <div class="profile-reason-list">
+        ${PROFILE_KEYS.map((key) => {
+          const value = Number(student.currentProfile?.[key] || 0);
+          return `
+            <article class="profile-reason-row">
+              <div class="profile-reason-main">
+                <div class="profile-reason-title">
+                  <strong>${escapeHtml(PROFILE_LABELS[key])}</strong>
+                  <button type="button" class="info-icon" data-criterion="${escapeHtml(key)}" aria-label="${escapeHtml(PROFILE_LABELS[key])} 판단기준">!</button>
+                </div>
+                <p>${escapeHtml(profileReason(key, value, student))}</p>
+              </div>
+              <div class="profile-reason-score">
+                <strong>${escapeHtml(String(value))}</strong>
+                <span>/ 4</span>
+              </div>
+              <div class="profile-track">
+                <div class="profile-fill" style="width:${(value / 4) * 100}%"></div>
+              </div>
+            </article>
+          `;
+        }).join("")}
+      </div>
+    `;
+  }
+
+  function managementStatusBadge(status) {
+    const meta = MANAGEMENT_STATUS_META[status] || MANAGEMENT_STATUS_META["일반"];
+    return `<span class="pill ${toneClass(meta.tone)}">${escapeHtml(meta.label)}</span>`;
+  }
+
+  function managementStatusLabel(status) {
+    return (MANAGEMENT_STATUS_META[status] || MANAGEMENT_STATUS_META["일반"]).label;
+  }
+
   function profileKeyText(keys) {
     if (!keys?.length) return "현재 뚜렷한 관찰 포인트 없음";
     return keys.map((key) => PROFILE_LABELS[key] || key).join(", ");
@@ -470,16 +729,27 @@
   window.StudentAppCommon = {
     rawData,
     studentsById,
+    MANAGEMENT_STATUS_META,
     PROFILE_KEYS,
     PROFILE_LABELS,
     PROFILE_SHORT_LABELS,
+    PROFILE_CRITERIA,
     TAG_META,
     SORT_OPTIONS,
     escapeHtml,
     formatDate,
     formatRange,
+    shortMilestoneLabel,
     toneClass,
     statusTone,
+    statusReason,
+    profileReason,
+    loadStudentEdits,
+    saveStudentEdit,
+    clearStudentEdit,
+    applyStudentEdits,
+    hasDropoutRecord,
+    effectiveManagementStatus,
     averageScore,
     studentById,
     studentSearchPool,
@@ -497,9 +767,12 @@
     scatterPlot,
     renderQuickSearch,
     renderProfileBars,
+    renderProfileReasonBars,
     milestoneStory,
     recentEventCards,
     primaryMetaLabel,
+    managementStatusBadge,
+    managementStatusLabel,
     profileKeyText,
   };
 })();

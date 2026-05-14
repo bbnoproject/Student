@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "이번 부트캠프에 지원하는 이유는 제가 쌓아온 열정과 경험을 실무적인 역량으로 발전시키기 위해서입니다. 단순히 이론이나 문서 작성에 머무르지 않고 생성형 AI를 활용한 최신 트렌드의 게임 기획 방식과 현직자의 피드백을 통해 ‘실제로 작동하는 기획’을…",
         "severity": "info",
         "date": "2025-10-21"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임 회사에서 1년동안 근무후 개인사정으로 퇴사하게 되었습니다. 저만의 휴식기간을 가지고 재취업 준비를 시작하려던 찰나 공백기간이 너무 길었다고 판단하여 과정에 참여하게 되었습니다. 잊고 있던 기초와 깨닫지 못했던 심화부분까지 공부해 좀 더 나은 기…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "점차 활발해져, 지금은 큰 문제없이 팀원들과 소통하는 것으로 파악. 다만 TIL은 여전히 미진.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

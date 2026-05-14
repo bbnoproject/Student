@@ -13,6 +13,7 @@
     studentId: App.getQueryParam("id") || fallbackStudentId,
     studentTab: "dashboard",
     detailMilestoneId: "all",
+    activeCriterion: "",
   };
 
   function currentStudent() {
@@ -21,64 +22,80 @@
 
   function renderStudentHeader(student) {
     const primaryMeta = App.TAG_META[student.derived?.primaryTag] || App.TAG_META.steady_path;
-    const profileScore = Math.round(student.derived?.profileIndex || App.averageScore(student.currentProfile) * 25);
+    const profileAverage = App.averageScore(student.currentProfile);
     return `
       <section class="hero-panel student-hero">
         <div class="student-hero-top">
           <a class="back-link" href="${App.lobbyPageHref()}">메인 로비로 돌아가기</a>
           <div class="pill-row">
+            ${App.managementStatusBadge(student.managementStatus)}
             <span class="status-badge ${App.toneClass(App.statusTone(student.stats?.currentStatus))}">
               ${App.escapeHtml(student.stats?.currentStatus || "-")}
             </span>
             ${App.tagBadge(student.derived?.primaryTag)}
+            ${
+              state.studentTab === "management"
+                ? `<button type="button" class="secondary-action compact-action" data-tab="dashboard">개요로 돌아가기</button>`
+                : `<button type="button" class="primary-action compact-action" data-tab="management">정보 수정</button>`
+            }
           </div>
         </div>
 
-        <div class="student-hero-grid">
-          <section class="student-basic-panel">
-            <p class="eyebrow">Student Page</p>
-            <h2>${App.escapeHtml(student.name)}</h2>
-            <p class="student-intro">${App.escapeHtml(primaryMeta.description)}</p>
-
-            <div class="student-basic-grid">
-              <div><span>성별</span><strong>${App.escapeHtml(student.gender || "-")}</strong></div>
-              <div><span>생년월일</span><strong>${App.escapeHtml(App.formatDate(student.birthDate))}</strong></div>
-              <div><span>거주지역</span><strong>${App.escapeHtml(student.address || "-")}</strong></div>
-              <div><span>연락처</span><strong>${App.escapeHtml(student.phone || "-")}</strong></div>
-              <div><span>학력</span><strong>${App.escapeHtml(student.education || "-")}</strong></div>
-              <div><span>과정/기수</span><strong>${App.escapeHtml(`${student.course || "-"} / ${student.cohort || "-"}`)}</strong></div>
+        <section class="student-basic-panel">
+          <div class="student-summary-head">
+            <div>
+              <p class="eyebrow">개인정보 개요</p>
+              <h2>${App.escapeHtml(student.name)}</h2>
+              <p class="student-intro">${App.escapeHtml(primaryMeta.description)}</p>
             </div>
-
-            <div class="pill-row">
-              ${App.domainPills(student.derived?.strengthKeys, "강점 추출 없음")}
-              ${App.domainPills(student.derived?.cautionKeys, "관찰 없음")}
+            <div class="compact-profile-score">
+              <span>프로파일 평균</span>
+              <strong>${App.escapeHtml(profileAverage.toFixed(2))}</strong>
             </div>
-          </section>
+          </div>
 
-          <section class="student-profile-panel">
-            <div class="profile-score-ring">
-              <span>종합 프로파일</span>
-              <strong>${App.escapeHtml(String(profileScore))}</strong>
-            </div>
-            ${App.radarChart(student.currentProfile)}
-            <p class="student-profile-copy">
-              최신 해석: ${App.escapeHtml(student.currentProfile?.note || "-")}
-            </p>
-          </section>
-        </div>
+          <div class="student-basic-grid">
+            <div><span>성별</span><strong>${App.escapeHtml(student.gender || "-")}</strong></div>
+            <div><span>생년월일</span><strong>${App.escapeHtml(App.formatDate(student.birthDate))}</strong></div>
+            <div><span>거주지역</span><strong>${App.escapeHtml(student.address || "-")}</strong></div>
+            <div><span>연락처</span><strong>${App.escapeHtml(student.phone || "-")}</strong></div>
+            <div><span>학력</span><strong>${App.escapeHtml(student.education || "-")}</strong></div>
+            <div><span>과정/기수</span><strong>${App.escapeHtml(`${student.course || "-"} / ${student.cohort || "-"}`)}</strong></div>
+          </div>
+
+          <div class="pill-row">
+            ${App.domainPills(student.derived?.strengthKeys, "강점 추출 없음")}
+            ${App.domainPills(student.derived?.cautionKeys, "관찰 없음")}
+          </div>
+        </section>
       </section>
     `;
   }
 
   function renderStudentDashboard(student) {
+    const actualMilestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated);
     return `
-      <section class="snapshot-grid">
+      <section class="snapshot-grid compact-snapshot-grid">
         ${App.metricCard("현재 상태", student.stats?.currentStatus || "-", "현재 운영 신호", App.statusTone(student.stats?.currentStatus))}
+        ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? "관리 제외, 통계 포함" : "현재 관리 분류", App.statusTone(student.managementStatus))}
         ${App.metricCard("프로젝트 제출률", `${student.stats?.projectSubmissionRate || 0}%`, "프로젝트 데일리 기록 기준", "brand")}
         ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `판단 반영 위험 ${student.stats?.attendanceRiskIssues || 0}건`, "warning")}
         ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
         ${App.metricCard("반복 협업 팀원", `${student.stats?.repeatedPeerCount || 0}명`, "두 번 이상 함께한 팀원", "violet")}
-        ${App.metricCard("진로 문서 라운드", `${student.stats?.careerDocumentRounds || 0}회`, "이력서/자기소개 학습 이력", "neutral")}
+      </section>
+
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Status Reason</span>
+            <h3>현재 상태 판단 이유</h3>
+          </div>
+          <p class="panel-copy">${App.escapeHtml(student.currentProfile?.note || "최근 운영 해석 없음")}</p>
+        </div>
+        <div class="reason-box">
+          <strong>${App.escapeHtml(student.stats?.currentStatus || "안정")}</strong>
+          <p>${App.escapeHtml(App.statusReason(student))}</p>
+        </div>
       </section>
 
       <section class="panel section-panel">
@@ -87,9 +104,9 @@
             <span class="panel-kicker">Dashboard</span>
             <h3>현재 능력치와 성향 프로파일</h3>
           </div>
-          <p class="panel-copy">6개 교육학 준거를 동시에 읽습니다.</p>
+          <p class="panel-copy">6개 교육학 준거와 근거 문장을 함께 읽습니다.</p>
         </div>
-        ${App.renderProfileBars(student.currentProfile)}
+        ${App.renderProfileReasonBars(student)}
       </section>
 
       <section class="panel section-panel">
@@ -98,56 +115,26 @@
             <span class="panel-kicker">Timeline</span>
             <h3>마일스톤 성장 곡선</h3>
           </div>
-          <p class="panel-copy">모집부터 종강까지 6개 마일스톤 기준</p>
+          <p class="panel-copy">아직 진행되지 않은 추정 구간은 제외합니다.</p>
         </div>
-        ${App.growthChart(student.milestones || [])}
-        <div class="milestone-row">
-          ${(student.milestones || [])
+        ${App.growthChart(actualMilestones)}
+        <div class="milestone-analysis-list">
+          ${actualMilestones
             .map(
               (milestone, index) => `
-                <article class="milestone-card ${milestone.growthDelta > 0 ? "is-up" : milestone.growthDelta < 0 ? "is-down" : ""}">
-                  <div class="milestone-head">
+                <article class="milestone-analysis-row ${milestone.growthDelta > 0 ? "is-up" : milestone.growthDelta < 0 ? "is-down" : ""}">
+                  <div class="milestone-analysis-name">
                     <span class="milestone-index">M${index + 1}</span>
-                    ${milestone.isEstimated ? `<span class="pill tone-warning">추정 구간</span>` : ""}
+                    <strong>${App.escapeHtml(App.shortMilestoneLabel(milestone.label))}</strong>
+                    <small>${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</small>
                   </div>
-                  <h4>${App.escapeHtml(milestone.label)}</h4>
-                  <p class="milestone-period">${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</p>
                   <div class="milestone-score-row">
                     <strong>${App.escapeHtml(milestone.profileAverage.toFixed(2))}</strong>
                     <span class="growth-chip ${milestone.growthDelta > 0 ? "is-up" : milestone.growthDelta < 0 ? "is-down" : ""}">
                       ${milestone.growthDelta > 0 ? "+" : ""}${App.escapeHtml(milestone.growthDelta.toFixed(2))}
                     </span>
                   </div>
-                  <p class="milestone-note">${App.escapeHtml(milestone.note)}</p>
-                </article>
-              `
-            )
-            .join("")}
-        </div>
-      </section>
-
-      <section class="panel section-panel">
-        <div class="panel-head">
-          <div>
-            <span class="panel-kicker">Growth Story</span>
-            <h3>마일스톤별 성장 스토리</h3>
-          </div>
-          <p class="panel-copy">그래프를 운영 해석으로 번역한 카드입니다.</p>
-        </div>
-        <div class="story-grid">
-          ${(student.milestones || [])
-            .map(
-              (milestone, index) => `
-                <article class="story-card">
-                  <div class="story-head">
-                    <span class="story-index">M${index + 1}</span>
-                    <strong>${App.escapeHtml(milestone.label)}</strong>
-                  </div>
-                  <p class="story-copy">${App.escapeHtml(App.milestoneStory(milestone))}</p>
-                  <div class="pill-row">
-                    ${App.domainPills(milestone.strengthKeys, "강점 없음")}
-                    ${App.domainPills(milestone.cautionKeys, "관찰 없음")}
-                  </div>
+                  <p>${App.escapeHtml(milestone.note)} ${App.escapeHtml(App.milestoneStory(milestone))}</p>
                 </article>
               `
             )
@@ -177,6 +164,7 @@
           </div>
           <div class="interpretation-card">
             <p><strong>주 분류:</strong> ${App.escapeHtml(App.primaryMetaLabel(student))}</p>
+            <p><strong>관리 상태:</strong> ${App.escapeHtml(student.managementStatus || "일반")}</p>
             <p><strong>강점:</strong> ${App.escapeHtml(App.profileKeyText(student.derived?.strengthKeys))}</p>
             <p><strong>관찰:</strong> ${App.escapeHtml(App.profileKeyText(student.derived?.cautionKeys))}</p>
             <p><strong>최신 면담:</strong> ${App.escapeHtml(App.formatDate(student.stats?.latestCounselingDate))}</p>
@@ -188,17 +176,176 @@
     `;
   }
 
+  function formValue(student, key) {
+    return App.escapeHtml(student.manual?.[key] ?? student[key] ?? "");
+  }
+
+  function renderStudentManagement(student) {
+    const manual = student.manual || {};
+    return `
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Profile Editor</span>
+            <h3>학생 정보 입력 및 수정</h3>
+          </div>
+          <button type="button" class="secondary-action compact-action" data-tab="dashboard">개요로 돌아가기</button>
+        </div>
+        <p class="panel-copy">이 페이지에서 저장한 값은 이 브라우저의 로컬 편집값으로 보관되고, 로비 통계와 검색에 즉시 반영됩니다.</p>
+
+        <form id="student-edit-form" class="student-edit-form">
+          <section class="edit-form-section">
+            <div class="edit-section-head">
+              <h4>기본 정보</h4>
+              ${App.managementStatusBadge(student.managementStatus)}
+            </div>
+            <div class="edit-form-grid">
+              <label>
+                <span>이름</span>
+                <input name="name" type="text" value="${formValue(student, "name")}" />
+              </label>
+              <label>
+                <span>성별</span>
+                <input name="gender" type="text" value="${formValue(student, "gender")}" />
+              </label>
+              <label>
+                <span>생년월일</span>
+                <input name="birthDate" type="date" value="${formValue(student, "birthDate")}" />
+              </label>
+              <label>
+                <span>연락처</span>
+                <input name="phone" type="tel" value="${formValue(student, "phone")}" />
+              </label>
+              <label>
+                <span>거주지역</span>
+                <input name="address" type="text" value="${formValue(student, "address")}" />
+              </label>
+              <label>
+                <span>학력</span>
+                <input name="education" type="text" value="${formValue(student, "education")}" />
+              </label>
+              <label>
+                <span>과정</span>
+                <input name="course" type="text" value="${formValue(student, "course")}" />
+              </label>
+              <label>
+                <span>기수</span>
+                <input name="cohort" type="text" value="${formValue(student, "cohort")}" />
+              </label>
+            </div>
+          </section>
+
+          <section class="edit-form-section">
+            <div class="edit-section-head">
+              <h4>관리 분류</h4>
+              <p>이탈 학생은 통계에는 남기고 기본 관리 대상 집계에서는 제외합니다.</p>
+            </div>
+            <div class="edit-form-grid">
+              <label>
+                <span>학생 상태</span>
+                <select name="managementStatus">
+                  ${Object.entries(App.MANAGEMENT_STATUS_META)
+                    .map(
+                      ([status, meta]) => `
+                        <option value="${App.escapeHtml(status)}" ${student.managementStatus === status ? "selected" : ""}>
+                          ${App.escapeHtml(meta.label)}
+                        </option>
+                      `
+                    )
+                    .join("")}
+                </select>
+              </label>
+              <label>
+                <span>취업처</span>
+                <input name="employmentCompany" type="text" value="${App.escapeHtml(manual.employmentCompany || "")}" />
+              </label>
+              <label>
+                <span>직무/역할</span>
+                <input name="employmentRole" type="text" value="${App.escapeHtml(manual.employmentRole || "")}" />
+              </label>
+              <label>
+                <span>취업일</span>
+                <input name="employmentDate" type="date" value="${App.escapeHtml(manual.employmentDate || "")}" />
+              </label>
+              <label>
+                <span>이탈일</span>
+                <input name="dropoutDate" type="date" value="${App.escapeHtml(manual.dropoutDate || "")}" />
+              </label>
+              <label>
+                <span>이탈 사유</span>
+                <input name="dropoutReason" type="text" value="${App.escapeHtml(manual.dropoutReason || "")}" />
+              </label>
+            </div>
+          </section>
+
+          <section class="edit-form-section">
+            <div class="edit-section-head">
+              <h4>운영 메모</h4>
+              <p>관리자가 수기로 남기는 참고 정보입니다.</p>
+            </div>
+            <label class="wide-field">
+              <span>특이사항</span>
+              <textarea name="specialNote" rows="3">${formValue(student, "specialNote")}</textarea>
+            </label>
+            <label class="wide-field">
+              <span>관리 메모</span>
+              <textarea name="managementMemo" rows="5">${App.escapeHtml(manual.managementMemo || "")}</textarea>
+            </label>
+          </section>
+
+          <div class="form-actions">
+            <button type="submit" class="primary-action">저장</button>
+            <button type="button" class="secondary-action" data-reset-edit>원본으로 되돌리기</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="snapshot-grid">
+        ${App.metricCard("관리 상태", student.managementStatus || "일반", App.MANAGEMENT_STATUS_META[student.managementStatus]?.description || "관리 분류", App.statusTone(student.managementStatus))}
+        ${App.metricCard("취업 정보", manual.employmentCompany || "-", manual.employmentRole || "입력된 직무 정보 없음", "violet")}
+        ${App.metricCard("이탈 정보", manual.dropoutDate || "-", manual.dropoutReason || "입력된 이탈 사유 없음", "neutral")}
+      </section>
+    `;
+  }
+
+  function renderCriterionModal() {
+    if (!state.activeCriterion) return "";
+    const criterion = App.PROFILE_CRITERIA[state.activeCriterion];
+    if (!criterion) return "";
+    const label = App.PROFILE_LABELS[state.activeCriterion] || "평가 준거";
+    return `
+      <div class="modal-backdrop" data-close-modal>
+        <section class="criteria-modal" role="dialog" aria-modal="true" aria-label="${App.escapeHtml(label)} 판단기준">
+          <div class="modal-head">
+            <div>
+              <span class="panel-kicker">Evaluation Criteria</span>
+              <h3>${App.escapeHtml(label)}</h3>
+            </div>
+            <button type="button" class="icon-button" data-close-modal aria-label="닫기">×</button>
+          </div>
+          <div class="criteria-body">
+            <p><strong>핵심 질문</strong>${App.escapeHtml(criterion.question)}</p>
+            <p><strong>주요 데이터</strong>${App.escapeHtml(criterion.evidence)}</p>
+            <p><strong>루브릭 평가</strong>${App.escapeHtml(criterion.rubric)}</p>
+            <p><strong>평정 척도</strong>${App.escapeHtml(criterion.rating)}</p>
+            <p><strong>판정 유의</strong>${App.escapeHtml(criterion.caution)}</p>
+            <p><strong>점수 해석</strong>1점은 관찰과 지원이 시급한 수준, 2점은 형성 중인 수준, 3점은 기대 수행에 도달한 수준, 4점은 전이와 확장이 가능한 수준으로 봅니다.</p>
+          </div>
+        </section>
+      </div>
+    `;
+  }
+
   function renderMilestoneDetailCard(milestone, index) {
     return `
       <article class="detail-milestone-card">
         <div class="detail-milestone-head">
           <div>
             <span class="milestone-index">M${index + 1}</span>
-            <h4>${App.escapeHtml(milestone.label)}</h4>
+            <h4>${App.escapeHtml(App.shortMilestoneLabel(milestone.label))}</h4>
             <p class="milestone-period">${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</p>
           </div>
           <div class="detail-milestone-side">
-            ${milestone.isEstimated ? `<span class="pill tone-warning">추정 경계</span>` : ""}
             <span class="score-chip tone-brand">${App.escapeHtml(milestone.profileAverage.toFixed(2))}</span>
           </div>
         </div>
@@ -262,7 +409,7 @@
   }
 
   function renderStudentDetail(student) {
-    const milestones = student.milestones || [];
+    const milestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated);
     const visibleMilestones =
       state.detailMilestoneId === "all"
         ? milestones
@@ -287,7 +434,7 @@
                   class="filter-chip ${state.detailMilestoneId === milestone.id ? "is-active" : ""}"
                   data-milestone="${App.escapeHtml(milestone.id)}"
                 >
-                  M${index + 1}
+                  ${App.escapeHtml(App.shortMilestoneLabel(milestone.label))}
                 </button>
               `
             )
@@ -314,7 +461,14 @@
         <button type="button" class="tab-chip ${state.studentTab === "detail" ? "is-active" : ""}" data-tab="detail">상세정보</button>
       </nav>
 
-      ${state.studentTab === "dashboard" ? renderStudentDashboard(student) : renderStudentDetail(student)}
+      ${
+        state.studentTab === "dashboard"
+          ? renderStudentDashboard(student)
+          : state.studentTab === "management"
+            ? renderStudentManagement(student)
+            : renderStudentDetail(student)
+      }
+      ${renderCriterionModal()}
     `;
   }
 
@@ -326,7 +480,48 @@
     appRoot.innerHTML = renderStudentPage(student);
   }
 
+  document.addEventListener("submit", (event) => {
+    const form = event.target.closest("#student-edit-form");
+    if (!form) return;
+    event.preventDefault();
+
+    const student = currentStudent();
+    if (!student) return;
+
+    const formData = new FormData(form);
+    const payload = {};
+    for (const [key, value] of formData.entries()) {
+      payload[key] = String(value || "").trim();
+    }
+
+    App.saveStudentEdit(student.id, payload);
+    render();
+  });
+
   document.addEventListener("click", (event) => {
+    const criterionButton = event.target.closest("[data-criterion]");
+    if (criterionButton) {
+      state.activeCriterion = criterionButton.getAttribute("data-criterion") || "";
+      render();
+      return;
+    }
+
+    const closeModal = event.target.closest("[data-close-modal]");
+    if (closeModal && (event.target === closeModal || event.target.closest(".icon-button"))) {
+      state.activeCriterion = "";
+      render();
+      return;
+    }
+
+    const resetButton = event.target.closest("[data-reset-edit]");
+    if (resetButton) {
+      const student = currentStudent();
+      if (!student) return;
+      App.clearStudentEdit(student.id);
+      render();
+      return;
+    }
+
     const tabButton = event.target.closest("[data-tab]");
     if (tabButton) {
       state.studentTab = tabButton.getAttribute("data-tab") || "dashboard";

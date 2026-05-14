@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "저는 예전부터 게임을 즐겨 하며 게임 음악에 대하여 관심이 많았습니다. 넥 x 네오 x 등 게임회사에 음악 관련 직무에 지원했었지만 서류면접도 떨어졌었습니다. 저는 게임에 대한 엔진 활용 및 기초지식조차 없어서 떨어진 게 아닐까 생각합니다. 개인 사…",
         "severity": "info",
         "date": "2025-10-02"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "평소에 게임을 즐겨 하며 BGM, 운영 체계, 성장 가능성 등을 생각하며 게임기획에 관심을 갖게 되었고, 게임산업을 취급하는 회사에 취업을 하고 싶어 본 과정에 지원하게 되었습니다. 게임을 플레이하면서 “이 게임의 미래는 어떤 식으로 나아갈까” 라고…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "과제물의 퀄리티가 좋지 않은 편.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -316,7 +330,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4

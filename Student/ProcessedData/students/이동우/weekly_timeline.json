@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "처음에는 \"내가 좋아하는 일을 하면서 먹고 산다면 그것만큼 행복한 일은 없을 거같다\"는 유치한 생각으로 게임업계를 알아보기 시작했습니다.여러 게임기획서를 읽어봤는데 레벨 디자인, 맵 설계, 캐릭터 설계등등의 요소들을 보며 왠지 모를 자신감이 생겼습니…",
         "severity": "info",
         "date": "2025-11-26"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "기계공학과를 전공한 뒤 공기업으로 취업준비를 하던 중 공기업 자체가 정말 저랑 맞지 않다고 느꼈고 관련 공부가 싫어지게 되서 다른길을 찾아보게 됐습니다. 게임을 매우매우 좋아하긴 하지만 개발이나 기획쪽으로 배워본 적은 없어서 거의 백지상태 입니다..…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "소극적으로 잘 따라오는 인원",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -65,12 +79,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -441,7 +455,7 @@
         "selfRegulation": 2,
         "engagement": 2,
         "collaboration": 2,
-        "resilience": 3,
+        "resilience": 2,
         "reflection": 4,
         "careerAgency": 4
       },

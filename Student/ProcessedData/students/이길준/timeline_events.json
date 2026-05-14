@@ -1,5 +1,23 @@
 [
   {
+    "eventId": "ev-7174d3a89e00",
+    "date": "",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "course",
+    "sourceDomain": "staff_profile",
+    "severity": "stable",
+    "title": "운영진 학생 정보 기록",
+    "summary": "총평 🔖 (업데이트 날짜 : ) Good 날짜 - 내용 Bad 날짜 - 내용 💡특이 사항 1/14(수) - 이탈 문의 💻 Zep 날짜 - 내용 💬 DM ~ 12/8 : 개강 전 : 날짜 - 내용",
+    "detail": "총평\n🔖 (업데이트 날짜 : )\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n1/14(수) - 이탈 문의\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
+    "constructs": [
+      "collaboration",
+      "engagement"
+    ],
+    "sourceLabel": "이길준 2c41c30b8ab38089bb83e815a18a723c.html",
+    "isEstimatedDate": false
+  },
+  {
     "eventId": "ev-5858f30bcb70",
     "date": "2025-11-05",
     "endDate": "",
@@ -274,6 +292,23 @@
       "reflection"
     ],
     "sourceLabel": "이길준.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-43bd45b5f743",
+    "date": "2026-01-21",
+    "endDate": "",
+    "weekIndex": 7,
+    "phase": "course",
+    "sourceDomain": "management_status",
+    "severity": "caution",
+    "title": "과정이탈 기록",
+    "summary": "패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망",
+    "detail": "유형: 자진 이탈\n사유: 패션디자인 전공 및 2D 그래픽 외주 경력을 기반으로 3D 모델링 분야로의 전향을 희망\n기타: \n출석 일수: ",
+    "constructs": [
+      "engagement"
+    ],
+    "sourceLabel": "이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
     "isEstimatedDate": false
   }
 ]

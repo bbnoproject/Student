@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "평소에 게임 기획 직무에 관심이 있었지만 어떻게 준비해야할지 잘 모르고 막막했었는데, 게임 기획 부트캠프가 있다는 걸 알게됐습니다. 여기서 배운것과 경험들로 이후 기획 직무 취업에 도움이 됐으면 하는 마음으로 참여를 신청하게 되었습니다.",
         "severity": "info",
         "date": "2025-12-04"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임 기획에 대해 혼자 알아보기 막막하다 생각해서 이번 프로그램에 지원하게 되었습니다. 과정을 잘 따라가서 개인으로써도 성장하고 이후 취업까지 도움이 될 수 있도록 노력하겠습니다!",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "HTML로 게임 열심히 만드는 편",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -70,7 +84,7 @@
         "reflection": 2,
         "careerAgency": 3
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },
@@ -252,7 +266,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "전반적으로 안정적인 성장 흐름",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -266,11 +280,11 @@
         "engagement": 4,
         "collaboration": 3,
         "resilience": 3,
-        "reflection": 2,
+        "reflection": 3,
         "careerAgency": 3
       },
       "confidence": "High",
-      "note": "회고 구조화 필요"
+      "note": "전반적으로 안정적인 성장 흐름"
     }
   },
   {

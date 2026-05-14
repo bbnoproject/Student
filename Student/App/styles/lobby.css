@@ -1,12 +1,76 @@
 body[data-page="lobby"] .topbar-copy {
-  max-width: 62ch;
+  max-width: 58ch;
 }
 
 body[data-page="lobby"] .app-root {
-  gap: 18px;
+  gap: 14px;
+}
+
+body[data-page="lobby"] .app-shell {
+  gap: 16px;
+}
+
+body[data-page="lobby"] .app-topbar {
+  padding: 20px 24px;
+}
+
+body[data-page="lobby"] .hero-panel,
+body[data-page="lobby"] .panel {
+  padding: 18px;
+}
+
+body[data-page="lobby"] .lobby-hero {
+  grid-template-columns: minmax(230px, 0.55fr) minmax(0, 1.45fr);
+  gap: 16px;
+  align-items: center;
+}
+
+body[data-page="lobby"] .hero-copy h2 {
+  font-size: 1.65rem;
+}
+
+body[data-page="lobby"] .hero-copy p:last-child {
+  margin-bottom: 0;
+}
+
+body[data-page="lobby"] .hero-stats {
+  grid-template-columns: repeat(5, minmax(108px, 1fr));
+  gap: 10px;
+}
+
+body[data-page="lobby"] .metric-card {
+  padding: 11px 12px;
+  min-height: 0;
+}
+
+body[data-page="lobby"] .metric-label {
+  margin-bottom: 7px;
+}
+
+body[data-page="lobby"] .metric-value {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+body[data-page="lobby"] .metric-copy {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.35;
 }
 
 body[data-page="lobby"] .spotlight-caption {
   display: inline-flex;
   max-width: 100%;
+}
+
+@media (max-width: 1120px) {
+  body[data-page="lobby"] .hero-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 920px) {
+  body[data-page="lobby"] .lobby-hero {
+    grid-template-columns: 1fr;
+  }
 }

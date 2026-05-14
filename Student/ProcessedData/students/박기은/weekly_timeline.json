@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 2,
+      "admission": 3,
       "career": 0
     },
     "severity": "stable",
@@ -29,6 +29,20 @@
         "summary": "제 최종 목표는 게임을 만드는 능력을 길러 모두가 재미있게 플레이 할 수 있는 게임을 만드는 것입니다. 좋은 퀼리티의 게임을 만들기 위해서는 팀 내의 모두와 적극적인 커뮤니케이션과 기획 단계에서 부터 멀리 보고 옳은 길로 게임을 이끌어 갈 수 있는…",
         "severity": "info",
         "date": "2025-11-25"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "오랫동안 무엇을 해야할지 모르고 방황하다가 취직에 집중된 부트캠프라는 것을 알게 되고 게임기획자도 부트캠프가 있다는 것을 알자마자 신청하게 됐습니다! 백수인 동안 게임 경력은 누구에게도 뒤지지 않을 만큼 쌓았다고 생각합니다. 이제부터는 게임 제작 경…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "성취도, 참여도는 양호하나 걱정이 많고 소심한 인원",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -82,9 +96,9 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 4
       },
-      "confidence": "Low",
+      "confidence": "Medium",
       "note": "자기조절 지원 필요"
     }
   },

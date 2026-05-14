@@ -1,5 +1,24 @@
 [
   {
+    "eventId": "ev-b56370293ba5",
+    "date": "",
+    "endDate": "",
+    "weekIndex": 0,
+    "phase": "course",
+    "sourceDomain": "staff_profile",
+    "severity": "stable",
+    "title": "운영진 학생 정보 기록",
+    "summary": "점차 활발해져, 지금은 큰 문제없이 팀원들과 소통하는 것으로 파악. 다만 TIL은 여전히 미진.",
+    "detail": "한줄평\n점차 활발해져, 지금은 큰 문제없이 팀원들과 소통하는 것으로 파악. 다만 TIL은 여전히 미진.\n\n총평\n🔖 (업데이트 날짜 : 2/12(목))\n매우 조용하고 참여가 미진\n점차 활발해져, 지금은 큰 문제없이 팀원들과 소통하는 것으로 파악. 다만 TIL은 여전히 미진.\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n12/29(월) - 1차 레벨 테스트 100점\n안성진과 학교, 학과 동기\n2/4(수) - 소통 미진에서 평균으로 조정\n스토리 프로젝트 이후 팀원과의 소통 활발해짐\n2/11(화) - 발표 진행\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
+    "constructs": [
+      "collaboration",
+      "engagement",
+      "resilience"
+    ],
+    "sourceLabel": "정수진 2be1c30b8ab3812e9111f6d0b056a9ce.html",
+    "isEstimatedDate": false
+  },
+  {
     "eventId": "ev-0ecb24ff1747",
     "date": "2025-10-21",
     "endDate": "",

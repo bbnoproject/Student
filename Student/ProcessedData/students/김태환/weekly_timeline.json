@@ -10,7 +10,7 @@
       "project": 0,
       "retro": 0,
       "counseling": 0,
-      "admission": 1,
+      "admission": 2,
       "career": 0
     },
     "severity": "stable",
@@ -22,6 +22,20 @@
         "summary": "합격 · 면접 점수 74",
         "severity": "success",
         "date": "2025-12-07"
+      },
+      {
+        "type": "admission",
+        "title": "대원카드 자기소개",
+        "summary": "게임 관련 취업을 막막하게 여겨 이미 포기한 전적이 있습니다. 이미 사회생활을 하고 있었음에도 다시 도전하는만큼 의미있는 성과를 내고 싶습니다.",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "열심히 하려는 인원. 소통과 성취도 모두 양호하나, 수면제 복용으로 지각이 잦음. 다만 자존감이 다소 낮음.",
+        "severity": "info",
+        "date": ""
       }
     ],
     "snapshot": null
@@ -79,12 +93,12 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 4
       },
-      "confidence": "Medium",
+      "confidence": "High",
       "note": "자기조절 지원 필요"
     }
   },
@@ -315,7 +329,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 2,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 4
@@ -521,7 +535,7 @@
         "selfRegulation": 2,
         "engagement": 2,
         "collaboration": 2,
-        "resilience": 3,
+        "resilience": 2,
         "reflection": 3,
         "careerAgency": 3
       },
