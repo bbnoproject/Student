@@ -6,10 +6,10 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "Medium",
     "note": "자기조절 지원 필요"
@@ -24,7 +24,7 @@
       "collaboration": 2,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -36,10 +36,10 @@
     "scores": {
       "self_regulation": 2,
       "engagement": 2,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -51,13 +51,13 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
-    "note": "자기조절 지원 필요"
+    "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
   },
   {
     "snapshotId": "김수환-m5",
@@ -66,13 +66,13 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
-    "note": "자기조절 지원 필요"
+    "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
   },
   {
     "snapshotId": "김수환-m6",
@@ -81,12 +81,12 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
-    "note": "자기조절 지원 필요"
+    "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
   }
 ]

@@ -6,10 +6,10 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "Medium",
     "note": "자기조절 지원 필요"
@@ -24,7 +24,7 @@
       "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -39,7 +39,7 @@
       "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -54,7 +54,7 @@
       "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -69,7 +69,7 @@
       "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -84,7 +84,7 @@
       "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"

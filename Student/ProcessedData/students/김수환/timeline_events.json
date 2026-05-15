@@ -671,7 +671,7 @@
     "weekIndex": 15,
     "phase": "course",
     "sourceDomain": "attendance",
-    "severity": "caution",
+    "severity": "stable",
     "title": "출결 이슈 - 기타",
     "summary": "이탈",
     "detail": "이탈",

@@ -100,10 +100,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -390,7 +390,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -592,10 +592,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -1164,10 +1164,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"

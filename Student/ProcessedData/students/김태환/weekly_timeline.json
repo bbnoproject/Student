@@ -93,10 +93,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -329,10 +329,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 2,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "참여 지속성 점검 필요"
@@ -345,21 +345,21 @@
     "endDate": "2026-02-08",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "안정적인 학습 흐름",
     "notes": [
       {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
         "summary": "지각 (연락 X)",
-        "severity": "caution",
+        "severity": "info",
         "date": "2026-02-04"
       }
     ],
@@ -537,7 +537,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -714,7 +714,7 @@
     "endDate": "2026-04-12",
     "counts": {
       "attendance": 3,
-      "attendanceRisk": 2,
+      "attendanceRisk": 1,
       "project": 0,
       "retro": 0,
       "counseling": 0,
@@ -722,7 +722,7 @@
       "career": 0
     },
     "severity": "caution",
-    "headline": "출결 위험 신호가 집중된 구간",
+    "headline": "출결 위험 신호를 확인한 구간",
     "notes": [
       {
         "type": "attendance",
@@ -735,7 +735,7 @@
         "type": "attendance",
         "title": "출결 이슈 · 외출",
         "summary": "외출 (늦잠)",
-        "severity": "caution",
+        "severity": "info",
         "date": "2026-04-08"
       },
       {
@@ -830,21 +830,21 @@
     "endDate": "2026-05-03",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "warning",
-    "headline": "집중 확인이 필요한 구간",
+    "severity": "caution",
+    "headline": "안정적인 학습 흐름",
     "notes": [
       {
         "type": "attendance",
         "title": "출결 이슈 · 결석",
         "summary": "결석 (늦잠)",
-        "severity": "warning",
+        "severity": "caution",
         "date": "2026-04-27"
       }
     ],
@@ -1144,11 +1144,11 @@
       "snapshotType": "현재",
       "scores": {
         "selfRegulation": 1,
-        "engagement": 1,
-        "collaboration": 3,
+        "engagement": 2,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"

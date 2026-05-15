@@ -139,8 +139,8 @@
     "date": "2026-03-16",
     "kind": "기타",
     "detail": "이탈",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "other",
+    "impact": "contextual"
   }
 ]

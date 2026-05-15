@@ -17,7 +17,7 @@
   },
   {
     "statusPeriodId": "김태환-status-3",
-    "startDate": "2026-02-02",
+    "startDate": "2026-02-09",
     "endDate": "2026-02-15",
     "statusType": "주의",
     "severity": "caution",
@@ -43,8 +43,8 @@
     "statusPeriodId": "김태환-status-6",
     "startDate": "2026-04-27",
     "endDate": "2026-05-10",
-    "statusType": "집중 관찰",
-    "severity": "warning",
-    "reasonSummary": "집중 확인이 필요한 구간"
+    "statusType": "주의",
+    "severity": "caution",
+    "reasonSummary": "안정적인 학습 흐름"
   }
 ]

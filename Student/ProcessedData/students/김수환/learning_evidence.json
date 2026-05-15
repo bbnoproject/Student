@@ -797,7 +797,7 @@
     "title": "출결 이슈 - 기타",
     "summary": "이탈",
     "detail": "이탈",
-    "severity": "caution",
+    "severity": "stable",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false

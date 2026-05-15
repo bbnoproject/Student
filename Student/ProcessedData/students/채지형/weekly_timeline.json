@@ -86,10 +86,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "Medium",
       "note": "자기조절 지원 필요"
@@ -301,10 +301,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -473,7 +473,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "전반적으로 안정적인 성장 흐름",
+        "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -488,10 +488,10 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
   },
   {
@@ -1088,10 +1088,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 2,
-        "collaboration": 4,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "참여 지속성 점검 필요"

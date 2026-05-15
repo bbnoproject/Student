@@ -1,0 +1,32 @@
+[
+  {
+    "caseId": "김시온-flow-2",
+    "caseType": "career_revision_progress",
+    "label": "진로 문서 개선",
+    "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
+    "severity": "success",
+    "summary": "진로 문서 수정 이력과 진로 준비도가 함께 확인됩니다.",
+    "evidence": [
+      "진로 문서 라운드 2회",
+      "진로 준비 점수 78.0",
+      "자기소개 수정 이력 있음"
+    ],
+    "startDate": "2026-04-20",
+    "endDate": "2026-05-03"
+  },
+  {
+    "caseId": "김시온-flow-1",
+    "caseType": "reflection_growth_link",
+    "label": "회고 기반 성장",
+    "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
+    "severity": "success",
+    "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
+    "evidence": [
+      "회고 2건",
+      "성찰 점수 4/4",
+      "초기 대비 성장 +1.33"
+    ],
+    "startDate": "2026-01-27",
+    "endDate": "2026-02-28"
+  }
+]

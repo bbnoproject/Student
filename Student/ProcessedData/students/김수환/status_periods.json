@@ -10,7 +10,7 @@
   {
     "statusPeriodId": "김수환-status-2",
     "startDate": "2026-03-02",
-    "endDate": "2026-03-22",
+    "endDate": "2026-03-15",
     "statusType": "주의",
     "severity": "caution",
     "reasonSummary": "출결 배경 확인이 필요한 구간"

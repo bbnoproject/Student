@@ -6,10 +6,10 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 3,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "Medium",
     "note": "자기조절 지원 필요"
@@ -21,13 +21,13 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
-    "note": "전반적으로 안정적인 성장 흐름"
+    "note": "협업 상황 면담 권장"
   },
   {
     "snapshotId": "김서현-m3",
@@ -39,7 +39,7 @@
       "collaboration": 3,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -54,7 +54,7 @@
       "collaboration": 3,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -69,7 +69,7 @@
       "collaboration": 3,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -84,7 +84,7 @@
       "collaboration": 3,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"

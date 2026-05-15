@@ -86,10 +86,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "Medium",
       "note": "자기조절 지원 필요"
@@ -102,21 +102,21 @@
     "endDate": "2025-12-21",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "warning",
-    "headline": "집중 확인이 필요한 구간",
+    "severity": "caution",
+    "headline": "안정적인 학습 흐름",
     "notes": [
       {
         "type": "attendance",
         "title": "출결 이슈 · 결석",
         "summary": "결석 (늦잠)",
-        "severity": "warning",
+        "severity": "caution",
         "date": "2025-12-15"
       }
     ],
@@ -281,7 +281,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "참여 지속성 점검 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -291,15 +291,15 @@
       "snapshotDate": "2026-01-26",
       "snapshotType": "1차 프로젝트 이후",
       "scores": {
-        "selfRegulation": 3,
-        "engagement": 2,
+        "selfRegulation": 4,
+        "engagement": 4,
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "참여 지속성 점검 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {
@@ -457,7 +457,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "자기조절 지원 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -467,15 +467,15 @@
       "snapshotDate": "2026-03-02",
       "snapshotType": "2차 프로젝트 이후",
       "scores": {
-        "selfRegulation": 2,
-        "engagement": 2,
+        "selfRegulation": 3,
+        "engagement": 4,
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "자기조절 지원 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {
@@ -1022,7 +1022,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "참여 지속성 점검 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-08-03"
       }
@@ -1032,15 +1032,15 @@
       "snapshotDate": "2026-08-03",
       "snapshotType": "현재",
       "scores": {
-        "selfRegulation": 3,
-        "engagement": 2,
+        "selfRegulation": 4,
+        "engagement": 4,
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "참여 지속성 점검 필요"
+      "note": "협업 상황 면담 권장"
     }
   }
 ]

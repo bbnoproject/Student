@@ -15,9 +15,9 @@
     "label": "W01",
     "startDate": "2025-12-08",
     "endDate": "2025-12-14",
-    "studentEventCount": 92,
+    "studentEventCount": 91,
     "warningEventCount": 0,
-    "cautionEventCount": 4,
+    "cautionEventCount": 3,
     "counselingCount": 3,
     "attendanceIssueCount": 88
   },
@@ -27,8 +27,8 @@
     "startDate": "2025-12-15",
     "endDate": "2025-12-21",
     "studentEventCount": 73,
-    "warningEventCount": 1,
-    "cautionEventCount": 4,
+    "warningEventCount": 0,
+    "cautionEventCount": 5,
     "counselingCount": 13,
     "attendanceIssueCount": 60
   },
@@ -61,7 +61,7 @@
     "endDate": "2026-01-11",
     "studentEventCount": 35,
     "warningEventCount": 1,
-    "cautionEventCount": 3,
+    "cautionEventCount": 2,
     "counselingCount": 6,
     "attendanceIssueCount": 28
   },
@@ -71,7 +71,7 @@
     "startDate": "2026-01-12",
     "endDate": "2026-01-18",
     "studentEventCount": 28,
-    "warningEventCount": 2,
+    "warningEventCount": 1,
     "cautionEventCount": 6,
     "counselingCount": 5,
     "attendanceIssueCount": 23
@@ -83,7 +83,7 @@
     "endDate": "2026-01-25",
     "studentEventCount": 396,
     "warningEventCount": 3,
-    "cautionEventCount": 14,
+    "cautionEventCount": 12,
     "counselingCount": 14,
     "attendanceIssueCount": 22
   },
@@ -105,7 +105,7 @@
     "endDate": "2026-02-08",
     "studentEventCount": 23,
     "warningEventCount": 0,
-    "cautionEventCount": 5,
+    "cautionEventCount": 3,
     "counselingCount": 1,
     "attendanceIssueCount": 22
   },
@@ -116,7 +116,7 @@
     "endDate": "2026-02-15",
     "studentEventCount": 165,
     "warningEventCount": 0,
-    "cautionEventCount": 5,
+    "cautionEventCount": 4,
     "counselingCount": 2,
     "attendanceIssueCount": 18
   },
@@ -148,8 +148,8 @@
     "startDate": "2026-03-02",
     "endDate": "2026-03-08",
     "studentEventCount": 50,
-    "warningEventCount": 1,
-    "cautionEventCount": 8,
+    "warningEventCount": 0,
+    "cautionEventCount": 9,
     "counselingCount": 1,
     "attendanceIssueCount": 32
   },
@@ -171,7 +171,7 @@
     "endDate": "2026-03-22",
     "studentEventCount": 314,
     "warningEventCount": 1,
-    "cautionEventCount": 19,
+    "cautionEventCount": 18,
     "counselingCount": 0,
     "attendanceIssueCount": 18
   },
@@ -204,7 +204,7 @@
     "endDate": "2026-04-12",
     "studentEventCount": 306,
     "warningEventCount": 4,
-    "cautionEventCount": 14,
+    "cautionEventCount": 13,
     "counselingCount": 8,
     "attendanceIssueCount": 26
   },
@@ -214,8 +214,8 @@
     "startDate": "2026-04-13",
     "endDate": "2026-04-19",
     "studentEventCount": 74,
-    "warningEventCount": 4,
-    "cautionEventCount": 8,
+    "warningEventCount": 3,
+    "cautionEventCount": 6,
     "counselingCount": 22,
     "attendanceIssueCount": 52
   },
@@ -236,8 +236,8 @@
     "startDate": "2026-04-27",
     "endDate": "2026-05-03",
     "studentEventCount": 97,
-    "warningEventCount": 1,
-    "cautionEventCount": 2,
+    "warningEventCount": 0,
+    "cautionEventCount": 3,
     "counselingCount": 3,
     "attendanceIssueCount": 44
   },

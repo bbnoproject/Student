@@ -6,13 +6,5 @@
     "statusType": "주의",
     "severity": "caution",
     "reasonSummary": "안정적인 학습 흐름"
-  },
-  {
-    "statusPeriodId": "장근혁-status-2",
-    "startDate": "2026-01-12",
-    "endDate": "2026-01-18",
-    "statusType": "주의",
-    "severity": "caution",
-    "reasonSummary": "출결 위험 신호를 확인한 구간"
   }
 ]

@@ -188,7 +188,7 @@
     "title": "출결 이슈 - 결석",
     "summary": "결석 (이탈 희망)",
     "detail": "결석 (이탈 희망)",
-    "severity": "warning",
+    "severity": "caution",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false
@@ -317,7 +317,7 @@
     "title": "출결 이슈 - 기타",
     "summary": "이탈",
     "detail": "이탈",
-    "severity": "caution",
+    "severity": "stable",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false

@@ -59,9 +59,9 @@
     "date": "2026-01-23",
     "kind": "지각",
     "detail": "지각 (연락 안됨)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "late",
+    "impact": "contextual"
   },
   {
     "date": "2026-01-27",

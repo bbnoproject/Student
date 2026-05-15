@@ -6,10 +6,10 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 3,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "Medium",
     "note": "자기조절 지원 필요"
@@ -21,10 +21,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 2,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "참여 지속성 점검 필요"
@@ -39,7 +39,7 @@
       "collaboration": 2,
       "resilience": 2,
       "reflection": 3,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -51,10 +51,10 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 2,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -65,11 +65,11 @@
     "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
-      "engagement": 1,
-      "collaboration": 3,
+      "engagement": 2,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
@@ -80,11 +80,11 @@
     "snapshotType": "4차 프로젝트 종료 ~ 종강",
     "scores": {
       "self_regulation": 1,
-      "engagement": 1,
-      "collaboration": 3,
+      "engagement": 2,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 3
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"

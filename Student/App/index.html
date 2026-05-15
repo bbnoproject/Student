@@ -12,23 +12,26 @@
       <header class="app-topbar">
         <div class="brand-block">
           <p class="eyebrow">Student Intelligence Desk</p>
-          <h1>학생 성장 분석 대시보드</h1>
-          <p class="topbar-copy">
-            메인 로비에서 전체 학생 흐름을 보고, 학생 상세에서 마일스톤별 성장과 특이사항을 함께 읽습니다.
-          </p>
+          <h1>학생 성장 분석</h1>
         </div>
+
+        <nav class="top-nav" aria-label="주요 메뉴">
+          <a class="top-nav-link" href="#overview" data-page-link="overview">개요</a>
+          <a class="top-nav-link" href="#process" data-page-link="process">학습과정</a>
+          <a class="top-nav-link" href="#students" data-page-link="students">학생관리</a>
+          <a class="top-nav-link" href="#feedback" data-page-link="feedback">피드백</a>
+        </nav>
 
         <div class="topbar-actions">
           <label class="search-stack" for="global-search">
-            <span>학생 검색</span>
             <input
               id="global-search"
               type="search"
               autocomplete="off"
-              placeholder="이름, 연락처, 학력, 분류 태그 검색"
+              placeholder="학생 검색"
             />
           </label>
-          <button id="theme-toggle" class="theme-toggle" type="button">다크 모드</button>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="테마 전환">◐</button>
         </div>
       </header>
 

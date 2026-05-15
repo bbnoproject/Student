@@ -147,17 +147,17 @@
     },
     engagement: {
       question: "과정에 꾸준히 참여하고 흔들릴 때 복귀하는가",
-      evidence: "체크인 응답률, 회고 지속 여부, 면담 이후 참여 회복, 행동/관리형 출결",
+      evidence: "체크인 응답률, 회고 지속 여부, 면담 이후 참여 회복, 늦잠 지각/무단 결석",
       rubric: "참여 빈도, 과제 지속성, 이탈 후 복귀 행동을 구분해 평정합니다.",
       rating: "1점 참여 단절, 2점 불안정 참여, 3점 대체로 지속, 4점 꾸준한 몰입과 회복 수준입니다.",
       caution: "건강형·행정형 출결은 참여 저하 근거로 직접 쓰지 않습니다.",
     },
     collaboration: {
       question: "팀 안에서 역할을 이해하고 관계를 조율하는가",
-      evidence: "팀 구성, 반복 협업 팀원, 팀 관련 회고, 갈등·관계 면담",
-      rubric: "역할 수행, 의사소통, 갈등 조정, 동료 기여를 별도 준거로 관찰합니다.",
+      evidence: "프로젝트 데일리체크인 제출 리듬, 회고 내용, 역할 수행 기록, 단계별 변화",
+      rubric: "체크인 정시성, 회고 품질, 역할 수행, 프로젝트 진행 중 조율 흔적을 별도 준거로 관찰합니다.",
       rating: "1점 협업 저해, 2점 제한적 역할 수행, 3점 안정적 협업, 4점 팀 성과를 촉진하는 수준입니다.",
-      caution: "팀장 경험만으로 강점 처리하지 않고 역할 수행과 조율 정황을 함께 봅니다.",
+      caution: "비선호/선호 인원 언급은 관계 선호 참고값이며 협업 점수에 직접 반영하지 않습니다.",
     },
     resilience: {
       question: "실패나 압박 후 다시 시도하고 방향을 조정하는가",
@@ -174,11 +174,11 @@
       caution: "문장 길이가 아니라 원인 분석, 다음 행동, 피드백 반영 흔적을 봅니다.",
     },
     careerAgency: {
-      question: "희망 방향이 구체적이고 현재 학습과 연결되는가",
-      evidence: "모집 단계 목표, 취업 문서, 진로 면담, 프로젝트와 진로 연결 서술",
-      rubric: "진로 목표의 구체성, 역량 인식, 포트폴리오 연결, 실행 계획을 나누어 봅니다.",
-      rating: "1점 방향 불명확, 2점 관심 분야 수준, 3점 목표와 준비 행동 연결, 4점 직무 기준에 맞춰 전략화하는 수준입니다.",
-      caution: "문서 제출 여부 자체보다 초안, 피드백, 수정, 방향 구체화를 봅니다.",
+      question: "목적, 자기 강점, 자신만의 스타일이 분명하게 드러나는가",
+      evidence: "모집 단계 목표, 진로 면담, 취업 문서, 이력서, 피드백 반영, 직무 브랜딩 서술",
+      rubric: "목적 명확성, 자기 강점 인식, 자신만의 스타일/색깔, 준비 과정을 나누어 봅니다.",
+      rating: "1점 방향 불명확, 2점 관심 분야 나열, 3점 강점과 목표 연결, 4점 자기 색깔이 직무 전략으로 드러나는 수준입니다.",
+      caution: "문서 제출 횟수보다 희망 직무의 초점, 본인 강점의 이해, 차별화된 기획자상이 중요합니다.",
     },
   };
 
@@ -201,7 +201,7 @@
     collaboration_strength: {
       label: "협업 강점",
       tone: "mint",
-      description: "협업, 팀 역할, 반복 협업 관계가 강점인 학생",
+      description: "데일리체크인, 회고, 역할 수행 흐름에서 강점이 확인된 학생",
     },
     career_progress: {
       label: "진로 준비 진전",
@@ -221,10 +221,12 @@
   };
 
   const SORT_OPTIONS = {
+    name: { label: "가나다순", key: "name" },
     profile: { label: "종합 프로파일", key: "profileRankScore" },
     growth: { label: "성장 곡선", key: "growthRankScore" },
     support: { label: "지원 우선도", key: "supportRankScore" },
     collaboration: { label: "협업 강점", key: "collaborationRankScore" },
+    career: { label: "진로 준비", key: "careerRankScore" },
   };
 
   function escapeHtml(value) {
@@ -303,7 +305,7 @@
     const stats = student?.stats || {};
     const ratingLabel = score <= 1 ? "긴급 지원" : score === 2 ? "형성 중" : score === 3 ? "안정" : "확장";
     if (key === "selfRegulation") {
-      if ((stats.attendanceRiskIssues || 0) > 0) return `${ratingLabel} 평정입니다. 행동/관리형 출결 위험 ${stats.attendanceRiskIssues}건을 실행 지속성 루브릭에 반영했습니다.`;
+      if ((stats.attendanceRiskIssues || 0) > 0) return `${ratingLabel} 평정입니다. 늦잠 지각/무단 결석 ${stats.attendanceRiskIssues}건을 실행 지속성 루브릭에 반영했습니다.`;
       return score >= 3 ? `${ratingLabel} 평정입니다. 실행 지속성과 후속 점검에서 큰 위험 신호가 낮습니다.` : `${ratingLabel} 평정입니다. 계획 수립보다 실행 후 점검 근거가 부족합니다.`;
     }
     if (key === "engagement") {
@@ -311,8 +313,12 @@
       return score >= 3 ? `${ratingLabel} 평정입니다. 참여 빈도와 과제 지속성이 비교적 유지됩니다.` : `${ratingLabel} 평정입니다. 흔들린 뒤 복귀 행동을 더 확인해야 합니다.`;
     }
     if (key === "collaboration") {
-      if ((stats.repeatedPeerCount || 0) > 0) return `${ratingLabel} 평정입니다. 반복 협업 팀원 ${stats.repeatedPeerCount}명과 역할 수행 기록을 함께 봤습니다.`;
-      return score >= 3 ? `${ratingLabel} 평정입니다. 역할 수행과 의사소통 준거에서 큰 위험 신호가 낮습니다.` : `${ratingLabel} 평정입니다. 팀 기여와 갈등 조정 근거가 부족합니다.`;
+      const readiness = student.derived?.collaborationReadiness;
+      if (readiness) {
+        const trajectory = readiness.trajectory || {};
+        return `${ratingLabel} 평정입니다. 체크인 정시율 ${readiness.checkinOnTimeRate || 0}%, 회고 품질 ${readiness.retroQuality || 0}/4, 역할 수행 ${readiness.roleExecution || 0}/4, 변화 ${trajectory.label || "유지"}(${trajectory.delta || 0})를 반영했습니다.`;
+      }
+      return score >= 3 ? `${ratingLabel} 평정입니다. 데일리체크인과 회고에서 프로젝트 협업 흐름이 안정적입니다.` : `${ratingLabel} 평정입니다. 데일리체크인, 회고 품질, 역할 수행 근거를 더 확인해야 합니다.`;
     }
     if (key === "resilience") {
       return score >= 3 ? `${ratingLabel} 평정입니다. 압박 구간 이후 재시도와 방향 조정 흐름이 관찰됩니다.` : `${ratingLabel} 평정입니다. 실패 해석과 대안 실행의 연결 근거를 보강해야 합니다.`;
@@ -321,8 +327,11 @@
       return score >= 3 ? `${ratingLabel} 평정입니다. 회고가 원인 분석과 다음 행동으로 이어진 흔적이 있습니다.` : `${ratingLabel} 평정입니다. 사실 나열을 넘어 개선 행동으로 연결되는 근거가 약합니다.`;
     }
     if (key === "careerAgency") {
-      if ((stats.careerDocumentRounds || 0) > 0) return `${ratingLabel} 평정입니다. 진로 문서 라운드 ${stats.careerDocumentRounds}회를 목표 구체화 준거에 반영했습니다.`;
-      return score >= 3 ? `${ratingLabel} 평정입니다. 진로 방향과 현재 학습의 연결이 비교적 드러납니다.` : `${ratingLabel} 평정입니다. 직무 목표와 프로젝트 경험의 연결 근거가 부족합니다.`;
+      const readiness = student.derived?.careerReadiness;
+      if (readiness) {
+        return `${ratingLabel} 평정입니다. 목적 명확성 ${readiness.purposeClarity}, 자기 강점 ${readiness.selfStrengthAwareness}, 자기 색깔 ${readiness.personalColor}을 함께 반영했습니다.`;
+      }
+      return score >= 3 ? `${ratingLabel} 평정입니다. 진로 방향, 자기 강점, 기획자 색깔의 연결이 비교적 드러납니다.` : `${ratingLabel} 평정입니다. 직무 목표와 자신만의 강점/색깔의 연결 근거가 부족합니다.`;
     }
     return "관련 기록을 종합해 산정한 보조 지표입니다.";
   }
@@ -339,6 +348,11 @@
 
   function studentSearchPool(student) {
     const tags = (student.derived?.tags || []).map((tag) => TAG_META[tag]?.label || tag);
+    const flowCases = (student.learningFlowCases || []).flatMap((item) => [
+      item.label,
+      item.summary,
+      ...(item.evidence || []),
+    ]);
     return [
       student.name,
       student.phone,
@@ -354,6 +368,7 @@
       student.course,
       student.cohort,
       ...tags,
+      ...flowCases,
     ]
       .filter(Boolean)
       .join(" ")
@@ -376,7 +391,8 @@
     document.body.dataset.theme = theme;
     localStorage.setItem("student-theme", theme);
     if (themeToggle) {
-      themeToggle.textContent = theme === "dark" ? "라이트 모드" : "다크 모드";
+      themeToggle.textContent = theme === "dark" ? "☀" : "◐";
+      themeToggle.setAttribute("aria-label", theme === "dark" ? "라이트 모드로 전환" : "다크 모드로 전환");
     }
   }
 
@@ -684,6 +700,126 @@
     return (TAG_META[student.derived?.primaryTag] || TAG_META.steady_path).label;
   }
 
+  function renderClassificationReasons(student) {
+    const reasons = student.derived?.tagReasons || {};
+    const order = [
+      "overall_strong",
+      "growth_high",
+      "support_priority",
+      "collaboration_strength",
+      "career_progress",
+      "attendance_watch",
+      "steady_path",
+    ];
+    return `
+      <div class="classification-reason-list">
+        ${order
+          .map((tag) => {
+            const meta = TAG_META[tag] || TAG_META.steady_path;
+            const item = reasons[tag] || { qualified: false, reasons: ["판단 사유가 아직 생성되지 않았습니다."] };
+            return `
+              <article class="classification-reason-row ${item.qualified ? "is-qualified" : ""}">
+                <div>
+                  <strong>${escapeHtml(meta.label)}</strong>
+                  <span>${item.qualified ? "해당" : "미해당"}</span>
+                </div>
+                <p>${escapeHtml((item.reasons || []).join(" · "))}</p>
+              </article>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+  }
+
+  function learningCaseTone(severity) {
+    if (severity === "warning") return "danger";
+    if (severity === "caution") return "warning";
+    if (severity === "success") return "success";
+    return "neutral";
+  }
+
+  function renderCollaborationTrajectory(student) {
+    const readiness = student.derived?.collaborationReadiness || {};
+    const trajectory = readiness.trajectory || {};
+    const phaseScores = trajectory.phaseScores || [];
+    return `
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Collaboration Timeline</span>
+            <h3>프로젝트 협업 변화</h3>
+          </div>
+          <p class="panel-copy">협업은 관계 선호가 아니라 프로젝트 데일리체크인과 회고 내용을 중심으로 과거와 현재를 비교합니다.</p>
+        </div>
+        <div class="collaboration-trajectory-grid">
+          <article class="trajectory-summary">
+            <span>초기</span>
+            <strong>${escapeHtml(String(Math.round(trajectory.earlyScore || readiness.collaborationReadinessScore || 0)))}</strong>
+          </article>
+          <article class="trajectory-summary">
+            <span>현재</span>
+            <strong>${escapeHtml(String(Math.round(trajectory.currentScore || readiness.collaborationReadinessScore || 0)))}</strong>
+          </article>
+          <article class="trajectory-summary">
+            <span>변화</span>
+            <strong>${escapeHtml(`${trajectory.label || "유지"} ${trajectory.delta > 0 ? "+" : ""}${trajectory.delta || 0}`)}</strong>
+          </article>
+        </div>
+        <div class="trajectory-phase-list">
+          ${phaseScores.length
+            ? phaseScores
+                .map(
+                  (item) => `
+                    <article class="trajectory-phase-row">
+                      <strong>${escapeHtml(item.phase)}</strong>
+                      <div class="trajectory-track">
+                        <span style="width:${Math.max(4, Math.min(100, Number(item.score) || 0))}%"></span>
+                      </div>
+                      <p>${escapeHtml(`점수 ${Math.round(item.score || 0)} · 체크인 ${item.checkinCount || 0}건 · 지연 ${item.lateCheckinCount || 0}건 · 회고 ${item.retroCount || 0}건`)}</p>
+                    </article>
+                  `
+                )
+                .join("")
+            : `<article class="trajectory-phase-row"><p>프로젝트 단계별 협업 변화 데이터가 아직 충분하지 않습니다.</p></article>`}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderLearningFlowCases(student) {
+    const cases = student.learningFlowCases || [];
+    return `
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Learning Flow Cases</span>
+            <h3>학습 흐름 복합 케이스</h3>
+          </div>
+          <p class="panel-copy">출결, 데일리체크인, 회고, 면담, 진로 문서를 시간 순서로 조합해 본 분석입니다.</p>
+        </div>
+        <div class="learning-case-list">
+          ${cases.length
+            ? cases
+                .map(
+                  (item) => `
+                    <article class="learning-case-card ${toneClass(learningCaseTone(item.severity))}">
+                      <div class="learning-case-head">
+                        <strong>${escapeHtml(item.label)}</strong>
+                        <span>${escapeHtml(item.startDate || "-")}${item.endDate && item.endDate !== item.startDate ? ` - ${escapeHtml(item.endDate)}` : ""}</span>
+                      </div>
+                      <p>${escapeHtml(item.summary)}</p>
+                      <small>${escapeHtml((item.evidence || []).join(" · "))}</small>
+                    </article>
+                  `
+                )
+                .join("")
+            : `<article class="learning-case-card"><p>현재 수집된 복합 케이스가 없습니다.</p></article>`}
+        </div>
+      </section>
+    `;
+  }
+
   function renderProfileReasonBars(student) {
     return `
       <div class="profile-reason-list">
@@ -771,6 +907,9 @@
     milestoneStory,
     recentEventCards,
     primaryMetaLabel,
+    renderClassificationReasons,
+    renderCollaborationTrajectory,
+    renderLearningFlowCases,
     managementStatusBadge,
     managementStatusLabel,
     profileKeyText,

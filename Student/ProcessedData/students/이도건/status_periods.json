@@ -3,8 +3,8 @@
     "statusPeriodId": "이도건-status-1",
     "startDate": "2025-12-08",
     "endDate": "2025-12-21",
-    "statusType": "경고",
-    "severity": "warning",
+    "statusType": "주의",
+    "severity": "caution",
     "reasonSummary": "안정적인 학습 흐름"
   }
 ]

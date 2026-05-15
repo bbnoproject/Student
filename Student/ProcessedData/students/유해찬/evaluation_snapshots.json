@@ -6,7 +6,7 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 3,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 2,
       "career_agency": 2
@@ -21,13 +21,13 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 3,
       "reflection": 2,
       "career_agency": 2
     },
     "confidence": "High",
-    "note": "회고 구조화 필요"
+    "note": "협업 상황 면담 권장"
   },
   {
     "snapshotId": "유해찬-m3",
@@ -66,10 +66,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 3,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -81,10 +81,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 3,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"

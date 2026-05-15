@@ -130,7 +130,7 @@
     "title": "출결 이슈 - 결석",
     "summary": "결석 (늦잠)",
     "detail": "결석 (늦잠)",
-    "severity": "warning",
+    "severity": "caution",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false

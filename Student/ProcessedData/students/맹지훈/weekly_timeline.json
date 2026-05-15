@@ -79,10 +79,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "Medium",
       "note": "자기조절 지원 필요"
@@ -281,7 +281,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 3,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "협업 상황 면담 권장"
@@ -442,7 +442,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "도전 대응 지원 필요",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -454,13 +454,13 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "도전 대응 지원 필요"
     }
   },
   {
@@ -1059,7 +1059,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"

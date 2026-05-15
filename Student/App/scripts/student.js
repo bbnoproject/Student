@@ -26,7 +26,7 @@
     return `
       <section class="hero-panel student-hero">
         <div class="student-hero-top">
-          <a class="back-link" href="${App.lobbyPageHref()}">메인 로비로 돌아가기</a>
+          <a class="back-link" href="${App.lobbyPageHref()}">과정 개요로 돌아가기</a>
           <div class="pill-row">
             ${App.managementStatusBadge(student.managementStatus)}
             <span class="status-badge ${App.toneClass(App.statusTone(student.stats?.currentStatus))}">
@@ -74,14 +74,15 @@
 
   function renderStudentDashboard(student) {
     const actualMilestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated);
+    const collaborationReadiness = student.derived?.collaborationReadiness || {};
     return `
       <section class="snapshot-grid compact-snapshot-grid">
         ${App.metricCard("현재 상태", student.stats?.currentStatus || "-", "현재 운영 신호", App.statusTone(student.stats?.currentStatus))}
         ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? "관리 제외, 통계 포함" : "현재 관리 분류", App.statusTone(student.managementStatus))}
         ${App.metricCard("프로젝트 제출률", `${student.stats?.projectSubmissionRate || 0}%`, "프로젝트 데일리 기록 기준", "brand")}
-        ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `판단 반영 위험 ${student.stats?.attendanceRiskIssues || 0}건`, "warning")}
+        ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `늦잠/무단 ${student.stats?.attendanceRiskIssues || 0}건 · 건강 ${student.stats?.healthAttendanceIssues || 0}건`, "warning")}
         ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
-        ${App.metricCard("반복 협업 팀원", `${student.stats?.repeatedPeerCount || 0}명`, "두 번 이상 함께한 팀원", "violet")}
+        ${App.metricCard("프로젝트 협업", `${Math.round(collaborationReadiness.collaborationReadinessScore || 0)}점`, `변화 ${collaborationReadiness.trajectory?.label || "유지"} ${collaborationReadiness.trajectory?.delta || 0}`, "violet")}
       </section>
 
       <section class="panel section-panel">
@@ -108,6 +109,10 @@
         </div>
         ${App.renderProfileReasonBars(student)}
       </section>
+
+      ${App.renderCollaborationTrajectory(student)}
+
+      ${App.renderLearningFlowCases(student)}
 
       <section class="panel section-panel">
         <div class="panel-head">
@@ -168,9 +173,10 @@
             <p><strong>강점:</strong> ${App.escapeHtml(App.profileKeyText(student.derived?.strengthKeys))}</p>
             <p><strong>관찰:</strong> ${App.escapeHtml(App.profileKeyText(student.derived?.cautionKeys))}</p>
             <p><strong>최신 면담:</strong> ${App.escapeHtml(App.formatDate(student.stats?.latestCounselingDate))}</p>
-            <p><strong>반복 협업 팀원:</strong> ${App.escapeHtml(String(student.stats?.repeatedPeerCount || 0))}명</p>
+            <p><strong>협업 흐름:</strong> 체크인 정시율 ${App.escapeHtml(String(collaborationReadiness.checkinOnTimeRate || 0))}% · 회고 ${App.escapeHtml(String(collaborationReadiness.retroCount || 0))}건 · 변화 ${App.escapeHtml(String(collaborationReadiness.trajectory?.label || "유지"))}</p>
             <p><strong>진로 문서:</strong> ${App.escapeHtml(String(student.stats?.careerDocumentRounds || 0))}회</p>
           </div>
+          ${App.renderClassificationReasons(student)}
         </section>
       </section>
     `;
@@ -191,7 +197,7 @@
           </div>
           <button type="button" class="secondary-action compact-action" data-tab="dashboard">개요로 돌아가기</button>
         </div>
-        <p class="panel-copy">이 페이지에서 저장한 값은 이 브라우저의 로컬 편집값으로 보관되고, 로비 통계와 검색에 즉시 반영됩니다.</p>
+        <p class="panel-copy">이 페이지에서 저장한 값은 이 브라우저의 로컬 편집값으로 보관되고, 홈 통계와 검색에 즉시 반영됩니다.</p>
 
         <form id="student-edit-form" class="student-edit-form">
           <section class="edit-form-section">

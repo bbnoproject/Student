@@ -79,10 +79,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "Medium",
       "note": "자기조절 지원 필요"
@@ -273,7 +273,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -305,29 +305,29 @@
     "endDate": "2026-02-15",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 1,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "안정적인 학습 흐름",
     "notes": [
-      {
-        "type": "attendance",
-        "title": "출결 이슈 · 지각",
-        "summary": "지각 (연락 X)",
-        "severity": "caution",
-        "date": "2026-02-12"
-      },
       {
         "type": "project",
         "title": "2차 프로젝트 데일리 체크인",
         "summary": "다같이 게임의 핵심과 방향 및 기획서 초안 작성",
         "severity": "info",
         "date": "2026-02-13"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (연락 X)",
+        "severity": "info",
+        "date": "2026-02-12"
       }
     ],
     "snapshot": null
@@ -414,21 +414,21 @@
     "endDate": "2026-03-08",
     "counts": {
       "attendance": 2,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "warning",
-    "headline": "집중 확인이 필요한 구간",
+    "severity": "caution",
+    "headline": "출결 배경 확인이 필요한 구간",
     "notes": [
       {
         "type": "attendance",
         "title": "출결 이슈 · 결석",
         "summary": "결석 (늦잠)",
-        "severity": "warning",
+        "severity": "caution",
         "date": "2026-03-06"
       },
       {
@@ -441,7 +441,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "전반적으로 안정적인 성장 흐름",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -456,10 +456,10 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -998,7 +998,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "참여 지속성 점검 필요",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2026-08-03"
       }
@@ -1008,15 +1008,15 @@
       "snapshotDate": "2026-08-03",
       "snapshotType": "현재",
       "scores": {
-        "selfRegulation": 2,
-        "engagement": 1,
+        "selfRegulation": 3,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "참여 지속성 점검 필요"
+      "note": "진로 목적성 구체화 필요"
     }
   }
 ]

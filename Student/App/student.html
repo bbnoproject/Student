@@ -13,22 +13,25 @@
         <div class="brand-block">
           <p class="eyebrow">Student Intelligence Desk</p>
           <h1>학생 상세 분석</h1>
-          <p class="topbar-copy">
-            학생 개인의 기본 정보, 마일스톤별 성장 곡선, 히스토리와 운영 해석을 분리된 페이지에서 읽습니다.
-          </p>
         </div>
+
+        <nav class="top-nav" aria-label="주요 메뉴">
+          <a class="top-nav-link" href="./index.html#overview">개요</a>
+          <a class="top-nav-link" href="./index.html#process">학습과정</a>
+          <a class="top-nav-link" href="./index.html#students">학생관리</a>
+          <a class="top-nav-link" href="./index.html#feedback">피드백</a>
+        </nav>
 
         <div class="topbar-actions">
           <label class="search-stack" for="global-search">
-            <span>학생 검색</span>
             <input
               id="global-search"
               type="search"
               autocomplete="off"
-              placeholder="이름, 연락처, 학력, 분류 태그 검색"
+              placeholder="학생 검색"
             />
           </label>
-          <button id="theme-toggle" class="theme-toggle" type="button">다크 모드</button>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="테마 전환">◐</button>
         </div>
       </header>
 

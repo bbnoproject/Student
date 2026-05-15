@@ -6,10 +6,10 @@
     "scores": {
       "self_regulation": 1,
       "engagement": 1,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 1,
       "reflection": 2,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "Medium",
     "note": "자기조절 지원 필요"
@@ -24,7 +24,7 @@
       "collaboration": 2,
       "resilience": 1,
       "reflection": 2,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -36,10 +36,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 4,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 1,
       "reflection": 4,
-      "career_agency": 4
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -51,10 +51,10 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 2,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 1,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -66,10 +66,10 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 2,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 1,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"
@@ -81,10 +81,10 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 2,
-      "collaboration": 2,
+      "collaboration": 3,
       "resilience": 1,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"

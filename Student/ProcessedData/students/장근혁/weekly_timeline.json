@@ -79,10 +79,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 1,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "Medium",
       "note": "자기조절 지원 필요"
@@ -187,29 +187,29 @@
     "endDate": "2026-01-18",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 0,
       "counseling": 1,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "면담 개입이 있었던 구간",
     "notes": [
-      {
-        "type": "attendance",
-        "title": "출결 이슈 · 지각",
-        "summary": "지각 (연락 안됨)",
-        "severity": "caution",
-        "date": "2026-01-14"
-      },
       {
         "type": "counseling",
         "title": "1차 정기 면담",
         "summary": "### 내용 • 현재 수업은 어떤지 (난이도, 속도, 이해도, 몰입도 등) 시스템 이해가 어렵고 지금 괜찮음 • 수업 방식에서 본인에게 잘 맞는 점 / 어려운 점은 무엇인지 발표 이해 못하는거 말곤 없습니다 • 9~6 일정으로 생활해보니 어떤지 무리…",
         "severity": "info",
         "date": "2026-01-15"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (연락 안됨)",
+        "severity": "info",
+        "date": "2026-01-14"
       }
     ],
     "snapshot": null
@@ -315,10 +315,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 1,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "도전 대응 지원 필요"
@@ -502,7 +502,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "도전 대응 지원 필요"
@@ -1079,7 +1079,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 4,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2

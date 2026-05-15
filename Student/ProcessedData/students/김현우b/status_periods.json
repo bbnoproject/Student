@@ -1,22 +1,14 @@
 [
   {
     "statusPeriodId": "김현우b-status-1",
-    "startDate": "2026-02-09",
-    "endDate": "2026-02-15",
+    "startDate": "2026-03-02",
+    "endDate": "2026-03-08",
     "statusType": "주의",
     "severity": "caution",
-    "reasonSummary": "출결 위험 신호를 확인한 구간"
+    "reasonSummary": "출결 배경 확인이 필요한 구간"
   },
   {
     "statusPeriodId": "김현우b-status-2",
-    "startDate": "2026-03-02",
-    "endDate": "2026-03-08",
-    "statusType": "집중 관찰",
-    "severity": "warning",
-    "reasonSummary": "집중 확인이 필요한 구간"
-  },
-  {
-    "statusPeriodId": "김현우b-status-3",
     "startDate": "2026-03-16",
     "endDate": "2026-03-22",
     "statusType": "주의",

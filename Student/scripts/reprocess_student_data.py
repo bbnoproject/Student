@@ -1218,6 +1218,7 @@ def build_student_overview(bundle: dict[str, Any]) -> str:
         "## 운영 지표",
         f"- 출결 기록 수: {bundle['stats'].get('attendanceIssues', 0)}",
         f"- 판단 반영 위험 출결 수: {bundle['stats'].get('attendanceRiskIssues', 0)}",
+        f"- 건강형 출결 수: {bundle['stats'].get('healthAttendanceIssues', 0)}",
         f"- 지각 수: {bundle['stats'].get('lateCount', 0)}",
         f"- 결석 수: {bundle['stats'].get('absenceCount', 0)}",
         f"- 면담 수: {bundle['stats'].get('counselingCount', 0)}",
@@ -1267,6 +1268,13 @@ def build_student_overview(bundle: dict[str, Any]) -> str:
             )
     else:
         lines.append("- 취업 문서 데이터 없음")
+
+    lines.extend(["", "## 학습 흐름 복합 케이스"])
+    if bundle.get("learningFlowCases"):
+        for case in bundle["learningFlowCases"]:
+            lines.append(f"- {case['label']} | {case['summary']}")
+    else:
+        lines.append("- 복합 케이스 데이터 없음")
 
     lines.extend(["", "## 최근 주요 증거"])
     for item in bundle["learningEvidence"][-5:]:
@@ -1588,6 +1596,7 @@ def student_output_bundle(
         "peerRelationships": peer_relationships,
         "careerDocuments": career_documents,
         "learningEvidence": learning_evidence,
+        "learningFlowCases": student.get("learningFlowCases", []),
         "evaluationSnapshots": snapshots,
         "statusPeriods": status_periods,
         "timelineEvents": timeline_events,
@@ -1680,6 +1689,7 @@ def write_processed_output(payload: dict[str, Any], bundles: list[dict[str, Any]
         record(student_dir / "peer_relationships.json", "json", bundle["peerRelationships"])
         record(student_dir / "career_documents.json", "json", bundle["careerDocuments"])
         record(student_dir / "learning_evidence.json", "json", bundle["learningEvidence"])
+        record(student_dir / "learning_flow_cases.json", "json", bundle["learningFlowCases"])
         record(student_dir / "evaluation_snapshots.json", "json", bundle["evaluationSnapshots"])
         record(student_dir / "status_periods.json", "json", bundle["statusPeriods"])
         record(student_dir / "timeline_events.json", "json", bundle["timelineEvents"])

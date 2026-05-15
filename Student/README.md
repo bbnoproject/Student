@@ -4,9 +4,11 @@
 
 처음 이어받는 사람은 먼저 [HANDOFF.md](./HANDOFF.md)를 읽어주세요. 해당 문서에 프로젝트 의도, 데이터 흐름, 학생 상태 분류 규칙, 재가공 명령, UI 판단 기준, 주의사항을 정리했습니다.
 
+가장 최신 작업 맥락은 [HANDOFF.md](./HANDOFF.md)의 `15. 2026-05-15 최신 작업 컨텍스트` 섹션에 정리되어 있습니다. 다른 PC에서 이어서 작업할 때는 이 섹션을 먼저 확인하면 됩니다.
+
 ## 빠른 실행
 
-1. `App/index.html`을 브라우저에서 열어 메인 로비를 확인합니다.
+1. `App/index.html`을 브라우저에서 열어 과정 개요를 확인합니다.
 2. 데이터 원본을 바꾼 경우 아래 순서로 재가공합니다.
 
 ```powershell
@@ -31,3 +33,12 @@ python .\scripts\reprocess_student_data.py
 - `App/data.js`: 앱이 읽는 통합 데이터
 - `ProcessedData/`: 학생별 재가공 산출물
 - `HANDOFF.md`: 이어받기용 작업 의도 컨텍스트
+
+## 현재 주요 화면
+
+- `App/index.html#overview`: 과정 개요
+- `App/index.html#process`: 학습과정
+- `App/index.html#process/m5`: 특정 마일스톤 직접 진입 예시
+- `App/index.html#students`: 학생관리
+- `App/index.html#feedback`: 피드백
+- `App/student.html?id=강유민`: 학생 상세 예시

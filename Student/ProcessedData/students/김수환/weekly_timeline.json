@@ -86,10 +86,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "Medium",
       "note": "자기조절 지원 필요"
@@ -311,7 +311,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 4
+        "careerAgency": 3
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -534,10 +534,10 @@
       "scores": {
         "selfRegulation": 2,
         "engagement": 2,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -598,21 +598,21 @@
     "endDate": "2026-03-22",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "안정적인 학습 흐름",
     "notes": [
       {
         "type": "attendance",
         "title": "출결 이슈 · 기타",
         "summary": "이탈",
-        "severity": "caution",
+        "severity": "info",
         "date": "2026-03-16"
       }
     ],
@@ -999,7 +999,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "자기조절 지원 필요",
+        "summary": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
         "severity": "info",
         "date": "2026-08-03"
       }
@@ -1011,13 +1011,13 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 4
+        "careerAgency": 2
       },
       "confidence": "High",
-      "note": "자기조절 지원 필요"
+      "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
     }
   }
 ]

@@ -119,7 +119,7 @@
     "weekIndex": 6,
     "phase": "course",
     "sourceDomain": "attendance",
-    "severity": "caution",
+    "severity": "stable",
     "title": "출결 이슈 - 지각",
     "summary": "지각 (연락 안됨)",
     "detail": "지각 (연락 안됨)",

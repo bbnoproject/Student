@@ -68,7 +68,7 @@ body {
 }
 
 body {
-  padding: 28px;
+  padding: 10px 24px 24px;
 }
 
 button,
@@ -83,7 +83,7 @@ textarea {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
 }
 
 .app-topbar,
@@ -107,16 +107,20 @@ body[data-theme="dark"] .detail-milestone-card {
 }
 
 .app-topbar {
-  padding: 28px 30px;
+  position: sticky;
+  top: 10px;
+  z-index: 30;
+  padding: 10px 14px;
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 24px;
+  grid-template-columns: minmax(170px, 0.7fr) minmax(320px, 1fr) minmax(260px, 0.8fr);
+  gap: 14px;
   align-items: center;
+  backdrop-filter: blur(18px);
 }
 
 .eyebrow,
 .panel-kicker {
-  margin: 0 0 10px;
+  margin: 0 0 4px;
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
@@ -128,9 +132,19 @@ body[data-theme="dark"] .detail-milestone-card {
 .hero-copy h2,
 .student-basic-panel h2 {
   margin: 0;
-  font-size: clamp(2rem, 2.8vw, 3rem);
+  font-size: clamp(1.45rem, 2.2vw, 2.4rem);
   line-height: 1.04;
   font-weight: 800;
+}
+
+.app-topbar .brand-block h1 {
+  font-size: 1.12rem;
+  line-height: 1.1;
+}
+
+.app-topbar .eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.1em;
 }
 
 .topbar-copy,
@@ -155,23 +169,61 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .topbar-actions {
   display: flex;
-  flex-direction: column;
-  gap: 14px;
-  align-items: stretch;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--secondary);
+}
+
+.top-nav-link {
+  padding: 8px 13px;
+  border-radius: 999px;
+  color: var(--text-soft);
+  font-size: 13px;
+  font-weight: 850;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.top-nav-link.is-active,
+.top-nav-link:hover {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: 0 6px 14px rgba(30, 64, 175, 0.08);
 }
 
 .search-stack {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   font-size: 14px;
   font-weight: 700;
 }
 
+.app-topbar .search-stack {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-topbar .search-stack span {
+  display: none;
+}
+
 .search-stack input {
   width: 100%;
-  padding: 16px 18px;
-  border-radius: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface-strong);
   color: var(--text);
@@ -206,15 +258,30 @@ body[data-theme="dark"] .detail-milestone-card {
 .theme-toggle,
 .back-link {
   border: none;
-  padding: 14px 18px;
-  border-radius: 8px;
+  padding: 0;
+  border-radius: 999px;
   background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   color: #fff;
   font-weight: 800;
 }
 
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+}
+
+.back-link {
+  padding: 12px 16px;
+}
+
 .quick-search {
-  position: relative;
+  position: sticky;
+  top: 78px;
+  z-index: 25;
 }
 
 .quick-search.is-visible {
@@ -793,6 +860,139 @@ body[data-theme="dark"] .detail-milestone-card {
   color: var(--accent);
 }
 
+.classification-reason-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.classification-reason-row {
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.classification-reason-row.is-qualified {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: var(--brand-soft);
+}
+
+.classification-reason-row div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.classification-reason-row span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.classification-reason-row p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.learning-case-list {
+  display: grid;
+  gap: 12px;
+}
+
+.learning-case-card {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.learning-case-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.learning-case-head span,
+.learning-case-card small {
+  color: var(--text-soft);
+}
+
+.learning-case-card p {
+  margin: 0 0 8px;
+  line-height: 1.55;
+}
+
+.learning-case-card small {
+  display: block;
+  line-height: 1.5;
+}
+
+.collaboration-trajectory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.trajectory-summary,
+.trajectory-phase-row {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.trajectory-summary span {
+  display: block;
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.trajectory-summary strong {
+  color: var(--accent);
+  font-size: 1.45rem;
+}
+
+.trajectory-phase-list {
+  display: grid;
+  gap: 10px;
+}
+
+.trajectory-phase-row strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.trajectory-track {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+}
+
+.trajectory-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.trajectory-phase-row p {
+  margin: 8px 0 0;
+  color: var(--text-soft);
+  font-size: 13px;
+}
+
 .compact-snapshot-grid {
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -1161,6 +1361,29 @@ body[data-theme="dark"] .detail-milestone-card {
   .milestone-row {
     grid-template-columns: 1fr;
   }
+
+  .app-topbar {
+    top: 8px;
+    gap: 10px;
+  }
+
+  .top-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .top-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar-actions {
+    justify-content: stretch;
+  }
+
+  .quick-search {
+    top: 132px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1174,6 +1397,33 @@ body[data-theme="dark"] .detail-milestone-card {
   .detail-milestone-card {
     padding: 18px;
     border-radius: 12px;
+  }
+
+  .app-topbar {
+    padding: 12px;
+  }
+
+  .app-topbar .brand-block {
+    display: none;
+  }
+
+  .top-nav-link {
+    padding: 7px 11px;
+    font-size: 12px;
+  }
+
+  .search-stack input {
+    padding: 9px 11px;
+  }
+
+  .theme-toggle {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+
+  .quick-search {
+    top: 122px;
   }
 
   .hero-stats,

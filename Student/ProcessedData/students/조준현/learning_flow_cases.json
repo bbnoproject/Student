@@ -1,0 +1,62 @@
+[
+  {
+    "caseId": "조준현-flow-2",
+    "caseType": "condition_management_sequence",
+    "label": "컨디션 관리 연쇄",
+    "description": "프로젝트 데일리체크인 지연 뒤 다음 날 지각 또는 병가가 이어진 케이스",
+    "severity": "caution",
+    "summary": "데일리체크인 지연 뒤 다음 날 지각/병가가 이어져 컨디션 관리 능력을 확인해야 합니다.",
+    "evidence": [
+      "3차 프로젝트 2026-03-25 체크인 1.6시간 지연 -> 2026-03-26 조퇴 (건강 이슈)"
+    ],
+    "startDate": "2026-03-25",
+    "endDate": "2026-03-26"
+  },
+  {
+    "caseId": "조준현-flow-4",
+    "caseType": "daily_checkin_pattern",
+    "label": "데일리체크인 리듬 흔들림",
+    "description": "체크인 지연과 프로젝트 제출 흐름이 함께 흔들린 케이스",
+    "severity": "caution",
+    "summary": "데일리체크인 지연이 반복되고 제출 흐름도 완전하지 않아 일정 관리 리듬을 봐야 합니다.",
+    "evidence": [
+      "지연 체크인 3건",
+      "프로젝트 제출률 85.7%",
+      "2차 프로젝트 2026-02-23 9.0시간 지연",
+      "3차 프로젝트 2026-03-25 1.6시간 지연",
+      "3차 프로젝트 2026-03-31 1.2시간 지연"
+    ],
+    "startDate": "2026-02-23",
+    "endDate": "2026-03-31"
+  },
+  {
+    "caseId": "조준현-flow-1",
+    "caseType": "health_management_watch",
+    "label": "건강 관리 관찰",
+    "description": "병가·진료·컨디션 등 건강형 출결이 반복된 케이스",
+    "severity": "caution",
+    "summary": "건강형 출결 3건이 확인되어 건강 관리 흐름을 따로 봐야 합니다.",
+    "evidence": [
+      "2026-02-09: 공가 (병가)",
+      "2026-03-26: 조퇴 (건강 이슈)",
+      "2026-05-06: 공가 (병가)"
+    ],
+    "startDate": "2026-02-09",
+    "endDate": "2026-05-06"
+  },
+  {
+    "caseId": "조준현-flow-3",
+    "caseType": "health_project_strain",
+    "label": "건강-프로젝트 부담",
+    "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+    "severity": "caution",
+    "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+    "evidence": [
+      "건강형 출결 3건",
+      "지연 체크인 3건",
+      "프로젝트 제출률 85.7%"
+    ],
+    "startDate": "2026-02-09",
+    "endDate": "2026-05-06"
+  }
+]

@@ -477,7 +477,7 @@
     "title": "출결 이슈 - 지각",
     "summary": "지각 (연락 X)",
     "detail": "지각 (연락 X)",
-    "severity": "caution",
+    "severity": "stable",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false
@@ -1151,7 +1151,7 @@
     "title": "출결 이슈 - 외출",
     "summary": "외출 (늦잠)",
     "detail": "외출 (늦잠)",
-    "severity": "caution",
+    "severity": "stable",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false
@@ -1309,7 +1309,7 @@
     "title": "출결 이슈 - 결석",
     "summary": "결석 (늦잠)",
     "detail": "결석 (늦잠)",
-    "severity": "warning",
+    "severity": "caution",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false
