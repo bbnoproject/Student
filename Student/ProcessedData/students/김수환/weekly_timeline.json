@@ -13,16 +13,9 @@
       "admission": 3,
       "career": 0
     },
-    "severity": "caution",
+    "severity": "stable",
     "headline": "모집 및 선발 단계",
     "notes": [
-      {
-        "type": "management_status",
-        "title": "과정이탈 기록",
-        "summary": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
-        "severity": "caution",
-        "date": ""
-      },
       {
         "type": "admission",
         "title": "최종 선발 결과",
@@ -41,6 +34,13 @@
         "type": "admission",
         "title": "대원카드 자기소개",
         "summary": "게임 QA 업무를 하면서 자연스럽게 게임 기획을 통해 유저들에게 어떤 즐거움 을 줄 수 있느지 관심이 생겼습니다. 또한 AI를 활용하여 단순 자동화를 넘어, 사용자 경험 개선·데이터 기반 의사결정·AI 기능 설계 등 기획 전반에 영향력을 줄 수 있다…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "🔖 (업데이트 날짜 : 2/4(수)) 지속적으로 게임 회사 면접 보러 다님. 성취도는 양호하나 참여도는 다소 부족. QA 경력이 있고 지속적으로 게임회사 면접을 보러 다니는 인원.",
         "severity": "info",
         "date": ""
       }
@@ -74,7 +74,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "자기조절 지원 필요",
+        "summary": "회고 구조화 필요",
         "severity": "info",
         "date": "2025-12-08"
       }
@@ -84,15 +84,20 @@
       "snapshotDate": "2025-12-08",
       "snapshotType": "입과 초기",
       "scores": {
-        "selfRegulation": 1,
-        "engagement": 1,
-        "collaboration": 1,
+        "selfRegulation": null,
+        "engagement": null,
+        "collaboration": null,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 3
       },
+      "judgedKeys": [
+        "careerAgency",
+        "reflection",
+        "resilience"
+      ],
       "confidence": "Medium",
-      "note": "자기조절 지원 필요"
+      "note": "회고 구조화 필요"
     }
   },
   {
@@ -313,6 +318,14 @@
         "reflection": 3,
         "careerAgency": 3
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "자기조절 지원 필요"
     }
@@ -539,6 +552,14 @@
         "reflection": 4,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
     }
@@ -605,9 +626,16 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "info",
+    "severity": "caution",
     "headline": "안정적인 학습 흐름",
     "notes": [
+      {
+        "type": "management_status",
+        "title": "과정이탈 기록",
+        "summary": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
+        "severity": "caution",
+        "date": "2026-03-16"
+      },
       {
         "type": "attendance",
         "title": "출결 이슈 · 기타",
@@ -1016,6 +1044,14 @@
         "reflection": 4,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
     }

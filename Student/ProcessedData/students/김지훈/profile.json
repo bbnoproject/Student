@@ -16,12 +16,15 @@
     "sourceFile": "학생 정보/이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
     "type": "자진 이탈",
     "reason": "수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.",
-    "date": "",
+    "date": "2026-04-16",
     "attendanceDays": "",
     "joinedAt": "",
     "note": "",
     "traits": "보고불량, 연락안봄, 출결불량, 회사 운영 경험",
-    "gamePreference": ""
+    "gamePreference": "",
+    "dateInferred": true,
+    "dateSource": "면담 기록",
+    "dateBasis": "이탈면담 ### 내용 [기획 4기 김지훈 이탈 면담] @안중재 @양윤석 @김상준 @양현석 @유범모 결론 : 건강 상의 이유와 복합적인 개인사로 인해 최종적으로 과정 이탈(하차)을 결정했습니다. 수강생이 발급받은 '3주 집중 치료 진단서'를 활용해,…"
   },
   "staffProfile": {
     "sourceFile": "학생 정보/김지훈 2be1c30b8ab381dcb8e9f71212ffff85.html",

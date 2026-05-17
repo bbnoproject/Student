@@ -81,7 +81,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "자기조절 지원 필요",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2025-12-08"
       }
@@ -91,15 +91,20 @@
       "snapshotDate": "2025-12-08",
       "snapshotType": "입과 초기",
       "scores": {
-        "selfRegulation": 1,
-        "engagement": 1,
-        "collaboration": 1,
+        "selfRegulation": null,
+        "engagement": null,
+        "collaboration": null,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 1
       },
+      "judgedKeys": [
+        "careerAgency",
+        "reflection",
+        "resilience"
+      ],
       "confidence": "Medium",
-      "note": "자기조절 지원 필요"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -297,6 +302,14 @@
         "reflection": 3,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
@@ -480,6 +493,14 @@
         "reflection": 4,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
@@ -1066,6 +1087,14 @@
         "reflection": 4,
         "careerAgency": 3
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }

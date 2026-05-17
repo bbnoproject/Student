@@ -99,6 +99,7 @@
     query: "",
     activePage: initialRoute.page,
     processView: initialRoute.processView,
+    milestoneTab: "milestone",
     activeTag: "all",
     statusFilter: "all",
     sortKey: "name",
@@ -135,6 +136,7 @@
     if (window.location.hash === nextHash) {
       state.activePage = "process";
       state.processView = nextView;
+      state.milestoneTab = "milestone";
       render();
       return;
     }
@@ -178,7 +180,11 @@
   }
 
   function average(items, mapper) {
-    const values = items.map(mapper).map(Number).filter((value) => Number.isFinite(value));
+    const values = items
+      .map(mapper)
+      .filter((value) => value !== null && value !== undefined && value !== "")
+      .map(Number)
+      .filter((value) => Number.isFinite(value));
     if (!values.length) return 0;
     return values.reduce((sum, value) => sum + value, 0) / values.length;
   }
@@ -214,6 +220,16 @@
 
   function activeCourseStudents() {
     return App.rawData.students.filter((student) => !App.hasDropoutRecord(student));
+  }
+
+  function milestoneSnapshot(student, milestone) {
+    return student.milestones?.find((item) => item.id === milestone.id);
+  }
+
+  function milestoneStudents(milestone) {
+    return App.rawData.students
+      .map((student) => ({ student, snapshot: milestoneSnapshot(student, milestone) }))
+      .filter((item) => item.snapshot && item.snapshot.participated !== false);
   }
 
   function countBy(items, mapper) {
@@ -596,10 +612,10 @@
   }
 
   function milestoneAggregate(milestone) {
-    const students = activeCourseStudents();
-    const snapshots = students
-      .map((student) => student.milestones?.find((item) => item.id === milestone.id))
-      .filter(Boolean);
+    const rows = milestoneStudents(milestone);
+    const students = rows.map((item) => item.student);
+    const snapshots = rows.map((item) => item.snapshot);
+    const projectRanges = projectRangesForMilestone(milestone);
     const eventCounts = snapshots.reduce(
       (acc, item) => {
         Object.entries(item.eventCounts || {}).forEach(([key, value]) => {
@@ -607,24 +623,376 @@
         });
         return acc;
       },
-      { attendance: 0, attendanceRisk: 0, counseling: 0, project: 0, career: 0 }
+      { attendance: 0, attendanceRisk: 0, counseling: 0, project: 0, career: 0, dropout: 0 }
     );
     const caseRows = students.flatMap((student) =>
       (student.learningFlowCases || [])
         .filter((item) => overlaps(item.startDate, item.endDate, milestone.startDate, milestone.endDate))
         .map((item) => ({ ...item, studentName: student.name }))
     );
+    const statusRows = rows.map(({ student, snapshot }) => ({
+      student,
+      snapshot,
+      status: milestoneStatus(student, snapshot),
+    }));
+    const urgentRows = buildMilestoneUrgentRows(statusRows, caseRows, milestone);
     const caseCounts = sortedCountRows(countBy(caseRows, (item) => item.label));
     const cautionCounts = sortedCountRows(countBy(snapshots.flatMap((item) => item.cautionKeys || []), (key) => PROFILE_LABELS[key] || key));
     return {
       snapshots,
       eventCounts,
       caseRows,
+      statusRows,
+      urgentRows,
       caseCounts,
       cautionCounts,
+      projectRanges,
+      participantCount: snapshots.length,
+      dropoutCount: snapshots.filter((item) => item.dropoutDuringMilestone).length,
+      statusCounts: sortedStatusRows(statusRows),
       avgProfile: average(snapshots, (item) => item.profileAverage),
       avgGrowth: average(snapshots, (item) => item.growthDelta),
     };
+  }
+
+  function projectRangesForMilestone(milestone) {
+    return (App.rawData.projectPhaseRanges || []).filter((range) =>
+      overlaps(range.startDate, range.endDate, milestone.startDate, milestone.endDate)
+    );
+  }
+
+  function dateInRange(value, start, end) {
+    const date = parseDate(value);
+    const startDate = parseDate(start);
+    const endDate = parseDate(end || start);
+    if (!date || !startDate || !endDate) return false;
+    return date >= startDate && date <= endDate;
+  }
+
+  function weekdayDates(start, end) {
+    const startDate = parseDate(start);
+    const endDate = parseDate(end || start);
+    if (!startDate || !endDate) return [];
+    const rows = [];
+    const cursor = new Date(startDate);
+    while (cursor <= endDate) {
+      const day = cursor.getDay();
+      if (day !== 0 && day !== 6) rows.push(cursor.toISOString().slice(0, 10));
+      cursor.setDate(cursor.getDate() + 1);
+    }
+    return rows;
+  }
+
+  function observedEndDate(end) {
+    const endDate = parseDate(end);
+    if (!endDate || endDate <= today) return end;
+    return today.toISOString().slice(0, 10);
+  }
+
+  function observedWeekdayDates(start, end) {
+    const startDate = parseDate(start);
+    const endDate = parseDate(observedEndDate(end || start));
+    if (!startDate || !endDate || startDate > endDate) return [];
+    return weekdayDates(start, endDate.toISOString().slice(0, 10));
+  }
+
+  function dropoutDateForStudent(student) {
+    return student.stats?.dropoutDate || student.dropoutDate || student.derived?.dropoutDate || "";
+  }
+
+  function activeDatesForStudent(student, dates) {
+    const dropoutDate = dropoutDateForStudent(student);
+    return dates.filter((date) => !dropoutDate || date <= dropoutDate);
+  }
+
+  function attendanceStatsForDates(students, dates) {
+    const dateSet = new Set(dates);
+    const activeDatesByStudent = new Map();
+    let expectedAttendance = 0;
+    students.forEach((student) => {
+      const activeDates = activeDatesForStudent(student, dates);
+      if (!activeDates.length) return;
+      activeDatesByStudent.set(student.id, new Set(activeDates));
+      expectedAttendance += activeDates.length;
+    });
+
+    const absenceKeys = new Set();
+    const lateKeys = new Set();
+    const riskKeys = new Set();
+    students.forEach((student) => {
+      const activeDateSet = activeDatesByStudent.get(student.id);
+      if (!activeDateSet) return;
+      (student.attendanceEvents || []).forEach((event) => {
+        if (!dateSet.has(event.date) || !activeDateSet.has(event.date)) return;
+        const key = `${student.id}|${event.date}|${event.kind || ""}`;
+        if (event.kind === "결석") absenceKeys.add(key);
+        if (event.kind === "지각") lateKeys.add(key);
+        if (event.impact === "behavioral_risk" || event.severity === "warning") riskKeys.add(key);
+      });
+    });
+
+    const absenceCount = absenceKeys.size;
+    const lateCount = lateKeys.size;
+    const riskCount = riskKeys.size;
+    return {
+      dateCount: dates.length,
+      participantCount: activeDatesByStudent.size,
+      expectedAttendance,
+      absenceCount,
+      lateCount,
+      riskCount,
+      attendanceRate: expectedAttendance ? Math.max(0, ((expectedAttendance - absenceCount) / expectedAttendance) * 100) : null,
+      lateRate: expectedAttendance ? (lateCount / expectedAttendance) * 100 : null,
+      riskRate: expectedAttendance ? (riskCount / expectedAttendance) * 100 : null,
+    };
+  }
+
+  function bucketDates(dates, maxBuckets = 8) {
+    if (!dates.length) return [];
+    const bucketSize = Math.max(1, Math.ceil(dates.length / maxBuckets));
+    const buckets = [];
+    for (let index = 0; index < dates.length; index += bucketSize) {
+      buckets.push(dates.slice(index, index + bucketSize));
+    }
+    return buckets;
+  }
+
+  function timelineRowsForRange(students, startDate, endDate, options = {}) {
+    const dates = options.dates?.length ? options.dates : observedWeekdayDates(startDate, endDate);
+    return bucketDates(dates, options.maxBuckets || 8).map((bucket) => {
+      const stats = attendanceStatsForDates(students, bucket);
+      const start = bucket[0];
+      const end = bucket[bucket.length - 1];
+      return {
+        label: start === end ? App.formatDate(start) : App.formatRange(start, end),
+        startDate: start,
+        endDate: end,
+        centerDate: bucket[Math.floor((bucket.length - 1) / 2)] || start,
+        ...stats,
+      };
+    });
+  }
+
+  function projectOperationRows(milestone, aggregate) {
+    const participants = milestoneStudents(milestone).map((item) => item.student);
+    return (aggregate.projectRanges || []).map((range) => {
+      const projectObservedEnd = observedEndDate(range.endDate);
+      const plannedDates = (range.dates || []).filter((date) => dateInRange(date, range.startDate, projectObservedEnd));
+      const projectDates = plannedDates.length ? plannedDates : observedWeekdayDates(range.startDate, range.endDate);
+      const plannedDateSet = new Set(plannedDates);
+      const activeDatesByStudent = new Map();
+      participants.forEach((student) => {
+        const activeDates = activeDatesForStudent(student, projectDates);
+        if (activeDates.length) activeDatesByStudent.set(student.id, activeDates);
+      });
+      const projectParticipantCount = activeDatesByStudent.size;
+      const expectedCheckins = plannedDates.length
+        ? Array.from(activeDatesByStudent.values()).reduce((sum, dates) => sum + dates.filter((date) => plannedDateSet.has(date)).length, 0)
+        : 0;
+      const attendanceStats = attendanceStatsForDates(participants, projectDates);
+      const checkinKeys = new Set();
+      const checkinsByDate = new Map();
+      const onTimeByDate = new Map();
+      const lateCheckinsByDate = new Map();
+      const noteSignalsByDate = new Map();
+      let onTimeCount = 0;
+      const retroStudents = new Set();
+      let retroCount = 0;
+      let positiveRetro = 0;
+      let concernRetro = 0;
+
+      participants.forEach((student) => {
+        const activeDateSet = new Set(activeDatesByStudent.get(student.id) || []);
+        (student.checkins || [])
+          .filter((item) => item.phase === range.phase && activeDateSet.has(item.date))
+          .forEach((item) => {
+            const key = `${student.id}|${item.date}`;
+            if (checkinKeys.has(key)) return;
+            checkinKeys.add(key);
+            if (!checkinsByDate.has(item.date)) checkinsByDate.set(item.date, new Set());
+            checkinsByDate.get(item.date).add(student.id);
+            if (item.onTime) {
+              onTimeCount += 1;
+              if (!onTimeByDate.has(item.date)) onTimeByDate.set(item.date, new Set());
+              onTimeByDate.get(item.date).add(student.id);
+            } else {
+              if (!lateCheckinsByDate.has(item.date)) lateCheckinsByDate.set(item.date, new Set());
+              lateCheckinsByDate.get(item.date).add(student.id);
+            }
+            const checkinText = [item.workText, item.noteText].filter(Boolean).join(" ");
+            if (/갈등|불만|어려|스트레스|지연|문제|미흡|부족|불안|조율/.test(checkinText)) {
+              noteSignalsByDate.set(item.date, (noteSignalsByDate.get(item.date) || 0) + 1);
+            }
+          });
+
+        (student.retrospectives || [])
+          .filter((item) => item.phase === range.phase && activeDateSet.has(item.date))
+          .forEach((item) => {
+            const text = [item.detail, item.summary, item.note, item.content].filter(Boolean).join(" ");
+            retroStudents.add(student.id);
+            retroCount += 1;
+            if (/만족|좋|재미|성장|해결|완성|도움|긍정/.test(text)) positiveRetro += 1;
+            if (/어려|힘들|부족|아쉽|불안|갈등|지연|미흡|문제/.test(text)) concernRetro += 1;
+          });
+      });
+
+      const timelineRows = projectDates.map((date) => {
+        const dayStats = attendanceStatsForDates(participants, [date]);
+        const checkinCount = checkinsByDate.get(date)?.size || 0;
+        const onTimeDayCount = onTimeByDate.get(date)?.size || 0;
+        const lateCheckinCount = lateCheckinsByDate.get(date)?.size || 0;
+        return {
+          label: App.formatDate(date),
+          startDate: date,
+          endDate: date,
+          centerDate: date,
+          ...dayStats,
+          checkinCount,
+          checkinRate: plannedDateSet.has(date) && dayStats.participantCount ? (checkinCount / dayStats.participantCount) * 100 : null,
+          onTimeRate: checkinCount ? (onTimeDayCount / checkinCount) * 100 : null,
+          lateCheckinCount,
+          noteSignalCount: noteSignalsByDate.get(date) || 0,
+        };
+      });
+
+      const row = {
+        phase: range.phase,
+        startDate: range.startDate,
+        endDate: range.endDate,
+        isEstimated: Boolean(range.isEstimated),
+        plannedDayCount: plannedDates.length,
+        scheduleDayCount: projectDates.length,
+        participantCount: projectParticipantCount,
+        checkinCount: checkinKeys.size,
+        checkinRate: expectedCheckins ? (checkinKeys.size / expectedCheckins) * 100 : null,
+        onTimeRate: checkinKeys.size ? (onTimeCount / checkinKeys.size) * 100 : null,
+        attendanceRate: attendanceStats.attendanceRate,
+        lateRate: attendanceStats.lateRate,
+        riskRate: attendanceStats.riskRate,
+        absenceCount: attendanceStats.absenceCount,
+        lateCount: attendanceStats.lateCount,
+        riskAttendanceCount: attendanceStats.riskCount,
+        retroCount,
+        retroRate: projectParticipantCount ? (retroStudents.size / projectParticipantCount) * 100 : null,
+        positiveRetro,
+        concernRetro,
+        timelineRows,
+      };
+      return { ...row, specialNotes: projectSpecialNotes(row) };
+    });
+  }
+
+  function projectSpecialNotes(row) {
+    const notes = [];
+    const lowCheckinDays = row.timelineRows.filter((item) => item.checkinRate !== null && item.checkinRate < 85);
+    const attendanceIssueDays = row.timelineRows.filter((item) => item.lateCount || item.absenceCount || item.riskCount);
+    const noteSignalDays = row.timelineRows.filter((item) => item.noteSignalCount);
+    if (lowCheckinDays.length) {
+      notes.push({
+        label: "체크인 공백",
+        detail: `${lowCheckinDays.slice(0, 3).map((item) => `${item.label} ${formatPercent(item.checkinRate, 1)}`).join(" · ")} 구간은 제출률 확인이 필요합니다.`,
+      });
+    }
+    if (attendanceIssueDays.length) {
+      notes.push({
+        label: "출결 신호",
+        detail: `${attendanceIssueDays.slice(0, 3).map((item) => `${item.label} 지각 ${item.lateCount}건/결석 ${item.absenceCount}건`).join(" · ")}이 잡혔습니다.`,
+      });
+    }
+    if (noteSignalDays.length) {
+      notes.push({
+        label: "팀 운영 메모",
+        detail: `${noteSignalDays.slice(0, 3).map((item) => `${item.label} ${item.noteSignalCount}건`).join(" · ")}에서 갈등, 조율, 지연 관련 언급이 있습니다.`,
+      });
+    }
+    if (row.retroCount) {
+      notes.push({
+        label: "회고 분위기",
+        detail: `회고 ${row.retroCount}건 중 긍정 신호 ${row.positiveRetro}건, 우려 신호 ${row.concernRetro}건으로 정리됩니다.`,
+      });
+    }
+    if (!notes.length) {
+      notes.push({
+        label: "특이 신호 없음",
+        detail: "제출, 출결, 회고에서 즉시 분리해서 볼 특이 신호가 크지 않습니다.",
+      });
+    }
+    return notes.slice(0, 4);
+  }
+
+  function milestoneAttendanceStats(milestone) {
+    const students = milestoneStudents(milestone).map((item) => item.student);
+    return attendanceStatsForDates(students, observedWeekdayDates(milestone.startDate, milestone.endDate));
+  }
+
+  function milestoneTimelineRows(milestone) {
+    const students = milestoneStudents(milestone).map((item) => item.student);
+    return timelineRowsForRange(students, milestone.startDate, milestone.endDate, { maxBuckets: 9 });
+  }
+
+  function milestoneStatus(student, snapshot) {
+    if (snapshot.dropoutDuringMilestone) return "이탈";
+    const eventCounts = snapshot.eventCounts || {};
+    const hasWarningEvent = (snapshot.events || []).some((event) => event.severity === "warning");
+    if (hasWarningEvent || (eventCounts.attendanceRisk || 0) >= 2 || (snapshot.id !== "m1" && (snapshot.profileAverage || 4) <= 2)) return "경고";
+    if ((snapshot.cautionKeys || []).length || (eventCounts.attendanceRisk || 0) >= 1 || (eventCounts.counseling || 0) >= 1) return "주의";
+    if (student.stats?.currentStatus === "경고" && snapshot.id === student.milestones?.at(-1)?.id) return "경고";
+    return "안정";
+  }
+
+  function sortedStatusRows(statusRows) {
+    const order = ["안정", "주의", "경고", "이탈"];
+    const counts = countBy(statusRows, (item) => item.status);
+    return order.map((label) => ({ label, count: counts[label] || 0 })).filter((row) => row.count > 0);
+  }
+
+  function buildMilestoneUrgentRows(statusRows, caseRows, milestone) {
+    const caseMap = new Map();
+    caseRows.forEach((item) => {
+      if (!caseMap.has(item.studentName)) caseMap.set(item.studentName, []);
+      caseMap.get(item.studentName).push(item);
+    });
+    return statusRows
+      .map(({ student, snapshot, status }) => {
+        const eventCounts = snapshot.eventCounts || {};
+        const cases = caseMap.get(student.name) || [];
+        const cautionLabels = (snapshot.cautionKeys || []).map((key) => PROFILE_LABELS[key] || key);
+        const riskScore =
+          (status === "이탈" ? 100 : 0) +
+          (status === "경고" ? 80 : 0) +
+          (status === "주의" ? 35 : 0) +
+          (eventCounts.attendanceRisk || 0) * 16 +
+          (eventCounts.counseling || 0) * 8 +
+          Math.max(0, 2.4 - (snapshot.profileAverage || 4)) * 25 +
+          cases.filter((item) => item.severity === "warning").length * 18;
+        const reasons = [];
+        if (snapshot.dropoutDuringMilestone) reasons.push(`이탈 ${App.formatDate(snapshot.dropoutDate)}`);
+        if (eventCounts.attendanceRisk) reasons.push(`위험출결 ${eventCounts.attendanceRisk}건`);
+        if (eventCounts.counseling) reasons.push(`상담 ${eventCounts.counseling}건`);
+        if ((snapshot.profileAverage || 4) <= 2.4) reasons.push(`프로파일 ${formatNumber(snapshot.profileAverage, 2)}`);
+        if (cautionLabels.length) reasons.push(`관찰 ${cautionLabels.slice(0, 2).join(", ")}`);
+        if (cases.length) reasons.push(cases[0].label);
+        const hasWarningCase = cases.some((item) => item.severity === "warning");
+        const isUrgent =
+          status === "이탈" ||
+          status === "경고" ||
+          (eventCounts.attendanceRisk || 0) >= 2 ||
+          (snapshot.id !== "m1" && (snapshot.profileAverage || 4) <= 2.2) ||
+          hasWarningCase;
+        return {
+          student,
+          snapshot,
+          status,
+          riskScore,
+          cases,
+          reasons,
+          isUrgent,
+          milestoneLabel: App.shortMilestoneLabel(milestone.label),
+        };
+      })
+      .filter((item) => item.isUrgent)
+      .sort((a, b) => b.riskScore - a.riskScore || (a.student.name || "").localeCompare(b.student.name || "", "ko-KR"))
+      .slice(0, 12);
   }
 
   function overlaps(startA, endA, startB, endB) {
@@ -674,7 +1042,6 @@
             (milestone, index) => `
               <button type="button" class="${state.processView === milestone.id ? "is-active" : ""} ${isCurrentMilestone(milestone) ? "is-current" : ""}" data-process-view="${escape(milestone.id)}">
                 M${index + 1}
-                <span>${escape(milestone.label)}</span>
               </button>
             `
           )
@@ -685,20 +1052,43 @@
 
   function renderProcessOverviewGraph(rows) {
     const width = 980;
-    const height = 300;
+    const height = 330;
     const paddingX = 64;
     const paddingY = 44;
     const chartWidth = width - paddingX * 2;
-    const chartHeight = height - paddingY * 2;
+    const chartHeight = 180;
+    const timelineY = height - 70;
     const currentId = currentMilestoneId(rows.map((row) => row.milestone));
+    const dates = rows.flatMap((row) => [parseDate(row.milestone.startDate), parseDate(row.milestone.endDate)]).filter(Boolean);
+    const minTime = Math.min(...dates.map((item) => item.getTime()));
+    const maxTime = Math.max(...dates.map((item) => item.getTime()));
+    const xForDate = (dateValue) => {
+      const parsed = parseDate(dateValue);
+      if (!parsed || maxTime === minTime) return paddingX;
+      return paddingX + ((parsed.getTime() - minTime) / (maxTime - minTime)) * chartWidth;
+    };
     const points = rows.map((row, index) => {
-      const x = paddingX + (rows.length === 1 ? chartWidth / 2 : (index / (rows.length - 1)) * chartWidth);
-      const score = clamp(Number(row.aggregate.avgProfile) || 1, 1, 4);
-      const y = paddingY + ((4 - score) / 3) * chartHeight;
+      const startX = xForDate(row.milestone.startDate);
+      const endX = xForDate(row.milestone.endDate);
+      const x = startX + Math.max(0, endX - startX) / 2;
+      const score = row.aggregate.avgProfile === null || row.aggregate.avgProfile === undefined || row.aggregate.avgProfile === 0 ? null : clamp(Number(row.aggregate.avgProfile), 1, 4);
+      const y = score === null ? timelineY - 18 : paddingY + ((4 - score) / 3) * chartHeight;
       return { ...row, x, y, score, isCurrentPoint: row.milestone.id === currentId };
     });
-    const linePath = points.map((point, index) => `${index === 0 ? "M" : "L"} ${point.x} ${point.y}`).join(" ");
-    const areaPath = `${linePath} L ${points.at(-1)?.x || paddingX} ${height - paddingY} L ${points[0]?.x || paddingX} ${height - paddingY} Z`;
+    const linePath = points
+      .filter((point) => point.score !== null)
+      .map((point, index) => `${index === 0 ? "M" : "L"} ${point.x} ${point.y}`)
+      .join(" ");
+    const timelineBars = points
+      .map((point) => {
+        const startX = xForDate(point.milestone.startDate);
+        const endX = xForDate(point.milestone.endDate);
+        return `
+          <rect class="process-timeline-segment ${point.isCurrentPoint ? "is-current" : ""}" x="${startX}" y="${timelineY}" width="${Math.max(3, endX - startX)}" height="12" rx="6"></rect>
+          <text class="process-point-label" x="${point.x}" y="${height - 18}">M${point.index + 1}</text>
+        `;
+      })
+      .join("");
     return `
       <section class="panel process-overview-panel">
         <div class="panel-head">
@@ -706,16 +1096,10 @@
             <span class="panel-kicker">Process Overview</span>
             <h2>과정 개요</h2>
           </div>
-          <p class="panel-copy">전체 마일스톤의 평균 프로파일 변화를 한눈에 보고, 현재 시점은 강조 포인트로 표시합니다.</p>
+          <p class="panel-copy">마일스톤 기간을 실제 날짜 폭에 맞춰 가로 시간선으로 보고, 판단 근거가 있는 구간만 점수 선으로 연결합니다.</p>
         </div>
         <div class="process-graph-wrap">
-          <svg class="process-graph" viewBox="0 0 ${width} ${height}" role="img" aria-label="마일스톤별 평균 프로파일 변화 그래프">
-            <defs>
-              <linearGradient id="processAreaGradient" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0%" stop-color="currentColor" stop-opacity="0.22"></stop>
-                <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"></stop>
-              </linearGradient>
-            </defs>
+          <svg class="process-graph" viewBox="0 0 ${width} ${height}" role="img" aria-label="마일스톤 기간별 평가 타임라인 그래프">
             ${[1, 2, 3, 4]
               .map((score) => {
                 const y = paddingY + ((4 - score) / 3) * chartHeight;
@@ -725,15 +1109,15 @@
                 `;
               })
               .join("")}
-            <path class="process-area" d="${areaPath}"></path>
-            <path class="process-line" d="${linePath}"></path>
+            <line class="process-timeline-axis" x1="${paddingX}" y1="${timelineY + 6}" x2="${width - paddingX}" y2="${timelineY + 6}"></line>
+            ${timelineBars}
+            ${linePath ? `<path class="process-line" d="${linePath}"></path>` : ""}
             ${points
               .map(
                 (point) => `
-                  <g class="process-point ${point.isCurrentPoint ? "is-current" : ""}">
-                    <circle cx="${point.x}" cy="${point.y}" r="${point.isCurrentPoint ? 11 : 7}"></circle>
-                    <text x="${point.x}" y="${point.y - 18}">${formatNumber(point.score, 2)}</text>
-                    <text class="process-point-label" x="${point.x}" y="${height - 14}">M${point.index + 1}</text>
+                  <g class="process-point ${point.isCurrentPoint ? "is-current" : ""} ${point.score === null ? "is-unjudged" : ""}">
+                    <circle cx="${point.x}" cy="${point.y}" r="${point.isCurrentPoint ? 10 : 7}"></circle>
+                    <text x="${point.x}" y="${point.y - 16}">${point.score === null ? "판단 전" : formatNumber(point.score, 2)}</text>
                   </g>
                 `
               )
@@ -746,7 +1130,7 @@
               (point) => `
                 <button type="button" class="process-summary-card ${point.isCurrentPoint ? "is-current" : ""}" data-process-view="${escape(point.milestone.id)}">
                   <span>M${point.index + 1}</span>
-                  <strong>${escape(point.milestone.label)}</strong>
+                  <strong>${escape(App.shortMilestoneLabel(point.milestone.label))}</strong>
                   <small>${escape(App.formatRange(point.milestone.startDate, point.milestone.endDate))}</small>
                   <em>평균 ${formatNumber(point.score, 2)}</em>
                 </button>
@@ -765,6 +1149,10 @@
     const currentRow = rows.find((row) => row.milestone.id === currentId) || rows[0];
     const progress = courseProgress();
     const avgProfile = average(activeCourseStudents(), (student) => student.derived?.profileIndex);
+    const courseEnd = parseDate(App.rawData.curriculum?.endDate) && parseDate(App.rawData.curriculum?.endDate) < today
+      ? App.rawData.curriculum.endDate
+      : today.toISOString().slice(0, 10);
+    const courseAttendance = attendanceStatsForDates(activeCourseStudents(), weekdayDates(App.rawData.curriculum?.startDate, courseEnd));
     const totalEvents = rows.reduce(
       (acc, row) => {
         Object.entries(row.aggregate.eventCounts || {}).forEach(([key, value]) => {
@@ -772,15 +1160,16 @@
         });
         return acc;
       },
-      { project: 0, counseling: 0, attendanceRisk: 0, career: 0 }
+      { project: 0, counseling: 0, attendanceRisk: 0, career: 0, dropout: 0 }
     );
     return `
       <section class="process-overview-hero">
         ${renderMetric("진행률", formatPercent(progress.percent), `${progress.currentWeek}/${progress.totalWeeks}주차`, "brand")}
-        ${renderMetric("현재 구간", currentRow ? `M${currentRow.index + 1}` : "-", currentRow?.milestone.label || "현재 구간 없음", "success")}
+        ${renderMetric("현재 구간", currentRow ? `M${currentRow.index + 1}` : "-", currentRow ? App.shortMilestoneLabel(currentRow.milestone.label) : "현재 구간 없음", "success")}
         ${renderMetric("평균 프로파일", formatNumber(avgProfile, 1), "진행 학생 기준", "mint")}
-        ${renderMetric("프로젝트 기록", `${totalEvents.project || 0}건`, `상담 ${totalEvents.counseling || 0}건`, "violet")}
-        ${renderMetric("위험 출결", `${totalEvents.attendanceRisk || 0}건`, "늦잠 지각/무단 결석 기준", "warning")}
+        ${renderMetric("출석률", courseAttendance.attendanceRate === null ? "판단 전" : formatPercent(courseAttendance.attendanceRate, 1), `결석 ${courseAttendance.absenceCount}건`, "success")}
+        ${renderMetric("지각률", courseAttendance.lateRate === null ? "판단 전" : formatPercent(courseAttendance.lateRate, 1), `위험출결 ${totalEvents.attendanceRisk || 0}건`, "warning")}
+        ${renderMetric("구간 이탈", `${totalEvents.dropout || 0}명`, "이탈 시점이 속한 마일스톤 기준", "neutral")}
       </section>
       ${renderProcessOverviewGraph(rows)}
       <section class="process-timeline compact">
@@ -792,6 +1181,7 @@
   function renderProcessStage(milestone, index) {
     const aggregate = milestoneAggregate(milestone);
     const eventCounts = aggregate.eventCounts;
+    const attendanceStats = milestoneAttendanceStats(milestone);
     const current = isCurrentMilestone(milestone);
     return `
       <article class="process-stage-card ${current ? "is-current" : ""}">
@@ -800,16 +1190,19 @@
           <div class="process-stage-head">
             <div>
               <span>${escape(App.formatRange(milestone.startDate, milestone.endDate))}${milestone.isEstimated ? " · 예정" : ""}</span>
-              <h3>${escape(milestone.label)}</h3>
+              <h3>M${index + 1}</h3>
             </div>
             ${current ? `<strong class="current-badge">현재 구간</strong>` : ""}
           </div>
           <div class="process-stage-stats">
             <span>평균 프로필 ${formatNumber(aggregate.avgProfile, 2)}</span>
             <span>성장 변화 ${aggregate.avgGrowth >= 0 ? "+" : ""}${formatNumber(aggregate.avgGrowth, 2)}</span>
-            <span>프로젝트 ${eventCounts.project || 0}건</span>
+            <span>출석률 ${attendanceStats.attendanceRate === null ? "판단 전" : formatPercent(attendanceStats.attendanceRate, 1)}</span>
+            <span>지각률 ${attendanceStats.lateRate === null ? "판단 전" : formatPercent(attendanceStats.lateRate, 1)}</span>
             <span>상담 ${eventCounts.counseling || 0}건</span>
             <span>위험출결 ${eventCounts.attendanceRisk || 0}건</span>
+            <span>참여 ${aggregate.participantCount || 0}명</span>
+            ${aggregate.dropoutCount ? `<span>이탈 ${aggregate.dropoutCount}명</span>` : ""}
           </div>
           <div class="process-stage-notes">
             <div>
@@ -836,11 +1229,10 @@
 
   function renderEventCountBars(eventCounts) {
     const rows = [
-      { key: "project", label: "프로젝트", tone: "brand" },
       { key: "counseling", label: "상담", tone: "violet" },
-      { key: "attendance", label: "출결", tone: "warning" },
       { key: "attendanceRisk", label: "위험출결", tone: "danger" },
       { key: "career", label: "진로", tone: "mint" },
+      { key: "dropout", label: "구간 이탈", tone: "neutral" },
     ].map((item) => ({ ...item, count: Number(eventCounts[item.key] || 0) }));
     const max = Math.max(1, ...rows.map((row) => row.count));
     return `
@@ -881,17 +1273,363 @@
     `;
   }
 
+  function renderInlineCountRows(rows, emptyText) {
+    if (!rows.length) return `<p class="empty-state compact">${escape(emptyText)}</p>`;
+    return rows
+      .slice(0, 5)
+      .map((row) => `<span>${escape(row.label)} <strong>${row.count}명</strong></span>`)
+      .join("");
+  }
+
+  function renderMilestoneTopSummary(aggregate) {
+    const warningCount = aggregate.statusCounts.find((row) => row.label === "경고")?.count || 0;
+    const cautionCount = aggregate.statusCounts.find((row) => row.label === "주의")?.count || 0;
+    return `
+      <div class="milestone-top-summary">
+        <article>
+          <span>구간 총원</span>
+          <strong>${aggregate.participantCount || 0}명</strong>
+          <div class="milestone-inline-counts">
+            ${renderInlineCountRows(aggregate.statusCounts, "상태 집계 없음")}
+          </div>
+        </article>
+        <article>
+          <span>관리 신호</span>
+          <strong>${warningCount + cautionCount + (aggregate.dropoutCount || 0)}명</strong>
+          <div class="milestone-inline-counts">
+            ${renderInlineCountRows(
+              [
+                { label: "주의", count: cautionCount },
+                { label: "경고", count: warningCount },
+                { label: "이탈", count: aggregate.dropoutCount || 0 },
+              ].filter((row) => row.count > 0),
+              "집중 관리 신호 없음"
+            )}
+          </div>
+        </article>
+        <article>
+          <span>관찰영역</span>
+          <div class="milestone-inline-counts">
+            ${renderInlineCountRows(aggregate.cautionCounts, "큰 주의 영역 없음")}
+          </div>
+        </article>
+        <article>
+          <span>특이사항</span>
+          <div class="milestone-inline-counts">
+            ${renderInlineCountRows(aggregate.caseCounts, "반복 특이사항 없음")}
+          </div>
+        </article>
+      </div>
+    `;
+  }
+
+  function renderRateTimelineGraph(rows, metrics, options = {}) {
+    if (!rows.length) return `<p class="empty-state compact">${escape(options.emptyText || "표시할 타임라인 데이터가 없습니다.")}</p>`;
+    const width = 940;
+    const left = 110;
+    const right = 36;
+    const top = 30;
+    const rowHeight = 72;
+    const plotHeight = 42;
+    const height = top + metrics.length * rowHeight + 44;
+    const dates = rows.flatMap((row) => [parseDate(row.startDate), parseDate(row.endDate), parseDate(row.centerDate)]).filter(Boolean);
+    const minTime = Math.min(...dates.map((date) => date.getTime()));
+    const maxTime = Math.max(...dates.map((date) => date.getTime()));
+    const xForDate = (value) => {
+      const date = parseDate(value);
+      if (!date || minTime === maxTime) return left + (width - left - right) / 2;
+      return left + ((date.getTime() - minTime) / (maxTime - minTime)) * (width - left - right);
+    };
+    const tickRows =
+      rows.length <= 6
+        ? rows
+        : rows.filter((_, index) => index === 0 || index === rows.length - 1 || index === Math.floor(rows.length / 2));
+    return `
+      <div class="rate-timeline-wrap">
+        <svg class="rate-timeline-graph" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escape(options.label || "운영 비율 타임라인")}">
+          <line class="rate-timeline-axis" x1="${left}" y1="${height - 30}" x2="${width - right}" y2="${height - 30}"></line>
+          ${tickRows
+            .map((row) => {
+              const x = xForDate(row.centerDate);
+              return `
+                <line class="rate-timeline-tick" x1="${x}" y1="${height - 35}" x2="${x}" y2="${height - 24}"></line>
+                <text class="rate-timeline-date" x="${x}" y="${height - 9}">${escape(App.formatDate(row.centerDate))}</text>
+              `;
+            })
+            .join("")}
+          ${metrics
+            .map((metric, index) => {
+              const laneY = top + index * rowHeight;
+              const baseY = laneY + plotHeight;
+              const points = rows
+                .map((row) => {
+                  const value = Number(row[metric.key]);
+                  if (!Number.isFinite(value)) return null;
+                  const clamped = clamp(value, 0, 100);
+                  return {
+                    row,
+                    value,
+                    x: xForDate(row.centerDate),
+                    y: laneY + (1 - clamped / 100) * plotHeight,
+                  };
+                })
+                .filter(Boolean);
+              const linePath = points.map((point, pointIndex) => `${pointIndex ? "L" : "M"} ${point.x} ${point.y}`).join(" ");
+              return `
+                <g class="rate-timeline-metric is-${escape(metric.tone || "brand")}">
+                  <text class="rate-timeline-label" x="18" y="${laneY + 18}">${escape(metric.label)}</text>
+                  <text class="rate-timeline-hint" x="18" y="${laneY + 36}">${escape(metric.hint || "")}</text>
+                  <line class="rate-timeline-lane" x1="${left}" y1="${baseY}" x2="${width - right}" y2="${baseY}"></line>
+                  ${linePath ? `<path class="rate-timeline-line" d="${linePath}"></path>` : ""}
+                  ${points
+                    .map(
+                      (point) => `
+                        <g class="rate-timeline-point">
+                          <circle cx="${point.x}" cy="${point.y}" r="5"></circle>
+                          <text x="${point.x}" y="${point.y - 9}">${escape(formatPercent(point.value, 1))}</text>
+                          <title>${escape(`${point.row.label} · ${metric.label} ${formatPercent(point.value, 1)}`)}</title>
+                        </g>
+                      `
+                    )
+                    .join("")}
+                </g>
+              `;
+            })
+            .join("")}
+        </svg>
+      </div>
+    `;
+  }
+
+  function renderMilestoneRateTimeline(milestone, aggregate) {
+    const rows = milestoneTimelineRows(milestone);
+    const stats = milestoneAttendanceStats(milestone);
+    return `
+      <section class="panel milestone-rate-timeline-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Ratio Timeline</span>
+            <h2>운영 비율 타임라인</h2>
+          </div>
+          <p class="panel-copy">마일스톤 기간을 가로 시간선으로 놓고 출석률, 지각률, 위험출결률을 구간별 비율로 봅니다.</p>
+        </div>
+        <div class="milestone-rate-summary">
+          ${renderMetric("출석률", stats.attendanceRate === null ? "판단 전" : formatPercent(stats.attendanceRate, 1), `결석 ${stats.absenceCount}건`, "success")}
+          ${renderMetric("지각률", stats.lateRate === null ? "판단 전" : formatPercent(stats.lateRate, 1), `지각 ${stats.lateCount}건`, "warning")}
+          ${renderMetric("위험출결률", stats.riskRate === null ? "판단 전" : formatPercent(stats.riskRate, 1), `위험 ${stats.riskCount}건`, "danger")}
+        </div>
+        ${renderRateTimelineGraph(
+          rows,
+          [
+            { key: "attendanceRate", label: "출석률", hint: "결석 제외", tone: "success" },
+            { key: "lateRate", label: "지각률", hint: "지각/운영일", tone: "warning" },
+            { key: "riskRate", label: "위험출결률", hint: "위험 신호", tone: "danger" },
+          ],
+          { label: "마일스톤 운영 비율 타임라인" }
+        )}
+      </section>
+    `;
+  }
+
+  function renderMilestoneCourseInfo(milestone, aggregate) {
+    const eventCounts = aggregate.eventCounts || {};
+    const attendanceStats = milestoneAttendanceStats(milestone);
+    const statusText = aggregate.statusCounts.map((row) => `${row.label} ${row.count}명`).join(" · ") || "상태 집계 없음";
+    const ratioText = [
+      `출석률 ${attendanceStats.attendanceRate === null ? "판단 전" : formatPercent(attendanceStats.attendanceRate, 1)}`,
+      `지각률 ${attendanceStats.lateRate === null ? "판단 전" : formatPercent(attendanceStats.lateRate, 1)}`,
+      `위험출결률 ${attendanceStats.riskRate === null ? "판단 전" : formatPercent(attendanceStats.riskRate, 1)}`,
+    ].join(" · ");
+    const signalText = [
+      `참여 ${aggregate.participantCount || 0}명`,
+      `평균 프로파일 ${formatNumber(aggregate.avgProfile, 2)}`,
+      `성장 변화 ${aggregate.avgGrowth >= 0 ? "+" : ""}${formatNumber(aggregate.avgGrowth, 2)}`,
+      `상담 ${eventCounts.counseling || 0}건`,
+      `위험출결 ${eventCounts.attendanceRisk || 0}건`,
+    ].join(" · ");
+    return `
+      <section class="panel milestone-course-info">
+        <div class="panel-head compact">
+          <div>
+            <span class="panel-kicker">Milestone Overview</span>
+            <h2>구간 정보</h2>
+          </div>
+          <p class="panel-copy">${escape(App.formatRange(milestone.startDate, milestone.endDate))}</p>
+        </div>
+        <div class="milestone-course-grid">
+          <article>
+            <span>상태 분포</span>
+            <p>${escape(statusText)}</p>
+          </article>
+          <article>
+            <span>운영 비율</span>
+            <p>${escape(ratioText)}</p>
+          </article>
+          <article>
+            <span>운영 신호</span>
+            <p>${escape(signalText)}</p>
+          </article>
+          <article>
+            <span>핵심 특이사항</span>
+            <p>${escape(aggregate.caseCounts.slice(0, 4).map((row) => `${row.label} ${row.count}명`).join(" · ") || "반복 특이사항 없음")}</p>
+          </article>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderUrgentMilestoneStudents(aggregate) {
+    const rows = aggregate.urgentRows || [];
+    return `
+      <div class="urgent-student-list">
+        ${rows.length
+          ? rows
+              .map(
+                ({ student, snapshot, status, reasons }) => `
+                  <a href="${App.studentPageHref(student.id)}" class="urgent-student-row ${App.toneClass(status === "경고" ? "danger" : status === "이탈" ? "neutral" : "warning")}">
+                    <div>
+                      <strong>${escape(student.name)}</strong>
+                      <span>${escape(status)} · 평균 ${formatNumber(snapshot.profileAverage, 2)}</span>
+                    </div>
+                    <p>${escape(reasons.slice(0, 4).join(" · ") || snapshot.note || "확인 필요")}</p>
+                  </a>
+                `
+              )
+              .join("")
+          : `<p class="empty-state compact">이 구간에 긴급 확인 인원은 없습니다.</p>`}
+      </div>
+    `;
+  }
+
+  function milestoneEvaluationReason(milestone, aggregate) {
+    const eventCounts = aggregate.eventCounts || {};
+    const attendanceStats = milestoneAttendanceStats(milestone);
+    const statusText = aggregate.statusCounts.map((row) => `${row.label} ${row.count}명`).join(", ") || "상태 집계 없음";
+    const cautionText = aggregate.cautionCounts.slice(0, 3).map((row) => `${row.label} ${row.count}명`).join(", ");
+    const caseText = aggregate.caseCounts.slice(0, 2).map((row) => `${row.label} ${row.count}명`).join(", ");
+    const growthText =
+      aggregate.avgGrowth > 0.25
+        ? "이전 구간보다 성장 흐름이 뚜렷합니다"
+        : aggregate.avgGrowth < -0.25
+          ? "이전 구간보다 프로파일이 흔들린 학생이 늘었습니다"
+          : "이전 구간과 비교해 큰 변동보다는 유지 흐름이 중심입니다";
+    const riskText = [
+      `출석률 ${attendanceStats.attendanceRate === null ? "판단 전" : formatPercent(attendanceStats.attendanceRate, 1)}`,
+      `지각률 ${attendanceStats.lateRate === null ? "판단 전" : formatPercent(attendanceStats.lateRate, 1)}`,
+      eventCounts.counseling ? `상담 ${eventCounts.counseling}건` : "",
+      eventCounts.attendanceRisk ? `위험출결 ${eventCounts.attendanceRisk}건` : "",
+      aggregate.dropoutCount ? `구간 이탈 ${aggregate.dropoutCount}명` : "",
+    ].filter(Boolean).join(", ");
+    return [
+      `${App.shortMilestoneLabel(milestone.label)} 평가는 참여 ${aggregate.participantCount || 0}명의 평균 프로파일 ${formatNumber(aggregate.avgProfile, 2)}점과 성장 변화 ${aggregate.avgGrowth >= 0 ? "+" : ""}${formatNumber(aggregate.avgGrowth, 2)}를 기준으로 봅니다.`,
+      `${growthText}.`,
+      `상태 분포는 ${statusText}이며${cautionText ? `, 관찰영역은 ${cautionText}이 두드러집니다` : ", 두드러진 관찰영역은 크지 않습니다"}.`,
+      `${riskText ? `${riskText}이 평가 이유에 함께 반영됩니다.` : "추가 위험 신호는 크지 않아 기본 참여 흐름을 중심으로 해석합니다."}`,
+      `${caseText ? `특이사항은 ${caseText}을 우선 확인합니다.` : "반복 특이사항은 아직 뚜렷하게 누적되지 않았습니다."}`,
+    ].join(" ");
+  }
+
+  function renderMilestoneEvaluationReason(milestone, aggregate) {
+    return `
+      <section class="panel milestone-evaluation-reason">
+        <p>${escape(milestoneEvaluationReason(milestone, aggregate))}</p>
+      </section>
+    `;
+  }
+
+  function renderProjectOperationPanel(milestone, aggregate) {
+    const rows = projectOperationRows(milestone, aggregate);
+    if (!rows.length) return "";
+    return `
+      <section class="panel project-operation-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Project Operation</span>
+            <h2>프로젝트 운영 지표</h2>
+          </div>
+          <p class="panel-copy">프로젝트 시작일부터 종료일까지의 흐름을 따로 분리해 체크인, 출석, 회고, 만족도 신호를 봅니다.</p>
+        </div>
+        <div class="project-operation-grid">
+          ${rows
+            .map(
+              (row) => `
+                <article class="project-operation-card ${row.isEstimated ? "is-estimated" : ""}">
+                  <div class="project-operation-title">
+                    <div>
+                      <strong>${escape(row.phase)}</strong>
+                      <span>${escape(App.formatRange(row.startDate, row.endDate))} · 대상 ${row.participantCount}명${row.isEstimated ? " · 일정 추정" : ""}</span>
+                    </div>
+                    <em>${row.plannedDayCount ? `${row.plannedDayCount}일` : `${row.scheduleDayCount}일 추정`}</em>
+                  </div>
+                  <div class="project-operation-stats">
+                    <div>
+                      <span>데일리체크인</span>
+                      <strong>${row.checkinRate === null ? "판단 전" : formatPercent(row.checkinRate, 1)}</strong>
+                      <small>${row.checkinCount}건${row.onTimeRate === null ? "" : ` · 정시 ${formatPercent(row.onTimeRate, 1)}`}</small>
+                    </div>
+                    <div>
+                      <span>출석률</span>
+                      <strong>${row.attendanceRate === null ? "판단 전" : formatPercent(row.attendanceRate, 1)}</strong>
+                      <small>결석 ${row.absenceCount}건 · 지각 ${row.lateCount}건</small>
+                    </div>
+                    <div>
+                      <span>회고</span>
+                      <strong>${row.retroRate === null ? "판단 전" : formatPercent(row.retroRate, 1)}</strong>
+                      <small>${row.retroCount}건 제출</small>
+                    </div>
+                    <div>
+                      <span>만족도 신호</span>
+                      <strong>${row.retroCount ? `긍정 ${row.positiveRetro}` : "판단 전"}</strong>
+                      <small>${row.retroCount ? `우려 ${row.concernRetro}건` : "구조화 점수 없음"}</small>
+                    </div>
+                  </div>
+                  ${renderRateTimelineGraph(
+                    row.timelineRows,
+                    [
+                      { key: "checkinRate", label: "체크인", hint: "제출률", tone: "mint" },
+                      { key: "attendanceRate", label: "출석률", hint: "결석 제외", tone: "success" },
+                      { key: "lateRate", label: "지각률", hint: "지각/일정", tone: "warning" },
+                    ],
+                    { label: `${row.phase} 프로젝트 타임라인`, emptyText: "프로젝트 타임라인 데이터가 없습니다." }
+                  )}
+                  <div class="project-special-list">
+                    ${row.specialNotes
+                      .map(
+                        (note) => `
+                          <div>
+                            <strong>${escape(note.label)}</strong>
+                            <p>${escape(note.detail)}</p>
+                          </div>
+                        `
+                      )
+                      .join("")}
+                  </div>
+                  <p>${escape(
+                    row.plannedDayCount
+                      ? "체크인 제출률은 커리큘럼의 프로젝트 운영일과 참여 인원을 기준으로 산정했습니다. 출석률은 결석 기록 기반 추정치이므로 위험 신호 확인용으로만 사용합니다."
+                      : "세부 운영일이 없는 추정 프로젝트이므로 제출률·회고·만족도는 실제 데이터가 들어온 뒤 판단합니다."
+                  )}</p>
+                </article>
+              `
+            )
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
   function renderMilestoneStudentSamples(milestone) {
-    const samples = activeCourseStudents()
-      .map((student) => ({
+    const samples = milestoneStudents(milestone)
+      .map(({ student, snapshot }) => ({
         student,
-        snapshot: student.milestones?.find((item) => item.id === milestone.id),
+        snapshot,
         cases: (student.learningFlowCases || []).filter((item) => overlaps(item.startDate, item.endDate, milestone.startDate, milestone.endDate)),
       }))
-      .filter((item) => item.snapshot)
       .sort((a, b) => {
         const caseDelta = b.cases.length - a.cases.length;
         if (caseDelta) return caseDelta;
+        const dropoutDelta = Number(b.snapshot.dropoutDuringMilestone || false) - Number(a.snapshot.dropoutDuringMilestone || false);
+        if (dropoutDelta) return dropoutDelta;
         return (a.snapshot.profileAverage || 0) - (b.snapshot.profileAverage || 0);
       })
       .slice(0, 8);
@@ -901,7 +1639,7 @@
           .map(
             ({ student, snapshot, cases }) => `
               <a href="${App.studentPageHref(student.id)}" class="milestone-student-sample">
-                <strong>${escape(student.name)}</strong>
+                <strong>${escape(student.name)}${snapshot.dropoutDuringMilestone ? ` · 이탈 ${escape(App.formatDate(snapshot.dropoutDate))}` : ""}</strong>
                 <span>평균 ${formatNumber(snapshot.profileAverage, 2)} · 성장 ${snapshot.growthDelta >= 0 ? "+" : ""}${formatNumber(snapshot.growthDelta, 2)}</span>
                 <small>${escape(cases[0]?.label || snapshot.note || "특이 케이스 없음")}</small>
               </a>
@@ -912,53 +1650,24 @@
     `;
   }
 
-  function renderMilestonePager(index) {
-    const milestones = App.rawData.milestones || [];
-    const previous = milestones[index - 1];
-    const next = milestones[index + 1];
+  function renderMilestoneInnerTabs(aggregate, activeTab) {
+    if (!aggregate.projectRanges?.length) return "";
     return `
-      <nav class="milestone-pager" aria-label="마일스톤 이동">
-        <button type="button" class="soft-action" data-process-view="overview">과정 개요</button>
-        <button type="button" class="soft-action" data-process-view="${escape(previous?.id || "")}" ${previous ? "" : "disabled"}>
-          이전 ${previous ? `M${index}` : ""}
-        </button>
-        <button type="button" class="primary-action" data-process-view="${escape(next?.id || "")}" ${next ? "" : "disabled"}>
-          다음 ${next ? `M${index + 2}` : ""}
-        </button>
+      <nav class="milestone-inner-tabs" aria-label="마일스톤 상세 탭">
+        <button type="button" class="${activeTab === "milestone" ? "is-active" : ""}" data-milestone-tab="milestone">마일스톤</button>
+        <button type="button" class="${activeTab === "project" ? "is-active" : ""}" data-milestone-tab="project">프로젝트</button>
       </nav>
     `;
   }
 
-  function renderMilestoneDetail(milestone, index) {
-    if (!milestone) return `<section class="panel"><p class="empty-state">선택된 마일스톤을 찾을 수 없습니다.</p></section>`;
-    const aggregate = milestoneAggregate(milestone);
-    const eventCounts = aggregate.eventCounts;
-    const current = isCurrentMilestone(milestone);
-    const caseExamples = aggregate.caseRows
-      .slice()
-      .sort((a, b) => String(a.startDate || "").localeCompare(String(b.startDate || "")))
-      .slice(0, 8);
+  function renderMilestoneDefaultContent(milestone, aggregate, eventCounts) {
     return `
-      <section class="panel milestone-detail-hero ${current ? "is-current" : ""}">
-        <div class="milestone-detail-title">
-          <span>M${index + 1}${current ? " · 현재 구간" : ""}</span>
-          <h2>${escape(milestone.label)}</h2>
-          <p>${escape(App.formatRange(milestone.startDate, milestone.endDate))}${milestone.isEstimated ? " · 예정/추정 구간" : ""}</p>
-          ${renderMilestonePager(index)}
-        </div>
-        <div class="milestone-detail-metrics">
-          ${renderMetric("평균 프로파일", formatNumber(aggregate.avgProfile, 2), `${aggregate.snapshots.length}명 기준`, "brand")}
-          ${renderMetric("성장 변화", `${aggregate.avgGrowth >= 0 ? "+" : ""}${formatNumber(aggregate.avgGrowth, 2)}`, "이전 구간 대비 평균", "success")}
-          ${renderMetric("프로젝트", `${eventCounts.project || 0}건`, `진로 ${eventCounts.career || 0}건`, "mint")}
-          ${renderMetric("상담/출결", `${eventCounts.counseling || 0}/${eventCounts.attendance || 0}건`, `위험출결 ${eventCounts.attendanceRisk || 0}건`, "warning")}
-        </div>
-      </section>
       <section class="milestone-detail-grid">
         <article class="panel milestone-detail-card">
           <div class="panel-head compact">
             <div>
-              <span class="panel-kicker">Event Mix</span>
-              <h2>구간 기록 구성</h2>
+              <span class="panel-kicker">Operation Signals</span>
+              <h2>운영 기록 신호</h2>
             </div>
           </div>
           ${renderEventCountBars(eventCounts)}
@@ -972,40 +1681,16 @@
           </div>
           ${renderCountList(aggregate.caseCounts, "이 구간에 반복적으로 잡힌 특이 케이스가 없습니다.")}
         </article>
-        <article class="panel milestone-detail-card">
-          <div class="panel-head compact">
-            <div>
-              <span class="panel-kicker">Watch Areas</span>
-              <h2>관찰 영역</h2>
-            </div>
-          </div>
-          ${renderCountList(aggregate.cautionCounts, "뚜렷한 관찰 영역이 없습니다.")}
-        </article>
       </section>
       <section class="panel milestone-case-panel">
         <div class="panel-head">
           <div>
-            <span class="panel-kicker">Case Examples</span>
-            <h2>학생별 케이스 예시</h2>
+            <span class="panel-kicker">Priority Students</span>
+            <h2>긴급 확인 인원</h2>
           </div>
-          <p class="panel-copy">선택한 구간과 날짜가 겹치는 복합 케이스를 먼저 보여줍니다.</p>
+          <p class="panel-copy">경고, 이탈, 위험출결, 낮은 프로파일, 상담 신호가 겹친 학생을 우선 표시합니다.</p>
         </div>
-        <div class="milestone-case-list">
-          ${caseExamples.length
-            ? caseExamples
-                .map(
-                  (item) => `
-                    <article class="learning-case-summary ${App.toneClass(item.severity === "warning" ? "warning" : item.severity === "success" ? "success" : "neutral")}">
-                      <strong>${escape(item.studentName)} · ${escape(item.label)}</strong>
-                      <span>${escape(item.startDate || "-")}</span>
-                      <p>${escape(item.summary)}</p>
-                      <small>${escape((item.evidence || []).slice(0, 3).join(" · "))}</small>
-                    </article>
-                  `
-                )
-                .join("")
-            : `<p class="empty-state">이 구간에 연결된 복합 케이스 예시가 없습니다.</p>`}
-        </div>
+        ${renderUrgentMilestoneStudents(aggregate)}
       </section>
       <section class="panel milestone-student-panel">
         <div class="panel-head">
@@ -1020,6 +1705,32 @@
     `;
   }
 
+  function renderMilestoneDetail(milestone, index) {
+    if (!milestone) return `<section class="panel"><p class="empty-state">선택된 마일스톤을 찾을 수 없습니다.</p></section>`;
+    const aggregate = milestoneAggregate(milestone);
+    const eventCounts = aggregate.eventCounts;
+    const attendanceStats = milestoneAttendanceStats(milestone);
+    const activeTab = aggregate.projectRanges?.length && state.milestoneTab === "project" ? "project" : "milestone";
+    const current = isCurrentMilestone(milestone);
+    return `
+      ${renderMilestoneEvaluationReason(milestone, aggregate)}
+      <section class="panel milestone-detail-hero ${current ? "is-current" : ""}">
+        <div class="milestone-detail-metrics">
+          ${renderMetric("참여 인원", `${aggregate.participantCount || 0}명`, aggregate.dropoutCount ? `이 구간 이탈 ${aggregate.dropoutCount}명` : "해당 구간 수강 기준", "neutral")}
+          ${renderMetric("평균 프로파일", formatNumber(aggregate.avgProfile, 2), "참여 인원 기준", "brand")}
+          ${renderMetric("성장 변화", `${aggregate.avgGrowth >= 0 ? "+" : ""}${formatNumber(aggregate.avgGrowth, 2)}`, "이전 구간 대비 평균", "success")}
+          ${renderMetric("출석률", attendanceStats.attendanceRate === null ? "판단 전" : formatPercent(attendanceStats.attendanceRate, 1), `결석 ${attendanceStats.absenceCount}건`, "success")}
+          ${renderMetric("지각률", attendanceStats.lateRate === null ? "판단 전" : formatPercent(attendanceStats.lateRate, 1), `지각 ${attendanceStats.lateCount}건`, "warning")}
+        </div>
+        ${renderMilestoneTopSummary(aggregate)}
+      </section>
+      ${renderMilestoneCourseInfo(milestone, aggregate)}
+      ${renderMilestoneRateTimeline(milestone, aggregate)}
+      ${renderMilestoneInnerTabs(aggregate, activeTab)}
+      ${activeTab === "project" ? renderProjectOperationPanel(milestone, aggregate) : renderMilestoneDefaultContent(milestone, aggregate, eventCounts)}
+    `;
+  }
+
   function renderProcessPage() {
     const milestones = App.rawData.milestones || [];
     const selectedMilestone = milestones.find((milestone) => milestone.id === state.processView);
@@ -1031,7 +1742,7 @@
             <span class="panel-kicker">Learning Process</span>
             <h2>모집부터 종강까지의 학습 흐름</h2>
           </div>
-          <p class="panel-copy">각 단계는 학생 프로필 변화, 프로젝트 기록, 상담, 출결, 복합 케이스를 시간순으로 묶어 보여줍니다.</p>
+          <p class="panel-copy">각 단계는 학생 프로필 변화, 출석·지각 비율, 상담, 위험출결, 복합 케이스를 시간순으로 묶어 보여줍니다.</p>
         </div>
         ${renderProcessSubnav(milestones)}
       </section>
@@ -1514,6 +2225,13 @@
       return;
     }
 
+    const milestoneTabButton = event.target.closest("[data-milestone-tab]");
+    if (milestoneTabButton) {
+      state.milestoneTab = milestoneTabButton.dataset.milestoneTab || "milestone";
+      render();
+      return;
+    }
+
     if (event.target.closest("[data-build-bridge]")) {
       state.feedbackOutput = JSON.stringify(buildFeedbackBridge(currentFeedbackStudent()), null, 2);
       render();
@@ -1581,6 +2299,7 @@
     const route = routeFromHash();
     state.activePage = route.page;
     state.processView = route.processView;
+    state.milestoneTab = "milestone";
     render();
   });
 

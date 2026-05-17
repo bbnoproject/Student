@@ -73,12 +73,13 @@
   }
 
   function renderStudentDashboard(student) {
-    const actualMilestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated);
+    const actualMilestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated && milestone.participated !== false);
     const collaborationReadiness = student.derived?.collaborationReadiness || {};
+    const dropoutDate = student.dropoutInfo?.date || student.stats?.dropoutDate || "";
     return `
       <section class="snapshot-grid compact-snapshot-grid">
         ${App.metricCard("현재 상태", student.stats?.currentStatus || "-", "현재 운영 신호", App.statusTone(student.stats?.currentStatus))}
-        ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? "관리 제외, 통계 포함" : "현재 관리 분류", App.statusTone(student.managementStatus))}
+        ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? `이탈 시점 ${App.formatDate(dropoutDate)}` : "현재 관리 분류", App.statusTone(student.managementStatus))}
         ${App.metricCard("프로젝트 제출률", `${student.stats?.projectSubmissionRate || 0}%`, "프로젝트 데일리 기록 기준", "brand")}
         ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `늦잠/무단 ${student.stats?.attendanceRiskIssues || 0}건 · 건강 ${student.stats?.healthAttendanceIssues || 0}건`, "warning")}
         ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
@@ -357,6 +358,16 @@
         </div>
 
         <div class="detail-milestone-grid">
+          ${
+            milestone.dropoutDuringMilestone
+              ? `
+                <div class="detail-block">
+                  <span class="mini-label">이탈 시점</span>
+                  <p>${App.escapeHtml(App.formatDate(milestone.dropoutDate))}</p>
+                </div>
+              `
+              : ""
+          }
           <div class="detail-block">
             <span class="mini-label">핵심 해석</span>
             <p>${App.escapeHtml(milestone.note)}</p>
@@ -415,7 +426,7 @@
   }
 
   function renderStudentDetail(student) {
-    const milestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated);
+    const milestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated && milestone.participated !== false);
     const visibleMilestones =
       state.detailMilestoneId === "all"
         ? milestones

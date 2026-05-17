@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-15T10:51:38",
+  "generatedAt": "2026-05-16T13:11:00",
   "studentCount": 80,
   "curriculumWeekCount": 35,
   "curriculumSessionCount": 171,
@@ -17,7 +17,7 @@
     "staff_profile": 80,
     "team_context": 298
   },
-  "blankDateEvidenceCount": 157,
+  "blankDateEvidenceCount": 155,
   "duplicateEvidenceIdCount": 0,
   "estimatedTimelineEventCount": 378,
   "teamAssignmentCount": 298,

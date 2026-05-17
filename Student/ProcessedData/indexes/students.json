@@ -1637,7 +1637,7 @@
       "scores": {
         "self_regulation": 1,
         "engagement": 1,
-        "collaboration": 1,
+        "collaboration": null,
         "resilience": 3,
         "reflection": 3,
         "career_agency": 2
@@ -2772,7 +2772,7 @@
       "scores": {
         "self_regulation": 1,
         "engagement": 1,
-        "collaboration": 1,
+        "collaboration": null,
         "resilience": 3,
         "reflection": 2,
         "career_agency": 1

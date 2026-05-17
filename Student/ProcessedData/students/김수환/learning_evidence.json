@@ -25,26 +25,6 @@
     }
   },
   {
-    "evidenceId": "ev-632ab0b58827",
-    "studentId": "김수환",
-    "date": "",
-    "weekIndex": 0,
-    "phase": "course",
-    "sourceDomain": "management_status",
-    "evidenceType": "direct",
-    "constructs": [
-      "engagement"
-    ],
-    "title": "과정이탈 기록",
-    "summary": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
-    "detail": "유형: 자진 이탈\n사유: 스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)\n기타: \n출석 일수: ",
-    "severity": "caution",
-    "provenance": {
-      "sourceFile": "학생 정보/이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
-      "isEstimatedDate": false
-    }
-  },
-  {
     "evidenceId": "ev-69f04926d665",
     "studentId": "김수환",
     "date": "",
@@ -800,6 +780,26 @@
     "severity": "stable",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
+      "isEstimatedDate": false
+    }
+  },
+  {
+    "evidenceId": "ev-0c29531cebe9",
+    "studentId": "김수환",
+    "date": "2026-03-16",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "management_status",
+    "evidenceType": "direct",
+    "constructs": [
+      "engagement"
+    ],
+    "title": "과정이탈 기록",
+    "summary": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
+    "detail": "유형: 자진 이탈\n사유: 스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)\n기타: \n출석 일수: ",
+    "severity": "caution",
+    "provenance": {
+      "sourceFile": "학생 정보/이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
       "isEstimatedDate": false
     }
   }

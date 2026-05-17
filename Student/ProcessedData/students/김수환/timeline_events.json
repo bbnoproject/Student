@@ -22,23 +22,6 @@
     "isEstimatedDate": false
   },
   {
-    "eventId": "ev-632ab0b58827",
-    "date": "",
-    "endDate": "",
-    "weekIndex": 0,
-    "phase": "course",
-    "sourceDomain": "management_status",
-    "severity": "caution",
-    "title": "과정이탈 기록",
-    "summary": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
-    "detail": "유형: 자진 이탈\n사유: 스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)\n기타: \n출석 일수: ",
-    "constructs": [
-      "engagement"
-    ],
-    "sourceLabel": "이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
-    "isEstimatedDate": false
-  },
-  {
     "eventId": "ev-69f04926d665",
     "date": "",
     "endDate": "",
@@ -680,6 +663,23 @@
       "self_regulation"
     ],
     "sourceLabel": "출결 기입 시트.xlsx",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-0c29531cebe9",
+    "date": "2026-03-16",
+    "endDate": "",
+    "weekIndex": 15,
+    "phase": "course",
+    "sourceDomain": "management_status",
+    "severity": "caution",
+    "title": "과정이탈 기록",
+    "summary": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
+    "detail": "유형: 자진 이탈\n사유: 스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)\n기타: \n출석 일수: ",
+    "constructs": [
+      "engagement"
+    ],
+    "sourceLabel": "이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
     "isEstimatedDate": false
   }
 ]

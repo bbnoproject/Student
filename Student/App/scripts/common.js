@@ -301,6 +301,9 @@
   }
 
   function profileReason(key, value, student) {
+    if (value === null || value === undefined || value === "") {
+      return "이 준거는 해당 시점에 판단할 직접 근거가 없어 점수화하지 않았습니다.";
+    }
     const score = Number(value || 0);
     const stats = student?.stats || {};
     const ratingLabel = score <= 1 ? "긴급 지원" : score === 2 ? "형성 중" : score === 3 ? "안정" : "확장";
@@ -337,7 +340,11 @@
   }
 
   function averageScore(scores) {
-    const values = PROFILE_KEYS.map((key) => Number(scores?.[key] || 0));
+    const values = PROFILE_KEYS
+      .map((key) => scores?.[key])
+      .filter((value) => value !== null && value !== undefined && value !== "")
+      .map(Number)
+      .filter((value) => Number.isFinite(value));
     const total = values.reduce((sum, value) => sum + value, 0);
     return values.length ? total / values.length : 0;
   }
@@ -630,12 +637,14 @@
     return `
       <div class="profile-bar-list">
         ${PROFILE_KEYS.map((key) => {
-          const value = Number(scores?.[key] || 0);
+          const rawValue = scores?.[key];
+          const judged = rawValue !== null && rawValue !== undefined && rawValue !== "";
+          const value = judged ? Number(rawValue) : 0;
           return `
             <article class="profile-bar-card">
               <div class="profile-bar-head">
                 <span>${escapeHtml(PROFILE_LABELS[key])}</span>
-                <strong>${value}/4</strong>
+                <strong>${judged ? `${value}/4` : "판단 전"}</strong>
               </div>
               <div class="profile-track">
                 <div class="profile-fill" style="width:${(value / 4) * 100}%"></div>
@@ -667,6 +676,9 @@
     }
     if (milestone.eventCounts.counseling > 0) {
       parts.push(`면담 개입 ${milestone.eventCounts.counseling}건이 있었습니다.`);
+    }
+    if (milestone.dropoutDuringMilestone) {
+      parts.push(`이 구간에 과정이탈 시점(${formatDate(milestone.dropoutDate)})이 포함됩니다.`);
     }
     if (milestone.cautionKeys?.length) {
       parts.push(`${PROFILE_LABELS[milestone.cautionKeys[0]]} 영역을 계속 봐야 합니다.`);

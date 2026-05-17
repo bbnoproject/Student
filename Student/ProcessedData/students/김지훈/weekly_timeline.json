@@ -13,16 +13,9 @@
       "admission": 3,
       "career": 0
     },
-    "severity": "caution",
+    "severity": "stable",
     "headline": "모집 및 선발 단계",
     "notes": [
-      {
-        "type": "management_status",
-        "title": "과정이탈 기록",
-        "summary": "수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.",
-        "severity": "caution",
-        "date": ""
-      },
       {
         "type": "admission",
         "title": "최종 선발 결과",
@@ -41,6 +34,13 @@
         "type": "admission",
         "title": "대원카드 자기소개",
         "summary": "미래 콘텐츠는 결국 게임이고, 특히 AI가 게임제작을 유튜브 수준으로 대중화시킬 것이라 생각하고 있습니다. 계속 게임쪽 교육과정을 찾아왔으나, 마음에 드는 커리큘럼이 없었고, 이번에서야 알고 신청하게 되었습니다. 실무보다 계속 비지니스 관련된 일을…",
+        "severity": "info",
+        "date": ""
+      },
+      {
+        "type": "staff_profile",
+        "title": "운영진 학생 정보 기록",
+        "summary": "🔖 (업데이트 날짜 : 2/24(화)) 사람이 많은 곳에서는 잘 나서지 않지만, 조별 활동 등에서는 적극적인 것으로 파악 적극적이긴 하나 다혈질 매사 불만이 많은 타입 리더십이 부족하나 리더가 되고 싶어하며, 팔로우십은 거의 없는 것으로 보임. 열심…",
         "severity": "info",
         "date": ""
       }
@@ -100,11 +100,18 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 1,
+        "collaboration": null,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "자기조절 지원 필요"
     }
@@ -392,6 +399,14 @@
         "reflection": 3,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
@@ -597,6 +612,14 @@
         "reflection": 4,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
@@ -842,6 +865,13 @@
         "title": "이탈면담",
         "summary": "### 내용 [기획 4기 김지훈 이탈 면담] @안중재 @양윤석 @김상준 @양현석 @유범모 결론 : 건강 상의 이유와 복합적인 개인사로 인해 최종적으로 과정 이탈(하차)을 결정했습니다. 수강생이 발급받은 '3주 집중 치료 진단서'를 활용해, 관할 부서…",
         "severity": "warning",
+        "date": "2026-04-16"
+      },
+      {
+        "type": "management_status",
+        "title": "과정이탈 기록",
+        "summary": "수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.",
+        "severity": "caution",
         "date": "2026-04-16"
       }
     ],
@@ -1169,6 +1199,14 @@
         "reflection": 4,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "자기조절 지원 필요"
     }

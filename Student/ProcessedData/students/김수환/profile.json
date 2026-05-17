@@ -16,12 +16,15 @@
     "sourceFile": "학생 정보/이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
     "type": "자진 이탈",
     "reason": "스마일게이트 메가포트 취업으로 인한 이탈 (1년 계약직, 현지화 업무)",
-    "date": "",
+    "date": "2026-03-16",
     "attendanceDays": "",
     "joinedAt": "",
     "note": "",
     "traits": "소통적, 업계경력자",
-    "gamePreference": "몬스터 헌터, 소울라이크, 엘든 링"
+    "gamePreference": "몬스터 헌터, 소울라이크, 엘든 링",
+    "dateInferred": true,
+    "dateSource": "출결 기입 시트",
+    "dateBasis": "출결 이슈 · 기타 이탈 이탈"
   },
   "staffProfile": {
     "sourceFile": "학생 정보/김수환 2be1c30b8ab381fe9ca0cf3956b2aef1.html",

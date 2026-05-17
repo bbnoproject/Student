@@ -823,7 +823,7 @@ body[data-page="lobby"] .process-subnav button.is-current:not(.is-active) {
 
 body[data-page="lobby"] .process-overview-hero {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -864,6 +864,19 @@ body[data-page="lobby"] .process-area {
   fill: url("#processAreaGradient");
 }
 
+body[data-page="lobby"] .process-timeline-axis {
+  stroke: var(--border);
+  stroke-width: 2;
+}
+
+body[data-page="lobby"] .process-timeline-segment {
+  fill: color-mix(in srgb, var(--accent) 28%, var(--secondary));
+}
+
+body[data-page="lobby"] .process-timeline-segment.is-current {
+  fill: var(--danger);
+}
+
 body[data-page="lobby"] .process-line {
   fill: none;
   stroke: currentColor;
@@ -887,6 +900,12 @@ body[data-page="lobby"] .process-point.is-current circle {
 body[data-page="lobby"] .process-point.is-current text:first-of-type {
   fill: var(--danger);
   font-size: 15px;
+}
+
+body[data-page="lobby"] .process-point.is-unjudged circle {
+  fill: var(--secondary);
+  stroke: var(--text-soft);
+  stroke-dasharray: 3 3;
 }
 
 body[data-page="lobby"] .process-point-label {
@@ -937,8 +956,7 @@ body[data-page="lobby"] .process-timeline.compact .process-stage-card {
 
 body[data-page="lobby"] .milestone-detail-hero {
   display: grid;
-  grid-template-columns: minmax(260px, 0.48fr) minmax(0, 1.52fr);
-  gap: 18px;
+  gap: 12px;
   align-items: stretch;
 }
 
@@ -946,64 +964,342 @@ body[data-page="lobby"] .milestone-detail-hero.is-current {
   border-color: color-mix(in srgb, var(--danger) 45%, var(--border));
 }
 
-body[data-page="lobby"] .milestone-detail-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  padding: 18px;
-  border-radius: 16px;
-  background: var(--secondary);
+body[data-page="lobby"] .milestone-evaluation-reason {
+  padding: 16px 18px;
+  border-left: 4px solid var(--accent);
 }
 
-body[data-page="lobby"] .milestone-detail-title span {
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 900;
-}
-
-body[data-page="lobby"] .milestone-detail-hero.is-current .milestone-detail-title span {
-  color: var(--danger);
-}
-
-body[data-page="lobby"] .milestone-detail-title h2 {
+body[data-page="lobby"] .milestone-evaluation-reason p {
   margin: 0;
-  font-size: clamp(1.5rem, 3vw, 2.4rem);
-  line-height: 1.08;
-}
-
-body[data-page="lobby"] .milestone-detail-title p {
-  margin: 0;
-  color: var(--text-soft);
-}
-
-body[data-page="lobby"] .milestone-pager {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-body[data-page="lobby"] .milestone-pager button:disabled {
-  cursor: not-allowed;
-  opacity: 0.45;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.65;
 }
 
 body[data-page="lobby"] .milestone-detail-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 10px;
+}
+
+body[data-page="lobby"] .milestone-top-summary {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 0.8fr 0.85fr 1fr 1fr;
+  gap: 10px;
+}
+
+body[data-page="lobby"] .milestone-top-summary article {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+body[data-page="lobby"] .milestone-top-summary article > span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .milestone-top-summary article > strong {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+body[data-page="lobby"] .milestone-inline-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+body[data-page="lobby"] .milestone-inline-counts span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+body[data-page="lobby"] .milestone-inline-counts strong {
+  color: var(--text);
 }
 
 body[data-page="lobby"] .milestone-detail-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.95fr 0.95fr;
+  grid-template-columns: 1fr 1fr;
   gap: 14px;
 }
 
 body[data-page="lobby"] .milestone-detail-card {
   display: grid;
   gap: 14px;
+}
+
+body[data-page="lobby"] .milestone-course-info {
+  display: grid;
+  gap: 14px;
+}
+
+body[data-page="lobby"] .milestone-course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body[data-page="lobby"] .milestone-course-grid article {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .milestone-course-grid span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .milestone-course-grid p {
+  margin: 0;
+  line-height: 1.45;
+}
+
+body[data-page="lobby"] .milestone-rate-timeline-panel {
+  display: grid;
+  gap: 14px;
+}
+
+body[data-page="lobby"] .milestone-rate-summary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body[data-page="lobby"] .rate-timeline-wrap {
+  overflow-x: auto;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .rate-timeline-graph {
+  min-width: 760px;
+  width: 100%;
+}
+
+body[data-page="lobby"] .rate-timeline-axis,
+body[data-page="lobby"] .rate-timeline-lane {
+  stroke: var(--border);
+  stroke-width: 1.5;
+}
+
+body[data-page="lobby"] .rate-timeline-tick {
+  stroke: var(--text-soft);
+  stroke-width: 1;
+  opacity: 0.45;
+}
+
+body[data-page="lobby"] .rate-timeline-date,
+body[data-page="lobby"] .rate-timeline-label,
+body[data-page="lobby"] .rate-timeline-hint,
+body[data-page="lobby"] .rate-timeline-point text {
+  fill: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+body[data-page="lobby"] .rate-timeline-label {
+  fill: var(--text);
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .rate-timeline-date,
+body[data-page="lobby"] .rate-timeline-point text {
+  text-anchor: middle;
+}
+
+body[data-page="lobby"] .rate-timeline-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+body[data-page="lobby"] .rate-timeline-point circle {
+  stroke: var(--surface);
+  stroke-width: 3;
+}
+
+body[data-page="lobby"] .rate-timeline-metric.is-success .rate-timeline-line,
+body[data-page="lobby"] .rate-timeline-metric.is-success .rate-timeline-point circle {
+  stroke: var(--success);
+  fill: var(--success);
+}
+
+body[data-page="lobby"] .rate-timeline-metric.is-warning .rate-timeline-line,
+body[data-page="lobby"] .rate-timeline-metric.is-warning .rate-timeline-point circle {
+  stroke: var(--warning);
+  fill: var(--warning);
+}
+
+body[data-page="lobby"] .rate-timeline-metric.is-danger .rate-timeline-line,
+body[data-page="lobby"] .rate-timeline-metric.is-danger .rate-timeline-point circle {
+  stroke: var(--danger);
+  fill: var(--danger);
+}
+
+body[data-page="lobby"] .rate-timeline-metric.is-mint .rate-timeline-line,
+body[data-page="lobby"] .rate-timeline-metric.is-mint .rate-timeline-point circle {
+  stroke: var(--mint);
+  fill: var(--mint);
+}
+
+body[data-page="lobby"] .milestone-inner-tabs {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  gap: 6px;
+  padding: 5px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .milestone-inner-tabs button {
+  border: 0;
+  border-radius: 999px;
+  padding: 9px 14px;
+  background: transparent;
+  color: var(--text-soft);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .milestone-inner-tabs button.is-active {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: 0 8px 18px rgba(30, 64, 175, 0.08);
+}
+
+body[data-page="lobby"] .project-operation-panel {
+  display: grid;
+  gap: 14px;
+}
+
+body[data-page="lobby"] .project-operation-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+body[data-page="lobby"] .project-operation-card {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+body[data-page="lobby"] .project-operation-card.is-estimated {
+  border-style: dashed;
+}
+
+body[data-page="lobby"] .project-operation-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+}
+
+body[data-page="lobby"] .project-operation-title div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+body[data-page="lobby"] .project-operation-title strong {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+body[data-page="lobby"] .project-operation-title span,
+body[data-page="lobby"] .project-operation-title em {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+body[data-page="lobby"] .project-operation-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+body[data-page="lobby"] .project-operation-stats div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .project-operation-stats span,
+body[data-page="lobby"] .project-operation-stats small {
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+body[data-page="lobby"] .project-operation-stats strong {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+body[data-page="lobby"] .project-operation-card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+body[data-page="lobby"] .project-special-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+body[data-page="lobby"] .project-special-list div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  padding: 11px;
+  border-radius: 10px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .project-special-list strong {
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .project-special-list p {
+  margin: 0;
 }
 
 body[data-page="lobby"] .milestone-event-bars,
@@ -1050,6 +1346,53 @@ body[data-page="lobby"] .milestone-case-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
+}
+
+body[data-page="lobby"] .urgent-student-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body[data-page="lobby"] .urgent-student-row {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+}
+
+body[data-page="lobby"] .urgent-student-row:hover {
+  border-color: color-mix(in srgb, var(--danger) 42%, var(--border));
+  transform: translateY(-1px);
+}
+
+body[data-page="lobby"] .urgent-student-row div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+
+body[data-page="lobby"] .urgent-student-row strong,
+body[data-page="lobby"] .urgent-student-row span {
+  min-width: 0;
+}
+
+body[data-page="lobby"] .urgent-student-row span,
+body[data-page="lobby"] .urgent-student-row p {
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+body[data-page="lobby"] .urgent-student-row p {
+  margin: 0;
 }
 
 body[data-page="lobby"] .milestone-student-sample-list {
@@ -1181,6 +1524,15 @@ body[data-page="lobby"] .feedback-output {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  body[data-page="lobby"] .milestone-top-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body[data-page="lobby"] .milestone-course-grid,
+  body[data-page="lobby"] .urgent-student-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   body[data-page="lobby"] .category-grid.compact {
     grid-template-columns: repeat(4, minmax(150px, 1fr));
   }
@@ -1195,7 +1547,18 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .overview-diagram-grid,
   body[data-page="lobby"] .feedback-workbench,
   body[data-page="lobby"] .milestone-detail-hero,
+  body[data-page="lobby"] .milestone-top-summary,
+  body[data-page="lobby"] .milestone-course-grid,
+  body[data-page="lobby"] .project-operation-grid,
   body[data-page="lobby"] .milestone-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="lobby"] .project-operation-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="lobby"] .project-special-list {
     grid-template-columns: 1fr;
   }
 
@@ -1227,6 +1590,10 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .process-overview-hero,
   body[data-page="lobby"] .process-overview-summary-grid,
   body[data-page="lobby"] .milestone-detail-metrics,
+  body[data-page="lobby"] .milestone-rate-summary,
+  body[data-page="lobby"] .project-operation-stats,
+  body[data-page="lobby"] .project-special-list,
+  body[data-page="lobby"] .urgent-student-list,
   body[data-page="lobby"] .milestone-case-list,
   body[data-page="lobby"] .milestone-student-sample-list {
     grid-template-columns: 1fr;

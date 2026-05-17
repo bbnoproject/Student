@@ -21,23 +21,6 @@
     "isEstimatedDate": false
   },
   {
-    "eventId": "ev-b78146def0ce",
-    "date": "",
-    "endDate": "",
-    "weekIndex": 0,
-    "phase": "course",
-    "sourceDomain": "management_status",
-    "severity": "caution",
-    "title": "과정이탈 기록",
-    "summary": "수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.",
-    "detail": "유형: 자진 이탈\n사유: 수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.\n기타: \n출석 일수: ",
-    "constructs": [
-      "engagement"
-    ],
-    "sourceLabel": "이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
-    "isEstimatedDate": false
-  },
-  {
     "eventId": "ev-cab41ffc488d",
     "date": "",
     "endDate": "",
@@ -1128,6 +1111,23 @@
       "reflection"
     ],
     "sourceLabel": "김지훈.md",
+    "isEstimatedDate": false
+  },
+  {
+    "eventId": "ev-3762e89b3b0b",
+    "date": "2026-04-16",
+    "endDate": "",
+    "weekIndex": 19,
+    "phase": "course",
+    "sourceDomain": "management_status",
+    "severity": "caution",
+    "title": "과정이탈 기록",
+    "summary": "수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.",
+    "detail": "유형: 자진 이탈\n사유: 수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음.\n기타: \n출석 일수: ",
+    "constructs": [
+      "engagement"
+    ],
+    "sourceLabel": "이탈자 LIST (확정자 기간(12 22) 이후) 2cf1c30b8ab380e5856de4831121877c.csv",
     "isEstimatedDate": false
   }
 ]

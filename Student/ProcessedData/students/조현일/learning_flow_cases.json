@@ -13,20 +13,5 @@
     ],
     "startDate": "2026-02-02",
     "endDate": "2026-02-09"
-  },
-  {
-    "caseId": "조현일-flow-2",
-    "caseType": "counseling_recovery",
-    "label": "면담 후 회복",
-    "description": "면담 기록 이후 성장 곡선이 회복된 케이스",
-    "severity": "success",
-    "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
-    "evidence": [
-      "면담 3건",
-      "초기 대비 성장 +0.83",
-      "성장 구간 2개"
-    ],
-    "startDate": "2025-12-10",
-    "endDate": "2026-03-23"
   }
 ]

@@ -464,8 +464,9 @@ def normalize_project_date(
     return parsed
 
 
-def profile_average(scores: dict[str, int]) -> float:
-    return round(mean(scores.values()), 2) if scores else 0.0
+def profile_average(scores: dict[str, Any]) -> float | None:
+    judged_values = [float(value) for value in scores.values() if isinstance(value, (int, float))]
+    return round(mean(judged_values), 2) if judged_values else None
 
 
 def percentile_value(values: list[float], percentile: float) -> float:
@@ -1179,13 +1180,13 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
             [item.get("date", "") for item in delayed_checkins],
         )
 
-    milestones = student.get("milestones", [])
+    milestones = [item for item in student.get("milestones", []) if item.get("profileAverage") is not None]
     growth_delta = (
         round(milestones[-1]["profileAverage"] - milestones[0]["profileAverage"], 2)
         if len(milestones) >= 2
         else 0
     )
-    positive_growth_steps = sum(1 for item in milestones if item.get("growthDelta", 0) > 0)
+    positive_growth_steps = sum(1 for item in milestones if (item.get("growthDelta") or 0) > 0)
     has_prior_risk_signal = bool(risk_events) or project_rate < 90 or student.get("stats", {}).get("currentStatus") != "안정"
     if student.get("counselings") and has_prior_risk_signal and growth_delta >= 0.75 and positive_growth_steps >= 2:
         add_learning_flow_case(
@@ -2270,6 +2271,65 @@ def add_career_document_data(students_by_name: dict[str, dict[str, Any]], weeks:
                 )
 
 
+def infer_missing_dropout_dates(students: list[dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
+    for student in students:
+        dropout_info = student.get("dropoutInfo", {}) or {}
+        if not dropout_info or parse_date(dropout_info.get("date", "")):
+            continue
+
+        candidates: list[dict[str, Any]] = []
+        for event in student.get("timelineEvents", []):
+            event_date = parse_date(event.get("date", ""))
+            if not event_date:
+                continue
+            event_text = "\n".join(str(event.get(key, "")) for key in ("title", "summary", "detail"))
+            if event.get("type") == "attendance" and "이탈" in event_text:
+                candidates.append(
+                    {
+                        "date": event_date,
+                        "source": event.get("sourceLabel", "출결 기록"),
+                        "basis": short_text(event_text),
+                        "priority": 3,
+                    }
+                )
+            elif event.get("type") == "counseling" and "이탈" in event_text:
+                decisive = any(keyword in event_text for keyword in ("최종", "결정", "하차", "이탈 처리"))
+                candidates.append(
+                    {
+                        "date": event_date,
+                        "source": event.get("sourceLabel", "면담 기록"),
+                        "basis": short_text(event_text),
+                        "priority": 2 if decisive else 1,
+                    }
+                )
+
+        if not candidates:
+            continue
+
+        best = sorted(candidates, key=lambda item: (item["priority"], item["date"]), reverse=True)[0]
+        dropout_info["date"] = best["date"].isoformat()
+        dropout_info["dateInferred"] = True
+        dropout_info["dateSource"] = best["source"]
+        dropout_info["dateBasis"] = best["basis"]
+        student["dropoutInfo"] = dropout_info
+
+        for event in student.get("timelineEvents", []):
+            if event.get("id") == f"dropout-{student['id']}":
+                event["date"] = dropout_info["date"]
+                event["relatedWeek"] = week_for_date(best["date"], weeks)
+                event["summary"] = short_text(dropout_info.get("reason") or best["basis"] or "과정이탈 기록")
+                event["detail"] = "\n".join(
+                    filter(
+                        None,
+                        [
+                            event.get("detail", ""),
+                            f"이탈 시점 보조 근거: {best['source']} · {best['basis']}",
+                        ],
+                    )
+                )
+                break
+
+
 def add_attendance_data(students_by_name: dict[str, dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
     wb = workbook_by_index(7)
     for ws in wb.worksheets:
@@ -2541,6 +2601,22 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
         "reflection": clamp_score(reflection),
         "careerAgency": clamp_score(career_agency),
     }
+    judged_keys = []
+    if expected_dates or attendance_events or checkins:
+        judged_keys.extend(["selfRegulation", "engagement"])
+    if team_history or checkins or retros:
+        judged_keys.append("collaboration")
+    if admission or student.get("cadetCard") or counselings or retros or checkins or attendance_events:
+        judged_keys.append("resilience")
+    if admission or student.get("cadetCard") or retros or counselings:
+        judged_keys.append("reflection")
+    if admission or student.get("cadetCard") or career_rounds:
+        judged_keys.append("careerAgency")
+    judged_keys = sorted(set(judged_keys))
+    snapshot_scores = {
+        key: value if key in judged_keys else None
+        for key, value in snapshot_scores.items()
+    }
 
     sources = 0
     for value in [attendance_events, counselings, checkins, retros, team_history, career_rounds]:
@@ -2557,7 +2633,8 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
     else:
         confidence = "High" if sources >= 4 else "Medium" if sources >= 2 else "Low"
 
-    weakest_area = min(snapshot_scores.items(), key=lambda item: item[1])[0]
+    judged_score_items = [(key, value) for key, value in snapshot_scores.items() if isinstance(value, (int, float))]
+    weakest_area = min(judged_score_items, key=lambda item: item[1])[0] if judged_score_items else ""
     weakest_map = {
         "selfRegulation": "자기조절 지원 필요",
         "engagement": "참여 지속성 점검 필요",
@@ -2567,8 +2644,9 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
         "careerAgency": "진로 목적성 구체화 필요",
     }
 
-    note = weakest_map[weakest_area]
-    if max(snapshot_scores.values()) >= 4 and min(snapshot_scores.values()) >= 3:
+    note = weakest_map.get(weakest_area, "판단 가능한 근거 부족")
+    judged_values = [value for _, value in judged_score_items]
+    if judged_values and max(judged_values) >= 4 and min(judged_values) >= 3:
         note = "전반적으로 안정적인 성장 흐름"
     elif len(health_attendance_issues) >= 2 and risk_attendance_count == 0:
         note = "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2582,6 +2660,7 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
         "snapshotDate": snapshot_date.isoformat(),
         "snapshotType": label,
         "scores": snapshot_scores,
+        "judgedKeys": judged_keys,
         "confidence": confidence,
         "note": note,
     }
@@ -2810,6 +2889,36 @@ def event_in_range(event_date: str, start: date, end: date) -> bool:
     return bool(parsed and start <= parsed <= end)
 
 
+def student_milestone_participation(student: dict[str, Any], start: date, end: date) -> dict[str, Any]:
+    dropout_info = student.get("dropoutInfo", {}) or {}
+    dropout_date = parse_date(dropout_info.get("date", ""))
+    joined_date = parse_date(dropout_info.get("joinedAt", ""))
+    if not joined_date:
+        admission_dates = [
+            parse_date(event.get("date", ""))
+            for event in student.get("timelineEvents", [])
+            if event.get("type") == "admission"
+        ]
+        joined_date = min([item for item in admission_dates if item], default=None)
+
+    participated = True
+    reason = ""
+    if joined_date and joined_date > end:
+        participated = False
+        reason = "마일스톤 종료 후 합류"
+    if dropout_date and dropout_date < start:
+        participated = False
+        reason = "마일스톤 시작 전 이탈"
+
+    return {
+        "participated": participated,
+        "joinedDate": joined_date.isoformat() if joined_date else "",
+        "dropoutDate": dropout_date.isoformat() if dropout_date else "",
+        "dropoutDuringMilestone": bool(dropout_date and start <= dropout_date <= end),
+        "participationReason": reason,
+    }
+
+
 def build_project_phase_ranges(curriculum: dict[str, Any], phase_dates: dict[str, list[date]]) -> list[dict[str, Any]]:
     course_start = parse_date(curriculum["startDate"])
     course_end = parse_date(curriculum["endDate"])
@@ -2976,6 +3085,7 @@ def summarize_milestone(
     if not start_date or not end_date:
         return {}
 
+    participation = student_milestone_participation(student, start_date, end_date)
     snapshot = build_snapshot(student, milestone["label"], end_date, end_date, phase_dates)
     profile_avg = profile_average(snapshot["scores"])
     events = [
@@ -3002,10 +3112,11 @@ def summarize_milestone(
     counseling_count = sum(1 for event in events if event.get("type") == "counseling")
     project_count = sum(1 for event in events if event.get("type") in {"project", "retro"})
     career_count = sum(1 for event in events if event.get("type") == "career")
-    growth_delta = round(profile_avg - previous_average, 2) if previous_average is not None else 0.0
-    sorted_scores = sorted(snapshot["scores"].items(), key=lambda item: item[1], reverse=True)
+    growth_delta = round(profile_avg - previous_average, 2) if profile_avg is not None and previous_average is not None else None
+    judged_scores = [(key, value) for key, value in snapshot["scores"].items() if isinstance(value, (int, float))]
+    sorted_scores = sorted(judged_scores, key=lambda item: item[1], reverse=True)
     strength_keys = [key for key, _ in sorted_scores[:2]]
-    caution_keys = [key for key, value in sorted(snapshot["scores"].items(), key=lambda item: item[1])[:2] if value <= 2]
+    caution_keys = [key for key, value in sorted(judged_scores, key=lambda item: item[1])[:2] if value <= 2]
 
     return {
         "id": milestone["id"],
@@ -3013,7 +3124,9 @@ def summarize_milestone(
         "startDate": milestone["startDate"],
         "endDate": milestone["endDate"],
         "isEstimated": milestone["isEstimated"],
+        **participation,
         "scores": snapshot["scores"],
+        "judgedKeys": snapshot.get("judgedKeys", []),
         "profileAverage": profile_avg,
         "growthDelta": growth_delta,
         "strengthKeys": strength_keys,
@@ -3026,6 +3139,7 @@ def summarize_milestone(
             "counseling": counseling_count,
             "project": project_count,
             "career": career_count,
+            "dropout": 1 if participation["dropoutDuringMilestone"] else 0,
         },
         "events": [
             {
@@ -3044,12 +3158,22 @@ def summarize_milestone(
 
 
 def classify_student(student: dict[str, Any], growth_high_threshold: float) -> dict[str, Any]:
-    milestone_summaries = student.get("milestones", [])
+    milestone_summaries = [
+        item
+        for item in student.get("milestones", [])
+        if item.get("participated", True) and item.get("profileAverage") is not None
+    ]
     first_average = milestone_summaries[0]["profileAverage"] if milestone_summaries else 0.0
     current_average = milestone_summaries[-1]["profileAverage"] if milestone_summaries else 0.0
     growth_delta = round(current_average - first_average, 2)
-    positive_growth_steps = sum(1 for item in milestone_summaries if item.get("growthDelta", 0) > 0)
-    caution_count = len([value for value in student["currentProfile"].values() if isinstance(value, int) and value <= 2])
+    positive_growth_steps = sum(1 for item in milestone_summaries if (item.get("growthDelta") or 0) > 0)
+    profile_keys = ["selfRegulation", "engagement", "collaboration", "resilience", "reflection", "careerAgency"]
+    current_profile_values = [
+        student["currentProfile"].get(key)
+        for key in profile_keys
+        if isinstance(student["currentProfile"].get(key), (int, float))
+    ]
+    caution_count = len([value for value in current_profile_values if value <= 2])
     support_reasons = []
     if student["stats"].get("attendanceRiskIssues", 0) >= 2:
         support_reasons.append(f"판단 반영 출결 {student['stats'].get('attendanceRiskIssues', 0)}건")
@@ -3057,7 +3181,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         support_reasons.append(f"프로젝트 제출률 {student['stats']['projectSubmissionRate']}%")
     if student["stats"]["currentStatus"] != "안정":
         support_reasons.append(f"현재 상태 {student['stats']['currentStatus']}")
-    if min(student["currentProfile"][key] for key in ["selfRegulation", "engagement", "collaboration", "resilience", "reflection", "careerAgency"]) <= 1:
+    if current_profile_values and min(current_profile_values) <= 1:
         support_reasons.append("프로파일 1점 이하 영역 존재")
     if caution_count >= 3:
         support_reasons.append(f"주의 프로파일 {caution_count}개")
@@ -3117,7 +3241,11 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         and career_readiness["selfStrengthAwareness"] >= 2.5
         and career_readiness["personalColor"] >= 2.5
     )
-    attendance_condition = student["stats"].get("attendanceRiskIssues", 0) >= 2 or student["currentProfile"]["engagement"] <= 2
+    engagement_score = student["currentProfile"].get("engagement")
+    collaboration_score = student["currentProfile"].get("collaboration")
+    attendance_condition = student["stats"].get("attendanceRiskIssues", 0) >= 2 or (
+        isinstance(engagement_score, (int, float)) and engagement_score <= 2
+    )
 
     tags = []
     if overall_condition:
@@ -3135,7 +3263,8 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         )
     )
     collaboration_condition = (
-        student["currentProfile"]["collaboration"] >= 3
+        isinstance(collaboration_score, (int, float))
+        and collaboration_score >= 3
         and has_collaboration_quality
         and collaboration_readiness["collaborationReadinessScore"] >= 70
         and (collaboration_readiness["checkinCount"] >= 3 or collaboration_readiness["retroCount"] >= 1)
@@ -3150,14 +3279,14 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         tags.append("steady_path")
 
     strength_keys = sorted(
-        ["selfRegulation", "engagement", "collaboration", "resilience", "reflection", "careerAgency"],
+        [key for key in profile_keys if isinstance(student["currentProfile"].get(key), (int, float))],
         key=lambda key: student["currentProfile"][key],
         reverse=True,
     )[:2]
     caution_keys = [
         key
         for key in sorted(
-            ["selfRegulation", "engagement", "collaboration", "resilience", "reflection", "careerAgency"],
+            [key for key in profile_keys if isinstance(student["currentProfile"].get(key), (int, float))],
             key=lambda key: student["currentProfile"][key],
         )[:2]
         if student["currentProfile"][key] <= 2
@@ -3313,7 +3442,8 @@ def enrich_student_analysis(
         for milestone in milestones:
             summary = summarize_milestone(student, milestone, phase_dates, previous_average)
             milestone_summaries.append(summary)
-            previous_average = summary.get("profileAverage", previous_average)
+            if summary.get("participated", True) and summary.get("profileAverage") is not None:
+                previous_average = summary.get("profileAverage", previous_average)
         student["milestones"] = milestone_summaries
         student["evaluationSnapshots"] = [
             {
@@ -3326,7 +3456,14 @@ def enrich_student_analysis(
             }
             for item in milestone_summaries
         ]
-        latest_snapshot = student["evaluationSnapshots"][-1] if student["evaluationSnapshots"] else None
+        latest_snapshot = next(
+            (
+                snapshot
+                for snapshot, milestone in zip(reversed(student["evaluationSnapshots"]), reversed(milestone_summaries))
+                if milestone.get("participated", True)
+            ),
+            student["evaluationSnapshots"][-1] if student["evaluationSnapshots"] else None,
+        )
         if latest_snapshot:
             student["currentProfile"] = {
                 **latest_snapshot["scores"],
@@ -3342,9 +3479,15 @@ def enrich_student_analysis(
         0.75,
         percentile_value(
             [
-                round(item["milestones"][-1]["profileAverage"] - item["milestones"][0]["profileAverage"], 2)
+                round(participated[-1]["profileAverage"] - participated[0]["profileAverage"], 2)
                 for item in students
-                if item.get("milestones")
+                if (
+                    participated := [
+                        milestone
+                        for milestone in item.get("milestones", [])
+                        if milestone.get("participated", True) and milestone.get("profileAverage") is not None
+                    ]
+                )
             ],
             0.75,
         ),
@@ -3376,6 +3519,7 @@ def build_payload() -> dict[str, Any]:
     add_attendance_data(students_by_name, weeks)
     add_counseling_data(students_by_name, weeks)
     add_career_document_data(students_by_name, weeks)
+    infer_missing_dropout_dates(students, weeks)
     add_peer_feedback_mentions(students)
     build_evaluation_and_status(students, curriculum, weeks, phase_dates)
     phase_ranges, analysis = enrich_student_analysis(students, curriculum, phase_dates)

@@ -100,11 +100,18 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 1,
+        "collaboration": null,
         "resilience": 3,
         "reflection": 2,
         "careerAgency": 2
       },
+      "judgedKeys": [
+        "careerAgency",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "자기조절 지원 필요"
     }
@@ -325,6 +332,14 @@
         "reflection": 3,
         "careerAgency": 3
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "협업 상황 면담 권장"
     }
@@ -522,6 +537,14 @@
         "reflection": 4,
         "careerAgency": 3
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "전반적으로 안정적인 성장 흐름"
     }
@@ -1140,6 +1163,14 @@
         "reflection": 4,
         "careerAgency": 3
       },
+      "judgedKeys": [
+        "careerAgency",
+        "collaboration",
+        "engagement",
+        "reflection",
+        "resilience",
+        "selfRegulation"
+      ],
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
