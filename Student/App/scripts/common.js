@@ -404,12 +404,222 @@
     }
   }
 
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, Number(value) || 0));
+  }
+
+  function displayNumber(value, digits = 1) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) return "0";
+    return number.toLocaleString("ko-KR", { maximumFractionDigits: digits });
+  }
+
+  function displayPercent(value, digits = 1) {
+    return `${displayNumber(value, digits)}%`;
+  }
+
+  const OPERATIONAL_HEALTH_CASES = ["health_management_watch", "health_project_strain", "oversleep_condition_rhythm", "condition_management_sequence"];
+  const OPERATIONAL_CLASSIFICATION_COPY = {
+    growth: {
+      key: "growth",
+      group: "excellent",
+      groupLabel: "우수자",
+      label: "발전도",
+      tone: "brand",
+      basis: "체크인·회고 이후 성장 변화가 큰 학생",
+    },
+    diligence: {
+      key: "diligence",
+      group: "excellent",
+      groupLabel: "우수자",
+      label: "성실도",
+      tone: "success",
+      basis: "출결 위험이 낮고 제출·체크인 정시성이 높은 학생",
+    },
+    focus: {
+      key: "focus",
+      group: "excellent",
+      groupLabel: "우수자",
+      label: "집중도",
+      tone: "mint",
+      basis: "오늘의 한마디·회고에서 기획 관점의 구체성이 높은 학생",
+    },
+    health: {
+      key: "health",
+      group: "risk",
+      groupLabel: "위험군",
+      label: "건강",
+      tone: "warning",
+      basis: "병가·진료·컨디션·늦잠 리듬이 반복된 학생",
+    },
+    insincere: {
+      key: "insincere",
+      group: "risk",
+      groupLabel: "위험군",
+      label: "불성실",
+      tone: "danger",
+      basis: "출결 위험, 낮은 제출률, 반복 지각이 잡힌 학생",
+    },
+    character: {
+      key: "character",
+      group: "risk",
+      groupLabel: "위험군",
+      label: "인성",
+      tone: "violet",
+      basis: "학우 불만, 갈등, 소통 저해 언급이 확인된 학생",
+    },
+  };
+
+  const OPERATIONAL_CLASSIFICATION_ORDER = ["growth", "diligence", "focus", "health", "insincere", "character"];
+
+  function hasCaseType(student, caseTypes, severity = "") {
+    const typeSet = new Set(caseTypes);
+    return (student.learningFlowCases || []).some((item) => typeSet.has(item.caseType) && (!severity || item.severity === severity));
+  }
+
+  function expressionFocusScore(student) {
+    const dimensions = student.derived?.expressionProfile?.dimensions || {};
+    const values = ["specificity", "agency", "reflection", "career"]
+      .map((key) => Number(dimensions[key]?.score || 0))
+      .filter((value) => value > 0);
+    if (!values.length) return 0;
+    return (values.reduce((sum, value) => sum + value, 0) / values.length) * 25;
+  }
+
+  function diligenceScore(student) {
+    const projectRate = Number(student.stats?.projectSubmissionRate || 0);
+    const checkinRate = Number(student.derived?.collaborationReadiness?.checkinOnTimeRate || 0);
+    const penalty = Math.min(
+      100,
+      (student.stats?.attendanceRiskIssues || 0) * 20 + (student.stats?.lateCount || 0) * 3 + (student.stats?.absenceCount || 0) * 10
+    );
+    return clamp(projectRate * 0.45 + checkinRate * 0.35 + (100 - penalty) * 0.2, 0, 100);
+  }
+
+  function operationalClassificationMeta(key) {
+    return OPERATIONAL_CLASSIFICATION_COPY[key] || null;
+  }
+
+  function learningCaseSummaries(student, caseTypes, severity = "") {
+    const typeSet = new Set(caseTypes);
+    return (student.learningFlowCases || [])
+      .filter((item) => typeSet.has(item.caseType) && (!severity || item.severity === severity))
+      .slice(0, 3)
+      .map((item) => `${item.label}: ${item.summary}`);
+  }
+
+  function studentOperationalAssessment(student, key) {
+    const meta = operationalClassificationMeta(key);
+    if (!meta || !student) return null;
+    const derived = student.derived || {};
+    const stats = student.stats || {};
+    const readiness = derived.collaborationReadiness || {};
+    const sourceCounts = derived.expressionProfile?.sourceCounts || {};
+    const directTextCount = (sourceCounts.checkin || 0) + (sourceCounts.retro || 0) + (sourceCounts.careerDocument || 0);
+    const focusScore = expressionFocusScore(student);
+    const diligence = diligenceScore(student);
+    const projectRate = Number(stats.projectSubmissionRate || 0);
+    const attendanceRisk = Number(stats.attendanceRiskIssues || 0);
+    const lateCount = Number(stats.lateCount || 0);
+    const peerComplaintCount = Number(readiness.peerComplaintCount || 0);
+    const projectIssueCount = Number(readiness.projectIssueCount || 0);
+    const personalColor = Number(derived.careerReadiness?.personalColor || 0);
+    const reasons = [];
+    const metrics = [];
+    let qualified = false;
+    let score = 0;
+
+    if (key === "growth") {
+      qualified = derived.primaryTag === "growth_high";
+      score = Number(derived.growthRankScore || derived.growthIndex || 0);
+      metrics.push(`성장 지표 ${displayNumber(score)}`);
+      (derived.tagReasons?.growth_high?.reasons || []).slice(0, 2).forEach((reason) => reasons.push(reason));
+      if (!reasons.length) reasons.push("체크인·회고 이후 성장 변화가 커 우수 발전도로 분류됩니다.");
+    } else if (key === "diligence") {
+      qualified = diligence >= 95 && attendanceRisk === 0;
+      score = diligence;
+      metrics.push(`성실도 점수 ${displayNumber(diligence)}점`, `제출률 ${displayPercent(projectRate)}`, `체크인 정시율 ${displayPercent(readiness.checkinOnTimeRate || 0)}`);
+      reasons.push(`위험 출결 ${attendanceRisk}건, 지각 ${lateCount}건으로 출결 리스크가 낮습니다.`);
+      reasons.push(`프로젝트 제출률 ${displayPercent(projectRate)}와 체크인 정시율 ${displayPercent(readiness.checkinOnTimeRate || 0)}을 함께 반영했습니다.`);
+    } else if (key === "focus") {
+      qualified = focusScore >= 95 && personalColor >= 2.8 && directTextCount >= 3;
+      score = focusScore;
+      metrics.push(`표현 집중도 ${displayNumber(focusScore)}점`, `진로 자기색깔 ${displayNumber(personalColor)}`, `직접 작성 근거 ${directTextCount}건`);
+      reasons.push("체크인·회고·진로 문서에서 구체성, 주도성, 성찰, 진로 연결성이 높게 관찰됩니다.");
+      reasons.push(`작업물 자체보다 오늘의 한마디·프로젝트 회고·진로 문서의 직접 표현 ${directTextCount}건을 중심으로 봤습니다.`);
+    } else if (key === "health") {
+      qualified = hasCaseType(student, OPERATIONAL_HEALTH_CASES, "warning");
+      score = Number(stats.healthAttendanceIssues || 0) + Number(stats.conditionAttendanceIssues || 0);
+      metrics.push(`건강/컨디션 출결 ${score}건`, `위험 출결 ${attendanceRisk}건`);
+      reasons.push(...learningCaseSummaries(student, OPERATIONAL_HEALTH_CASES, "warning"));
+      if (!reasons.length) reasons.push("건강, 컨디션, 늦잠 리듬 관련 경고 케이스가 확인되어 건강 위험군으로 분류됩니다.");
+    } else if (key === "insincere") {
+      qualified = projectRate < 80 || attendanceRisk > 0 || lateCount >= 3;
+      score = 100 - projectRate + lateCount * 3 + attendanceRisk * 12;
+      metrics.push(`제출률 ${displayPercent(projectRate)}`, `위험 출결 ${attendanceRisk}건`, `지각 ${lateCount}건`);
+      if (projectRate < 80) reasons.push(`프로젝트 제출률이 ${displayPercent(projectRate)}로 80% 기준보다 낮습니다.`);
+      if (attendanceRisk > 0) reasons.push(`무단·무연락 등 위험 출결이 ${attendanceRisk}건 확인됩니다.`);
+      if (lateCount >= 3) reasons.push(`지각이 ${lateCount}건으로 반복 신호가 있습니다.`);
+    } else if (key === "character") {
+      qualified = peerComplaintCount >= 2 || projectIssueCount >= 8 || hasCaseType(student, ["collaboration_conflict_signal"], "warning");
+      score = projectIssueCount + peerComplaintCount * 3;
+      metrics.push(`학우 불만 ${peerComplaintCount}건`, `프로젝트 이슈 ${projectIssueCount}건`);
+      reasons.push(...learningCaseSummaries(student, ["collaboration_conflict_signal"], "warning"));
+      if (peerComplaintCount >= 2) reasons.push(`다른 학우 관련 불만·불화 신호가 ${peerComplaintCount}건 확인됩니다.`);
+      if (projectIssueCount >= 8) reasons.push(`프로젝트 소통·진행 이슈가 ${projectIssueCount}건으로 높습니다.`);
+      if (!reasons.length) reasons.push("협업 갈등 또는 불만 언행이 누적되어 인성 위험군으로 분류됩니다.");
+    }
+
+    return {
+      ...meta,
+      qualified,
+      score,
+      metrics,
+      reasons: reasons.filter(Boolean),
+    };
+  }
+
+  function studentOperationalAssessments(student, options = {}) {
+    const onlyQualified = options.onlyQualified !== false;
+    const rows = OPERATIONAL_CLASSIFICATION_ORDER.map((key) => studentOperationalAssessment(student, key)).filter(Boolean);
+    return onlyQualified ? rows.filter((row) => row.qualified) : rows;
+  }
+
+  function studentOperationalAssessmentByKey(student, key) {
+    return studentOperationalAssessment(student, key);
+  }
+
+  function operationalClassificationRankValue(row, student) {
+    const assessment = studentOperationalAssessment(student, row.key);
+    return assessment?.score || 0;
+  }
+
+  function operationalClassification(students) {
+    const rows = OPERATIONAL_CLASSIFICATION_ORDER.map((key) => {
+      const meta = operationalClassificationMeta(key);
+      const matchedStudents = students.filter((student) => studentOperationalAssessment(student, key)?.qualified);
+      return {
+        ...meta,
+        count: matchedStudents.length,
+        students: matchedStudents,
+      };
+    });
+    return {
+      excellent: rows.filter((row) => row.group === "excellent"),
+      risk: rows.filter((row) => row.group === "risk"),
+      rows,
+    };
+  }
+
   function getQueryParam(name) {
     return new URLSearchParams(window.location.search).get(name) || "";
   }
 
-  function studentPageHref(studentId) {
-    return `./student.html?id=${encodeURIComponent(studentId)}`;
+  function studentPageHref(studentId, options = {}) {
+    const params = new URLSearchParams({ id: studentId });
+    if (options.focus) params.set("focus", options.focus);
+    if (options.tab) params.set("tab", options.tab);
+    return `./student.html?${params.toString()}`;
   }
 
   function lobbyPageHref() {
@@ -974,6 +1184,13 @@
     getQueryParam,
     studentPageHref,
     lobbyPageHref,
+    operationalClassificationMeta,
+    operationalClassification,
+    operationalClassificationRankValue,
+    studentOperationalAssessments,
+    studentOperationalAssessmentByKey,
+    expressionFocusScore,
+    diligenceScore,
     tagBadge,
     domainPills,
     metricCard,

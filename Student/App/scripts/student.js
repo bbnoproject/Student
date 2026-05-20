@@ -11,9 +11,10 @@
     theme: App.getSavedTheme(),
     query: "",
     studentId: App.getQueryParam("id") || fallbackStudentId,
-    studentTab: "dashboard",
+    studentTab: App.getQueryParam("tab") || "dashboard",
     detailMilestoneId: "all",
     activeCriterion: "",
+    focusClassification: App.getQueryParam("focus") || "",
   };
 
   function currentStudent() {
@@ -89,6 +90,8 @@
       </section>
 
       ${App.renderExpressionProfile(student)}
+
+      ${renderOperationalAssessmentPanel(student)}
 
       <section class="panel section-panel">
         <div class="panel-head">
@@ -185,6 +188,59 @@
           </div>
           ${App.renderClassificationReasons(student)}
         </section>
+      </section>
+    `;
+  }
+
+  function renderOperationalAssessmentPanel(student) {
+    const focusAssessment = state.focusClassification ? App.studentOperationalAssessmentByKey(student, state.focusClassification) : null;
+    const qualifiedAssessments = App.studentOperationalAssessments(student);
+    const rows = focusAssessment
+      ? [focusAssessment, ...qualifiedAssessments.filter((item) => item.key !== focusAssessment.key)]
+      : qualifiedAssessments;
+    const visibleRows = rows.filter(Boolean);
+    const focusLabel = focusAssessment ? `${focusAssessment.groupLabel} · ${focusAssessment.label}` : "운영 포커스";
+    return `
+      <section class="panel section-panel operational-assessment-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Operational Focus</span>
+            <h3>우수자/위험군 평가 근거</h3>
+          </div>
+          <p class="panel-copy">${
+            focusAssessment
+              ? App.escapeHtml(`${focusLabel} 분류로 학생관리에서 열었습니다. 아래 기준과 근거를 먼저 확인하세요.`)
+              : "현재 학생이 우수자/위험군 기준에 해당하는 경우 그 이유를 표시합니다."
+          }</p>
+        </div>
+        <div class="operational-assessment-list">
+          ${
+            visibleRows.length
+              ? visibleRows
+                  .map(
+                    (assessment) => `
+                      <article class="operational-assessment-row ${App.toneClass(assessment.tone)} ${assessment.key === state.focusClassification ? "is-focus" : ""} ${assessment.qualified ? "is-qualified" : "is-missing"}">
+                        <div class="operational-assessment-head">
+                          <div>
+                            <span>${App.escapeHtml(assessment.groupLabel)}</span>
+                            <strong>${App.escapeHtml(assessment.label)}</strong>
+                          </div>
+                          <em>${assessment.qualified ? "해당" : "미해당"}</em>
+                        </div>
+                        <p>${App.escapeHtml(assessment.basis)}</p>
+                        <div class="assessment-metric-list">
+                          ${(assessment.metrics || []).map((metric) => `<span>${App.escapeHtml(metric)}</span>`).join("")}
+                        </div>
+                        <div class="assessment-reason-list">
+                          ${(assessment.reasons || ["세부 근거가 아직 충분하지 않습니다."]).map((reason) => `<p>${App.escapeHtml(reason)}</p>`).join("")}
+                        </div>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">현재 우수자/위험군 운영 포커스에 해당하는 분류가 없습니다.</div>`
+          }
+        </div>
       </section>
     `;
   }

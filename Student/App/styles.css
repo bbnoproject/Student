@@ -900,6 +900,87 @@ body[data-theme="dark"] .detail-milestone-card {
   font-size: 13px;
 }
 
+.operational-assessment-list {
+  display: grid;
+  gap: 12px;
+}
+
+.operational-assessment-row {
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, currentColor 30%, var(--border));
+  border-radius: 14px;
+  background: var(--surface);
+  color: currentColor;
+}
+
+.operational-assessment-row.is-focus {
+  box-shadow: 0 14px 34px rgb(31 41 55 / 0.12);
+}
+
+.operational-assessment-row.is-missing {
+  opacity: 0.72;
+}
+
+.operational-assessment-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.operational-assessment-head div {
+  display: grid;
+  gap: 2px;
+}
+
+.operational-assessment-head span,
+.operational-assessment-head em {
+  color: currentColor;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.operational-assessment-head strong {
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.operational-assessment-row > p {
+  margin: 0 0 10px;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.assessment-metric-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.assessment-metric-list span {
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.assessment-reason-list {
+  display: grid;
+  gap: 6px;
+}
+
+.assessment-reason-list p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .learning-case-list {
   display: grid;
   gap: 12px;

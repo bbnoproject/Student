@@ -164,6 +164,8 @@
     activeTag: "all",
     activeCase: "all",
     statusFilter: "all",
+    regionFilter: "all",
+    classificationFilter: "all",
     sortKey: "name",
     sortDirection: "asc",
     feedbackStudentId: "",
@@ -178,6 +180,7 @@
   };
 
   const today = new Date();
+  let overviewCharts = [];
 
   function routeFromHash() {
     const raw = window.location.hash.replace("#", "").trim();
@@ -319,6 +322,14 @@
       .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "ko-KR"));
   }
 
+  function orderedCountRows(counts, order) {
+    const rows = order.map((label) => ({ label, count: counts[label] || 0 }));
+    Object.entries(counts).forEach(([label, count]) => {
+      if (!order.includes(label)) rows.push({ label, count });
+    });
+    return rows;
+  }
+
   function studentSortValue(student, key) {
     const derived = student.derived || {};
     const stats = student.stats || {};
@@ -352,6 +363,14 @@
 
     if (state.activeCase !== "all") {
       students = students.filter((student) => matchesCaseFilter(student, state.activeCase));
+    }
+
+    if (state.regionFilter !== "all") {
+      students = students.filter((student) => matchesRegionFilter(student));
+    }
+
+    if (state.classificationFilter !== "all") {
+      students = students.filter((student) => matchesClassificationFilter(student));
     }
 
     if (query) {
@@ -434,18 +453,64 @@
   function educationGroup(student) {
     const education = String(student.education || "");
     if (!education.trim()) return "미상";
+    if (/고등학교|고등|공업고|상업고|디자인고|게임과학고/.test(education)) return "고등학교";
     if (/대학원|석사|박사/.test(education)) return "대학원";
-    if (/전문대/.test(education)) return "전문대";
-    if (/대학교|대학|학과|전공/.test(education)) return "대학교";
-    if (/고등|검정/.test(education)) return "고졸/검정";
-    return "기타";
+    if (/재학|휴학|자퇴|중퇴/.test(education)) return "대학재학";
+    return "대학졸업";
+  }
+
+  function regionDetailGroup(student) {
+    const address = String(student.address || "");
+    if (!address.trim()) return { group: "수도권", detail: "주소 확인 필요" };
+    if (/서울|용마산로|강남|강동|금천/.test(address)) return { group: "수도권", detail: "서울" };
+    if (/인천|부평|만수/.test(address)) return { group: "수도권", detail: "인천" };
+    if (/경기도|경기|성남|용인|수원|고양|시흥|군포|양주|안양|오산/.test(address)) return { group: "수도권", detail: "경기" };
+    if (/강원/.test(address)) return { group: "강원도", detail: "강원도" };
+    if (/세종|조치원/.test(address)) return { group: "충청도", detail: "세종" };
+    if (/충청북도|충북|청주/.test(address)) return { group: "충청도", detail: "충청북도" };
+    if (/충청남도|충남|천안|아산|공주/.test(address)) return { group: "충청도", detail: "충청남도" };
+    if (/대전/.test(address)) return { group: "충청도", detail: "대전" };
+    if (/전라북도|전북|전주|군산/.test(address)) return { group: "전라도", detail: "전라북도" };
+    if (/전라남도|전남|순천/.test(address)) return { group: "전라도", detail: "전라남도" };
+    if (/광주광역시/.test(address)) return { group: "전라도", detail: "광주" };
+    if (/대구/.test(address)) return { group: "경상도", detail: "대구" };
+    if (/부산|낙동대로/.test(address)) return { group: "경상도", detail: "부산" };
+    if (/울산/.test(address)) return { group: "경상도", detail: "울산" };
+    if (/경상북도|경북|구미/.test(address)) return { group: "경상도", detail: "경상북도" };
+    if (/경상남도|경남/.test(address)) return { group: "경상도", detail: "경상남도" };
+    if (/제주/.test(address)) return { group: "제주도", detail: "제주도" };
+    return { group: "수도권", detail: "주소 확인 필요" };
   }
 
   function regionGroup(student) {
-    const address = String(student.address || "");
-    if (!address.trim()) return "미상";
-    if (/서울|경기|인천/.test(address)) return "수도권";
-    return "비수도권";
+    return regionDetailGroup(student).group;
+  }
+
+  function matchesRegionFilter(student, region = state.regionFilter) {
+    return region === "all" || regionGroup(student) === region;
+  }
+
+  function regionFilterLabel(region) {
+    return region === "all" ? "전체" : region;
+  }
+
+  function matchesClassificationFilter(student, key = state.classificationFilter) {
+    return key === "all" || Boolean(App.studentOperationalAssessmentByKey(student, key)?.qualified);
+  }
+
+  function classificationFilterMeta(key) {
+    return key === "all"
+      ? { label: "전체", tone: "neutral", groupLabel: "운영포커스" }
+      : App.operationalClassificationMeta(key) || { label: key, tone: "neutral", groupLabel: "운영포커스" };
+  }
+
+  function regionDetailCounts(students) {
+    return students.reduce((acc, student) => {
+      const { group, detail } = regionDetailGroup(student);
+      if (!acc[group]) acc[group] = {};
+      acc[group][detail] = (acc[group][detail] || 0) + 1;
+      return acc;
+    }, {});
   }
 
   function toneColor(tone) {
@@ -499,11 +564,6 @@
         <div class="course-progress-meta">
           <span>${escape(App.formatDate(App.rawData.curriculum?.startDate))}</span>
           <span>${escape(App.formatDate(App.rawData.curriculum?.endDate))}</span>
-        </div>
-        <div class="course-progress-facts">
-          <span>${progress.currentWeek}/${progress.totalWeeks}주차</span>
-          <span>${progress.completedSessions}/${progress.totalSessions} 세션 진행</span>
-          <span>${progress.elapsedDays}/${progress.totalDays}일</span>
         </div>
       </article>
     `;
@@ -616,8 +676,12 @@
   function renderDemographics(students) {
     const ageRows = sortedCountRows(countBy(students, ageGroup));
     const genderRows = sortedCountRows(countBy(students, (student) => student.gender || "미상"));
-    const educationRows = sortedCountRows(countBy(students, educationGroup));
-    const regionRows = sortedCountRows(countBy(students, regionGroup));
+    const educationRows = orderedCountRows(countBy(students, educationGroup), ["대학원", "대학졸업", "대학재학", "고등학교"]);
+    const regionRows = orderedCountRows(countBy(students, regionGroup), ["수도권", "강원도", "충청도", "전라도", "경상도", "제주도"]);
+    const mainAge = ageRows[0] || { label: "미상", count: 0 };
+    const mainEducation = educationRows[0] || { label: "미상", count: 0 };
+    const mainRegion = regionRows[0] || { label: "미상", count: 0 };
+    const careerReadyCount = students.filter((student) => (student.stats?.careerDocumentRounds || 0) > 0).length;
     return `
       <section class="panel demographics-panel">
         <div class="panel-head">
@@ -625,12 +689,30 @@
             <span class="panel-kicker">Cohort Snapshot</span>
             <h2>이번 기수 기본 통계</h2>
           </div>
+          <p class="panel-copy">나이, 성별, 학력, 지역은 판단 점수가 아니라 운영 안내와 커뮤니케이션 톤을 정하기 위한 기본 맥락입니다.</p>
         </div>
-        <div class="demographic-grid">
-          ${renderBreakdownCard("나이", ageRows, students.length)}
-          ${renderBreakdownCard("성별", genderRows, students.length)}
-          ${renderBreakdownCard("학력", educationRows, students.length)}
-          ${renderBreakdownCard("지역", regionRows, students.length)}
+        <div class="demographic-chart-grid">
+          <article class="demographic-chart-card">
+            <h3>나이대</h3>
+            <div class="chart-shell"><canvas id="overview-age-chart" aria-label="나이대 분포 차트"></canvas></div>
+          </article>
+          <article class="demographic-chart-card">
+            <h3>성별</h3>
+            <div class="chart-shell"><canvas id="overview-gender-chart" aria-label="성별 분포 차트"></canvas></div>
+          </article>
+          <article class="demographic-chart-card wide">
+            <h3>학력</h3>
+            <div class="chart-shell"><canvas id="overview-education-chart" aria-label="학력 분포 차트"></canvas></div>
+          </article>
+          <article class="demographic-chart-card">
+            <h3>지역</h3>
+            <div class="chart-shell"><canvas id="overview-region-chart" aria-label="지역 분포 차트"></canvas></div>
+          </article>
+        </div>
+        <div class="cohort-insight-list">
+          <p><strong>${escape(mainAge.label)}</strong> 비중이 가장 크고, <strong>${escape(mainEducation.label)}</strong> 배경 학생이 가장 많습니다.</p>
+          <p><strong>${escape(mainRegion.label)}</strong> 거주 학생이 ${mainRegion.count}명으로 운영 공지와 오프라인 일정 안내의 기본 기준이 됩니다.</p>
+          <p>진로 문서 라운드가 확인된 학생은 ${careerReadyCount}명으로, 피드백 메뉴와 학생 상세의 자기표현 자료를 함께 보는 흐름이 유효합니다.</p>
         </div>
       </section>
     `;
@@ -638,6 +720,7 @@
 
   function renderCaseLibraryOverview() {
     const rows = App.rawData.dashboard?.learningCaseLibrary || [];
+    const visibleRows = rows.slice(0, 8);
     return `
       <section class="panel learning-case-panel">
         <div class="panel-head">
@@ -645,21 +728,25 @@
             <span class="panel-kicker">Observed Cases</span>
             <h2>현재까지 파악된 학생 특징</h2>
           </div>
+          <p class="panel-copy">카드 대신 케이스 유형, 규모, 예시 학생을 한 줄로 스캔할 수 있게 정리했습니다.</p>
         </div>
-        <div class="learning-case-summary-grid">
-          ${rows
-            .slice(0, 7)
+        <div class="feature-list">
+          ${visibleRows
             .map(
               (row) => `
-                <article class="learning-case-summary ${App.toneClass(row.severityCounts?.warning ? "warning" : "neutral")}">
-                  <strong>${escape(row.label)}</strong>
-                  <span>${row.count}명</span>
-                  <p>${escape(row.description)}</p>
-                  <small>${escape((row.examples || []).slice(0, 3).map((item) => item.studentName).join(", "))}</small>
+                <article class="feature-row ${App.toneClass(row.severityCounts?.warning ? "warning" : row.severityCounts?.success ? "success" : "neutral")}">
+                  <div class="feature-main">
+                    <strong>${escape(row.label)}</strong>
+                    <p>${escape(row.description)}</p>
+                  </div>
+                  <div class="feature-meta">
+                    <span>${row.count}명</span>
+                    <small>${escape((row.examples || []).slice(0, 4).map((item) => item.studentName).join(", ") || "예시 없음")}</small>
+                  </div>
                 </article>
               `
             )
-            .join("") || `<article class="learning-case-summary"><p>아직 수집된 복합 케이스가 없습니다.</p></article>`}
+            .join("") || `<p class="empty-state">아직 수집된 복합 케이스가 없습니다.</p>`}
         </div>
       </section>
     `;
@@ -702,6 +789,158 @@
     return [...students].sort((a, b) => (Number(mapper(b)) || 0) - (Number(mapper(a)) || 0) || a.name.localeCompare(b.name, "ko-KR"));
   }
 
+  function hasCaseType(student, caseTypes, severity = "") {
+    const typeSet = new Set(caseTypes);
+    return (student.learningFlowCases || []).some((item) => typeSet.has(item.caseType) && (!severity || item.severity === severity));
+  }
+
+  function expressionFocusScore(student) {
+    const dimensions = student.derived?.expressionProfile?.dimensions || {};
+    const values = ["specificity", "agency", "reflection", "career"]
+      .map((key) => Number(dimensions[key]?.score || 0))
+      .filter((value) => value > 0);
+    if (!values.length) return 0;
+    return (values.reduce((sum, value) => sum + value, 0) / values.length) * 25;
+  }
+
+  function diligenceScore(student) {
+    const projectRate = Number(student.stats?.projectSubmissionRate || 0);
+    const checkinRate = Number(student.derived?.collaborationReadiness?.checkinOnTimeRate || 0);
+    const penalty = Math.min(
+      100,
+      (student.stats?.attendanceRiskIssues || 0) * 20 + (student.stats?.lateCount || 0) * 3 + (student.stats?.absenceCount || 0) * 10
+    );
+    return clamp(projectRate * 0.45 + checkinRate * 0.35 + (100 - penalty) * 0.2, 0, 100);
+  }
+
+  function currentCourseInfo() {
+    const sessions = App.rawData.curriculum?.sessions || [];
+    const todayKey = today.toISOString().slice(0, 10);
+    const currentSession =
+      sessions.find((session) => session.date === todayKey && session.subject && session.lessonTitle) ||
+      sessions
+        .filter((session) => session.date <= todayKey && session.subject && session.lessonTitle)
+        .at(-1) ||
+      sessions.find((session) => session.subject && session.lessonTitle) ||
+      {};
+    const week = (App.rawData.curriculum?.weeks || []).find((item) => dateInRange(todayKey, item.startDate, item.endDate));
+    return {
+      subject: currentSession.subject || "진행 교과 확인 필요",
+      lessonTitle: currentSession.lessonTitle || "세부 수업 확인 필요",
+      date: currentSession.date || todayKey,
+      weekLabel: week?.label || "",
+      weekRange: week ? App.formatRange(week.startDate, week.endDate) : "",
+    };
+  }
+
+  function operationalClassification(students) {
+    return App.operationalClassification(students);
+  }
+
+  function issueDateInWindow(startDate, endDate, since) {
+    const start = parseDate(startDate);
+    const end = parseDate(endDate || startDate);
+    if (!start && !end) return false;
+    const windowStart = parseDate(since);
+    if (!windowStart) return false;
+    return (end || start) >= windowStart && (start || end) <= today;
+  }
+
+  function recentIssueRows(students, limit = 6) {
+    const since = new Date(today);
+    since.setDate(since.getDate() - 30);
+    const sinceKey = since.toISOString().slice(0, 10);
+    return students
+      .map((student) => {
+        const recentAttendance = (student.attendanceEvents || []).filter((event) => event.date >= sinceKey && event.date <= today.toISOString().slice(0, 10));
+        const behavioral = recentAttendance.filter((event) => event.impact === "behavioral_risk" || event.severity === "warning");
+        const healthAttendance = recentAttendance.filter(
+          (event) => ["health", "condition"].includes(event.category) && event.kind !== "외출"
+        );
+        const oversleepAttendance = recentAttendance.filter((event) => /늦잠/.test(`${event.detail || ""} ${event.reason || ""}`));
+        const checkins = (student.checkins || []).filter((item) => {
+          const text = `${item.workText || ""} ${item.noteText || ""}`;
+          return item.date >= sinceKey && (!item.onTime || /아프|병|컨디션|힘들|불만|갈등|지연|문제/.test(text));
+        });
+        const recentConflict = (student.learningFlowCases || []).filter(
+          (item) => item.caseType === "collaboration_conflict_signal" && item.severity === "warning" && issueDateInWindow(item.startDate, item.endDate, sinceKey)
+        );
+        const projectRate = Number(student.stats?.projectSubmissionRate || 0);
+        const reasons = [];
+        let score = 0;
+        if (behavioral.length) {
+          score += behavioral.length * 5;
+          reasons.push(`위험 출결 ${behavioral.length}건`);
+        }
+        if (healthAttendance.length >= 3) {
+          score += (healthAttendance.length - 2) * 3;
+          reasons.push(`건강형 출결 ${healthAttendance.length}건`);
+        }
+        if (oversleepAttendance.length >= 2) {
+          score += (oversleepAttendance.length - 1) * 4;
+          reasons.push(`늦잠 출결 ${oversleepAttendance.length}건`);
+        }
+        if (checkins.length >= 3 && projectRate < 80) {
+          score += 6;
+          reasons.push(`체크인 지연 ${checkins.length}건 · 제출률 ${formatPercent(projectRate, 1)}`);
+        }
+        if (recentConflict.length) {
+          score += recentConflict.length * 5;
+          reasons.push("최근 협업 갈등 경고");
+        }
+        const evidence = [
+          ...behavioral.slice(0, 2),
+          ...healthAttendance.slice(0, 2),
+          ...oversleepAttendance.slice(0, 2),
+        ].map((event) => `${App.formatDate(event.date)} ${event.detail || event.kind}`);
+        return { student, score, reasons: [...reasons, ...evidence], checkins };
+      })
+      .filter((item) => item.score >= 4)
+      .sort((a, b) => b.score - a.score || a.student.name.localeCompare(b.student.name, "ko-KR"))
+      .slice(0, limit);
+  }
+
+  function uniqueStudentCount(rows) {
+    return new Set(rows.flatMap((row) => row.students.map((student) => student.id))).size;
+  }
+
+  function classificationRankValue(row, student) {
+    return App.operationalClassificationRankValue(row, student);
+  }
+
+  function renderClassificationGroup(title, rows, tone, chartId) {
+    const total = uniqueStudentCount(rows);
+    return `
+      <article class="classification-group-card ${App.toneClass(tone)}">
+        <div class="classification-group-head">
+          <div>
+            <span>${escape(title)}</span>
+            <h3>${total}명</h3>
+          </div>
+          <strong>중복 제외</strong>
+        </div>
+        <div class="chart-shell compact-chart">
+          <canvas id="${escape(chartId)}" aria-label="${escape(title)} 세부 분류 차트"></canvas>
+          <p class="chart-fallback">Chart.js를 불러오면 ${escape(title)} 차트가 표시됩니다.</p>
+        </div>
+        <div class="classification-row-list">
+          ${rows
+            .map(
+              (row) => `
+                <button type="button" class="classification-row ${App.toneClass(row.tone)}" data-operational-filter="${escape(row.key)}" title="${escape(`${row.groupLabel} · ${row.label} 학생관리로 보기`)}">
+                  <strong>${escape(row.label)}</strong>
+                  <span>${row.count}명</span>
+                  <p>${escape(row.basis)}</p>
+                  <small>${escape(topNames(rankedStudents(row.students, (student) => classificationRankValue(row, student)), 3))}</small>
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+      </article>
+    `;
+  }
+
   function renderActionCard(item) {
     const attrs = item.attrs || "";
     const tagName = item.href ? "a" : "button";
@@ -723,76 +962,9 @@
     const currentId = currentMilestoneId(milestones);
     const currentIndex = Math.max(0, milestones.findIndex((milestone) => milestone.id === currentId));
     const currentMilestone = milestones[currentIndex];
-    const supportStudents = rankedStudents(
-      students.filter((student) => student.derived?.primaryTag === "support_priority"),
-      (student) => student.derived?.supportRankScore || student.derived?.supportIndex
-    );
-    const healthStudents = studentsWithCase(students, [
-      "health_management_watch",
-      "health_project_strain",
-      "condition_management_sequence",
-      "daily_checkin_pattern",
-    ]);
-    const collaborationStudents = rankedStudents(
-      students.filter((student) => student.derived?.primaryTag === "collaboration_strength"),
-      (student) => student.derived?.collaborationRankScore || student.derived?.collaborationReadiness?.collaborationReadinessScore
-    );
-    const careerStudents = rankedStudents(
-      students.filter((student) => student.derived?.primaryTag === "career_progress" || (student.stats?.careerDocumentRounds || 0) > 0),
-      (student) => student.derived?.careerRankScore || student.derived?.careerReadiness?.careerReadinessScore
-    );
-    const items = [
-      {
-        kicker: "Focus",
-        metric: `${supportStudents.length}명`,
-        title: "집중지원 우선 확인",
-        copy: "지원 우선도가 높은 학생을 먼저 열어 분류 사유와 최근 흐름을 확인합니다.",
-        names: topNames(supportStudents),
-        action: "지원순으로 보기",
-        tone: "danger",
-        attrs: `data-student-filter-action data-filter-status="general" data-filter-tag="support_priority" data-filter-sort="support" data-filter-direction="desc"`,
-      },
-      {
-        kicker: "Health & Rhythm",
-        metric: `${healthStudents.length}명`,
-        title: "컨디션/리듬 신호",
-        copy: "병가, 체크인 지연, 다음 날 지각/병가처럼 시간 흐름이 이어지는 케이스를 봅니다.",
-        names: topNames(healthStudents),
-        action: "케이스로 보기",
-        tone: "warning",
-        attrs: `data-student-filter-action data-filter-status="general" data-filter-tag="all" data-filter-case="health_rhythm" data-filter-sort="attendanceRisk" data-filter-direction="desc"`,
-      },
-      {
-        kicker: "Collaboration",
-        metric: `${collaborationStudents.length}명`,
-        title: "협업 강점 검토",
-        copy: "데일리체크인, 회고, 역할 수행에서 협업 신호가 좋은 학생을 확인합니다.",
-        names: topNames(collaborationStudents),
-        action: "협업순으로 보기",
-        tone: "mint",
-        attrs: `data-student-filter-action data-filter-status="general" data-filter-tag="collaboration_strength" data-filter-sort="collaboration" data-filter-direction="desc"`,
-      },
-      {
-        kicker: "Career",
-        metric: `${careerStudents.length}명`,
-        title: "진로 피드백 준비",
-        copy: "목적, 자기 강점, 자기 색깔이 드러나는 학생 데이터를 문서 피드백으로 연결합니다.",
-        names: topNames(careerStudents),
-        action: "피드백으로 이동",
-        tone: "violet",
-        href: "#feedback",
-      },
-      {
-        kicker: "Report",
-        metric: currentMilestone ? `M${currentIndex + 1}` : "-",
-        title: "현재 구간 보고서",
-        copy: currentMilestone ? `${App.shortMilestoneLabel(currentMilestone.label)} 구간의 주요 특이사항과 확인 학생을 봅니다.` : "현재 구간 정보를 찾을 수 없습니다.",
-        names: currentMilestone ? App.formatRange(currentMilestone.startDate, currentMilestone.endDate) : "구간 없음",
-        action: "마일스톤 열기",
-        tone: "brand",
-        attrs: `data-process-view="${escape(currentId || "overview")}"`,
-      },
-    ];
+    const course = currentCourseInfo();
+    const classification = operationalClassification(students);
+    const issueRows = recentIssueRows(students);
     return `
       <section class="panel overview-action-panel">
         <div class="panel-head">
@@ -800,10 +972,47 @@
             <span class="panel-kicker">Next Actions</span>
             <h2>지금 볼 운영 포커스</h2>
           </div>
-          <p class="panel-copy">개요에서 바로 학생관리, 학습과정, 피드백으로 이어지는 실무 동선을 모았습니다.</p>
+          <p class="panel-copy">현재 구간과 오늘 교과를 기준으로, 우수 신호와 위험 신호를 학생 단위로 나눠 봅니다.</p>
         </div>
-        <div class="overview-action-grid">
-          ${items.map(renderActionCard).join("")}
+        <div class="operation-current-grid">
+          <button type="button" class="operation-stage-card ${App.toneClass("brand")}" data-process-view="${escape(currentId || "overview")}">
+            <span>현재 단계</span>
+            <strong>${currentMilestone ? `M${currentIndex + 1}` : "-"}</strong>
+            <h3>${escape(currentMilestone ? App.shortMilestoneLabel(currentMilestone.label) : "구간 없음")}</h3>
+            <p>${escape(currentMilestone ? App.formatRange(currentMilestone.startDate, currentMilestone.endDate) : "현재 구간 정보를 확인할 수 없습니다.")}</p>
+          </button>
+          <article class="operation-stage-card ${App.toneClass("mint")}">
+            <span>진행 교과</span>
+            <strong>${escape(course.weekLabel || "Today")}</strong>
+            <h3>${escape(course.subject)}</h3>
+            <p>${escape(`${App.formatDate(course.date)} · ${course.lessonTitle}${course.weekRange ? ` · ${course.weekRange}` : ""}`)}</p>
+          </article>
+        </div>
+        <div class="classification-group-grid">
+          ${renderClassificationGroup("우수자", classification.excellent, "success", "overview-excellent-chart")}
+          ${renderClassificationGroup("위험군", classification.risk, "danger", "overview-risk-chart")}
+        </div>
+        <div class="recent-issue-block">
+          <div class="recent-issue-head">
+            <div>
+              <span>Recent 30 Days</span>
+              <h3>근 1개월 긴급 이슈 요약</h3>
+            </div>
+            <p>단발 병원/개인 일정은 제외하고, 반복 건강 결석·조퇴, 늦잠 반복, 위험 출결, 낮은 제출률과 체크인 지연이 겹친 경우만 표시합니다.</p>
+          </div>
+          <div class="recent-issue-list">
+            ${issueRows
+              .map(
+                (row) => `
+                  <a class="recent-issue-row" href="${escape(App.studentPageHref(row.student.id))}">
+                    <strong>${escape(row.student.name)}</strong>
+                    <span>${escape(row.reasons.slice(0, 3).join(" · ") || "최근 확인 필요")}</span>
+                    <em>${row.score}점</em>
+                  </a>
+                `
+              )
+              .join("") || `<p class="empty-state">최근 1개월 기준 긴급 이슈가 크게 잡히지 않았습니다.</p>`}
+          </div>
         </div>
       </section>
     `;
@@ -840,9 +1049,6 @@
   function renderOverviewPage() {
     const courseStudents = activeCourseStudents();
     const counts = statusCounts();
-    const avgProfile = average(courseStudents, (student) => student.derived?.profileIndex);
-    const avgGrowth = average(courseStudents, (student) => student.derived?.growthIndex);
-    const avgProject = average(courseStudents, (student) => student.stats?.projectSubmissionRate);
     return `
       <section class="overview-hero">
         ${renderCourseProgressCard()}
@@ -850,13 +1056,9 @@
           ${renderMetric("전체", `${counts.all}명`, "등록된 전체 학생", "neutral")}
           ${renderMetric("일반", `${counts.general}명`, "과정 진행 중", "success")}
           ${renderMetric("과정이탈", `${counts.dropout}명`, "분포에는 포함, 일반에서는 제외", "neutral")}
-          ${renderMetric("평균 종합", formatNumber(avgProfile, 1), "진행 학생 기준", "brand")}
-          ${renderMetric("제출률", formatPercent(avgProject, 1), `평균 성장 ${formatNumber(avgGrowth, 1)}`, "mint")}
         </div>
       </section>
       ${renderOverviewActionBoard(courseStudents)}
-      ${renderPurposeBoard(courseStudents)}
-      ${renderDistributionDiagram(courseStudents)}
       ${renderDemographics(courseStudents)}
       ${renderCaseLibraryOverview()}
     `;
@@ -1282,6 +1484,170 @@
     }));
   }
 
+  function observedProcessRows(milestones = App.rawData.milestones || []) {
+    return processRows(milestones).filter((row) => {
+      const start = parseDate(row.milestone.startDate);
+      return start && start <= today;
+    });
+  }
+
+  function milestoneObservedAttendanceStats(milestone) {
+    const students = milestoneStudents(milestone).map((item) => item.student);
+    return attendanceStatsForDates(students, observedWeekdayDates(milestone.startDate, milestone.endDate));
+  }
+
+  function profileScoreAverages(snapshots) {
+    return App.PROFILE_KEYS.map((key) => ({
+      key,
+      label: PROFILE_LABELS[key] || App.PROFILE_LABELS[key] || key,
+      value: average(snapshots, (snapshot) => snapshot.scores?.[key]),
+    }));
+  }
+
+  function milestoneCurriculumSummary(milestone) {
+    const observedEnd = observedEndDate(milestone.endDate);
+    const sessions = (App.rawData.curriculum?.sessions || []).filter((session) => {
+      if (!dateInRange(session.date, milestone.startDate, observedEnd)) return false;
+      return Boolean(session.subject && session.lessonTitle);
+    });
+    const subjects = [...new Set(sessions.map((session) => session.subject).filter(Boolean))];
+    const lessonSamples = sessions
+      .map((session) => session.lessonTitle)
+      .filter(Boolean)
+      .slice(0, 5);
+    return {
+      observedEnd,
+      sessions,
+      subjects,
+      lessonSamples,
+      subjectText: subjects.slice(0, 5).join(", ") || "커리큘럼 수업 전/모집 자료 중심",
+      lessonText: lessonSamples.join(" · ") || "모집 서류, 면접, 개인정보, 사전 경력 자료",
+    };
+  }
+
+  function milestoneAnalysisPurpose(milestone, index, aggregate) {
+    const curriculum = milestoneCurriculumSummary(milestone);
+    const range = App.formatRange(milestone.startDate, curriculum.observedEnd);
+    const projectNames = (aggregate.projectRanges || []).map((rangeItem) => rangeItem.phase).filter(Boolean);
+    const common = {
+      period: range,
+      curriculum,
+      projectText: projectNames.join(", "),
+    };
+    if (index === 0) {
+      return {
+        ...common,
+        label: "초기 진단",
+        title: "초기 스펙과 모집 서류 신뢰도 분석",
+        short: "과정에 어떤 학생들이 들어왔는지, 개인정보·학력·거주지·지원서·면접 서술을 기준으로 초기 지원 필요도를 정합니다.",
+        purpose:
+          "모집 단계에서는 학생들의 초기 스펙 통계가 핵심입니다. 학력, 전공, 거주지, 경력, 희망 직무, 지원 동기, 자기소개와 면접 기록을 함께 읽어 과정에 들어온 학생 집단의 출발선을 정의합니다.",
+        questions: [
+          "어떤 배경과 목표를 가진 학생들이 입과했는가",
+          "모집 서류의 문장 깊이와 실제 준비도는 어느 정도 일치하는가",
+          "지병, 건강 제약, 경제적 어려움, 장거리 통학 등 초기에 배려해야 할 우려사항은 무엇인가",
+        ],
+        cautions: [
+          "지원서와 자기소개는 학생의 주관적 서술이므로 사실로 단정하지 않고 신뢰도와 구체성의 정도를 나눠 봅니다.",
+          "건강·경제 어려움은 낙인이 아니라 운영 지원 필요도를 가늠하는 참고 신호로만 사용합니다.",
+        ],
+      };
+    }
+    if (index === 1) {
+      return {
+        ...common,
+        label: "초기 적응",
+        title: "개강 적응과 1차 실습 수행 기반 분석",
+        short: "기초 직무 이해와 첫 프로젝트 리듬을 통해 출석, 제출, 역할 이해, 협업 출발선을 확인합니다.",
+        purpose:
+          "개강 후 첫 실습 구간은 학생이 실제 수업 환경에 적응하는지 보는 단계입니다. 기획 직무 이해, 게임 컨셉, 시스템, BM, 생성형 AI, 스토리텔링, 업무관리, 레벨 디자인 등 초반 커리큘럼을 따라가며 자기조절과 참여 지속성을 확인합니다.",
+        questions: [
+          "수업 리듬, 출석, 데일리 체크인, 과제 제출이 안정적으로 자리 잡았는가",
+          "첫 프로젝트에서 역할 이해와 협업 태도가 실제 기록으로 확인되는가",
+          "모집 서류에서 보인 강점과 실제 수업 수행이 이어지는가",
+        ],
+        cautions: [
+          "초기 부진은 역량 부족으로 단정하지 않고 낯선 환경 적응, 통학, 건강, 생활 리듬과 분리해 봅니다.",
+          "첫 프로젝트 평가는 결과물보다 역할 수행 과정과 회고의 구체성을 더 중요하게 봅니다.",
+        ],
+      };
+    }
+    if (index === 2) {
+      return {
+        ...common,
+        label: "실습 심화",
+        title: "2차 실습에서 기획 사고와 제작 리듬 분석",
+        short: "심화 수업과 반복 프로젝트 기록을 통해 아이디어를 구조화하고 실행으로 옮기는 힘을 봅니다.",
+        purpose:
+          "두 번째 실습 단계에서는 학생이 기초 이해를 넘어 게임 기획 관점으로 문제를 구조화하는지 확인합니다. 해당 기간의 수업 주제와 프로젝트 체크인을 연결해 기획 의도, 시스템 사고, 일정 관리, 회고 품질을 함께 분석합니다.",
+        questions: [
+          "수업 개념이 프로젝트 기획 문장과 회고에 반영되는가",
+          "반복된 데일리 체크인에서 일정 관리와 자기 수정이 보이는가",
+          "협업 갈등이나 역할 불균형이 프로젝트 진행에 영향을 주는가",
+        ],
+        cautions: [
+          "작성한 작업 내용은 자기보고 성격이 있으므로 제출 시점, 회고, 동료 언급과 교차 확인합니다.",
+          "표현이 많은 학생과 조용한 학생을 같은 방식으로 평가하지 않고 근거의 구체성을 중심으로 봅니다.",
+        ],
+      };
+    }
+    if (index === 3) {
+      return {
+        ...common,
+        label: "팀 운영",
+        title: "3차 실습의 협업·일정·위험 신호 분석",
+        short: "팀 프로젝트의 중반부에서 협업 방식, 갈등, 지연, 위험출결이 학습 성과에 미치는 영향을 봅니다.",
+        purpose:
+          "세 번째 실습 구간은 프로젝트 운영 신호가 가장 많이 드러나는 단계입니다. 수업 커리큘럼과 프로젝트 기록을 연결해 역할 수행, 협업 조율, 일정 지연, 건강·컨디션 리듬, 상담 필요도를 함께 분석합니다.",
+        questions: [
+          "팀 안에서 맡은 역할을 이해하고 끝까지 수행하는가",
+          "지각, 체크인 지연, 회고 공백이 프로젝트 리스크로 이어지는가",
+          "불만, 갈등, 소통 문제를 조정할 수 있는 수준인가",
+        ],
+        cautions: [
+          "갈등 신호는 한쪽 진술만으로 판단하지 않고 반복성, 다른 기록과의 일치도, 프로젝트 맥락을 함께 봅니다.",
+          "건강 이슈는 불성실과 분리하되, 일정 영향이 반복되는 경우 별도 지원 대상으로 표시합니다.",
+        ],
+      };
+    }
+    if (index === 4) {
+      return {
+        ...common,
+        label: "현재 운영",
+        title: "4차 실습의 현재 역량과 개입 우선순위 분석",
+        short: "현재 진행 구간의 수업·프로젝트·출결·상담 기록을 묶어 즉시 개입할 학생과 우수 신호를 구분합니다.",
+        purpose:
+          "현재 실습 구간은 지금 운영 판단에 직접 연결됩니다. 진행 중인 커리큘럼과 프로젝트 체크인, 출결, 회고, 상담 기록을 종합해 우수자와 위험군, 긴급 확인 인원을 분리합니다.",
+        questions: [
+          "현재 수업 내용과 프로젝트 수행이 게임 기획자로서의 깊이로 이어지는가",
+          "지금 개입해야 할 건강, 불성실, 협업 위험 신호는 무엇인가",
+          "발전도, 성실도, 집중도가 높은 학생을 어떤 근거로 구분할 수 있는가",
+        ],
+        cautions: [
+          "현재 구간은 데이터가 계속 쌓이는 중이므로 단일 사건보다 최근 1개월 반복성과 영향도를 우선합니다.",
+          "작업물 자기보고보다 체크인 한마디, 회고, 상담, 출결처럼 시간 흐름이 남는 기록을 더 신뢰합니다.",
+        ],
+      };
+    }
+    return {
+      ...common,
+      label: "마무리/전환",
+      title: "후반 구간의 완성도와 진로 전환 준비 분석",
+      short: "후반 수업과 프로젝트 완성도를 통해 포트폴리오, 취업 문서, 진로 방향의 준비도를 확인합니다.",
+      purpose:
+        "후반 마일스톤은 수업 성과를 취업과 포트폴리오로 전환할 수 있는지 보는 단계입니다. 커리큘럼 이수, 프로젝트 완성도, 진로 문서, 피드백 반영, 협업 평판을 연결해 수료 이후 지원 방향을 정합니다.",
+      questions: [
+        "프로젝트 결과와 문서가 직무 역량 설명으로 전환되는가",
+        "피드백을 반영해 포트폴리오와 자기소개가 개선되는가",
+        "수료 전까지 집중 보완해야 할 역량과 위험 신호는 무엇인가",
+      ],
+      cautions: [
+        "완성 결과만 보지 않고 과정 중 수정, 피드백 수용, 역할 지속성을 함께 봅니다.",
+        "취업 의지 서술은 실제 문서 개선과 지원 행동으로 교차 확인합니다.",
+      ],
+    };
+  }
+
   function renderProcessSubnav(milestones) {
     return `
       <nav class="process-subnav" aria-label="학습과정 내부 메뉴">
@@ -1302,88 +1668,29 @@
   }
 
   function renderProcessOverviewGraph(rows) {
-    const width = 980;
-    const height = 330;
-    const paddingX = 64;
-    const paddingY = 44;
-    const chartWidth = width - paddingX * 2;
-    const chartHeight = 180;
-    const timelineY = height - 70;
     const currentId = currentMilestoneId(rows.map((row) => row.milestone));
-    const dates = rows.flatMap((row) => [parseDate(row.milestone.startDate), parseDate(row.milestone.endDate)]).filter(Boolean);
-    const minTime = Math.min(...dates.map((item) => item.getTime()));
-    const maxTime = Math.max(...dates.map((item) => item.getTime()));
-    const xForDate = (dateValue) => {
-      const parsed = parseDate(dateValue);
-      if (!parsed || maxTime === minTime) return paddingX;
-      return paddingX + ((parsed.getTime() - minTime) / (maxTime - minTime)) * chartWidth;
-    };
-    const points = rows.map((row, index) => {
-      const startX = xForDate(row.milestone.startDate);
-      const endX = xForDate(row.milestone.endDate);
-      const x = startX + Math.max(0, endX - startX) / 2;
-      const score = row.aggregate.avgProfile === null || row.aggregate.avgProfile === undefined || row.aggregate.avgProfile === 0 ? null : clamp(Number(row.aggregate.avgProfile), 1, 4);
-      const y = score === null ? timelineY - 18 : paddingY + ((4 - score) / 3) * chartHeight;
-      return { ...row, x, y, score, isCurrentPoint: row.milestone.id === currentId };
-    });
-    const linePath = points
-      .filter((point) => point.score !== null)
-      .map((point, index) => `${index === 0 ? "M" : "L"} ${point.x} ${point.y}`)
-      .join(" ");
-    const timelineBars = points
-      .map((point) => {
-        const startX = xForDate(point.milestone.startDate);
-        const endX = xForDate(point.milestone.endDate);
-        return `
-          <rect class="process-timeline-segment ${point.isCurrentPoint ? "is-current" : ""}" x="${startX}" y="${timelineY}" width="${Math.max(3, endX - startX)}" height="12" rx="6"></rect>
-          <text class="process-point-label" x="${point.x}" y="${height - 18}">M${point.index + 1}</text>
-        `;
-      })
-      .join("");
     return `
       <section class="panel process-overview-panel">
         <div class="panel-head">
           <div>
             <span class="panel-kicker">Process Overview</span>
-            <h2>과정 개요</h2>
+            <h2>모집부터 현재까지의 과정 흐름</h2>
           </div>
-          <p class="panel-copy">마일스톤 기간을 실제 날짜 폭에 맞춰 가로 시간선으로 보고, 판단 근거가 있는 구간만 점수 선으로 연결합니다.</p>
+          <p class="panel-copy">전체 학생의 모집 단계부터 현재까지 관측된 마일스톤을 기준으로 봅니다. 그래프에 마우스를 올리면 평균 프로파일을 구성한 세부 점수와 출결 지표가 함께 표시됩니다.</p>
         </div>
-        <div class="process-graph-wrap">
-          <svg class="process-graph" viewBox="0 0 ${width} ${height}" role="img" aria-label="마일스톤 기간별 평가 타임라인 그래프">
-            ${[1, 2, 3, 4]
-              .map((score) => {
-                const y = paddingY + ((4 - score) / 3) * chartHeight;
-                return `
-                  <line class="process-grid-line" x1="${paddingX}" y1="${y}" x2="${width - paddingX}" y2="${y}"></line>
-                  <text class="process-axis-label" x="${paddingX - 18}" y="${y + 4}">${score}</text>
-                `;
-              })
-              .join("")}
-            <line class="process-timeline-axis" x1="${paddingX}" y1="${timelineY + 6}" x2="${width - paddingX}" y2="${timelineY + 6}"></line>
-            ${timelineBars}
-            ${linePath ? `<path class="process-line" d="${linePath}"></path>` : ""}
-            ${points
-              .map(
-                (point) => `
-                  <g class="process-point ${point.isCurrentPoint ? "is-current" : ""} ${point.score === null ? "is-unjudged" : ""}">
-                    <circle cx="${point.x}" cy="${point.y}" r="${point.isCurrentPoint ? 10 : 7}"></circle>
-                    <text x="${point.x}" y="${point.y - 16}">${point.score === null ? "판단 전" : formatNumber(point.score, 2)}</text>
-                  </g>
-                `
-              )
-              .join("")}
-          </svg>
+        <div class="chart-shell process-chart-shell">
+          <canvas id="process-overview-chart" aria-label="과정 개요 프로파일 및 출결 차트"></canvas>
+          <p class="chart-fallback">Chart.js를 불러오면 과정 개요 차트가 표시됩니다.</p>
         </div>
         <div class="process-overview-summary-grid">
-          ${points
+          ${rows
             .map(
-              (point) => `
-                <button type="button" class="process-summary-card ${point.isCurrentPoint ? "is-current" : ""}" data-process-view="${escape(point.milestone.id)}">
-                  <span>M${point.index + 1}</span>
-                  <strong>${escape(App.shortMilestoneLabel(point.milestone.label))}</strong>
-                  <small>${escape(App.formatRange(point.milestone.startDate, point.milestone.endDate))}</small>
-                  <em>평균 ${formatNumber(point.score, 2)}</em>
+              (row) => `
+                <button type="button" class="process-summary-card ${row.milestone.id === currentId ? "is-current" : ""}" data-process-view="${escape(row.milestone.id)}">
+                  <span>M${row.index + 1}</span>
+                  <strong>${escape(App.shortMilestoneLabel(row.milestone.label))}</strong>
+                  <small>${escape(App.formatRange(row.milestone.startDate, observedEndDate(row.milestone.endDate)))}</small>
+                  <em>평균 ${formatNumber(row.aggregate.avgProfile, 2)}</em>
                 </button>
               `
             )
@@ -1395,15 +1702,15 @@
 
   function renderProcessOverview() {
     const milestones = App.rawData.milestones || [];
-    const rows = processRows(milestones);
+    const allRows = processRows(milestones);
+    const rows = observedProcessRows(milestones);
     const currentId = currentMilestoneId(milestones);
-    const currentRow = rows.find((row) => row.milestone.id === currentId) || rows[0];
-    const progress = courseProgress();
-    const avgProfile = average(activeCourseStudents(), (student) => student.derived?.profileIndex);
-    const courseEnd = parseDate(App.rawData.curriculum?.endDate) && parseDate(App.rawData.curriculum?.endDate) < today
-      ? App.rawData.curriculum.endDate
-      : today.toISOString().slice(0, 10);
-    const courseAttendance = attendanceStatsForDates(activeCourseStudents(), weekdayDates(App.rawData.curriculum?.startDate, courseEnd));
+    const currentRow = allRows.find((row) => row.milestone.id === currentId) || rows.at(-1) || allRows[0];
+    const todayKey = today.toISOString().slice(0, 10);
+    const courseEnd = parseDate(App.rawData.curriculum?.endDate) && parseDate(App.rawData.curriculum?.endDate) < today ? App.rawData.curriculum.endDate : todayKey;
+    const courseAttendance = attendanceStatsForDates(App.rawData.students, weekdayDates(App.rawData.curriculum?.startDate, courseEnd));
+    const observedSnapshots = rows.flatMap((row) => row.aggregate.snapshots);
+    const avgProfile = average(observedSnapshots, (snapshot) => snapshot.profileAverage);
     const totalEvents = rows.reduce(
       (acc, row) => {
         Object.entries(row.aggregate.eventCounts || {}).forEach(([key, value]) => {
@@ -1413,19 +1720,19 @@
       },
       { project: 0, counseling: 0, attendanceRisk: 0, career: 0, dropout: 0 }
     );
+    const urgentStudentCount = new Set(rows.flatMap((row) => (row.aggregate.urgentRows || []).map((item) => item.student.id))).size;
     return `
       <section class="process-overview-hero">
-        ${renderMetric("진행률", formatPercent(progress.percent), `${progress.currentWeek}/${progress.totalWeeks}주차`, "brand")}
+        ${renderMetric("전체 학생", `${App.rawData.students.length}명`, "모집단계부터 현재까지", "neutral")}
+        ${renderMetric("관측 구간", `${rows.length}개`, rows.length ? `M1-M${rows.at(-1).index + 1}` : "진행 전", "brand")}
         ${renderMetric("현재 구간", currentRow ? `M${currentRow.index + 1}` : "-", currentRow ? App.shortMilestoneLabel(currentRow.milestone.label) : "현재 구간 없음", "success")}
-        ${renderMetric("평균 프로파일", formatNumber(avgProfile, 1), "진행 학생 기준", "mint")}
-        ${renderMetric("출석률", courseAttendance.attendanceRate === null ? "판단 전" : formatPercent(courseAttendance.attendanceRate, 1), `결석 ${courseAttendance.absenceCount}건`, "success")}
+        ${renderMetric("평균 프로파일", formatNumber(avgProfile, 2), "전체 관측 스냅샷 기준", "mint")}
+        ${renderMetric("출석률", courseAttendance.attendanceRate === null ? "판단 전" : formatPercent(courseAttendance.attendanceRate, 1), `${App.formatRange(App.rawData.curriculum?.startDate, courseEnd)}`, "success")}
         ${renderMetric("지각률", courseAttendance.lateRate === null ? "판단 전" : formatPercent(courseAttendance.lateRate, 1), `위험출결 ${totalEvents.attendanceRisk || 0}건`, "warning")}
-        ${renderMetric("구간 이탈", `${totalEvents.dropout || 0}명`, "이탈 시점이 속한 마일스톤 기준", "neutral")}
+        ${renderMetric("핵심 이슈", `${urgentStudentCount}명`, `상담 ${totalEvents.counseling || 0}건 · 이탈 ${totalEvents.dropout || 0}명`, "danger")}
       </section>
       ${renderProcessOverviewGraph(rows)}
-      <section class="process-timeline compact">
-        ${rows.map((row) => renderProcessStage(row.milestone, row.index)).join("")}
-      </section>
+      ${renderProcessMilestoneBriefs(rows)}
     `;
   }
 
@@ -1669,15 +1976,20 @@
           ${renderMetric("지각률", stats.lateRate === null ? "판단 전" : formatPercent(stats.lateRate, 1), `지각 ${stats.lateCount}건`, "warning")}
           ${renderMetric("위험출결률", stats.riskRate === null ? "판단 전" : formatPercent(stats.riskRate, 1), `위험 ${stats.riskCount}건`, "danger")}
         </div>
-        ${renderRateTimelineGraph(
-          rows,
-          [
-            { key: "attendanceRate", label: "출석률", hint: "결석 제외", tone: "success" },
-            { key: "lateRate", label: "지각률", hint: "지각/운영일", tone: "warning" },
-            { key: "riskRate", label: "위험출결률", hint: "위험 신호", tone: "danger" },
-          ],
-          { label: "마일스톤 운영 비율 타임라인" }
-        )}
+        <div class="chart-shell milestone-rate-chart-shell">
+          <canvas id="milestone-rate-chart" aria-label="${escape(App.shortMilestoneLabel(milestone.label))} 운영 비율 차트"></canvas>
+          <p class="chart-fallback">Chart.js를 불러오면 마일스톤 운영 비율 차트가 표시됩니다.</p>
+        </div>
+        <div class="milestone-rate-note">
+          ${rows
+            .slice(0, 4)
+            .map(
+              (row) => `
+                <span>${escape(row.label)} · 출석 ${row.attendanceRate === null ? "판단 전" : formatPercent(row.attendanceRate, 1)} · 지각 ${row.lateCount}건 · 위험 ${row.riskCount}건</span>
+              `
+            )
+            .join("")}
+        </div>
       </section>
     `;
   }
@@ -1723,6 +2035,45 @@
           <article>
             <span>핵심 특이사항</span>
             <p>${escape(aggregate.caseCounts.slice(0, 4).map((row) => `${row.label} ${row.count}명`).join(" · ") || "반복 특이사항 없음")}</p>
+          </article>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderMilestoneAnalysisPurpose(milestone, index, aggregate) {
+    const purpose = milestoneAnalysisPurpose(milestone, index, aggregate);
+    return `
+      <section class="panel milestone-purpose-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Analysis Purpose</span>
+            <h2>${escape(purpose.title)}</h2>
+          </div>
+          <p class="panel-copy">${escape(purpose.period)}</p>
+        </div>
+        <div class="milestone-purpose-grid">
+          <article class="milestone-purpose-main">
+            <span>${escape(purpose.label)}</span>
+            <p>${escape(purpose.purpose)}</p>
+          </article>
+          <article>
+            <span>수업/자료 범위</span>
+            <p>${escape(purpose.curriculum.subjectText)}</p>
+            <small>${escape(purpose.curriculum.lessonText)}</small>
+            ${purpose.projectText ? `<small>${escape(`프로젝트: ${purpose.projectText}`)}</small>` : ""}
+          </article>
+          <article>
+            <span>분석 질문</span>
+            <ul>
+              ${purpose.questions.map((item) => `<li>${escape(item)}</li>`).join("")}
+            </ul>
+          </article>
+          <article>
+            <span>판단 주의</span>
+            <ul>
+              ${purpose.cautions.map((item) => `<li>${escape(item)}</li>`).join("")}
+            </ul>
           </article>
         </div>
       </section>
@@ -1975,6 +2326,7 @@
         </div>
         ${renderMilestoneTopSummary(aggregate)}
       </section>
+      ${renderMilestoneAnalysisPurpose(milestone, index, aggregate)}
       ${renderMilestoneCourseInfo(milestone, aggregate)}
       ${renderMilestoneRateTimeline(milestone, aggregate)}
       ${renderMilestoneInnerTabs(aggregate, activeTab)}
@@ -2002,7 +2354,10 @@
   }
 
   function renderStatusFilter() {
-    const basis = App.rawData.students.filter((student) => matchesCaseFilter(student, state.activeCase));
+    const basis = App.rawData.students
+      .filter((student) => matchesCaseFilter(student, state.activeCase))
+      .filter((student) => matchesRegionFilter(student))
+      .filter((student) => matchesClassificationFilter(student));
     const counts = statusCounts(basis);
     return `
       <section class="status-summary-grid">
@@ -2037,7 +2392,9 @@
   function renderCategoryOverview() {
     const students = App.rawData.students
       .filter((student) => state.statusFilter === "all" || statusGroup(student) === state.statusFilter)
-      .filter((student) => matchesCaseFilter(student, state.activeCase));
+      .filter((student) => matchesCaseFilter(student, state.activeCase))
+      .filter((student) => matchesRegionFilter(student))
+      .filter((student) => matchesClassificationFilter(student));
     return `
       <section class="panel category-panel">
         <div class="panel-head compact">
@@ -2062,8 +2419,16 @@
     const status = statusMeta(state.statusFilter);
     const tag = state.activeTag === "all" ? null : tagMeta(state.activeTag);
     const caseFilter = caseFilterMeta(state.activeCase);
+    const region = regionFilterLabel(state.regionFilter);
+    const classification = classificationFilterMeta(state.classificationFilter);
     const sortColumn = TABLE_COLUMNS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
-    const hasFilters = state.statusFilter !== "all" || state.activeTag !== "all" || state.activeCase !== "all" || Boolean(state.query.trim());
+    const hasFilters =
+      state.statusFilter !== "all" ||
+      state.activeTag !== "all" ||
+      state.activeCase !== "all" ||
+      state.regionFilter !== "all" ||
+      state.classificationFilter !== "all" ||
+      Boolean(state.query.trim());
     const quickSorts = [
       { key: "name", label: "가나다" },
       { key: "support", label: "지원" },
@@ -2078,7 +2443,7 @@
           <div>
             <span class="panel-kicker">Current View</span>
             <h2>학생관리 탐색 기준</h2>
-            <p>상태와 운영 분류는 한 화면에서 함께 적용됩니다. 수치 기준은 표 머리글이나 아래 빠른 정렬로 바꿀 수 있습니다.</p>
+            <p>상태, 지역, 운영 포커스, 운영 분류는 한 화면에서 함께 적용됩니다. 수치 기준은 표 머리글이나 아래 빠른 정렬로 바꿀 수 있습니다.</p>
           </div>
           <div class="student-command-count">
             <strong>${students.length}</strong>
@@ -2087,6 +2452,8 @@
         </div>
         <div class="filter-state-row">
           ${filterChip("상태", status.label, status.tone)}
+          ${filterChip("지역", region, state.regionFilter === "all" ? "neutral" : "brand")}
+          ${filterChip("운영포커스", `${classification.groupLabel === "운영포커스" ? "" : `${classification.groupLabel} · `}${classification.label}`, classification.tone)}
           ${filterChip("분류", tag ? tag.label : "전체", tag ? tag.tone : "neutral")}
           ${filterChip("케이스", caseFilter.label, caseFilter.tone)}
           ${filterChip("정렬", `${sortColumn.label} ${state.sortDirection === "asc" ? "오름차순" : "내림차순"}`, "brand")}
@@ -2122,14 +2489,20 @@
     const derived = student.derived || {};
     const stats = student.stats || {};
     const primaryTag = derived.primaryTag || "steady_path";
+    const focusAssessment = state.classificationFilter === "all" ? null : App.studentOperationalAssessmentByKey(student, state.classificationFilter);
+    const studentHref = App.studentPageHref(student.id, focusAssessment?.qualified ? { focus: state.classificationFilter } : {});
     return `
       <tr data-student-id="${escape(student.id)}">
         <td>
-          <a class="student-name-link" href="${App.studentPageHref(student.id)}">${escape(student.name)}</a>
+          <a class="student-name-link" href="${escape(studentHref)}">${escape(student.name)}</a>
           <small>${escape(student.education || "학력 미기재")}</small>
         </td>
         <td>${statusPill(statusGroup(student))}</td>
-        <td>${tagPill(primaryTag)}<small>${escape(classificationReasonSummary(student, primaryTag))}</small></td>
+        <td>
+          ${tagPill(primaryTag)}
+          <small>${escape(classificationReasonSummary(student, primaryTag))}</small>
+          ${focusAssessment?.qualified ? `<small>${escape(`${focusAssessment.groupLabel} · ${focusAssessment.label}: ${focusAssessment.reasons[0] || focusAssessment.basis}`)}</small>` : ""}
+        </td>
         <td>${formatNumber(derived.profileRankScore || derived.profileIndex, 1)}</td>
         <td>${formatNumber(derived.growthRankScore || derived.growthIndex, 1)}</td>
         <td>${formatNumber(derived.supportRankScore || derived.supportIndex, 1)}</td>
@@ -2463,17 +2836,634 @@
     `;
   }
 
+  function milestoneIssueSummary(row) {
+    const aggregate = row.aggregate;
+    const stats = milestoneObservedAttendanceStats(row.milestone);
+    const issues = [];
+    if (aggregate.urgentRows?.length) {
+      issues.push(`긴급 확인 ${aggregate.urgentRows.length}명: ${aggregate.urgentRows.slice(0, 3).map((item) => item.student.name).join(", ")}`);
+    }
+    if ((aggregate.eventCounts.attendanceRisk || 0) > 0) {
+      issues.push(`위험출결 ${aggregate.eventCounts.attendanceRisk}건`);
+    }
+    if (stats.lateCount > 0) {
+      issues.push(`지각 ${stats.lateCount}건`);
+    }
+    if (aggregate.caseCounts.length) {
+      issues.push(aggregate.caseCounts.slice(0, 2).map((item) => `${item.label} ${item.count}명`).join(" · "));
+    }
+    if (aggregate.dropoutCount) {
+      issues.push(`구간 이탈 ${aggregate.dropoutCount}명`);
+    }
+    return issues.length ? issues.slice(0, 4) : ["누적된 긴급 이슈가 크지 않아 기본 학습 흐름을 유지합니다."];
+  }
+
+  function milestoneNarrative(row) {
+    const aggregate = row.aggregate;
+    const stats = milestoneObservedAttendanceStats(row.milestone);
+    const profileText = `참여 ${aggregate.participantCount || 0}명, 평균 프로파일 ${formatNumber(aggregate.avgProfile, 2)}점`;
+    const growthText =
+      aggregate.avgGrowth > 0.2
+        ? `성장 변화가 +${formatNumber(aggregate.avgGrowth, 2)}로 상승했습니다`
+        : aggregate.avgGrowth < -0.2
+          ? `성장 변화가 ${formatNumber(aggregate.avgGrowth, 2)}로 흔들렸습니다`
+          : "성장 변화는 큰 급등락보다 유지 흐름입니다";
+    const attendanceText = `출석률 ${stats.attendanceRate === null ? "판단 전" : formatPercent(stats.attendanceRate, 1)}, 지각률 ${stats.lateRate === null ? "판단 전" : formatPercent(stats.lateRate, 1)}`;
+    const cautionText = aggregate.cautionCounts.length
+      ? `관찰 영역은 ${aggregate.cautionCounts.slice(0, 2).map((item) => `${item.label} ${item.count}명`).join(", ")}입니다`
+      : "뚜렷한 관찰 영역 쏠림은 없습니다";
+    return `${profileText} 기준입니다. ${growthText}. ${attendanceText}로 운영 리듬을 확인했고, ${cautionText}.`;
+  }
+
+  function renderProcessMilestoneBriefs(rows) {
+    return `
+      <section class="panel process-brief-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Milestone Briefs</span>
+            <h2>마일스톤별 요약과 핵심 이슈</h2>
+          </div>
+          <p class="panel-copy">각 구간의 평균 프로파일, 출결 리듬, 반복 케이스, 긴급 확인 인원을 한 장의 운영 메모처럼 읽을 수 있게 정리했습니다.</p>
+        </div>
+        <div class="process-brief-grid">
+          ${rows
+            .map((row) => {
+              const stats = milestoneObservedAttendanceStats(row.milestone);
+              const issues = milestoneIssueSummary(row);
+              const current = isCurrentMilestone(row.milestone);
+              const purpose = milestoneAnalysisPurpose(row.milestone, row.index, row.aggregate);
+              return `
+                <button type="button" class="process-brief-card ${current ? "is-current" : ""}" data-process-view="${escape(row.milestone.id)}">
+                  <div class="process-brief-head">
+                    <span>M${row.index + 1}</span>
+                    <strong>${escape(App.shortMilestoneLabel(row.milestone.label))}</strong>
+                    ${current ? `<em>현재</em>` : ""}
+                  </div>
+                  <div class="process-brief-purpose">
+                    <b>${escape(purpose.label)}</b>
+                    <span>${escape(purpose.short)}</span>
+                  </div>
+                  <p>${escape(milestoneNarrative(row))}</p>
+                  <div class="process-brief-metrics">
+                    <span>참여 <strong>${row.aggregate.participantCount || 0}명</strong></span>
+                    <span>평균 <strong>${formatNumber(row.aggregate.avgProfile, 2)}</strong></span>
+                    <span>출석 <strong>${stats.attendanceRate === null ? "판단 전" : formatPercent(stats.attendanceRate, 1)}</strong></span>
+                    <span>상담 <strong>${row.aggregate.eventCounts.counseling || 0}건</strong></span>
+                  </div>
+                  <div class="process-brief-issues">
+                    ${issues.map((issue) => `<i>${escape(issue)}</i>`).join("")}
+                  </div>
+                </button>
+              `;
+            })
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function destroyOverviewCharts() {
+    overviewCharts.forEach((chart) => chart.destroy());
+    overviewCharts = [];
+  }
+
+  function cssVar(name) {
+    return getComputedStyle(document.body).getPropertyValue(name).trim();
+  }
+
+  function chartColor(tone) {
+    const colors = {
+      brand: cssVar("--accent"),
+      success: cssVar("--success"),
+      warning: cssVar("--warning"),
+      danger: cssVar("--danger"),
+      violet: cssVar("--violet"),
+      mint: cssVar("--mint"),
+      neutral: cssVar("--neutral"),
+    };
+    return colors[tone] || colors.neutral;
+  }
+
+  function colorWithAlpha(color, alpha) {
+    if (!color) return `rgba(47, 111, 237, ${alpha})`;
+    const hex = color.trim();
+    if (hex.startsWith("#")) {
+      const normalized = hex.length === 4 ? `#${hex[1]}${hex[1]}${hex[2]}${hex[2]}${hex[3]}${hex[3]}` : hex;
+      const value = normalized.replace("#", "");
+      const red = parseInt(value.slice(0, 2), 16);
+      const green = parseInt(value.slice(2, 4), 16);
+      const blue = parseInt(value.slice(4, 6), 16);
+      if ([red, green, blue].every(Number.isFinite)) return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+    }
+    if (hex.startsWith("rgb(")) return hex.replace("rgb(", "rgba(").replace(")", `, ${alpha})`);
+    return hex;
+  }
+
+  function chartBaseOptions(extra = {}) {
+    return {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          labels: {
+            color: cssVar("--text"),
+            boxWidth: 12,
+            font: { size: 12, weight: "700" },
+          },
+        },
+        tooltip: {
+          callbacks: {
+            label: (context) => `${context.label || context.dataset.label || ""}: ${formatNumber(context.raw)}명`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: cssVar("--text-soft"), precision: 0 },
+          grid: { color: cssVar("--border") },
+        },
+        y: {
+          ticks: { color: cssVar("--text-soft") },
+          grid: { display: false },
+        },
+      },
+      ...extra,
+    };
+  }
+
+  function createOverviewChart(canvasId, config) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas || !window.Chart) return;
+    overviewCharts.push(new window.Chart(canvas, config));
+  }
+
+  function goToStudentsByRegion(region) {
+    goToStudentsWithFilters({
+      status: "general",
+      tag: "all",
+      caseFilter: "all",
+      region,
+      sort: "name",
+      direction: "asc",
+    });
+  }
+
+  function goToStudentsByClassification(classification) {
+    goToStudentsWithFilters({
+      status: "general",
+      tag: "all",
+      caseFilter: "all",
+      region: "all",
+      classification,
+      sort: "name",
+      direction: "asc",
+    });
+  }
+
+  function chartClassificationClick(rows) {
+    return (event, elements) => {
+      const selected = elements && elements[0];
+      if (!selected) return;
+      const row = rows[selected.index];
+      if (row?.key) goToStudentsByClassification(row.key);
+    };
+  }
+
+  function ensureChartFallbacks() {
+    const hasChart = Boolean(window.Chart);
+    document.querySelectorAll(".chart-shell").forEach((shell) => {
+      let fallback = shell.querySelector(".chart-fallback");
+      if (!fallback) {
+        fallback = document.createElement("p");
+        fallback.className = "chart-fallback";
+        fallback.textContent = "Chart.js를 불러오면 차트가 표시됩니다.";
+        shell.appendChild(fallback);
+      }
+      fallback.classList.toggle("is-visible", !hasChart);
+    });
+  }
+
+  function renderOverviewCharts() {
+    if (state.activePage !== "overview") return;
+    destroyOverviewCharts();
+    ensureChartFallbacks();
+    if (!window.Chart) return;
+
+    const students = activeCourseStudents();
+    const classification = operationalClassification(students);
+    createOverviewChart("overview-excellent-chart", {
+      type: "bar",
+      data: {
+        labels: classification.excellent.map((row) => row.label),
+        datasets: [
+          {
+            label: "인원",
+            data: classification.excellent.map((row) => row.count),
+            backgroundColor: classification.excellent.map((row) => chartColor(row.tone)),
+            borderRadius: 8,
+            borderSkipped: false,
+          },
+        ],
+      },
+      options: chartBaseOptions({
+        indexAxis: "y",
+        onClick: chartClassificationClick(classification.excellent),
+        onHover: (event, elements) => {
+          const target = event.native?.target;
+          if (target) target.style.cursor = elements?.length ? "pointer" : "default";
+        },
+        plugins: {
+          ...chartBaseOptions().plugins,
+          legend: { display: false },
+        },
+      }),
+    });
+    createOverviewChart("overview-risk-chart", {
+      type: "bar",
+      data: {
+        labels: classification.risk.map((row) => row.label),
+        datasets: [
+          {
+            label: "인원",
+            data: classification.risk.map((row) => row.count),
+            backgroundColor: classification.risk.map((row) => chartColor(row.tone)),
+            borderRadius: 8,
+            borderSkipped: false,
+          },
+        ],
+      },
+      options: chartBaseOptions({
+        indexAxis: "y",
+        onClick: chartClassificationClick(classification.risk),
+        onHover: (event, elements) => {
+          const target = event.native?.target;
+          if (target) target.style.cursor = elements?.length ? "pointer" : "default";
+        },
+        plugins: {
+          ...chartBaseOptions().plugins,
+          legend: { display: false },
+        },
+      }),
+    });
+
+    const ageRows = sortedCountRows(countBy(students, ageGroup));
+    const genderRows = sortedCountRows(countBy(students, (student) => student.gender || "미상"));
+    const educationRows = orderedCountRows(countBy(students, educationGroup), ["대학원", "대학졸업", "대학재학", "고등학교"]);
+    const regionRows = orderedCountRows(countBy(students, regionGroup), ["수도권", "강원도", "충청도", "전라도", "경상도", "제주도"]);
+    const regionDetails = regionDetailCounts(students);
+
+    createOverviewChart("overview-age-chart", {
+      type: "bar",
+      data: {
+        labels: ageRows.map((row) => row.label),
+        datasets: [{ label: "인원", data: ageRows.map((row) => row.count), backgroundColor: chartColor("brand"), borderRadius: 8 }],
+      },
+      options: chartBaseOptions({ plugins: { ...chartBaseOptions().plugins, legend: { display: false } } }),
+    });
+    createOverviewChart("overview-gender-chart", {
+      type: "doughnut",
+      data: {
+        labels: genderRows.map((row) => row.label),
+        datasets: [{ data: genderRows.map((row) => row.count), backgroundColor: [chartColor("brand"), chartColor("mint"), chartColor("neutral")] }],
+      },
+      options: chartBaseOptions({
+        cutout: "62%",
+        scales: {},
+      }),
+    });
+    createOverviewChart("overview-education-chart", {
+      type: "bar",
+      data: {
+        labels: educationRows.map((row) => row.label),
+        datasets: [{ label: "인원", data: educationRows.map((row) => row.count), backgroundColor: chartColor("success"), borderRadius: 8 }],
+      },
+      options: chartBaseOptions({ indexAxis: "y", plugins: { ...chartBaseOptions().plugins, legend: { display: false } } }),
+    });
+    createOverviewChart("overview-region-chart", {
+      type: "doughnut",
+      data: {
+        labels: regionRows.map((row) => row.label),
+        datasets: [
+          {
+            data: regionRows.map((row) => row.count),
+            backgroundColor: [
+              chartColor("violet"),
+              chartColor("brand"),
+              chartColor("warning"),
+              chartColor("danger"),
+              chartColor("mint"),
+              chartColor("success"),
+            ],
+          },
+        ],
+      },
+      options: chartBaseOptions({
+        cutout: "62%",
+        onClick: (event, elements, chart) => {
+          const selected = elements && elements[0];
+          if (!selected) return;
+          const region = chart.data.labels[selected.index];
+          if (region) goToStudentsByRegion(region);
+        },
+        onHover: (event, elements) => {
+          const target = event.native?.target;
+          if (target) target.style.cursor = elements?.length ? "pointer" : "default";
+        },
+        plugins: {
+          ...chartBaseOptions().plugins,
+          legend: {
+            ...chartBaseOptions().plugins.legend,
+            onClick: (event, legendItem) => {
+              if (legendItem?.text) goToStudentsByRegion(legendItem.text);
+            },
+            onHover: (event) => {
+              const target = event.native?.target;
+              if (target) target.style.cursor = "pointer";
+            },
+            onLeave: (event) => {
+              const target = event.native?.target;
+              if (target) target.style.cursor = "default";
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label: (context) => {
+                const label = context.label || "";
+                const detail = Object.entries(regionDetails[label] || {})
+                  .map(([name, count]) => `${name} ${count}명`)
+                  .join(", ");
+                return `${label}: ${formatNumber(context.raw)}명${detail ? ` (${detail})` : ""}`;
+              },
+            },
+          },
+        },
+        scales: {},
+      }),
+    });
+  }
+
+  function processChartRows() {
+    return observedProcessRows(App.rawData.milestones || []).map((row) => {
+      const attendanceStats = milestoneObservedAttendanceStats(row.milestone);
+      return {
+        ...row,
+        attendanceStats,
+        scoreBreakdown: profileScoreAverages(row.aggregate.snapshots),
+      };
+    });
+  }
+
+  function renderProcessCharts() {
+    if (state.activePage !== "process" || state.processView !== "overview") return;
+    destroyOverviewCharts();
+    ensureChartFallbacks();
+    if (!window.Chart) return;
+
+    const rows = processChartRows();
+    createOverviewChart("process-overview-chart", {
+      type: "line",
+      data: {
+        labels: rows.map((row) => `M${row.index + 1}`),
+        datasets: [
+          {
+            type: "bar",
+            label: "출석률",
+            data: rows.map((row) => row.attendanceStats.attendanceRate),
+            yAxisID: "percent",
+            backgroundColor: colorWithAlpha(chartColor("success"), 0.18),
+            borderColor: colorWithAlpha(chartColor("success"), 0.42),
+            borderWidth: 1,
+            borderRadius: 10,
+            maxBarThickness: 34,
+            order: 2,
+          },
+          {
+            label: "평균 프로파일",
+            data: rows.map((row) => row.aggregate.avgProfile || null),
+            yAxisID: "score",
+            borderColor: chartColor("brand"),
+            backgroundColor: colorWithAlpha(chartColor("brand"), 0.16),
+            pointBackgroundColor: rows.map((row) => (isCurrentMilestone(row.milestone) ? chartColor("danger") : chartColor("brand"))),
+            pointBorderColor: "#fff",
+            pointBorderWidth: 2,
+            pointRadius: rows.map((row) => (isCurrentMilestone(row.milestone) ? 7 : 5)),
+            pointHoverRadius: 8,
+            borderWidth: 3,
+            tension: 0.34,
+            fill: true,
+            order: 1,
+          },
+          {
+            label: "지각률",
+            data: rows.map((row) => row.attendanceStats.lateRate),
+            yAxisID: "percent",
+            borderColor: chartColor("warning"),
+            backgroundColor: chartColor("warning"),
+            borderDash: [6, 5],
+            pointRadius: 3,
+            borderWidth: 2,
+            tension: 0.3,
+            order: 0,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: {
+          legend: {
+            labels: {
+              color: cssVar("--text"),
+              boxWidth: 12,
+              font: { size: 12, weight: "700" },
+            },
+          },
+          tooltip: {
+            backgroundColor: colorWithAlpha(cssVar("--surface"), 0.96),
+            borderColor: cssVar("--border"),
+            borderWidth: 1,
+            titleColor: cssVar("--text"),
+            bodyColor: cssVar("--text"),
+            padding: 12,
+            callbacks: {
+              title: (items) => {
+                const row = rows[items[0]?.dataIndex || 0];
+                return row ? `M${row.index + 1} · ${App.shortMilestoneLabel(row.milestone.label)}` : "";
+              },
+              label: (context) => {
+                const value = Number(context.raw);
+                if (!Number.isFinite(value)) return `${context.dataset.label}: 판단 전`;
+                return context.dataset.yAxisID === "score"
+                  ? `${context.dataset.label}: ${formatNumber(value, 2)}점`
+                  : `${context.dataset.label}: ${formatPercent(value, 1)}`;
+              },
+              afterBody: (items) => {
+                const row = rows[items[0]?.dataIndex || 0];
+                if (!row) return [];
+                const detailLines = row.scoreBreakdown
+                  .filter((item) => Number.isFinite(Number(item.value)) && item.value > 0)
+                  .map((item) => `${item.label}: ${formatNumber(item.value, 2)}점`);
+                const stats = row.attendanceStats;
+                return [
+                  "",
+                  "세부 점수",
+                  ...detailLines,
+                  "",
+                  `참여 ${row.aggregate.participantCount || 0}명 · 결석 ${stats.absenceCount}건 · 지각 ${stats.lateCount}건 · 위험 ${stats.riskCount}건`,
+                ];
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            ticks: { color: cssVar("--text-soft"), font: { weight: "800" } },
+            grid: { display: false },
+          },
+          score: {
+            type: "linear",
+            position: "left",
+            min: 1,
+            max: 4,
+            ticks: { color: cssVar("--text-soft"), stepSize: 0.5 },
+            grid: { color: colorWithAlpha(cssVar("--border"), 0.65) },
+            title: { display: true, text: "프로파일 점수", color: cssVar("--text-soft"), font: { weight: "800" } },
+          },
+          percent: {
+            type: "linear",
+            position: "right",
+            min: 0,
+            max: 100,
+            ticks: {
+              color: cssVar("--text-soft"),
+              callback: (value) => `${value}%`,
+            },
+            grid: { drawOnChartArea: false },
+            title: { display: true, text: "출결 비율", color: cssVar("--text-soft"), font: { weight: "800" } },
+          },
+        },
+      },
+    });
+  }
+
+  function renderMilestoneDetailCharts() {
+    if (state.activePage !== "process" || state.processView === "overview") return;
+    destroyOverviewCharts();
+    ensureChartFallbacks();
+    if (!window.Chart) return;
+
+    const milestone = (App.rawData.milestones || []).find((item) => item.id === state.processView);
+    if (!milestone) return;
+    const rows = milestoneTimelineRows(milestone);
+    createOverviewChart("milestone-rate-chart", {
+      type: "line",
+      data: {
+        labels: rows.map((row) => row.label),
+        datasets: [
+          {
+            label: "출석률",
+            data: rows.map((row) => row.attendanceRate),
+            borderColor: chartColor("success"),
+            backgroundColor: colorWithAlpha(chartColor("success"), 0.16),
+            borderWidth: 3,
+            pointRadius: 4,
+            pointHoverRadius: 7,
+            tension: 0.32,
+            fill: true,
+          },
+          {
+            label: "지각률",
+            data: rows.map((row) => row.lateRate),
+            borderColor: chartColor("warning"),
+            backgroundColor: chartColor("warning"),
+            borderWidth: 2,
+            borderDash: [6, 4],
+            pointRadius: 3,
+            tension: 0.28,
+          },
+          {
+            label: "위험출결률",
+            data: rows.map((row) => row.riskRate),
+            borderColor: chartColor("danger"),
+            backgroundColor: chartColor("danger"),
+            borderWidth: 2,
+            borderDash: [2, 4],
+            pointRadius: 3,
+            tension: 0.28,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: {
+          legend: {
+            labels: {
+              color: cssVar("--text"),
+              boxWidth: 12,
+              font: { size: 12, weight: "700" },
+            },
+          },
+          tooltip: {
+            backgroundColor: colorWithAlpha(cssVar("--surface"), 0.96),
+            borderColor: cssVar("--border"),
+            borderWidth: 1,
+            titleColor: cssVar("--text"),
+            bodyColor: cssVar("--text"),
+            padding: 12,
+            callbacks: {
+              label: (context) => {
+                const value = Number(context.raw);
+                return Number.isFinite(value) ? `${context.dataset.label}: ${formatPercent(value, 1)}` : `${context.dataset.label}: 판단 전`;
+              },
+              afterBody: (items) => {
+                const row = rows[items[0]?.dataIndex || 0];
+                if (!row) return [];
+                return [
+                  "",
+                  `운영일 ${row.dateCount}일 · 대상 ${row.participantCount}명`,
+                  `결석 ${row.absenceCount}건 · 지각 ${row.lateCount}건 · 위험 ${row.riskCount}건`,
+                ];
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            ticks: { color: cssVar("--text-soft"), maxRotation: 0, autoSkip: true, maxTicksLimit: 5 },
+            grid: { display: false },
+          },
+          y: {
+            min: 0,
+            max: 100,
+            ticks: {
+              color: cssVar("--text-soft"),
+              callback: (value) => `${value}%`,
+            },
+            grid: { color: colorWithAlpha(cssVar("--border"), 0.7) },
+          },
+        },
+      },
+    });
+  }
+
   function render() {
     document.body.dataset.page = "lobby";
     appRoot.dataset.activePage = state.activePage;
     if (searchInput && searchInput.value !== state.query) searchInput.value = state.query;
     App.setTheme(state.theme, themeToggle);
     syncTopNav();
+    destroyOverviewCharts();
 
     if (state.activePage === "process") appRoot.innerHTML = renderProcessPage();
     else if (state.activePage === "students") appRoot.innerHTML = renderStudentsPage();
     else if (state.activePage === "feedback") appRoot.innerHTML = renderFeedbackPage();
     else appRoot.innerHTML = renderOverviewPage();
+    if (state.activePage === "overview") requestAnimationFrame(renderOverviewCharts);
+    if (state.activePage === "process" && state.processView === "overview") requestAnimationFrame(renderProcessCharts);
+    if (state.activePage === "process" && state.processView !== "overview") requestAnimationFrame(renderMilestoneDetailCharts);
   }
 
   function syncTopNav() {
@@ -2497,10 +3487,12 @@
     render();
   }
 
-  function goToStudentsWithFilters({ status = "all", tag = "all", caseFilter = "all", sort = "name", direction = "asc" }) {
+  function goToStudentsWithFilters({ status = "all", tag = "all", caseFilter = "all", region = "all", classification = "all", sort = "name", direction = "asc" }) {
     state.statusFilter = status;
     state.activeTag = tag;
     state.activeCase = caseFilter;
+    state.regionFilter = region;
+    state.classificationFilter = classification;
     state.sortKey = sort;
     state.sortDirection = direction;
     state.activePage = "students";
@@ -2515,6 +3507,8 @@
     state.statusFilter = "all";
     state.activeTag = "all";
     state.activeCase = "all";
+    state.regionFilter = "all";
+    state.classificationFilter = "all";
     state.sortKey = "name";
     state.sortDirection = "asc";
     state.query = "";
@@ -2567,12 +3561,19 @@
       return;
     }
 
+    const operationalFilterButton = event.target.closest("[data-operational-filter]");
+    if (operationalFilterButton) {
+      goToStudentsByClassification(operationalFilterButton.dataset.operationalFilter || "all");
+      return;
+    }
+
     const overviewFilterButton = event.target.closest("[data-student-filter-action]");
     if (overviewFilterButton) {
       goToStudentsWithFilters({
         status: overviewFilterButton.dataset.filterStatus || "all",
         tag: overviewFilterButton.dataset.filterTag || "all",
         caseFilter: overviewFilterButton.dataset.filterCase || "all",
+        classification: overviewFilterButton.dataset.filterClassification || "all",
         sort: overviewFilterButton.dataset.filterSort || "name",
         direction: overviewFilterButton.dataset.filterDirection || "asc",
       });
@@ -2657,6 +3658,9 @@
     themeToggle.addEventListener("click", () => {
       state.theme = state.theme === "dark" ? "light" : "dark";
       App.setTheme(state.theme, themeToggle);
+      if (state.activePage === "overview") requestAnimationFrame(renderOverviewCharts);
+      if (state.activePage === "process" && state.processView === "overview") requestAnimationFrame(renderProcessCharts);
+      if (state.activePage === "process" && state.processView !== "overview") requestAnimationFrame(renderMilestoneDetailCharts);
     });
   }
 

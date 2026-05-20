@@ -447,8 +447,12 @@ body[data-page="lobby"] .course-progress-facts span {
 
 body[data-page="lobby"] .overview-stats {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+}
+
+body[data-page="lobby"] .panel-head {
+  margin-bottom: 16px;
 }
 
 body[data-page="lobby"] .overview-diagram-grid {
@@ -666,6 +670,385 @@ body[data-page="lobby"] .overview-action-card em {
   border-radius: 999px;
   background: var(--surface);
   box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 24%, transparent);
+}
+
+body[data-page="lobby"] .operation-current-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(0, 1.28fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+body[data-page="lobby"] .operation-stage-card,
+body[data-page="lobby"] .operation-chart-card,
+body[data-page="lobby"] .classification-group-card,
+body[data-page="lobby"] .classification-summary-card,
+body[data-page="lobby"] .demographic-chart-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+body[data-page="lobby"] .operation-stage-card {
+  min-width: 0;
+  padding: 14px;
+  display: grid;
+  gap: 7px;
+  color: currentColor;
+  text-align: left;
+}
+
+body[data-page="lobby"] button.operation-stage-card {
+  font: inherit;
+  cursor: pointer;
+}
+
+body[data-page="lobby"] .operation-stage-card span,
+body[data-page="lobby"] .operation-chart-head span,
+body[data-page="lobby"] .classification-summary-card span,
+body[data-page="lobby"] .recent-issue-head span {
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .operation-stage-card strong {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+body[data-page="lobby"] .operation-stage-card h3,
+body[data-page="lobby"] .operation-chart-head h3,
+body[data-page="lobby"] .recent-issue-head h3,
+body[data-page="lobby"] .demographic-chart-card h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+body[data-page="lobby"] .operation-stage-card p,
+body[data-page="lobby"] .classification-summary-card p,
+body[data-page="lobby"] .classification-summary-card small,
+body[data-page="lobby"] .recent-issue-head p,
+body[data-page="lobby"] .cohort-insight-list p,
+body[data-page="lobby"] .feature-main p,
+body[data-page="lobby"] .feature-meta small {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.45;
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .operation-chart-card {
+  min-width: 0;
+  padding: 14px;
+}
+
+body[data-page="lobby"] .operation-chart-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+body[data-page="lobby"] .operation-chart-head strong {
+  color: var(--text-soft);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .chart-shell {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  min-height: 220px;
+}
+
+body[data-page="lobby"] .chart-shell.compact-chart {
+  height: 214px;
+  min-height: 198px;
+}
+
+body[data-page="lobby"] .chart-shell canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+body[data-page="lobby"] .chart-fallback {
+  display: none;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  background: var(--secondary);
+  color: var(--text-soft);
+  font-size: 13px;
+  text-align: center;
+}
+
+body[data-page="lobby"] .chart-fallback.is-visible {
+  display: grid;
+}
+
+body[data-page="lobby"] .classification-group-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+body[data-page="lobby"] .classification-group-card {
+  min-width: 0;
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  color: currentColor;
+}
+
+body[data-page="lobby"] .classification-group-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+body[data-page="lobby"] .classification-group-head span,
+body[data-page="lobby"] .classification-group-head strong {
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .classification-group-head h3 {
+  margin: 3px 0 0;
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+body[data-page="lobby"] .classification-row-list {
+  display: grid;
+  gap: 8px;
+}
+
+body[data-page="lobby"] .classification-row {
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(76px, 0.34fr) 48px minmax(0, 1fr) minmax(120px, 0.44fr);
+  gap: 8px;
+  align-items: center;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--secondary);
+  color: currentColor;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    background 0.16s ease;
+}
+
+body[data-page="lobby"] .classification-row:hover {
+  background: var(--surface);
+  box-shadow: 0 8px 20px rgb(31 41 55 / 0.08);
+  transform: translateY(-1px);
+}
+
+body[data-page="lobby"] .classification-row strong {
+  color: var(--text);
+}
+
+body[data-page="lobby"] .classification-row span {
+  color: currentColor;
+  font-weight: 900;
+  text-align: right;
+}
+
+body[data-page="lobby"] .classification-row p,
+body[data-page="lobby"] .classification-row small {
+  margin: 0;
+  color: var(--text-soft);
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .classification-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+body[data-page="lobby"] .classification-summary-card {
+  min-width: 0;
+  padding: 12px;
+  display: grid;
+  gap: 6px;
+  border-left: 4px solid currentColor;
+  color: currentColor;
+}
+
+body[data-page="lobby"] .classification-summary-card strong {
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+body[data-page="lobby"] .classification-summary-card small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .recent-issue-block {
+  margin-top: 14px;
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .recent-issue-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+body[data-page="lobby"] .recent-issue-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+body[data-page="lobby"] .recent-issue-row {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(56px, 0.34fr) minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+}
+
+body[data-page="lobby"] .recent-issue-row strong,
+body[data-page="lobby"] .recent-issue-row span {
+  min-width: 0;
+}
+
+body[data-page="lobby"] .recent-issue-row span {
+  color: var(--text-soft);
+  overflow: hidden;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .recent-issue-row em {
+  padding: 4px 7px;
+  border-radius: 999px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .demographic-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+body[data-page="lobby"] .demographic-chart-card {
+  min-width: 0;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+body[data-page="lobby"] .demographic-chart-card.wide {
+  grid-column: span 1;
+}
+
+body[data-page="lobby"] .cohort-insight-list {
+  display: grid;
+  gap: 7px;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--secondary);
+}
+
+body[data-page="lobby"] .cohort-insight-list strong {
+  color: var(--text);
+}
+
+body[data-page="lobby"] .feature-list {
+  display: grid;
+  gap: 8px;
+}
+
+body[data-page="lobby"] .feature-row {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.34fr);
+  gap: 14px;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-left: 4px solid currentColor;
+  border-radius: 12px;
+  background: var(--surface);
+  color: currentColor;
+}
+
+body[data-page="lobby"] .feature-main,
+body[data-page="lobby"] .feature-meta {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+body[data-page="lobby"] .feature-main strong {
+  color: var(--text);
+}
+
+body[data-page="lobby"] .feature-meta {
+  justify-items: end;
+}
+
+body[data-page="lobby"] .feature-meta span {
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .feature-meta small {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .empty-state {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.5;
 }
 
 body[data-page="lobby"] .purpose-grid {
@@ -1040,13 +1423,23 @@ body[data-page="lobby"] .process-subnav button.is-current:not(.is-active) {
 
 body[data-page="lobby"] .process-overview-hero {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
 }
 
 body[data-page="lobby"] .process-overview-panel {
   display: grid;
   gap: 16px;
+}
+
+body[data-page="lobby"] .process-chart-shell {
+  min-height: 390px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 82%, transparent), var(--surface)),
+    var(--secondary);
 }
 
 body[data-page="lobby"] .process-graph-wrap {
@@ -1171,6 +1564,144 @@ body[data-page="lobby"] .process-timeline.compact .process-stage-card {
   box-shadow: none;
 }
 
+body[data-page="lobby"] .process-brief-panel {
+  display: grid;
+  gap: 16px;
+}
+
+body[data-page="lobby"] .process-brief-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+body[data-page="lobby"] .process-brief-card {
+  min-width: 0;
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease,
+    border-color 0.16s ease;
+}
+
+body[data-page="lobby"] .process-brief-card:hover {
+  border-color: color-mix(in srgb, var(--accent) 48%, var(--border));
+  box-shadow: 0 16px 32px rgb(31 41 55 / 0.1);
+  transform: translateY(-2px);
+}
+
+body[data-page="lobby"] .process-brief-card.is-current {
+  border-color: color-mix(in srgb, var(--danger) 52%, var(--border));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--danger) 18%, transparent);
+}
+
+body[data-page="lobby"] .process-brief-head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+body[data-page="lobby"] .process-brief-head span,
+body[data-page="lobby"] .process-brief-head em {
+  flex: 0 0 auto;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .process-brief-head em {
+  background: color-mix(in srgb, var(--danger) 12%, var(--surface));
+  color: var(--danger);
+}
+
+body[data-page="lobby"] .process-brief-head strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .process-brief-card > p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.58;
+}
+
+body[data-page="lobby"] .process-brief-purpose {
+  display: grid;
+  gap: 5px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--brand-soft);
+}
+
+body[data-page="lobby"] .process-brief-purpose b {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+body[data-page="lobby"] .process-brief-purpose span {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+body[data-page="lobby"] .process-brief-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+body[data-page="lobby"] .process-brief-metrics span {
+  min-width: 0;
+  padding: 9px;
+  border-radius: 12px;
+  background: var(--secondary);
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+body[data-page="lobby"] .process-brief-metrics strong {
+  display: block;
+  margin-top: 2px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+body[data-page="lobby"] .process-brief-issues {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+body[data-page="lobby"] .process-brief-issues i {
+  padding: 6px 8px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--warning) 12%, var(--surface));
+  color: var(--text);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
 body[data-page="lobby"] .milestone-detail-hero {
   display: grid;
   gap: 12px;
@@ -1191,6 +1722,59 @@ body[data-page="lobby"] .milestone-evaluation-reason p {
   color: var(--text);
   font-size: 14px;
   line-height: 1.65;
+}
+
+body[data-page="lobby"] .milestone-purpose-panel {
+  display: grid;
+  gap: 14px;
+}
+
+body[data-page="lobby"] .milestone-purpose-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1fr 1fr;
+  gap: 10px;
+}
+
+body[data-page="lobby"] .milestone-purpose-grid article {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+body[data-page="lobby"] .milestone-purpose-main {
+  border-color: color-mix(in srgb, var(--accent) 36%, var(--border));
+  background: var(--brand-soft);
+}
+
+body[data-page="lobby"] .milestone-purpose-grid span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .milestone-purpose-grid p,
+body[data-page="lobby"] .milestone-purpose-grid small,
+body[data-page="lobby"] .milestone-purpose-grid li {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+body[data-page="lobby"] .milestone-purpose-grid p {
+  color: var(--text);
+}
+
+body[data-page="lobby"] .milestone-purpose-grid ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 18px;
 }
 
 body[data-page="lobby"] .milestone-detail-metrics {
@@ -1297,10 +1881,34 @@ body[data-page="lobby"] .milestone-rate-timeline-panel {
   gap: 14px;
 }
 
+body[data-page="lobby"] .milestone-rate-chart-shell {
+  min-height: 330px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--secondary);
+}
+
 body[data-page="lobby"] .milestone-rate-summary {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+}
+
+body[data-page="lobby"] .milestone-rate-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+body[data-page="lobby"] .milestone-rate-note span {
+  padding: 7px 9px;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.35;
 }
 
 body[data-page="lobby"] .rate-timeline-wrap {
@@ -1734,9 +2342,23 @@ body[data-page="lobby"] .feedback-output {
 
   body[data-page="lobby"] .process-overview-hero,
   body[data-page="lobby"] .process-overview-summary-grid,
+  body[data-page="lobby"] .process-brief-grid,
   body[data-page="lobby"] .overview-action-grid,
   body[data-page="lobby"] .purpose-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  body[data-page="lobby"] .process-brief-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="lobby"] .operation-current-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="lobby"] .classification-group-grid,
+  body[data-page="lobby"] .classification-summary-grid {
+    grid-template-columns: 1fr;
   }
 
   body[data-page="lobby"] .milestone-detail-metrics {
@@ -1745,6 +2367,10 @@ body[data-page="lobby"] .feedback-output {
 
   body[data-page="lobby"] .milestone-top-summary {
     grid-template-columns: 1fr 1fr;
+  }
+
+  body[data-page="lobby"] .milestone-purpose-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   body[data-page="lobby"] .milestone-course-grid,
@@ -1756,7 +2382,8 @@ body[data-page="lobby"] .feedback-output {
     grid-template-columns: repeat(4, minmax(150px, 1fr));
   }
 
-  body[data-page="lobby"] .demographic-grid {
+  body[data-page="lobby"] .demographic-grid,
+  body[data-page="lobby"] .demographic-chart-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1764,9 +2391,11 @@ body[data-page="lobby"] .feedback-output {
 @media (max-width: 980px) {
   body[data-page="lobby"] .overview-hero,
   body[data-page="lobby"] .overview-diagram-grid,
+  body[data-page="lobby"] .operation-current-grid,
   body[data-page="lobby"] .feedback-workbench,
   body[data-page="lobby"] .milestone-detail-hero,
   body[data-page="lobby"] .milestone-top-summary,
+  body[data-page="lobby"] .milestone-purpose-grid,
   body[data-page="lobby"] .milestone-course-grid,
   body[data-page="lobby"] .project-operation-grid,
   body[data-page="lobby"] .milestone-detail-grid {
@@ -1785,6 +2414,10 @@ body[data-page="lobby"] .feedback-output {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  body[data-page="lobby"] .recent-issue-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   body[data-page="lobby"] .donut-layout {
     grid-template-columns: 1fr;
   }
@@ -1798,20 +2431,30 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .milestone-student-sample-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  body[data-page="lobby"] .process-brief-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 680px) {
   body[data-page="lobby"] .overview-stats,
   body[data-page="lobby"] .status-summary-grid,
   body[data-page="lobby"] .demographic-grid,
+  body[data-page="lobby"] .demographic-chart-grid,
+  body[data-page="lobby"] .classification-group-grid,
+  body[data-page="lobby"] .classification-summary-grid,
+  body[data-page="lobby"] .recent-issue-list,
   body[data-page="lobby"] .feedback-form-grid,
   body[data-page="lobby"] .process-stage-notes,
   body[data-page="lobby"] .process-overview-hero,
   body[data-page="lobby"] .process-overview-summary-grid,
+  body[data-page="lobby"] .process-brief-grid,
   body[data-page="lobby"] .overview-action-grid,
   body[data-page="lobby"] .purpose-grid,
   body[data-page="lobby"] .milestone-detail-metrics,
   body[data-page="lobby"] .milestone-rate-summary,
+  body[data-page="lobby"] .milestone-purpose-grid,
   body[data-page="lobby"] .project-operation-stats,
   body[data-page="lobby"] .project-special-list,
   body[data-page="lobby"] .urgent-student-list,
@@ -1821,6 +2464,10 @@ body[data-page="lobby"] .feedback-output {
   }
 
   body[data-page="lobby"] .category-grid.compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="lobby"] .process-brief-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1834,5 +2481,19 @@ body[data-page="lobby"] .feedback-output {
 
   body[data-page="lobby"] .student-command-count {
     width: 100%;
+  }
+
+  body[data-page="lobby"] .feature-row,
+  body[data-page="lobby"] .classification-row,
+  body[data-page="lobby"] .recent-issue-row {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="lobby"] .classification-row span {
+    text-align: left;
+  }
+
+  body[data-page="lobby"] .feature-meta {
+    justify-items: start;
   }
 }
