@@ -1,6 +1,37 @@
 [
   {
     "caseId": "우현승-flow-1",
+    "caseType": "oversleep_condition_rhythm",
+    "label": "늦잠 지각 리듬 관찰",
+    "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+    "severity": "caution",
+    "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+    "evidence": [
+      "늦잠 지각 3건",
+      "14일 내 최대 2건",
+      "최소 발생 간격 12일",
+      "최근 발생일 2026-04-08"
+    ],
+    "startDate": "2026-02-20",
+    "endDate": "2026-04-08"
+  },
+  {
+    "caseId": "우현승-flow-2",
+    "caseType": "health_project_strain",
+    "label": "건강-프로젝트 부담",
+    "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+    "severity": "caution",
+    "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+    "evidence": [
+      "건강/컨디션형 출결 4건",
+      "지연 체크인 2건",
+      "프로젝트 제출률 85.7%"
+    ],
+    "startDate": "2026-02-20",
+    "endDate": "2026-04-30"
+  },
+  {
+    "caseId": "우현승-flow-3",
     "caseType": "career_revision_progress",
     "label": "진로 문서 개선",
     "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",

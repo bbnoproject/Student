@@ -91,17 +91,17 @@
     "date": "2026-02-06",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-02-10",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-02-12",
@@ -147,9 +147,9 @@
     "date": "2026-04-01",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-04-02",
@@ -163,25 +163,25 @@
     "date": "2026-04-07",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-04-08",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-04-10",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-04-17",

@@ -18,17 +18,48 @@
   },
   {
     "caseId": "한가영-flow-2",
+    "caseType": "oversleep_condition_rhythm",
+    "label": "늦잠 지각 리듬 관찰",
+    "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+    "severity": "caution",
+    "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+    "evidence": [
+      "늦잠 지각 2건",
+      "14일 내 최대 1건",
+      "최소 발생 간격 20일",
+      "최근 발생일 2025-12-31"
+    ],
+    "startDate": "2025-12-11",
+    "endDate": "2025-12-31"
+  },
+  {
+    "caseId": "한가영-flow-3",
     "caseType": "health_project_strain",
     "label": "건강-프로젝트 부담",
     "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
     "severity": "caution",
     "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
     "evidence": [
-      "건강형 출결 5건",
+      "건강/컨디션형 출결 7건",
       "지연 체크인 0건",
       "프로젝트 제출률 0.0%"
     ],
-    "startDate": "2025-12-18",
+    "startDate": "2025-12-11",
     "endDate": "2026-01-08"
+  },
+  {
+    "caseId": "한가영-flow-4",
+    "caseType": "collaboration_conflict_signal",
+    "label": "협업 갈등 신호",
+    "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+    "severity": "caution",
+    "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+    "evidence": [
+      "타 학생 불만/갈등 언급 1건",
+      "프로젝트 이슈 키워드 0건",
+      "이동현 언급: 상황 - 에서 한 말 12/15(월) - 1주차 발표 💡특이 사항 1/5(월) - TIL에서 한가영에 대한 불만 표시 팀 내에 조원이 AI를 과제에 사용하는 것이 의심됩니다. 첨삭이나 자료 서칭이 아닌 그대로 붙여넣은 듯한 문장 형태가"
+    ],
+    "startDate": "",
+    "endDate": ""
   }
 ]

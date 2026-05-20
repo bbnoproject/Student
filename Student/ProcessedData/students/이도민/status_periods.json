@@ -2,17 +2,17 @@
   {
     "statusPeriodId": "이도민-status-1",
     "startDate": "2026-03-30",
-    "endDate": "2026-04-19",
-    "statusType": "경고",
-    "severity": "warning",
+    "endDate": "2026-04-05",
+    "statusType": "주의",
+    "severity": "caution",
     "reasonSummary": "면담 개입이 있었던 구간"
   },
   {
     "statusPeriodId": "이도민-status-2",
-    "startDate": "2026-04-27",
-    "endDate": "2026-05-03",
-    "statusType": "주의",
-    "severity": "caution",
-    "reasonSummary": "출결 위험 신호를 확인한 구간"
+    "startDate": "2026-04-13",
+    "endDate": "2026-04-19",
+    "statusType": "집중 관찰",
+    "severity": "warning",
+    "reasonSummary": "집중 확인이 필요한 구간"
   }
 ]

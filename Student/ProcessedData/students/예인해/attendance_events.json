@@ -35,24 +35,24 @@
     "date": "2026-02-25",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-04-10",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   },
   {
     "date": "2026-04-15",
     "kind": "지각",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
-    "category": "behavioral",
-    "impact": "behavioral"
+    "severity": "info",
+    "category": "condition",
+    "impact": "condition"
   }
 ]

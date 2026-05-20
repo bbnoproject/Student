@@ -3,7 +3,7 @@ body[data-page="lobby"] .topbar-copy {
 }
 
 body[data-page="lobby"] .app-root {
-  gap: 14px;
+  gap: 12px;
 }
 
 body[data-page="lobby"] .app-shell {
@@ -16,7 +16,7 @@ body[data-page="lobby"] .app-topbar {
 
 body[data-page="lobby"] .hero-panel,
 body[data-page="lobby"] .panel {
-  padding: 18px;
+  padding: 16px;
 }
 
 body[data-page="lobby"] .lobby-hero {
@@ -94,8 +94,8 @@ body[data-page="lobby"] .category-grid {
 }
 
 body[data-page="lobby"] .category-card {
-  min-height: 188px;
-  padding: 14px;
+  min-height: 132px;
+  padding: 12px;
   border: 1px solid currentColor;
   border-radius: 12px;
   display: flex;
@@ -118,7 +118,7 @@ body[data-page="lobby"] .category-card h4 {
 body[data-page="lobby"] .category-card p {
   margin: 0;
   color: var(--text);
-  line-height: 1.45;
+  line-height: 1.38;
   font-size: 12px;
 }
 
@@ -217,6 +217,7 @@ body[data-page="lobby"] .student-table-wrap {
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: 12px;
+  max-height: 620px;
 }
 
 body[data-page="lobby"] .student-table {
@@ -228,7 +229,7 @@ body[data-page="lobby"] .student-table {
 
 body[data-page="lobby"] .student-table th,
 body[data-page="lobby"] .student-table td {
-  padding: 12px 14px;
+  padding: 10px 12px;
   border-bottom: 1px solid var(--border);
   text-align: left;
   vertical-align: middle;
@@ -253,6 +254,14 @@ body[data-page="lobby"] .student-table th button {
 
 body[data-page="lobby"] .student-table tbody tr:hover {
   background: var(--secondary);
+}
+
+body[data-page="lobby"] .student-table td {
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .student-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--secondary) 34%, transparent);
 }
 
 body[data-page="lobby"] .student-table tbody tr:last-child td {
@@ -362,6 +371,8 @@ body[data-page="lobby"] .donut-card,
 body[data-page="lobby"] .breakdown-card,
 body[data-page="lobby"] .process-stage-card,
 body[data-page="lobby"] .status-summary-card,
+body[data-page="lobby"] .overview-action-card,
+body[data-page="lobby"] .purpose-card,
 body[data-page="lobby"] .feedback-panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -373,9 +384,9 @@ body[data-page="lobby"] .course-progress-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 18px;
-  padding: 20px;
-  min-height: 190px;
+  gap: 14px;
+  padding: 16px;
+  min-height: 156px;
 }
 
 body[data-page="lobby"] .course-progress-head,
@@ -399,7 +410,7 @@ body[data-page="lobby"] .student-table-meta span {
 }
 
 body[data-page="lobby"] .course-progress-head strong {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1.9rem, 4vw, 3.3rem);
   line-height: 0.95;
   color: var(--accent);
 }
@@ -448,7 +459,7 @@ body[data-page="lobby"] .overview-diagram-grid {
 
 body[data-page="lobby"] .donut-card,
 body[data-page="lobby"] .breakdown-card {
-  padding: 18px;
+  padding: 16px;
 }
 
 body[data-page="lobby"] .donut-card h3,
@@ -466,14 +477,14 @@ body[data-page="lobby"] .panel-head h2 {
 
 body[data-page="lobby"] .donut-layout {
   display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 16px;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 body[data-page="lobby"] .distribution-donut {
-  width: min(210px, 100%);
+  width: min(170px, 100%);
   aspect-ratio: 1;
   border-radius: 50%;
   display: grid;
@@ -584,6 +595,124 @@ body[data-page="lobby"] .breakdown-row i {
   background: var(--accent);
 }
 
+body[data-page="lobby"] .overview-action-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+body[data-page="lobby"] .overview-action-card {
+  min-width: 0;
+  min-height: 172px;
+  padding: 14px;
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  color: currentColor;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body[data-page="lobby"] button.overview-action-card {
+  font: inherit;
+}
+
+body[data-page="lobby"] .overview-action-card:hover {
+  border-color: color-mix(in srgb, currentColor 42%, var(--border));
+  transform: translateY(-1px);
+}
+
+body[data-page="lobby"] .overview-action-card span,
+body[data-page="lobby"] .overview-action-card em {
+  color: currentColor;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+body[data-page="lobby"] .overview-action-card strong {
+  color: currentColor;
+  font-size: clamp(1.55rem, 2.4vw, 2.15rem);
+  line-height: 0.95;
+}
+
+body[data-page="lobby"] .overview-action-card h3 {
+  margin: 2px 0 0;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+body[data-page="lobby"] .overview-action-card p,
+body[data-page="lobby"] .overview-action-card small {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.42;
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .overview-action-card small {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+body[data-page="lobby"] .overview-action-card em {
+  width: fit-content;
+  margin-top: auto;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, currentColor 24%, transparent);
+}
+
+body[data-page="lobby"] .purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+body[data-page="lobby"] .purpose-card {
+  display: grid;
+  gap: 7px;
+  min-height: 176px;
+  padding: 14px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+body[data-page="lobby"] .purpose-card:hover {
+  border-color: color-mix(in srgb, currentColor 36%, var(--border));
+  transform: translateY(-1px);
+}
+
+body[data-page="lobby"] .purpose-card span,
+body[data-page="lobby"] .purpose-card em {
+  color: currentColor;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+}
+
+body[data-page="lobby"] .purpose-card strong {
+  font-size: 1.15rem;
+}
+
+body[data-page="lobby"] .purpose-card p,
+body[data-page="lobby"] .purpose-card small {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.42;
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .purpose-card small b {
+  color: var(--text);
+}
+
 body[data-page="lobby"] .status-summary-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -600,11 +729,11 @@ body[data-page="lobby"] .category-card {
 body[data-page="lobby"] .status-summary-card {
   display: grid;
   gap: 5px;
-  padding: 15px;
+  padding: 13px;
 }
 
 body[data-page="lobby"] .status-summary-card strong {
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1;
 }
 
@@ -671,6 +800,94 @@ body[data-page="lobby"] .category-card small {
 body[data-page="lobby"] .student-management-panel {
   display: grid;
   gap: 14px;
+}
+
+body[data-page="lobby"] .student-command-panel {
+  display: grid;
+  gap: 12px;
+}
+
+body[data-page="lobby"] .student-command-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+body[data-page="lobby"] .student-command-main h2 {
+  margin: 0;
+  font-size: 1.18rem;
+}
+
+body[data-page="lobby"] .student-command-main p {
+  max-width: 78ch;
+  margin: 6px 0 0;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+body[data-page="lobby"] .student-command-count {
+  flex: 0 0 auto;
+  min-width: 104px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--brand-soft);
+  color: var(--accent);
+  text-align: center;
+}
+
+body[data-page="lobby"] .student-command-count strong {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+body[data-page="lobby"] .student-command-count span {
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .filter-state-row,
+body[data-page="lobby"] .student-sort-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+body[data-page="lobby"] .filter-state-chip,
+body[data-page="lobby"] .student-sort-chip {
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 11px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+body[data-page="lobby"] .filter-state-chip b {
+  color: currentColor;
+}
+
+body[data-page="lobby"] .student-sort-chip {
+  background: var(--surface);
+  cursor: pointer;
+}
+
+body[data-page="lobby"] .student-sort-chip.is-active {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #fff;
+}
+
+body[data-page="lobby"] .compact-action {
+  min-height: 36px;
+  padding: 7px 11px;
+  font-size: 12px;
 }
 
 body[data-page="lobby"] .student-table td:first-child {
@@ -1516,7 +1733,9 @@ body[data-page="lobby"] .feedback-output {
   }
 
   body[data-page="lobby"] .process-overview-hero,
-  body[data-page="lobby"] .process-overview-summary-grid {
+  body[data-page="lobby"] .process-overview-summary-grid,
+  body[data-page="lobby"] .overview-action-grid,
+  body[data-page="lobby"] .purpose-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -1589,6 +1808,8 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .process-stage-notes,
   body[data-page="lobby"] .process-overview-hero,
   body[data-page="lobby"] .process-overview-summary-grid,
+  body[data-page="lobby"] .overview-action-grid,
+  body[data-page="lobby"] .purpose-grid,
   body[data-page="lobby"] .milestone-detail-metrics,
   body[data-page="lobby"] .milestone-rate-summary,
   body[data-page="lobby"] .project-operation-stats,
@@ -1605,5 +1826,13 @@ body[data-page="lobby"] .feedback-output {
 
   body[data-page="lobby"] .process-stage-card {
     grid-template-columns: 1fr;
+  }
+
+  body[data-page="lobby"] .student-command-main {
+    flex-direction: column;
+  }
+
+  body[data-page="lobby"] .student-command-count {
+    width: 100%;
   }
 }

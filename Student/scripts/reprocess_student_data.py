@@ -1217,12 +1217,19 @@ def build_student_overview(bundle: dict[str, Any]) -> str:
         "",
         "## 운영 지표",
         f"- 출결 기록 수: {bundle['stats'].get('attendanceIssues', 0)}",
-        f"- 판단 반영 위험 출결 수: {bundle['stats'].get('attendanceRiskIssues', 0)}",
-        f"- 건강형 출결 수: {bundle['stats'].get('healthAttendanceIssues', 0)}",
+        f"- 무단/무연락 결석 수: {bundle['stats'].get('attendanceRiskIssues', 0)}",
+        f"- 건강/컨디션형 출결 수: {bundle['stats'].get('healthAttendanceIssues', 0)}",
+        f"- 컨디션성 늦잠 지각 수: {bundle['stats'].get('conditionAttendanceIssues', 0)}",
         f"- 지각 수: {bundle['stats'].get('lateCount', 0)}",
         f"- 결석 수: {bundle['stats'].get('absenceCount', 0)}",
         f"- 면담 수: {bundle['stats'].get('counselingCount', 0)}",
         f"- 프로젝트 제출률: {bundle['stats'].get('projectSubmissionRate', 0)}%",
+        "",
+        "## 자기표현 프로파일",
+        f"- 요약: {bundle.get('expressionProfile', {}).get('summary', '표현 특징 판단 보류')}",
+        f"- 직접 작성 자료 수: {bundle.get('expressionProfile', {}).get('sourceTotal', 0)}",
+        f"- 주요 표현 특징: {', '.join(bundle.get('expressionProfile', {}).get('dominantTraits', [])) or '판단 보류'}",
+        f"- 확인 필요 표현: {', '.join(bundle.get('expressionProfile', {}).get('cautionTraits', [])) or '없음'}",
         "",
         "## 성향 스냅샷",
     ]
@@ -1602,6 +1609,7 @@ def student_output_bundle(
         "timelineEvents": timeline_events,
         "weeklyTimeline": student.get("weeklyTimeline", []),
         "stats": student.get("stats", {}),
+        "expressionProfile": student.get("derived", {}).get("expressionProfile", {}),
         "currentProfile": {
             SNAPSHOT_KEY_MAP.get(key, key): value
             for key, value in student.get("currentProfile", {}).items()
@@ -1659,6 +1667,7 @@ def write_processed_output(payload: dict[str, Any], bundles: list[dict[str, Any]
 - `project_team_history.json`: 프로젝트별 팀 배치와 역할 이력
 - `peer_relationships.json`: 반복 협업 팀원 요약
 - `career_documents.json`: 1차/2차 취업 문서와 피드백 이력
+- `expression_profile.json`: 학생 직접 작성 문서 기반 자기표현/발화 특징
 - `overview.md`: 사람이 빠르게 읽을 수 있는 학생 요약
 
 주의사항
@@ -1690,6 +1699,7 @@ def write_processed_output(payload: dict[str, Any], bundles: list[dict[str, Any]
         record(student_dir / "career_documents.json", "json", bundle["careerDocuments"])
         record(student_dir / "learning_evidence.json", "json", bundle["learningEvidence"])
         record(student_dir / "learning_flow_cases.json", "json", bundle["learningFlowCases"])
+        record(student_dir / "expression_profile.json", "json", bundle["expressionProfile"])
         record(student_dir / "evaluation_snapshots.json", "json", bundle["evaluationSnapshots"])
         record(student_dir / "status_periods.json", "json", bundle["statusPeriods"])
         record(student_dir / "timeline_events.json", "json", bundle["timelineEvents"])

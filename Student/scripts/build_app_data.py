@@ -102,6 +102,21 @@ COLLAB_AVOID_KEYWORDS = [
     "프로젝트를 함께하고 싶지",
 ]
 
+COLLAB_COMPLAINT_KEYWORDS = [
+    "불만",
+    "갈등",
+    "불화",
+    "마찰",
+    "트러블",
+    "소통 문제",
+    "소통문제",
+    "의견충돌",
+    "의견 충돌",
+    "답답",
+    "조율이 어려",
+    "진행이 어려",
+]
+
 COLLAB_SERIOUSNESS_KEYWORDS = [
     "소통",
     "존중",
@@ -145,6 +160,10 @@ COLLAB_LEADERSHIP_BAD_KEYWORDS = [
 ]
 
 LEARNING_FLOW_CASE_META = {
+    "oversleep_condition_rhythm": {
+        "label": "늦잠 지각 리듬 관찰",
+        "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+    },
     "condition_management_sequence": {
         "label": "컨디션 관리 연쇄",
         "description": "프로젝트 데일리체크인 지연 뒤 다음 날 지각 또는 병가가 이어진 케이스",
@@ -160,6 +179,10 @@ LEARNING_FLOW_CASE_META = {
     "daily_checkin_pattern": {
         "label": "데일리체크인 리듬 흔들림",
         "description": "체크인 지연과 프로젝트 제출 흐름이 함께 흔들린 케이스",
+    },
+    "collaboration_conflict_signal": {
+        "label": "협업 갈등 신호",
+        "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
     },
     "counseling_recovery": {
         "label": "면담 후 회복",
@@ -293,6 +316,73 @@ CAREER_UNFOCUSED_KEYWORDS = [
     "아직 정하지",
     "고민 중",
     "방향성을 찾아",
+]
+
+EXPRESSION_SPECIFIC_KEYWORDS = [
+    "구체",
+    "예를 들어",
+    "먼저",
+    "다음",
+    "단계",
+    "일정",
+    "역할",
+    "근거",
+    "정리",
+    "기록",
+    "공유",
+]
+
+EXPRESSION_AGENCY_KEYWORDS = [
+    "하겠습니다",
+    "했습니다",
+    "진행",
+    "수행",
+    "개선",
+    "보완",
+    "시도",
+    "준비",
+    "확인",
+    "조율",
+    "해보",
+    "만들",
+]
+
+EXPRESSION_RELATION_KEYWORDS = [
+    "팀원",
+    "함께",
+    "소통",
+    "도움",
+    "배려",
+    "피드백",
+    "조율",
+    "공유",
+    "존중",
+    "의견",
+    "대화",
+]
+
+EXPRESSION_EMOTION_KEYWORDS = [
+    "힘들",
+    "어렵",
+    "불안",
+    "걱정",
+    "압박",
+    "부담",
+    "아쉽",
+    "스트레스",
+    "무섭",
+    "답답",
+]
+
+EXPRESSION_UNCERTAINTY_KEYWORDS = [
+    "모르겠",
+    "고민",
+    "아직",
+    "어떻게",
+    "잘 모르",
+    "부족",
+    "애매",
+    "불확실",
 ]
 
 
@@ -573,11 +663,15 @@ def is_judgment_attendance_issue(detail: str, kind: str) -> bool:
         keyword in text
         for keyword in ["무단", "연락 x", "연락x", "연락 없음", "연락없음", "연락 안", "연락안"]
     )
-    is_oversleep_late = "지각" in text and any(
+    return is_unexcused_absence
+
+
+def is_oversleep_late_detail(detail: str, kind: str) -> bool:
+    text = f"{detail}\n{kind}".lower()
+    return "지각" in text and any(
         keyword in text
         for keyword in ["늦잠", "잠", "기상 실패", "기상실패"]
     )
-    return is_unexcused_absence or is_oversleep_late
 
 
 def attendance_reason_profile(value: str, kind: str) -> dict[str, str]:
@@ -652,6 +746,8 @@ def attendance_reason_profile(value: str, kind: str) -> dict[str, str]:
         return {"category": "health", "impact": "contextual", "severity": "info"}
     if any(keyword in lowered for keyword in administrative_keywords):
         return {"category": "administrative", "impact": "exempt", "severity": "info"}
+    if is_oversleep_late_detail(detail, kind):
+        return {"category": "condition", "impact": "condition", "severity": "info"}
     if is_judgment_attendance_issue(detail, kind):
         severity = "warning" if kind == "결석" else "caution"
         return {"category": "behavioral", "impact": "behavioral", "severity": severity}
@@ -768,6 +864,230 @@ def score_career_readiness(text: str, career_rounds: list[dict[str, Any]]) -> di
     }
 
 
+def age_band_for_student(student: dict[str, Any], reference: date | None = None) -> str:
+    birth = parse_date(student.get("birthDate"))
+    if not birth:
+        return "미상"
+    reference = reference or date.today()
+    age = reference.year - birth.year - ((reference.month, reference.day) < (birth.month, birth.day))
+    if age < 25:
+        return "24세 이하"
+    if age < 30:
+        return "25-29세"
+    if age < 35:
+        return "30-34세"
+    if age < 40:
+        return "35-39세"
+    return "40세 이상"
+
+
+def expression_level(score: float) -> str:
+    if score >= 3.2:
+        return "높음"
+    if score >= 2.3:
+        return "보통"
+    return "낮음"
+
+
+def text_density_score(hit_count: int, text_length: int, unit: int = 750) -> float:
+    if text_length <= 0:
+        return 1.0
+    density = hit_count / max(1, text_length / unit)
+    return bounded_metric(1.0 + min(3.0, density * 0.55))
+
+
+def keyword_occurrence_count(text: str, keywords: list[str]) -> int:
+    if not text:
+        return 0
+    total = 0
+    for keyword in {item for item in keywords if item}:
+        total += text.count(keyword)
+    return total
+
+
+def keyword_source_coverage(sources: list[dict[str, str]], keywords: list[str]) -> tuple[int, int]:
+    source_hits = 0
+    domain_hits: set[str] = set()
+    for source in sources:
+        source_text = source.get("text", "")
+        if unique_keyword_hits(source_text, keywords):
+            source_hits += 1
+            domain_hits.add(source.get("domain", ""))
+    return source_hits, len(domain_hits)
+
+
+def expression_signal_score(unique_hits: int, occurrence_hits: int, source_hits: int, domain_hits: int) -> float:
+    # Expression traits are stronger when they recur across document types, not just in one long text.
+    signal = (
+        unique_hits * 0.12
+        + min(occurrence_hits, 80) * 0.025
+        + min(source_hits, 12) * 0.08
+        + domain_hits * 0.22
+    )
+    return bounded_metric(1.0 + min(3.0, signal))
+
+
+def collect_self_authored_sources(student: dict[str, Any]) -> list[dict[str, str]]:
+    admission = student.get("admission", {})
+    sources: list[dict[str, str]] = []
+    admission_text = "\n".join(
+        filter(
+            None,
+            [
+                admission.get("intro", ""),
+                admission.get("motivation", ""),
+                admission.get("goal", ""),
+                admission.get("career", ""),
+                admission.get("conflict", ""),
+                admission.get("failure", ""),
+                admission.get("peer", ""),
+            ],
+        )
+    )
+    if admission_text.strip():
+        sources.append({"domain": "admission", "label": "모집서류", "date": "", "text": admission_text})
+    cadet_text = student.get("cadetCard", {}).get("fullText", "")
+    if cadet_text.strip():
+        sources.append({"domain": "cadetCard", "label": "대원카드", "date": "", "text": cadet_text})
+    for item in student.get("checkins", []):
+        text = "\n".join([item.get("workText", ""), item.get("noteText", "")]).strip()
+        if text:
+            sources.append({"domain": "checkin", "label": f"데일리체크인 · {item.get('phase', '')}", "date": item.get("date", ""), "text": text})
+    for item in student.get("retrospectives", []):
+        text = item.get("detail", "").strip()
+        if text:
+            sources.append({"domain": "retro", "label": f"프로젝트 회고 · {item.get('phase', '')}", "date": item.get("date", ""), "text": text})
+    for round_item in student.get("careerDocuments", {}).get("rounds", []):
+        documents = round_item.get("documents", {})
+        text = "\n".join(
+            filter(
+                None,
+                [
+                    documents.get("selfIntroduction", ""),
+                    documents.get("resume", ""),
+                ],
+            )
+        ).strip()
+        if text:
+            sources.append({"domain": "careerDocument", "label": f"진로 문서 · {round_item.get('roundLabel', '')}", "date": round_item.get("date", ""), "text": text})
+    return sources
+
+
+def source_counts(sources: list[dict[str, str]]) -> dict[str, int]:
+    counts = Counter(source["domain"] for source in sources)
+    return {
+        "admission": counts.get("admission", 0),
+        "cadetCard": counts.get("cadetCard", 0),
+        "checkin": counts.get("checkin", 0),
+        "retro": counts.get("retro", 0),
+        "careerDocument": counts.get("careerDocument", 0),
+    }
+
+
+def source_sample(sources: list[dict[str, str]], domain: str) -> dict[str, str]:
+    candidates = [source for source in sources if source["domain"] == domain and source.get("text", "").strip()]
+    if not candidates:
+        return {}
+    candidates = sorted(candidates, key=lambda item: item.get("date", ""))
+    selected = candidates[-1]
+    return {
+        "label": selected.get("label", ""),
+        "date": selected.get("date", ""),
+        "excerpt": short_text(selected.get("text", ""), 180),
+    }
+
+
+def expression_dimension(label: str, evidence_label: str, keywords: list[str], sources: list[dict[str, str]], text: str) -> dict[str, Any]:
+    unique_hits = unique_keyword_hits(text, keywords)
+    occurrence_hits = keyword_occurrence_count(text, keywords)
+    source_hits, domain_hits = keyword_source_coverage(sources, keywords)
+    return {
+        "label": label,
+        "score": expression_signal_score(unique_hits, occurrence_hits, source_hits, domain_hits),
+        "evidence": f"{evidence_label} {unique_hits}종 · 반복 {occurrence_hits}회 · 문서 {source_hits}건",
+    }
+
+
+def score_expression_profile(student: dict[str, Any]) -> dict[str, Any]:
+    sources = collect_self_authored_sources(student)
+    text = "\n".join(source["text"] for source in sources)
+    text_length = len(text)
+
+    dimensions = {
+        "specificity": expression_dimension("구체성", "구체 표현", EXPRESSION_SPECIFIC_KEYWORDS, sources, text),
+        "agency": expression_dimension("주도성 표현", "실행/개선 표현", EXPRESSION_AGENCY_KEYWORDS, sources, text),
+        "reflection": expression_dimension("성찰 표현", "회고/개선 표현", REFLECTION_KEYWORDS, sources, text),
+        "relation": expression_dimension("관계/협업 언어", "관계/협업 표현", EXPRESSION_RELATION_KEYWORDS, sources, text),
+        "career": expression_dimension(
+            "진로 언어",
+            "진로/직무 표현",
+            CAREER_PURPOSE_KEYWORDS + CAREER_ROLE_KEYWORDS + CAREER_STRENGTH_KEYWORDS + CAREER_COLOR_KEYWORDS,
+            sources,
+            text,
+        ),
+        "emotion": expression_dimension("정서/부담 표현", "정서/부담 표현", EXPRESSION_EMOTION_KEYWORDS, sources, text),
+        "uncertainty": expression_dimension("탐색/불확실 표현", "탐색/불확실 표현", EXPRESSION_UNCERTAINTY_KEYWORDS, sources, text),
+    }
+    for value in dimensions.values():
+        value["level"] = expression_level(value["score"])
+
+    trait_candidates = [
+        dimensions["specificity"],
+        dimensions["agency"],
+        dimensions["reflection"],
+        dimensions["relation"],
+        dimensions["career"],
+    ]
+    ranked_traits = sorted(trait_candidates, key=lambda item: item["score"], reverse=True)
+    dominant_traits = [
+        item["label"]
+        for item in ranked_traits
+        if item["score"] >= 2.3
+    ][:3]
+    caution_traits = [
+        item["label"]
+        for item in [dimensions["emotion"], dimensions["uncertainty"]]
+        if item["score"] >= 2.8
+    ]
+    if not dominant_traits and sources:
+        dominant_traits = [item["label"] for item in ranked_traits[:2] if item["score"] > 1.0] or ["표현 근거 수집 중"]
+    trait_text = ", ".join(dominant_traits) if dominant_traits else "표현 특징"
+    summary = (
+        f"학생이 직접 작성한 자료 {len(sources)}건에서 {trait_text} 중심의 표현 특징이 관찰됩니다."
+        if sources
+        else "학생이 직접 작성한 문서가 부족해 표현 특징 판단을 보류합니다."
+    )
+    if caution_traits:
+        summary += f" 다만 {', '.join(caution_traits)}은 개인 맥락과 함께 확인합니다."
+
+    counts = source_counts(sources)
+    return {
+        "basicContext": {
+            "ageBand": age_band_for_student(student),
+            "gender": student.get("gender", ""),
+            "education": student.get("education", ""),
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다.",
+        },
+        "sourceCounts": counts,
+        "sourceTotal": len(sources),
+        "textLength": text_length,
+        "dimensions": dimensions,
+        "dominantTraits": dominant_traits,
+        "cautionTraits": caution_traits,
+        "samples": [
+            sample
+            for sample in [
+                source_sample(sources, "admission"),
+                source_sample(sources, "checkin"),
+                source_sample(sources, "retro"),
+                source_sample(sources, "careerDocument"),
+            ]
+            if sample
+        ][:4],
+        "summary": summary,
+    }
+
+
 def is_late_event(event: dict[str, Any]) -> bool:
     text = "\n".join(
         str(event.get(key, ""))
@@ -838,6 +1158,7 @@ def score_collaboration_readiness(
 
     peer_praise_count = sum(1 for item in peer_feedback if item.get("type") in {"praise", "want"})
     peer_avoid_count = sum(1 for item in peer_feedback if item.get("type") == "avoid")
+    peer_complaint_count = sum(1 for item in peer_feedback if item.get("type") == "complaint")
     leader_count = sum(1 for item in team_history if item.get("role") in {"team_lead", "pm"})
     project_text = "\n".join([text["retro"], text["checkin"]])
     checkin_quality_hits = unique_keyword_hits(text["checkin"], POSITIVE_COLLAB_KEYWORDS + COLLAB_SERIOUSNESS_KEYWORDS)
@@ -887,6 +1208,7 @@ def score_collaboration_readiness(
         + (role_execution * 0.2)
         + (leadership_practice * 0.1)
     )
+    raw = bounded_metric(raw - min(0.9, peer_complaint_count * 0.35))
     readiness_score = round((bounded_metric(raw) / 4) * 100, 2)
     profile_score = clamp_score(raw)
 
@@ -945,6 +1267,7 @@ def score_collaboration_readiness(
     return {
         "peerPraiseCount": peer_praise_count,
         "peerAvoidCount": peer_avoid_count,
+        "peerComplaintCount": peer_complaint_count,
         "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
         "checkinConsistency": checkin_consistency,
         "checkinCount": len(dated_checkins),
@@ -957,7 +1280,7 @@ def score_collaboration_readiness(
         "projectIssueCount": project_issue_hits,
         "punctuality": 4.0 if late_count == 0 else bounded_metric(3.0 - min(2.0, late_count * 0.35)),
         "peopleSeriousness": bounded_metric(1.0 + min(1.4, unique_keyword_hits(text["base"], COLLAB_SERIOUSNESS_KEYWORDS) * 0.12)),
-        "riskSignal": bounded_metric(project_issue_hits * 0.12),
+        "riskSignal": bounded_metric((project_issue_hits * 0.12) + (peer_complaint_count * 0.35)),
         "collaborationReadinessScore": readiness_score,
         "profileScore": profile_score,
         "lateCount": late_count,
@@ -998,7 +1321,9 @@ def add_peer_feedback_mentions(students: list[dict[str, Any]]) -> None:
                 continue
             for window in text_windows_for_name(source_text, target_name):
                 feedback_type = ""
-                if unique_keyword_hits(window, COLLAB_AVOID_KEYWORDS):
+                if unique_keyword_hits(window, COLLAB_COMPLAINT_KEYWORDS):
+                    feedback_type = "complaint"
+                elif unique_keyword_hits(window, COLLAB_AVOID_KEYWORDS):
                     feedback_type = "avoid"
                 elif unique_keyword_hits(window, COLLAB_WANT_KEYWORDS):
                     feedback_type = "want"
@@ -1035,6 +1360,31 @@ def max_events_in_window(events: list[dict[str, Any]], days: int) -> int:
         count = sum(1 for item in dates[index:] if (item - start_date).days <= days)
         best = max(best, count)
     return best
+
+
+def min_gap_days(events: list[dict[str, Any]]) -> int | None:
+    dates = sorted(parse_date(event.get("date")) for event in events if parse_date(event.get("date")))
+    if len(dates) < 2:
+        return None
+    gaps = [(right - left).days for left, right in zip(dates, dates[1:])]
+    return min(gaps) if gaps else None
+
+
+def latest_observed_date(student: dict[str, Any]) -> date | None:
+    dates: list[date] = []
+    for event in student.get("timelineEvents", []):
+        parsed = parse_date(event.get("date"))
+        if parsed:
+            dates.append(parsed)
+    for checkin in student.get("checkins", []):
+        parsed = parse_date(checkin.get("date"))
+        if parsed:
+            dates.append(parsed)
+    for retro in student.get("retrospectives", []):
+        parsed = parse_date(retro.get("date"))
+        if parsed:
+            dates.append(parsed)
+    return max(dates) if dates else None
 
 
 def career_text_for_student(student: dict[str, Any]) -> str:
@@ -1096,6 +1446,12 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
     cases: list[dict[str, Any]] = []
     attendance_events = student.get("attendanceEvents", [])
     health_events = [event for event in attendance_events if event.get("category") == "health"]
+    condition_events = [
+        event for event in attendance_events if event.get("category") in {"health", "condition"}
+    ]
+    oversleep_late_events = [
+        event for event in attendance_events if event.get("category") == "condition" and event.get("kind") == "지각"
+    ]
     risk_events = [event for event in attendance_events if event.get("impact") == "behavioral"]
     checkins = student.get("checkins", [])
     late_checkins = [item for item in checkins if not item.get("onTime") and parse_date(item.get("date"))]
@@ -1114,6 +1470,35 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
             [event.get("date", "") for event in health_events],
         )
 
+    if oversleep_late_events:
+        latest_context_date = latest_observed_date(student)
+        latest_oversleep_date = max(
+            (parse_date(event.get("date")) for event in oversleep_late_events if parse_date(event.get("date"))),
+            default=None,
+        )
+        clustered_count = max_events_in_window(oversleep_late_events, 14)
+        min_gap = min_gap_days(oversleep_late_events)
+        is_recent = bool(
+            latest_context_date
+            and latest_oversleep_date
+            and (latest_context_date - latest_oversleep_date).days <= 21
+        )
+        if len(oversleep_late_events) >= 2 and (is_recent or clustered_count >= 2):
+            add_learning_flow_case(
+                student,
+                cases,
+                "oversleep_condition_rhythm",
+                "warning" if is_recent and clustered_count >= 2 else "caution",
+                "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+                [
+                    f"늦잠 지각 {len(oversleep_late_events)}건",
+                    f"14일 내 최대 {clustered_count}건",
+                    f"최소 발생 간격 {min_gap if min_gap is not None else '-'}일",
+                    f"최근 발생일 {latest_oversleep_date.isoformat() if latest_oversleep_date else '-'}",
+                ],
+                [event.get("date", "") for event in oversleep_late_events],
+            )
+
     sequence_evidence = []
     sequence_dates = []
     attendance_by_date: dict[date, list[dict[str, Any]]] = defaultdict(list)
@@ -1129,7 +1514,7 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
         next_events = [
             event
             for event in attendance_by_date.get(next_day, [])
-            if event.get("kind") == "지각" or event.get("category") == "health"
+            if event.get("kind") == "지각" or event.get("category") in {"health", "condition"}
         ]
         for event in next_events:
             sequence_evidence.append(
@@ -1147,7 +1532,7 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
             sequence_dates,
         )
 
-    if len(health_events) >= 2 and (len(delayed_checkins) >= 2 or project_rate < 80):
+    if len(condition_events) >= 2 and (len(delayed_checkins) >= 2 or project_rate < 80):
         add_learning_flow_case(
             student,
             cases,
@@ -1155,11 +1540,11 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
             "caution",
             "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
             [
-                f"건강형 출결 {len(health_events)}건",
+                f"건강/컨디션형 출결 {len(condition_events)}건",
                 f"지연 체크인 {len(delayed_checkins)}건",
                 f"프로젝트 제출률 {project_rate}%",
             ],
-            [event.get("date", "") for event in health_events] + [item.get("date", "") for item in delayed_checkins],
+            [event.get("date", "") for event in condition_events] + [item.get("date", "") for item in delayed_checkins],
         )
 
     if len(delayed_checkins) >= 3 and project_rate < 90:
@@ -1178,6 +1563,28 @@ def analyze_learning_flow_cases(student: dict[str, Any]) -> list[dict[str, Any]]
                 ],
             ],
             [item.get("date", "") for item in delayed_checkins],
+        )
+
+    collaboration_readiness = score_collaboration_readiness(student)
+    complaint_feedback = [
+        item for item in student.get("peerFeedback", []) if item.get("type") == "complaint"
+    ]
+    if collaboration_readiness["peerComplaintCount"] > 0:
+        add_learning_flow_case(
+            student,
+            cases,
+            "collaboration_conflict_signal",
+            "warning" if collaboration_readiness["peerComplaintCount"] >= 2 else "caution",
+            "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+            [
+                f"타 학생 불만/갈등 언급 {collaboration_readiness['peerComplaintCount']}건",
+                f"프로젝트 이슈 키워드 {collaboration_readiness['projectIssueCount']}건",
+                *[
+                    f"{item.get('from', '미상')} 언급: {item.get('snippet', '')}"
+                    for item in complaint_feedback[:3]
+                ],
+            ],
+            [],
         )
 
     milestones = [item for item in student.get("milestones", []) if item.get("profileAverage") is not None]
@@ -2479,7 +2886,10 @@ def build_snapshot(student: dict[str, Any], label: str, snapshot_date: date, cut
         event for event in attendance_events if event.get("impact") == "exempt"
     ]
     health_attendance_issues = [
-        event for event in attendance_events if event.get("category") == "health"
+        event for event in attendance_events if event.get("category") in {"health", "condition"}
+    ]
+    condition_attendance_issues = [
+        event for event in attendance_events if event.get("category") == "condition"
     ]
     risk_attendance_count = len(behavioral_attendance_issues)
     behavioral_absence_count = sum(
@@ -2853,7 +3263,10 @@ def build_evaluation_and_status(students: list[dict[str, Any]], curriculum: dict
             [event for event in student["attendanceEvents"] if event.get("impact") == "behavioral"]
         )
         health_attendance_total = len(
-            [event for event in student["attendanceEvents"] if event.get("category") == "health"]
+            [event for event in student["attendanceEvents"] if event.get("category") in {"health", "condition"}]
+        )
+        condition_attendance_total = len(
+            [event for event in student["attendanceEvents"] if event.get("category") == "condition"]
         )
         project_expected_total = sum(len(dates) for dates in phase_dates.values())
         project_submissions = len({(item["phase"], item["date"]) for item in student["checkins"] if item["date"]})
@@ -2862,6 +3275,7 @@ def build_evaluation_and_status(students: list[dict[str, Any]], curriculum: dict
             "attendanceIssues": attendance_total,
             "attendanceRiskIssues": attendance_risk_total,
             "healthAttendanceIssues": health_attendance_total,
+            "conditionAttendanceIssues": condition_attendance_total,
             "lateCount": sum(1 for event in student["attendanceEvents"] if event["kind"] == "지각"),
             "absenceCount": sum(1 for event in student["attendanceEvents"] if event["kind"] == "결석"),
             "counselingCount": len(student["counselings"]),
@@ -3176,7 +3590,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
     caution_count = len([value for value in current_profile_values if value <= 2])
     support_reasons = []
     if student["stats"].get("attendanceRiskIssues", 0) >= 2:
-        support_reasons.append(f"판단 반영 출결 {student['stats'].get('attendanceRiskIssues', 0)}건")
+        support_reasons.append(f"무단/무연락 결석 {student['stats'].get('attendanceRiskIssues', 0)}건")
     if student["stats"]["projectSubmissionRate"] < 70:
         support_reasons.append(f"프로젝트 제출률 {student['stats']['projectSubmissionRate']}%")
     if student["stats"]["currentStatus"] != "안정":
@@ -3188,7 +3602,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
     learning_support_cases = [
         case
         for case in student.get("learningFlowCases", [])
-        if case.get("caseType") in {"condition_management_sequence", "health_project_strain", "daily_checkin_pattern"}
+        if case.get("caseType") in {"oversleep_condition_rhythm", "condition_management_sequence", "health_project_strain", "daily_checkin_pattern", "collaboration_conflict_signal"}
         or (case.get("caseType") == "health_management_watch" and case.get("severity") == "warning")
     ]
     if learning_support_cases:
@@ -3231,6 +3645,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
     )
     career_readiness = score_career_readiness(career_text, career_rounds)
     collaboration_readiness = score_collaboration_readiness(student)
+    expression_profile = score_expression_profile(student)
 
     overall_condition = current_average >= 3.15 and caution_count <= 1 and student["stats"]["currentStatus"] == "안정"
     growth_condition = growth_delta >= growth_high_threshold and current_average >= 3.0 and positive_growth_steps >= 2
@@ -3243,7 +3658,12 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
     )
     engagement_score = student["currentProfile"].get("engagement")
     collaboration_score = student["currentProfile"].get("collaboration")
-    attendance_condition = student["stats"].get("attendanceRiskIssues", 0) >= 2 or (
+    condition_attention_cases = [
+        case
+        for case in student.get("learningFlowCases", [])
+        if case.get("caseType") in {"oversleep_condition_rhythm", "condition_management_sequence", "health_project_strain"}
+    ]
+    attendance_condition = student["stats"].get("attendanceRiskIssues", 0) >= 2 or bool(condition_attention_cases) or (
         isinstance(engagement_score, (int, float)) and engagement_score <= 2
     )
 
@@ -3267,6 +3687,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         and collaboration_score >= 3
         and has_collaboration_quality
         and collaboration_readiness["collaborationReadinessScore"] >= 70
+        and collaboration_readiness["peerComplaintCount"] == 0
         and (collaboration_readiness["checkinCount"] >= 3 or collaboration_readiness["retroCount"] >= 1)
     )
     if collaboration_condition:
@@ -3332,6 +3753,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
                 f"체크인 정시율 {collaboration_readiness['checkinOnTimeRate']}%",
                 f"회고 품질 {collaboration_readiness['retroQuality']}/4",
                 f"프로젝트 역할 수행 {collaboration_readiness['roleExecution']}/4",
+                f"타 학생 불만/갈등 언급 {collaboration_readiness['peerComplaintCount']}건",
                 f"협업 변화 {collaboration_readiness['trajectory']['label']} ({collaboration_readiness['trajectory']['delta']:+.1f})",
             ],
         },
@@ -3347,9 +3769,11 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         "attendance_watch": {
             "qualified": attendance_condition,
             "reasons": [
-                f"판단 반영 출결 {student['stats'].get('attendanceRiskIssues', 0)}건",
+                f"무단/무연락 결석 {student['stats'].get('attendanceRiskIssues', 0)}건",
+                f"건강/컨디션 출결 {student['stats'].get('healthAttendanceIssues', 0)}건",
+                f"컨디션 케이스 {len(condition_attention_cases)}건",
                 f"참여 지속성 {student['currentProfile']['engagement']}/4",
-                "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다.",
+                "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다.",
             ],
         },
         "steady_path": {
@@ -3371,6 +3795,7 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
         "cautionKeys": caution_keys,
         "careerReadiness": career_readiness,
         "collaborationReadiness": collaboration_readiness,
+        "expressionProfile": expression_profile,
         "profileRankScore": round((current_average * 20) - (support_score * 4) + (student["currentProfile"]["reflection"] * 2), 2),
         "growthRankScore": round((growth_delta * 100) + (positive_growth_steps * 8), 2),
         "supportRankScore": round((support_score * 20) + (student["stats"].get("attendanceRiskIssues", 0) * 8), 2),

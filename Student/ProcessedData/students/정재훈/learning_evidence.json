@@ -355,7 +355,7 @@
     "title": "출결 이슈 - 지각",
     "summary": "지각 (늦잠)",
     "detail": "지각 (늦잠)",
-    "severity": "caution",
+    "severity": "stable",
     "provenance": {
       "sourceFile": "Data/출결 기입 시트.xlsx",
       "isEstimatedDate": false

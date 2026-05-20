@@ -394,7 +394,7 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 2
@@ -607,7 +607,7 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 2
@@ -1194,7 +1194,7 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 2

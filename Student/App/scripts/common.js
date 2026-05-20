@@ -140,24 +140,24 @@
   const PROFILE_CRITERIA = {
     selfRegulation: {
       question: "목표와 우선순위를 세우고 실행 결과를 수정하는가",
-      evidence: "프로젝트 체크인, 제출 시점, 회고의 실행 계획, 면담 후속 실천",
+      evidence: "프로젝트 체크인, 제출 시점, 회고의 실행 계획, 면담 후속 실천, 컨디션 리듬",
       rubric: "수행 과정, 실행 지속성, 결과 점검을 분리해 보는 분석적 루브릭을 적용합니다.",
       rating: "1점 긴급 지원, 2점 교사 안내 필요, 3점 독립 수행 가능, 4점 자기주도 개선 수준입니다.",
-      caution: "출결만으로 판단하지 않고 반복 무연락, 미제출, 계획 후 미이행을 함께 봅니다.",
+      caution: "늦잠 지각은 태도형 위험으로 단정하지 않고 최근성, 반복 간격, 프로젝트 구간, 컨디션 흐름을 함께 봅니다.",
     },
     engagement: {
       question: "과정에 꾸준히 참여하고 흔들릴 때 복귀하는가",
-      evidence: "체크인 응답률, 회고 지속 여부, 면담 이후 참여 회복, 늦잠 지각/무단 결석",
+      evidence: "체크인 응답률, 회고 지속 여부, 면담 이후 참여 회복, 무단/무연락 결석, 컨디션 리듬",
       rubric: "참여 빈도, 과제 지속성, 이탈 후 복귀 행동을 구분해 평정합니다.",
       rating: "1점 참여 단절, 2점 불안정 참여, 3점 대체로 지속, 4점 꾸준한 몰입과 회복 수준입니다.",
-      caution: "건강형·행정형 출결은 참여 저하 근거로 직접 쓰지 않습니다.",
+      caution: "건강형·컨디션형·행정형 출결은 참여 저하 근거로 직접 쓰지 않고 시간 흐름과 회복 행동을 함께 봅니다.",
     },
     collaboration: {
       question: "팀 안에서 역할을 이해하고 관계를 조율하는가",
-      evidence: "프로젝트 데일리체크인 제출 리듬, 회고 내용, 역할 수행 기록, 단계별 변화",
+      evidence: "프로젝트 데일리체크인 제출 리듬, 회고 내용, 역할 수행 기록, 타 학생의 불만/갈등 언급, 단계별 변화",
       rubric: "체크인 정시성, 회고 품질, 역할 수행, 프로젝트 진행 중 조율 흔적을 별도 준거로 관찰합니다.",
       rating: "1점 협업 저해, 2점 제한적 역할 수행, 3점 안정적 협업, 4점 팀 성과를 촉진하는 수준입니다.",
-      caution: "비선호/선호 인원 언급은 관계 선호 참고값이며 협업 점수에 직접 반영하지 않습니다.",
+      caution: "비선호/선호 인원 언급은 관계 선호 참고값입니다. 다만 프로젝트 중 불만 표출, 불화 발생, 소통 저해는 협업 위험 신호로 봅니다.",
     },
     resilience: {
       question: "실패나 압박 후 다시 시도하고 방향을 조정하는가",
@@ -286,7 +286,7 @@
     const profileAverage = averageScore(student.currentProfile);
     const reasons = [];
 
-    if (attendanceRisk > 0) reasons.push(`판단 반영 위험 출결 ${attendanceRisk}건`);
+    if (attendanceRisk > 0) reasons.push(`무단/무연락 결석 ${attendanceRisk}건`);
     if (projectRate && projectRate < 70) reasons.push(`프로젝트 제출률 ${projectRate}%`);
     if (profileAverage && profileAverage < 2.6) reasons.push(`최근 프로파일 평균 ${profileAverage.toFixed(2)}`);
     if (counselingCount > 0) reasons.push(`면담 기록 ${counselingCount}건`);
@@ -308,7 +308,8 @@
     const stats = student?.stats || {};
     const ratingLabel = score <= 1 ? "긴급 지원" : score === 2 ? "형성 중" : score === 3 ? "안정" : "확장";
     if (key === "selfRegulation") {
-      if ((stats.attendanceRiskIssues || 0) > 0) return `${ratingLabel} 평정입니다. 늦잠 지각/무단 결석 ${stats.attendanceRiskIssues}건을 실행 지속성 루브릭에 반영했습니다.`;
+      if ((stats.attendanceRiskIssues || 0) > 0) return `${ratingLabel} 평정입니다. 무단/무연락 결석 ${stats.attendanceRiskIssues}건을 실행 지속성 루브릭에 반영했습니다.`;
+      if ((stats.conditionAttendanceIssues || 0) > 0) return `${ratingLabel} 평정입니다. 늦잠 지각 등 컨디션형 출결 ${stats.conditionAttendanceIssues}건은 태도 문제가 아니라 건강/컨디션 관리 흐름으로 확인합니다.`;
       return score >= 3 ? `${ratingLabel} 평정입니다. 실행 지속성과 후속 점검에서 큰 위험 신호가 낮습니다.` : `${ratingLabel} 평정입니다. 계획 수립보다 실행 후 점검 근거가 부족합니다.`;
     }
     if (key === "engagement") {
@@ -319,7 +320,7 @@
       const readiness = student.derived?.collaborationReadiness;
       if (readiness) {
         const trajectory = readiness.trajectory || {};
-        return `${ratingLabel} 평정입니다. 체크인 정시율 ${readiness.checkinOnTimeRate || 0}%, 회고 품질 ${readiness.retroQuality || 0}/4, 역할 수행 ${readiness.roleExecution || 0}/4, 변화 ${trajectory.label || "유지"}(${trajectory.delta || 0})를 반영했습니다.`;
+        return `${ratingLabel} 평정입니다. 체크인 정시율 ${readiness.checkinOnTimeRate || 0}%, 회고 품질 ${readiness.retroQuality || 0}/4, 역할 수행 ${readiness.roleExecution || 0}/4, 타 학생 불만/갈등 언급 ${readiness.peerComplaintCount || 0}건, 변화 ${trajectory.label || "유지"}(${trajectory.delta || 0})를 반영했습니다.`;
       }
       return score >= 3 ? `${ratingLabel} 평정입니다. 데일리체크인과 회고에서 프로젝트 협업 흐름이 안정적입니다.` : `${ratingLabel} 평정입니다. 데일리체크인, 회고 품질, 역할 수행 근거를 더 확인해야 합니다.`;
     }
@@ -832,6 +833,72 @@
     `;
   }
 
+  function renderExpressionProfile(student) {
+    const profile = student.derived?.expressionProfile || {};
+    const dimensions = profile.dimensions || {};
+    const entries = ["specificity", "agency", "reflection", "relation", "career", "emotion", "uncertainty"]
+      .map((key) => dimensions[key])
+      .filter(Boolean);
+    return `
+      <section class="panel section-panel expression-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Expression Profile</span>
+            <h3>자기표현과 발화 특징</h3>
+          </div>
+          <p class="panel-copy">나이, 성별, 학력은 점수 근거가 아니라 맥락으로만 보고, 학생이 직접 작성한 문서의 표현 방식을 중심으로 해석합니다.</p>
+        </div>
+        <div class="expression-context-grid">
+          <article>
+            <span>기본 맥락</span>
+            <strong>${escapeHtml([profile.basicContext?.ageBand, profile.basicContext?.gender, profile.basicContext?.education].filter(Boolean).join(" · ") || "정보 부족")}</strong>
+            <p>${escapeHtml(profile.basicContext?.note || "기본 정보는 해석 맥락으로만 사용합니다.")}</p>
+          </article>
+          <article>
+            <span>직접 작성 자료</span>
+            <strong>${escapeHtml(String(profile.sourceTotal || 0))}건</strong>
+            <p>${escapeHtml(`모집 ${profile.sourceCounts?.admission || 0} · 체크인 ${profile.sourceCounts?.checkin || 0} · 회고 ${profile.sourceCounts?.retro || 0} · 진로문서 ${profile.sourceCounts?.careerDocument || 0}`)}</p>
+          </article>
+          <article>
+            <span>요약</span>
+            <strong>${escapeHtml((profile.dominantTraits || []).join(", ") || "판단 보류")}</strong>
+            <p>${escapeHtml(profile.summary || "직접 작성 자료가 부족해 표현 특징을 보류합니다.")}</p>
+          </article>
+        </div>
+        <div class="expression-dimension-list">
+          ${entries
+            .map(
+              (item) => `
+                <article class="expression-dimension-row">
+                  <div>
+                    <strong>${escapeHtml(item.label)}</strong>
+                    <span>${escapeHtml(item.level || "-")} · ${escapeHtml(item.evidence || "")}</span>
+                  </div>
+                  <div class="profile-track">
+                    <div class="profile-fill" style="width:${Math.max(4, Math.min(100, (Number(item.score) || 0) / 4 * 100))}%"></div>
+                  </div>
+                </article>
+              `
+            )
+            .join("")}
+        </div>
+        <div class="expression-sample-list">
+          ${(profile.samples || [])
+            .map(
+              (sample) => `
+                <article>
+                  <strong>${escapeHtml(sample.label || "작성 자료")}</strong>
+                  <span>${escapeHtml(sample.date || "날짜 없음")}</span>
+                  <p>${escapeHtml(sample.excerpt || "")}</p>
+                </article>
+              `
+            )
+            .join("") || `<article><p>표시할 작성 자료 요약이 없습니다.</p></article>`}
+        </div>
+      </section>
+    `;
+  }
+
   function renderProfileReasonBars(student) {
     return `
       <div class="profile-reason-list">
@@ -922,6 +989,7 @@
     renderClassificationReasons,
     renderCollaborationTrajectory,
     renderLearningFlowCases,
+    renderExpressionProfile,
     managementStatusBadge,
     managementStatusLabel,
     profileKeyText,

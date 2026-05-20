@@ -1,5 +1,5 @@
 window.STUDENT_TIMELINE_DATA = {
-  "generatedAt": "2026-05-16T13:10:48",
+  "generatedAt": "2026-05-20T17:14:05",
   "curriculum": {
     "startDate": "2025-12-08",
     "endDate": "2026-08-03",
@@ -2233,25 +2233,12 @@ window.STUDENT_TIMELINE_DATA = {
   ],
   "dashboard": {
     "studentCount": 80,
-    "stableCount": 23,
-    "cautionCount": 51,
-    "warningCount": 6,
+    "stableCount": 32,
+    "cautionCount": 40,
+    "warningCount": 8,
     "studentsWithCareerDocuments": 41,
     "milestoneCount": 6,
     "topOverall": [
-      {
-        "id": "김태훈",
-        "name": "김태훈",
-        "score": 78.0,
-        "primaryTag": "overall_strong",
-        "strengthKeys": [
-          "selfRegulation",
-          "engagement"
-        ],
-        "cautionKeys": [],
-        "profileIndex": 88,
-        "growthIndex": 85
-      },
       {
         "id": "이원홍",
         "name": "이원홍",
@@ -2281,34 +2268,49 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 80
       },
       {
-        "id": "맹지훈",
-        "name": "맹지훈",
-        "score": 74.6,
+        "id": "김태훈",
+        "name": "김태훈",
+        "score": 74.0,
         "primaryTag": "overall_strong",
         "strengthKeys": [
           "selfRegulation",
           "engagement"
         ],
-        "cautionKeys": [
-          "resilience"
-        ],
-        "profileIndex": 83,
-        "growthIndex": 80
+        "cautionKeys": [],
+        "profileIndex": 88,
+        "growthIndex": 85
       },
       {
-        "id": "배주빈",
-        "name": "배주빈",
-        "score": 74.6,
-        "primaryTag": "overall_strong",
+        "id": "김재환",
+        "name": "김재환",
+        "score": 71.4,
+        "primaryTag": "growth_high",
         "strengthKeys": [
           "selfRegulation",
           "engagement"
         ],
         "cautionKeys": [
+          "resilience",
+          "careerAgency"
+        ],
+        "profileIndex": 79,
+        "growthIndex": 85
+      },
+      {
+        "id": "김흥규",
+        "name": "김흥규",
+        "score": 71.4,
+        "primaryTag": "growth_high",
+        "strengthKeys": [
+          "selfRegulation",
+          "engagement"
+        ],
+        "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
-        "profileIndex": 83,
-        "growthIndex": 80
+        "profileIndex": 79,
+        "growthIndex": 75
       }
     ],
     "topGrowth": [
@@ -2360,51 +2362,38 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 90
       },
       {
-        "id": "서진호",
-        "name": "서진호",
+        "id": "이도민",
+        "name": "이도민",
         "score": 157.0,
-        "primaryTag": "overall_strong",
+        "primaryTag": "growth_high",
         "strengthKeys": [
           "selfRegulation",
           "engagement"
         ],
         "cautionKeys": [
-          "resilience"
+          "careerAgency"
         ],
         "profileIndex": 83,
         "growthIndex": 90
       },
       {
-        "id": "김태훈",
-        "name": "김태훈",
-        "score": 141.0,
-        "primaryTag": "overall_strong",
+        "id": "한지우",
+        "name": "한지우",
+        "score": 157.0,
+        "primaryTag": "growth_high",
         "strengthKeys": [
           "selfRegulation",
           "engagement"
         ],
-        "cautionKeys": [],
-        "profileIndex": 88,
-        "growthIndex": 85
+        "cautionKeys": [
+          "resilience",
+          "careerAgency"
+        ],
+        "profileIndex": 75,
+        "growthIndex": 90
       }
     ],
     "supportPriority": [
-      {
-        "id": "김태환",
-        "name": "김태환",
-        "score": 204,
-        "primaryTag": "support_priority",
-        "strengthKeys": [
-          "reflection",
-          "careerAgency"
-        ],
-        "cautionKeys": [
-          "selfRegulation",
-          "engagement"
-        ],
-        "profileIndex": 58,
-        "growthIndex": 50
-      },
       {
         "id": "김지훈",
         "name": "김지훈",
@@ -2412,46 +2401,14 @@ window.STUDENT_TIMELINE_DATA = {
         "primaryTag": "support_priority",
         "strengthKeys": [
           "reflection",
-          "collaboration"
+          "resilience"
         ],
         "cautionKeys": [
           "selfRegulation",
           "engagement"
         ],
-        "profileIndex": 58,
-        "growthIndex": 50
-      },
-      {
-        "id": "이석훈",
-        "name": "이석훈",
-        "score": 148,
-        "primaryTag": "support_priority",
-        "strengthKeys": [
-          "reflection",
-          "collaboration"
-        ],
-        "cautionKeys": [
-          "selfRegulation",
-          "engagement"
-        ],
-        "profileIndex": 62,
-        "growthIndex": 55
-      },
-      {
-        "id": "한가영",
-        "name": "한가영",
-        "score": 136,
-        "primaryTag": "support_priority",
-        "strengthKeys": [
-          "resilience",
-          "reflection"
-        ],
-        "cautionKeys": [
-          "selfRegulation",
-          "engagement"
-        ],
-        "profileIndex": 40,
-        "growthIndex": 38
+        "profileIndex": 54,
+        "growthIndex": 45
       },
       {
         "id": "김경민",
@@ -2468,6 +2425,54 @@ window.STUDENT_TIMELINE_DATA = {
         ],
         "profileIndex": 50,
         "growthIndex": 50
+      },
+      {
+        "id": "김현우a",
+        "name": "김현우A",
+        "score": 100,
+        "primaryTag": "support_priority",
+        "strengthKeys": [
+          "resilience",
+          "reflection"
+        ],
+        "cautionKeys": [
+          "selfRegulation",
+          "collaboration"
+        ],
+        "profileIndex": 54,
+        "growthIndex": 45
+      },
+      {
+        "id": "이석훈",
+        "name": "이석훈",
+        "score": 100,
+        "primaryTag": "support_priority",
+        "strengthKeys": [
+          "reflection",
+          "careerAgency"
+        ],
+        "cautionKeys": [
+          "selfRegulation",
+          "engagement"
+        ],
+        "profileIndex": 58,
+        "growthIndex": 50
+      },
+      {
+        "id": "한가영",
+        "name": "한가영",
+        "score": 100,
+        "primaryTag": "support_priority",
+        "strengthKeys": [
+          "resilience",
+          "reflection"
+        ],
+        "cautionKeys": [
+          "selfRegulation",
+          "engagement"
+        ],
+        "profileIndex": 40,
+        "growthIndex": 38
       }
     ],
     "collaborationStrength": [
@@ -2475,17 +2480,16 @@ window.STUDENT_TIMELINE_DATA = {
         "id": "채지형",
         "name": "채지형",
         "score": 77.25,
-        "primaryTag": "support_priority",
+        "primaryTag": "overall_strong",
         "strengthKeys": [
-          "reflection",
-          "selfRegulation"
+          "engagement",
+          "reflection"
         ],
         "cautionKeys": [
-          "engagement",
           "careerAgency"
         ],
-        "profileIndex": 71,
-        "growthIndex": 65
+        "profileIndex": 79,
+        "growthIndex": 75
       },
       {
         "id": "이동현",
@@ -2501,36 +2505,20 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 85
       },
       {
-        "id": "예인해",
-        "name": "예인해",
-        "score": 74.75,
-        "primaryTag": "support_priority",
-        "strengthKeys": [
-          "reflection",
-          "selfRegulation"
-        ],
-        "cautionKeys": [
-          "engagement",
-          "resilience"
-        ],
-        "profileIndex": 67,
-        "growthIndex": 60
-      },
-      {
         "id": "한지우",
         "name": "한지우",
         "score": 74.75,
-        "primaryTag": "support_priority",
+        "primaryTag": "growth_high",
         "strengthKeys": [
           "selfRegulation",
-          "reflection"
+          "engagement"
         ],
         "cautionKeys": [
           "resilience",
-          "engagement"
+          "careerAgency"
         ],
-        "profileIndex": 67,
-        "growthIndex": 80
+        "profileIndex": 75,
+        "growthIndex": 90
       },
       {
         "id": "박영성",
@@ -2546,6 +2534,21 @@ window.STUDENT_TIMELINE_DATA = {
         ],
         "profileIndex": 79,
         "growthIndex": 75
+      },
+      {
+        "id": "권현민",
+        "name": "권현민",
+        "score": 73.5,
+        "primaryTag": "growth_high",
+        "strengthKeys": [
+          "selfRegulation",
+          "engagement"
+        ],
+        "cautionKeys": [
+          "resilience"
+        ],
+        "profileIndex": 83,
+        "growthIndex": 90
       }
     ],
     "careerProgress": [
@@ -2553,7 +2556,7 @@ window.STUDENT_TIMELINE_DATA = {
         "id": "김민수",
         "name": "김민수",
         "score": 85.0,
-        "primaryTag": "career_progress",
+        "primaryTag": "attendance_watch",
         "strengthKeys": [
           "reflection",
           "selfRegulation"
@@ -2598,17 +2601,17 @@ window.STUDENT_TIMELINE_DATA = {
         "id": "이가현",
         "name": "이가현",
         "score": 85.0,
-        "primaryTag": "attendance_watch",
+        "primaryTag": "growth_high",
         "strengthKeys": [
-          "reflection",
-          "selfRegulation"
+          "selfRegulation",
+          "engagement"
         ],
         "cautionKeys": [
-          "engagement",
+          "collaboration",
           "resilience"
         ],
-        "profileIndex": 71,
-        "growthIndex": 65
+        "profileIndex": 79,
+        "growthIndex": 75
       },
       {
         "id": "오종호",
@@ -2631,9 +2634,9 @@ window.STUDENT_TIMELINE_DATA = {
         "caseType": "reflection_growth_link",
         "label": "회고 기반 성장",
         "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
-        "count": 30,
+        "count": 32,
         "severityCounts": {
-          "success": 30
+          "success": 32
         },
         "examples": [
           {
@@ -2652,14 +2655,51 @@ window.STUDENT_TIMELINE_DATA = {
             "severity": "success"
           },
           {
-            "studentName": "김윤규",
+            "studentName": "김재환",
             "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
             "severity": "success"
           },
           {
-            "studentName": "김재환",
+            "studentName": "김태훈",
             "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
             "severity": "success"
+          }
+        ]
+      },
+      {
+        "caseType": "collaboration_conflict_signal",
+        "label": "협업 갈등 신호",
+        "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+        "count": 22,
+        "severityCounts": {
+          "warning": 8,
+          "caution": 14
+        },
+        "examples": [
+          {
+            "studentName": "강유민",
+            "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+            "severity": "warning"
+          },
+          {
+            "studentName": "강태성",
+            "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+            "severity": "warning"
+          },
+          {
+            "studentName": "곽용준",
+            "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+            "severity": "caution"
+          },
+          {
+            "studentName": "김민제",
+            "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+            "severity": "warning"
+          },
+          {
+            "studentName": "김시온",
+            "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+            "severity": "caution"
           }
         ]
       },
@@ -2697,6 +2737,42 @@ window.STUDENT_TIMELINE_DATA = {
             "studentName": "서진호",
             "summary": "건강형 출결 5건이 확인되어 건강 관리 흐름을 따로 봐야 합니다.",
             "severity": "warning"
+          }
+        ]
+      },
+      {
+        "caseType": "health_project_strain",
+        "label": "건강-프로젝트 부담",
+        "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+        "count": 17,
+        "severityCounts": {
+          "caution": 17
+        },
+        "examples": [
+          {
+            "studentName": "권수빈",
+            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "severity": "caution"
+          },
+          {
+            "studentName": "김민수",
+            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "severity": "caution"
+          },
+          {
+            "studentName": "김윤규",
+            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "severity": "caution"
+          },
+          {
+            "studentName": "김태환",
+            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "severity": "caution"
+          },
+          {
+            "studentName": "박기은",
+            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "severity": "caution"
           }
         ]
       },
@@ -2756,11 +2832,6 @@ window.STUDENT_TIMELINE_DATA = {
             "severity": "success"
           },
           {
-            "studentName": "김윤규",
-            "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
-            "severity": "success"
-          },
-          {
             "studentName": "김현우B",
             "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
             "severity": "success"
@@ -2769,41 +2840,47 @@ window.STUDENT_TIMELINE_DATA = {
             "studentName": "박영성",
             "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
             "severity": "success"
+          },
+          {
+            "studentName": "이가현",
+            "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
+            "severity": "success"
           }
         ]
       },
       {
-        "caseType": "health_project_strain",
-        "label": "건강-프로젝트 부담",
-        "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
-        "count": 11,
+        "caseType": "oversleep_condition_rhythm",
+        "label": "늦잠 지각 리듬 관찰",
+        "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+        "count": 10,
         "severityCounts": {
-          "caution": 11
+          "warning": 2,
+          "caution": 8
         },
         "examples": [
           {
-            "studentName": "권수빈",
-            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "studentName": "김태환",
+            "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+            "severity": "warning"
+          },
+          {
+            "studentName": "예인해",
+            "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+            "severity": "warning"
+          },
+          {
+            "studentName": "오동건",
+            "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
             "severity": "caution"
           },
           {
-            "studentName": "김민수",
-            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "studentName": "우현승",
+            "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
             "severity": "caution"
           },
           {
-            "studentName": "김윤규",
-            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
-            "severity": "caution"
-          },
-          {
-            "studentName": "박원우",
-            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
-            "severity": "caution"
-          },
-          {
-            "studentName": "안성진",
-            "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+            "studentName": "윤동현",
+            "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
             "severity": "caution"
           }
         ]
@@ -2882,8 +2959,8 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "강태성",
         "name": "강태성",
-        "x": 70,
-        "y": 75,
+        "x": 65,
+        "y": 71,
         "primaryTag": "steady_path"
       },
       {
@@ -2896,9 +2973,9 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "곽용준",
         "name": "곽용준",
-        "x": 70,
-        "y": 75,
-        "primaryTag": "steady_path"
+        "x": 65,
+        "y": 71,
+        "primaryTag": "support_priority"
       },
       {
         "id": "권수빈",
@@ -2926,7 +3003,7 @@ window.STUDENT_TIMELINE_DATA = {
         "name": "김민수",
         "x": 70,
         "y": 75,
-        "primaryTag": "career_progress"
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "김민제",
@@ -2952,8 +3029,8 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "김시온",
         "name": "김시온",
-        "x": 70,
-        "y": 75,
+        "x": 65,
+        "y": 71,
         "primaryTag": "steady_path"
       },
       {
@@ -2966,9 +3043,9 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "김윤규",
         "name": "김윤규",
-        "x": 75,
-        "y": 79,
-        "primaryTag": "growth_high"
+        "x": 70,
+        "y": 75,
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "김재환",
@@ -2980,8 +3057,8 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "김태환",
         "name": "김태환",
-        "x": 50,
-        "y": 58,
+        "x": 60,
+        "y": 67,
         "primaryTag": "support_priority"
       },
       {
@@ -3015,16 +3092,16 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "맹지훈",
         "name": "맹지훈",
-        "x": 80,
-        "y": 83,
-        "primaryTag": "overall_strong"
+        "x": 75,
+        "y": 79,
+        "primaryTag": "growth_high"
       },
       {
         "id": "박기은",
         "name": "박기은",
         "x": 60,
         "y": 67,
-        "primaryTag": "steady_path"
+        "primaryTag": "support_priority"
       },
       {
         "id": "박민규",
@@ -3057,16 +3134,16 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "배주빈",
         "name": "배주빈",
-        "x": 80,
-        "y": 83,
-        "primaryTag": "overall_strong"
+        "x": 75,
+        "y": 79,
+        "primaryTag": "growth_high"
       },
       {
         "id": "서진호",
         "name": "서진호",
-        "x": 90,
-        "y": 83,
-        "primaryTag": "overall_strong"
+        "x": 85,
+        "y": 79,
+        "primaryTag": "growth_high"
       },
       {
         "id": "손호진",
@@ -3101,21 +3178,21 @@ window.STUDENT_TIMELINE_DATA = {
         "name": "안성진",
         "x": 65,
         "y": 71,
-        "primaryTag": "steady_path"
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "예인해",
         "name": "예인해",
-        "x": 60,
-        "y": 67,
-        "primaryTag": "support_priority"
+        "x": 75,
+        "y": 79,
+        "primaryTag": "growth_high"
       },
       {
         "id": "오동건",
         "name": "오동건",
-        "x": 60,
-        "y": 67,
-        "primaryTag": "support_priority"
+        "x": 70,
+        "y": 75,
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "오종호",
@@ -3127,9 +3204,9 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "우현승",
         "name": "우현승",
-        "x": 60,
-        "y": 67,
-        "primaryTag": "support_priority"
+        "x": 70,
+        "y": 75,
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "유해찬",
@@ -3141,23 +3218,23 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "윤동현",
         "name": "윤동현",
-        "x": 70,
-        "y": 75,
-        "primaryTag": "attendance_watch"
+        "x": 80,
+        "y": 83,
+        "primaryTag": "overall_strong"
       },
       {
         "id": "윤유나",
         "name": "윤유나",
-        "x": 70,
-        "y": 75,
+        "x": 65,
+        "y": 71,
         "primaryTag": "steady_path"
       },
       {
         "id": "이가현",
         "name": "이가현",
-        "x": 65,
-        "y": 71,
-        "primaryTag": "attendance_watch"
+        "x": 75,
+        "y": 79,
+        "primaryTag": "growth_high"
       },
       {
         "id": "이균호",
@@ -3176,8 +3253,8 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "이도민",
         "name": "이도민",
-        "x": 80,
-        "y": 75,
+        "x": 90,
+        "y": 83,
         "primaryTag": "growth_high"
       },
       {
@@ -3197,8 +3274,8 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "이석훈",
         "name": "이석훈",
-        "x": 55,
-        "y": 62,
+        "x": 50,
+        "y": 58,
         "primaryTag": "support_priority"
       },
       {
@@ -3232,16 +3309,16 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "이유송",
         "name": "이유송",
-        "x": 60,
-        "y": 67,
-        "primaryTag": "support_priority"
+        "x": 65,
+        "y": 71,
+        "primaryTag": "steady_path"
       },
       {
         "id": "이정헌",
         "name": "이정헌",
         "x": 70,
         "y": 75,
-        "primaryTag": "steady_path"
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "이준혁",
@@ -3253,16 +3330,16 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "이찬규",
         "name": "이찬규",
-        "x": 75,
-        "y": 79,
-        "primaryTag": "overall_strong"
+        "x": 70,
+        "y": 75,
+        "primaryTag": "steady_path"
       },
       {
         "id": "이형진",
         "name": "이형진",
         "x": 65,
         "y": 71,
-        "primaryTag": "steady_path"
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "임동균",
@@ -3276,7 +3353,7 @@ window.STUDENT_TIMELINE_DATA = {
         "name": "임소영",
         "x": 70,
         "y": 75,
-        "primaryTag": "steady_path"
+        "primaryTag": "attendance_watch"
       },
       {
         "id": "장근혁",
@@ -3337,9 +3414,9 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "조준현",
         "name": "조준현",
-        "x": 65,
-        "y": 71,
-        "primaryTag": "collaboration_strength"
+        "x": 60,
+        "y": 67,
+        "primaryTag": "support_priority"
       },
       {
         "id": "조현일",
@@ -3358,16 +3435,16 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "채지형",
         "name": "채지형",
-        "x": 65,
-        "y": 71,
-        "primaryTag": "support_priority"
+        "x": 75,
+        "y": 79,
+        "primaryTag": "overall_strong"
       },
       {
         "id": "천영현",
         "name": "천영현",
         "x": 65,
         "y": 71,
-        "primaryTag": "collaboration_strength"
+        "primaryTag": "steady_path"
       },
       {
         "id": "최선동",
@@ -3393,9 +3470,9 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "한지우",
         "name": "한지우",
-        "x": 80,
-        "y": 67,
-        "primaryTag": "support_priority"
+        "x": 90,
+        "y": 75,
+        "primaryTag": "growth_high"
       },
       {
         "id": "홍태광",
@@ -3421,8 +3498,8 @@ window.STUDENT_TIMELINE_DATA = {
       {
         "id": "김지훈",
         "name": "김지훈",
-        "x": 50,
-        "y": 58,
+        "x": 45,
+        "y": 54,
         "primaryTag": "support_priority"
       },
       {
@@ -4846,7 +4923,7 @@ window.STUDENT_TIMELINE_DATA = {
       "peerFeedback": [
         {
           "from": "고승주",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "다 김민제 : 본인이 좋아하는 것을 잘 알고 게임에 적용할 수 있는 지점을 찾아내는 능력, 적당히 타협하지 않고 생기는 아이디어를 모두 적용하려고 노력하는 모습 강유민 : 아트 및 연출에 대한 뛰어난 기본 소양, 서브 컬쳐 문화에 대한 깊은 이해, 추가 업무가 계속 주어져도 불만 없이 모두 해내는 태도 강태성 : 게임…"
         },
         {
@@ -4876,11 +4953,32 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "김지훈",
+          "type": "complaint",
+          "snippet": "유형 자진 이탈 이탈 사유 수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음. 게임 선호 부정적관계 강유민 김민제 특징 보고불량 연락안봄 출결불량 회사 운영 경험 🔖 총평(업데이트 날짜 : 2/24(화)) 사람이 많은 곳에서"
+        },
+        {
+          "from": "김지훈",
           "type": "praise",
           "snippet": "팀 내에는 기획자 특성상 의견과 자존감(에고)이 강하게 드러나는 상황이 있으며, 본인은 팀장이 아니기 때문에 조심스럽게 의견을 내는 편이라고 정리됩니다. 팀원 강유민 관련 이슈로는 스토리 진행 속도가 느려 전체 작업이 딜레이되고 있다는 점이 공유되었습니다. ### 2) 현재 희망 직무(방향성) 진로는 콘텐츠 기획과 사업("
         }
       ],
       "learningFlowCases": [
+        {
+          "caseId": "강유민-flow-2",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 2건",
+            "프로젝트 이슈 키워드 8건",
+            "고승주 언급: 다 김민제 : 본인이 좋아하는 것을 잘 알고 게임에 적용할 수 있는 지점을 찾아내는 능력, 적당히 타협하지 않고 생기는 아이디어를 모두 적용하려고 노력하는 모습 강유민 : 아트 및 연출에 대한 뛰어난 기본 소양, 서브 컬쳐 문화에 대한 깊은 이해, 추가 업무가 계속 주어져도 불만 없이 모두 해내는 태도 강태성 : 게임…",
+            "김지훈 언급: 유형 자진 이탈 이탈 사유 수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음. 게임 선호 부정적관계 강유민 김민제 특징 보고불량 연락안봄 출결불량 회사 운영 경험 🔖 총평(업데이트 날짜 : 2/24(화)) 사람이 많은 곳에서"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
         {
           "caseId": "강유민-flow-1",
           "caseType": "daily_checkin_pattern",
@@ -6172,6 +6270,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 6,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 4,
@@ -6711,7 +6810,7 @@ window.STUDENT_TIMELINE_DATA = {
             "qualified": false,
             "reasons": [
               "현재 상태 주의",
-              "학습 흐름 케이스 데일리체크인 리듬 흔들림"
+              "학습 흐름 케이스 협업 갈등 신호, 데일리체크인 리듬 흔들림"
             ]
           },
           "collaboration_strength": {
@@ -6721,6 +6820,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 88.0%",
               "회고 품질 2.0/4",
               "프로젝트 역할 수행 2.25/4",
+              "타 학생 불만/갈등 언급 2건",
               "협업 변화 유지 (+1.0)"
             ]
           },
@@ -6736,9 +6836,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -6767,8 +6869,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 7,
+          "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 2,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.21,
           "checkinCount": 25,
@@ -6781,8 +6884,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 8,
           "punctuality": 2.65,
           "peopleSeriousness": 2.2,
-          "riskSignal": 0.96,
-          "collaborationReadinessScore": 60.25,
+          "riskSignal": 1.66,
+          "collaborationReadinessScore": 42.75,
           "profileScore": 2,
           "lateCount": 1,
           "trajectory": {
@@ -6815,10 +6918,98 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "청주대학교 만화애니메이션 학과 / 한국영화아카데미 애니메이션 전공",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 29,
+          "textLength": 9913,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.87,
+              "evidence": "구체 표현 7종 · 반복 29회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 107회 · 문서 26건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.72,
+              "evidence": "회고/개선 표현 6종 · 반복 28회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 50회 · 문서 16건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 22종 · 반복 93회 · 문서 14건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.22,
+              "evidence": "정서/부담 표현 6종 · 반복 11회 · 문서 7건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.3,
+              "evidence": "탐색/불확실 표현 4종 · 반복 12회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "내러티브 콘텐츠 기획, 강유민입니다. 한국영화아카데미에서 애니메이션 시나리오 작성부터 장면 설계, 연출을 훈련했습니다. 이후 상업과 독립 현장의 IP를 기획, 개발하며 세계관과 캐릭터, 시나리오, 스토리보드, 연출, 피치덱 등 제작 총괄을 진행하여 실무 역량을 쌓았습니다. Netflix, Warner Bros, Disn…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "빌드 확인 및 TC 진행 하나를 해결하면 하나가 터지고... 개발 인원에 결손이 있고... 잘 가다가도 멈추고 쉽지 않네요. 많이 무겁네요. 팀원들에게 미안합니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 1. 이번 프로젝트에서 시나리오 기획을 담당했습니다. 선형적인 영상 매체 시나리오 작업에 익숙했던 저에게, 메이플스토리 IP를 활용해 판타지 RPG 시나리오를 기획한 것은 시야를 크게 넓힐 수 있는 계기가 되었습니다. 특히 플레이어의 경험을 중심으로 이야기 전개를 설계하고, 제약을 만드는 과정이 매우 유의…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
         "profileRankScore": 56.6,
         "growthRankScore": 66.0,
         "supportRankScore": 40,
-        "collaborationRankScore": 60.25,
+        "collaborationRankScore": 42.75,
         "careerRankScore": 51.75
       }
     },
@@ -8065,6 +8256,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "수 한줄평 열심히 하고, 조용, 잔잔한 인원. 특징 그림쟁이 언리얼 영화 감독 적극적 타직군경력자 나이 34세(93년생) 긍정적관계 강태성 고승주 이유송 부정적관계 김민제 김지훈 임소영 게임 선호 오델로 MBTI ISTJ 희망 직무 🔖 총평(업데이트"
         },
         {
+          "from": "고승주",
+          "type": "complaint",
+          "snippet": "고 노력하는 모습 강유민 : 아트 및 연출에 대한 뛰어난 기본 소양, 서브 컬쳐 문화에 대한 깊은 이해, 추가 업무가 계속 주어져도 불만 없이 모두 해내는 태도 강태성 : 게임 문화 전반에 대한 넓은 이해도, 상대방을 존중하는 커뮤니케이션, 본인의 업무를 이해하기 쉽게 설명할 수 있는 소통능력 자유로운 한마디 중간에 역…"
+        },
+        {
           "from": "김민제",
           "type": "praise",
           "snippet": "제 피드백을 긍정적으로 잘 받아주셨으며, 제가 부탁드리기도 전에 아트적인 일을 많이 도와주셨습니다. 또한, 팀의 분위기를 둥그렇게 잘 조화되게 도와주셨습니다. 강태성 조원분께서는 묵묵히 어떻게 보면 가장 따분할 수도 있는 시스템 구현, 개발 일의 리드를 맡아 성공적으로 해내셨습니다. 그 결과, 다른조에는 많이 없던 버튼…"
@@ -8075,12 +8271,33 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "한줄평 분위기 잘 풀어주는 편. 소통 역량, 기술 역량 모두 우수. 특징 ADHD AI 활용 우수 전공자 나이 36세(91년생) 긍정적관계 강태성 맹지훈 예인해 부정적관계 이석훈 게임 선호 던전앤파이터 로스트아크 MBTI INFP 희망 직무 UI 시나리오"
         },
         {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "매우 강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무"
+        },
+        {
           "from": "윤유나",
           "type": "praise",
           "snippet": "담당해서 전투시스템뿐만 아니라 콘텐츠와 레벨디자인도 기획, 제작 다양하게 하셨고, 개발경력이 있으시지도 않으신데, 개발까지 한 부분 대단하다고 생각했습니다. 강태성님 제가 UI 구현에 막혀서 힘들어 할 때 많은 도움을 주셨습니다. 팀장 선호도 조사 1.0 이유 팀장이라는 직책은 객관적인 판단과 팀원들과 협업이 잘 될 수"
         }
       ],
       "learningFlowCases": [
+        {
+          "caseId": "강태성-flow-2",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 2건",
+            "프로젝트 이슈 키워드 3건",
+            "고승주 언급: 고 노력하는 모습 강유민 : 아트 및 연출에 대한 뛰어난 기본 소양, 서브 컬쳐 문화에 대한 깊은 이해, 추가 업무가 계속 주어져도 불만 없이 모두 해내는 태도 강태성 : 게임 문화 전반에 대한 넓은 이해도, 상대방을 존중하는 커뮤니케이션, 본인의 업무를 이해하기 쉽게 설명할 수 있는 소통능력 자유로운 한마디 중간에 역…",
+            "예인해 언급: 매우 강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
         {
           "caseId": "강태성-flow-1",
           "caseType": "daily_checkin_pattern",
@@ -8223,7 +8440,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -8238,7 +8455,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -8253,7 +8470,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -8268,7 +8485,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -8283,7 +8500,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -8329,7 +8546,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
@@ -8614,7 +8831,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 2
@@ -8793,7 +9010,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -8805,7 +9022,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -8819,7 +9036,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -9399,7 +9616,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -9421,6 +9638,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -9516,7 +9734,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -9529,8 +9747,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": 0.34,
+          "profileAverage": 2.5,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "engagement",
             "selfRegulation"
@@ -9610,7 +9828,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -9623,7 +9841,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 2.5,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
@@ -9704,7 +9922,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -9717,15 +9935,15 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.16,
+          "profileAverage": 2.67,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
           "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
@@ -9798,7 +10016,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -9811,13 +10029,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.17,
+          "profileAverage": 2.83,
+          "growthDelta": 0.16,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -9891,7 +10110,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -9904,13 +10123,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -9929,10 +10149,10 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.0,
-        "profileIndex": 75,
-        "growthDelta": 0.67,
-        "growthIndex": 70,
+        "profileAverage": 2.83,
+        "profileIndex": 71,
+        "growthDelta": 0.5,
+        "growthIndex": 65,
         "supportIndex": 36,
         "tags": [
           "steady_path"
@@ -9942,33 +10162,34 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 3.0/4",
-              "주의 프로파일 1개",
+              "현재 평균 2.83/4",
+              "주의 프로파일 2개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.67",
+              "초기 대비 성장 +0.50",
               "성장 구간 3개",
-              "현재 평균 3.0/4"
+              "현재 평균 2.83/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
               "현재 상태 주의",
-              "학습 흐름 케이스 데일리체크인 리듬 흔들림"
+              "학습 흐름 케이스 협업 갈등 신호, 데일리체크인 리듬 흔들림"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 80.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.41/4",
+              "타 학생 불만/갈등 언급 2건",
               "협업 변화 유지 (+6.2)"
             ]
           },
@@ -9984,9 +10205,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -10001,6 +10224,7 @@ window.STUDENT_TIMELINE_DATA = {
           "selfRegulation"
         ],
         "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -10016,6 +10240,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 2,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.88,
           "checkinCount": 25,
@@ -10028,9 +10253,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 3,
           "punctuality": 4.0,
           "peopleSeriousness": 1.96,
-          "riskSignal": 0.36,
-          "collaborationReadinessScore": 65.75,
-          "profileScore": 3,
+          "riskSignal": 1.06,
+          "collaborationReadinessScore": 48.25,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 77.25,
@@ -10062,10 +10287,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 60.0,
-        "growthRankScore": 91.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "장안대학교 게임컨텐츠과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 30,
+          "textLength": 11469,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 28회 · 문서 11건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 47회 · 문서 18건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 5종 · 반복 31회 · 문서 10건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 39회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 27종 · 반복 85회 · 문서 15건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.2,
+              "evidence": "정서/부담 표현 6종 · 반복 8회 · 문서 5건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.48,
+              "evidence": "탐색/불확실 표현 6종 · 반복 16회 · 문서 6건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "비록 전공자이긴 하나 부족한 부분이 많습니다 그렇기 때문에 많이 배우고 갈고닦겠습니다 감사합니다. 순전히 우연이었습니다. 인터넷에 뜬 광고를 보아 신청을 하긴 했는데 직원분과 통화하며, 또 직접 알아보며 이번 과정에 대해 살펴보니 생각보다 좋은 기회라 여겨 참여를 희망하게 된것 같습니다. 솔직히 목표라는걸 잘 안세워두는…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 하ㅜㄴ만 디다리먼 프로ㅈ특ㅏ 시작더ㅣ요! 왜나먼 기다리미 24시가니 지나 ㄹ따ㅣ 마다 대가 리를 겁나 세게 처서 제머 리소글 뒤주뱍주 어마지차으로 만드 거거드요? 기다러다는 거시 기억이 나지 안는다먼 안 기다린 게 아니 가요! 그러헤 pRojeCt가 시자카기 하루가지나기 저헤 기어흘 지운다면 하루마헤 ProJecT…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-28",
+              "excerpt": "기획에 대하여 차라리 구두로 진행하고 기록이라도 했다면 나았을텐데 기획과 개발이 동시에, 심지어 파트당 각각 진행되었기에 이 사이에서 이 두 기능을 어떻게 연결해야 할지 고민이 많았습니다. 그래서... 저도 문서를 거의 쓰지 못했고요... 기획보다 개발에 집중된 프로젝트가 아니였나 싶긴 합니다. 협업에 대하여 건설적인…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "통찰을 위해 경험을 쌓는 사람. 서론 학기를 마치고 취업을 준비하던 시기, 맹목적인 취업보다는 내가 정말로 원하는 것이 무엇인지 치열하게 고민하는 시간을 가졌습니다. 그리고 한 가지가 확실해졌습니다. 저는 사람들에게 제가 좋아하는 것을 좋다고 말하고 싶었습니다. 다음은 그 목표를 이루기 위해 제가 거쳐온 과정들을 말씀드…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 56.6,
+        "growthRankScore": 74.0,
         "supportRankScore": 40,
-        "collaborationRankScore": 65.75,
+        "collaborationRankScore": 48.25,
         "careerRankScore": 72.88
       }
     },
@@ -12610,6 +12928,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 5,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -13144,6 +13463,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.0%",
               "회고 품질 2.06/4",
               "프로젝트 역할 수행 1.94/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+11.5)"
             ]
           },
@@ -13159,9 +13479,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -13192,6 +13514,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 25,
@@ -13237,6 +13560,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "서울시립대학교(국어국문학, 도시문화컨텐츠학)",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 1,
+            "careerDocument": 0
+          },
+          "sourceTotal": 28,
+          "textLength": 5781,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.63,
+              "evidence": "구체 표현 7종 · 반복 19회 · 문서 11건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 24회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.81,
+              "evidence": "회고/개선 표현 6종 · 반복 22회 · 문서 11건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 32회 · 문서 9건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 24종 · 반복 81회 · 문서 16건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.46,
+              "evidence": "정서/부담 표현 3종 · 반복 5회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.22,
+              "evidence": "탐색/불확실 표현 4종 · 반복 12회 · 문서 7건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까 온라인 게임 기획자 부트캠프 4기 지원자 고승주입니다. 대학시절에는 국문학과 도시문화 컨텐츠학을 복수전공하며 컨텐츠 제작의 꿈을 키웠습니다. 대학시절 게임 동아리를 창설해 현재까지 PC 및 다양한 콘솔 기반의 게임 문화에 대한 관심을 꾸준히 이어온 바 한가지 장르에 국한되지 않는 다양한 게임에 대한 시야를…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "홍보물(Itch.io 게시물용 스크린샷, 시연 영상, 포스터)제작 제발 구현이 잘 끝나길.."
+            },
+            {
+              "label": "프로젝트 회고 · 1차 프로젝트",
+              "date": "2026-01-27",
+              "excerpt": "기획에 대하여 기획에 있어 팀원들의 공감과 이해를 이끌어내는 데에는 문제가 없었지만 문서로 남기는 작업이 부족했던 거 같습니다. 다음 프로젝트를 진행할 때는 문서화 작업을 게을리 하지 않도록 하겠습니다. 협업에 대하여 1. 최대한 듣는 사람의 감정을 상하게 만들지 않고 소통하도록 노력하였습니다. 2. 작업물 중 사운드에…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 48.0,
         "growthRankScore": 25.0,
@@ -13412,7 +13822,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-12",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -13420,8 +13830,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 6,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-곽용준-2026-01-15-7",
@@ -14318,9 +14728,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-12",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-15",
@@ -14736,7 +15146,7 @@ window.STUDENT_TIMELINE_DATA = {
       "peerFeedback": [
         {
           "from": "오종호",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "지신분. 이가현님: 팀의 분위기를 살리며 기획과 개발의 밸런스를 잡아주고 브레이크 담당도 해주신분. 이승진님: 묵묵히 팀의 요구를 불만없이 받아 진행해주신분. 곽용준님: 엄청 노력하며, 반복작업 역시 힘든내색 없이 계속 해주신분. 팀장 선호도 조사 1.0 이유 자기객관화가 되어있으면 내가 남들보다 부족한걸 안다. 현재 나"
         },
         {
@@ -14750,7 +15160,23 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "분께 맡길 수 있는 부분은 맡기고 내 일에 더 집중할 것 칭찬합시다 승정하 님 : 깔끔한 프로젝트 관리, 팀원 분들을 위한 다재다능하고 적극적인 서포팅 능력 곽용준 님 : 적극적인 피드백 요청 및 수용, AI사용에 익숙치 않음에도 발전하려는 노력 정석현 님 : 사운드 리소스 작업물에 대한 높은 퀄리티, 필요한 리소스를 직"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "곽용준-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 0건",
+            "오종호 언급: 지신분. 이가현님: 팀의 분위기를 살리며 기획과 개발의 밸런스를 잡아주고 브레이크 담당도 해주신분. 이승진님: 묵묵히 팀의 요구를 불만없이 받아 진행해주신분. 곽용준님: 엄청 노력하며, 반복작업 역시 힘든내색 없이 계속 해주신분. 팀장 선호도 조사 1.0 이유 자기객관화가 되어있으면 내가 남들보다 부족한걸 안다. 현재 나"
+          ],
+          "startDate": "",
+          "endDate": ""
+        }
+      ],
       "careerDocuments": {
         "rounds": [],
         "summary": {}
@@ -14840,7 +15266,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -14855,13 +15281,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "곽용준-m4",
@@ -14870,13 +15296,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "곽용준-m5",
@@ -14885,13 +15311,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "곽용준-m6",
@@ -14900,13 +15326,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         }
       ],
       "statusPeriods": [
@@ -14917,25 +15343,17 @@ window.STUDENT_TIMELINE_DATA = {
           "startDate": "2025-12-22",
           "endDate": "2025-12-28",
           "reasonSummary": "집중 확인이 필요한 구간"
-        },
-        {
-          "statusPeriodId": "곽용준-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-01-12",
-          "endDate": "2026-01-18",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
         }
       ],
       "currentProfile": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 3,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "협업 상황 면담 권장",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -15153,29 +15571,29 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-18",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-01-12"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (개인 사정)",
               "severity": "info",
               "date": "2026-01-15"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-01-12"
             }
           ],
           "snapshot": null
@@ -15267,7 +15685,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 2,
               "reflection": 3,
               "careerAgency": 2
@@ -15439,7 +15857,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -15451,7 +15869,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 3,
               "careerAgency": 2
@@ -15465,7 +15883,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -16026,7 +16444,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -16038,7 +16456,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 3,
               "careerAgency": 2
@@ -16052,14 +16470,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 8,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 1,
         "lateCount": 5,
         "absenceCount": 0,
         "counselingCount": 6,
@@ -16073,7 +16492,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "집중 관찰"
       },
       "milestones": [
         {
@@ -16155,7 +16574,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -16168,8 +16587,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.5,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -16182,7 +16601,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 5,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 3,
             "project": 5,
             "career": 0,
@@ -16249,7 +16668,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -16262,18 +16681,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -16343,7 +16762,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -16356,18 +16775,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.17,
+          "profileAverage": 2.83,
+          "growthDelta": 0.16,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -16437,7 +16856,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -16450,18 +16869,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -16523,7 +16942,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -16536,18 +16955,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -16562,45 +16981,48 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.0,
-        "profileIndex": 75,
-        "growthDelta": 0.67,
-        "growthIndex": 70,
-        "supportIndex": 28,
+        "profileAverage": 2.83,
+        "profileIndex": 71,
+        "growthDelta": 0.5,
+        "growthIndex": 65,
+        "supportIndex": 54,
         "tags": [
-          "steady_path"
+          "support_priority"
         ],
-        "primaryTag": "steady_path",
+        "primaryTag": "support_priority",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 3.0/4",
-              "주의 프로파일 2개",
-              "현재 상태 주의"
+              "현재 평균 2.83/4",
+              "주의 프로파일 3개",
+              "현재 상태 집중 관찰"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.67",
+              "초기 대비 성장 +0.50",
               "성장 구간 2개",
-              "현재 평균 3.0/4"
+              "현재 평균 2.83/4"
             ]
           },
           "support_priority": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "현재 상태 주의"
+              "현재 상태 집중 관찰",
+              "주의 프로파일 3개",
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.78/4",
               "프로젝트 역할 수행 1.9/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (-2.2)"
             ]
           },
@@ -16616,13 +17038,15 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -16633,8 +17057,8 @@ window.STUDENT_TIMELINE_DATA = {
           "engagement"
         ],
         "cautionKeys": [
-          "resilience",
-          "careerAgency"
+          "collaboration",
+          "resilience"
         ],
         "careerReadiness": {
           "purposeClarity": 2.8,
@@ -16647,8 +17071,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 3,
+          "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -16661,9 +17086,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 0,
           "punctuality": 1.25,
           "peopleSeriousness": 1.6,
-          "riskSignal": 0.0,
-          "collaborationReadinessScore": 69.25,
-          "profileScore": 3,
+          "riskSignal": 0.35,
+          "collaborationReadinessScore": 60.5,
+          "profileScore": 2,
           "lateCount": 5,
           "trajectory": {
             "earlyScore": 85.75,
@@ -16695,10 +17120,95 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 62.0,
-        "growthRankScore": 83.0,
-        "supportRankScore": 28,
-        "collaborationRankScore": 69.25,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "울산대학교, 생명과학부",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 1,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 4571,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.25,
+              "evidence": "구체 표현 6종 · 반복 10회 · 문서 5건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 6종 · 반복 30회 · 문서 9건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.72,
+              "evidence": "회고/개선 표현 3종 · 반복 12회 · 문서 5건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.86,
+              "evidence": "관계/협업 표현 5종 · 반복 20회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 20종 · 반복 42회 · 문서 14건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.44,
+              "evidence": "정서/부담 표현 3종 · 반복 4회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.61,
+              "evidence": "탐색/불확실 표현 4종 · 반복 6회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "울산대학교에 휴학을 한 23살 3학년 곽용준입니다 군대는 어릴 적 수술로 인해 5급인 상태입니다 프로그래밍 언어는 고2 시절 C언어만 배운 상황입니다 물론 지금은 거의 다 까먹었지만 기획 단계에서도 C언어가 필요하다면 그 부분까지 다시 열심히 배울 자신이 있습니다 어린 시절의 불우한 삶을 게임에 녹여서 인생의 역경을 극…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "TC 체크 리스트 작성, QA 진행 DK HLE전 GEN.G T1 전 많은 관심 바랍니다"
+            },
+            {
+              "label": "프로젝트 회고 · 1차 프로젝트",
+              "date": "2026-01-27",
+              "excerpt": "기획에 대하여 1. 팀에서 의도한 방향성을 기획하고 매일 확인을 받았습니다 2. 다른 팀원분들도 이해할 수 있도록 매일 화면 공유로 점검 받았습니다 3. 기획서의 내용이 부족하면 구두로 확인받고 즉각 수정, 피드백 후 반영하였습니다 협업에 대하여 1. 건설적인 대화를 진행 후 18:00 전 평가를 진행하였습니다 2. 작…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 50.6,
+        "growthRankScore": 66.0,
+        "supportRankScore": 60,
+        "collaborationRankScore": 60.5,
         "careerRankScore": 58.75
       }
     },
@@ -18358,7 +18868,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 12건",
+            "건강/컨디션형 출결 12건",
             "지연 체크인 2건",
             "프로젝트 제출률 92.9%"
           ],
@@ -19772,6 +20282,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 17,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 12,
+        "conditionAttendanceIssues": 0,
         "lateCount": 2,
         "absenceCount": 0,
         "counselingCount": 4,
@@ -20287,7 +20798,8 @@ window.STUDENT_TIMELINE_DATA = {
         "supportIndex": 36,
         "tags": [
           "growth_high",
-          "career_progress"
+          "career_progress",
+          "attendance_watch"
         ],
         "primaryTag": "growth_high",
         "tagReasons": {
@@ -20321,6 +20833,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 92.3%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.02/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+6.2)"
             ]
           },
@@ -20334,11 +20847,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 12건",
+              "컨디션 케이스 1건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -20368,6 +20883,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.38,
           "checkinCount": 26,
@@ -20413,6 +20929,96 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "한국해양대 영어영문학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 7055,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.94,
+              "evidence": "구체 표현 8종 · 반복 25회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 73회 · 문서 22건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.88,
+              "evidence": "회고/개선 표현 7종 · 반복 27회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 6종 · 반복 34회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 81회 · 문서 8건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.54,
+              "evidence": "정서/부담 표현 3종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.39,
+              "evidence": "탐색/불확실 표현 4종 · 반복 6회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "이번 부트 캠프에 합류하여 게임 기획자에 대해 제대로 배워 보고 싶습니다. 그리고 저 또한 게임을 사랑하는 한 명의 유저 로서, 유저의 시선에서 재미와 몰입을 설계하는 기획자가 되고 싶습니다. 지금까지 다양한 게임을 플레이하며 자연스레 게임 기획자에 대한 관심이 깊어졌습니다. 하지만 독학으로는 한계를 느껴, 기초부터 실…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "맵 QA, 시연 영상 제작, 엔딩 BGM 제작 길다면 길고 짧다면 짧다고 할 수 있는 사전 합반 프로젝트가 이제 끝이난다는 게 잘 실감이 가지 않는 것 같습니다. 다 함께 최선을 다해서 만든 게임이 실제 홈페이지에 업로드돼 출시된다는 게 정말 뿌듯합니다. 항상 고생해서 이끌어 주신 저희 팀장님과 PM님, 저희가 한 기획…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 사운드와 캐릭터 기획서를 작성했습니다. 사운드 기획서 같은 경우엔 제가 작성하고 제가 작업했기에 사운드 기획서에 대한 평가를 팀원들에게 받을 수 없었지만, 캐릭터 기획서 같은 경우는 아트를 담당하시는 팀원분에게 전달 드렸을 때는 아트 적인 피드백 외엔 원만하게 소통 되었던 것 같습니다. 협업에 대하여 프로…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "“ 빈틈없는 과정으로 게임의 퀄리티를 높입니다 ” 성장배경과 동기 제가 기획자를 지원하게 된 가장 큰 이유는 게임에 대한 애정과 추억 때문입니다. 저는 게임 조작법을 겨우 익힌 어린 시절부터 지금에 이르기까지 수많은 게임들을 플레이하며 자랐습니다. 이런 과정에서 게임에 좌절했던 기억, 새롭고 참신했던 기억, 즐거웠던 기…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 63.4,
         "growthRankScore": 108.0,
@@ -23373,6 +23979,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 14,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 2,
         "absenceCount": 0,
         "counselingCount": 3,
@@ -23914,6 +24521,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.79/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+9.2)"
             ]
           },
@@ -23929,9 +24537,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -23961,6 +24571,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -24006,6 +24617,96 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "여",
+            "education": "국민대학교 영상디자인학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 0,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 8060,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 7종 · 반복 41회 · 문서 16건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 73회 · 문서 22건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 35회 · 문서 14건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 41회 · 문서 14건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 24종 · 반복 72회 · 문서 8건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.67,
+              "evidence": "정서/부담 표현 2종 · 반복 2회 · 문서 2건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.78,
+              "evidence": "탐색/불확실 표현 4종 · 반복 4회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임이 좋아서 예체능을 전공했습니다. 게임 기획을 제대로 배워서 원하는 직무로 일하고 싶습니다 게임 시나리오 라이터 또는 퀘스트 디자이너를 준비해왔으며, 기존 포트폴리오에서 게임 기획의 실무 경험이 부족하다고 생각했고, 기획 실무를 배우고 보강해서 취업에 성공하고 싶어 신청했습니다 문서만 존재했던 포트폴리오에 실제 프로…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "프로젝트마무리 루피해적단 같은 팀원들 너무 고생이 많았고 무한한 감사를 표합니다. 이렇게 힘들 필요는 없었던 것 같습니다.."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀 내에서 사용할 아트리소스를 정리하면서 다른 팀원이 사용하기 편하게 미리보기 이미지를 첨부했고 기획한 내용을 바탕으로 이후에 필요할 수도 있는 리소스를 정리했습니다. 협업에 대하여 작업물을 최대한 팀에 공유하려고 했습니다. 다음 프로젝트를 위해 팀 작업 중, 건의할 만한 부분에 대해 프로젝트의 차원에서…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 프로젝트와 사람 사이의 균형추가 되겠습니다 ! 1. 지원 동기 게임 또는 영상 제작 등 여러 프로젝트의 팀원으로 속해 있을 때 , 팀이 가장 흔들리는 순간은 ‘ 사람 사이에서 조율해야 할 문제가 프로젝트의 문제로 번지거나 , 반대로 무리한 일정 또는 업무가 사람 간의 이슈로 왜곡될 때 ’ 라는…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 70.6,
         "growthRankScore": 157.0,
@@ -26408,6 +27109,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 7,
         "attendanceRiskIssues": 2,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 2,
         "counselingCount": 2,
@@ -26924,7 +27626,7 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
+              "무단/무연락 결석 2건",
               "프로젝트 제출률 53.6%",
               "현재 상태 경고",
               "프로파일 1점 이하 영역 존재",
@@ -26938,6 +27640,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 88.2%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 1.1/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-10.5)"
             ]
           },
@@ -26953,9 +27656,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
+              "무단/무연락 결석 2건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 1/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -26986,6 +27691,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.29,
           "checkinCount": 17,
@@ -27031,6 +27737,91 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "강릉원주대 법학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 17,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 21,
+          "textLength": 2840,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.49,
+              "evidence": "구체 표현 3종 · 반복 6회 · 문서 4건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 2.5,
+              "evidence": "실행/개선 표현 5종 · 반복 9회 · 문서 3건",
+              "level": "보통"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.23,
+              "evidence": "회고/개선 표현 2종 · 반복 6회 · 문서 5건",
+              "level": "낮음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 2.73,
+              "evidence": "관계/협업 표현 4종 · 반복 11회 · 문서 4건",
+              "level": "보통"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 3.77,
+              "evidence": "진로/직무 표현 9종 · 반복 13회 · 문서 6건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.33,
+              "evidence": "정서/부담 표현 3종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.2,
+              "evidence": "탐색/불확실 표현 2종 · 반복 8회 · 문서 4건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "관계/협업 언어",
+            "주도성 표현"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임 기획자 부트캠프 4기 교육과정에 지원하게된 김경민이라고 합니다. 잘 부탁드립니다. 게임개발과정을 구체적으로 배우고 이해하기 위해 지원 했습니다. 어렸을 때 부터 게임에 관심이 많았지만 게임의 구성에 대한 지식은 단편적이고 개발과정에 대해서도 파편적으로 밖에 알지 못 합니다. 이 교육과정을 통해 게임 개…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "QA -"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-03",
+              "excerpt": "기획에 대하여 초기에 팀에서 기획했던 방향과 프로젝트의 진행방향이 많이 달라졌고 시간도 부족하여, 개개인의 기획이 곧 방향성이 되었음. 또 작성했던 기획의 내용은 명확하게 전달 되었지만 여전히 많은 부분을 구두로 보강하여 전달하였음. 협업에 대하여 저희 팀은 의견을 내고 작업물을 공유, 취합하는데에 별다른 문제가 없었습…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 21건에서 진로 언어, 관계/협업 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 28.0,
         "growthRankScore": 8.0,
@@ -28437,7 +29228,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 3건",
+            "건강/컨디션형 출결 3건",
             "지연 체크인 5건",
             "프로젝트 제출률 82.1%"
           ],
@@ -29809,6 +30600,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 6,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -30323,9 +31115,10 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 70,
         "supportIndex": 36,
         "tags": [
-          "career_progress"
+          "career_progress",
+          "attendance_watch"
         ],
-        "primaryTag": "career_progress",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -30357,6 +31150,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 78.3%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.67/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-2.2)"
             ]
           },
@@ -30370,11 +31164,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -30404,6 +31200,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 5,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.84,
           "checkinCount": 23,
@@ -30449,6 +31246,99 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "동서울대학교 게임콘텐츠학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 23,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 29,
+          "textLength": 20095,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.92,
+              "evidence": "구체 표현 9종 · 반복 28회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 12종 · 반복 96회 · 문서 22건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 61회 · 문서 14건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 59회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 30종 · 반복 166회 · 문서 17건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.93,
+              "evidence": "정서/부담 표현 8종 · 반복 18회 · 문서 8건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 6종 · 반복 27회 · 문서 11건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까, 맡은 일 책임감 있게 하는 김민수입니다. 저는 동아리, 팀프로젝트를 항상 팀장을 맡아 진행하며 책임감있게 완수한 경험이 있으며, 아르바이트를 할 때도 단순한 돈벌이가 아닌 책임감 있게 일하며 자아실현을 목표로하며 리뷰 확인, 피드백, 자기개발을 멈추지 않았습니다. 만약 프로그램에 참여한다면 언제나 책임감…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "QA 폴리싱, 발표 준비 발표 준비가 너무 어렵습니닷"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-03",
+              "excerpt": "기획에 대하여 저는 구현 역할을 맡아서 진행하였습니다. 이번에 원페이지 기획서를 7개를 작성해서 발표했습니다. 원페이지 기획서를 작성하면서 게임에서 차별성을 줄 수 있는 요소를 고민하고 작성했습니다. 해당 피드백으로 1. 레퍼런스 게임이 확고해서 더 많은 설명이 필요했으나 설명이 부족 2. 너무 내용이 많았다는 피드백을…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 위기에 강한 ' 긍정적 돌덩이 ' 기획자 김민수입니다 . 기획자가 되고 싶은 이유 [ 의도가 결과로 이어지는 경험 ] 초등학생 시절 RPG 만들기 툴로 게임을 만들어 친구들이 제가 만든 규칙에서 즐거워하는 모습이 좋았습니다 . 특정 구간에서 난이도를 올려 긴장도를 주거나 , 재미포인트를 설계하…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 60.0,
         "growthRankScore": 83.0,
@@ -31710,18 +32600,34 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "김지훈",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "유형 자진 이탈 이탈 사유 수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음. 게임 선호 부정적관계 강유민 김민제 특징 보고불량 연락안봄 출결불량 회사 운영 경험 🔖 총평(업데이트 날짜 : 2/24(화)) 사람이 많은 곳에서는 잘"
         },
         {
           "from": "김지훈",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "럼 만족도가 높아 전반적으로 만족하는 상태로 정리됩니다. --- ### 내용 경고문을 작성하고 주말동안 생각을 해봤다고 합니다. 자신의 잘못도 이해하고 있고, 김민제님과의 마찰이 그렇게 커지지 않을 수 있었다는 것도 인지하고 있다고 합니다. 반성도 하고 있기에 앞으로 잘 해보자는 이야기로 마무리했습니다. [면담 영상 링…"
         }
       ],
       "learningFlowCases": [
         {
           "caseId": "김민제-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 2건",
+            "프로젝트 이슈 키워드 13건",
+            "김지훈 언급: 유형 자진 이탈 이탈 사유 수업, 실습 참여도 미진하고, 상당히 다혈질. 매사에 불만이 많음. 게임 선호 부정적관계 강유민 김민제 특징 보고불량 연락안봄 출결불량 회사 운영 경험 🔖 총평(업데이트 날짜 : 2/24(화)) 사람이 많은 곳에서는 잘",
+            "김지훈 언급: 럼 만족도가 높아 전반적으로 만족하는 상태로 정리됩니다. --- ### 내용 경고문을 작성하고 주말동안 생각을 해봤다고 합니다. 자신의 잘못도 이해하고 있고, 김민제님과의 마찰이 그렇게 커지지 않을 수 있었다는 것도 인지하고 있다고 합니다. 반성도 하고 있기에 앞으로 잘 해보자는 이야기로 마무리했습니다. [면담 영상 링…"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "김민제-flow-2",
           "caseType": "career_revision_progress",
           "label": "진로 문서 개선",
           "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
@@ -33050,6 +33956,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 2,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -33564,7 +34471,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 71,
         "growthDelta": 0.5,
         "growthIndex": 65,
-        "supportIndex": 18,
+        "supportIndex": 36,
         "tags": [
           "steady_path"
         ],
@@ -33589,7 +34496,8 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의"
+              "현재 상태 주의",
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
@@ -33599,6 +34507,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 91.7%",
               "회고 품질 1.96/4",
               "프로젝트 역할 수행 2.25/4",
+              "타 학생 불만/갈등 언급 2건",
               "협업 변화 개선 (+9.0)"
             ]
           },
@@ -33614,9 +34523,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -33645,8 +34556,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": true
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 8,
+          "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 2,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.36,
           "checkinCount": 24,
@@ -33659,8 +34571,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 13,
           "punctuality": 4.0,
           "peopleSeriousness": 1.48,
-          "riskSignal": 1.56,
-          "collaborationReadinessScore": 61.0,
+          "riskSignal": 2.26,
+          "collaborationReadinessScore": 43.5,
           "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
@@ -33693,10 +34605,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 60.6,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "한국외국어대학교 일본어전공 (방송 영상 뉴미디어 이중전공)",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 30,
+          "textLength": 24286,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 10종 · 반복 53회 · 문서 16건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 91회 · 문서 16건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 75회 · 문서 17건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 65회 · 문서 14건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 45종 · 반복 283회 · 문서 18건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.64,
+              "evidence": "정서/부담 표현 5종 · 반복 8회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 6종 · 반복 24회 · 문서 11건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "일본어와 방송 영상을 전공하여 항상 스토리 컨텐츠를 만들고 싶었습니다. 영화, 드라마도 있지만 게임은 더욱 다양한 요소가 합쳐진 멀티미디어 컨텐츠라고 생각합니다. 재미와 감동을 주는 게임을 만들고싶습니다. 젤다의 전설, 소울류, 문명, 바이오쇼크, 용과 같이, 파이널판타지, 클레어 옵스퀴르 33 등등 다양한 장르의 싱글…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "엔딩 완성, qa 작업 마무리, 밸런싱 작업 마무리 드디어 3차 프로젝트의 개발이 끝났다. 모두들 정말 고생많았다. 여러가지 느낀점과 하고싶은 말들이 참 많으나, 분명히 최종 회고를 쓰는 기회가 생길 것이다. 거기서 적겠다!! ㅋㅋㅋㅋ"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀에서 의도한 방향성을 기획하였다고 생각한다. 애당초, 정말 감사하게도 본인이 적은 최초 기획서가 거의 그대로, 뼈대가 되어 팀 전체가 나머지 살을 붙이는 기획과 개발을 했기 때문이다. 하지만, 가끔씩 다른 팀원에게 이해되지 않은 적이 있었다. 그러나, 질문을 한다는 것 자체가 어려울 수 있는데도 불구하고…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 저는 시스템이라는 방직기로 콘텐츠라는 실을 엮어 게임이라는 옷을 만드는 기획자 김민제입니다 . 김민제 지원동기 ( 게임이 만들어지는 과정에서 매력을 ) 최초의 기억 중 하나는 어머니와는 슈퍼 마리오 월드를 , 아버지와는 MDK 시리즈를 같이 플레이 한 것으로서 , 게임은 제 인생의 새벽부터 존…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 56.6,
         "growthRankScore": 74.0,
-        "supportRankScore": 20,
-        "collaborationRankScore": 61.0,
+        "supportRankScore": 40,
+        "collaborationRankScore": 43.5,
         "careerRankScore": 71.88
       }
     },
@@ -36480,6 +37484,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 10,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -37019,6 +38024,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.59/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+18.2)"
             ]
           },
@@ -37034,9 +38040,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -37066,6 +38074,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -37111,6 +38120,96 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "35-39세",
+            "gender": "남",
+            "education": "가천대학교 컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 8819,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 23회 · 문서 9건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 63회 · 문서 16건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.92,
+              "evidence": "회고/개선 표현 5종 · 반복 32회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 53회 · 문서 16건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 77회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.33,
+              "evidence": "정서/부담 표현 4종 · 반복 7회 · 문서 3건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.34,
+              "evidence": "탐색/불확실 표현 2종 · 반복 8회 · 문서 3건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요! 저는 항상 새로운 것을 배우고 성장하려 노력하는 사람입니다. 긍정적인 태도로 다양한 경험을 즐기며 꾸준한 자기 계발을 통해 더 나은 모습을 만들어가고자 합니다. 이번 교육과정을 통해 평소에 관심이 있었던 게임 자체를 배우게 되는 기회로 삼고 있습니다. 게임을 스스로 만들어보기 위해 여러 방면으로 시도를 한…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "게임 테스트 해보기 함께해서 좋았습니다. 8조분들 감사합니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 의도한 방향성은 '먼저 완성하자' 입니다. 그 이유는 결국 구축하는 사람이 필요하고, 제가 구축을 전부 하게 된다면 조원들의 개발적 사고가 향상되지 않기 때문입니다. 그래서 최소한의 개발단위로 완성을 하여 조원들이 향후 개발적 사고를 가지고 프로그래머와 소통을 더 잘할 수 있기를 바랬습니다. 한 명을 제외…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "0 에서 1 을 만들어 낼 수 있는 지원자, 김범진입니다. 1. [핵심 가치] 기술의 토대 위에 설계하는 ' 살아있는 경험 ' 저는 게임을 단순한 오락의 집합체가 아닌, 유저가 새로운 세상과 교감하며 감정을 전이받는 ' 정교하게 설계된 상호작용의 총합 ' 이라고 믿습니다. 개발자로 활동하며 서비스의 뼈대를 만드는 법을…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 구체성, 주도성 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 68.0,
         "growthRankScore": 91.0,
@@ -39752,6 +40851,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 1,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -40296,6 +41396,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 77.8%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.79/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-18.8)"
             ]
           },
@@ -40311,9 +41412,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -40343,6 +41446,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 5,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.75,
           "checkinCount": 27,
@@ -40388,6 +41492,99 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "여",
+            "education": "동서울대학교, 게임콘텐츠과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 33,
+          "textLength": 23396,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 10종 · 반복 72회 · 문서 16건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 158회 · 문서 27건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 69회 · 문서 15건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 125회 · 문서 24건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 33종 · 반복 328회 · 문서 20건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.8,
+              "evidence": "정서/부담 표현 5종 · 반복 8회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.15,
+              "evidence": "탐색/불확실 표현 4종 · 반복 9회 · 문서 7건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까. 시스템의 의도를 파악하고 데이터를 구조화하여 재미를 설계하는 기획자 지망생, 김서현입니다. 저는 동서울대학교의 게임콘텐츠 전공 과정을 통해 기획을 비롯한 게임 개발의 전반적인 기초를 다졌으며, 게임의 본질은 유저에게 납득 가능한 도전을 제시하는 의도된 균형에 있다고 믿습니다. 경일게임IT아카데미에서 저의…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "발표 자료 제작 및 발표 준비, itch.io 수정 및 소스 리터칭, 빌드파일 QA 및 테스트 태환님께 영상 편집에 대해 말씀 드렸을 때, 처음부터 더 적극적이고 구체적으로 설명을 드렸다면 좋았을텐데, 그러지 못해서 아쉬움이 남습니다. 그 과정에서 태환님이 감정이 상하셨다고 느꼈습니다. 그 밖에 제가 발표를 맡게 되면서…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 Figma를 통해 콘셉트 기획안을 공유하며, “힐링 캐주얼 리듬 게임”이라는 방향성과 레퍼런스 게임을 명확히 제시했다고 생각합니다. 메인 루프와 유저 시나리오 또한 문서화하여 팀원들이 참고할 수 있도록 정리해두었습니다. 다만, 팀에서 합의한 콘셉트와 다른 방향의 시나리오 제안이 이후에 발생하면서, 초기에…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 데이터 기반 구조 설계로 팀의 완주를 이끄는 PM 4일 안에 40 분 분량의 완성형 빌드를 완성한 것도 , 공략 시간을 60 분에서 20 분으로 단축한 것도 , 특출난 개인 덕분이 아니었습니다 . 저는 팀의 성과를 ' 구조 ' 로 설명할 수 있을 때 비로소 재현 가능한 결과가 만들어진다고 믿습…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 67.4,
         "growthRankScore": 66.0,
@@ -42659,6 +43856,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 18,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 2,
         "absenceCount": 10,
         "counselingCount": 2,
@@ -43167,6 +44365,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.96/4",
               "프로젝트 역할 수행 2.1/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+10.0)"
             ]
           },
@@ -43182,9 +44381,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 1/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -43215,6 +44416,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.42,
           "checkinCount": 8,
@@ -43253,6 +44455,91 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "한국외국어대학교 사회과학전공",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 8,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 12,
+          "textLength": 3877,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.71,
+              "evidence": "구체 표현 7종 · 반복 17회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.97,
+              "evidence": "실행/개선 표현 6종 · 반복 26회 · 문서 9건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.32,
+              "evidence": "회고/개선 표현 6종 · 반복 13회 · 문서 5건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.77,
+              "evidence": "관계/협업 표현 8종 · 반복 18회 · 문서 6건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 21종 · 반복 70회 · 문서 8건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.36,
+              "evidence": "정서/부담 표현 3종 · 반복 4회 · 문서 3건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 1.44,
+              "evidence": "탐색/불확실 표현 1종 · 반복 1회 · 문서 1건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "주도성 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요, 저는 2년 정도 게임 QA로 근무하면서 게임의 완성도와 서비스 안정성을 검수하는 일을 해왔습니다. 업무 중에 디자인 업무에도 참여하게 되면서 자연스럽게 게임 시스템 설계나 콘텐츠 구조에 관심이 생기게 되었습니다. 그 경험을 계기로 기획자로 커리어를 전환해보고 싶다는 생각이 들어 이번 부트캠프에 지원하게 되었…"
+            },
+            {
+              "label": "데일리체크인 · 2차 프로젝트",
+              "date": "2026-02-26",
+              "excerpt": "스테이지 3 레벨디자인, 홍보 영상 제작 마지막 날이 되었지만 아쉬운점이 많은 것 같습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 기획서의 내용을 구체적으로 작성하였으나, 내용이 분산되어있어서 해당 기획서를 보고 만들기가 어렵다는 피드백을 받을 수 있었습니다. 협업에 대하여 저의 작업물과 진행 상황을 지속적으로 팀원 분들께 공유하고, 서로의 작업물에 대해 비난이 아닌 비판으로 서로의 장단점을 평가하였습니다. 다음 프로젝트를 위해 프로…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 12건에서 진로 언어, 주도성 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 38.6,
         "growthRankScore": -34.0,
@@ -44554,6 +45841,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "에서 시스템과 엔진을 맡았다고 합니다. - 내향적이라 적극적으로 다가가진 않아 엄청 친한 인원은 없다고 합니다. 조 활동할 때마다 분위기는 좋았다고 합니다. - 김시온님 서진호님에게 배울점이 많아 친해지면 좋을 것 같다고 합니다. -- 기획에 대하여 다같이 기본적인 컨셉 및 시나리오 초안을 잡고 시작하였지만 각자의 역할…"
         },
         {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평"
+        },
+        {
           "from": "윤동현",
           "type": "praise",
           "snippet": "는 점 - 프로그래밍반과 협업하는 것을 기대하고 있다고 합니다. - 이전에 프로그래밍 반 게임콘에서 기대감이 높아졌다고 합니다. ##### 4. 기타 - 김시온님 의욕이 넘쳐서 좋다. - 이전 팀에서 영도님이 조율을 잘 해서 괜찮게 잘 되었다. - 아이스 브레이킹 하면서 편했던 팀원들이 마음에 맞았다고 합니다. (김시온"
@@ -44597,6 +45889,21 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "김시온-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 4건",
+            "예인해 언급: 강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "김시온-flow-2",
           "caseType": "career_revision_progress",
           "label": "진로 문서 개선",
           "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
@@ -44760,7 +46067,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -44775,13 +46082,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "김시온-m5",
@@ -44790,13 +46097,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "김시온-m6",
@@ -44805,25 +46112,25 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         }
       ],
       "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "협업 상황 면담 권장",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -45304,7 +46611,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 2,
               "engagement": 2,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -45894,7 +47201,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -45906,7 +47213,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -45920,7 +47227,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         }
       ],
@@ -45928,6 +47235,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 6,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 0,
@@ -46117,7 +47425,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -46130,11 +47438,11 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.5,
-          "growthDelta": 0.17,
+          "profileAverage": 2.33,
+          "growthDelta": 0.0,
           "strengthKeys": [
-            "collaboration",
-            "resilience"
+            "resilience",
+            "reflection"
           ],
           "cautionKeys": [
             "selfRegulation",
@@ -46211,7 +47519,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -46224,18 +47532,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.33,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -46305,7 +47613,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -46318,17 +47626,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.17,
+          "profileAverage": 2.83,
+          "growthDelta": 0.16,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -46398,7 +47707,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -46411,17 +47720,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -46436,11 +47746,11 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.0,
-        "profileIndex": 75,
-        "growthDelta": 0.67,
-        "growthIndex": 70,
-        "supportIndex": 0,
+        "profileAverage": 2.83,
+        "profileIndex": 71,
+        "growthDelta": 0.5,
+        "growthIndex": 65,
+        "supportIndex": 18,
         "tags": [
           "steady_path"
         ],
@@ -46449,32 +47759,33 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 3.0/4",
-              "주의 프로파일 1개",
+              "현재 평균 2.83/4",
+              "주의 프로파일 2개",
               "현재 상태 안정"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.67",
-              "성장 구간 3개",
-              "현재 평균 3.0/4"
+              "초기 대비 성장 +0.50",
+              "성장 구간 2개",
+              "현재 평균 2.83/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.17/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (-7.2)"
             ]
           },
@@ -46490,9 +47801,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -46507,6 +47820,7 @@ window.STUDENT_TIMELINE_DATA = {
           "selfRegulation"
         ],
         "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -46522,6 +47836,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 10,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 23,
@@ -46534,9 +47849,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 4,
           "punctuality": 4.0,
           "peopleSeriousness": 1.72,
-          "riskSignal": 0.48,
-          "collaborationReadinessScore": 69.5,
-          "profileScore": 3,
+          "riskSignal": 0.83,
+          "collaborationReadinessScore": 60.75,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 84.75,
@@ -46568,10 +47883,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 68.0,
-        "growthRankScore": 91.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 69.5,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "여",
+            "education": "컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 23,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 29,
+          "textLength": 23709,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 11종 · 반복 63회 · 문서 10건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 136회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 66회 · 문서 11건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 74회 · 문서 8건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 31종 · 반복 392회 · 문서 22건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.55,
+              "evidence": "정서/부담 표현 6종 · 반복 21회 · 문서 8건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 5종 · 반복 30회 · 문서 11건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 플레이어의 선택과 감정을 설계하는 내러티브 지향 게임 디자이너 지망생 김시온입니다. 대학교 게임 제작 동아리에서 무박 2일 게임잼에 5번 이상 참여했고, 2024년에는 동서대학교에서 진행한 딥다이브 게임잼에도 참가했습니다. 제가 만든 게임을 초면인 사람들이 직접 플레이하면서 재밌다고 말해줄 때 가장 큰 보람…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "인게임 영상 편집하기, 게임 클리어하기 힘들긴 했지만 재밌기도 했던 팀 활동이었습니다. 다음에도 이런 좋은 프로젝트가 될 수 있음 좋겠습니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-28",
+              "excerpt": "기획에 대하여 문서의 기본적으로 들어가야 하는 정보(날짜, 작성자, 요약, 인덱스 등)는 양식을 맞출 필요가 있음을 알았다. 기획서는 생각의 과정을 남기고 변동사항의 이유를 추적하며, 결정된 사항이 흔들리지 않기 위해 반드시 필요하다. 하지만 양식이 너무 달라 문서를 합치기 힘들거나 필요한 자료의 위치를 찾기 힘들면 그…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 경험과 분석을 연결하여 게임을 완성하는 팀의 모르타르 , 시스템 기획자 김시온입니다 . 1. 지원동기 기술적 구현을 넘어 플레이어의 경험을 이끌어내는 설계의 힘을 발견하고 게임 기획자를 꿈꾸게 되었습니다 . 대학교 1 학년 , 무박 3 일 교내 게임잼에 Unity 프로그래머 겸 기획자로 참여하…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 60.6,
+        "growthRankScore": 66.0,
+        "supportRankScore": 20,
+        "collaborationRankScore": 60.75,
         "careerRankScore": 78.0
       }
     },
@@ -49475,6 +50883,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 10,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -50024,6 +51433,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 1.44/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-0.2)"
             ]
           },
@@ -50039,9 +51449,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -50071,6 +51483,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -50116,6 +51529,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "한신대학교 한중문화콘텐츠학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 33,
+          "textLength": 12973,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.34,
+              "evidence": "구체 표현 5종 · 반복 24회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 58회 · 문서 16건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 69회 · 문서 16건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 47회 · 문서 8건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 162회 · 문서 16건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.09,
+              "evidence": "정서/부담 표현 1종 · 반복 3회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.1,
+              "evidence": "탐색/불확실 표현 5종 · 반복 9회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 어릴적부터 다양한 콘텐츠를 좋아해서 그런 콘텐츠를 기획해보고 싶다는 생각을 가지고 살았습니다. 드라마 영화 만화 등 여러가지 콘텐츠를 좋아하고 즐겼지만, 가장 좋아했던건 게임이었습니다. 게임이랑 장르는 재미있고 흥미로운 스토리를 기반으로 나의 선택과 경험이 세계의 모습을 바꿀 수 있다는 점이 저에게 매력적으로 다가…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 순조로웠습니다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 일단 기본적으로 팀원들이 이해하기 쉬운 방향으로 최대한 전문 용어라던지 나만 아는 용어를 최대한 배제하고 작성했고 이해하기 어려운 점은 구두로 설명했습니다. 협업에 대하여 기본적으로 팀원들의 의견을 최대한 나눴고 어떤 부분에서 힘든지에 대해서 자주 물어봤던 것 같습니다. 하지만 팀원 한 분 한 분에 대해서…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- [ 서사를 구조화 하고 이를 효과적으로 전달하는 기획자 ]_ 김영도 성장배경 제 인생을 생각해보면 , 저는 누구보다도 스토리를 사랑하는 사람입니다 . 그리고 저는 이런 사랑하는 이야기를 그저 보고 읽는 사람에서 설계하는 사람으로 발전해 왔습니다 . 어릴 적부터 저는 소설을 즐겨 읽으며 어떤 인…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 74.6,
         "growthRankScore": 132.0,
@@ -51826,6 +53331,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "그래도 어느정도 수업은 잘 따라옴. 특징 수동적 자신감부족 나이 35세(92년생) 긍정적관계 김범진 김윤규 박현수 윤유나 부정적관계 김윤규 예인해 게임 선호 우마무스메 MBTI INFP 희망 직무 🔖 총평(업데이트 날짜 : 1/26(월)) 소"
         },
         {
+          "from": "이승진",
+          "type": "complaint",
+          "snippet": "2/26(목) - 프로젝트 중 팀장 이형진 학생과 싸운 적이 있다고 함 3/27(금) - 사전합반 프로젝트 진행 중 예인해, 김윤규 학생과 마찰 발생 ### 내용 ### 1) 프로젝트 전반 평가 이번 프로젝트를 매우 값진 경험으로 인식하고 있습니다. 결과보다 과정에서 얻은 학습과 체감이"
+        },
+        {
           "from": "이정헌",
           "type": "praise",
           "snippet": "진 것 같습니다. 수정부분에 대한 수용도 빠르고, 협업에 대해서도 본인의 여유가 발생하면 자연스럽게 인접 업무에 도움을 주는게 내재되어 있는 것이 좋았습니다. 김윤규 : 협조적이고 주도적인 자세를 통하여 학습을 진행하고 팀원과 잘 지내려 하는 것 같습니다. 이런 태도가 계속된다면 기획자로서의 성장이 충분할 것이라 생각하…"
@@ -51855,7 +53365,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 3건",
+            "건강/컨디션형 출결 3건",
             "지연 체크인 2건",
             "프로젝트 제출률 92.9%"
           ],
@@ -51863,7 +53373,22 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-24"
         },
         {
-          "caseId": "김윤규-flow-5",
+          "caseId": "김윤규-flow-3",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 2건",
+            "이승진 언급: 2/26(목) - 프로젝트 중 팀장 이형진 학생과 싸운 적이 있다고 함 3/27(금) - 사전합반 프로젝트 진행 중 예인해, 김윤규 학생과 마찰 발생 ### 내용 ### 1) 프로젝트 전반 평가 이번 프로젝트를 매우 값진 경험으로 인식하고 있습니다. 결과보다 과정에서 얻은 학습과 체감이"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "김윤규-flow-4",
           "caseType": "career_revision_progress",
           "label": "진로 문서 개선",
           "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
@@ -51876,36 +53401,6 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2026-04-20",
           "endDate": "2026-05-03"
-        },
-        {
-          "caseId": "김윤규-flow-3",
-          "caseType": "counseling_recovery",
-          "label": "면담 후 회복",
-          "description": "면담 기록 이후 성장 곡선이 회복된 케이스",
-          "severity": "success",
-          "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
-          "evidence": [
-            "면담 4건",
-            "초기 대비 성장 +0.84",
-            "성장 구간 2개"
-          ],
-          "startDate": "2026-03-13",
-          "endDate": "2026-05-11"
-        },
-        {
-          "caseId": "김윤규-flow-4",
-          "caseType": "reflection_growth_link",
-          "label": "회고 기반 성장",
-          "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
-          "severity": "success",
-          "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
-          "evidence": [
-            "회고 2건",
-            "성찰 점수 4/4",
-            "초기 대비 성장 +0.84"
-          ],
-          "startDate": "2026-01-26",
-          "endDate": "2026-02-27"
         }
       ],
       "careerDocuments": {
@@ -52044,7 +53539,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 3
@@ -52059,13 +53554,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "전반적으로 안정적인 성장 흐름"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "김윤규-m4",
@@ -52074,7 +53569,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -52089,7 +53584,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -52104,7 +53599,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -52134,7 +53629,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
@@ -52664,7 +54159,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "전반적으로 안정적인 성장 흐름",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -52676,7 +54171,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 4,
               "careerAgency": 3
@@ -52690,7 +54185,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "전반적으로 안정적인 성장 흐름"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -53302,7 +54797,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -53324,6 +54819,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 18,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 10,
         "counselingCount": 4,
@@ -53419,7 +54915,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 3
@@ -53432,8 +54928,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.67,
+          "profileAverage": 2.83,
+          "growthDelta": 0.5,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -53513,7 +55009,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 3
@@ -53526,15 +55022,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
-          "growthDelta": 0.33,
+          "profileAverage": 3.17,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
-          "cautionKeys": [],
+          "cautionKeys": [
+            "collaboration"
+          ],
           "confidence": "High",
-          "note": "전반적으로 안정적인 성장 흐름",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -53604,7 +55102,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -53617,13 +55115,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
-          "growthDelta": -0.16,
+          "profileAverage": 3.0,
+          "growthDelta": -0.17,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -53697,7 +55196,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -53710,13 +55209,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -53790,7 +55290,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -53803,13 +55303,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -53828,48 +55329,48 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.17,
-        "profileIndex": 79,
-        "growthDelta": 0.84,
-        "growthIndex": 75,
+        "profileAverage": 3.0,
+        "profileIndex": 75,
+        "growthDelta": 0.67,
+        "growthIndex": 70,
         "supportIndex": 36,
         "tags": [
-          "growth_high",
-          "collaboration_strength",
-          "career_progress"
+          "career_progress",
+          "attendance_watch"
         ],
-        "primaryTag": "growth_high",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 3.17/4",
-              "주의 프로파일 1개",
+              "현재 평균 3.0/4",
+              "주의 프로파일 2개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.84",
+              "초기 대비 성장 +0.67",
               "성장 구간 2개",
-              "현재 평균 3.17/4"
+              "현재 평균 3.0/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
               "현재 상태 주의",
-              "학습 흐름 케이스 건강-프로젝트 부담"
+              "학습 흐름 케이스 건강-프로젝트 부담, 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 92.3%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.53/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 개선 (+12.2)"
             ]
           },
@@ -53883,11 +55384,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 1건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -53902,6 +55405,7 @@ window.STUDENT_TIMELINE_DATA = {
           "reflection"
         ],
         "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -53917,6 +55421,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.38,
           "checkinCount": 26,
@@ -53929,9 +55434,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 2,
           "punctuality": 4.0,
           "peopleSeriousness": 1.72,
-          "riskSignal": 0.24,
-          "collaborationReadinessScore": 70.25,
-          "profileScore": 3,
+          "riskSignal": 0.59,
+          "collaborationReadinessScore": 61.5,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 84.75,
@@ -53963,10 +55468,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 63.4,
-        "growthRankScore": 100.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "광주대학교 경찰행정학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 32,
+          "textLength": 12034,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 53회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 12종 · 반복 64회 · 문서 10건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 40회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 59회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 30종 · 반복 193회 · 문서 16건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.86,
+              "evidence": "정서/부담 표현 5종 · 반복 8회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.31,
+              "evidence": "탐색/불확실 표현 4종 · 반복 6회 · 문서 3건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 운동을 좋아하고 활발하머 긍정적인 에너지를 가지고 주변 사람들과의 소통을 즐기는 사람입니다. 새로운 환경에서도 빠르게 적응하고 주변 사람들과의 좋은 관계를 유지하는데 장점이 있습니다. 평소 어떤 일이든 완벽하게 해내고자 하는 성향이 강해 맡은 일은 끝까지 책임지고 세심하게 처리하는 편입니다 계획을 세우고 효율적으로…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "qa 및 홍보영상 제작 다 왔다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 저번 비주얼노벨 프로젝트에서 기획서의 체계를 명확하게 잡지 않고 진행해서 어려움이 많았다보니 이번에는 기획서를 명확하게 먼저 작성을 하고 어려움이 있을 때마다 기획서를 검토하며 수정하고 길을 찾아 갔던 것 같습니다. 물론! 기획서는 팀에서 의도한 방향으로 먼저 설계 후 작성을 진행하였습니다 협업에 대하여…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "아이디어를 서사와 구조로 바꿔 게임의 몰입을 만드는 지원자, 김윤규입니다! ① 지원 동기 저는 게임에서 재미가 발생하는 구조를 먼저 보고, 그 구조를 서사와 연출로 연결하는 방식에 흥미를 느껴 왔습니다. 단순히 이야기를 잘 쓰는 것보다, 유저가 왜 다음 장면으로 넘어가고 싶어 하는지, 어떤 흐름에서 몰입이 유지되는지를…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 60.0,
+        "growthRankScore": 83.0,
         "supportRankScore": 40,
-        "collaborationRankScore": 70.25,
+        "collaborationRankScore": 61.5,
         "careerRankScore": 81.12
       }
     },
@@ -56486,6 +58083,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -57019,6 +58617,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 1.54/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+5.8)"
             ]
           },
@@ -57034,9 +58633,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -57067,6 +58668,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 28,
@@ -57112,6 +58714,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "메카트로닉스",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 0,
+            "checkin": 28,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 6632,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.44,
+              "evidence": "구체 표현 7종 · 반복 24회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 42회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.73,
+              "evidence": "회고/개선 표현 2종 · 반복 38회 · 문서 11건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.51,
+              "evidence": "관계/협업 표현 6종 · 반복 29회 · 문서 5건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 18종 · 반복 39회 · 문서 17건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.17,
+              "evidence": "정서/부담 표현 7종 · 반복 10회 · 문서 8건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.27,
+              "evidence": "탐색/불확실 표현 6종 · 반복 22회 · 문서 7건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "평소에 게임에 관심이 많은 상태에서 게임 관련 유튜브에서 소식을 듣게되었습니다 이걸 좋은 기회로 생각하여 게임 업계로 취업하고 싶은 취업준비생 김재환 입니다 주말마다 Wixoss라는 오프라인 카드게임을 취미로 즐기고 있었습니다 어느날 Wixoss를 하면서 친해진 사람 중 게임업계에 있는 사람이 많다고 알게되어 게임업계에…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA마무리 수고하셨습니다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 1. 팀에서는 스컬 같은 머리를 바꾸는(변신하는) 플랫포머 게임에 보스전은 미니게임으로 하자고 했지만 그 뒤로는 각자 해야할 파트를 각자 했을 뿐 기획적으로 의견을 교환하거나 소통한 적은 없는것 같습니다. 문제가 생기면 팀장님에게 물어보고 고치는 전체적인 방향성은 팀장님도 잘 모르는 듯한 느낌을 받았습니다…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 진로 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 71.4,
         "growthRankScore": 133.0,
@@ -58762,6 +60452,16 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "아지는 인원. 특징 ISTQB 적극적 전공자 나이 28세(99년생) 긍정적관계 배주빈 서진호 예인해 이정헌 조준현 부정적관계 김경민 김지훈 예인해 이석훈 게임 선호 림버스컴퍼니 서브컬쳐 프로젝트 문 MBTI INTJ 희망 직무 QA 시스템 🔖 총평(업데이트"
         },
         {
+          "from": "김민제",
+          "type": "complaint",
+          "snippet": "미진하며, 생각이 깊진 않아 보임. 기업협약 단계에서의 불만 관찰 필요. 특징 외향적 나이 30세(97년생) 긍정적관계 부정적관계 김지훈 게임 선호 GTA 레드 데드 리뎀션 소울라이크 엘든 링 희망 직무 시나리오 🔖 총평(업데이트 날짜 : 01/22)"
+        },
+        {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이"
+        },
+        {
           "from": "이정헌",
           "type": "praise",
           "snippet": "모르겠지만 팀을 이끄는 것 자체는 양호함. 특징 소통적 적극적 타교육기관학습자 나이 34세(93년생) 긍정적관계 승정하 부정적관계 김지훈 이석훈 게임 선호 던전앤파이터 희망 직무 🔖 총평(업데이트 날짜 : 3/30(월)) 소통이 상당히 원활하고,"
@@ -58791,6 +60491,22 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-30"
         },
         {
+          "caseId": "김지훈-flow-3",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 2건",
+            "프로젝트 이슈 키워드 1건",
+            "김민제 언급: 미진하며, 생각이 깊진 않아 보임. 기업협약 단계에서의 불만 관찰 필요. 특징 외향적 나이 30세(97년생) 긍정적관계 부정적관계 김지훈 게임 선호 GTA 레드 데드 리뎀션 소울라이크 엘든 링 희망 직무 시나리오 🔖 총평(업데이트 날짜 : 01/22)",
+            "예인해 언급: 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
           "caseId": "김지훈-flow-2",
           "caseType": "health_project_strain",
           "label": "건강-프로젝트 부담",
@@ -58798,7 +60514,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 24건",
+            "건강/컨디션형 출결 24건",
             "지연 체크인 0건",
             "프로젝트 제출률 32.1%"
           ],
@@ -58906,7 +60622,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -58921,7 +60637,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -58936,7 +60652,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -58951,7 +60667,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -58966,7 +60682,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -58996,7 +60712,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 2,
@@ -59400,7 +61116,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 1,
               "engagement": 1,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 2
@@ -59613,7 +61329,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 1,
               "engagement": 1,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 4,
               "careerAgency": 2
@@ -60200,7 +61916,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 1,
               "engagement": 1,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 4,
               "careerAgency": 2
@@ -60222,6 +61938,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 40,
         "attendanceRiskIssues": 7,
         "healthAttendanceIssues": 24,
+        "conditionAttendanceIssues": 0,
         "lateCount": 4,
         "absenceCount": 14,
         "counselingCount": 4,
@@ -60317,7 +62034,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -60330,8 +62047,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.0,
-          "growthDelta": -0.33,
+          "profileAverage": 1.83,
+          "growthDelta": -0.5,
           "strengthKeys": [
             "resilience",
             "reflection"
@@ -60411,7 +62128,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -60424,7 +62141,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.0,
+          "profileAverage": 1.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "resilience",
@@ -60505,7 +62222,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -60518,11 +62235,11 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.33,
-          "growthDelta": 0.33,
+          "profileAverage": 2.17,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "resilience"
           ],
           "cautionKeys": [
             "selfRegulation",
@@ -60599,7 +62316,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -60612,11 +62329,11 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.33,
+          "profileAverage": 2.17,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "resilience"
           ],
           "cautionKeys": [
             "selfRegulation",
@@ -60675,7 +62392,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -60688,11 +62405,11 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.33,
+          "profileAverage": 2.17,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "resilience"
           ],
           "cautionKeys": [
             "selfRegulation",
@@ -60714,10 +62431,10 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.33,
-        "profileIndex": 58,
-        "growthDelta": 0.0,
-        "growthIndex": 50,
+        "profileAverage": 2.17,
+        "profileIndex": 54,
+        "growthDelta": -0.16,
+        "growthIndex": 45,
         "supportIndex": 100,
         "tags": [
           "support_priority",
@@ -60728,37 +62445,38 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.33/4",
-              "주의 프로파일 3개",
+              "현재 평균 2.17/4",
+              "주의 프로파일 4개",
               "현재 상태 경고"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.00",
+              "초기 대비 성장 -0.16",
               "성장 구간 1개",
-              "현재 평균 2.33/4"
+              "현재 평균 2.17/4"
             ]
           },
           "support_priority": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 7건",
+              "무단/무연락 결석 7건",
               "프로젝트 제출률 32.1%",
               "현재 상태 경고",
               "프로파일 1점 이하 영역 존재",
-              "주의 프로파일 3개",
-              "학습 흐름 케이스 건강 관리 관찰, 건강-프로젝트 부담"
+              "주의 프로파일 4개",
+              "학습 흐름 케이스 건강 관리 관찰, 협업 갈등 신호, 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.84/4",
               "프로젝트 역할 수행 1.44/4",
+              "타 학생 불만/갈등 언급 2건",
               "협업 변화 유지 (-6.2)"
             ]
           },
@@ -60774,9 +62492,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 7건",
+              "무단/무연락 결석 7건",
+              "건강/컨디션 출결 24건",
+              "컨디션 케이스 1건",
               "참여 지속성 1/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -60788,7 +62508,7 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "reflection",
-          "collaboration"
+          "resilience"
         ],
         "cautionKeys": [
           "selfRegulation",
@@ -60807,6 +62527,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 2,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.46,
           "checkinCount": 9,
@@ -60819,9 +62540,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 1,
           "punctuality": 1.6,
           "peopleSeriousness": 1.72,
-          "riskSignal": 0.12,
-          "collaborationReadinessScore": 66.25,
-          "profileScore": 3,
+          "riskSignal": 0.82,
+          "collaborationReadinessScore": 48.75,
+          "profileScore": 2,
           "lateCount": 4,
           "trajectory": {
             "earlyScore": 78.25,
@@ -60853,10 +62574,95 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 30.6,
-        "growthRankScore": 8.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "경희대 한방재료공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 9,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 13,
+          "textLength": 4663,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 1.84,
+              "evidence": "구체 표현 3종 · 반복 4회 · 문서 2건",
+              "level": "낮음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.35,
+              "evidence": "실행/개선 표현 6종 · 반복 14회 · 문서 5건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.81,
+              "evidence": "회고/개선 표현 4종 · 반복 14회 · 문서 4건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.26,
+              "evidence": "관계/협업 표현 8종 · 반복 16회 · 문서 3건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 14종 · 반복 29회 · 문서 6건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.26,
+              "evidence": "정서/부담 표현 4종 · 반복 4회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.46,
+              "evidence": "탐색/불확실 표현 3종 · 반복 5회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "주도성 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "뉴미디어 엔터테인먼트, 주로 유튜브에서 10년 가까이 일했습니다. 최신 경향의 스타트업을 하다보니, 3d 애니메이션도 하게 되었는데 갈수록 현업에서 메타버스의 시대가 오고 있는 것이 느껴졌습니다. 그리고 메타버스의 끝은 결국 게임에 맞닿아있는 것 같아, 게임 교육을 받으려했으나 마음에 드는 과정을 찾지 못 했습니다. 경…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-03-26",
+              "excerpt": "우분투가 작업 내용이 날라가는 오류가 있어, 아무리 세팅해도 되지않아, 다시 윈도우로 옮기고 있다.. 거듭 쌓인 스트레스와 피로 때문에 집중력이 낮아진 거 같다. 좀 쉬어야겠다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 시나리오가 완성되지 않은 상태에서 기획을 들어가다 보니, 어느 정도 시나리오와 어긋나는 부분이 있었다. 조율은 금방 했지만 협업 툴로 긴밀한 소통이 되었으면 어땠을까 싶다. 협업에 대하여 피드백과 자기주장이 팀에 도움이 되는가 걸림돌이 되는가는 많은 고민이 되는 것 같다. 무조건 수용하며 업무량으로 승부하…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 13건에서 진로 언어, 주도성 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 27.4,
+        "growthRankScore": -8.0,
         "supportRankScore": 176,
-        "collaborationRankScore": 66.25,
+        "collaborationRankScore": 48.75,
         "careerRankScore": 51.75
       }
     },
@@ -61031,7 +62837,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-23",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61039,8 +62845,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 3,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-김태환-2026-01-12-4",
@@ -61077,7 +62883,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-16",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61085,8 +62891,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 6,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "1차 프로젝트-김태환-2026-01-20",
@@ -61135,7 +62941,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-21",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61143,8 +62949,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 7,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "1차 프로젝트-김태환-2026-01-22",
@@ -61225,7 +63031,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-10",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61233,8 +63039,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 10,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "team-김태환-2-2",
@@ -61327,7 +63133,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-24",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61335,8 +63141,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 12,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-김태환-2026-02-25",
@@ -61357,7 +63163,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-25",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61365,8 +63171,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 12,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-김태환-2026-02-26",
@@ -61387,7 +63193,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-03",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61395,8 +63201,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 13,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-retro-김태환-2026-03-04",
@@ -61417,7 +63223,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-12",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61425,8 +63231,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 14,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-김태환-2026-03-18",
@@ -61529,6 +63335,22 @@ window.STUDENT_TIMELINE_DATA = {
           "scoreImpact": "contextual"
         },
         {
+          "id": "attendance-김태환-2026-03-27-16",
+          "date": "2026-03-27",
+          "endDate": "",
+          "type": "attendance",
+          "severity": "info",
+          "title": "출결 이슈 · 지각",
+          "summary": "지각 (늦잠)",
+          "detail": "지각 (늦잠)",
+          "projectPhase": "",
+          "sourceLabel": "출결 기입 시트",
+          "relatedWeek": 16,
+          "isEstimated": false,
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
+        },
+        {
           "id": "3차 프로젝트-김태환-2026-03-27",
           "date": "2026-03-27",
           "endDate": "",
@@ -61541,22 +63363,6 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "프로젝트 데일리 체크인",
           "relatedWeek": 16,
           "isEstimated": false
-        },
-        {
-          "id": "attendance-김태환-2026-03-27-16",
-          "date": "2026-03-27",
-          "endDate": "",
-          "type": "attendance",
-          "severity": "caution",
-          "title": "출결 이슈 · 지각",
-          "summary": "지각 (늦잠)",
-          "detail": "지각 (늦잠)",
-          "projectPhase": "",
-          "sourceLabel": "출결 기입 시트",
-          "relatedWeek": 16,
-          "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
         },
         {
           "id": "3차 프로젝트-김태환-2026-03-30",
@@ -61587,6 +63393,22 @@ window.STUDENT_TIMELINE_DATA = {
           "isEstimated": false
         },
         {
+          "id": "attendance-김태환-2026-04-01-19",
+          "date": "2026-04-01",
+          "endDate": "",
+          "type": "attendance",
+          "severity": "info",
+          "title": "출결 이슈 · 지각",
+          "summary": "지각 (늦잠)",
+          "detail": "지각 (늦잠)",
+          "projectPhase": "",
+          "sourceLabel": "출결 기입 시트",
+          "relatedWeek": 17,
+          "isEstimated": false,
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
+        },
+        {
           "id": "3차 프로젝트-김태환-2026-04-01",
           "date": "2026-04-01",
           "endDate": "",
@@ -61599,22 +63421,6 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "프로젝트 데일리 체크인",
           "relatedWeek": 17,
           "isEstimated": false
-        },
-        {
-          "id": "attendance-김태환-2026-04-01-19",
-          "date": "2026-04-01",
-          "endDate": "",
-          "type": "attendance",
-          "severity": "caution",
-          "title": "출결 이슈 · 지각",
-          "summary": "지각 (늦잠)",
-          "detail": "지각 (늦잠)",
-          "projectPhase": "",
-          "sourceLabel": "출결 기입 시트",
-          "relatedWeek": 17,
-          "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
         },
         {
           "id": "3차 프로젝트-김태환-2026-04-02",
@@ -61681,7 +63487,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-10",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61689,15 +63495,15 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-김태환-2026-04-16-7",
           "date": "2026-04-16",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61705,8 +63511,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 19,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "counseling-김태환-2026-04-17-2",
@@ -61785,7 +63591,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-05-06",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -61793,8 +63599,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 22,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-김태환-2026-05-11-2",
@@ -62079,9 +63885,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-23",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-12",
@@ -62095,17 +63901,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-16",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-21",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-30",
@@ -62127,9 +63933,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-10",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-13",
@@ -62143,33 +63949,33 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-24",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-25",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-03",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-12",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-26",
@@ -62183,17 +63989,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-27",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-01",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-07",
@@ -62215,17 +64021,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-10",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-16",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-27",
@@ -62239,9 +64045,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-05-06",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-05-11",
@@ -62602,6 +64408,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "등을 통하여 다방면의 시점으로 진행에 적극적으로 참여하고자 하는 생각이 들었음 칭찬합시다 이정헌 팀장님의 리드를 따라서 홍태광팀원의 매끄러운 시나리오 진행, 김태환 팀원의 sfx또는 bgm작업과 김민수팀원과 논의하며 개발을 하며 기획에 있어 필요한 능력들을 다들 적극적으로 보여주어서 매우 순탄하게 진행되는 장점들을 경험…"
         },
         {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이트 날짜"
+        },
+        {
           "from": "이유송",
           "type": "praise",
           "snippet": "긴 했다. - 발생한 상황에 의도를 잘 파악하려는 눈이 있는 것 같습니다. - 주변에 배울점을 찾아가고 있는 것 같습니다. - (디자인 = 강유민, 사운드 = 김태환, 시스템 = 조준현) --- ### 내용 ### 진로 - 처음에는 시스템이었는데 지금은 경험의 설계인 레벨디자인과 PM에 흥미가 있다고 합니다. - 다음…"
@@ -62615,6 +64426,22 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "김태환-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "warning",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 13건",
+            "14일 내 최대 3건",
+            "최소 발생 간격 1일",
+            "최근 발생일 2026-05-06"
+          ],
+          "startDate": "2025-12-23",
+          "endDate": "2026-05-06"
+        },
+        {
+          "caseId": "김태환-flow-2",
           "caseType": "condition_management_sequence",
           "label": "컨디션 관리 연쇄",
           "description": "프로젝트 데일리체크인 지연 뒤 다음 날 지각 또는 병가가 이어진 케이스",
@@ -62627,7 +64454,7 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-01"
         },
         {
-          "caseId": "김태환-flow-2",
+          "caseId": "김태환-flow-4",
           "caseType": "daily_checkin_pattern",
           "label": "데일리체크인 리듬 흔들림",
           "description": "체크인 지연과 프로젝트 제출 흐름이 함께 흔들린 케이스",
@@ -62642,6 +64469,36 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2026-03-27",
           "endDate": "2026-04-03"
+        },
+        {
+          "caseId": "김태환-flow-3",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 14건",
+            "지연 체크인 6건",
+            "프로젝트 제출률 75.0%"
+          ],
+          "startDate": "2025-12-23",
+          "endDate": "2026-05-11"
+        },
+        {
+          "caseId": "김태환-flow-5",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 4건",
+            "예인해 언급: 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이트 날짜"
+          ],
+          "startDate": "",
+          "endDate": ""
         }
       ],
       "careerDocuments": {
@@ -62760,75 +64617,75 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotDate": "2026-01-23",
           "snapshotType": "개강 ~ 1차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 2,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "김태환-m3",
           "snapshotDate": "2026-02-27",
           "snapshotType": "1차 프로젝트 종료 ~ 2차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "김태환-m4",
           "snapshotDate": "2026-04-08",
           "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 1,
-            "engagement": 2,
+            "selfRegulation": 2,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "김태환-m5",
           "snapshotDate": "2026-06-05",
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 1,
-            "engagement": 2,
+            "selfRegulation": 2,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "김태환-m6",
           "snapshotDate": "2026-08-03",
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
-            "selfRegulation": 1,
-            "engagement": 2,
+            "selfRegulation": 2,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -62836,60 +64693,28 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "김태환-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2025-12-22",
-          "endDate": "2025-12-28",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "startDate": "2026-03-23",
+          "endDate": "2026-04-05",
+          "reasonSummary": "출결 배경 확인이 필요한 구간"
         },
         {
           "statusPeriodId": "김태환-status-2",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2026-01-12",
-          "endDate": "2026-01-25",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "김태환-status-3",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-02-09",
-          "endDate": "2026-02-15",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "김태환-status-4",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-02-23",
-          "endDate": "2026-03-15",
-          "reasonSummary": "출결 위험 신호가 집중된 구간"
-        },
-        {
-          "statusPeriodId": "김태환-status-5",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-23",
-          "endDate": "2026-04-19",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "김태환-status-6",
-          "statusType": "주의",
-          "severity": "caution",
           "startDate": "2026-04-27",
-          "endDate": "2026-05-10",
+          "endDate": "2026-05-03",
           "reasonSummary": "안정적인 학습 흐름"
         }
       ],
       "currentProfile": {
-        "selfRegulation": 1,
-        "engagement": 2,
+        "selfRegulation": 2,
+        "engagement": 3,
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "자기조절 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -63037,21 +64862,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2025-12-28",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2025-12-23"
             }
           ],
@@ -63102,21 +64927,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-18",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 1,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-01-16"
             },
             {
@@ -63143,23 +64968,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-25",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-01-21"
-            },
             {
               "type": "project",
               "title": "1차 프로젝트 데일리 체크인",
@@ -63178,6 +64996,13 @@ window.STUDENT_TIMELINE_DATA = {
               "type": "project",
               "title": "1차 프로젝트 데일리 체크인",
               "summary": "1",
+              "severity": "info",
+              "date": "2026-01-21"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-01-21"
             }
@@ -63218,7 +65043,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-01-26"
             }
@@ -63228,9 +65053,9 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-01-26",
             "snapshotType": "1차 프로젝트 이후",
             "scores": {
-              "selfRegulation": 3,
-              "engagement": 2,
-              "collaboration": 2,
+              "selfRegulation": 4,
+              "engagement": 4,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 2
@@ -63244,7 +65069,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -63281,23 +65106,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-15",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 1,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-10"
-            },
             {
               "type": "project",
               "title": "2차 프로젝트 팀 배치",
@@ -63311,6 +65129,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "휴가 (고향 이동)",
               "severity": "info",
               "date": "2026-02-13"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-02-10"
             }
           ],
           "snapshot": null
@@ -63356,30 +65181,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-01",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "project": 4,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호가 집중된 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-25"
-            },
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-24"
-            },
             {
               "type": "project",
               "title": "2차 프로젝트 데일리 체크인",
@@ -63393,6 +65204,20 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "화면전환시 트랜지션 효과 사용",
               "severity": "info",
               "date": "2026-02-25"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-02-25"
+            },
+            {
+              "type": "project",
+              "title": "2차 프로젝트 데일리 체크인",
+              "summary": "코드 합치기, 임시로 채워놨던 이미지들 교체, 전체적인 마무리",
+              "severity": "info",
+              "date": "2026-02-24"
             }
           ],
           "snapshot": null
@@ -63404,23 +65229,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-08",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 1,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-03-03"
-            },
             {
               "type": "retro",
               "title": "2차 프로젝트 회고 제출",
@@ -63429,9 +65247,16 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-04"
             },
             {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-03-03"
+            },
+            {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -63441,8 +65266,8 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-03-02",
             "snapshotType": "2차 프로젝트 이후",
             "scores": {
-              "selfRegulation": 2,
-              "engagement": 2,
+              "selfRegulation": 3,
+              "engagement": 3,
               "collaboration": 2,
               "resilience": 2,
               "reflection": 3,
@@ -63457,7 +65282,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -63467,21 +65292,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-15",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-03-12"
             }
           ],
@@ -63535,7 +65360,7 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-29",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 4,
             "retro": 0,
             "counseling": 0,
@@ -63543,7 +65368,7 @@ window.STUDENT_TIMELINE_DATA = {
             "career": 0
           },
           "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
             {
               "type": "project",
@@ -63554,17 +65379,17 @@ window.STUDENT_TIMELINE_DATA = {
             },
             {
               "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-03-27"
-            },
-            {
-              "type": "attendance",
               "title": "출결 이슈 · 결석",
               "summary": "결석 (16시 출석)",
               "severity": "caution",
               "date": "2026-03-26"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-03-27"
             },
             {
               "type": "project",
@@ -63583,7 +65408,7 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-05",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
@@ -63591,7 +65416,7 @@ window.STUDENT_TIMELINE_DATA = {
             "career": 0
           },
           "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
             {
               "type": "project",
@@ -63615,11 +65440,11 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-01"
             },
             {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
+              "type": "project",
+              "title": "3차 프로젝트 데일리 체크인",
+              "summary": "사운드 제작, 작업 공정 관리",
               "severity": "caution",
-              "date": "2026-04-01"
+              "date": "2026-03-31"
             }
           ],
           "snapshot": null
@@ -63631,21 +65456,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-12",
           "counts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-10"
             },
             {
@@ -63672,29 +65497,29 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-19",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 1,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "면담 개입이 있었던 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-16"
-            },
             {
               "type": "counseling",
               "title": "2차 정기 면담",
               "summary": "### 내용 ### 사전합반 프로젝트 - PM으로서의 역량은 많이 부족했던 것 같다고 합니다. - 이전에 세웠던 계획이 있었는데, 윤석 강사님께 피드백을 받고 그 계획이 깨져서... 좀 미숙하게 행동했던 것도 있다고 합니다. - 결국 그냥 운이 좋아…",
               "severity": "info",
               "date": "2026-04-17"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-04-16"
             }
           ],
           "snapshot": null
@@ -63774,21 +65599,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-05-10",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-05-06"
             }
           ],
@@ -64050,7 +65875,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -64060,8 +65885,8 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-08-03",
             "snapshotType": "현재",
             "scores": {
-              "selfRegulation": 1,
-              "engagement": 2,
+              "selfRegulation": 2,
+              "engagement": 3,
               "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
@@ -64076,14 +65901,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 27,
-        "attendanceRiskIssues": 13,
-        "healthAttendanceIssues": 1,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 14,
+        "conditionAttendanceIssues": 13,
         "lateCount": 14,
         "absenceCount": 2,
         "counselingCount": 2,
@@ -64169,9 +65995,9 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 2,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -64184,21 +66010,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.5,
-          "growthDelta": 0.17,
+          "profileAverage": 2.83,
+          "growthDelta": 0.5,
           "strengthKeys": [
             "selfRegulation",
-            "resilience"
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
-            "collaboration"
+            "collaboration",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 9,
-            "attendanceRisk": 3,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 5,
             "career": 0,
@@ -64263,8 +66089,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
@@ -64278,21 +66104,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.17,
+          "profileAverage": 2.5,
           "growthDelta": -0.33,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
-          ],
-          "cautionKeys": [
             "selfRegulation",
             "engagement"
           ],
+          "cautionKeys": [
+            "collaboration",
+            "resilience"
+          ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 6,
-            "attendanceRisk": 3,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 8,
             "career": 0,
@@ -64328,7 +66154,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-02-10",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -64357,8 +66183,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 1,
-            "engagement": 2,
+            "selfRegulation": 2,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
@@ -64372,7 +66198,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.17,
+          "profileAverage": 2.5,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
@@ -64380,13 +66206,13 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "cautionKeys": [
             "selfRegulation",
-            "engagement"
+            "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 7,
-            "attendanceRisk": 4,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 13,
             "career": 0,
@@ -64398,7 +66224,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-03",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -64414,7 +66240,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-12",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -64451,8 +66277,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 1,
-            "engagement": 2,
+            "selfRegulation": 2,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
@@ -64466,21 +66292,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.33,
-          "growthDelta": 0.16,
+          "profileAverage": 2.67,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "reflection",
-            "careerAgency"
+            "engagement"
           ],
           "cautionKeys": [
             "selfRegulation",
-            "engagement"
+            "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 5,
-            "attendanceRisk": 3,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 1,
             "career": 2,
@@ -64492,7 +66318,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-10",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -64500,7 +66326,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-16",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -64545,8 +66371,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 1,
-            "engagement": 2,
+            "selfRegulation": 2,
+            "engagement": 3,
             "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
@@ -64560,18 +66386,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.33,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
-            "careerAgency"
+            "engagement"
           ],
           "cautionKeys": [
             "selfRegulation",
-            "engagement"
+            "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -64586,11 +66412,11 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.33,
-        "profileIndex": 58,
-        "growthDelta": 0.0,
-        "growthIndex": 50,
-        "supportIndex": 100,
+        "profileAverage": 2.67,
+        "profileIndex": 67,
+        "growthDelta": 0.34,
+        "growthIndex": 60,
+        "supportIndex": 54,
         "tags": [
           "support_priority",
           "career_progress",
@@ -64601,27 +66427,25 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.33/4",
-              "주의 프로파일 4개",
+              "현재 평균 2.67/4",
+              "주의 프로파일 3개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.00",
+              "초기 대비 성장 +0.34",
               "성장 구간 2개",
-              "현재 평균 2.33/4"
+              "현재 평균 2.67/4"
             ]
           },
           "support_priority": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 13건",
               "현재 상태 주의",
-              "프로파일 1점 이하 영역 존재",
-              "주의 프로파일 4개",
-              "학습 흐름 케이스 컨디션 관리 연쇄, 데일리체크인 리듬 흔들림"
+              "주의 프로파일 3개",
+              "학습 흐름 케이스 늦잠 지각 리듬 관찰, 컨디션 관리 연쇄, 데일리체크인 리듬 흔들림"
             ]
           },
           "collaboration_strength": {
@@ -64631,6 +66455,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 71.4%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.25/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 하락 (-17.8)"
             ]
           },
@@ -64646,9 +66471,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 13건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 14건",
+              "컨디션 케이스 3건",
+              "참여 지속성 3/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -64660,11 +66487,11 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "reflection",
-          "careerAgency"
+          "engagement"
         ],
         "cautionKeys": [
           "selfRegulation",
-          "engagement"
+          "collaboration"
         ],
         "careerReadiness": {
           "purposeClarity": 3.1,
@@ -64679,6 +66506,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.62,
           "checkinCount": 21,
@@ -64691,8 +66519,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 4,
           "punctuality": 1.0,
           "peopleSeriousness": 2.2,
-          "riskSignal": 0.48,
-          "collaborationReadinessScore": 60.5,
+          "riskSignal": 0.83,
+          "collaborationReadinessScore": 51.75,
           "profileScore": 2,
           "lateCount": 14,
           "trajectory": {
@@ -64725,10 +66553,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 34.6,
-        "growthRankScore": 16.0,
-        "supportRankScore": 204,
-        "collaborationRankScore": 60.5,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "건국대학교 컴퓨터공학",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 21,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 26,
+          "textLength": 7609,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.77,
+              "evidence": "구체 표현 6종 · 반복 21회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 44회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.98,
+              "evidence": "회고/개선 표현 5종 · 반복 16회 · 문서 4건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 34회 · 문서 9건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 24종 · 반복 54회 · 문서 5건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.69,
+              "evidence": "정서/부담 표현 5종 · 반복 7회 · 문서 6건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.56,
+              "evidence": "탐색/불확실 표현 6종 · 반복 13회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "대학교에서 배운 기본적인 프로그래밍 능력, 그리고 음악 및 글쓰기 활동을 통한 예술지식을 토대로 게임을 만들어가는 개발자, 디자이너 모두와 소통하는 기획자가 되고 싶습니다. 대학과정에서 프로젝트를 진행할 때 기획 분야에서 큰 흥미를 느꼈습니다. 이후 기획자로 취업을 준비하였지만, 혼자서 과정을 진행하기에는 어려움이 많았…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-03",
+              "excerpt": "TC 작성 / 사운드 작업 소통에 있어서 다소 공격적인 워딩을 사용하는 팀원이 있어 당황스러웠다... 최대한 직접 말하지 않고 누군가를 거쳐 소통할 수 있도록 안내드렸지만 가끔 돌발행동을 해서 당황스러움.................."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-04",
+              "excerpt": "기획에 대하여 기본적인 시스템에 관한 부분은 기획서를 통해 소통하였음. 기획서와 함께 초반의 프레젠테이션을 통해 서로의 이해를 맞춰 나갔지만 후반에는 시간에 쫓겨 팀원에게 소개하기 전에 먼저 만들고 후에 어떤 것을 작업했는지 안내하는 방식으로 변형되어감. 협업에 대하여 충분히 건설적인 대화를 진행했다고 생각. 특정한 주…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "기초적이지만 그만큼 어려운, “ 설명 ” 을 잘하는 기획자. 김태환입니다. - 컴퓨터 공학 전공 - 아트와의 협업 - 유튜브 운영 - 강사 경험 | 컴퓨터 공학 전공 저는 컴퓨터 공학을 전공하며 직접 프로그램을 만들고, 또 그걸 처음부터 다시 만드는 과정을 수없이 반복했습니다. 완성된 프로그램이 막상 원하는 형태가 아니…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 26건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 49.4,
+        "growthRankScore": 50.0,
+        "supportRankScore": 60,
+        "collaborationRankScore": 51.75,
         "careerRankScore": 73.0
       }
     },
@@ -66217,6 +68137,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "다. - 그렇지 않다면, 시나리오 제외 무엇이든 좋다고 합니다. ##### 4. 기타 - 반에서 여러명 친하게 지내고 있다고 합니다. (김민수, 김서현, 김태훈, 김태환, 맹지훈, 서진호, 예인해, 이가현, 이승구, 이정헌, 등등...) - 같이 하고 싶은 사람은 있지만 어디든 적응해야 한다고 판단하고 있다고 합니다."
         },
         {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이트 날짜 : 2"
+        },
+        {
           "from": "이정헌",
           "type": "praise",
           "snippet": "낼수 있도록 행동하기 기획서 더 잘써보기 다른 부분은 충분히 향상된 것 같습니다. 그래서 기획서를 잘 쓸수 있는 쪽으로 방향을 잡아보고 싶습니다. 칭찬합시다 김태훈 : 프로그래밍 지식을 활용하여 어떤 기획을 어느정도의 범위로 잡아야 할지에 대한 충분한 기준을 세울 수 있는 부분이 좋았습니다. 프로그래밍 지식이 존재하는…"
@@ -66225,6 +68150,21 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "김태훈-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 1건",
+            "예인해 언급: 만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이트 날짜 : 2"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "김태훈-flow-2",
           "caseType": "reflection_growth_link",
           "label": "회고 기반 성장",
           "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
@@ -66350,7 +68290,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 3
@@ -66365,13 +68305,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "전반적으로 안정적인 성장 흐름"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "김태훈-m4",
@@ -66760,7 +68700,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 3
@@ -66939,7 +68879,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "진로 목적성 구체화 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -66951,7 +68891,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 4,
               "careerAgency": 2
@@ -66965,7 +68905,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "진로 목적성 구체화 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -67567,6 +69507,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 11,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 1,
@@ -67670,7 +69611,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 3
@@ -67683,8 +69624,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
-          "growthDelta": 0.84,
+          "profileAverage": 3.0,
+          "growthDelta": 0.67,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -67763,7 +69704,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 3
@@ -67776,15 +69717,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "selfRegulation"
           ],
-          "cautionKeys": [],
+          "cautionKeys": [
+            "collaboration"
+          ],
           "confidence": "High",
-          "note": "전반적으로 안정적인 성장 흐름",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -67868,7 +69811,7 @@ window.STUDENT_TIMELINE_DATA = {
             "selfRegulation"
           ],
           "profileAverage": 3.33,
-          "growthDelta": 0.16,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -68078,11 +70021,10 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 88,
         "growthDelta": 1.17,
         "growthIndex": 85,
-        "supportIndex": 0,
+        "supportIndex": 18,
         "tags": [
           "overall_strong",
           "growth_high",
-          "collaboration_strength",
           "career_progress"
         ],
         "primaryTag": "overall_strong",
@@ -68106,16 +70048,17 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "협업 점수 3/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.84/4",
               "프로젝트 역할 수행 2.09/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (+4.8)"
             ]
           },
@@ -68131,9 +70074,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -68161,6 +70106,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -68173,8 +70119,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 1,
           "punctuality": 2.65,
           "peopleSeriousness": 1.84,
-          "riskSignal": 0.12,
-          "collaborationReadinessScore": 71.5,
+          "riskSignal": 0.47,
+          "collaborationReadinessScore": 62.75,
           "profileScore": 3,
           "lateCount": 1,
           "trajectory": {
@@ -68207,10 +70153,100 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 78.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "충청대학교 바이오분석학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 7992,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.67,
+              "evidence": "구체 표현 7종 · 반복 19회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 29회 · 문서 10건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 43회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 44회 · 문서 10건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 22종 · 반복 76회 · 문서 8건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.89,
+              "evidence": "정서/부담 표현 2종 · 반복 2회 · 문서 2건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.19,
+              "evidence": "탐색/불확실 표현 3종 · 반복 9회 · 문서 2건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임을 좋아하고 재밌는 게임을 만들고 싶어서 지원하였습니다. 다른사람들에게도 게임의 재미를 느낄수 있는 게임을 만들고싶습니다! 학교에서 어느정도를 배웠지만 게임 기획관련 직무를 더욱더 알고싶어 신청하게 되었습니다. 또한 같은 직군을 준비하는 분들과 함께 팀플등을 하며 의견공유 등을 할 수 있을거라 생각해 신청하게 되었습…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "마지막 QA 및 정리 수고하셨습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 제가 맡은 팀에서의 파트가 게임 전투 관련 기능 개발과 전투 시스템 기획이였습니다. 초반에는 어느정도의 기능 명세서를 배경으로 좀더 세부적인 기획서를 작성하며 기능을 구현을 하려 했습니다. 문제는 제가 만든 기획서를 제가 기능구현을 하다보니 어느순간 공통적으로 볼 수 있는 기획서가 아니라 그냥 제가 생각에…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "타임머신을 만들고 싶은 기획자 김태훈 입니다 게임 기획자를 지원한 이유 제가 게임 기획자를 지망하게 된 처음의 이유는 어쩌면 진부한 “게임이 좋아서”였습니다. 그렇게 막연하게 게임이 좋아서 기획자 되야지!를 생각했을때에는 게임의 재미에 대해 자세히 생각하지 않고 인터넷 유머중 “왜 게임 하시나요” “ 몰라 그냥 재밌어서…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 74.0,
         "growthRankScore": 141.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 71.5,
+        "supportRankScore": 20,
+        "collaborationRankScore": 62.75,
         "careerRankScore": 73.0
       }
     },
@@ -68319,7 +70355,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-20",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -68327,8 +70363,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 7,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "1차 프로젝트-retro-김현우a-2026-01-26",
@@ -68888,9 +70924,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-20",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-20",
@@ -69402,7 +71438,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         },
         {
           "snapshotId": "김현우a-m6",
@@ -69417,20 +71453,12 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         }
       ],
       "statusPeriods": [
         {
           "statusPeriodId": "김현우a-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-01-19",
-          "endDate": "2026-01-25",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "김현우a-status-2",
           "statusType": "주의",
           "severity": "caution",
           "startDate": "2026-03-16",
@@ -69446,7 +71474,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 3,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "자기조절 지원 필요",
+        "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -69646,27 +71674,27 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-25",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 1,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-01-20"
-            },
             {
               "type": "project",
               "title": "1차 프로젝트 팀 배치",
               "summary": "3팀 · 역할 팀원 · 팀원 5명",
+              "severity": "info",
+              "date": "2026-01-20"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-01-20"
             }
@@ -70413,7 +72441,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -70439,14 +72467,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 5,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 8,
@@ -70569,7 +72598,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "자기조절 지원 필요",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 1,
             "career": 0,
@@ -70589,7 +72618,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-01-20",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             }
           ],
@@ -70798,7 +72827,7 @@ window.STUDENT_TIMELINE_DATA = {
             "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 4,
             "attendanceRisk": 0,
@@ -70892,7 +72921,7 @@ window.STUDENT_TIMELINE_DATA = {
             "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -70911,7 +72940,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 54,
         "growthDelta": -0.16,
         "growthIndex": 45,
-        "supportIndex": 100,
+        "supportIndex": 90,
         "tags": [
           "support_priority",
           "career_progress",
@@ -70952,6 +72981,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 35.7%",
               "회고 품질 1.48/4",
               "프로젝트 역할 수행 1.17/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+10.2)"
             ]
           },
@@ -70967,9 +72997,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -71000,6 +73032,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 1.59,
           "checkinCount": 14,
@@ -71039,9 +73072,99 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "시각정보디자인",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 14,
+            "retro": 1,
+            "careerDocument": 1
+          },
+          "sourceTotal": 18,
+          "textLength": 7891,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.1,
+              "evidence": "구체 표현 5종 · 반복 11회 · 문서 7건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 2.72,
+              "evidence": "실행/개선 표현 4종 · 반복 13회 · 문서 6건",
+              "level": "보통"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.44,
+              "evidence": "회고/개선 표현 3종 · 반복 7회 · 문서 3건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 2.77,
+              "evidence": "관계/협업 표현 3종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 120회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.44,
+              "evidence": "정서/부담 표현 1종 · 반복 1회 · 문서 1건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.0,
+              "evidence": "탐색/불확실 표현 3종 · 반복 7회 · 문서 3건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "구체성",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 비록 게임이 전공도 아니며 게임업계에 대해서 아는것이 없지만 저의 열정은 누구보다 높다고 자부하며 반드시 게임업계에 취업해서 게임개발자 라는 타이틀을 얻고싶습니다 게임업계 취업 희망하며 게임이 현재 자신과 가장 적성에 맞다고 판다하여 본과종에 참여하여 자신의 능력을 향상시켜서 게임업계 진출을 위한 능력을 습득하고…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-06",
+              "excerpt": "4-3 4-정밀 장거리 6-중거리/6의 행운 10근접/확산 11 단계별 근접 자격 -GitHub issue 등록- 1. 레벨업 했을 때, 눈금 1이 더큰 보상이 된다. (눈금이 높을수록 좋게 기획이 되어있는데) 레벨업 시스템 문제 2. UI 줄임말 사용 금지 (치속/치확/이속/공속/치확/치피) 3. 레벨업 3장 선택 시…"
+            },
+            {
+              "label": "프로젝트 회고 · 1차 프로젝트",
+              "date": "2026-01-26",
+              "excerpt": "기획에 대하여 아트컨셉에 부합하는 아트를 ai를 통해서 알맞게 생성하는데 성공하였다고 자평한다 협업에 대하여 팀 모두가 열성적이었으며 모두가 최상의 결과를 도출하기위해 밤낮으로 열심히 하였다 다음 프로젝트를 위해 아트팀을 당당하여 필연적으로 ai를 많이 사용하였는데 그 때문에 정작 중요한 나 자신이 무언가 했다는 느낌은…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "자기소개서 목차 1. 지원동기 2. 경험 3. 직무 역량 4. 마무리 저는 게임과 콘텐츠를 연결하는 기획자 입니다 지원동기 저는 처음에는 웹툰 작가를 목표로 했습니다. 제가 직접 만든 세계관 건설을 원했기 때문입니다. 그러나 그림체 발전에 한계를 부딪혔고, 결국 다른 직업을 찾게 되었습니다. 그 과정에서 게임 제작에 관…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 18건에서 진로 언어, 구체성, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+        },
         "profileRankScore": 29.4,
         "growthRankScore": 0.0,
-        "supportRankScore": 108,
+        "supportRankScore": 100,
         "collaborationRankScore": 35.0,
         "careerRankScore": 79.0
       }
@@ -73477,6 +75600,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 2,
         "absenceCount": 1,
         "counselingCount": 1,
@@ -73980,6 +76104,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.2%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 1.86/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-11.0)"
             ]
           },
@@ -73995,9 +76120,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -74027,6 +76154,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 26,
@@ -74072,6 +76200,91 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "하얼빈공업대학교 컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 4618,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.63,
+              "evidence": "구체 표현 5종 · 반복 14회 · 문서 3건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 35회 · 문서 10건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.88,
+              "evidence": "회고/개선 표현 7종 · 반복 21회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 36회 · 문서 10건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 22종 · 반복 46회 · 문서 14건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.44,
+              "evidence": "정서/부담 표현 3종 · 반복 4회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.21,
+              "evidence": "탐색/불확실 표현 3종 · 반복 7회 · 문서 3건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 저는 어릴 때부터 게임을 하면서 이건 왜 이렇게 만들어졌을까?, 저건 왜 이런 구조일까? 라는 궁금증을 많이 가졌습니다. 단순히 플레이하는 것을 넘어서, 게임이 만들어지는 과정과 구조를 이해하고 싶다는 생각이 커졌고, 그 호기심이 결국 기획자가 되고 싶은 목표로 이어졌습니다. 이제는 유저로서 느꼈던 의문들을…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 이제 곧 끝나네요."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-01",
+              "excerpt": "기획에 대하여 각자의 원하는 종류의 게임을 가지고 와서 투표로 통한 래퍼런스 선정을 하였지만 백팩히어로의 모바일과 스팀 게임이랑은 다른 전투 시스템이라서 직접 가져오신 분은 모바일이었지만 저 포함 다른 분들은 스팀 백팩히어로인 줄 알고 진행하다가 맞지 않아서 그 때 알았습니다. 그래서 방향성면에서 초반에 시간을 많이 소…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 67.4,
         "growthRankScore": 100.0,
@@ -76718,6 +78931,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 2,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -77259,6 +79473,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 1.96/4",
               "프로젝트 역할 수행 1.88/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-5.2)"
             ]
           },
@@ -77274,9 +79489,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -77307,6 +79524,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 28,
@@ -77352,6 +79570,99 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "강남대학교/소프트웨어",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 28,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 33,
+          "textLength": 16087,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 8종 · 반복 39회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 67회 · 문서 11건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 69회 · 문서 15건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 68회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 28종 · 반복 109회 · 문서 10건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.76,
+              "evidence": "정서/부담 표현 4종 · 반복 21회 · 문서 11건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 6종 · 반복 39회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임 기획자의 길을 갈구하는 남자 김흥규라고 합니다. 기획 실력은 아직 서투르지만 기획을 할 때의 열정은 뛰어나다고 생각합니다. 좋은 환경이 주어진다면 제 능력을 어디까지 뿜어낼 수 있는지 한계를 넘어 도전해 보고 싶습니다. 책임을 지겠다는 말이 굉장히 민감하게 들릴 수도 있는 부분이지만 남에게 피해를 주는 걸 굉장히…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "빌드 기다리기, 깃 이슈 작성 팀원분들 진짜 너무 고생 많았는데... 플밍반분 매일마다 밤늦게까지 남으셔서 열심히 작업해주셨는데... 위젯에 너무 무지해서 볼륨을 잘못 잡았나 봅니다. 다들 노력한만큼의 결과가 나오지 못해서 너무 아쉽습니다. 그래도 3주라는 기간 동안 아무도 불평불만 없이 노력해주셔서 너무 감사합니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 처음부터 레퍼런스 게임을 정했기 때문에 기본적인 게임 시스템은 의도한 방향성에 맞게 기획이 잘 진행되었다고 생각함. 추가할 기획 요소들은 의도한 방향성에서 벗어나지 않도록 기획서를 만들기 전에 회의를 진행하거나 짧은 대화를 통해서라도 시간 낭비를 하지 않게 만들었음. 작업은 거의 개발만 담당했기 때문에 웬…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "예외 사항을 꼼꼼히 처리하는 문지기 성장 과정 여느 학생들처럼 어릴 때부터 게임을 좋아했고, 20 년 동안 게임과 함께 하면서 가끔은 친구들보다 더 친구 같이 가깝게 지내왔습니다. 그렇다고 해서 어릴 때부터 게임을 만드는 사람이 되고 싶었던 건 아니었습니다. 게임을 하다 단순히 불만만 토로하던 일반 유저에서, 소프트웨어…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 71.4,
         "growthRankScore": 108.0,
@@ -78669,17 +80980,27 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "송아영",
-          "type": "praise",
+          "type": "complaint",
+          "snippet": "량은 필요함을 이야기했습니다. - 같은 팀원의 시스템 기획서를 봐도 무슨 말인지 모르겠다고 하길래, 직접 같이 보며 설명해줬습니다. - 또한 추후 시간이 남으면 맹지훈 학생에게 직접 설명을 부탁하는 것도 좋을 것 같다고 이야기했습니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데,…"
+        },
+        {
+          "from": "송아영",
+          "type": "complaint",
           "snippet": "설명해줬습니다. - 또한 추후 시간이 남으면 맹지훈 학생에게 직접 설명을 부탁하는 것도 좋을 것 같다고 이야기했습니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로 화해했다고 합니…"
         },
         {
           "from": "송아영",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로 화해했다고 합니다. - 6팀 플밍 이효석님이 이탈한 이후로, 이태호 매니저님이 도와주시길 하지만 여전히 조금 불안한 감이 있다고 합니다. --…"
         },
         {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "발하나 무례한 면이 있음. 에고가 매우 강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP"
+        },
+        {
           "from": "이승구",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "적극적이나, 협업 과정에서 불만이 자주 발생하는 편. E스포츠 코치 출신. 특징 의욕적 적극적 창업준비 나이 33세(94년생) 긍정적관계 맹지훈 부정적관계 이석훈 게임 선호 발더스게이트3 MBTI INFJ 희망 직무 🔖 총평(업데이트 날짜 : )"
         },
         {
@@ -78691,6 +81012,23 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "맹지훈-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 5건",
+            "프로젝트 이슈 키워드 1건",
+            "송아영 언급: 량은 필요함을 이야기했습니다. - 같은 팀원의 시스템 기획서를 봐도 무슨 말인지 모르겠다고 하길래, 직접 같이 보며 설명해줬습니다. - 또한 추후 시간이 남으면 맹지훈 학생에게 직접 설명을 부탁하는 것도 좋을 것 같다고 이야기했습니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데,…",
+            "송아영 언급: 설명해줬습니다. - 또한 추후 시간이 남으면 맹지훈 학생에게 직접 설명을 부탁하는 것도 좋을 것 같다고 이야기했습니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로 화해했다고 합니…",
+            "송아영 언급: 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로 화해했다고 합니다. - 6팀 플밍 이효석님이 이탈한 이후로, 이태호 매니저님이 도와주시길 하지만 여전히 조금 불안한 감이 있다고 합니다. --…"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "맹지훈-flow-2",
           "caseType": "reflection_growth_link",
           "label": "회고 기반 성장",
           "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
@@ -78699,7 +81037,7 @@ window.STUDENT_TIMELINE_DATA = {
           "evidence": [
             "회고 2건",
             "성찰 점수 4/4",
-            "초기 대비 성장 +1.00"
+            "초기 대비 성장 +0.84"
           ],
           "startDate": "2026-01-26",
           "endDate": "2026-02-27"
@@ -78825,7 +81163,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -78840,13 +81178,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "맹지훈-m4",
@@ -78855,13 +81193,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "맹지훈-m5",
@@ -78870,7 +81208,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -78885,7 +81223,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -78898,7 +81236,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
@@ -79363,7 +81701,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -79375,7 +81713,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -79389,7 +81727,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -79985,7 +82323,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -80007,6 +82345,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -80102,7 +82441,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -80115,8 +82454,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.5,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -80196,7 +82535,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -80209,17 +82548,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
-          "growthDelta": 0.34,
+          "profileAverage": 3.0,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -80289,7 +82629,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -80302,18 +82642,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -80383,7 +82723,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -80396,13 +82736,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
-          "growthDelta": 0.16,
+          "profileAverage": 3.17,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -80476,7 +82817,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -80489,13 +82830,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -80514,47 +82856,46 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.33,
-        "profileIndex": 83,
-        "growthDelta": 1.0,
-        "growthIndex": 80,
-        "supportIndex": 0,
+        "profileAverage": 3.17,
+        "profileIndex": 79,
+        "growthDelta": 0.84,
+        "growthIndex": 75,
+        "supportIndex": 18,
         "tags": [
-          "overall_strong",
-          "growth_high",
-          "collaboration_strength"
+          "growth_high"
         ],
-        "primaryTag": "overall_strong",
+        "primaryTag": "growth_high",
         "tagReasons": {
           "overall_strong": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "현재 평균 3.33/4",
-              "주의 프로파일 1개",
+              "현재 평균 3.17/4",
+              "주의 프로파일 2개",
               "현재 상태 안정"
             ]
           },
           "growth_high": {
             "qualified": true,
             "reasons": [
-              "초기 대비 성장 +1.00",
+              "초기 대비 성장 +0.84",
               "성장 구간 3개",
-              "현재 평균 3.33/4"
+              "현재 평균 3.17/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.84/4",
               "프로젝트 역할 수행 2.22/4",
+              "타 학생 불만/갈등 언급 5건",
               "협업 변화 유지 (-0.2)"
             ]
           },
@@ -80570,9 +82911,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -80587,6 +82930,7 @@ window.STUDENT_TIMELINE_DATA = {
           "engagement"
         ],
         "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -80600,8 +82944,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 11,
+          "peerPraiseCount": 8,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 5,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -80614,9 +82959,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 1,
           "punctuality": 4.0,
           "peopleSeriousness": 1.6,
-          "riskSignal": 0.12,
-          "collaborationReadinessScore": 72.75,
-          "profileScore": 3,
+          "riskSignal": 1.87,
+          "collaborationReadinessScore": 50.25,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 86.75,
@@ -80648,10 +82993,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 74.6,
-        "growthRankScore": 124.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 72.75,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "시화공업고등학교 시스템제어전기과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 13627,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.71,
+              "evidence": "구체 표현 6종 · 반복 19회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 66회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.99,
+              "evidence": "회고/개선 표현 5종 · 반복 26회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 48회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 149회 · 문서 17건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.33,
+              "evidence": "정서/부담 표현 3종 · 반복 3회 · 문서 3건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.62,
+              "evidence": "탐색/불확실 표현 3종 · 반복 21회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "현실때문이란 변명으로 미루고 포기한 뒤 소비자로서만 즐기다 우연히 눈에 들어온 부트캠프 소식에 이게 마지막 기회일 수 있을거란 생각으로 다시 꿈을 이루기위해 지원하게 된 게임 기획자 지망생 맹지훈이라고 합니다. 제가 본 과정에 참여를 신청한 계기는 꿈에 대한 도전을 처음이자 마지막으로 싶기 때문입니다. 고등학생 시절 다…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA, 게임 포스터&세로배너 시안 작업, 게임 포스터 최종본 완성 행복합니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 이번에는 초기 논의 때 맞춰진 프로젝트 방향에 맞춰 각종 아트 리소스 (캐릭터, UI 등)의 디자인 및 배치 구성, 이미지 컷신이 함축하는 의미가 이해되도록 기획해보았습니다. 기획서 또는 제안서가 작성된 후 팀원과의 논의에서 다른 분들이 대부분의 내용을 질문 없이 이해해 주셨으나, 일부 기능을 배치하려는…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "유저의 행동을 전투의 재미로 녹여내는 기획자 맹지훈입니다. [성장 과정] 오랜 고민을 확신으로 바꾼, 기획을 향한 도전 어린 시절부터 게임과 애니메이션을 즐기며 \" 이런거는 어떨까 \" 라는 상상을 키웠습니다. 중학생 시절 플래시로 비주얼 노벨을 직접 제작하며, 제 상상이 화면 너머로 시각화되는 강렬한 기쁨을 경험했습니다…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 67.4,
+        "growthRankScore": 108.0,
+        "supportRankScore": 20,
+        "collaborationRankScore": 50.25,
         "careerRankScore": 72.88
       }
     },
@@ -81216,7 +83653,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-17",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -81224,8 +83661,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 19,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "team-박기은-4-4",
@@ -81525,9 +83962,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-17",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-05-04",
@@ -81895,7 +84332,23 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "디자인 면이라던지 부족한 부분이 많이 보이셨을 법도 한데 다른 파트인 입장에서 최대한 존중해주시고 아는 선에서는 잘 알려주시려고 해주셔서 너무 감사했습니다. 박기은 : 기은님은 사실 개발쪽을 따로 전공을 했다거나 공부를 하진 않으신것으로 알고 있습니다. 하지만 먼저 나서서 개발쪽을 참여하려고 하시고 어떤 직무든 먼저 하고"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "박기은-flow-1",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 2건",
+            "지연 체크인 1건",
+            "프로젝트 제출률 78.6%"
+          ],
+          "startDate": "2026-02-19",
+          "endDate": "2026-04-17"
+        }
+      ],
       "careerDocuments": {
         "rounds": [],
         "summary": {}
@@ -82031,7 +84484,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "박기은-m6",
@@ -82046,7 +84499,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -82057,14 +84510,6 @@ window.STUDENT_TIMELINE_DATA = {
           "startDate": "2026-03-16",
           "endDate": "2026-03-22",
           "reasonSummary": "프로젝트 활동이 밀집된 구간"
-        },
-        {
-          "statusPeriodId": "박기은-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-04-13",
-          "endDate": "2026-04-19",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
         }
       ],
       "currentProfile": {
@@ -82075,7 +84520,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "자기조절 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -82789,21 +85234,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-19",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-17"
             }
           ],
@@ -83130,7 +85575,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -83156,14 +85601,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 6,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 1,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 2,
         "counselingCount": 2,
@@ -83565,10 +86011,10 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 1,
             "career": 0,
@@ -83580,7 +86026,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-17",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -83643,7 +86089,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -83662,11 +86108,12 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 67,
         "growthDelta": 0.34,
         "growthIndex": 60,
-        "supportIndex": 46,
+        "supportIndex": 54,
         "tags": [
-          "steady_path"
+          "support_priority",
+          "attendance_watch"
         ],
-        "primaryTag": "steady_path",
+        "primaryTag": "support_priority",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -83685,10 +86132,11 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "support_priority": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
               "현재 상태 주의",
-              "주의 프로파일 3개"
+              "주의 프로파일 3개",
+              "학습 흐름 케이스 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
@@ -83698,6 +86146,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 95.5%",
               "회고 품질 2.24/4",
               "프로젝트 역할 수행 2.02/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+7.0)"
             ]
           },
@@ -83711,15 +86160,17 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -83746,6 +86197,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.52,
           "checkinCount": 22,
@@ -83792,9 +86244,97 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 53.4,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "여",
+            "education": "연성대학교 시각디자인과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 22,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 26,
+          "textLength": 9151,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.7,
+              "evidence": "구체 표현 7종 · 반복 32회 · 문서 5건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 49회 · 문서 16건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 36회 · 문서 9건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 49회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 14종 · 반복 34회 · 문서 11건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.02,
+              "evidence": "정서/부담 표현 5종 · 반복 8회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.27,
+              "evidence": "탐색/불확실 표현 6종 · 반복 13회 · 문서 7건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임 기획자를 꿈꾸는 박기은 입니다! 고등학생 때부터 게임을 좋아해 게임 업계에 종사하고 싶다는 마음으로 게임 캐릭터 디자이너를 목표로 잡았습니다. 고등학생 2학년부터 미술 실기를 준비했지만 원하는 대학에 들어가지 못해 시각디자인과로 학교를 졸업하게되었습니다. 하지만 캐릭터디자이너에 대한 로망이 남아있어 대학 졸업 후…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "오늘은 홈페이지를 완성시켰습니다~ 와~~ 드디어 출시~~ 기대됩니다~!!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 저는 레벨 디자인을 맡았습니다. 처음 팀원분들과 게임의 전체적인 틀을 정할때 '박자만 맞추면 쉽게 클리어 할 수 있는' '난이도에 집중된 리듬게임보단 스토리와 적절히 섞인 내러티브 리듬게임' 이 목표였기 때문에 레퍼런스로 '리듬닥터' , '니샨', '태고의달인'(쉬운 스테이지) '리듬 천국' 등의 게임들을…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 26건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 49.4,
         "growthRankScore": 42.0,
-        "supportRankScore": 48,
+        "supportRankScore": 60,
         "collaborationRankScore": 62.75,
         "careerRankScore": 44.25
       }
@@ -86444,6 +88984,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 2,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -86991,6 +89532,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 1.9/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-12.2)"
             ]
           },
@@ -87006,9 +89548,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -87038,6 +89582,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -87083,6 +89628,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "가톨릭상지대학교 철도전기과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 32,
+          "textLength": 12398,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.42,
+              "evidence": "구체 표현 3종 · 반복 12회 · 문서 4건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 61회 · 문서 24건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.88,
+              "evidence": "회고/개선 표현 6종 · 반복 20회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 46회 · 문서 8건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 179회 · 문서 9건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.92,
+              "evidence": "정서/부담 표현 2종 · 반복 3회 · 문서 2건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.26,
+              "evidence": "탐색/불확실 표현 4종 · 반복 8회 · 문서 6건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "24년도 12월부터 25년도 9월초 까지 게임업계 준비를 하다, 올해 하반기 면접 전형까지는 갔으나 부족한 점을 느껴 다시 배우고자 하는 학생입니다 제 실력에 부족함을 느끼고 면접 당시 포트폴리오 부분에서 노력은 많이 한 티가 보이지만 어쩔 수 없이 신인과 무 경험자의 느낌이 난다는 이야기를 많이 받아 그것을 보완하고…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "회고작성했습니다 고생많으셨습니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 모든 작업에 기획서를 같이 제출해야 한다 팀원들에게 전달하였고 제가 맡은 업무는 전부 기획서와 같이 전달하였습니다. 협업에 대하여 하루에 최소 2번 전체 회의를 하였지만 그 외 소통이 없어 많이 부족하다 느꼈습니다. 다음 프로젝트를 위해 만약 다음프로젝트에서 팀장을 다시하게 된다면 소통 위주의 팀을 만들겠…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 서브컬처 감각을 분석으로 전환하는 기획자 박민규 입니다 . 저는 이런 사람입니다 ! 저는 장르를 불문하고 새로운 게임을 언제나 분석하는 신입 기획자입니다 . 제 게임 인생은 큰아버지 댁에서 함께 즐긴 삼국지 9 로 시작되었습니다 . 그때의 즐거움은 제 삶에 큰 영향을 주었고 , 이후 스타크래프…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 71.4,
         "growthRankScore": 100.0,
@@ -90175,6 +92812,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 16,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -90711,6 +93349,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 92.3%",
               "회고 품질 2.84/4",
               "프로젝트 역할 수행 2.97/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-3.5)"
             ]
           },
@@ -90726,9 +93365,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -90758,6 +93399,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.38,
           "checkinCount": 26,
@@ -90803,6 +93445,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "백석문화대학교 웹툰애니메이션 학부 웹툰과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 32,
+          "textLength": 25605,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 90회 · 문서 17건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 12종 · 반복 112회 · 문서 24건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 63회 · 문서 19건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 129회 · 문서 17건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 31종 · 반복 200회 · 문서 26건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.43,
+              "evidence": "정서/부담 표현 3종 · 반복 6회 · 문서 6건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 7종 · 반복 34회 · 문서 16건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요 경일 아카데미 게임 기획과정에 지원하게 된 인천 서구 거주중인 박영성입니다. 어릴때부터 공상이 많고 어떤 컨텐츠에 대한 생각이 많았으며, 고등학교 이후부터 지인들과 TRPG등을 할때, 우리가 플레이하는 테마에 맞지 않는 부분의 룰 등을 변형 시켜 하우스 룰을 만들고, 이러한 경험을 살려 취미삼아 군내에서도 T…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "최종적인 QA 및 출시 전 관리를 진행하였습니다. 끝내 시간이 부족하여 최종 QA에서 일부 디테일을 잡아내지 못한 점이 아쉽습니다. QA를 제대로된 절차를 밟아 해보는게 처음인 만큼, 좋은 경험으로서 QA에 대한 절차와 공수를 가늠해볼 수 있었던 것 같습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 전체적으로 시스템 기획 당시 전투에 있어서 팀원들이 레퍼런스 게임을 해보고 느낀 바를 바탕으로, 좀 더 직관적인 성장을 보여주자! 라는 점을 기획 의도로 상정하고 기획을 진행하였고, 이와 동시에 시스템 기획 내의 작은 기획 의도들을 고려, 스킬 컨텐츠 등에 대한 확장성 등을 고려하여 몬스터의 배치 구조와,…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 모두와 함께 과정을 기획하는 지원자 박영성입니다 ! 지원 동기 지인이 주관하는 TRPG 에 참여하였으나 TRPG 룰북이 주최자가 원하던 테마와 컨셉에 부합하지 않는 문제가 있었습니다 . 그래서 직접 시스템과 컨텐츠를 기획해 게임에 적용하였고 , 사람들이 개선된 게임에 좋아해 주는 것에 보람과…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 67.4,
         "growthRankScore": 100.0,
@@ -92291,7 +95025,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 7건",
+            "건강/컨디션형 출결 7건",
             "지연 체크인 5건",
             "프로젝트 제출률 71.4%"
           ],
@@ -93606,6 +96340,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 16,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 7,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 2,
         "counselingCount": 2,
@@ -94158,6 +96893,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 76.2%",
               "회고 품질 2.66/4",
               "프로젝트 역할 수행 2.77/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+26.0)"
             ]
           },
@@ -94173,9 +96909,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 7건",
+              "컨디션 케이스 1건",
               "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -94206,6 +96944,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.8,
           "checkinCount": 21,
@@ -94251,6 +96990,91 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "명지전문대학 정보통신공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 21,
+            "retro": 1,
+            "careerDocument": 0
+          },
+          "sourceTotal": 24,
+          "textLength": 3354,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.11,
+              "evidence": "구체 표현 6종 · 반복 10회 · 문서 6건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.47,
+              "evidence": "실행/개선 표현 4종 · 반복 22회 · 문서 7건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.54,
+              "evidence": "회고/개선 표현 3종 · 반복 11회 · 문서 3건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 20회 · 문서 8건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 21종 · 반복 49회 · 문서 11건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.0,
+              "evidence": "정서/부담 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.17,
+              "evidence": "탐색/불확실 표현 3종 · 반복 5회 · 문서 3건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "관계/협업 언어",
+            "진로 언어",
+            "주도성 표현"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까 지원자 28세 박원우 입니다. 저는 명지전문대학 정보통신공학과를 졸업하고 기초적인 기술들을 학습하다 개발에 관심이 생기며 이를 기반으로 게임 개발에 관심이 생기며 학습하다 기획에 어려움에 부딪혀 지원하게 되었습니다. 현재 독자적으로 유니티 프로그램을 활용해 보려하였으나 혼자서 진행하기에는 복잡하여 여러가지를…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "qa tc체크 개인회고록 작성 마무리까지 화이팅"
+            },
+            {
+              "label": "프로젝트 회고 · 1차 프로젝트",
+              "date": "2026-01-26",
+              "excerpt": "기획에 대하여 팀에서 방향성을 설정하여 세부사항까지 논의를 끝낸후 필요한점과 진행되는 수순 요구도까지 세밀하게 작성되어 기획서를 이행하는데 문제가 없었음 협업에 대하여 프로젝트를 진행함에있어 부족한점을 팀원과 논의하고 개선점과 역할분배를 통한 건설적인 진행을 하였음 다음 프로젝트를 위해 이번 프로젝트에서 적극적으로 참여…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 24건에서 관계/협업 언어, 진로 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 44.0,
         "growthRankScore": 33.0,
@@ -96780,6 +99604,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 1,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 5,
@@ -97297,6 +100122,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 92.0%",
               "회고 품질 2.36/4",
               "프로젝트 역할 수행 2.06/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+3.0)"
             ]
           },
@@ -97312,9 +100138,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -97345,6 +100173,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 10,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.37,
           "checkinCount": 25,
@@ -97390,6 +100219,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "전남대학교 글로벌비즈니스학부",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 29,
+          "textLength": 7625,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.49,
+              "evidence": "구체 표현 7종 · 반복 17회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 42회 · 문서 13건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 56회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.98,
+              "evidence": "관계/협업 표현 7종 · 반복 28회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 18종 · 반복 64회 · 문서 11건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.17,
+              "evidence": "정서/부담 표현 6종 · 반복 9회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.9,
+              "evidence": "탐색/불확실 표현 5종 · 반복 31회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임 기획자를 꿈꾸는 청년 박현수입니다. 어릴때부터 게임을 좋아했고 지금도 이 분야에 많은 관심을 가지고 있습니다. 기본을 배운다는 마음가짐으로 8개월의 교육기간동안 최대한 열심히 많이 배워가겠습니다. 어릴때부터 게임을 굉장히 좋아했고, 관심을 가지고 있는 분야였지만 용기가 부족해 시작조차도 해보지 않았었는…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "itch 페이지를 꾸미는데에 쓸만한 리소스들을 계속 뽑았습니다 수요일도 수고많으셨습니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 처음 팀회의를 마치고 콘텐츠 기획을 맡게되었는데 어떤 기획문서에 무엇을 어떻게 작성하여 팀원들에게 전달해야하는지 모르겠어서 이 부분이 가장 어려웠습니다. 래퍼런스 게임으로 전쟁시대와 냥코대전쟁을 골랐기에 시스템 기획안 없이도 그안에 들어갈 콘텐츠를 생각해보는거부터 시작해보았지만 이 과정에서 무엇이 콘텐츠고…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 성찰 표현, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 60.6,
         "growthRankScore": 66.0,
@@ -98737,6 +101654,11 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "김민제",
+          "type": "complaint",
+          "snippet": "다. 그러다가, 프로젝트 후반이 되면서 팀원들의 게임 이해도가 높아지면서 자연스레 알아서 자기 업무를 하게 되었으며, 질서도 바로잡아졌다. 본인과 팀장이셨던 배주빈님의 사이가 좋았기에 원만하게, 또 자연스럽게 해결 할 수 있었다고 생각하나, 만약 그렇지 않은 경우였다면 갈등이 생겼을 수도 있을 법한 상황이였다고 생각한다."
+        },
+        {
+          "from": "김민제",
           "type": "praise",
           "snippet": "이 게임을 플레이 하는 것보다 재미있을 수가 있겠구나, 나 게임 기획자 정말 되고 싶다는 것을 이번 프로젝트에서 느꼈다. 아자아자! **칭찬:** 팀장이신 배주빈님은 정리하고 ppt 작성에 큰 재능이 있으셨고 나에게도 몇가지 알려주셨다. 또한, 팀장으로서 팀원들의 회고록 작성을 항상 일깨워주셨고, 하루를 여러개로 나누어서"
         },
@@ -98769,6 +101691,21 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "배주빈-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 6건",
+            "김민제 언급: 다. 그러다가, 프로젝트 후반이 되면서 팀원들의 게임 이해도가 높아지면서 자연스레 알아서 자기 업무를 하게 되었으며, 질서도 바로잡아졌다. 본인과 팀장이셨던 배주빈님의 사이가 좋았기에 원만하게, 또 자연스럽게 해결 할 수 있었다고 생각하나, 만약 그렇지 않은 경우였다면 갈등이 생겼을 수도 있을 법한 상황이였다고 생각한다."
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "배주빈-flow-2",
           "caseType": "reflection_growth_link",
           "label": "회고 기반 성장",
           "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
@@ -98777,7 +101714,7 @@ window.STUDENT_TIMELINE_DATA = {
           "evidence": [
             "회고 2건",
             "성찰 점수 4/4",
-            "초기 대비 성장 +1.00"
+            "초기 대비 성장 +0.84"
           ],
           "startDate": "2026-01-27",
           "endDate": "2026-02-27"
@@ -98893,7 +101830,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -98908,13 +101845,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "배주빈-m4",
@@ -98923,13 +101860,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "배주빈-m5",
@@ -98938,13 +101875,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "배주빈-m6",
@@ -98953,25 +101890,25 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         }
       ],
       "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "협업 상황 면담 권장",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -99267,7 +102204,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 2
@@ -99439,7 +102376,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -99451,7 +102388,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -99465,7 +102402,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -100018,7 +102955,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -100030,7 +102967,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -100044,7 +102981,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         }
       ],
@@ -100052,6 +102989,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -100147,7 +103085,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -100160,8 +103098,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.67,
+          "profileAverage": 2.83,
+          "growthDelta": 0.5,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -100241,7 +103179,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -100254,17 +103192,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.17,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -100334,7 +103273,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -100347,17 +103286,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
-          "growthDelta": 0.16,
+          "profileAverage": 3.17,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -100427,7 +103367,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -100440,17 +103380,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -100504,7 +103445,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -100517,17 +103458,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -100542,46 +103484,46 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.33,
-        "profileIndex": 83,
-        "growthDelta": 1.0,
-        "growthIndex": 80,
-        "supportIndex": 0,
+        "profileAverage": 3.17,
+        "profileIndex": 79,
+        "growthDelta": 0.84,
+        "growthIndex": 75,
+        "supportIndex": 18,
         "tags": [
-          "overall_strong",
           "growth_high"
         ],
-        "primaryTag": "overall_strong",
+        "primaryTag": "growth_high",
         "tagReasons": {
           "overall_strong": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "현재 평균 3.33/4",
-              "주의 프로파일 1개",
+              "현재 평균 3.17/4",
+              "주의 프로파일 2개",
               "현재 상태 안정"
             ]
           },
           "growth_high": {
             "qualified": true,
             "reasons": [
-              "초기 대비 성장 +1.00",
+              "초기 대비 성장 +0.84",
               "성장 구간 3개",
-              "현재 평균 3.33/4"
+              "현재 평균 3.17/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.24/4",
               "프로젝트 역할 수행 2.43/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 개선 (+11.2)"
             ]
           },
@@ -100597,9 +103539,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -100614,6 +103558,7 @@ window.STUDENT_TIMELINE_DATA = {
           "engagement"
         ],
         "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -100629,6 +103574,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 8,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 29,
@@ -100641,9 +103587,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 6,
           "punctuality": 2.65,
           "peopleSeriousness": 1.36,
-          "riskSignal": 0.72,
-          "collaborationReadinessScore": 67.25,
-          "profileScore": 3,
+          "riskSignal": 1.07,
+          "collaborationReadinessScore": 58.5,
+          "profileScore": 2,
           "lateCount": 1,
           "trajectory": {
             "earlyScore": 85.75,
@@ -100675,10 +103621,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 74.6,
-        "growthRankScore": 124.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 67.25,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "경일대학교, 경영학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 29,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 34,
+          "textLength": 23378,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 7종 · 반복 55회 · 문서 16건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 91회 · 문서 23건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 35회 · 문서 12건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 77회 · 문서 15건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 26종 · 반복 166회 · 문서 27건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.08,
+              "evidence": "정서/부담 표현 4종 · 반복 15회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.66,
+              "evidence": "탐색/불확실 표현 4종 · 반복 20회 · 문서 10건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "22년도에 제대이후 쭉 군휴학으로 연장하다 작년에 대학교를 자퇴햇습니다. 많은 시간을 낭비햇지만 더이상은 그러고 싶지않은 생각에 작년부터 나태햇던 자신을 고치고자 하나하나 작은 것부터 시작햇습니다. 처음엔 집안일, 그리고 옷에 관심을 가지며 자신을 가꾸는데에 이어 운동까지 하면서 망가졋던 건강을 챙기기시작햇지만….. 그…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "04/08 오늘 해야할 일 1. QA 오전 데일리 스크럼 1. 사신클리어까지 도전하고 꺠기 1-1. 사신 도전하는 과정 중에 '이것 때문에 못깻다' 정도의 버그를 찾아내기 작업 착수 순서 1. QA&켠왕 오후 데일리 스크럼 1. 오전까지는 사신(최종보스)까지 못깼음 작업 착수 순서 1. QA&켠왕 (오후 4시 후반쯤 까…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 기획서 문서 작성이 진짜 어려웠다. 처음 뽑혓던 원페이지 기획서와 지금의 결과물은 크게 달라지지 않은 채 프로젝트가 산출되고 개발된 것 같다. 기획서를 작성하거나 작성 중, 또는 작성한 후 마다 팀원들끼리 문서에 대해서는 항상 진행상황을 공유한 것이 소통에 있어서 큰 도움이 된 것 같다. 그래서 기획서를…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "“ 누군가의 스팀 라이브러리에 담겨지기위해 ” [무력했던 과거와 성장] 게임 개발 관련 지식은 물론이고 MS Office 나 PPT, 발표 같은 실무에 관련된 많은 것들이 전무했고 넘어야 할 벽도 많았습니다. 단순히 유저가 아닌 창작자가 되고 싶다는 열망 하나가 벽을 넘기 위한 동력이 되었고 자연스레 배움의 과정을 걷게…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 34건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 67.4,
+        "growthRankScore": 108.0,
+        "supportRankScore": 20,
+        "collaborationRankScore": 58.5,
         "careerRankScore": 67.0
       }
     },
@@ -102112,6 +105151,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "격 좋은 편. 다만 가끔 감정 컨트롤이 미숙할 때가 있는 것으로 보임. 특징 엑셀 잘함 적극적 채팅 활발 나이 30세(97년생) 긍정적관계 서진호 예인해 이승구 부정적관계 김현우A 이석훈 게임 선호 림버스컴퍼니 방치형 수집형 희망 직무 🔖 총평(업데이트 날짜 :"
         },
         {
+          "from": "예인해",
+          "type": "complaint",
+          "snippet": "무례한 면이 있음. 에고가 매우 강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직"
+        },
+        {
           "from": "이도건",
           "type": "praise",
           "snippet": "- 이번 프로젝트에서는 플레이하면서 사람들이 감탄했으면 좋겠다는 생각을 했지만 많이 쳐내서 잘 모르겠다고 합니다. - 게임잼 경험이 있었(조준현님, 김시온님, 서진호님)던 사람 또는 정하님이랑 프로젝트 하고 싶다. --- ### 내용 - 라이브 서비스중인 게임을 배정받은 것에 대해 팀원들 모두가 놀랐다고 합니다. - 팀…"
@@ -102147,6 +105191,21 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "caseId": "서진호-flow-2",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 7건",
+            "예인해 언급: 무례한 면이 있음. 에고가 매우 강하고, 열심히 일하지만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "서진호-flow-3",
           "caseType": "reflection_growth_link",
           "label": "회고 기반 성장",
           "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
@@ -102155,7 +105214,7 @@ window.STUDENT_TIMELINE_DATA = {
           "evidence": [
             "회고 2건",
             "성찰 점수 4/4",
-            "초기 대비 성장 +1.33"
+            "초기 대비 성장 +1.17"
           ],
           "startDate": "2026-01-27",
           "endDate": "2026-03-02"
@@ -102282,7 +105341,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -102297,7 +105356,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -102312,7 +105371,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -102327,7 +105386,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -102342,7 +105401,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -102355,7 +105414,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
@@ -102662,7 +105721,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 2
@@ -102853,7 +105912,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -103447,7 +106506,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -103469,6 +106528,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 7,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 5,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 2,
         "counselingCount": 3,
@@ -103564,7 +106624,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 2
@@ -103577,8 +106637,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 1.0,
+          "profileAverage": 2.83,
+          "growthDelta": 0.83,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -103658,7 +106718,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -103671,15 +106731,15 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": -0.17,
+          "profileAverage": 2.67,
+          "growthDelta": -0.16,
           "strengthKeys": [
             "engagement",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
           "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
@@ -103752,7 +106812,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -103765,15 +106825,15 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
-          "growthDelta": 0.34,
+          "profileAverage": 3.0,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
           "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
@@ -103846,7 +106906,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -103859,13 +106919,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
-          "growthDelta": 0.16,
+          "profileAverage": 3.17,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -103939,7 +107000,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -103952,13 +107013,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.33,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
@@ -103977,46 +107039,46 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.33,
-        "profileIndex": 83,
-        "growthDelta": 1.33,
-        "growthIndex": 90,
+        "profileAverage": 3.17,
+        "profileIndex": 79,
+        "growthDelta": 1.17,
+        "growthIndex": 85,
         "supportIndex": 18,
         "tags": [
-          "overall_strong",
           "growth_high"
         ],
-        "primaryTag": "overall_strong",
+        "primaryTag": "growth_high",
         "tagReasons": {
           "overall_strong": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "현재 평균 3.33/4",
-              "주의 프로파일 1개",
+              "현재 평균 3.17/4",
+              "주의 프로파일 2개",
               "현재 상태 안정"
             ]
           },
           "growth_high": {
             "qualified": true,
             "reasons": [
-              "초기 대비 성장 +1.33",
+              "초기 대비 성장 +1.17",
               "성장 구간 3개",
-              "현재 평균 3.33/4"
+              "현재 평균 3.17/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "학습 흐름 케이스 건강 관리 관찰"
+              "학습 흐름 케이스 건강 관리 관찰, 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.12/4",
               "프로젝트 역할 수행 2.31/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (+2.2)"
             ]
           },
@@ -104032,9 +107094,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 5건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -104049,6 +107113,7 @@ window.STUDENT_TIMELINE_DATA = {
           "engagement"
         ],
         "cautionKeys": [
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -104064,6 +107129,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 9,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -104076,9 +107142,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 7,
           "punctuality": 4.0,
           "peopleSeriousness": 1.96,
-          "riskSignal": 0.84,
-          "collaborationReadinessScore": 65.75,
-          "profileScore": 3,
+          "riskSignal": 1.19,
+          "collaborationReadinessScore": 57.0,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 82.75,
@@ -104110,10 +107176,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 70.6,
-        "growthRankScore": 157.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "한국게임과학고 프로그래밍",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 20948,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 44회 · 문서 16건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 142회 · 문서 32건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 84회 · 문서 14건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 82회 · 문서 23건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 24종 · 반복 134회 · 문서 21건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 4.0,
+              "evidence": "정서/부담 표현 5종 · 반복 23회 · 문서 14건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 6종 · 반복 54회 · 문서 17건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "고등학교 시절 프로그래밍을 하려고 했으나 생각하는 방식이 논리적이지 않아 개발을 잘 못했고, 아트쪽은 3D든 2D든 완전 별로였습니다. 지금에서야 돌이켜보면 이 게임이 왜 좋았는지에 대해서 생각을 하며 어떤식으로 만들었는지 게임을 해보며 역기획처럼 이게 왜, 어떻게 재미있는가에 대해서 생각을 하는 시간이 많아졌고 친구들…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "오전엔 거의 좀비처럼 PPT 내용 뭐 적을지 구성하고 오후에 기획 PPT 파트 완성했습니다. 말도 많고 탈도 많았지만 탈주하는 인원 없이 끝났네요 팀원 분들께는 늘 미안하고 감사한 마음만 가득합니다 아픈만큼 얻어 가는 것도 분명히 많았습니다 (이정도로 아프고 싶지 않았어요) 회고록 때 적을 내용이 굉장히 많아서 지금부터…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 이번 팀에서 문서 작성은 저번 보단 전체적으로 나았던 것 같습니다. 제가 문서를 직접 쓰기 보단 다른 문서를 보고 HTML 프로토타입이 있었기 때문에 다른 분들의 기획서를 읽는 능력을 강화할 수 있었습니다. 이젠 확실하게 기획서를 어떻게 써야할지 감을 잡은 느낌이라고 생각하시면 될듯 합니다. QA로 개선을…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "생각으로 끝내지 않고 실천으로 옮기는 기획자. 늦었지만 다시 도전하는 사람 저에게 게임이란 삶이고, 삶이란 게임입니다. 어린 시절부터 게임은 제게 단순한 오락 행위로 그치지 않고 어째서 이렇게나 좋을까 하는 탐구 대상이었습니다. 특히 ‘ 마더 2’ 라는 게임은 NPC 들의 소소한 일상 대화를 보는 것이 재밌었고, 계속해…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 67.4,
+        "growthRankScore": 141.0,
         "supportRankScore": 20,
-        "collaborationRankScore": 65.75,
+        "collaborationRankScore": 57.0,
         "careerRankScore": 66.88
       }
     },
@@ -106872,6 +110031,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 13,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 5,
@@ -107386,6 +110546,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.59/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+9.2)"
             ]
           },
@@ -107401,9 +110562,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -107433,6 +110596,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 25,
@@ -107478,6 +110642,91 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "중부대학교 게임소프트웨어학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 29,
+          "textLength": 7518,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.7,
+              "evidence": "구체 표현 5종 · 반복 28회 · 문서 15건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 66회 · 문서 25건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 4종 · 반복 42회 · 문서 18건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 46회 · 문서 17건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 18종 · 반복 42회 · 문서 10건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.88,
+              "evidence": "정서/부담 표현 2종 · 반복 4회 · 문서 4건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.49,
+              "evidence": "탐색/불확실 표현 3종 · 반복 6회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "대학교 졸업 후에 다른 일도 해보고 싶었어서 전공 관련으로 쉬었다가 다시 게임 쪽으로 취업하게 되고 싶어서 정보를 찾아보았고, 이 교육을 통해 이력서나 포트폴리오를 다시 만들어서 취업을 해보려고 합니다. 다른 아카데미는 개발쪽에 중점을 두고 기획쪽은 많이 없는 반면에, 이 곳은 다른 곳보다는 더 기획 부분에서 얻을 부분…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "발표자료를 마무리하고 최종 빌드를 업로드했습니다. 팀원분들은 모두 자신의 몫 이상을 잘 해주셨고, 이제 저만 마지막으로 발표를 잘 마무리하면 될 것 같습니다. 마지막까지 열심히 해주신 모든 팀원 분들께 감사합니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 충분하게 기획서가 작성되지 못한 것에 대한 아쉬움이 있었습니다. 할당된 업무가 중간에 자리를 비우게 되어 보조하게 되는 역할을 주로 맡게 되었지만, 각 업무에서 예외적으로 처리해야 하는 일들을 잘 알려주고 수정하도록 한 건 잘 된 것 같습니다. 협업에 대하여 대체적으로 대화를 많이 진행했고, 어려운 부분이…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 68.0,
         "growthRankScore": 83.0,
@@ -110143,6 +113392,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 8,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -110692,6 +113942,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.32/4",
               "프로젝트 역할 수행 1.27/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-3.2)"
             ]
           },
@@ -110707,9 +113958,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -110740,6 +113993,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 5,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 23,
@@ -110785,6 +114039,99 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "여",
+            "education": "청강문화산업대학교/만화창작",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 23,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 28,
+          "textLength": 7495,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.12,
+              "evidence": "구체 표현 7종 · 반복 12회 · 문서 4건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 23회 · 문서 11건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.55,
+              "evidence": "회고/개선 표현 3종 · 반복 18회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.89,
+              "evidence": "관계/협업 표현 8종 · 반복 14회 · 문서 6건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 20종 · 반복 53회 · 문서 5건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.69,
+              "evidence": "정서/부담 표현 6종 · 반복 9회 · 문서 8건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.98,
+              "evidence": "탐색/불확실 표현 5종 · 반복 7회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "반갑습니다, 저는 16년도에 졸업한 이후로 단 한 번도 전공과 관련된 일을 한 적이 없는 사람입니다. 여러가지 서비스직을 전전하던 도중 최근 게임산업 취직이 뜨는 이슈라는 사실을 알게 되었습니다. 하던 일들에 회의감을 가지고 있던 저로써는 끌리지 않을 수가 없었어요. 내가 좋아하는 게임으로도 사회에 기여할 수 있다는 사…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "모든 세상에 감사를 담아... 감사의 정권 찌르기!!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 사실 제가 기획한게 아니라 이미 기획되어있는 부분이 있었기 때문에 제가 크게 경험한 일이 없는 것 같습니다...그부분이 아쉽네요. 협업에 대하여 개인적인 감정이라면 아쉬움..?프로그래밍이 안돼서 괴로운 감정ㅇ ㅣ담기긴 했네요... 다음 프로젝트를 위해 적극적으로 나선다는것이 조장님한테 대드는게 아닐까?싶은…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "자기소개서 직무 역량 ① - 콘텐츠의 재미 요소를 포착, 시각적으로 구체화할 수 있다 다양한 장르의 게임과 스토리를 즐겨오며 대중이 반응하는 ' 재미의 핵심 ' 을 찾아내고, 이를 직관적인 시각 자료로 전환해 팀의 이해도를 높이는 역량을 갖추고 있습니다. 서사 중심의 몰입감 설계: 캐릭터에게 발생한 메인 사건과 그 여파…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 57.4,
         "growthRankScore": 58.0,
@@ -113495,6 +116842,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 6,
@@ -114042,6 +117390,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 91.3%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.79/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-10.2)"
             ]
           },
@@ -114057,9 +117406,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -114089,6 +117440,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 7,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.36,
           "checkinCount": 23,
@@ -114134,6 +117486,99 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "미네소타 주립대학교 심리학과(전공), 통계학과(부전공)",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 23,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 29,
+          "textLength": 21535,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 72회 · 문서 17건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 94회 · 문서 26건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 81회 · 문서 18건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 105회 · 문서 26건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 34종 · 반복 277회 · 문서 21건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.77,
+              "evidence": "정서/부담 표현 6종 · 반복 15회 · 문서 10건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.19,
+              "evidence": "탐색/불확실 표현 4종 · 반복 22회 · 문서 9건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임을 통해 다른 사람들에게 긍정적인 영향을 주고 싶은 승정하라고 합니다. 저는 사실 게임을 취미로만 즐겼던, 미국 심리학계 연구원이였습니다. 플레이는 장르와 플랫폼에 상관없이 다양하고 오랫동안 즐겼지만, 게임 제작은 대학교 시절 컴퓨터 공학 수업 중 제작한 간단한 게임이 다였습니다. 그러던 중 라이엇 게임…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "- UI 폴리싱 - QA 프로세스 관리 - 개발 현황 파악 - 홍보 자료 준비 과정이 좋았던만큼 결과물도 나름 탄탄하게 나온것같아서 만족하고있습니다. 개발팀장님, 개발팀 강세환님, 개발팀 장지훈님 특히나 칭찬드립니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 팀장으로서 전체적인 기획서들을 살펴보며 팀에서 의도한 방향성을 확인하는 과정이 미흡했다는 생각이 듭니다. 제가 작성한 전체 기획서, 그리고 원페이지 기획서를 바탕으로 세부 기획서들이 작성되었는데, 전체 기획서와 원페이지 기획서의 내용이 볼륨 조절로 인해서 많이 바꾸었고, 빠르게 작업해야겠다는 생각에 바꾼…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 작성자 : 승정하 심리학 연구 경험을 바탕으로 세운 데이터 기반의 논리구조로 성취감을 이끌어내는 기획자 승정하입니다 . 연구 경험을 게임 기획자로서의 역량으로 게임 기획자는 재미를 목적성으로 산정하여 데이터를 베이스로 탄탄한 논리 구조를 만드는 사람이라고 생각합니다 . 저는 미국에서 심리학 연…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 64.0,
         "growthRankScore": 91.0,
@@ -116643,6 +120088,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 2,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -117184,6 +120630,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 1.51/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+2.8)"
             ]
           },
@@ -117199,9 +120646,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -117232,6 +120681,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -117277,6 +120727,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "동아대 행정학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 4993,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.7,
+              "evidence": "구체 표현 4종 · 반복 12회 · 문서 6건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 6종 · 반복 24회 · 문서 11건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.87,
+              "evidence": "회고/개선 표현 5종 · 반복 26회 · 문서 16건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.7,
+              "evidence": "관계/협업 표현 5종 · 반복 20회 · 문서 9건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 20종 · 반복 47회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.19,
+              "evidence": "정서/부담 표현 2종 · 반복 13회 · 문서 12건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.98,
+              "evidence": "탐색/불확실 표현 4종 · 반복 11회 · 문서 7건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임을 만들어보고 싶어 강의를 신청하게 된 신석균이라고 합니다. 평소 가벼운 소설을 쓰면서 소설설정이나 게임설정을 만들어 보면서 깊은 흥미를 가지게 되었고 이번 기회에 제대로 게임기획에 대해서 알고 싶고 또한 이를 바탕으로 직업을 삼아서 진정으로 하고 싶은 일을 할 수 있게 되었으면 좋겠습니다. 평소에도 게임에 관심이…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 끊임 없이 돌아가는 사이클"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 팀원들이 합의한 방향대로 제대로 기획하였다. 협업에 대하여 프로젝트 내에서 팀원들끼리 불필요한 마찰이 일어나지 않도록 하였고 할 수 있는 한 마지막까지 남아있었고 기한내에 MVP를 만들 수 있도록 일정관리를 팀장으로 잘 해낸 것 같다. 다음 프로젝트를 위해 팀장으로 팀원들이 잘 따라주어서 큰 문제가 발생하…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 진로 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 64.0,
         "growthRankScore": 124.0,
@@ -118733,7 +122271,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 4건",
+            "건강/컨디션형 출결 4건",
             "지연 체크인 2건",
             "프로젝트 제출률 78.6%"
           ],
@@ -120084,6 +123622,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 13,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 4,
+        "conditionAttendanceIssues": 0,
         "lateCount": 3,
         "absenceCount": 0,
         "counselingCount": 1,
@@ -120599,9 +124138,9 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 65,
         "supportIndex": 36,
         "tags": [
-          "steady_path"
+          "attendance_watch"
         ],
-        "primaryTag": "steady_path",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -120633,6 +124172,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 91.3%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 1.45/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+16.0)"
             ]
           },
@@ -120646,15 +124186,17 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 4건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -120681,6 +124223,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.36,
           "checkinCount": 23,
@@ -120726,6 +124269,96 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "영남대학교 컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 23,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 28,
+          "textLength": 8884,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.1,
+              "evidence": "구체 표현 6종 · 반복 16회 · 문서 4건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 41회 · 문서 9건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 37회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 34회 · 문서 5건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 173회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.08,
+              "evidence": "정서/부담 표현 1종 · 반복 5회 · 문서 5건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.71,
+              "evidence": "탐색/불확실 표현 4종 · 반복 10회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 게임을 좋아합니다. 평범했던 일상과는 다르게 제가 원한다면 모험을 떠날 수도 있고, 얼굴도 모르는 사람과 함께 공동의 목표를 향해 나아갈 수도 있는 이러한 특별한 경험을 할 수 있다는 감정에 게임을 좋아하게 되었습니다. 제가 제 자신의 진로를 고민하는 시기가 왔을 때 제가 느꼈던 이 경험과 감정들을 다른 이들에게도…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "출시 준비? 없습니다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 처음이 가장 어려웠던것 같습니다. 아무래도 장르만 정하고 나머지 방대한 시스템을 기획하기엔 모두의 생각이 달라 의견을 맞추기 어려웠던것 같습니다. 하지만 아이디어를 통합하고자 냈던 회의 규칙과 같은 요소들이 저희를 하나로 뭉치게 해주었던것 같고 이후 시간이 지날수록 이 문제는 자연스럽게 사라졌던것 같습니다…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "로직 설계를 넘어, 데이터로 재미의 인과관계를 설계합니다 안성진 - 자기소개서 Q1. 게임 기획자가 되기로 한 이유가 무엇인가요 단순히 재미있는 게임을 소비하는 것을 넘어, ‘ 어떤 시스템 설계가 유저의 특정 감정을 유도하는가 ’ 를 역추적하고 분석하는 과정에서 저는 기획자로서의 가슴 뛰는 희열을 느꼈습니다. 컴퓨터공학…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 56.6,
         "growthRankScore": 74.0,
@@ -121099,7 +124732,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-25",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -121107,8 +124740,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 12,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-예인해-2026-02-26",
@@ -121395,7 +125028,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-10",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -121403,15 +125036,15 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-예인해-2026-04-15-6",
           "date": "2026-04-15",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -121419,8 +125052,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 19,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "team-예인해-4-4",
@@ -121784,25 +125417,25 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-25",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-10",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-15",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         }
       ],
       "projectTeamHistory": [
@@ -122244,9 +125877,61 @@ window.STUDENT_TIMELINE_DATA = {
           "from": "이승진",
           "type": "praise",
           "snippet": "어느정도 수업은 잘 따라옴. 특징 수동적 자신감부족 나이 35세(92년생) 긍정적관계 김범진 김윤규 박현수 윤유나 부정적관계 김윤규 예인해 게임 선호 우마무스메 MBTI INFP 희망 직무 🔖 총평(업데이트 날짜 : 1/26(월)) 소통에 큰"
+        },
+        {
+          "from": "이승진",
+          "type": "complaint",
+          "snippet": "2/26(목) - 프로젝트 중 팀장 이형진 학생과 싸운 적이 있다고 함 3/27(금) - 사전합반 프로젝트 진행 중 예인해, 김윤규 학생과 마찰 발생 ### 내용 ### 1) 프로젝트 전반 평가 이번 프로젝트를 매우 값진 경험으로 인식하고 있습니다. 결과보다 과정에서 얻은 학습과"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "예인해-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "warning",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 3건",
+            "14일 내 최대 2건",
+            "최소 발생 간격 5일",
+            "최근 발생일 2026-04-15"
+          ],
+          "startDate": "2026-02-25",
+          "endDate": "2026-04-15"
+        },
+        {
+          "caseId": "예인해-flow-2",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 2건",
+            "이승진 언급: 2/26(목) - 프로젝트 중 팀장 이형진 학생과 싸운 적이 있다고 함 3/27(금) - 사전합반 프로젝트 진행 중 예인해, 김윤규 학생과 마찰 발생 ### 내용 ### 1) 프로젝트 전반 평가 이번 프로젝트를 매우 값진 경험으로 인식하고 있습니다. 결과보다 과정에서 얻은 학습과"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "예인해-flow-3",
+          "caseType": "reflection_growth_link",
+          "label": "회고 기반 성장",
+          "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
+          "severity": "success",
+          "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
+          "evidence": [
+            "회고 2건",
+            "성찰 점수 4/4",
+            "초기 대비 성장 +0.84"
+          ],
+          "startDate": "2026-01-27",
+          "endDate": "2026-03-01"
+        }
+      ],
       "careerDocuments": {
         "rounds": [
           {
@@ -122369,7 +126054,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -122384,13 +126069,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "예인해-m4",
@@ -122412,59 +126097,42 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotDate": "2026-06-05",
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
+            "selfRegulation": 4,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "예인해-m6",
           "snapshotDate": "2026-08-03",
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
+            "selfRegulation": 4,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "예인해-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-02-23",
-          "endDate": "2026-03-01",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "예인해-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-04-06",
-          "endDate": "2026-04-19",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
-        "selfRegulation": 3,
-        "engagement": 2,
+        "selfRegulation": 4,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -122768,7 +126436,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 2,
               "reflection": 3,
               "careerAgency": 2
@@ -122886,23 +126554,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-01",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 4,
             "retro": 1,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-25"
-            },
             {
               "type": "retro",
               "title": "2차 프로젝트 회고 제출",
@@ -122921,6 +126582,13 @@ window.STUDENT_TIMELINE_DATA = {
               "type": "project",
               "title": "2차 프로젝트 데일리 체크인",
               "summary": "밸런스 테스트 시트 생성 및 게임 내 밸런스 조절",
+              "severity": "info",
+              "date": "2026-02-25"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-02-25"
             }
@@ -122947,7 +126615,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -122959,7 +126627,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -122973,7 +126641,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -123146,21 +126814,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-12",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 3,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-10"
             },
             {
@@ -123194,21 +126862,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-19",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-15"
             }
           ],
@@ -123541,7 +127209,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -123551,8 +127219,8 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-08-03",
             "snapshotType": "현재",
             "scores": {
-              "selfRegulation": 3,
-              "engagement": 2,
+              "selfRegulation": 4,
+              "engagement": 4,
               "collaboration": 3,
               "resilience": 2,
               "reflection": 4,
@@ -123567,14 +127235,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 7,
-        "attendanceRiskIssues": 3,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 3,
         "lateCount": 3,
         "absenceCount": 0,
         "counselingCount": 3,
@@ -123588,7 +127257,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -123662,7 +127331,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -123675,8 +127344,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.5,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -123756,7 +127425,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 2
@@ -123769,21 +127438,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 9,
             "career": 0,
@@ -123864,7 +127533,7 @@ window.STUDENT_TIMELINE_DATA = {
             "selfRegulation"
           ],
           "profileAverage": 3.17,
-          "growthDelta": 0.34,
+          "growthDelta": 0.5,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -123942,8 +127611,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
+            "selfRegulation": 4,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -123957,21 +127626,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": -0.5,
+          "profileAverage": 3.17,
+          "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "selfRegulation",
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 1,
             "career": 2,
@@ -123983,7 +127652,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-10",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -123991,7 +127660,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-15",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -124036,8 +127705,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
+            "selfRegulation": 4,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -124051,18 +127720,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "selfRegulation",
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -124077,49 +127746,47 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.67,
-        "profileIndex": 67,
-        "growthDelta": 0.34,
-        "growthIndex": 60,
-        "supportIndex": 84,
+        "profileAverage": 3.17,
+        "profileIndex": 79,
+        "growthDelta": 0.84,
+        "growthIndex": 75,
+        "supportIndex": 18,
         "tags": [
-          "support_priority",
-          "collaboration_strength",
+          "growth_high",
           "attendance_watch"
         ],
-        "primaryTag": "support_priority",
+        "primaryTag": "growth_high",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.67/4",
-              "주의 프로파일 3개",
-              "현재 상태 주의"
+              "현재 평균 3.17/4",
+              "주의 프로파일 2개",
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "초기 대비 성장 +0.34",
+              "초기 대비 성장 +0.84",
               "성장 구간 2개",
-              "현재 평균 2.67/4"
+              "현재 평균 3.17/4"
             ]
           },
           "support_priority": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 3건",
-              "현재 상태 주의",
-              "주의 프로파일 3개"
+              "학습 흐름 케이스 늦잠 지각 리듬 관찰, 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "협업 점수 3/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.77/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 개선 (+14.8)"
             ]
           },
@@ -124135,9 +127802,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 3건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 1건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -124148,12 +127817,12 @@ window.STUDENT_TIMELINE_DATA = {
           }
         },
         "strengthKeys": [
-          "reflection",
-          "selfRegulation"
+          "selfRegulation",
+          "engagement"
         ],
         "cautionKeys": [
-          "engagement",
-          "resilience"
+          "resilience",
+          "careerAgency"
         ],
         "careerReadiness": {
           "purposeClarity": 2.3,
@@ -124168,6 +127837,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 9,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -124180,8 +127850,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 2,
           "punctuality": 1.95,
           "peopleSeriousness": 1.48,
-          "riskSignal": 0.24,
-          "collaborationReadinessScore": 74.75,
+          "riskSignal": 0.59,
+          "collaborationReadinessScore": 66.0,
           "profileScore": 3,
           "lateCount": 3,
           "trajectory": {
@@ -124214,10 +127884,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 49.4,
-        "growthRankScore": 50.0,
-        "supportRankScore": 84,
-        "collaborationRankScore": 74.75,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "상업고등학교(스마트콘텐츠과)",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 9935,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 32회 · 문서 10건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 61회 · 문서 18건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 39회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 54회 · 문서 14건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 28종 · 반복 117회 · 문서 18건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.67,
+              "evidence": "정서/부담 표현 6종 · 반복 11회 · 문서 10건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.19,
+              "evidence": "탐색/불확실 표현 7종 · 반복 15회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요, 게임 기획을 배우고 싶은 예인해입니다. 저는 게임을 즐길 때 단순한 플레이를 넘어, 왜 이 구조가 재미를 만드는지, 어떤 밸런스가 플레이 경험을 변화시키는지 분석하는 데 큰 흥미를 느껴왔습니다. 이런 관심을 기반으로 기획에 대해 더 깊이 배우고 싶어 이번 수업에 지원했습니다. 수업을 통해 기획 사고 방식과…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "게시 페이지 꾸미기 및 발표 자료 준비 및 팀원 마무리 인터뷰 만들어진 게임이 너무 마음에 듭니다. 내일 발표 살떨리는군요..."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-01",
+              "excerpt": "기획에 대하여 🤔 팀에서 선정한 원페이지 기획서를 기준으로 나눈 마인드맵에 설계되어 있는 기획서에 알맞은 시스템 기획서를 작성했다고 생각합니다. 🤔 이해는 되었다는 피드백을 받았지만, 초기에 가독성과 레퍼런스 등이 부족하고 난해한 부분이 있다는 여러 피드백을 통해 보완해 나갔습니다. 아직도 부족한 부분이 많아 정말로 이…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "감각보다는 논리로 설득하는 기획 지망생 예인해 입니다. 1. 즐거운 경험을 지탱하는 견고한 시스템 (지원 동기 - 시스템 기획자) 단순히 재미있는 아이디어를 내는 것을 넘어, 그 아이디어가 유저에게 안정적으로 전달될 수 있도록 돕는 시스템 설계에 매력을 느낍니다. [지원 기업] 의 게임이 보여주는 탄탄한 밸런스와 유기적…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 67.4,
+        "growthRankScore": 100.0,
+        "supportRankScore": 20,
+        "collaborationRankScore": 66.0,
         "careerRankScore": 66.0
       }
     },
@@ -124798,6 +128561,22 @@ window.STUDENT_TIMELINE_DATA = {
           "isEstimated": false
         },
         {
+          "id": "attendance-오동건-2026-04-01-19",
+          "date": "2026-04-01",
+          "endDate": "",
+          "type": "attendance",
+          "severity": "info",
+          "title": "출결 이슈 · 지각",
+          "summary": "지각 (늦잠)",
+          "detail": "지각 (늦잠)",
+          "projectPhase": "",
+          "sourceLabel": "출결 기입 시트",
+          "relatedWeek": 17,
+          "isEstimated": false,
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
+        },
+        {
           "id": "counseling-오동건-2026-04-01-2",
           "date": "2026-04-01",
           "endDate": "",
@@ -124810,22 +128589,6 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "면담 기록",
           "relatedWeek": 17,
           "isEstimated": false
-        },
-        {
-          "id": "attendance-오동건-2026-04-01-19",
-          "date": "2026-04-01",
-          "endDate": "",
-          "type": "attendance",
-          "severity": "caution",
-          "title": "출결 이슈 · 지각",
-          "summary": "지각 (늦잠)",
-          "detail": "지각 (늦잠)",
-          "projectPhase": "",
-          "sourceLabel": "출결 기입 시트",
-          "relatedWeek": 17,
-          "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
         },
         {
           "id": "3차 프로젝트-오동건-2026-04-02",
@@ -124918,7 +128681,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-15",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -124926,8 +128689,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 19,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-오동건-2026-04-16-7",
@@ -125367,9 +129130,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-08",
@@ -125383,9 +129146,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-15",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-16",
@@ -125784,6 +129547,22 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2026-04-17",
           "endDate": "2026-04-29"
+        },
+        {
+          "caseId": "오동건-flow-2",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 2건",
+            "14일 내 최대 2건",
+            "최소 발생 간격 14일",
+            "최근 발생일 2026-04-15"
+          ],
+          "startDate": "2026-04-01",
+          "endDate": "2026-04-15"
         }
       ],
       "careerDocuments": {
@@ -125904,7 +129683,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         },
         {
           "snapshotId": "오동건-m5",
@@ -125912,14 +129691,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "오동건-m6",
@@ -125927,43 +129706,26 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "오동건-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-30",
-          "endDate": "2026-04-05",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "오동건-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-04-13",
-          "endDate": "2026-04-19",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
-        "engagement": 2,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -126612,23 +130374,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-05",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 1,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "면담 개입이 있었던 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-01"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
@@ -126647,6 +130402,13 @@ window.STUDENT_TIMELINE_DATA = {
               "type": "counseling",
               "title": "2차 정기 면담",
               "summary": "### 내용 ### 진로 - 진로에 대해서 아직 추상적이고 강점을 못 찾고 있습니다. - 게임을 업으로 하고 싶은 이유는 감명 깊게 보면 만들고 싶다는 생각이 있다. 2018년 세키로를 하고 이런 것을 만들고 싶다는 생각이 들었다고 합니다. - 세키…",
+              "severity": "info",
+              "date": "2026-04-01"
+            },
+            {
+              "type": "project",
+              "title": "3차 프로젝트 데일리 체크인",
+              "summary": "3스테이지 레벨디자인 마무리",
               "severity": "info",
               "date": "2026-04-01"
             }
@@ -126708,23 +130470,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-19",
           "counts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-15"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 공가",
@@ -126738,6 +130493,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "휴가 (가족 행사)",
               "severity": "info",
               "date": "2026-04-16"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-04-15"
             }
           ],
           "snapshot": null
@@ -127085,7 +130847,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -127096,7 +130858,7 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotType": "현재",
             "scores": {
               "selfRegulation": 3,
-              "engagement": 2,
+              "engagement": 4,
               "collaboration": 3,
               "resilience": 2,
               "reflection": 4,
@@ -127111,14 +130873,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 16,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 4,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 6,
+        "conditionAttendanceIssues": 2,
         "lateCount": 4,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -127132,7 +130895,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -127426,10 +131189,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 17,
             "career": 0,
@@ -127495,7 +131258,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -127509,21 +131272,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": -0.33,
+          "profileAverage": 3.0,
+          "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "engagement",
+            "reflection"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 7,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 1,
             "career": 0,
@@ -127535,7 +131298,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-15",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -127589,7 +131352,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -127603,18 +131366,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "engagement",
+            "reflection"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -127629,41 +131392,37 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.67,
-        "profileIndex": 67,
-        "growthDelta": 0.34,
-        "growthIndex": 60,
-        "supportIndex": 92,
+        "profileAverage": 3.0,
+        "profileIndex": 75,
+        "growthDelta": 0.67,
+        "growthIndex": 70,
+        "supportIndex": 18,
         "tags": [
-          "support_priority",
           "collaboration_strength",
           "attendance_watch"
         ],
-        "primaryTag": "support_priority",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.67/4",
-              "주의 프로파일 3개",
-              "현재 상태 주의"
+              "현재 평균 3.0/4",
+              "주의 프로파일 2개",
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.34",
+              "초기 대비 성장 +0.67",
               "성장 구간 3개",
-              "현재 평균 2.67/4"
+              "현재 평균 3.0/4"
             ]
           },
           "support_priority": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "현재 상태 주의",
-              "주의 프로파일 3개",
-              "학습 흐름 케이스 건강 관리 관찰"
+              "학습 흐름 케이스 건강 관리 관찰, 늦잠 지각 리듬 관찰"
             ]
           },
           "collaboration_strength": {
@@ -127673,6 +131432,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.49/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-5.2)"
             ]
           },
@@ -127688,9 +131448,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 6건",
+              "컨디션 케이스 1건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -127701,12 +131463,12 @@ window.STUDENT_TIMELINE_DATA = {
           }
         },
         "strengthKeys": [
-          "reflection",
-          "selfRegulation"
+          "engagement",
+          "reflection"
         ],
         "cautionKeys": [
-          "engagement",
-          "resilience"
+          "resilience",
+          "careerAgency"
         ],
         "careerReadiness": {
           "purposeClarity": 2.8,
@@ -127721,6 +131483,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -127767,9 +131530,96 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 45.4,
-        "growthRankScore": 58.0,
-        "supportRankScore": 96,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "전주대 물리치료학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 6059,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.96,
+              "evidence": "구체 표현 5종 · 반복 11회 · 문서 8건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 38회 · 문서 13건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.89,
+              "evidence": "회고/개선 표현 6종 · 반복 23회 · 문서 9건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 22회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 17종 · 반복 50회 · 문서 17건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.18,
+              "evidence": "정서/부담 표현 5종 · 반복 11회 · 문서 8건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.17,
+              "evidence": "탐색/불확실 표현 3종 · 반복 5회 · 문서 3건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 타전공 3학년 휴학생입니다. 군전역 후 전공이 생각보다 맞지 않아 일하면서 하루하루를 때우던 중 수시원서를 쓸 때 소프트웨어학과에 지원했던 것이 생각났고, 제가 원래 게임을 좋아하는데 이번에 국비지원과정이란 것을 알게 되어 모든 상황이 맞아떨어져 지원하게 되었습니다. 저는 원래 게임을 하는것과 시나리오, 웹소설 같…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 힘들다,,"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 1. 초기에 팀에서 의도한 간단한 미니게임과 다르게 내가 제작한 게임들이 볼륨이 조금씩 있던 부분이어서 볼륨이 적은 게임을 반복해서 만드는 과정에서 기획서를 3번 갈아엎었다. 마지막에는 핏한 게임을 만들긴 했지만 내 에고를 처음부터 죽였어야 했던 것 같다. 2. 구현된 모습을 보니 큰 문제는 없었던 것 같…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 64.0,
+        "growthRankScore": 91.0,
+        "supportRankScore": 20,
         "collaborationRankScore": 72.25,
         "careerRankScore": 51.25
       }
@@ -130568,6 +134418,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 7,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 3,
@@ -131117,6 +134968,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.05/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+12.2)"
             ]
           },
@@ -131132,9 +134984,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -131164,6 +135018,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 5,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -131209,6 +135064,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "NAIT DMIT",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 11163,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.25,
+              "evidence": "구체 표현 6종 · 반복 10회 · 문서 5건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 37회 · 문서 10건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.4,
+              "evidence": "회고/개선 표현 3종 · 반복 12회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 47회 · 문서 13건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 28종 · 반복 103회 · 문서 12건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.71,
+              "evidence": "정서/부담 표현 5종 · 반복 5회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.06,
+              "evidence": "탐색/불확실 표현 4종 · 반복 12회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임 기획자 지망생 오종호입니다. 저는 캐나다 영주권자이며, 어렸을때부터 서브컬쳐에 관심이 많았습니다. 덕분에 영어, 일본어가 되어 국산게임에만 한정되지 않고 다양한 게임들을 해보았으며, 커뮤니티를 통해 각 나라별 니즈를 파악하는데 유리합니다. 한가지 일에 몰두하기보다 여러가지일을 멀티로 하고 다양하게 이것저것 접하는것…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA와 홍보 저희 플머분 한분이 빠졌는데 도움을 좀 받았어야하지 않았나 싶습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 캐릭터의 컨셉, 성격, 설정등은 방향성에 맞게 기획을 하였지만, 디자인쪽은 ai의 결과물에 크게 달라져서 키컬러와 성격반영이라도 해볼려고 노력했다. Ai의 결과물이 어느정도 마음에 들면 거기서부터 디자인에 들어갔다. 특히 복장쪽은 사이버 펑크식이며, 최대한 컨셉이 겹치지 않고, 개성있고, 검열에 걸리지 않…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 유저의 뇌리에 박히는 단 하나의 경험만으로도 , 게임에 대한 애정과 잔존을 만든다고 믿습니다 . 기획자 오종호입니다 . 한 번의 강렬한 컷신 , 숨겨진 디테일 , 잘 설계된 캐릭터 하나는 유저를 게임에 머물게 하는 강력한 동력원이 됩니다 . 단 한 장면으로 인해 누군가의 인생 영화가 정해지 듯…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 71.4,
         "growthRankScore": 116.0,
@@ -131494,7 +135441,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-20",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -131502,8 +135449,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 11,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-우현승-2026-02-23",
@@ -131552,7 +135499,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-04",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -131560,8 +135507,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 13,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-우현승-2026-03-17-8",
@@ -131808,7 +135755,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-08",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -131816,8 +135763,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "counseling-우현승-2026-04-15-2",
@@ -132203,17 +136150,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-20",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-04",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-17",
@@ -132227,9 +136174,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-08",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-30",
@@ -132585,6 +136532,37 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "우현승-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 3건",
+            "14일 내 최대 2건",
+            "최소 발생 간격 12일",
+            "최근 발생일 2026-04-08"
+          ],
+          "startDate": "2026-02-20",
+          "endDate": "2026-04-08"
+        },
+        {
+          "caseId": "우현승-flow-2",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 4건",
+            "지연 체크인 2건",
+            "프로젝트 제출률 85.7%"
+          ],
+          "startDate": "2026-02-20",
+          "endDate": "2026-04-30"
+        },
+        {
+          "caseId": "우현승-flow-3",
           "caseType": "career_revision_progress",
           "label": "진로 문서 개선",
           "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
@@ -132760,45 +136738,45 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotDate": "2026-04-08",
           "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "우현승-m5",
           "snapshotDate": "2026-06-05",
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "우현승-m6",
           "snapshotDate": "2026-08-03",
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -132806,36 +136784,20 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "우현승-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2026-02-16",
-          "endDate": "2026-02-22",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "우현승-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-02",
-          "endDate": "2026-03-08",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "우현승-status-3",
-          "statusType": "주의",
-          "severity": "caution",
           "startDate": "2026-03-23",
-          "endDate": "2026-04-12",
+          "endDate": "2026-04-05",
           "reasonSummary": "프로젝트 활동이 밀집된 구간"
         }
       ],
       "currentProfile": {
-        "selfRegulation": 2,
-        "engagement": 2,
+        "selfRegulation": 3,
+        "engagement": 3,
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "자기조절 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -133208,27 +137170,27 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-22",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 2,
             "retro": 0,
             "counseling": 1,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "면담 개입이 있었던 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-20"
-            },
             {
               "type": "project",
               "title": "2차 프로젝트 데일리 체크인",
               "summary": "시스템 추가 수정 및 보완, 데이터 테이블, 개발 작업을 위한 기획서 내용 분류",
+              "severity": "info",
+              "date": "2026-02-20"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-02-20"
             },
@@ -133290,21 +137252,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-08",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 1,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-03-04"
             },
             {
@@ -133516,27 +137478,27 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-12",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 2,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-08"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
               "summary": "최종빌드, 포스터 및 홍보물 제작",
+              "severity": "info",
+              "date": "2026-04-08"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-04-08"
             },
@@ -133933,7 +137895,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -133943,8 +137905,8 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-08-03",
             "snapshotType": "현재",
             "scores": {
-              "selfRegulation": 2,
-              "engagement": 2,
+              "selfRegulation": 3,
+              "engagement": 3,
               "collaboration": 3,
               "resilience": 2,
               "reflection": 4,
@@ -133959,14 +137921,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 7,
-        "attendanceRiskIssues": 3,
-        "healthAttendanceIssues": 1,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 4,
+        "conditionAttendanceIssues": 3,
         "lateCount": 3,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -134183,7 +138146,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "자기조절 지원 필요",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 7,
             "career": 0,
@@ -134248,8 +138211,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -134263,21 +138226,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.5,
-          "growthDelta": 0.0,
+          "profileAverage": 2.83,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "selfRegulation"
           ],
           "cautionKeys": [
-            "selfRegulation",
-            "engagement"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 3,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -134297,7 +138260,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-04",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -134342,8 +138305,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -134357,18 +138320,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 3.0,
           "growthDelta": 0.17,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "selfRegulation"
           ],
           "cautionKeys": [
-            "selfRegulation",
-            "engagement"
+            "resilience"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -134436,8 +138398,8 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
+            "selfRegulation": 3,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -134451,18 +138413,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "selfRegulation"
           ],
           "cautionKeys": [
-            "selfRegulation",
-            "engagement"
+            "resilience"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -134477,39 +138438,37 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.67,
-        "profileIndex": 67,
-        "growthDelta": 0.34,
-        "growthIndex": 60,
-        "supportIndex": 84,
+        "profileAverage": 3.0,
+        "profileIndex": 75,
+        "growthDelta": 0.67,
+        "growthIndex": 70,
+        "supportIndex": 36,
         "tags": [
-          "support_priority",
           "attendance_watch"
         ],
-        "primaryTag": "support_priority",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.67/4",
-              "주의 프로파일 3개",
+              "현재 평균 3.0/4",
+              "주의 프로파일 1개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.34",
-              "성장 구간 2개",
-              "현재 평균 2.67/4"
+              "초기 대비 성장 +0.67",
+              "성장 구간 3개",
+              "현재 평균 3.0/4"
             ]
           },
           "support_priority": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 3건",
               "현재 상태 주의",
-              "주의 프로파일 3개"
+              "학습 흐름 케이스 늦잠 지각 리듬 관찰, 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
@@ -134519,6 +138478,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 91.7%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.66/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+6.8)"
             ]
           },
@@ -134534,9 +138494,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 3건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 4건",
+              "컨디션 케이스 2건",
+              "참여 지속성 3/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -134548,11 +138510,10 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "reflection",
-          "collaboration"
+          "selfRegulation"
         ],
         "cautionKeys": [
-          "selfRegulation",
-          "engagement"
+          "resilience"
         ],
         "careerReadiness": {
           "purposeClarity": 2.3,
@@ -134567,6 +138528,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 5,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.36,
           "checkinCount": 24,
@@ -134613,9 +138575,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 49.4,
-        "growthRankScore": 50.0,
-        "supportRankScore": 84,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "한양대 콘서바토리(실용음악과 보컬,작곡)",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 30,
+          "textLength": 17909,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 10종 · 반복 40회 · 문서 15건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 12종 · 반복 140회 · 문서 20건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 69회 · 문서 17건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 82회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 30종 · 반복 170회 · 문서 16건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.33,
+              "evidence": "정서/부담 표현 5종 · 반복 11회 · 문서 10건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 5종 · 반복 32회 · 문서 15건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요 저는 실용음악 보컬과 작곡을 전공했고 최근 3년정도 세무 관련 사무직으로 근무했었습니다. 어렸을때부터 만화 그리기, 캐릭터 만들기, 작곡 등 예술활동과 창작에 관심을 가져왔습니다. 게임과 창작을 좋아하다보니 자연스럽게 나만의 게임을 만들고 싶은 마음이 있었지만, 전문적인 지식 부족과 경제활동 등의 이유로 시간…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "최종빌드, 포스터 및 홍보물 제작 드디어 최종빌드가 완성되고 게임 발표만 남았다. 열심히 한만큼 좋은 반응과 결과가 나왔으면 좋겠다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-03",
+              "excerpt": "기획에 대하여 최초 작성한 기획서보다 이후에 AI에 입력하기 위한 기획서에 투자한 시간이 더 많았다. 초기 기획보다 내용이 많이 달라지기도 했고, 내용을 어느정도 알고있어 이해가 빨랐던 팀원들과 달리 세부적인 과정까지 전부 기록을 해줬어야했기 때문에 이 과정에서 구두로 추가되어 작성한 기획도 많았다. 협업에 대하여 끝나…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- “ 넓은 시각으로 유저의 재미와 팀의 완성도를 함께 높이는 기획자 , 우현승입니다 ” 창작자에서 기획자가 되기까지 저는 창작을 ‘ 나만의 것 ’ 을 만들고 싶은 마음에서부터 시작했습니다 . 어릴 때부터 캐릭터를 그리며 새로운 세계관을 만들고 , 공책에 스킬과 규칙을 만들며 놀기도 했습니다 .…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 60.0,
+        "growthRankScore": 91.0,
+        "supportRankScore": 40,
         "collaborationRankScore": 68.75,
         "careerRankScore": 78.0
       }
@@ -137206,6 +141261,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 5,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -137743,6 +141799,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.01/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+7.2)"
             ]
           },
@@ -137758,9 +141815,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -137790,6 +141849,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 24,
@@ -137835,6 +141895,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "한국방송통신대학교 . 컴퓨터과학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 29,
+          "textLength": 5628,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.22,
+              "evidence": "구체 표현 5종 · 반복 16회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 30회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.99,
+              "evidence": "회고/개선 표현 3종 · 반복 14회 · 문서 5건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 24회 · 문서 10건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 21종 · 반복 63회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.12,
+              "evidence": "정서/부담 표현 3종 · 반복 3회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.94,
+              "evidence": "탐색/불확실 표현 4종 · 반복 7회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "누구나 즐길 수 있는 게임을 만들고 싶은 유해찬입니다. 저는 어렸을적부터 한시도 빠짐없이 게임과 함께 했습니다. 이런게임도 저런게임도 해보면서 다양한 게임을 즐겼습니다. 그러한 경험을 통해 즐거움과 짜릿함 쾌감을 느낄때마다 나중에 사람들에게 동일한 경험을 하게 해주고 싶었습니다. 게임을 어떻게 만드는지 궁금해서 무작정…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "태환님이 작업해주신 광고영상 축약해봄.. 음 제 기획서가 어디까지 진행되었는지 체크하지 않았던 부분이 아쉽습니다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 기획서보다는 개발문서?에 가까운 기획서들이 아니였을까한다. 협업에 대하여 혼자 개발을 쳐내다보니까 다른 사람들의 기 다음 프로젝트를 위해 부족한 부분에 대해서 확실히 어필을 했어야하는데 아무래도 내 할일도 바쁘고 중요한부분을 집고 가도록 유도를 좀더 할 껄 그랬다.. 칭찬합시다 승구님, 팀장으로써 어떻게든…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "문제를 구조적으로 분석하고 해결하는 기획자 개발자로 근무하며 외주 프로젝트에서 기획서 없이 작업이 시작되는 상황을 경험했습니다. 기능 정의가 불명확한 상태에서 작업이 진행되었고, 이후 전달된 기획서에도 구현에 필요한 정보가 누락되어 개발 중단과 반복적인 수정이 발생했습니다. 이 경험을 통해 명확한 기획과 구조화된 커뮤니…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 68.0,
         "growthRankScore": 83.0,
@@ -138104,7 +142256,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-20",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -138112,8 +142264,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 11,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-윤동현-2026-02-23",
@@ -138190,7 +142342,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-03",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -138198,8 +142350,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 13,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-윤동현-2026-03-18",
@@ -138821,17 +142973,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-20",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-03",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-30",
@@ -139172,7 +143324,39 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "었습니다. 말이 많으신 편은 아니셨지만, 진행된 작업에 대한 개선점이라던가 하는 포인트를 잘 잡으셨어요. 함께 작업하면서 팀장님 다음으로 든든한 분이었습니다. 윤동현 : 팀원의 역할에 제일 충실하셨던 분이었던 것 같습니다. 다른 사람의 의견을 잘 들어주시고, 나름의 자신의 생각도 말씀하시면서 작업을 원활하게 도와주셨던…"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "윤동현-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 2건",
+            "14일 내 최대 2건",
+            "최소 발생 간격 11일",
+            "최근 발생일 2026-03-03"
+          ],
+          "startDate": "2026-02-20",
+          "endDate": "2026-03-03"
+        },
+        {
+          "caseId": "윤동현-flow-2",
+          "caseType": "reflection_growth_link",
+          "label": "회고 기반 성장",
+          "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
+          "severity": "success",
+          "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
+          "evidence": [
+            "회고 2건",
+            "성찰 점수 4/4",
+            "초기 대비 성장 +1.00"
+          ],
+          "startDate": "2026-01-26",
+          "endDate": "2026-02-27"
+        }
+      ],
       "careerDocuments": {
         "rounds": [
           {
@@ -139312,14 +143496,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "윤동현-m5",
@@ -139327,14 +143511,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "윤동현-m6",
@@ -139342,43 +143526,26 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "윤동현-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-02-16",
-          "endDate": "2026-02-22",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "윤동현-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-02",
-          "endDate": "2026-03-08",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 4,
-        "engagement": 2,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -139750,27 +143917,27 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-22",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 2,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-20"
-            },
             {
               "type": "project",
               "title": "2차 프로젝트 데일리 체크인",
               "summary": "오늘은 어제 작업하고 마무리하지 못한 특전 관련 UI 및 아이콘 등을 모두 제작 완료했습니다. 추가적으로 WBS를 확인해보니 거의 모든 UI 리소스가 제게 맡겨져서 UI관련 부분은 제가 해본 적이 많이 없던 터라 공부를 좀 해야할 거 같습니다. 특히…",
+              "severity": "info",
+              "date": "2026-02-20"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-02-20"
             },
@@ -139839,21 +144006,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-08",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-03-03"
             },
             {
@@ -140454,7 +144621,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -140465,7 +144632,7 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotType": "현재",
             "scores": {
               "selfRegulation": 4,
-              "engagement": 2,
+              "engagement": 4,
               "collaboration": 3,
               "resilience": 2,
               "reflection": 4,
@@ -140480,14 +144647,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 4,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 2,
         "lateCount": 3,
         "absenceCount": 0,
         "counselingCount": 5,
@@ -140501,7 +144669,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -140703,7 +144871,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "도전 대응 지원 필요",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 10,
             "career": 0,
@@ -140769,7 +144937,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -140783,21 +144951,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": -0.34,
+          "profileAverage": 3.17,
+          "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -140809,7 +144977,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-03",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -140863,7 +145031,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -140877,18 +145045,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.17,
+          "profileAverage": 3.33,
+          "growthDelta": 0.16,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
             "resilience"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -140957,7 +145124,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -140971,18 +145138,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 3.33,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
             "resilience"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -140997,37 +145163,38 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.0,
-        "profileIndex": 75,
-        "growthDelta": 0.67,
-        "growthIndex": 70,
-        "supportIndex": 56,
+        "profileAverage": 3.33,
+        "profileIndex": 83,
+        "growthDelta": 1.0,
+        "growthIndex": 80,
+        "supportIndex": 18,
         "tags": [
+          "overall_strong",
+          "growth_high",
           "attendance_watch"
         ],
-        "primaryTag": "attendance_watch",
+        "primaryTag": "overall_strong",
         "tagReasons": {
           "overall_strong": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "현재 평균 3.0/4",
-              "주의 프로파일 2개",
-              "현재 상태 주의"
+              "현재 평균 3.33/4",
+              "주의 프로파일 1개",
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "초기 대비 성장 +0.67",
+              "초기 대비 성장 +1.00",
               "성장 구간 3개",
-              "현재 평균 3.0/4"
+              "현재 평균 3.33/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "현재 상태 주의"
+              "학습 흐름 케이스 늦잠 지각 리듬 관찰"
             ]
           },
           "collaboration_strength": {
@@ -141037,6 +145204,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.36/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-2.2)"
             ]
           },
@@ -141052,9 +145220,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 1건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -141066,10 +145236,9 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "selfRegulation",
-          "reflection"
+          "engagement"
         ],
         "cautionKeys": [
-          "engagement",
           "resilience"
         ],
         "careerReadiness": {
@@ -141085,6 +145254,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -141131,9 +145301,101 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 60.0,
-        "growthRankScore": 91.0,
-        "supportRankScore": 56,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "비봉고등학교 디자인과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 16438,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.58,
+              "evidence": "구체 표현 8종 · 반복 19회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 102회 · 문서 28건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 35회 · 문서 15건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 81회 · 문서 18건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 204회 · 문서 30건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.73,
+              "evidence": "정서/부담 표현 4종 · 반복 10회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 7종 · 반복 28회 · 문서 16건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 애벌레처럼 열심히 성장하여 꼭 나비로 다시 태어나 날아갈 욕망을 가지고 있는 윤동현입니다! 저는 게임기획이 모든 것의 시작이라고 생각하고 그 점에 매료되었습니다. 그렇게 게임기획에 관한 꿈을 가지게 되었습니다. 하지만, 비전공자이고 경력도 없어서 어떻게 배우고 시작해야 할 지 검색하고 찾아보던 와중에 경일게임아카데…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "오늘은 마지막으로 한 번 더 밸런싱 체크를 계속 하면서 QA를 진행했고, 플레이하다보니 UI 부분에서 플레이어에게 혼동을 줄 거같은 요소가 있어서 개선사항을 요구하는 등의 작업을 진행하였습니다 로그라이크 장르에 맞게 조금만 더 하면..! 이라는 목적을 갖게끔 될듯 말듯한 밸런싱을 하고 싶었지만 피드백이 너무 극과극인 것…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 처음 작성한 콘텐츠 기획서에는 프로젝트 기간이 너무 짧아 거의 설명문 느낌으로 작성이 되었던 것 같습니다. 그러다 보니 나중에 팀장님께서 \"좀 더 세부적으로, 기획적 의도가 무엇인지 등등에 대하여 작성을 추가로 해줘야할 것 같다\"고 피드백을 주셨었고, 특전 시스템의 경우 프로젝트의 핵심 재미요소로 봤기에…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "만렙을 향해 나아가는 지원자, 윤동현입니다! 1. 지원 동기 저는 게임을 단순한 즐길 거리가 아닌 경험의 집합체 라고 생각합니다. 학창 시절부터 RPG 를 즐기며 신규 콘텐츠 출시 전의 설레는 기대감, 고난도 레이드를 수차례 시도 끝에 클리어 후 팀원들과 나누던 안도감과 성취감까지, 현실과는 또 다른 수많은 감정과 기억…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 70.6,
+        "growthRankScore": 124.0,
+        "supportRankScore": 20,
         "collaborationRankScore": 70.0,
         "careerRankScore": 66.0
       }
@@ -142574,11 +146836,27 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "임동균",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "는 정도였던지라 그게 아쉽다. 대신, 그런 만큼 개발하는 사람이 어떤 정보가 필요한지 조금 더 알 수 있는 경험도 되었기에 득도 있었다고 생각한다. 칭찬합시다 윤유나 팀원 - 같이 프로그래밍쪽 모르는 팀원임에도 불구하고, UI, 배경 등 구현에 힘써 주었다. 팀적인 사정때문에 아트, 컨셉 기획쪽의 업무도 늘었음에도 불평…"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "윤유나-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 3건",
+            "임동균 언급: 는 정도였던지라 그게 아쉽다. 대신, 그런 만큼 개발하는 사람이 어떤 정보가 필요한지 조금 더 알 수 있는 경험도 되었기에 득도 있었다고 생각한다. 칭찬합시다 윤유나 팀원 - 같이 프로그래밍쪽 모르는 팀원임에도 불구하고, UI, 배경 등 구현에 힘써 주었다. 팀적인 사정때문에 아트, 컨셉 기획쪽의 업무도 늘었음에도 불평…"
+          ],
+          "startDate": "",
+          "endDate": ""
+        }
+      ],
       "careerDocuments": {
         "rounds": [],
         "summary": {}
@@ -142674,7 +146952,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -142689,13 +146967,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "윤유나-m4",
@@ -142704,13 +146982,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "윤유나-m5",
@@ -142719,7 +146997,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -142734,7 +147012,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -142747,7 +147025,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2,
@@ -143226,7 +147504,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -143238,7 +147516,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -143252,7 +147530,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -143834,7 +148112,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -143856,6 +148134,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 7,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -143951,7 +148230,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -143964,8 +148243,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.5,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -144045,7 +148324,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -144058,18 +148337,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": 0.17,
+          "profileAverage": 2.83,
+          "growthDelta": 0.16,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -144139,7 +148418,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -144152,18 +148431,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -144233,7 +148512,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -144246,15 +148525,15 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
           "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
@@ -144327,7 +148606,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -144340,15 +148619,15 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
           "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
@@ -144366,11 +148645,11 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.0,
-        "profileIndex": 75,
-        "growthDelta": 0.67,
-        "growthIndex": 70,
-        "supportIndex": 0,
+        "profileAverage": 2.83,
+        "profileIndex": 71,
+        "growthDelta": 0.5,
+        "growthIndex": 65,
+        "supportIndex": 36,
         "tags": [
           "steady_path"
         ],
@@ -144379,32 +148658,34 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 3.0/4",
-              "주의 프로파일 2개",
+              "현재 평균 2.83/4",
+              "주의 프로파일 3개",
               "현재 상태 안정"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.67",
+              "초기 대비 성장 +0.50",
               "성장 구간 2개",
-              "현재 평균 3.0/4"
+              "현재 평균 2.83/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "주의 프로파일 3개",
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.13/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 개선 (+9.2)"
             ]
           },
@@ -144420,9 +148701,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -144437,8 +148720,8 @@ window.STUDENT_TIMELINE_DATA = {
           "reflection"
         ],
         "cautionKeys": [
-          "resilience",
-          "careerAgency"
+          "collaboration",
+          "resilience"
         ],
         "careerReadiness": {
           "purposeClarity": 2.0,
@@ -144451,8 +148734,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 7,
+          "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 29,
@@ -144465,9 +148749,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 3,
           "punctuality": 4.0,
           "peopleSeriousness": 1.48,
-          "riskSignal": 0.36,
-          "collaborationReadinessScore": 68.5,
-          "profileScore": 3,
+          "riskSignal": 0.71,
+          "collaborationReadinessScore": 59.75,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 84.75,
@@ -144499,10 +148783,95 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 68.0,
-        "growthRankScore": 83.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 68.5,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "여",
+            "education": "부천대학교 세무회계과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 29,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 33,
+          "textLength": 5576,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.37,
+              "evidence": "구체 표현 6종 · 반복 17회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 6종 · 반복 30회 · 문서 9건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.48,
+              "evidence": "회고/개선 표현 3종 · 반복 27회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 25회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 16종 · 반복 37회 · 문서 15건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.46,
+              "evidence": "정서/부담 표현 3종 · 반복 5회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.76,
+              "evidence": "탐색/불확실 표현 3종 · 반복 8회 · 문서 4건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요! 다가오는 Ai시대에 내 게임하나라도 기획해보고 출시해보고 싶은 마음으로 부트캠프에 참여를 시작했습니다. 비전공자이지만 최근 몇년동안 영상제작 인원으로 참여했고, 새로운 것을 배우는 것에 대한 두려움이 없고 앞으로 나아가고자 하는 열정을 가지고 있습니다! 제가 기획하고 만들어서 게임을 출시해보고 싶어서 이 부…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA작업 마무리작업중"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 UI기획서를 작성했는데, 초기에 전달했으면 일부 UI구현과 기획이 겹치지 않았을 텐데, 일정이 겹쳐버린점, 초기 기획서를 작성시 디자인기획서에 치중했다보니, 구현쪽에 대한 설명이 없어서 재 수정해서 더 오래걸렸던점이 부족했다고 생각합니다. 협업에 대하여 작업물의 공유와 피드백, 진행상황등을 보고하는데 소홀…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 56.6,
+        "growthRankScore": 66.0,
+        "supportRankScore": 40,
+        "collaborationRankScore": 59.75,
         "careerRankScore": 36.75
       }
     },
@@ -144613,7 +148982,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-22",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -144621,8 +148990,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 3,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이가현-2026-01-02-19",
@@ -144785,7 +149154,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-19",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -144793,8 +149162,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 11,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-이가현-2026-02-20",
@@ -144843,7 +149212,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-24",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -144851,8 +149220,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 12,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-이가현-2026-02-25",
@@ -145537,9 +149906,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-22",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-02",
@@ -145553,17 +149922,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-19",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-24",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-17",
@@ -145929,13 +150298,59 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "오종호",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "매고 크런치하면서 끝까지 해주신 팀의 일등공신, 가장 열심히 잘 하신분. 임소영님: 자신의 기획을 과감하게 밀어붙이고 그걸 뒷받침하는 자료와 열정을 가지신분. 이가현님: 팀의 분위기를 살리며 기획과 개발의 밸런스를 잡아주고 브레이크 담당도 해주신분. 이승진님: 묵묵히 팀의 요구를 불만없이 받아 진행해주신분. 곽용준님:…"
         }
       ],
       "learningFlowCases": [
         {
           "caseId": "이가현-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 3건",
+            "14일 내 최대 2건",
+            "최소 발생 간격 5일",
+            "최근 발생일 2026-02-24"
+          ],
+          "startDate": "2025-12-22",
+          "endDate": "2026-02-24"
+        },
+        {
+          "caseId": "이가현-flow-2",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 3건",
+            "지연 체크인 3건",
+            "프로젝트 제출률 96.4%"
+          ],
+          "startDate": "2025-12-22",
+          "endDate": "2026-04-07"
+        },
+        {
+          "caseId": "이가현-flow-3",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 4건",
+            "오종호 언급: 매고 크런치하면서 끝까지 해주신 팀의 일등공신, 가장 열심히 잘 하신분. 임소영님: 자신의 기획을 과감하게 밀어붙이고 그걸 뒷받침하는 자료와 열정을 가지신분. 이가현님: 팀의 분위기를 살리며 기획과 개발의 밸런스를 잡아주고 브레이크 담당도 해주신분. 이승진님: 묵묵히 팀의 요구를 불만없이 받아 진행해주신분. 곽용준님:…"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "이가현-flow-6",
           "caseType": "career_revision_progress",
           "label": "진로 문서 개선",
           "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
@@ -145948,6 +150363,36 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2026-04-20",
           "endDate": "2026-05-03"
+        },
+        {
+          "caseId": "이가현-flow-5",
+          "caseType": "reflection_growth_link",
+          "label": "회고 기반 성장",
+          "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
+          "severity": "success",
+          "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
+          "evidence": [
+            "회고 2건",
+            "성찰 점수 4/4",
+            "초기 대비 성장 +0.84"
+          ],
+          "startDate": "2026-01-27",
+          "endDate": "2026-02-27"
+        },
+        {
+          "caseId": "이가현-flow-4",
+          "caseType": "counseling_recovery",
+          "label": "면담 후 회복",
+          "description": "면담 기록 이후 성장 곡선이 회복된 케이스",
+          "severity": "success",
+          "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
+          "evidence": [
+            "면담 2건",
+            "초기 대비 성장 +0.84",
+            "성장 구간 2개"
+          ],
+          "startDate": "2026-01-07",
+          "endDate": "2026-04-15"
         }
       ],
       "careerDocuments": {
@@ -146083,7 +150528,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 3
@@ -146096,81 +150541,65 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotDate": "2026-02-27",
           "snapshotType": "1차 프로젝트 종료 ~ 2차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 3,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이가현-m4",
           "snapshotDate": "2026-04-08",
           "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이가현-m5",
           "snapshotDate": "2026-06-05",
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이가현-m6",
           "snapshotDate": "2026-08-03",
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
         {
           "statusPeriodId": "이가현-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2025-12-22",
-          "endDate": "2025-12-28",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "이가현-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-02-16",
-          "endDate": "2026-03-01",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "이가현-status-3",
           "statusType": "주의",
           "severity": "caution",
           "startDate": "2026-03-30",
@@ -146179,14 +150608,14 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "currentProfile": {
-        "selfRegulation": 3,
-        "engagement": 2,
-        "collaboration": 3,
+        "selfRegulation": 4,
+        "engagement": 4,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -146318,21 +150747,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2025-12-28",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2025-12-22"
             }
           ],
@@ -146498,7 +150927,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 3
@@ -146575,23 +151004,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-22",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 2,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-19"
-            },
             {
               "type": "project",
               "title": "2차 프로젝트 데일리 체크인",
@@ -146605,6 +151027,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "몬스터 디자인 : 컨셉, 이미지 리소스, 체력, 이동 속도, 데미지, 등장 비율 밸런싱 디자인 : 몬스터 체력을 기준으로 플레이 타임을 고려하여 캐릭터 공격 수치 조정",
               "severity": "info",
               "date": "2026-02-19"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-02-19"
             }
           ],
           "snapshot": null
@@ -146616,23 +151045,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-01",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 4,
             "retro": 1,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-24"
-            },
             {
               "type": "retro",
               "title": "2차 프로젝트 회고 제출",
@@ -146653,6 +151075,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "오늘도 밸런싱...어제도 밸런싱... 내일도 밸런싱.... 목표를 바꾸니 작업에 속도가 붙었습니다. 재화를 넉넉하게 넣어주고 추가 보상 몬스터를 만들어 유저의 실력에 따른 강화 레벨 격차를 완화하고자 했습니다.",
               "severity": "info",
               "date": "2026-02-25"
+            },
+            {
+              "type": "project",
+              "title": "2차 프로젝트 데일리 체크인",
+              "summary": "벨런싱 마무리 작업 완료, 팀원들과 QA 하며 웨이브별 세부 벨런스를 조정하고 있습니다. 벨런스를 조절하는 방법이 다양해서 여러 의견을 들으며 조정 할 수 있었습니다. 하지만 제한된 인원에서 반복된 QA로 난이도나 루즈해지는 주관적인 평가가 퇴색됨을…",
+              "severity": "info",
+              "date": "2026-02-24"
             }
           ],
           "snapshot": null
@@ -146677,7 +151106,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -146687,9 +151116,9 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-03-02",
             "snapshotType": "2차 프로젝트 이후",
             "scores": {
-              "selfRegulation": 2,
-              "engagement": 2,
-              "collaboration": 3,
+              "selfRegulation": 3,
+              "engagement": 4,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -146703,7 +151132,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -147293,7 +151722,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -147303,9 +151732,9 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotDate": "2026-08-03",
             "snapshotType": "현재",
             "scores": {
-              "selfRegulation": 3,
-              "engagement": 2,
-              "collaboration": 3,
+              "selfRegulation": 4,
+              "engagement": 4,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -147319,14 +151748,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 6,
-        "attendanceRiskIssues": 3,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 3,
         "lateCount": 5,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -147422,7 +151852,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 3,
             "careerAgency": 3
@@ -147435,8 +151865,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
-          "growthDelta": 0.84,
+          "profileAverage": 3.0,
+          "growthDelta": 0.67,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -147448,7 +151878,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 5,
             "career": 0,
@@ -147468,7 +151898,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2025-12-22",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -147513,9 +151943,9 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 2,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 3,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -147528,21 +151958,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": -0.5,
+          "profileAverage": 3.0,
+          "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "collaboration"
+            "engagement",
+            "reflection"
           ],
           "cautionKeys": [
-            "selfRegulation",
-            "engagement"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 10,
             "career": 0,
@@ -147586,7 +152016,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-02-19",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             }
           ],
@@ -147607,9 +152037,9 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -147622,18 +152052,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.16,
+          "profileAverage": 3.17,
+          "growthDelta": 0.17,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "selfRegulation",
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -147701,9 +152131,9 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -147716,18 +152146,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "selfRegulation",
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -147795,9 +152225,9 @@ window.STUDENT_TIMELINE_DATA = {
           "dropoutDuringMilestone": false,
           "participationReason": "",
           "scores": {
-            "selfRegulation": 3,
-            "engagement": 2,
-            "collaboration": 3,
+            "selfRegulation": 4,
+            "engagement": 4,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -147810,18 +152240,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "selfRegulation",
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
+            "collaboration",
             "resilience"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -147836,47 +152266,49 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.83,
-        "profileIndex": 71,
-        "growthDelta": 0.5,
-        "growthIndex": 65,
-        "supportIndex": 66,
+        "profileAverage": 3.17,
+        "profileIndex": 79,
+        "growthDelta": 0.84,
+        "growthIndex": 75,
+        "supportIndex": 36,
         "tags": [
+          "growth_high",
           "career_progress",
           "attendance_watch"
         ],
-        "primaryTag": "attendance_watch",
+        "primaryTag": "growth_high",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.83/4",
+              "현재 평균 3.17/4",
               "주의 프로파일 2개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "초기 대비 성장 +0.50",
+              "초기 대비 성장 +0.84",
               "성장 구간 2개",
-              "현재 평균 2.83/4"
+              "현재 평균 3.17/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 3건",
-              "현재 상태 주의"
+              "현재 상태 주의",
+              "학습 흐름 케이스 늦잠 지각 리듬 관찰, 건강-프로젝트 부담, 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 88.9%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.67/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (-4.2)"
             ]
           },
@@ -147892,9 +152324,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 3건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 2건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -147905,11 +152339,11 @@ window.STUDENT_TIMELINE_DATA = {
           }
         },
         "strengthKeys": [
-          "reflection",
-          "selfRegulation"
+          "selfRegulation",
+          "engagement"
         ],
         "cautionKeys": [
-          "engagement",
+          "collaboration",
           "resilience"
         ],
         "careerReadiness": {
@@ -147923,8 +152357,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": true
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 3,
+          "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.23,
           "checkinCount": 27,
@@ -147937,9 +152372,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 4,
           "punctuality": 1.25,
           "peopleSeriousness": 1.84,
-          "riskSignal": 0.48,
-          "collaborationReadinessScore": 68.25,
-          "profileScore": 3,
+          "riskSignal": 0.83,
+          "collaborationReadinessScore": 59.5,
+          "profileScore": 2,
           "lateCount": 5,
           "trajectory": {
             "earlyScore": 89.75,
@@ -147971,10 +152406,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 56.6,
-        "growthRankScore": 66.0,
-        "supportRankScore": 64,
-        "collaborationRankScore": 68.25,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "여",
+            "education": "을지대학교 유아교육학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 33,
+          "textLength": 14130,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 8종 · 반복 37회 · 문서 12건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 87회 · 문서 25건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 5종 · 반복 61회 · 문서 15건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 71회 · 문서 16건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 160회 · 문서 24건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 4.0,
+              "evidence": "정서/부담 표현 8종 · 반복 18회 · 문서 13건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.48,
+              "evidence": "탐색/불확실 표현 3종 · 반복 20회 · 문서 14건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "대학교 생활동안 다양한 아르바이트와 학생회를 병행하며 업무 적응 능력과 커뮤니케이션 능력을 키웠습니다. 졸업 후 학과 조교와 중견 기업의 전략기획 팀에서 실무 경험을 쌓으며 기획의 기초를 배울 수 있었습니다. 이후 본격적으로 취준을 하면서, 평소에 게임을 좋아하는 만큼 해당 업계에서 저의 전문성을 길러 안정적인 직장 생…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "웹페이지 이미지 및 시연 영상, 홍보용 배너 제작 qa 진행 과정에 참여를 거의 안해서 이후 아쉬움이 있긴합니다. 일정 상 포기해야하는 부분과 우선순위에 대해서 팀장님과의 의견 조율이 있었습니다. 팀장님 방향성에 대해서 이해하고 납득 할 수 있는 시간이었습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 이번 프로젝트에서 작성한 기획서는 협업 팀원 맞춤용 이었습니다. 개발자와 주로 함께 협업한 용준님이 이해 하시고 활용하기 편한 방향으로 생각하여 제작하였기에 제 기준으로 이해하기 쉬운 기획서는 아니었다고 생각합니다. 그래도 데이터 테이블 형식을 분석하고 활용하면서 새로운 양식으로 제 생각을 담아내는 법을…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 유저와 상호작용의 청사진을 그리는 기획자 게임 기획은 추상적인 기획 의도를 유저의 행동으로 구체화하는 것이라고 생각합니다 . 특히 , 양방향 소통이 가능한 게임 매체를 활용하여 유저의 능동적인 행동을 유도하는 게임을 기획하고자 합니다 . 학원에서 진행한 프로젝트에서 컨텐츠 시스템 및 밸런싱을…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 63.4,
+        "growthRankScore": 100.0,
+        "supportRankScore": 40,
+        "collaborationRankScore": 59.5,
         "careerRankScore": 85.0
       }
     },
@@ -150559,6 +155087,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 4,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 3,
@@ -151091,6 +155620,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.0/4",
               "프로젝트 역할 수행 1.9/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-7.8)"
             ]
           },
@@ -151106,9 +155636,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -151139,6 +155671,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -151184,6 +155717,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "한국영상대학교 / 특수영상제작과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 10130,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.7,
+              "evidence": "구체 표현 5종 · 반복 19회 · 문서 13건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 57회 · 문서 18건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 32회 · 문서 16건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 34회 · 문서 16건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 22종 · 반복 70회 · 문서 21건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.85,
+              "evidence": "정서/부담 표현 5종 · 반복 10회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.65,
+              "evidence": "탐색/불확실 표현 5종 · 반복 15회 · 문서 10건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 부트캠프에 지원한 이균호입니다. 게임기획을 공부하고 여러 회사에 지원해본 경력도 있지만 실제로 게임을 만들어본 경험이 없었고 매번 면접에서 고배를 마셨습니다. 이번 과정을 통해 여러 사람과 협업하고 직접 게임을 만들어보는 경험을 가지고 꼭 기획으로 취업하고 싶어서 지원하게 되었습니다. 본 과정에 지원하여 수…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "- QA 진행 하루 종일 QA를 진행하다 3시 쯤 되어서 테스트가 용이하라고 나온 기능을 보고 그 기능을 활용해 우리 게임의 문제점 중 하나를 해결할 아이디어를 냈었다. 정말 좋은 아이디어지만 마지막 날 늦은 시간이라 구현하기가 어렵다고 하셔서 좀 아쉬운 맘이 들었다. 왜 그 아이디어를 진즉 떠올리지 못했는지 모르겠다.…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 - 팀원 전체가 게임의 컨셉을 합의하여서 방향을 정하였고 이에 맞게 기획 방향성을 잘 따랐다고 생각합니다. - 기획서의 내용이 부족하여 개발자 분에게 구두로 전달한 사항이 꽤 많아서 아쉽습니다. 다만 작성한 플로우차트 내용에 한해서는 전달받은 분들이 잘 이해하셨습니다. 협업에 대하여 - 팀원들이 각자 맡은…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 57.4,
         "growthRankScore": 42.0,
@@ -152675,6 +157296,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 11,
         "attendanceRiskIssues": 1,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 7,
         "counselingCount": 2,
@@ -153092,6 +157714,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 0.0%",
               "회고 품질 1.0/4",
               "프로젝트 역할 수행 1.0/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+0.0)"
             ]
           },
@@ -153107,9 +157730,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 1건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 1/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -153140,6 +157765,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 1.0,
           "checkinCount": 0,
@@ -153163,6 +157789,79 @@ window.STUDENT_TIMELINE_DATA = {
             "label": "유지",
             "phaseScores": []
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 0,
+            "checkin": 0,
+            "retro": 0,
+            "careerDocument": 0
+          },
+          "sourceTotal": 1,
+          "textLength": 1105,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 1.44,
+              "evidence": "구체 표현 1종 · 반복 1회 · 문서 1건",
+              "level": "낮음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 1.79,
+              "evidence": "실행/개선 표현 2종 · 반복 10회 · 문서 1건",
+              "level": "낮음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 1.5,
+              "evidence": "회고/개선 표현 1종 · 반복 3회 · 문서 1건",
+              "level": "낮음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 1.59,
+              "evidence": "관계/협업 표현 2종 · 반복 2회 · 문서 1건",
+              "level": "낮음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 2.51,
+              "evidence": "진로/직무 표현 8종 · 반복 10회 · 문서 1건",
+              "level": "보통"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.0,
+              "evidence": "정서/부담 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 1.0,
+              "evidence": "탐색/불확실 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요, 미대입시 이후 25살 부터 6년간 의류회사에서 의류 디자인,의류 그래픽개발 및 생산을 담당하였습니다. 미래에는 회사에 종속되기 보다, 현자 '나'라는 사람을 브랜딩하고 무엇을 기획할 것인가? 가 가장 중요할것이라고 판단이 되었고, ai를 이용하여 1인개발 및 창업을 꿈꾸게 되었습니다. 제것을 만들기 이전에…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 1건에서 진로 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 30.0,
         "growthRankScore": 0.0,
@@ -155774,6 +160473,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 4,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 2,
         "counselingCount": 5,
@@ -156300,6 +161000,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 1.96/4",
               "프로젝트 역할 수행 1.9/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+11.2)"
             ]
           },
@@ -156315,9 +161016,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -156348,6 +161051,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -156393,6 +161097,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "전북대학교 무역학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 14738,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 49회 · 문서 14건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 142회 · 문서 30건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 55회 · 문서 20건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 92회 · 문서 18건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 19종 · 반복 72회 · 문서 18건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.14,
+              "evidence": "정서/부담 표현 4종 · 반복 11회 · 문서 9건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.16,
+              "evidence": "탐색/불확실 표현 4종 · 반복 15회 · 문서 8건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 이번에 경일 게임기획자 과정을 신청한 이도건이라고 합니다. 새로 어떤 분야를 처음부터 배우고 시작하기는 마냥 적은 나이는 아니고 이제껏 공부해온 전공관련 분야와는 무관하지만 무언가를 스스로 배우고 이 분야에서 일하고 싶다는 생각이 드는 것도 처음이라 열심히 해보려고 합니다. 앞서 적었듯이 저는 다른 분야를…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "오늘은 거의 나머지 이슈들을 수정한 최종 빌드들이 나와서 그 부분에 대해서 qa 위주로 진행했습니다. 누구 한사람 할 것 없이 다 열심히 해주셔서 완성이 된 것 같습니다. 개인적으로 사전합반 프로젝트가 시작되기 전에 기획반 자체로도 인원이 많을 뿐더러 프로그래밍 반과도 처음 합반을 하는 것이다 보니 팀 간 마찰이 있을까…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀적으로 리듬게임을 선정을 하였고 리듬게임 제작에 의욕과 열정은 있었지만 사실 리듬게임을 다양하게 즐기지 못하여 UI 기획을 맡게 되었을 때 게임 내 필요 UI가 어떤 것들이 있을까 파악하는 데 시간을 많이 소요한 것 같습니다. 또 리듬게임 내에서 노트 디자인적인 측면에서 노트의 길이를 임의로 늘리거나 줄…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 60.0,
         "growthRankScore": 83.0,
@@ -157016,7 +161808,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-10",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -157024,8 +161816,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "counseling-이도민-2026-04-13-3",
@@ -157138,7 +161930,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-30",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -157146,8 +161938,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 21,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         }
       ],
       "checkins": [
@@ -157468,9 +162260,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-10",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-14",
@@ -157508,9 +162300,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-30",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         }
       ],
       "projectTeamHistory": [
@@ -157853,7 +162645,23 @@ window.STUDENT_TIMELINE_DATA = {
       ],
       "learningFlowCases": [
         {
-          "caseId": "이도민-flow-2",
+          "caseId": "이도민-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 2건",
+            "14일 내 최대 1건",
+            "최소 발생 간격 20일",
+            "최근 발생일 2026-04-30"
+          ],
+          "startDate": "2026-04-10",
+          "endDate": "2026-04-30"
+        },
+        {
+          "caseId": "이도민-flow-3",
           "caseType": "reflection_growth_link",
           "label": "회고 기반 성장",
           "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
@@ -157862,13 +162670,13 @@ window.STUDENT_TIMELINE_DATA = {
           "evidence": [
             "회고 2건",
             "성찰 점수 4/4",
-            "초기 대비 성장 +1.00"
+            "초기 대비 성장 +1.33"
           ],
           "startDate": "2026-01-26",
           "endDate": "2026-02-27"
         },
         {
-          "caseId": "이도민-flow-1",
+          "caseId": "이도민-flow-2",
           "caseType": "counseling_recovery",
           "label": "면담 후 회복",
           "description": "면담 기록 이후 성장 곡선이 회복된 케이스",
@@ -157876,7 +162684,7 @@ window.STUDENT_TIMELINE_DATA = {
           "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
           "evidence": [
             "면담 4건",
-            "초기 대비 성장 +1.00",
+            "초기 대비 성장 +1.33",
             "성장 구간 3개"
           ],
           "startDate": "2025-12-16",
@@ -158017,14 +162825,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이도민-m6",
@@ -158032,43 +162840,43 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
         {
           "statusPeriodId": "이도민-status-1",
-          "statusType": "경고",
-          "severity": "warning",
+          "statusType": "주의",
+          "severity": "caution",
           "startDate": "2026-03-30",
-          "endDate": "2026-04-19",
+          "endDate": "2026-04-05",
           "reasonSummary": "면담 개입이 있었던 구간"
         },
         {
           "statusPeriodId": "이도민-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-04-27",
-          "endDate": "2026-05-03",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "statusType": "집중 관찰",
+          "severity": "warning",
+          "startDate": "2026-04-13",
+          "endDate": "2026-04-19",
+          "reasonSummary": "집중 확인이 필요한 구간"
         }
       ],
       "currentProfile": {
         "selfRegulation": 4,
-        "engagement": 2,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -158743,21 +163551,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-12",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 3,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-10"
             },
             {
@@ -158866,21 +163674,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-05-03",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-30"
             }
           ],
@@ -159153,7 +163961,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -159164,7 +163972,7 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotType": "현재",
             "scores": {
               "selfRegulation": 4,
-              "engagement": 2,
+              "engagement": 4,
               "collaboration": 3,
               "resilience": 3,
               "reflection": 4,
@@ -159179,14 +163987,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 9,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 1,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 2,
         "lateCount": 3,
         "absenceCount": 2,
         "counselingCount": 4,
@@ -159200,7 +164009,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "집중 관찰"
       },
       "milestones": [
         {
@@ -159561,7 +164370,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
@@ -159575,21 +164384,20 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
-          "growthDelta": -0.33,
+          "profileAverage": 3.33,
+          "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 6,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "counseling": 2,
             "project": 1,
             "career": 0,
@@ -159601,7 +164409,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-10",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -159655,7 +164463,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
@@ -159669,18 +164477,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 3.33,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
-            "engagement",
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -159695,11 +164502,11 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.0,
-        "profileIndex": 75,
-        "growthDelta": 1.0,
-        "growthIndex": 80,
-        "supportIndex": 56,
+        "profileAverage": 3.33,
+        "profileIndex": 83,
+        "growthDelta": 1.33,
+        "growthIndex": 90,
+        "supportIndex": 36,
         "tags": [
           "growth_high",
           "collaboration_strength",
@@ -159710,24 +164517,24 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 3.0/4",
-              "주의 프로파일 2개",
-              "현재 상태 주의"
+              "현재 평균 3.33/4",
+              "주의 프로파일 1개",
+              "현재 상태 집중 관찰"
             ]
           },
           "growth_high": {
             "qualified": true,
             "reasons": [
-              "초기 대비 성장 +1.00",
+              "초기 대비 성장 +1.33",
               "성장 구간 3개",
-              "현재 평균 3.0/4"
+              "현재 평균 3.33/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "현재 상태 주의"
+              "현재 상태 집중 관찰",
+              "학습 흐름 케이스 늦잠 지각 리듬 관찰"
             ]
           },
           "collaboration_strength": {
@@ -159737,6 +164544,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.3%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.35/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-15.0)"
             ]
           },
@@ -159752,9 +164560,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 1건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -159766,10 +164576,9 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "selfRegulation",
-          "reflection"
+          "engagement"
         ],
         "cautionKeys": [
-          "engagement",
           "careerAgency"
         ],
         "careerReadiness": {
@@ -159785,6 +164594,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 27,
@@ -159831,9 +164641,96 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 60.0,
-        "growthRankScore": 124.0,
-        "supportRankScore": 56,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "호서대학교 건축공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 4013,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.83,
+              "evidence": "구체 표현 6종 · 반복 17회 · 문서 10건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.65,
+              "evidence": "실행/개선 표현 5종 · 반복 17회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.12,
+              "evidence": "회고/개선 표현 3종 · 반복 13회 · 문서 7건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.81,
+              "evidence": "관계/협업 표현 7종 · 반복 21회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 13종 · 반복 28회 · 문서 10건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.99,
+              "evidence": "정서/부담 표현 2종 · 반복 3회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.85,
+              "evidence": "탐색/불확실 표현 4종 · 반복 9회 · 문서 6건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "구체성",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 오버워치 프로 팀 코치를 시작으로 젠지에 입사하여 4년간 근무 후 새로운 일을 배우고 싶어 지원하게 된 이도민 입니다. 잘 부탁 드리겠습니다. 저의 전 직업은 오버워치 코치로 젠지에서 많은 사람들을 가르쳐 왔습니다. 그런데 오버워치 입지가 많이 줄어들면서 코치에서 프로그램 기획 및 운영 부서로 옮기게 되었습…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "뉴 빌드 QA / 발표 내용 작성 없습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 게임의 흐름을 이해하기 위한 플로우 차트를 사용해 보는 것도 좋았을 것 같습니다. 협업에 대하여 사실 이번 프로젝트에서 협업이 매우 적어 따로 회고할 부분이 없다고 생각됩니다. 다음 프로젝트를 위해 이번 프로젝트는 팀이 아닌 개인 프로젝트 느낌이 강했습니다. 소통도 별로 없었고 그만큼 개발에 대한 의욕이…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 진로 언어, 구체성, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 66.6,
+        "growthRankScore": 157.0,
+        "supportRankScore": 40,
         "collaborationRankScore": 71.25,
         "careerRankScore": 34.62
       }
@@ -162523,6 +167420,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 10,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 1,
         "counselingCount": 5,
@@ -163069,6 +167967,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 95.8%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.09/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+2.0)"
             ]
           },
@@ -163084,9 +167983,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -163116,6 +168017,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.53,
           "checkinCount": 24,
@@ -163161,6 +168063,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "군산대학교/기계공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 28,
+          "textLength": 13228,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 8종 · 반복 35회 · 문서 11건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 56회 · 문서 20건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 40회 · 문서 12건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 41회 · 문서 9건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 23종 · 반복 92회 · 문서 16건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.02,
+              "evidence": "정서/부담 표현 2종 · 반복 4회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 7종 · 반복 22회 · 문서 12건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임(특히 포켓몬)을 좋아하고 모두가 좋아하는 국민게임을 기획하고싶은 이동우입니다. 대학교 졸업후 전북쪽 공기업을 준비하다가 도저히 저랑 안 맞는거 같아서 그만두고 새로운 길을 찾고자 지원하게 되었습니다. 처음에는 \"내가 좋아하는 일을 하면서 먹고 산다면 그것만큼 행복한 일은 없을 거같다\"는 유치한 생각으로…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "작성한 TC리스트를 이용해서 게임 qa작업, 버그 리포트 취합, git issue애 등록, 등록된 이슈들 고쳐진거 확인하고 이슈 닫기. 감사했습니다. 길게 쓰고싶은데 힘드네요.. 저에게 과분한 팀원들이였습니다 감사했습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 1. 팀에서 의도한 방향성을 기획하였는가? 넵, 팀의 방향성을 해치지 않으려고 작업물에 대한 팀원들의 의견이나 이미지의 느낌 등을 계속해서 물어봤던 것 같습니다. 2. 전달한 기획서는 다른 팀원에게 이해되었는가 아마도..? 시스템 기획서를 작성한 적이 있는데 기획서에 작성했던 시스템중 제법 많은 부분이 최…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 64.0,
         "growthRankScore": 83.0,
@@ -165858,6 +170847,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 5,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -166392,6 +171382,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.9/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+19.2)"
             ]
           },
@@ -166407,9 +171398,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -166437,6 +171430,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -166482,6 +171476,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "전주교육대학교/초등교육과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 11051,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.76,
+              "evidence": "구체 표현 7종 · 반복 28회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 71회 · 문서 16건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 54회 · 문서 9건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 32회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 126회 · 문서 24건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.14,
+              "evidence": "정서/부담 표현 3종 · 반복 4회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.57,
+              "evidence": "탐색/불확실 표현 7종 · 반복 18회 · 문서 5건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까, 유저의 입장에서 예상하고 개발자의 입장에서 구현하여 본질적 재미를 창조하고 싶은 이동현입니다. 크기만 한 꿈에 실질적인 뼈를 붙이고 싶어 왔습니다. 독학으로 기획 공부나 포트폴리오를 제작하고 있으나 실무 없이 만드는 탓에 너무 현실성이 없거나, 구조가 분명치 않거나, 가독성이 떨어지는 등의 문제가 인식되었…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "영상 편집 아무튼 내일 뭔가 보여드리겠습니다 감사합니다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-28",
+              "excerpt": "기획에 대하여 1. 우선 게임 제작 태도에서 각 팀원들의 성향을 파악했고 그에 따른 볼륨을 개발 고려해서 짠 편이었습니다. 중요 기획서는 어떤 방향으로 갈 지에 대해 계속 서로 논의했습니다. 2. 저희는 개별 문서 대신 피그마로 서로의 기획서를 같이 보고, 커서 공유나 팔로우 시스템이 상당히 도움이 많이 되었습니다. 정…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "저는 교육 현장에서 쌓은 관찰을 바탕으로, 플레이어가 어디에서 막히는지 살피고 그 흐름을 풀어내는 기획자 이동현입니다. 1. 왜 기획자가 되고 싶은가 저는 학습이 재미에서 시작해 지식으로 이어진다고 생각합니다. 그래서 학생들이 흥미를 느끼고 끝까지 따라오도록 수업 방식을 자주 바꿔 왔습니다. 영어 시간에는 PPT 게임을…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 71.4,
         "growthRankScore": 141.0,
@@ -166827,7 +171913,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-06",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -166835,15 +171921,15 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 9,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이석훈-2026-02-10-3",
           "date": "2026-02-10",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -166851,8 +171937,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 10,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이석훈-2026-02-12-5",
@@ -167149,7 +172235,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -167157,8 +172243,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 17,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-이석훈-2026-04-02",
@@ -167223,7 +172309,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-07",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -167231,8 +172317,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-이석훈-2026-04-08",
@@ -167253,7 +172339,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-08",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -167261,15 +172347,15 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이석훈-2026-04-10-3",
           "date": "2026-04-10",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -167277,8 +172363,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 18,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이석훈-2026-04-17-8",
@@ -167619,17 +172705,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-06",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-10",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-12",
@@ -167675,9 +172761,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-02",
@@ -167691,25 +172777,25 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-07",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-08",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-10",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-17",
@@ -168022,6 +173108,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "한줄평 많이 어린 인원. 하지만 열심히 하려고 하는 편으로 보임 특징 적극적 나이 24세(03년생) 긍정적관계 김범진 김윤규 윤유나 이석훈 이승진 부정적관계 게임 선호 발로란트 포켓몬스터 MBTI ENTP 희망 직무 🔖 총평(업데이트 날짜 : 4/8"
         },
         {
+          "from": "박현수",
+          "type": "complaint",
+          "snippet": "있었고, * 반대로 IP 확장/채용 수요가 있는 회사가 전략적으로 유리할 수 있다는 인식으로 연결됨. --- ### 8) 주요 논의 7 — 팀 내 이슈(이석훈 관련) 및 프로젝트 커뮤니케이션 관찰 * **학생 관찰** * 프로젝트 갈등은 “의도/맥락을 듣지 못하고 언어가 충돌”하는 구조에서 발생했다고 해석."
+        },
+        {
           "from": "서진호",
           "type": "praise",
           "snippet": "하는지 문서 작성을 하는 방법을 가장 먼저 단련해야겠다고 생각합니다. 아 물론 교과목 공부를 하는 것도 중요하기 때문에 개인 시간을 쓸 예정입니다! 칭찬합시다 이석훈님 - 해당 프로젝트의 스타팅 포인트를 잘 이끌어 주셔서 감사합니다. 박민규님 - Gems를 열심히 만들어 주셨기 때문에 해당 내용을 기반으로 이렇게 만들수…"
@@ -168038,7 +173129,7 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "이승구",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "서 불만이 자주 발생하는 편. E스포츠 코치 출신. 특징 의욕적 적극적 창업준비 나이 33세(94년생) 긍정적관계 맹지훈 부정적관계 이석훈 게임 선호 발더스게이트3 MBTI INFJ 희망 직무 🔖 총평(업데이트 날짜 : ) 게임 E스포츠 코치"
         },
         {
@@ -168048,7 +173139,7 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "이준혁",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "함 💡특이 사항 12/10(수) - 마케팅 경력 12/29(월) - 이석훈에 대한 불만 즐거운 분위기도 좋지만. 수강생 중 불필요한 언행, 강의 흐름을 방해하는 언행, 강의 내용과 동떨어진 언행 등을 하는 인원에게 주의를 부"
         },
         {
@@ -168062,7 +173153,56 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "기획이라고 이야기했습니다. ### 과정 - 과정초부터 이석훈 학생과 친하게 지내려고 했는데, 초면부터 말이 너무 쎘고... 그러다보니 멀어졌다고 합니다. - 이석훈 학생과는 프로젝트를 함께하고 싶지 않다고 합니다. -- 기획에 대하여 초반 팀에서 정한 기획 의도는 그대로 가져갔다고 생각한다. 하지만 주어진 시간에 게임을"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "이석훈-flow-3",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 3건",
+            "프로젝트 이슈 키워드 6건",
+            "박현수 언급: 있었고, * 반대로 IP 확장/채용 수요가 있는 회사가 전략적으로 유리할 수 있다는 인식으로 연결됨. --- ### 8) 주요 논의 7 — 팀 내 이슈(이석훈 관련) 및 프로젝트 커뮤니케이션 관찰 * **학생 관찰** * 프로젝트 갈등은 “의도/맥락을 듣지 못하고 언어가 충돌”하는 구조에서 발생했다고 해석.",
+            "이승구 언급: 서 불만이 자주 발생하는 편. E스포츠 코치 출신. 특징 의욕적 적극적 창업준비 나이 33세(94년생) 긍정적관계 맹지훈 부정적관계 이석훈 게임 선호 발더스게이트3 MBTI INFJ 희망 직무 🔖 총평(업데이트 날짜 : ) 게임 E스포츠 코치",
+            "이준혁 언급: 함 💡특이 사항 12/10(수) - 마케팅 경력 12/29(월) - 이석훈에 대한 불만 즐거운 분위기도 좋지만. 수강생 중 불필요한 언행, 강의 흐름을 방해하는 언행, 강의 내용과 동떨어진 언행 등을 하는 인원에게 주의를 부"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "이석훈-flow-1",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 6건",
+            "14일 내 최대 4건",
+            "최소 발생 간격 1일",
+            "최근 발생일 2026-04-10"
+          ],
+          "startDate": "2026-02-06",
+          "endDate": "2026-04-10"
+        },
+        {
+          "caseId": "이석훈-flow-2",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 7건",
+            "지연 체크인 2건",
+            "프로젝트 제출률 57.1%"
+          ],
+          "startDate": "2026-01-21",
+          "endDate": "2026-04-10"
+        }
+      ],
       "careerDocuments": {
         "rounds": [],
         "summary": {}
@@ -168183,13 +173323,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이석훈-m4",
@@ -168198,13 +173338,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이석훈-m5",
@@ -168213,13 +173353,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이석훈-m6",
@@ -168228,13 +173368,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -168250,36 +173390,28 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "이석훈-status-2",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2026-02-02",
-          "endDate": "2026-02-15",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "이석훈-status-3",
-          "statusType": "주의",
-          "severity": "caution",
           "startDate": "2026-02-23",
           "endDate": "2026-03-01",
           "reasonSummary": "출결 배경 확인이 필요한 구간"
         },
         {
-          "statusPeriodId": "이석훈-status-4",
+          "statusPeriodId": "이석훈-status-3",
           "statusType": "주의",
           "severity": "caution",
           "startDate": "2026-03-23",
-          "endDate": "2026-04-12",
+          "endDate": "2026-03-29",
           "reasonSummary": "프로젝트 활동이 밀집된 구간"
         }
       ],
       "currentProfile": {
         "selfRegulation": 1,
         "engagement": 2,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "자기조절 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -168634,21 +173766,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-08",
           "counts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-02-06"
             },
             {
@@ -168675,23 +173807,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-15",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 2,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-10"
-            },
             {
               "type": "project",
               "title": "2차 프로젝트 데일리 체크인",
@@ -168712,6 +173837,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "휴가",
               "severity": "info",
               "date": "2026-02-12"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-02-10"
             }
           ],
           "snapshot": null
@@ -168803,7 +173935,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -168815,7 +173947,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 1,
               "engagement": 1,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -168829,7 +173961,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -168954,23 +174086,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-05",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-01"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
@@ -168991,6 +174116,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "외출 (자리 비움)",
               "severity": "info",
               "date": "2026-04-02"
+            },
+            {
+              "type": "project",
+              "title": "3차 프로젝트 데일리 체크인",
+              "summary": "함수 정리/ 게임 구동부 작업중",
+              "severity": "info",
+              "date": "2026-04-01"
             }
           ],
           "snapshot": null
@@ -169002,36 +174134,22 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-12",
           "counts": {
             "attendance": 3,
-            "attendanceRisk": 3,
+            "attendanceRisk": 0,
             "project": 2,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호가 집중된 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-04-10"
-            },
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-08"
-            },
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-07"
             },
             {
               "type": "project",
@@ -169039,6 +174157,20 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "아무튼 큰일났습니다",
               "severity": "info",
               "date": "2026-04-08"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-04-08"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-04-07"
             }
           ],
           "snapshot": null
@@ -169399,7 +174531,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -169411,7 +174543,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 1,
               "engagement": 2,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 3
@@ -169425,14 +174557,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 26,
-        "attendanceRiskIssues": 6,
-        "healthAttendanceIssues": 1,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 7,
+        "conditionAttendanceIssues": 6,
         "lateCount": 7,
         "absenceCount": 6,
         "counselingCount": 3,
@@ -169622,7 +174755,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 1,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 3,
             "careerAgency": 3
@@ -169635,8 +174768,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.0,
-          "growthDelta": 0.33,
+          "profileAverage": 1.83,
+          "growthDelta": 0.16,
           "strengthKeys": [
             "reflection",
             "careerAgency"
@@ -169646,10 +174779,10 @@ window.STUDENT_TIMELINE_DATA = {
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 8,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 3,
             "career": 0,
@@ -169693,7 +174826,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-02-06",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             }
           ],
@@ -169716,7 +174849,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -169729,21 +174862,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.5,
+          "profileAverage": 2.33,
           "growthDelta": 0.5,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "careerAgency"
           ],
           "cautionKeys": [
             "selfRegulation",
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 6,
-            "attendanceRisk": 3,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -169810,7 +174943,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -169823,21 +174956,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.5,
+          "profileAverage": 2.33,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "careerAgency"
           ],
           "cautionKeys": [
             "selfRegulation",
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 4,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 1,
             "career": 0,
@@ -169849,7 +174982,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-10",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -169904,7 +175037,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 1,
             "engagement": 2,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 3
@@ -169917,18 +175050,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.5,
+          "profileAverage": 2.33,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
-            "collaboration"
+            "careerAgency"
           ],
           "cautionKeys": [
             "selfRegulation",
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -169943,11 +175076,11 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.5,
-        "profileIndex": 62,
-        "growthDelta": 0.17,
-        "growthIndex": 55,
-        "supportIndex": 100,
+        "profileAverage": 2.33,
+        "profileIndex": 58,
+        "growthDelta": 0.0,
+        "growthIndex": 50,
+        "supportIndex": 90,
         "tags": [
           "support_priority",
           "attendance_watch"
@@ -169957,36 +175090,37 @@ window.STUDENT_TIMELINE_DATA = {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.5/4",
-              "주의 프로파일 3개",
+              "현재 평균 2.33/4",
+              "주의 프로파일 4개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.17",
+              "초기 대비 성장 +0.00",
               "성장 구간 2개",
-              "현재 평균 2.5/4"
+              "현재 평균 2.33/4"
             ]
           },
           "support_priority": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 6건",
               "프로젝트 제출률 57.1%",
               "현재 상태 주의",
               "프로파일 1점 이하 영역 존재",
-              "주의 프로파일 3개"
+              "주의 프로파일 4개",
+              "학습 흐름 케이스 협업 갈등 신호, 늦잠 지각 리듬 관찰, 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 87.5%",
               "회고 품질 2.24/4",
               "프로젝트 역할 수행 2.41/4",
+              "타 학생 불만/갈등 언급 3건",
               "협업 변화 개선 (+23.2)"
             ]
           },
@@ -170002,9 +175136,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 6건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 7건",
+              "컨디션 케이스 2건",
               "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -170016,7 +175152,7 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "reflection",
-          "collaboration"
+          "careerAgency"
         ],
         "cautionKeys": [
           "selfRegulation",
@@ -170033,8 +175169,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 11,
+          "peerPraiseCount": 9,
           "peerAvoidCount": 2,
+          "peerComplaintCount": 3,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.28,
           "checkinCount": 16,
@@ -170047,9 +175184,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 6,
           "punctuality": 1.0,
           "peopleSeriousness": 2.08,
-          "riskSignal": 0.72,
-          "collaborationReadinessScore": 64.5,
-          "profileScore": 3,
+          "riskSignal": 1.77,
+          "collaborationReadinessScore": 42.0,
+          "profileScore": 2,
           "lateCount": 7,
           "trajectory": {
             "earlyScore": 51.25,
@@ -170081,10 +175218,98 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 38.0,
-        "growthRankScore": 33.0,
-        "supportRankScore": 148,
-        "collaborationRankScore": 64.5,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "학점은행제 과정 컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 16,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 20,
+          "textLength": 10529,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.5,
+              "evidence": "구체 표현 7종 · 반복 24회 · 문서 5건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 54회 · 문서 6건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 5종 · 반복 47회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 44회 · 문서 5건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 26종 · 반복 66회 · 문서 6건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.33,
+              "evidence": "정서/부담 표현 7종 · 반복 17회 · 문서 5건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.17,
+              "evidence": "탐색/불확실 표현 3종 · 반복 21회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "심리학 공부하다가 올해 컴퓨터 공학으로 전과하면서 CS지식을 쌓는중입니다. 1학기동안은 C언어를 열심히 해서 C언어 교재의 모든 예제를 풀어봤습니다. 2학기(현재)는 DB관련해서 구조와 SQL공부에 집중하면서 대학 게임개발 동아리에서 기획파트로 프로젝트 참여중입니다. 플머 팀원이 제작한 간단한 코드는 읽고 이해할 수 있…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "아무튼 큰일났습니다 진짜 큰일났습니다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 기획파트를 맡은 각 멤버가 스스로 자립하여 팀원들에게 이해할 수 있는 기획서 를 쓸수 있도록 예시 등을 보여주며 지원했습니다. 구두로 소통하여 히스토리가 남지 않을뻔 했는데 각자가 재미에 대해 깊은 이해를 거쳐 팀이 재미에 대한 논의를 깊게 할 수 있도록 유도했습니다. 최종적으로는 모두가 서로의 생각에 대…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 20건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 34.6,
+        "growthRankScore": 16.0,
+        "supportRankScore": 100,
+        "collaborationRankScore": 42.0,
         "careerRankScore": 61.75
       }
     },
@@ -170419,7 +175644,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-06",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -170427,8 +175652,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 13,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-이승구-2026-03-18",
@@ -171064,9 +176289,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-06",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-30",
@@ -171658,7 +176883,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이승구-m5",
@@ -171673,7 +176898,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이승구-m6",
@@ -171688,19 +176913,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "이승구-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-02",
-          "endDate": "2026-03-08",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
@@ -171709,7 +176925,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -172156,21 +177372,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-08",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-03-06"
             },
             {
@@ -172791,7 +178007,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -172817,14 +178033,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 4,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 2,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -172838,7 +178055,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -173131,10 +178348,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -173154,7 +178371,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-06",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -173224,7 +178441,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -173317,7 +178534,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -173336,7 +178553,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 75,
         "growthDelta": 0.67,
         "growthIndex": 70,
-        "supportIndex": 28,
+        "supportIndex": 0,
         "tags": [
           "steady_path"
         ],
@@ -173347,7 +178564,7 @@ window.STUDENT_TIMELINE_DATA = {
             "reasons": [
               "현재 평균 3.0/4",
               "주의 프로파일 1개",
-              "현재 상태 주의"
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
@@ -173361,7 +178578,7 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의"
+              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
             ]
           },
           "collaboration_strength": {
@@ -173371,6 +178588,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.24/4",
               "프로젝트 역할 수행 2.08/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+13.2)"
             ]
           },
@@ -173386,9 +178604,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -173418,6 +178638,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 5,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -173464,9 +178685,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 64.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "남성고등학교 / 전공 없음",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 32,
+          "textLength": 20486,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 66회 · 문서 13건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 12종 · 반복 66회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 9종 · 반복 56회 · 문서 9건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 90회 · 문서 15건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 31종 · 반복 291회 · 문서 19건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.06,
+              "evidence": "정서/부담 표현 5종 · 반복 7회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 6종 · 반복 45회 · 문서 14건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요 저는 게임 기획자를 지망하는 이승구 입니다. 기존에 많은 게임을 경험했고 이 전에는 e스포츠 코치, e스포츠 관련 서비스 기획 팀원으로 일한 경험이 있습니다. 해당 코치 직무를 통해서 분석력과 커뮤니케이션 능력을 키웠고, 기획자로서는 데이터 구조 및 테이블 설계, 데이터 분석 등의 업무를 담당했었습니다. 이번…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "1. 깃이슈 2. 회고 기획반 플밍반 모두 고생 많았던 것 같습니다. 프로젝트 기간동안 본인이 목표로한 부분들을 잘 달성했기를 바랍니다. 프로젝트 중반에서 후반기로 넘어 갈 때 할 일을 나름대로 찾고있었지만 잘 발견하지 못했던게 조금 아쉬움으로 남는 것 같습니다. 마지막까지 좋은 태도를 유지하지 못한 것 같아 스스로 반…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-01",
+              "excerpt": "기획에 대하여 PM으로서 직접 기획서를 작성 하지 않았지만 기획된 문서를 개발자에게 전달 했을 때 피드백 받고 해당 내용의 일부분을 개발자에게 작성해서 전달했을 때에는 잘 이해된다고 하셨었습니다. 다만 개발자와 저도 모두 빠뜨린 부분이 있는데 화면상 상호작용이나 기획의도가 불분명한 경우도 많았던 것 같습니다. 데미지 출…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- “경험을 구조로 설계하고, 설득력을 데이터로 갖추는 지원자입니다.” 1. 기획자 지원 동기 기획자를 지원하게 된 동기는 저 스스로가 분석하고 설계하며 규격화 시키는 것을 좋아 하고 즐긴다는 것에 대한 자각이었습니다. 게임의 승패를 가르는 요인을 고민하던 플레이어 시절의 저는 피지컬을 훈련하기…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 68.0,
         "growthRankScore": 83.0,
-        "supportRankScore": 28,
+        "supportRankScore": 0,
         "collaborationRankScore": 65.25,
         "careerRankScore": 78.0
       }
@@ -174870,13 +180184,40 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "오종호",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "기획을 과감하게 밀어붙이고 그걸 뒷받침하는 자료와 열정을 가지신분. 이가현님: 팀의 분위기를 살리며 기획과 개발의 밸런스를 잡아주고 브레이크 담당도 해주신분. 이승진님: 묵묵히 팀의 요구를 불만없이 받아 진행해주신분. 곽용준님: 엄청 노력하며, 반복작업 역시 힘든내색 없이 계속 해주신분. 팀장 선호도 조사 1.0 이유 자"
+        },
+        {
+          "from": "이형진",
+          "type": "complaint",
+          "snippet": "P 사에 대한 발표 진행, 이세돌 좋아한다고 밝힘, 여러 굿즈 보유중 3/6(목) - 짧은 면담 진행 메월드 프로젝트에서 이승진 학생과 있었던 갈등에 대해 물어봄 이승진 학생의 결과물이 거의 없다시피 한 수준이었던 것도 있지만, 본인이 개발에 빠져있어 제대로 된 작업 지시를 주지"
+        },
+        {
+          "from": "이형진",
+          "type": "complaint",
+          "snippet": ", 여러 굿즈 보유중 3/6(목) - 짧은 면담 진행 메월드 프로젝트에서 이승진 학생과 있었던 갈등에 대해 물어봄 이승진 학생의 결과물이 거의 없다시피 한 수준이었던 것도 있지만, 본인이 개발에 빠져있어 제대로 된 작업 지시를 주지 못한 탓도 있었다고 반성함 어느정도"
         }
       ],
       "learningFlowCases": [
         {
-          "caseId": "이승진-flow-2",
+          "caseId": "이승진-flow-1",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 3건",
+            "프로젝트 이슈 키워드 11건",
+            "오종호 언급: 기획을 과감하게 밀어붙이고 그걸 뒷받침하는 자료와 열정을 가지신분. 이가현님: 팀의 분위기를 살리며 기획과 개발의 밸런스를 잡아주고 브레이크 담당도 해주신분. 이승진님: 묵묵히 팀의 요구를 불만없이 받아 진행해주신분. 곽용준님: 엄청 노력하며, 반복작업 역시 힘든내색 없이 계속 해주신분. 팀장 선호도 조사 1.0 이유 자",
+            "이형진 언급: P 사에 대한 발표 진행, 이세돌 좋아한다고 밝힘, 여러 굿즈 보유중 3/6(목) - 짧은 면담 진행 메월드 프로젝트에서 이승진 학생과 있었던 갈등에 대해 물어봄 이승진 학생의 결과물이 거의 없다시피 한 수준이었던 것도 있지만, 본인이 개발에 빠져있어 제대로 된 작업 지시를 주지",
+            "이형진 언급: , 여러 굿즈 보유중 3/6(목) - 짧은 면담 진행 메월드 프로젝트에서 이승진 학생과 있었던 갈등에 대해 물어봄 이승진 학생의 결과물이 거의 없다시피 한 수준이었던 것도 있지만, 본인이 개발에 빠져있어 제대로 된 작업 지시를 주지 못한 탓도 있었다고 반성함 어느정도"
+          ],
+          "startDate": "",
+          "endDate": ""
+        },
+        {
+          "caseId": "이승진-flow-3",
           "caseType": "career_revision_progress",
           "label": "진로 문서 개선",
           "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
@@ -174891,7 +180232,7 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-05-03"
         },
         {
-          "caseId": "이승진-flow-1",
+          "caseId": "이승진-flow-2",
           "caseType": "reflection_growth_link",
           "label": "회고 기반 성장",
           "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
@@ -175044,13 +180385,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "이승진-m3",
@@ -175059,13 +180400,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "이승진-m4",
@@ -175417,7 +180758,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 1
@@ -175589,7 +180930,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -175601,7 +180942,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -175615,7 +180956,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -176238,6 +181579,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 3,
@@ -176333,7 +181675,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 1
@@ -176346,18 +181688,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": 1.0,
+          "profileAverage": 2.5,
+          "growthDelta": 0.83,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
           ],
           "cautionKeys": [
-            "careerAgency",
-            "collaboration"
+            "collaboration",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -176427,7 +181769,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -176440,18 +181782,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.0,
+          "profileAverage": 2.83,
           "growthDelta": 0.33,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -176535,7 +181877,7 @@ window.STUDENT_TIMELINE_DATA = {
             "selfRegulation"
           ],
           "profileAverage": 2.83,
-          "growthDelta": -0.17,
+          "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -176752,7 +182094,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 79,
         "growthDelta": 1.5,
         "growthIndex": 95,
-        "supportIndex": 0,
+        "supportIndex": 18,
         "tags": [
           "growth_high"
         ],
@@ -176777,7 +182119,7 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
@@ -176787,6 +182129,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 1.96/4",
               "프로젝트 역할 수행 1.9/4",
+              "타 학생 불만/갈등 언급 3건",
               "협업 변화 하락 (-10.8)"
             ]
           },
@@ -176802,9 +182145,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -176833,8 +182178,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": true
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 4,
+          "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 3,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -176847,8 +182193,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 11,
           "punctuality": 4.0,
           "peopleSeriousness": 2.08,
-          "riskSignal": 1.32,
-          "collaborationReadinessScore": 61.0,
+          "riskSignal": 2.37,
+          "collaborationReadinessScore": 38.5,
           "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
@@ -176881,10 +182227,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 71.4,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "사회복지학과 자퇴",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 33,
+          "textLength": 28377,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 10종 · 반복 109회 · 문서 25건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 140회 · 문서 30건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 7종 · 반복 80회 · 문서 19건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 168회 · 문서 28건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 32종 · 반복 288회 · 문서 22건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 4.0,
+              "evidence": "정서/부담 표현 6종 · 반복 34회 · 문서 18건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 7종 · 반복 81회 · 문서 25건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임 개발자를 꿈꾸고 있는 청년입니다. 평소 콘솔 게임, 모바일 게임 꾸준히 즐겨하는 편으로 게임을 즐기는 과정에서 제작하는 과정으로 넘어가고싶단 마음이 생겨서 게임 기획자 부트캠프에 지원하게 되었습니다. 비전공자다보니 어디서부터 시작해야할지 막막한 상황에 유튜브 광고를 통해 경일게임IT아카데미를 알게 되었…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "플레이 테스트, 발표 준비 오늘은 사실 플레이 테스트 하면서 밸런스 조절하고 발표 준비하면서 하루를 보냈습니다. 밸런스 담당자가 따로 있어서 전 플레이 테스트 하면서 의견만 전달하는 정도였지만 그래도 제 의견이 받아들여지긴 했습니다. 발표 시간이 워낙 촉박하다보니 PPT도 되게 단순해졌는데 내일 발표 잘 되었으면 좋겠네…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 게임 컨셉은 다른 분이 맡았지만 세계관, 캐릭터, 배경, 몬스터, 보스 등의 컨셉은 제가 담당했었습니다. 팀에서 의도한 방향성을 기획했다기보단 그 방향성 자체를 먼저 기획하는게 제 역할이 아니었나 생각합니다. 다만 제가 설정한 방향성에 애매하거나 모호한 부분이 많아서 수정된게 많긴 했습니다. 저는 팀원들과…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 3 회의 팀 프로젝트에서 콘텐츠 흐름을 설계하고 작업 효율을 개선해온 게임 기획자 지원 동기 안녕하세요 . 콘텐츠 경험을 설계하는 기획자를 목표로 지원한 이승진입니다 . 저는 기종과 장르를 가리지 않고 다양한 게임을 플레이하며 , 게임 커뮤니티에서 유저들과 의견을 나누는 것을 즐겨왔습니다 .…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 67.4,
         "growthRankScore": 174.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 61.0,
+        "supportRankScore": 20,
+        "collaborationRankScore": 38.5,
         "careerRankScore": 71.88
       }
     },
@@ -177143,7 +182582,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-28",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -177151,8 +182590,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 8,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이영우-2026-02-10-3",
@@ -178063,9 +183502,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-28",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-10",
@@ -178669,7 +184108,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이영우-m4",
@@ -178684,7 +184123,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이영우-m5",
@@ -178699,7 +184138,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이영우-m6",
@@ -178714,7 +184153,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -178725,14 +184164,6 @@ window.STUDENT_TIMELINE_DATA = {
           "startDate": "2025-12-08",
           "endDate": "2025-12-14",
           "reasonSummary": "안정적인 학습 흐름"
-        },
-        {
-          "statusPeriodId": "이영우-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-01-26",
-          "endDate": "2026-02-01",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
         }
       ],
       "currentProfile": {
@@ -178743,7 +184174,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -179029,21 +184460,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-01",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 1,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-01-28"
             },
             {
@@ -179261,7 +184692,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "진로 목적성 구체화 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -179287,7 +184718,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "진로 목적성 구체화 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -179899,7 +185330,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -179925,14 +185356,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 13,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 7,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 8,
+        "conditionAttendanceIssues": 1,
         "lateCount": 9,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -180145,10 +185577,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 9,
             "career": 0,
@@ -180168,7 +185600,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-01-28",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -180239,7 +185671,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -180332,7 +185764,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 5,
             "attendanceRisk": 0,
@@ -180425,7 +185857,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -180444,7 +185876,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 79,
         "growthDelta": 1.17,
         "growthIndex": 85,
-        "supportIndex": 46,
+        "supportIndex": 36,
         "tags": [
           "growth_high"
         ],
@@ -180480,6 +185912,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.29/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+5.8)"
             ]
           },
@@ -180495,9 +185928,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 8건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -180527,6 +185962,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -180573,9 +186009,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "한성대학교 컴퓨터 공학과 디지털콘텐츠 • 가상현실트랙",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 2
+          },
+          "sourceTotal": 33,
+          "textLength": 15381,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 8종 · 반복 35회 · 문서 10건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 69회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 45회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 39회 · 문서 8건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 208회 · 문서 17건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.88,
+              "evidence": "정서/부담 표현 4종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.89,
+              "evidence": "탐색/불확실 표현 3종 · 반복 10회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "어릴적 PlayX4에서 가족들과 다같이 웃으며 게임을 레이싱 게임을 하는 장면을 보았습니다. 그때 아 나도 이걸 만들고 싶다. 세상을 즐겁게 하고 싶다는 생각을 하였습니다. 관련 대학을 전공하고 동아리에서 다양한 프로젝트를 하며 졸업을 앞두고 좀 더 실력을 키우고 싶다는 생각을 하여 지원하게 되었습니다. 반년 정도 일본…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "밸런스 패치 https://www.youtube.com/watch?v=kBkM73J84mY"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 줄 글 위주로 작성하여 전달하였습니다. 스스로 작성한 기획서로 개발을 진행하여 전달 여부를 피드백 받지 못했습니다. 팀내의 용어가 적립되지 않아 살짝 중구난방이 된 것 같습니다. 협업에 대하여 공유는 빠르고 자주 진행하였습니다. 제 욕심 때문에 팀원들에게 많은 짐을 짊어지게 만든 것 같습니다. 다음 프로젝…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 따뜻한 심장과 논리적인 뇌로 즐거운 세상을 만드는 기획자 이영우 입니다 . 변경사항 - 2026-04-26 : 개발자 -> 기획자로 진로를 바꾼 이유에 대한 사례 언급 세부 직무에 대한 지망의 이유와 근거 목차 1. 지원 동기 및 성장 배경 1.1. 게임 기획자를 지망하게 된 이유 1.2. 게…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 33건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
         "profileRankScore": 63.4,
         "growthRankScore": 141.0,
-        "supportRankScore": 48,
+        "supportRankScore": 40,
         "collaborationRankScore": 71.25,
         "careerRankScore": 71.88
       }
@@ -183395,6 +188924,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 9,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -183922,6 +189452,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.96/4",
               "프로젝트 역할 수행 1.66/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-3.2)"
             ]
           },
@@ -183937,9 +189468,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -183967,6 +189500,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -184012,6 +189546,96 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "수원대학교 융합화학산업학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 7590,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.93,
+              "evidence": "구체 표현 8종 · 반복 30회 · 문서 7건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 39회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 28회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 30회 · 문서 5건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 30종 · 반복 91회 · 문서 11건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.59,
+              "evidence": "정서/부담 표현 2종 · 반복 2회 · 문서 1건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.24,
+              "evidence": "탐색/불확실 표현 3종 · 반복 8회 · 문서 3건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "현재 수원대학교 융합화학산업학과에 재학 중인 이원홍 입니다. 비록 기획부분이 전공은 아니지만 게임 기획에 관심이 생겨 이 프로그램에 신청하게되었습니다. 전공이 아닌만큼 모르는부분이 많지만, 그렇기 때문에 더더욱 열정적으로 배울수있다고 생각합니다. 어릴 때부터 했습니게임을 좋아다. 아버지와 함께하던 콘솔게임부터 초등학생때…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "QA하기 고생하셨습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 처음에는 기획서를 제출했을때 너무 간략하게 줄이다보니 \"이건 왜 그런거에요?\"라는 질문이 많이나와 조금 더 구체적으로 써야겠다는것을 알았고, 그 이후 기획서를 다시 제출하는 과정에서 이러면 내가 봐도 이해가 쉽겠다 싶은 느낌이 들어 성장했다는 걸 느꼈다. 협업에 대하여 1. O 건설적인 대화를 진행했다.…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "문제의 본질을 찾아내어 최선의 결과값을 찾는 지원자, 이원홍입니다. 1. 지원 동기 전형적으로, 저를 포함한 많은 지원자가 지원동기에서 어린시절을 언급하곤합니다. 하지만 역설적으로, 제가 게임 업계의 지원자가 된 이유, 그리고 기획 설계 철학의 근간을 설명하기 위하여 이 이야기를 꺼내지 않을수는 없습니다. 어린 시절 아…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
         },
         "profileRankScore": 78.0,
         "growthRankScore": 141.0,
@@ -184111,7 +189735,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-26",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -184119,8 +189743,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 3,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-이유송-2026-01-09-3",
@@ -184575,6 +190199,22 @@ window.STUDENT_TIMELINE_DATA = {
           "isEstimated": false
         },
         {
+          "id": "attendance-이유송-2026-04-14-5",
+          "date": "2026-04-14",
+          "endDate": "",
+          "type": "attendance",
+          "severity": "info",
+          "title": "출결 이슈 · 지각",
+          "summary": "지각 (늦잠)",
+          "detail": "지각 (늦잠)",
+          "projectPhase": "",
+          "sourceLabel": "출결 기입 시트",
+          "relatedWeek": 19,
+          "isEstimated": false,
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
+        },
+        {
           "id": "counseling-이유송-2026-04-14-2",
           "date": "2026-04-14",
           "endDate": "",
@@ -184587,22 +190227,6 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "면담 기록",
           "relatedWeek": 19,
           "isEstimated": false
-        },
-        {
-          "id": "attendance-이유송-2026-04-14-5",
-          "date": "2026-04-14",
-          "endDate": "",
-          "type": "attendance",
-          "severity": "caution",
-          "title": "출결 이슈 · 지각",
-          "summary": "지각 (늦잠)",
-          "detail": "지각 (늦잠)",
-          "projectPhase": "",
-          "sourceLabel": "출결 기입 시트",
-          "relatedWeek": 19,
-          "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
         },
         {
           "id": "attendance-이유송-2026-04-17-8",
@@ -184920,9 +190544,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-26",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-09",
@@ -184944,9 +190568,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-14",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-17",
@@ -185399,7 +191023,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이유송-m3",
@@ -185414,7 +191038,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이유송-m4",
@@ -185429,7 +191053,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이유송-m5",
@@ -185437,14 +191061,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이유송-m6",
@@ -185452,14 +191076,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -185467,36 +191091,20 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "이유송-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2025-12-22",
-          "endDate": "2025-12-28",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "이유송-status-2",
-          "statusType": "주의",
-          "severity": "caution",
           "startDate": "2026-03-23",
           "endDate": "2026-03-29",
           "reasonSummary": "프로젝트 활동이 밀집된 구간"
-        },
-        {
-          "statusPeriodId": "이유송-status-3",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-04-13",
-          "endDate": "2026-04-19",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
         }
       ],
       "currentProfile": {
         "selfRegulation": 3,
-        "engagement": 2,
+        "engagement": 3,
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -185620,21 +191228,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2025-12-28",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2025-12-26"
             }
           ],
@@ -185780,7 +191388,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "협업 상황 면담 권장",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-01-26"
             }
@@ -185806,7 +191414,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "협업 상황 면담 권장"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -185972,7 +191580,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -185998,7 +191606,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -186198,23 +191806,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-19",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 1,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-14"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 휴가",
@@ -186226,6 +191827,13 @@ window.STUDENT_TIMELINE_DATA = {
               "type": "counseling",
               "title": "2차 정기 면담",
               "summary": "### 내용 ### 진로 - 처음에는 시스템이었는데 지금은 경험의 설계인 레벨디자인과 PM에 흥미가 있다고 합니다. - 다음 프로젝트에서는 어떤 포지션으로 하는 것이 미래에 도움이 될지 고민이 된다고 합니다. - 나이가 적지 않은 상황으로 기업과 소…",
+              "severity": "info",
+              "date": "2026-04-14"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-04-14"
             }
@@ -186561,7 +192169,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -186572,7 +192180,7 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotType": "현재",
             "scores": {
               "selfRegulation": 3,
-              "engagement": 2,
+              "engagement": 3,
               "collaboration": 3,
               "resilience": 2,
               "reflection": 4,
@@ -186587,14 +192195,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 7,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 2,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 4,
+        "conditionAttendanceIssues": 2,
         "lateCount": 2,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -186714,10 +192323,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 5,
             "career": 0,
@@ -186729,7 +192338,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2025-12-26",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -186808,7 +192417,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -186902,7 +192511,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -186971,7 +192580,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -186985,21 +192594,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": -0.16,
+          "profileAverage": 2.83,
+          "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 4,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 1,
             "career": 0,
@@ -187007,20 +192616,20 @@ window.STUDENT_TIMELINE_DATA = {
           },
           "events": [
             {
+              "id": "attendance-이유송-2026-04-14-5",
+              "date": "2026-04-14",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "type": "attendance"
+            },
+            {
               "id": "counseling-이유송-2026-04-14-2",
               "date": "2026-04-14",
               "title": "2차 정기 면담",
               "summary": "### 내용 ### 진로 - 처음에는 시스템이었는데 지금은 경험의 설계인 레벨디자인과 PM에 흥미가 있다고 합니다. - 다음 프로젝트에서는 어떤 포지션으로 하는 것이 미래에 도움이 될지 고민이 된다고 합니다. - 나이가 적지 않은 상황으로 기업과 소…",
               "severity": "info",
               "type": "counseling"
-            },
-            {
-              "id": "attendance-이유송-2026-04-14-5",
-              "date": "2026-04-14",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "type": "attendance"
             },
             {
               "id": "attendance-이유송-2026-04-17-8",
@@ -187065,7 +192674,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 3,
             "collaboration": 3,
             "resilience": 2,
             "reflection": 4,
@@ -187079,18 +192688,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 2.83,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "engagement",
-            "resilience"
+            "resilience",
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -187105,39 +192714,36 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.67,
-        "profileIndex": 67,
-        "growthDelta": 0.34,
-        "growthIndex": 60,
-        "supportIndex": 74,
+        "profileAverage": 2.83,
+        "profileIndex": 71,
+        "growthDelta": 0.5,
+        "growthIndex": 65,
+        "supportIndex": 18,
         "tags": [
-          "support_priority",
-          "attendance_watch"
+          "steady_path"
         ],
-        "primaryTag": "support_priority",
+        "primaryTag": "steady_path",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.67/4",
-              "주의 프로파일 3개",
+              "현재 평균 2.83/4",
+              "주의 프로파일 2개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.34",
+              "초기 대비 성장 +0.50",
               "성장 구간 2개",
-              "현재 평균 2.67/4"
+              "현재 평균 2.83/4"
             ]
           },
           "support_priority": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "현재 상태 주의",
-              "주의 프로파일 3개"
+              "현재 상태 주의"
             ]
           },
           "collaboration_strength": {
@@ -187147,6 +192753,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 95.8%",
               "회고 품질 2.12/4",
               "프로젝트 역할 수행 2.31/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+2.5)"
             ]
           },
@@ -187160,15 +192767,17 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 4건",
+              "컨디션 케이스 0건",
+              "참여 지속성 3/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -187179,8 +192788,8 @@ window.STUDENT_TIMELINE_DATA = {
           "selfRegulation"
         ],
         "cautionKeys": [
-          "engagement",
-          "resilience"
+          "resilience",
+          "careerAgency"
         ],
         "careerReadiness": {
           "purposeClarity": 1.3,
@@ -187195,6 +192804,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.53,
           "checkinCount": 24,
@@ -187241,9 +192851,97 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 49.4,
-        "growthRankScore": 50.0,
-        "supportRankScore": 76,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "35-39세",
+            "gender": "여",
+            "education": "동아대 / 호텔컨벤션경영학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 28,
+          "textLength": 8820,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.9,
+              "evidence": "구체 표현 6종 · 반복 17회 · 문서 11건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 46회 · 문서 20건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.76,
+              "evidence": "회고/개선 표현 3종 · 반복 32회 · 문서 9건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 58회 · 문서 14건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 17종 · 반복 48회 · 문서 12건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.04,
+              "evidence": "정서/부담 표현 5종 · 반복 9회 · 문서 7건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.88,
+              "evidence": "탐색/불확실 표현 7종 · 반복 29회 · 문서 11건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 저는 스토리 기반 영상 콘텐츠 기획을 해오며, 현재에는 AI캐릭터 숏폼 콘텐츠 제작을 하고 있습니다. 영화,드라마 등 영상 콘텐츠에서 더 나아가 새로운 플랫폼인 게임 기획으로 확장하고자 합니다. 본 과정에 지원하였습니다. 30대의 저는 영화기획자가 되기 위해 고군분투했지만 원하는 목표에 도달하지 못했습니다.…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 드디어 마지막날이다! 그동안 많이 배웠습니다...PM 은퇴의 날이 머지않았네요...ㅠㅠ"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 비교적 컨셉이나 기획이 명확해서 방향성이 엇나가거나 어려운 지점은 없었다. 다만 미니게임에 대한 개인의 기획을 할때 '나만의, 특별함, 세상에는 없는' 과 같은 단어가 전혀 어울리지 않는 게임이라는 걸 알게 되었고, 10개의 게임 중 하나, 30초 안에 재미를 줄 수 있을 것, 3분 이내로 게임이 끝날 것…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 60.6,
+        "growthRankScore": 66.0,
+        "supportRankScore": 20,
         "collaborationRankScore": 64.0,
         "careerRankScore": 45.62
       }
@@ -187339,7 +193037,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-09",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -187347,8 +193045,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 5,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "1차 프로젝트-이정헌-2026-01-20",
@@ -188122,9 +193820,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-09",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-24",
@@ -188537,7 +194235,23 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "의견 토론에서 개인적인 감정이 조금 들어간 것 같습니다. 다음 프로젝트를 위해 다음에는 회의 내용에 대한 기록을 더 꼼꼼히 작성해볼 생각입니다. 칭찬합시다 이정헌 팀장님의 기획적 장점은 명확한 목표 설정(프로젝트 완성)및 제시, 그것을 위해 팀이 감당하기 힘든 의견을 잘라내는 결단력이라 생각했습니다. 자유로운 한마디 스"
         }
       ],
-      "learningFlowCases": [],
+      "learningFlowCases": [
+        {
+          "caseId": "이정헌-flow-1",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 2건",
+            "지연 체크인 3건",
+            "프로젝트 제출률 92.9%"
+          ],
+          "startDate": "2026-01-09",
+          "endDate": "2026-04-24"
+        }
+      ],
       "careerDocuments": {
         "rounds": [
           {
@@ -188705,7 +194419,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이정헌-m6",
@@ -188720,20 +194434,12 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
         {
           "statusPeriodId": "이정헌-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-01-05",
-          "endDate": "2026-01-11",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "이정헌-status-2",
           "statusType": "주의",
           "severity": "caution",
           "startDate": "2026-03-23",
@@ -188749,7 +194455,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "협업 상황 면담 권장",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -188911,21 +194617,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-11",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-01-09"
             }
           ],
@@ -189788,7 +195494,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "협업 상황 면담 권장",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -189814,14 +195520,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "협업 상황 면담 권장"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 2,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 1,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 0,
@@ -189944,7 +195651,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 5,
             "career": 0,
@@ -189956,7 +195663,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-01-09",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -190223,7 +195930,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -190309,7 +196016,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -190328,11 +196035,11 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 75,
         "growthDelta": 0.67,
         "growthIndex": 70,
-        "supportIndex": 28,
+        "supportIndex": 36,
         "tags": [
-          "steady_path"
+          "attendance_watch"
         ],
-        "primaryTag": "steady_path",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -190353,7 +196060,8 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의"
+              "현재 상태 주의",
+              "학습 흐름 케이스 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
@@ -190363,6 +196071,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 88.9%",
               "회고 품질 2.12/4",
               "프로젝트 역할 수행 2.31/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-4.2)"
             ]
           },
@@ -190376,15 +196085,17 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 1건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -190411,6 +196122,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 12,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.23,
           "checkinCount": 27,
@@ -190457,9 +196169,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 64.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "동명대학교 / 경영학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 17174,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 7종 · 반복 42회 · 문서 20건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 110회 · 문서 21건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 5종 · 반복 113회 · 문서 17건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 61회 · 문서 22건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 30종 · 반복 145회 · 문서 21건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.62,
+              "evidence": "정서/부담 표현 7종 · 반복 16회 · 문서 9건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 6종 · 반복 29회 · 문서 12건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "무엇을 하고 싶은지 명확함 없이, 적당한 구직활동을 해 나가던 중 직전회사(병원물류, 간납)에 들어가서 운이 좋아 빠른시간 내에 중간관리자를 경험해 보았습니다. 해당 회사를 다니며 물류와 같은 순환업무에서는 어떠한 표현하기 힘든 갈증을 느꼈고, 나에게 적합한 일을 찾아야 겠다고 생각했습니다. 적지 않은 시간을 보내며 많…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "프로젝트의 마지막 마무리! 생각보다 무난히 지나간 프로젝트 인 것 같습니다. 진행중에는 처음 겪어보는 상황이라 문제가 있다고 생각했는데, 지나고 보니 별일 아니었기도 했고, 팀원분들이 각각의 자리에서 모두 열심히 진행해 주신 덕이 아닌가 하는 생각이 듭니다. 팀 분위기는 나쁘지 않았다고 생각하나, 제가 PM으로서의 제…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 프로젝트 전체의 관점에서 조망하고 있었다고 생각하기 때문에 방향성에 대해서는 크게 틀리지 않았을 것이라고는 생각합니다. 다만, 기획서라는 문서가 생각을 전달하는 문서라 생각되는데, 그에 있어서 얼마나의 설명이 충분한 설명이고, 얼마나 길지 않아야 쉽게 접근 가능하고 읽을때 불편하지 않나 하는 고민이 있었습…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "무색, 무취함으로 많은 사람과 잘 지내는, 그러나 결단력과 실행력을 갖춘 지원자 이정헌입니다. 지원 동기 직전 직장이 병원 물류관련 간납회사 였었는데, 잦고 늦은시간까지의 야근을 하며 문득 그런 생각이 들었습니다. ‘ 이렇게 야근을 하는 것 자체는 크게 상관이 없지만, 이렇게 야근을 하면서 까지 일을 해야 한다면, 창조…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 60.0,
         "growthRankScore": 91.0,
-        "supportRankScore": 28,
+        "supportRankScore": 40,
         "collaborationRankScore": 62.25,
         "careerRankScore": 72.88
       }
@@ -193083,6 +198888,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 2,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 3,
@@ -193607,6 +199413,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.3%",
               "회고 품질 2.36/4",
               "프로젝트 역할 수행 2.55/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+22.5)"
             ]
           },
@@ -193622,9 +199429,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -193655,6 +199464,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 27,
@@ -193700,6 +199510,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "계명/문화정보학",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 11407,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.47,
+              "evidence": "구체 표현 7종 · 반복 26회 · 문서 4건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 76회 · 문서 10건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.44,
+              "evidence": "회고/개선 표현 6종 · 반복 20회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 91회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 26종 · 반복 80회 · 문서 18건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.39,
+              "evidence": "정서/부담 표현 4종 · 반복 6회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.92,
+              "evidence": "탐색/불확실 표현 4종 · 반복 21회 · 문서 6건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요, 어린 시절 바람의 나라를 시작으로, 게임 산업 부흥기를 겪으며 다양한 게임들을 접한 이준혁이라고 합니다. 장르를 가리지 않고 다양한 게임을 즐겼으나, 가장 심도있게 파고든 장르는 RPG입니다. 깊게 파고든 게임에 대한 이해를 기반으로, 숨겨진 기획의도나 구조 및 설계 등에 대한 정보를 이해하고, 역설계하는…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "밸런스 최종의최종 , QA 밸런스 & QA 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종의 최종"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 이번 프로젝트는 팀장님이 원하는 기본 틀을 정해왔고, 그 안에서 자율성을 가지고 장르나 형태에 대한 기획을 진행하게 되었습니다. 팀에서 의도한 방향성에 맞게 진화 시스템을 기획하였으나, 기획 및 컨펌 이후 시스템 기획의 진행상황에 맞추어 축소 및 폐기. 이후 바로 레벨디자인에 투입되어 각 튜토리얼 2종,…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 67.4,
         "growthRankScore": 100.0,
@@ -195006,12 +200903,12 @@ window.STUDENT_TIMELINE_DATA = {
       "peerFeedback": [
         {
           "from": "송아영",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "접 같이 보며 설명해줬습니다. - 또한 추후 시간이 남으면 맹지훈 학생에게 직접 설명을 부탁하는 것도 좋을 것 같다고 이야기했습니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로…"
         },
         {
           "from": "송아영",
-          "type": "praise",
+          "type": "complaint",
           "snippet": "니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로 화해했다고 합니다. - 6팀 플밍 이효석님이 이탈한 이후로, 이태호 매니저님이 도와주시길 하지만 여전히 조금 불안한 감이 있다고…"
         },
         {
@@ -195028,18 +200925,19 @@ window.STUDENT_TIMELINE_DATA = {
       "learningFlowCases": [
         {
           "caseId": "이찬규-flow-1",
-          "caseType": "reflection_growth_link",
-          "label": "회고 기반 성장",
-          "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
-          "severity": "success",
-          "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "warning",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
           "evidence": [
-            "회고 2건",
-            "성찰 점수 4/4",
-            "초기 대비 성장 +0.84"
+            "타 학생 불만/갈등 언급 2건",
+            "프로젝트 이슈 키워드 2건",
+            "송아영 언급: 접 같이 보며 설명해줬습니다. - 또한 추후 시간이 남으면 맹지훈 학생에게 직접 설명을 부탁하는 것도 좋을 것 같다고 이야기했습니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로…",
+            "송아영 언급: 니다. ### 이슈 - 같은 팀 이찬규 학생과 맹지훈 학생이 프로젝트에서 갈등이 있었는데, 송아영 학생이 잘 중재한 사건이 있었습니다. - 그 날 수업 끝나고 이찬규 학생과 맹지훈 학생이 따로 화해했다고 합니다. - 6팀 플밍 이효석님이 이탈한 이후로, 이태호 매니저님이 도와주시길 하지만 여전히 조금 불안한 감이 있다고…"
           ],
-          "startDate": "2026-01-26",
-          "endDate": "2026-02-27"
+          "startDate": "",
+          "endDate": ""
         }
       ],
       "careerDocuments": {
@@ -195150,7 +201048,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -195165,13 +201063,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "이찬규-m4",
@@ -195180,13 +201078,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "이찬규-m5",
@@ -195195,7 +201093,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -195210,7 +201108,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -195223,7 +201121,7 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 2,
@@ -195702,7 +201600,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "진로 목적성 구체화 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -195714,7 +201612,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 4,
               "careerAgency": 2
@@ -195728,7 +201626,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "진로 목적성 구체화 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -196309,7 +202207,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 4,
               "careerAgency": 2
@@ -196331,6 +202229,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 5,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -196426,7 +202325,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -196439,8 +202338,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.5,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -196520,7 +202419,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -196533,17 +202432,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
-          "growthDelta": 0.34,
+          "profileAverage": 3.0,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -196613,7 +202513,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -196626,17 +202526,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -196706,7 +202607,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -196719,13 +202620,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "careerAgency"
           ],
           "confidence": "High",
@@ -196799,7 +202701,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 4,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
@@ -196812,13 +202714,14 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 3.17,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "engagement",
             "reflection"
           ],
           "cautionKeys": [
+            "collaboration",
             "careerAgency"
           ],
           "confidence": "High",
@@ -196837,46 +202740,46 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 3.17,
-        "profileIndex": 79,
-        "growthDelta": 0.84,
-        "growthIndex": 75,
-        "supportIndex": 0,
+        "profileAverage": 3.0,
+        "profileIndex": 75,
+        "growthDelta": 0.67,
+        "growthIndex": 70,
+        "supportIndex": 18,
         "tags": [
-          "overall_strong",
-          "growth_high"
+          "steady_path"
         ],
-        "primaryTag": "overall_strong",
+        "primaryTag": "steady_path",
         "tagReasons": {
           "overall_strong": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "현재 평균 3.17/4",
-              "주의 프로파일 1개",
+              "현재 평균 3.0/4",
+              "주의 프로파일 2개",
               "현재 상태 안정"
             ]
           },
           "growth_high": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.84",
+              "초기 대비 성장 +0.67",
               "성장 구간 2개",
-              "현재 평균 3.17/4"
+              "현재 평균 3.0/4"
             ]
           },
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
             "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 100.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 1.85/4",
+              "타 학생 불만/갈등 언급 2건",
               "협업 변화 유지 (-3.2)"
             ]
           },
@@ -196892,13 +202795,15 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -196909,6 +202814,7 @@ window.STUDENT_TIMELINE_DATA = {
           "reflection"
         ],
         "cautionKeys": [
+          "collaboration",
           "careerAgency"
         ],
         "careerReadiness": {
@@ -196922,8 +202828,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 4,
+          "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 2,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -196936,9 +202843,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 2,
           "punctuality": 4.0,
           "peopleSeriousness": 1.96,
-          "riskSignal": 0.24,
-          "collaborationReadinessScore": 69.25,
-          "profileScore": 3,
+          "riskSignal": 0.94,
+          "collaborationReadinessScore": 51.75,
+          "profileScore": 2,
           "lateCount": 0,
           "trajectory": {
             "earlyScore": 80.75,
@@ -196970,10 +202877,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 71.4,
-        "growthRankScore": 100.0,
-        "supportRankScore": 0,
-        "collaborationRankScore": 69.25,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "고려대(세종) 문화콘텐츠전공",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 13197,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 7종 · 반복 30회 · 문서 14건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 46회 · 문서 8건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.85,
+              "evidence": "회고/개선 표현 5종 · 반복 27회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 36회 · 문서 6건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 26종 · 반복 158회 · 문서 15건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.94,
+              "evidence": "정서/부담 표현 2종 · 반복 4회 · 문서 2건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.06,
+              "evidence": "탐색/불확실 표현 4종 · 반복 12회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까. 게임에서 가능성을 찾게 된 이찬규라고 합니다. 지난 몇 년 동안 저는 다양한 경험을 하며 콘텐츠라는 것이 무엇인지에 대하여 공부하게 되었습니다. 그리고 그 다양한 콘텐츠 중에서도 게임이 저의 마음을 가장 사로잡았습니다. 그 중에서도 게임 기획이라는 직군은, 그에 대해 알아가면 알아갈수록 초등학생 시절 빈…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA, itch.io 및 마케팅 관련 이것저것 마무리 고마워... 모두들... 정말 멀리 돌아가는 길이었어. 정말 정말 아득할 정도로 멀리 돌아가는 길이었어..."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 이번 프로젝트에서 쓴 것은 기획서보다는 제안서의 성격이 강했다. 시스템/콘텐츠 기획 관련 업무를 맡지 않았기에, 제안서 성격의 문서만 두 개 작성했다. 게임의 장르와 세부 장르가 결정된 이후, 게임의 메인 사이클 간격이 길어지고 몰입도가 떨어질 수 있지 않겠는가 하는 생각이 들어 사이드 콘텐츠 제안서를 작…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "자율과 책임, 도전과 열정으로 임하는 도전가. 성장과정 자율과 책임, 도전과 열정을 중요하게 여기는 부모님 아래에서 자라며, 저는 제가 있는 곳이 어디가 되었든 맡은 일을 책임감을 가지고 임했습니다. 초등학생 시절, 부모님을 따라 해외 생활을 하게 되었습니다. 국제학교를 다니며, 학교 행사가 있을 때 마다 행사용 부스를…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 구체성, 주도성 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 64.0,
+        "growthRankScore": 83.0,
+        "supportRankScore": 20,
+        "collaborationRankScore": 51.75,
         "careerRankScore": 66.0
       }
     },
@@ -197494,7 +203493,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -197502,8 +203501,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 17,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-이형진-2026-04-02",
@@ -197956,9 +203955,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-15",
@@ -198305,6 +204304,11 @@ window.STUDENT_TIMELINE_DATA = {
           "from": "오종호",
           "type": "praise",
           "snippet": "개발팀에서 오히려 브레이크 걸지 말고 기획을 해달라고 했다. 내가 개발, 유니티, 바이브 코딩 정도는 익혀놔야 나의 기획에 더 신빙성이 생길거같다. 칭찬합시다 이형진님: 개발을 총대매고 크런치하면서 끝까지 해주신 팀의 일등공신, 가장 열심히 잘 하신분. 임소영님: 자신의 기획을 과감하게 밀어붙이고 그걸 뒷받침하는 자료와…"
+        },
+        {
+          "from": "이승진",
+          "type": "complaint",
+          "snippet": "💻 Zep 날짜 - 내용 💬 DM 2/26(목) - 프로젝트 중 팀장 이형진 학생과 싸운 적이 있다고 함 3/27(금) - 사전합반 프로젝트 진행 중 예인해, 김윤규 학생과 마찰 발생 ### 내용 ### 1)"
         }
       ],
       "learningFlowCases": [
@@ -198320,6 +204324,21 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2026-03-31",
           "endDate": "2026-04-01"
+        },
+        {
+          "caseId": "이형진-flow-2",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 8건",
+            "이승진 언급: 💻 Zep 날짜 - 내용 💬 DM 2/26(목) - 프로젝트 중 팀장 이형진 학생과 싸운 적이 있다고 함 3/27(금) - 사전합반 프로젝트 진행 중 예인해, 김윤규 학생과 마찰 발생 ### 내용 ### 1)"
+          ],
+          "startDate": "",
+          "endDate": ""
         }
       ],
       "careerDocuments": {
@@ -198436,13 +204455,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 3,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "협업 상황 면담 권장"
         },
         {
           "snapshotId": "이형진-m3",
@@ -198451,7 +204470,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -198487,7 +204506,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "이형진-m6",
@@ -198502,7 +204521,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -198512,7 +204531,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "startDate": "2026-03-30",
           "endDate": "2026-04-05",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "reasonSummary": "프로젝트 활동이 밀집된 구간"
         }
       ],
       "currentProfile": {
@@ -198523,7 +204542,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "협업 상황 면담 권장",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -198813,7 +204832,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-01-26"
             }
@@ -198825,7 +204844,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 2,
               "engagement": 3,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 2,
               "careerAgency": 2
@@ -198839,7 +204858,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -199016,7 +205035,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 2,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -199163,7 +205182,7 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-05",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
@@ -199171,15 +205190,8 @@ window.STUDENT_TIMELINE_DATA = {
             "career": 0
           },
           "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-01"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
@@ -199200,6 +205212,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "맵 에디터 업데이트, 사전 출시 준비, 강사님께 피드백 받기",
               "severity": "info",
               "date": "2026-04-02"
+            },
+            {
+              "type": "project",
+              "title": "3차 프로젝트 데일리 체크인",
+              "summary": "뭔가 오늘은 대기만한 것 같습니다... 이 또한 팀장의 업무일까요, 모두의 업무가 끝나기를 기다리고 있었습니다... 일을 하지 않으니 불안하기도 하지만, 그렇다고 재촉하거나 감시하거나 간섭하지 않았습니다.",
+              "severity": "info",
+              "date": "2026-04-01"
             }
           ],
           "snapshot": null
@@ -199615,7 +205634,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "협업 상황 면담 권장",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -199641,14 +205660,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "협업 상황 면담 권장"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 6,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 2,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -199744,7 +205764,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 3,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -199757,18 +205777,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.33,
-          "growthDelta": 0.0,
+          "profileAverage": 2.17,
+          "growthDelta": -0.16,
           "strengthKeys": [
             "engagement",
             "resilience"
           ],
           "cautionKeys": [
-            "selfRegulation",
-            "collaboration"
+            "collaboration",
+            "selfRegulation"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -199838,7 +205858,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -199851,15 +205871,15 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": 0.34,
+          "profileAverage": 2.5,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "reflection",
             "engagement"
           ],
           "cautionKeys": [
             "selfRegulation",
-            "resilience"
+            "collaboration"
           ],
           "confidence": "High",
           "note": "자기조절 지원 필요",
@@ -199946,7 +205966,7 @@ window.STUDENT_TIMELINE_DATA = {
             "selfRegulation"
           ],
           "profileAverage": 2.67,
-          "growthDelta": 0.0,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
@@ -199959,7 +205979,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -200050,7 +206070,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -200144,7 +206164,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -200172,11 +206192,11 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 71,
         "growthDelta": 0.5,
         "growthIndex": 65,
-        "supportIndex": 46,
+        "supportIndex": 36,
         "tags": [
-          "steady_path"
+          "attendance_watch"
         ],
-        "primaryTag": "steady_path",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -200190,7 +206210,7 @@ window.STUDENT_TIMELINE_DATA = {
             "qualified": false,
             "reasons": [
               "초기 대비 성장 +0.50",
-              "성장 구간 2개",
+              "성장 구간 3개",
               "현재 평균 2.83/4"
             ]
           },
@@ -200198,7 +206218,7 @@ window.STUDENT_TIMELINE_DATA = {
             "qualified": false,
             "reasons": [
               "현재 상태 주의",
-              "학습 흐름 케이스 컨디션 관리 연쇄"
+              "학습 흐름 케이스 컨디션 관리 연쇄, 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
@@ -200208,6 +206228,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.0%",
               "회고 품질 2.18/4",
               "프로젝트 역할 수행 1.69/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 개선 (+8.0)"
             ]
           },
@@ -200221,15 +206242,17 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -200256,6 +206279,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 25,
@@ -200268,8 +206292,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 8,
           "punctuality": 2.65,
           "peopleSeriousness": 1.84,
-          "riskSignal": 0.96,
-          "collaborationReadinessScore": 61.25,
+          "riskSignal": 1.31,
+          "collaborationReadinessScore": 52.5,
           "profileScore": 2,
           "lateCount": 1,
           "trajectory": {
@@ -200302,10 +206326,103 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "상지대학교 문화콘텐츠학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 3,
+            "careerDocument": 1
+          },
+          "sourceTotal": 31,
+          "textLength": 21500,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 8종 · 반복 53회 · 문서 9건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 11종 · 반복 119회 · 문서 17건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 83회 · 문서 15건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 119회 · 문서 21건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 31종 · 반복 221회 · 문서 23건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.67,
+              "evidence": "정서/부담 표현 8종 · 반복 10회 · 문서 10건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 4.0,
+              "evidence": "탐색/불확실 표현 5종 · 반복 42회 · 문서 12건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까, 게임 기획자 지망생 이형진입니다. 저는 기획 경험을 쌓기 위해 팀단위 팬게임 제작활동을 하며 타워디펜스 UI기획 및 쯔꾸르 공포게임 프로젝트의 기획 부팀장을 맡아 회의 일정조율 및 방향성을 제시했던 경험이 있습니다. 팀 해체 및 군복무로 인해 게임을 완성하지 못했지만, 저는 포기하지 않고 군복무 기간에도…"
+            },
+            {
+              "label": "데일리체크인 · 2차 프로젝트",
+              "date": "2026-06-12",
+              "excerpt": "보스 구현 마무리 후, QA를 통한 버그 픽스 제 인생에서 가장 많은 열정과 노력을 쏟아부운 결과물인 것 같습니다... 이 정도 강도의 크런치는 당분간은 못할 것 같네요 ㅋㅋ... 저희 팀원분들 너무 고생 많았고, 정말 감사드린다고 말씀 드리고 싶습니다 비록, 완벽히 모든 것이 구현된 것은 아니고, 넣고 싶은 기능도 많…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-03",
+              "excerpt": "기획에 대하여 개발 때문에 기획 문서를 작성하지는 못했지만, 팀 활동을 시작하기 전, 팀원들의 신뢰를 얻기 위해 사전 노션을 제작한 것이 큰 도움이 되었고, Figma를 통한 브레인스토밍도 꽤나 유효했던 것 같습니다.또, 제가 가장 많은 피드백을 드렸던 UI와 DB는, 개발을 위해 꼼꼼히 따져봤고, 가현님께서 정말 초안…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "큰 책임에, 큰 힘을 발휘하는 기획자 이형진 자기소개서 탄탄한 기본기와 개발자 친화적 소통 능력을 갖춘 시스템 기획자 게임 시스템 기획은 전체 기획의 뼈대이자 기초 체력입니다. 무엇이든 '기본기'를 가장 중요하게 생각하는 저에게, 게임의 코어 로직과 규칙을 빈틈없이 설계하는 시스템 기획 직무는 깊은 매력으로 다가왔습니다…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
         "profileRankScore": 56.6,
-        "growthRankScore": 66.0,
-        "supportRankScore": 48,
-        "collaborationRankScore": 61.25,
+        "growthRankScore": 74.0,
+        "supportRankScore": 40,
+        "collaborationRankScore": 52.5,
         "careerRankScore": 66.0
       }
     },
@@ -201551,7 +207668,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 2건",
+            "건강/컨디션형 출결 2건",
             "지연 체크인 2건",
             "프로젝트 제출률 89.3%"
           ],
@@ -202820,6 +208937,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 4,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -203320,7 +209438,8 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 60,
         "supportIndex": 54,
         "tags": [
-          "support_priority"
+          "support_priority",
+          "attendance_watch"
         ],
         "primaryTag": "support_priority",
         "tagReasons": {
@@ -203355,6 +209474,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 92.0%",
               "회고 품질 2.12/4",
               "프로젝트 역할 수행 1.96/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+3.0)"
             ]
           },
@@ -203368,11 +209488,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -203403,6 +209525,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.37,
           "checkinCount": 25,
@@ -203448,6 +209571,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "서울과학기술대학교 기계자동차공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 29,
+          "textLength": 11646,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 35회 · 문서 13건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 41회 · 문서 16건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 4종 · 반복 44회 · 문서 13건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 43회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 21종 · 반복 82회 · 문서 21건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.82,
+              "evidence": "정서/부담 표현 6종 · 반복 28회 · 문서 12건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.75,
+              "evidence": "탐색/불확실 표현 5종 · 반복 21회 · 문서 12건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임 기획자에 관심이 있어 해당 교육과정에 지원한 임동균입니다. 항상 언젠가 게임을 만들어야지, 혼자서라도 해봐야지 생각만 하다가, 생각만 하지 말고 늦기전에 마지막이라는 생각으로 도전하고자 이 과정에 지원했습니다. 다른 교육기관엔 게임 \"기획자\" 관련 과정이 거의 없고, 온라인/오프라인 모두 거주지와 가까…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA작업을 하였다. 간단한, 당연해보이는 UI를 수정하고싶어도 개발팀 일정상 그걸 할 수 없는게 너무 아쉬웠다. UI 기획은 다른 조원이 담당했는데, 일단 건물 리스트가 해금되지 않은 것도 뜨고 - 또 활성화 된 건물과 아닌 건물이 구분이 가지 않는다. 건설 할 때 보유 골드도 보이지 않고, 해당 건물이 몇골드를 지불해…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 기획을 처음 원페이지 기획서 정도만 작성하고, 거의 기획과 개발을 동시에 진행했고, 각자 맡은 파트를 직접 기획하고 직접 구현하다보니 다른 팀원과의 기획 내용 공유가 부족했다. 거의 바이브 코딩?으로 진행하다보니 관련 내용 공유 필요 시, 해당 AI에게 작업 내용을 마크다운 형식의 파일로 정리를 요청하고,…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 49.4,
         "growthRankScore": 50.0,
@@ -203821,7 +210032,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-06",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -203829,8 +210040,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 9,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "team-임소영-2-2",
@@ -204636,9 +210847,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-06",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-19",
@@ -205106,21 +211317,6 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-23"
         },
         {
-          "caseId": "임소영-flow-2",
-          "caseType": "health_project_strain",
-          "label": "건강-프로젝트 부담",
-          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
-          "severity": "caution",
-          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
-          "evidence": [
-            "건강형 출결 6건",
-            "지연 체크인 10건",
-            "프로젝트 제출률 82.1%"
-          ],
-          "startDate": "2026-02-13",
-          "endDate": "2026-04-23"
-        },
-        {
           "caseId": "임소영-flow-3",
           "caseType": "daily_checkin_pattern",
           "label": "데일리체크인 리듬 흔들림",
@@ -205136,6 +211332,21 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2026-02-13",
           "endDate": "2026-03-31"
+        },
+        {
+          "caseId": "임소영-flow-2",
+          "caseType": "health_project_strain",
+          "label": "건강-프로젝트 부담",
+          "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+          "severity": "caution",
+          "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+          "evidence": [
+            "건강/컨디션형 출결 7건",
+            "지연 체크인 10건",
+            "프로젝트 제출률 82.1%"
+          ],
+          "startDate": "2026-02-06",
+          "endDate": "2026-04-23"
         }
       ],
       "careerDocuments": {
@@ -205251,7 +211462,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "임소영-m4",
@@ -205266,7 +211477,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "임소영-m5",
@@ -205281,7 +211492,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "임소영-m6",
@@ -205296,7 +211507,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -205304,9 +211515,9 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "임소영-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2026-02-02",
+          "startDate": "2026-02-09",
           "endDate": "2026-02-15",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "reasonSummary": "프로젝트 활동이 밀집된 구간"
         },
         {
           "statusPeriodId": "임소영-status-2",
@@ -205333,7 +211544,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "협업 상황 면담 권장",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -205690,21 +211901,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-08",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-02-06"
             }
           ],
@@ -205846,7 +212057,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -205872,7 +212083,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -206426,7 +212637,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "협업 상황 면담 권장",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -206452,14 +212663,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "협업 상황 면담 권장"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 19,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 6,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 7,
+        "conditionAttendanceIssues": 1,
         "lateCount": 2,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -206665,10 +212877,10 @@ window.STUDENT_TIMELINE_DATA = {
             "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 4,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 8,
             "career": 0,
@@ -206688,7 +212900,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-02-06",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -206758,7 +212970,7 @@ window.STUDENT_TIMELINE_DATA = {
             "collaboration"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -206851,7 +213063,7 @@ window.STUDENT_TIMELINE_DATA = {
             "collaboration"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -206928,7 +213140,7 @@ window.STUDENT_TIMELINE_DATA = {
             "collaboration"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -206947,11 +213159,11 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 75,
         "growthDelta": 0.67,
         "growthIndex": 70,
-        "supportIndex": 46,
+        "supportIndex": 36,
         "tags": [
-          "steady_path"
+          "attendance_watch"
         ],
-        "primaryTag": "steady_path",
+        "primaryTag": "attendance_watch",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -206973,7 +213185,7 @@ window.STUDENT_TIMELINE_DATA = {
             "qualified": false,
             "reasons": [
               "현재 상태 주의",
-              "학습 흐름 케이스 건강 관리 관찰, 건강-프로젝트 부담, 데일리체크인 리듬 흔들림"
+              "학습 흐름 케이스 건강 관리 관찰, 데일리체크인 리듬 흔들림, 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
@@ -206983,6 +213195,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 58.3%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.36/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-24.5)"
             ]
           },
@@ -206996,15 +213209,17 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 7건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -207030,6 +213245,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.03,
           "checkinCount": 24,
@@ -207076,9 +213292,94 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "여",
+            "education": "예림디자인고등학교 웹디자인과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 28,
+          "textLength": 6751,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.01,
+              "evidence": "구체 표현 6종 · 반복 21회 · 문서 4건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 52회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.56,
+              "evidence": "회고/개선 표현 5종 · 반복 24회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 37회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 23종 · 반복 90회 · 문서 15건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.99,
+              "evidence": "정서/부담 표현 2종 · 반복 3회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.29,
+              "evidence": "탐색/불확실 표현 3종 · 반복 7회 · 문서 4건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "2년정도 되는 기간동안 다른 학원에서 게임 기획자를 배운 경험이 있습니다. 지금 만들어둔 포트폴리오가 있으나 모자라다고 생각되어 더 다듬을 수 있는 기회를 잡고자 해당 교육 과정을 신청하게 되었습니다. 게임 기획 과정을 다른 학원을 통해 만든 포트폴리오가 있으나 해당 교육 과정에 있는 AI수업이 눈에 들어 해당 수업을…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-06",
+              "excerpt": "발표 PPT에 들어갈 내용 작성해서 전달, 설문지 작성, 빌드 확인 발표 PPT에 들어갈 내용 작성해서 전달, 설문지 작성, 빌드 확인"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-28",
+              "excerpt": "기획에 대하여 콘텐츠 분야의 기획서를 주로 작성하는 담당을 하게되어서 팀이 의도한 방향성이 문서에 정확히 반영되고 있는지를 가장 우선적으로 생각해 작성했습니다. 협업에 대하여 대부분의 문서가 이후 모든 파트의 작업 분할 기준이 되는 기반 문서였기에 모든 팀원분들이 동일한 그림을 그려낼 수 있도록 의도, 기대 효과, 목표…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다."
+        },
         "profileRankScore": 60.0,
         "growthRankScore": 83.0,
-        "supportRankScore": 48,
+        "supportRankScore": 40,
         "collaborationRankScore": 57.5,
         "careerRankScore": 41.25
       }
@@ -209840,6 +216141,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 9,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 2,
         "counselingCount": 2,
@@ -210374,6 +216676,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.08/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 하락 (-10.2)"
             ]
           },
@@ -210389,9 +216692,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -210422,6 +216727,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -210467,6 +216773,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "양운고등학교 전공없음",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 3889,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.2,
+              "evidence": "구체 표현 5종 · 반복 12회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 20회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.08,
+              "evidence": "회고/개선 표현 4종 · 반복 13회 · 문서 5건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.58,
+              "evidence": "관계/협업 표현 6종 · 반복 17회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 11종 · 반복 20회 · 문서 6건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.31,
+              "evidence": "정서/부담 표현 4종 · 반복 6회 · 문서 3건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.02,
+              "evidence": "탐색/불확실 표현 3종 · 반복 11회 · 문서 9건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까 28살 장근혁입니다. 옛날에 꿈꿨던 게임회사에서 일을 하는 꿈을 늦었지만 지금부터라도 이루고자 이렇게 지원하게 됐습니다 열심히하겠습니다! 어렸을때부터 게임회사에서 일하고 싶다는 로망이 있었습니다. 지금까지 아무 생각 없이 일만 하다가 지금 안하면 늦겠다 싶어서 퇴사를 결정하고 게임회사에 대한 꿈을 시작하고자…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "발표자료준비, itch.io 사이트 마지막이다"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀에서 의도한 방향성대로 잘 흘러간 것 같다 기획서의 내용이 부족해서 구두로 설명을 했지만 다시한번 기획서를 수정하면서 내용을 추가해서 더 이해하기 쉽도록 하였다. 협업에 대하여 전체적인 시스템을 기획하는 역할을 맡았지만 다른 팀원들의 의견도 적극 반영하여 내가 원하는 게임보다는 팀원들이 함께 만든 게임을…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 67.4,
         "growthRankScore": 174.0,
@@ -212994,6 +219387,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 0,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -213535,6 +219929,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.24/4",
               "프로젝트 역할 수행 1.61/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+5.8)"
             ]
           },
@@ -213550,9 +219945,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -213583,6 +219980,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -213628,6 +220026,99 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "공주대학교 게임디자인학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 14961,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 6종 · 반복 25회 · 문서 9건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 9종 · 반복 80회 · 문서 13건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 66회 · 문서 5건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 48회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 24종 · 반복 115회 · 문서 17건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.88,
+              "evidence": "정서/부담 표현 5종 · 반복 12회 · 문서 4건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.48,
+              "evidence": "탐색/불확실 표현 5종 · 반복 12회 · 문서 6건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "시린 겨울이 찾아왔습니다. 이 겨울을 지나 다음 계절들 너머에 있을 제 미래를 찾으러 왔습니다. 안녕하세요. 게임 기획을 지망하는 장윤우입니다. 게임은 배우면 배울수록 모르는 것 투성이라는 생각이 듭니다. 그 모르는 것 투성이를 만드는 일에 제 인생을 넣기 위해 노력하고 있습니다. 모르는 것이 아는 것이 되는 그 날을…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "연출 전체 검수' 지난 작업 기간 힘들었지만 정말 보람차고 재밌는 개발이었습니다. 우리 모두에게 감사를 표합니다. 우리 팀 최고야!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 제 파트가 컨셉-시나리오, 연출, 아트 3부분을 크게 다뤘는데, 앞의 두 파트는 문제없이 작성했는데 아트 부분의 기획서를 작성 못한 것이 좀 아쉽습니다. 컨셉상의 아트 자료는 있지만, 플레이어 스프라이트 같은 부분에 대한 아트 부분의 기획서가 없으니까, 팀원의 다른 자료를 좀 찾아보게 되서 시간을 낭비하게…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "자기소개서. (시나리오 기획자 ver.) 장윤우 목차 1. 성장과정 2. 직무 지원 동기 3. 주요 경험 4. 입사 후 포부 새가 높은 나무에 앉았다면, 그것은 나무를 믿은 것이 아니라 자신의 날개를 믿는 것이다. 저 자신의 날개를 믿고 날아오를 기획자, 장윤우입니다. 1. 성장과정 - 폭풍 속에서 살아남는 법을 배우다…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 71.4,
         "growthRankScore": 108.0,
@@ -216350,6 +222841,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 7,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 4,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 1,
@@ -216900,6 +223392,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.3%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.41/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+9.0)"
             ]
           },
@@ -216915,9 +223408,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 4건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -216948,6 +223443,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 27,
@@ -216993,6 +223489,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "상하이교통대 신문방송학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 11543,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 7종 · 반복 33회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 12종 · 반복 88회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 43회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 11종 · 반복 53회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 29종 · 반복 165회 · 문서 12건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.67,
+              "evidence": "정서/부담 표현 4종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.99,
+              "evidence": "탐색/불확실 표현 6종 · 반복 21회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요! 장호윤이라고 합니다! 게임 개발에 평소 관심이 많아서 유튜브로 독학하고 있던 차에 게임 기획에 대해 모호하고 방향성을 잘 모르겠어서 이부분에 대해 많이 알아가면 좋을 것 같아 신청하게 되었습니다! 뭔갈 만들고 기획하는 걸 좋아하는지라 이번 기회에 체계적으로 배울 수 있을 것 같아 기대가 됩니다. 감사합니다!…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "발표 준비하느라 하루가 없어졌습니다... 술 한잔 마셨습니다... 게임이 잘 안돼도 좋습니다. 하지만 비스무트: 타워디펜스 하나만 기억해주세요 진심을 다해 전합니다. 게임이 별로 일수있습니다 밤낮으로 고민하고 기획 했습니다 ...최선을 다했고 열심히 했습니다 저의 진심이 느껴지길 바랍니다 고맙습니다..."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 이번 프로젝트에서는 메이플 IP를 활용한 로그라이크 구조라는 팀의 방향성에 맞춰 기획을 진행했습니다. 게임의 장르, 성장 구조, 변신 시스템, 재도전 루프 등 핵심 틀은 초기 단계에서 명확히 설정했으며, 전체적인 방향성은 팀의 의도와 크게 벗어나지 않았는데, 다만 기획서가 기능 중심으로 작성되어 실제 구현…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "“ 사용자의 행동을 설계하는 기획자 ” ■ 지원 동기 저는 사용자 행동을 분석하고, 이를 기반으로 반복 가능한 재미 구조를 설계하는 기획자가 되고자 합니다. 단순히 이야기를 만드는 것이 아니라, 유저가 실제로 행동하고 머무르는 시스템을 설계하는 과정에 매력을 느껴왔습니다. 어릴 때부터 소설과 영화 등 다양한 매체를 접하…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 67.4,
         "growthRankScore": 141.0,
@@ -217596,7 +224184,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -217604,8 +224192,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 17,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-정석현-2026-04-02",
@@ -218203,9 +224791,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-14",
@@ -218835,7 +225423,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "정석현-m5",
@@ -218850,7 +225438,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "정석현-m6",
@@ -218865,7 +225453,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -218876,14 +225464,6 @@ window.STUDENT_TIMELINE_DATA = {
           "startDate": "2025-12-15",
           "endDate": "2025-12-21",
           "reasonSummary": "출결 배경 확인이 필요한 구간"
-        },
-        {
-          "statusPeriodId": "정석현-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-30",
-          "endDate": "2026-04-05",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
         }
       ],
       "currentProfile": {
@@ -218894,7 +225474,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -219192,7 +225772,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "진로 목적성 구체화 필요",
+              "summary": "협업 상황 면담 권장",
               "severity": "info",
               "date": "2026-01-26"
             }
@@ -219204,7 +225784,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 3,
               "reflection": 3,
               "careerAgency": 2
@@ -219218,7 +225798,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "진로 목적성 구체화 필요"
+            "note": "협업 상황 면담 권장"
           }
         },
         {
@@ -219549,23 +226129,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-05",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-01"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
@@ -219584,6 +226157,13 @@ window.STUDENT_TIMELINE_DATA = {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
               "summary": "도움말 텍스트 수정 팝업 가이드 작성 완료 타이틀 UI 폰트 검수",
+              "severity": "info",
+              "date": "2026-04-01"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-04-01"
             }
@@ -220029,7 +226609,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -220055,14 +226635,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 15,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 5,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 6,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 2,
         "counselingCount": 5,
@@ -220370,10 +226951,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -220463,7 +227044,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 7,
             "attendanceRisk": 0,
@@ -220556,7 +227137,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -220575,7 +227156,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 83,
         "growthDelta": 1.0,
         "growthIndex": 80,
-        "supportIndex": 46,
+        "supportIndex": 36,
         "tags": [
           "growth_high"
         ],
@@ -220611,6 +227192,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.32/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+5.8)"
             ]
           },
@@ -220626,9 +227208,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 6건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -220658,6 +227242,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 3,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -220704,9 +227289,101 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "계명대학교 실용음악음향학과 사운드아트 전공",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 32,
+          "textLength": 17047,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 4.0,
+              "evidence": "구체 표현 9종 · 반복 31회 · 문서 8건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 64회 · 문서 13건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 41회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 57회 · 문서 10건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 32종 · 반복 154회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.74,
+              "evidence": "정서/부담 표현 4종 · 반복 8회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.46,
+              "evidence": "탐색/불확실 표현 5종 · 반복 20회 · 문서 6건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "구체성",
+            "주도성 표현",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요 게임기획 수강 희망생 정석현입니다. 중학교 무렵부터 게임업계를 꿈꿔오며 게임 사운드 디자이너를 준비하다가 기획에 재능과 재미를 느껴 신청하게 되었습니다. 대학교 수업에서 기획과 관련된 수업에서 큰 흥미를 느끼고 좋은 성적을 받게되며 기획자의 꿈을 갖게 되었습니다. 꼭 수업에 참여하고 싶습니다! 현재 실용음악음…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "오프닝 영상 사운드 디자인 최종보스곡 완성 끝날때까지 끝난게 아니다!!!!! QA, 내일 발표까지 잘 마무리하도록 진짜 조금만 더 힘내자"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀원들 모두가 구현된 게임을 플레이 및 QA를 진행하며 \"의도했던 점들이 잘 담긴 것 같다\"는 의견에 동의했던 것이 인상깊었다. 그만큼 의도와 재미 요소, 사이클 등이 기획서의 내용대로 구현됐다고 생각했다. 총괄적인 기획서와 콘텐츠, 아이템, UI 및 가이드 레퍼런스 등 시각적 자료를 포함한 기획서를 많이…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "상상하는 것을 현실로 만드는 지원자, 정석현입니다. 게임이란 콘텐츠를 향한 애정 저의 기억이 살아있는 5 살 무렵부터, 맞벌이를 하시는 부모님과 아침부터 떨어지게 되는 것이 무서워 매일 아침을 울고불며 부모님의 바짓가랑이를 잡았던 기억이 납니다. 초등학교에 들어가기 전까진 밖에 나가는 것을 무서워하고 어울려지낸 또래 친…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
         "profileRankScore": 66.6,
         "growthRankScore": 132.0,
-        "supportRankScore": 48,
+        "supportRankScore": 40,
         "collaborationRankScore": 69.0,
         "careerRankScore": 72.0
       }
@@ -223157,6 +229834,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 4,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -223680,6 +230358,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 78.3%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 2.53/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-6.8)"
             ]
           },
@@ -223695,9 +230374,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -223727,6 +230408,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 2.84,
           "checkinCount": 23,
@@ -223772,6 +230454,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "여",
+            "education": "영남대학교 / 컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 0,
+            "checkin": 23,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 26,
+          "textLength": 3801,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.52,
+              "evidence": "구체 표현 6종 · 반복 17회 · 문서 9건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 6종 · 반복 32회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.94,
+              "evidence": "회고/개선 표현 4종 · 반복 13회 · 문서 6건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.51,
+              "evidence": "관계/협업 표현 7종 · 반복 18회 · 문서 7건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 21종 · 반복 52회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.04,
+              "evidence": "정서/부담 표현 5종 · 반복 11회 · 문서 9건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.56,
+              "evidence": "탐색/불확실 표현 3종 · 반복 8회 · 문서 7건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "구체성"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 게임 기획자 지망생 정수진입니다. 게임을 항상 즐겨하면서 게임에 대해 관심이 많아졌고 다양한 장르의 게임을 분석하며 시스템, 콘텐츠 유저의 경험에 대해 관심을 갖게 되었습니다. 이게 그치지 않고 직접 아이디어를 구체화해보고 싶어 게임 기획을 지망하게 되었습니다. 혼자서 준비하는 거보다 체계적이고 구조적으로…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 및 발표 준비 / 홈페이지 보완 짧은거같기도 했지만 길기도 했던 사전합반 프로젝트가 이제 끝났습니다! 첫 팀장이니만큼 잔뜩 기합넣어서 했지만 의도하지 않게 이리저리 휘청거렸던거같습니다. 그래도 나름 잘 이겨내고 팀원들과 함께 극복해낸거 같아서 다행입니다! 결과물을 보니 뿌듯하고 내일 있을 게임콘에서도 다른 분들이…"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-03-02",
+              "excerpt": "기획에 대하여 근거를 기반하여 기획했다고 생각합니다. 협업에 대하여 GIT을 통해 작업물을 공유하고 문서를 올리면서 협업했습니다. 다음 프로젝트를 위해 말할 때 조금 부드럽게 말할려고 했어야했는데, 논리적으로 말하려다 보니 조금 딱딱하게 말했던게 아쉽습니다. 칭찬합시다 누군가를 설득할때 근거를 최대한 들면서 말하려고 했…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 26건에서 주도성 표현, 진로 언어, 구체성 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 60.0,
         "growthRankScore": 83.0,
@@ -224211,7 +230980,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-11",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -224219,8 +230988,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 14,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-정우경-2026-03-18",
@@ -224944,9 +231713,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-11",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-24",
@@ -225519,7 +232288,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "정우경-m6",
@@ -225534,19 +232303,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "정우경-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-09",
-          "endDate": "2026-03-15",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
@@ -225555,7 +232315,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -226088,21 +232848,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-15",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-03-11"
             }
           ],
@@ -226669,7 +233429,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -226695,14 +233455,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 16,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 5,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 6,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 1,
@@ -226716,7 +233477,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -227005,7 +233766,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "도전 대응 지원 필요",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 19,
             "career": 0,
@@ -227017,7 +233778,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-11",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -227096,7 +233857,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 6,
             "attendanceRisk": 0,
@@ -227190,7 +233951,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -227209,7 +233970,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 71,
         "growthDelta": 0.5,
         "growthIndex": 65,
-        "supportIndex": 46,
+        "supportIndex": 18,
         "tags": [
           "steady_path"
         ],
@@ -227220,7 +233981,7 @@ window.STUDENT_TIMELINE_DATA = {
             "reasons": [
               "현재 평균 2.83/4",
               "주의 프로파일 2개",
-              "현재 상태 주의"
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
@@ -227234,7 +233995,6 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의",
               "학습 흐름 케이스 건강 관리 관찰"
             ]
           },
@@ -227245,6 +234005,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.39/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+6.2)"
             ]
           },
@@ -227260,9 +234021,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 6건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -227293,6 +234056,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 27,
@@ -227339,9 +234103,96 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 56.6,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "35-39세",
+            "gender": "남",
+            "education": "한양대 경제학부",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 6034,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.66,
+              "evidence": "구체 표현 5종 · 반복 24회 · 문서 10건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.21,
+              "evidence": "실행/개선 표현 6종 · 반복 14회 · 문서 6건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 6종 · 반복 32회 · 문서 11건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 10종 · 반복 49회 · 문서 13건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 17종 · 반복 56회 · 문서 22건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.36,
+              "evidence": "정서/부담 표현 6종 · 반복 13회 · 문서 11건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.45,
+              "evidence": "탐색/불확실 표현 3종 · 반복 10회 · 문서 5건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "성찰 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요, 이번 온라인 게임 기획자 부트캠프 4기에 지원한 정우경입니다. 대학에서 경제학을 전공하고 회사 생활을 하다가, 게임 개발에 생각이 있어 이번 교육에 지원하게 되었습니다. 인디 게임 개발에 관심이 생겨 본 과정에 지원하게 되었습니다. 처음 1인 개발을 생각으로 여기저기서 정보를 얻는 과정에서, unity가 초…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA, 점검, 수정, 반복 기획내용에 대해 개발팀과 더 적극적이고 세밀한 소통이 필요하다는 생각이 든다. 정말 세세하게 논의해야 한다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀에서 개발 영역을 담당하였고 기획의 시간을 많이 못했던 시기였던것 같다. 부족한 부분이 엄청나게 많이 알게된 시간이였고 그만큼 성장할 수 있었던 시간이였습니다. 협업에 대하여 짧은 기간동안 극한으로 몰아부치며 진행한 프로젝트라 마지막기간에 약간 예민했던것 같다. 그 또한 부족한 역량으로 때문이였던것 같다…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 성찰 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 60.6,
         "growthRankScore": 58.0,
-        "supportRankScore": 48,
+        "supportRankScore": 20,
         "collaborationRankScore": 70.0,
         "careerRankScore": 51.25
       }
@@ -229853,6 +236704,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 3,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 0,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -230393,6 +237245,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.24/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+9.8)"
             ]
           },
@@ -230408,9 +237261,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 0건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -230441,6 +237296,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -230486,6 +237342,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "충청대학교 일본어 통역학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 6555,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.33,
+              "evidence": "구체 표현 6종 · 반복 18회 · 문서 9건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 37회 · 문서 15건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.15,
+              "evidence": "회고/개선 표현 4종 · 반복 18회 · 문서 7건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 38회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 19종 · 반복 43회 · 문서 14건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.33,
+              "evidence": "정서/부담 표현 3종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.17,
+              "evidence": "탐색/불확실 표현 5종 · 반복 14회 · 문서 7건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 충청대학교에서 일본어통역을 전공한 정재용 이라고 합니다. 실제 일본으로 교환 유학과 서비스직으로 일했던 경험이 있어 일본어에 대한 자신감이 있습니다. 일본에서의 생활은 조금 힘들었지만 그때 저에게 힘이 되어준것이 바로 쉬는날에 친구들과 또는 지인들과 통화 하면서 했던 게임입니다. 그래서 저도 친구들과 혹은 지인들과…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 및 몬스터 체력, 방어력 밸런스 조정 벌써 발표 및 출시 일이 코앞이네요.. 긴장됩니다. 저희 10팀 분들 오늘까지 고생 많으셨고 내일 발표 파이팅 입니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀에서 의도한 방향성 대로 저의 취향을 반영하여 아트 초기 컨셉 기획서를 작성해서 공유하고 설명 했습니다. 그 중에서 팀원들의 아트를 팀원들이랑 상의하며 어떤 식으로 캐릭터를 살릴 것인지 움직임은 어떻게 할 것인지 대화하며 그림을 생성했습니다. 협업에 대하여 개인적으로는 제가 맡은 아트 쪽에서는 건설 적인…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 68.0,
         "growthRankScore": 75.0,
@@ -230753,7 +237696,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-23",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -230761,8 +237704,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 12,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "2차 프로젝트-정재훈-2026-02-24",
@@ -231432,9 +238375,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-23",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-18",
@@ -231997,7 +238940,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         },
         {
           "snapshotId": "정재훈-m5",
@@ -232012,7 +238955,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         },
         {
           "snapshotId": "정재훈-m6",
@@ -232027,19 +238970,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 3
           },
           "confidence": "High",
-          "note": "협업 상황 면담 권장"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "정재훈-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-02-23",
-          "endDate": "2026-03-01",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
@@ -232048,7 +238982,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 3,
         "confidence": "High",
-        "note": "협업 상황 면담 권장",
+        "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -232447,23 +239381,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-01",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 4,
             "retro": 1,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-02-23"
-            },
             {
               "type": "retro",
               "title": "2차 프로젝트 회고 제출",
@@ -232484,6 +239411,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "엘리트보스 스테이지 패턴구현, 맵 디자인, 버그 수정",
               "severity": "info",
               "date": "2026-02-25"
+            },
+            {
+              "type": "project",
+              "title": "2차 프로젝트 데일리 체크인",
+              "summary": "엔딩 스테이지 마무리, 엘리트보스 스테이지 패턴 구현, 이미지 제작, 두번째 엘보 기획서 작성, 아트 리소스 제작",
+              "severity": "info",
+              "date": "2026-02-24"
             }
           ],
           "snapshot": null
@@ -233102,7 +240036,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "협업 상황 면담 권장",
+              "summary": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -233128,14 +240062,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "협업 상황 면담 권장"
+            "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 4,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 5,
@@ -233149,7 +240084,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -233352,7 +240287,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 10,
             "career": 0,
@@ -233443,7 +240378,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 2,
             "attendanceRisk": 0,
@@ -233537,7 +240472,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -233631,7 +240566,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience"
           ],
           "confidence": "High",
-          "note": "협업 상황 면담 권장",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -233650,7 +240585,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 71,
         "growthDelta": 0.83,
         "growthIndex": 75,
-        "supportIndex": 28,
+        "supportIndex": 0,
         "tags": [
           "career_progress"
         ],
@@ -233661,7 +240596,7 @@ window.STUDENT_TIMELINE_DATA = {
             "reasons": [
               "현재 평균 2.83/4",
               "주의 프로파일 2개",
-              "현재 상태 주의"
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
@@ -233675,7 +240610,7 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의"
+              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
             ]
           },
           "collaboration_strength": {
@@ -233685,6 +240620,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.48/4",
               "프로젝트 역할 수행 1.22/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-0.8)"
             ]
           },
@@ -233700,9 +240636,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -233733,6 +240671,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 25,
@@ -233779,9 +240718,102 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 60.6,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "남",
+            "education": "한국공학대학교 (구 한국산업기술대학교) 컴퓨터공학전공",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 30,
+          "textLength": 11875,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.52,
+              "evidence": "구체 표현 8종 · 반복 20회 · 문서 5건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 67회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 5종 · 반복 40회 · 문서 13건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 8종 · 반복 43회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 142회 · 문서 15건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.12,
+              "evidence": "정서/부담 표현 5종 · 반복 9회 · 문서 8건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.54,
+              "evidence": "탐색/불확실 표현 6종 · 반복 12회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "게임 기획자 부트캠프 4기 지원자 정재훈입니다. 대학교에서 컴퓨터공학을 전공했고 게임 기획 직무에 관심이 있어 배워보고 성장하고자 지원하게 되었습니다. 잘부탁드립니다! 평소에 게임 기획 직무에 관심이 있었지만 어떻게 준비해야할지 잘 모르고 막막했었는데, 게임 기획 부트캠프가 있다는 걸 알게됐습니다. 여기서 배운것과 경험…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "버그 최종 점검 버그 점검도 우선순위를 정하고 했었어야 했을텐데 뒤늦게 발견한 기능 이슈들이 아마 시간 내에 해결되지 못할것 같습니다. 그래도 마지막날까지 다같이 열심히 해준 팀원들에게 너무 감사하고 만족스러운 프로젝트를 진행할 수 있어서 너무 행운이었다고 생각합니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 핵심컨셉인 주인공이 뒤를 돌아볼 수 없다는 점을 최대한 살려 전투 기획을 했습니다. 다른 팀원들도 보고 파악할 수 있게 기획 내용에 기획의도를 담아 적고, 플로우 차트, 와이어 프레임으로 히트박스나 캐릭터 몬스터 규격 표현 등 가시적으로 이해하기 쉽도록 작성하려고 노력했습니다. 프로젝트 후반에 스테이지에…"
+            },
+            {
+              "label": "진로 문서 · 2차",
+              "date": "2026-05-03",
+              "excerpt": "--- page 1 --- 자기소개 팀원이 같은 그림을 떠올릴 수 있게 “ 도구 ” 를 만드는 시스템 기획자 기획자로서 소통은 자신의 의도를 상대에게 얼마나 잘 전달할 수 있는가 ? 라고 생각합니다 . 저는 정리된 기획서를 바탕으로 명확한 의도 전달을 위해 AI 를 통해 구현한 프로토타입과 아트 결과물로 프로그래머와 아…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 64.6,
         "growthRankScore": 99.0,
-        "supportRankScore": 28,
+        "supportRankScore": 0,
         "collaborationRankScore": 61.75,
         "careerRankScore": 76.88
       }
@@ -233893,7 +240925,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-30",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -233901,8 +240933,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 4,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "1차 프로젝트-조준현-2026-01-20",
@@ -234749,9 +241781,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-30",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-09",
@@ -235203,6 +242235,11 @@ window.STUDENT_TIMELINE_DATA = {
           "snippet": "상황에 의도를 잘 파악하려는 눈이 있는 것 같습니다. - 주변에 배울점을 찾아가고 있는 것 같습니다. - (디자인 = 강유민, 사운드 = 김태환, 시스템 = 조준현) --- ### 내용 ### 진로 - 처음에는 시스템이었는데 지금은 경험의 설계인 레벨디자인과 PM에 흥미가 있다고 합니다. - 다음 프로젝트에서는 어떤 포지"
         },
         {
+          "from": "임동균",
+          "type": "complaint",
+          "snippet": "💡특이 사항 12/15(월) - 주말에 ppt 템플릿 작업해 옴 2/10(화) - MSW 프로젝트 간 조준현 학생과 마찰 2/11(수) - 타 교육기관, 타 과정 잠깐 수강 스파르타에서 언리얼 1주일 이후 경일에서 유니티"
+        },
+        {
           "from": "장윤우",
           "type": "praise",
           "snippet": "을 진행하고 있다고 합니다. 컨셉은 오르페우스의 사후세계 이야기를 살려서 진행중이라고 합니다. - 비노벨 검은 수기 후속작 : 김서현, 장윤우, 오종호 + a (조준현님 컨텍중) --- ### 내용 • 지금까지의 수업에서 어려운 점은 없었는지 유니티 말고는 없었어요 • 수업에서 본인에게 잘 맞는 점 / 어려운 점은 무엇…"
@@ -235262,12 +242299,27 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 3건",
+            "건강/컨디션형 출결 4건",
             "지연 체크인 3건",
             "프로젝트 제출률 85.7%"
           ],
-          "startDate": "2026-02-09",
+          "startDate": "2025-12-30",
           "endDate": "2026-05-06"
+        },
+        {
+          "caseId": "조준현-flow-5",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 0건",
+            "임동균 언급: 💡특이 사항 12/15(월) - 주말에 ppt 템플릿 작업해 옴 2/10(화) - MSW 프로젝트 간 조준현 학생과 마찰 2/11(수) - 타 교육기관, 타 과정 잠깐 수강 스파르타에서 언리얼 1주일 이후 경일에서 유니티"
+          ],
+          "startDate": "",
+          "endDate": ""
         }
       ],
       "careerDocuments": {
@@ -235363,7 +242415,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -235378,13 +242430,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "조준현-m4",
@@ -235393,13 +242445,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "조준현-m5",
@@ -235408,13 +242460,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "조준현-m6",
@@ -235423,13 +242475,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -235437,20 +242489,12 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "조준현-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2025-12-29",
-          "endDate": "2026-01-04",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "조준현-status-2",
-          "statusType": "주의",
-          "severity": "caution",
           "startDate": "2026-02-23",
           "endDate": "2026-03-01",
           "reasonSummary": "프로젝트 활동이 밀집된 구간"
         },
         {
-          "statusPeriodId": "조준현-status-3",
+          "statusPeriodId": "조준현-status-2",
           "statusType": "주의",
           "severity": "caution",
           "startDate": "2026-03-23",
@@ -235461,12 +242505,12 @@ window.STUDENT_TIMELINE_DATA = {
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -235617,21 +242661,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-04",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2025-12-30"
             }
           ],
@@ -235769,7 +242813,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 4,
               "engagement": 4,
-              "collaboration": 2,
+              "collaboration": 1,
               "resilience": 3,
               "reflection": 2,
               "careerAgency": 2
@@ -235981,7 +243025,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -235995,7 +243039,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -236542,7 +243586,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -236554,7 +243598,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 3,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -236568,14 +243612,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 9,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 3,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 4,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -236671,7 +243716,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 3,
             "reflection": 2,
             "careerAgency": 2
@@ -236684,8 +243729,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": 0.5,
+          "profileAverage": 2.67,
+          "growthDelta": 0.34,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -236698,7 +243743,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "협업 상황 면담 권장",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 5,
             "career": 0,
@@ -236718,7 +243763,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2025-12-30",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -236765,7 +243810,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -236778,18 +243823,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -236859,7 +243904,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -236872,18 +243917,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 5,
             "attendanceRisk": 0,
@@ -236953,7 +243998,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -236966,18 +244011,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -237023,7 +244068,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 3,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -237036,18 +244081,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 2.67,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
           ],
           "cautionKeys": [
-            "resilience",
-            "careerAgency"
+            "collaboration",
+            "resilience"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -237062,46 +244107,49 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.83,
-        "profileIndex": 71,
-        "growthDelta": 0.5,
-        "growthIndex": 65,
-        "supportIndex": 46,
+        "profileAverage": 2.67,
+        "profileIndex": 67,
+        "growthDelta": 0.34,
+        "growthIndex": 60,
+        "supportIndex": 54,
         "tags": [
-          "collaboration_strength"
+          "support_priority",
+          "attendance_watch"
         ],
-        "primaryTag": "collaboration_strength",
+        "primaryTag": "support_priority",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.83/4",
-              "주의 프로파일 2개",
+              "현재 평균 2.67/4",
+              "주의 프로파일 3개",
               "현재 상태 주의"
             ]
           },
           "growth_high": {
             "qualified": false,
             "reasons": [
-              "초기 대비 성장 +0.50",
+              "초기 대비 성장 +0.34",
               "성장 구간 1개",
-              "현재 평균 2.83/4"
+              "현재 평균 2.67/4"
             ]
           },
           "support_priority": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
               "현재 상태 주의",
+              "주의 프로파일 3개",
               "학습 흐름 케이스 컨디션 관리 연쇄, 데일리체크인 리듬 흔들림, 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "협업 점수 3/4",
+              "협업 점수 2/4",
               "체크인 정시율 88.0%",
               "회고 품질 2.96/4",
               "프로젝트 역할 수행 2.32/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (-1.2)"
             ]
           },
@@ -237115,11 +244163,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 4건",
+              "컨디션 케이스 2건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -237134,8 +244184,8 @@ window.STUDENT_TIMELINE_DATA = {
           "selfRegulation"
         ],
         "cautionKeys": [
-          "resilience",
-          "careerAgency"
+          "collaboration",
+          "resilience"
         ],
         "careerReadiness": {
           "purposeClarity": 2.0,
@@ -237150,6 +244200,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.21,
           "checkinCount": 25,
@@ -237162,9 +244213,9 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 0,
           "punctuality": 2.65,
           "peopleSeriousness": 1.72,
-          "riskSignal": 0.0,
-          "collaborationReadinessScore": 70.5,
-          "profileScore": 3,
+          "riskSignal": 0.35,
+          "collaborationReadinessScore": 61.75,
+          "profileScore": 2,
           "lateCount": 1,
           "trajectory": {
             "earlyScore": 83.75,
@@ -237196,10 +244247,97 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 56.6,
-        "growthRankScore": 58.0,
-        "supportRankScore": 48,
-        "collaborationRankScore": 70.5,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "구미대학교 비주얼게임콘텐츠학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 29,
+          "textLength": 6199,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.64,
+              "evidence": "구체 표현 4종 · 반복 7회 · 문서 4건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 36회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.91,
+              "evidence": "회고/개선 표현 4종 · 반복 18회 · 문서 4건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.55,
+              "evidence": "관계/협업 표현 7종 · 반복 14회 · 문서 6건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 27종 · 반복 64회 · 문서 13건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.54,
+              "evidence": "정서/부담 표현 3종 · 반복 5회 · 문서 5건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.99,
+              "evidence": "탐색/불확실 표현 5종 · 반복 10회 · 문서 6건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "제가 만든 루틴속에 유저의 성장을 즐겁게하는 재미를 기획을 하고 싶은 조준현입니다. 주로 하는 게임은 승리의 여신 니케, 트릭컬 리바이브, 그랑사가 키우기, 이터널 리턴 등의 게임을 하고있습니다. 특히 게임 기획자가 되기 위해서 학교생활중 여러 수업이나 공교육 행사등을 두루 다니며 노력했고 졸업을 4개월 정도 앞둔 지금…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "기타 아트웍? 나에게 기획을 묻지 마세요"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 팀에게 명확한 방향성과 의도는 진행하였지만 결국 메인 컨셉 기획만 진행했을뿐 세부 기획서를 작성하였는가에 대해서는 답할 수 없습니다 특히 항상 프로젝트를 진행하면 개발 = 기획을 포지션을 묶어서 주는 팀장의 위험성을 다시금 느끼는 상황이 되었기에 중간에 제가 진행한 개발을 마크다운문서로 뽑아 ai와 사람…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 49.4,
+        "growthRankScore": 42.0,
+        "supportRankScore": 60,
+        "collaborationRankScore": 61.75,
         "careerRankScore": 54.75
       }
     },
@@ -238377,7 +245515,7 @@ window.STUDENT_TIMELINE_DATA = {
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 2건",
+            "건강/컨디션형 출결 2건",
             "지연 체크인 0건",
             "프로젝트 제출률 78.6%"
           ],
@@ -239644,6 +246782,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 7,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 1,
         "counselingCount": 3,
@@ -240136,7 +247275,8 @@ window.STUDENT_TIMELINE_DATA = {
         "growthIndex": 55,
         "supportIndex": 54,
         "tags": [
-          "support_priority"
+          "support_priority",
+          "attendance_watch"
         ],
         "primaryTag": "support_priority",
         "tagReasons": {
@@ -240171,6 +247311,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.66/4",
               "프로젝트 역할 수행 1.34/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-6.2)"
             ]
           },
@@ -240184,11 +247325,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 1건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -240219,6 +247362,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 22,
@@ -240264,6 +247408,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "전남도립대 자동차학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 22,
+            "retro": 1,
+            "careerDocument": 0
+          },
+          "sourceTotal": 25,
+          "textLength": 5395,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.52,
+              "evidence": "구체 표현 6종 · 반복 8회 · 문서 2건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 10종 · 반복 31회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.68,
+              "evidence": "회고/개선 표현 4종 · 반복 23회 · 문서 14건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.55,
+              "evidence": "관계/협업 표현 7종 · 반복 14회 · 문서 6건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 17종 · 반복 41회 · 문서 10건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.36,
+              "evidence": "정서/부담 표현 3종 · 반복 4회 · 문서 3건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.81,
+              "evidence": "탐색/불확실 표현 3종 · 반복 9회 · 문서 7건",
+              "level": "보통"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까 자동차 엔지니어링을 전공한 24살 조현일 입니다. 평소 어렸을 적부터 닌텐도를 시작으로 많은 콘솔게임과 온라인 게임을 즐겼습니다. 그러던 최근 시프트업의 첫 콘솔작 스텔라 블레이드를 감명 깊게 플레이하여 저도 이와 같은 혹은 더 재밌는 게임을 기획하며 제작하고 싶어 지원하였습니다. 초등학교 2학년 가을쯤이…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "강사님께 도움받아 세이브 로드 기능 복구하였습니다. 나름의 할 수 있는 건 하였으나 최선은 아니었다고 생각합니다. 다만 이번 과정에서 배운 점들은 있어 이러한 것을 차후 보완하는 밑바탕으로 쓰려합니다. 감사합니다."
+            },
+            {
+              "label": "프로젝트 회고 · 1차 프로젝트",
+              "date": "2026-01-27",
+              "excerpt": "기획에 대하여 방향성 자체는 둘째날 다시 빠르게 잡아 진행하였으나 이번에 제대로 된 기획서를 작성하여 작업하는것이 아닌 개인의 기량에 따라 각자 나눈 역할을 수행하는 일이 잦았습니다. 이번 경험으로 기획서의 중요성을 다시금 돌아보게 되었습니다. 협업에 대하여 작업 시간 대부분 감사하게도 조원분들과 자주 소통하며 제작을…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 25건에서 주도성 표현, 진로 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 44.0,
         "growthRankScore": 33.0,
@@ -242768,6 +249999,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 1,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 2,
@@ -243307,6 +250539,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.26/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (+4.5)"
             ]
           },
@@ -243322,9 +250555,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -243354,6 +250589,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 25,
@@ -243399,6 +250635,98 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "서강대학교 컴퓨터공학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 25,
+            "retro": 2,
+            "careerDocument": 1
+          },
+          "sourceTotal": 30,
+          "textLength": 7269,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.33,
+              "evidence": "구체 표현 6종 · 반복 10회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 30회 · 문서 8건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.79,
+              "evidence": "회고/개선 표현 5종 · 반복 33회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.71,
+              "evidence": "관계/협업 표현 7종 · 반복 15회 · 문서 5건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 24종 · 반복 87회 · 문서 19건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.33,
+              "evidence": "정서/부담 표현 4종 · 반복 11회 · 문서 6건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.21,
+              "evidence": "탐색/불확실 표현 4종 · 반복 5회 · 문서 2건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "진로 언어",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "서강대학교 컴퓨터공학과를 졸업했습니다. 게임 프로그래머로 취업을 준비하고 있었는데 취업에 어려움을 겪어서 기획도 공부를 하려고 합니다. 유니티와 언리얼 엔진, 그리고 게임 서버 개발을 공부했습니다. 감사합니다. 원래 게임 프로그래머를 목표로 취업 준비를 했었습니다. 하지만 결과가 원하는 대로 잘 나오지 않았습니다. 또한…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 허허이~"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 프로그래밍 담당이라 문서 작업을 못했습니다 협업에 대하여 팀원들이 다소 시스템적 이해가 부족해서, 프로그래머로서 어떤 기획서/명세서가 필요한지를 지속적으로 알려줬다. 기능이 구현될 때마다 팀원들에게 작업 내역을 공유했다. 다음 프로젝트를 위해 다음에는 기획을 해보고 싶습니다 칭찬합시다 1.배주빈 : 팀원들…"
+            },
+            {
+              "label": "진로 문서 · 1차",
+              "date": "2026-04-20",
+              "excerpt": "현실적인 구현 감각으로 아이디어를 구체화하는 기획자 주재형입니다. 성장과정 저는 4 남매 가정에서 자랐습니다. 즐거운 순간도 많았고, 그렇지 않은 순간도 많았습니다. 그 시간들 속에서 저는 장기적인 인간관계의 본질을 체득했습니다. 상대의 성격을 이해하고 배려하는 것. 서로의 자존심은 잠시 접어 두는 것. 가끔은 서로 엇…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 진로 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 64.0,
         "growthRankScore": 83.0,
@@ -243988,7 +251316,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -243996,8 +251324,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 17,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-채지형-2026-04-02",
@@ -244120,7 +251448,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-27",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -244128,8 +251456,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 21,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-채지형-2026-04-29-16",
@@ -244510,9 +251838,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-01",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-13",
@@ -244534,9 +251862,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-04-27",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-04-29",
@@ -244919,6 +252247,37 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2025-12-30",
           "endDate": "2026-04-29"
+        },
+        {
+          "caseId": "채지형-flow-2",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 2건",
+            "14일 내 최대 1건",
+            "최소 발생 간격 26일",
+            "최근 발생일 2026-04-27"
+          ],
+          "startDate": "2026-04-01",
+          "endDate": "2026-04-27"
+        },
+        {
+          "caseId": "채지형-flow-3",
+          "caseType": "reflection_growth_link",
+          "label": "회고 기반 성장",
+          "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",
+          "severity": "success",
+          "summary": "회고 기록과 성장 지표가 함께 올라가 회고가 학습 개선으로 연결된 케이스입니다.",
+          "evidence": [
+            "회고 2건",
+            "성찰 점수 4/4",
+            "초기 대비 성장 +0.84"
+          ],
+          "startDate": "2026-01-26",
+          "endDate": "2026-02-27"
         }
       ],
       "careerDocuments": {
@@ -245039,7 +252398,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "채지형-m5",
@@ -245047,14 +252406,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "채지형-m6",
@@ -245062,43 +252421,26 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "참여 지속성 점검 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "채지형-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-30",
-          "endDate": "2026-04-05",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "채지형-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-04-27",
-          "endDate": "2026-05-03",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
-        "engagement": 2,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "참여 지속성 점검 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -245748,23 +253090,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-04-05",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-01"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
@@ -245783,6 +253118,13 @@ window.STUDENT_TIMELINE_DATA = {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
               "summary": "로컬라이징, tc작성,",
+              "severity": "info",
+              "date": "2026-04-01"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-04-01"
             }
@@ -245898,29 +253240,29 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-05-03",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-04-27"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 공가",
               "summary": "공가 (병가)",
               "severity": "info",
               "date": "2026-04-29"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-04-27"
             }
           ],
           "snapshot": null
@@ -246200,7 +253542,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "참여 지속성 점검 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -246211,7 +253553,7 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotType": "현재",
             "scores": {
               "selfRegulation": 3,
-              "engagement": 2,
+              "engagement": 4,
               "collaboration": 3,
               "resilience": 3,
               "reflection": 4,
@@ -246226,14 +253568,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "참여 지속성 점검 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 12,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 6,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 8,
+        "conditionAttendanceIssues": 2,
         "lateCount": 3,
         "absenceCount": 0,
         "counselingCount": 5,
@@ -246247,7 +253590,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -246539,10 +253882,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -246608,7 +253951,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
@@ -246622,21 +253965,20 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
-          "growthDelta": -0.34,
+          "profileAverage": 3.17,
+          "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "engagement",
+            "reflection"
           ],
           "cautionKeys": [
-            "engagement",
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 4,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 1,
             "career": 0,
@@ -246672,7 +254014,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-04-27",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -246702,7 +254044,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 3,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 3,
             "reflection": 4,
@@ -246716,18 +254058,17 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.83,
+          "profileAverage": 3.17,
           "growthDelta": 0.0,
           "strengthKeys": [
-            "reflection",
-            "selfRegulation"
+            "engagement",
+            "reflection"
           ],
           "cautionKeys": [
-            "engagement",
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "참여 지속성 점검 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -246742,40 +254083,39 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.83,
-        "profileIndex": 71,
-        "growthDelta": 0.5,
-        "growthIndex": 65,
-        "supportIndex": 74,
+        "profileAverage": 3.17,
+        "profileIndex": 79,
+        "growthDelta": 0.84,
+        "growthIndex": 75,
+        "supportIndex": 18,
         "tags": [
-          "support_priority",
+          "overall_strong",
+          "growth_high",
           "collaboration_strength",
           "attendance_watch"
         ],
-        "primaryTag": "support_priority",
+        "primaryTag": "overall_strong",
         "tagReasons": {
           "overall_strong": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "현재 평균 2.83/4",
-              "주의 프로파일 2개",
-              "현재 상태 주의"
+              "현재 평균 3.17/4",
+              "주의 프로파일 1개",
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "초기 대비 성장 +0.50",
+              "초기 대비 성장 +0.84",
               "성장 구간 3개",
-              "현재 평균 2.83/4"
+              "현재 평균 3.17/4"
             ]
           },
           "support_priority": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "현재 상태 주의",
-              "학습 흐름 케이스 건강 관리 관찰"
+              "학습 흐름 케이스 건강 관리 관찰, 늦잠 지각 리듬 관찰"
             ]
           },
           "collaboration_strength": {
@@ -246785,6 +254125,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.96/4",
               "프로젝트 역할 수행 2.78/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+11.8)"
             ]
           },
@@ -246800,9 +254141,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 8건",
+              "컨디션 케이스 1건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -246813,11 +254156,10 @@ window.STUDENT_TIMELINE_DATA = {
           }
         },
         "strengthKeys": [
-          "reflection",
-          "selfRegulation"
+          "engagement",
+          "reflection"
         ],
         "cautionKeys": [
-          "engagement",
           "careerAgency"
         ],
         "careerReadiness": {
@@ -246833,6 +254175,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -246879,9 +254222,94 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 52.6,
-        "growthRankScore": 74.0,
-        "supportRankScore": 76,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "홍익대학교 게임소프트웨",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 3756,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.02,
+              "evidence": "구체 표현 6종 · 반복 12회 · 문서 7건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.52,
+              "evidence": "실행/개선 표현 7종 · 반복 12회 · 문서 9건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 2.17,
+              "evidence": "회고/개선 표현 3종 · 반복 5회 · 문서 3건",
+              "level": "낮음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 28회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 17종 · 반복 40회 · 문서 11건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.1,
+              "evidence": "정서/부담 표현 2종 · 반복 4회 · 문서 4건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 2.22,
+              "evidence": "탐색/불확실 표현 3종 · 반복 4회 · 문서 4건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "관계/협업 언어",
+            "진로 언어",
+            "주도성 표현"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세여 게임기획자가 되고 싶은 채지형입니다. 전공으로 코딩을 했지만 예전부터 꿈은 기획자에 가까웠기 때문에 기획자에 대해 공부하고 되고 싶어 신청하게 되었습니다. 감사합니다. 게임 개발 전공학과를 나와 기획에 대해서는 얕게 알려주시거나 거의 없었던 것으로 잘 안다뤘던 것 같습니다. 제가 원하는 분야는 기획에 관한 분…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "찐찐마지막 빌드 QA 없습니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 우선 기획했던 포트리스 기획이 메이플월드랑 잘 맞지않은 것 같아 첫 기획이랑 많이 틀어졌습니다. 또한 초기 기획서에 자세한 플레이 방법과 의도, 기능이 확실하게 명시되어 있지않아, 프로그래밍 하는 사람과 소통이 늦어져 하는 수 없이 프로그래머분이 짜놓은 방향으로 기획서를 틀게 되었습니다. 거기에 맞춰 기획…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 관계/협업 언어, 진로 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 67.4,
+        "growthRankScore": 108.0,
+        "supportRankScore": 20,
         "collaborationRankScore": 77.25,
         "careerRankScore": 51.25
       }
@@ -247253,7 +254681,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-04",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -247261,8 +254689,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 9,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "counseling-천영현-2026-02-09-1",
@@ -248159,9 +255587,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-02-04",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-02-20",
@@ -248629,7 +256057,7 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "from": "주재형",
-          "type": "praise",
+          "type": "complaint",
           "snippet": ". 2.김민제 : 아이디어 생산력이 좋은 팀원이었다. 컨셉 기획 능력이 좋음. 3.이동우 : 맡은 일을 책임감 있게 수행하며, 시스템적 빈틈을 잘 파악했다. 4.천영현 : 프로젝트 기간 중 여행을 가시기도 했고, 아트 담당이셨어서 기획적 장점은 잘 모르겠다. 팀장 선호도 조사 4.0 이유 뭔가 답답한 부분들이 있어서 내가"
         }
       ],
@@ -248648,6 +256076,21 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "startDate": "2025-12-26",
           "endDate": "2026-04-30"
+        },
+        {
+          "caseId": "천영현-flow-2",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 2건",
+            "주재형 언급: . 2.김민제 : 아이디어 생산력이 좋은 팀원이었다. 컨셉 기획 능력이 좋음. 3.이동우 : 맡은 일을 책임감 있게 수행하며, 시스템적 빈틈을 잘 파악했다. 4.천영현 : 프로젝트 기간 중 여행을 가시기도 했고, 아트 담당이셨어서 기획적 장점은 잘 모르겠다. 팀장 선호도 조사 4.0 이유 뭔가 답답한 부분들이 있어서 내가"
+          ],
+          "startDate": "",
+          "endDate": ""
         }
       ],
       "careerDocuments": {
@@ -248737,7 +256180,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 2,
             "careerAgency": 2
@@ -248752,13 +256195,13 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "천영현-m4",
@@ -248773,7 +256216,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "천영현-m5",
@@ -248788,7 +256231,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "천영현-m6",
@@ -248803,7 +256246,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -248819,14 +256262,6 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "천영현-status-2",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2026-02-02",
-          "endDate": "2026-02-08",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "천영현-status-3",
-          "statusType": "주의",
-          "severity": "caution",
           "startDate": "2026-02-23",
           "endDate": "2026-03-01",
           "reasonSummary": "프로젝트 활동이 밀집된 구간"
@@ -248840,7 +256275,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -249226,21 +256661,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-02-08",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-02-04"
             }
           ],
@@ -249396,7 +256831,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -249408,7 +256843,7 @@ window.STUDENT_TIMELINE_DATA = {
             "scores": {
               "selfRegulation": 2,
               "engagement": 3,
-              "collaboration": 3,
+              "collaboration": 2,
               "resilience": 2,
               "reflection": 4,
               "careerAgency": 2
@@ -249422,7 +256857,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -249999,7 +257434,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -250025,14 +257460,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 23,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 3,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 4,
+        "conditionAttendanceIssues": 1,
         "lateCount": 2,
         "absenceCount": 2,
         "counselingCount": 5,
@@ -250128,7 +257564,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 4,
             "engagement": 4,
-            "collaboration": 2,
+            "collaboration": 1,
             "resilience": 2,
             "reflection": 2,
             "careerAgency": 2
@@ -250141,8 +257577,8 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": 0.34,
+          "profileAverage": 2.5,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "selfRegulation",
             "engagement"
@@ -250222,7 +257658,7 @@ window.STUDENT_TIMELINE_DATA = {
           "scores": {
             "selfRegulation": 2,
             "engagement": 3,
-            "collaboration": 3,
+            "collaboration": 2,
             "resilience": 2,
             "reflection": 4,
             "careerAgency": 2
@@ -250235,7 +257671,7 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 2.5,
           "growthDelta": 0.0,
           "strengthKeys": [
             "reflection",
@@ -250243,13 +257679,13 @@ window.STUDENT_TIMELINE_DATA = {
           ],
           "cautionKeys": [
             "selfRegulation",
-            "resilience"
+            "collaboration"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 6,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 8,
             "career": 0,
@@ -250293,7 +257729,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-02-04",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             }
           ],
@@ -250330,7 +257766,7 @@ window.STUDENT_TIMELINE_DATA = {
             "selfRegulation"
           ],
           "profileAverage": 2.83,
-          "growthDelta": 0.16,
+          "growthDelta": 0.33,
           "strengthKeys": [
             "reflection",
             "selfRegulation"
@@ -250340,7 +257776,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 5,
             "attendanceRisk": 0,
@@ -250434,7 +257870,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 3,
             "attendanceRisk": 0,
@@ -250528,7 +257964,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -250547,11 +257983,11 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 71,
         "growthDelta": 0.5,
         "growthIndex": 65,
-        "supportIndex": 28,
+        "supportIndex": 36,
         "tags": [
-          "collaboration_strength"
+          "steady_path"
         ],
-        "primaryTag": "collaboration_strength",
+        "primaryTag": "steady_path",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
@@ -250572,16 +258008,18 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의"
+              "현재 상태 주의",
+              "학습 흐름 케이스 협업 갈등 신호"
             ]
           },
           "collaboration_strength": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
               "협업 점수 3/4",
               "체크인 정시율 95.8%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.89/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 개선 (+18.2)"
             ]
           },
@@ -250597,13 +258035,15 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 4건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
               "상위 위험/강점 분류 기준에 뚜렷하게 걸리지 않아 안정 관찰로 분류했습니다."
             ]
@@ -250628,8 +258068,9 @@ window.STUDENT_TIMELINE_DATA = {
           "hasRevisionHistory": false
         },
         "collaborationReadiness": {
-          "peerPraiseCount": 7,
+          "peerPraiseCount": 6,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.53,
           "checkinCount": 24,
@@ -250642,8 +258083,8 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 2,
           "punctuality": 2.3,
           "peopleSeriousness": 1.96,
-          "riskSignal": 0.24,
-          "collaborationReadinessScore": 74.25,
+          "riskSignal": 0.59,
+          "collaborationReadinessScore": 65.5,
           "profileScore": 3,
           "lateCount": 2,
           "trajectory": {
@@ -250676,10 +258117,97 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 60.6,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "24세 이하",
+            "gender": "남",
+            "education": "부산대학교/경영학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 24,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 28,
+          "textLength": 7029,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.73,
+              "evidence": "구체 표현 5종 · 반복 29회 · 문서 12건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 8종 · 반복 43회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 8종 · 반복 32회 · 문서 6건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 51회 · 문서 12건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 23종 · 반복 69회 · 문서 15건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.22,
+              "evidence": "정서/부담 표현 3종 · 반복 4회 · 문서 4건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.21,
+              "evidence": "탐색/불확실 표현 5종 · 반복 13회 · 문서 5건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하십니까, 부산대학교 경영학과 천영현입니다. 저는 창업이라는 명확한 목표로 경영학과에 진학했으며, 지난 1년간 웹/안드로이드 기획자로 4회의 프로젝트와 2회의 학술 동아리 활동을 통해 실무 역량을 성공적으로 쌓았습니다. 특히 프로젝트 경험에서는 PM으로서 개발 및 디자인 팀과의 협업을 조율하며 리더십과 책임감을 발휘…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "마케팅, QA, 밸런스 화이팅! 끝이 보인다!!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 사실 초기 기획에서 뭔가 많이 추가 되거나 중간중간 바뀌게 되는 일들이 많은 점들이 있었지만 팀원분들 성격이 다 좋아서 그래그래, 좋아좋아 같은 분위기로 이어나갔던 거 같습니다. 아트 담당이다보니 팀에 기획서를 제출하기보다 기획안에 맞춰서 아트 디자인만 하다보니 원하는 기획쪽으로는 많이 못했던 거 같습니다…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 28건에서 주도성 표현, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 56.6,
         "growthRankScore": 66.0,
-        "supportRankScore": 28,
-        "collaborationRankScore": 74.25,
+        "supportRankScore": 40,
+        "collaborationRankScore": 65.5,
         "careerRankScore": 57.25
       }
     },
@@ -253629,6 +261157,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 16,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 5,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 1,
         "counselingCount": 2,
@@ -254179,6 +261708,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.36/4",
               "프로젝트 역할 수행 2.06/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-2.2)"
             ]
           },
@@ -254194,9 +261724,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 5건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -254227,6 +261759,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -254272,6 +261805,93 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "경희대학교 음악학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 6747,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.0,
+              "evidence": "구체 표현 4종 · 반복 12회 · 문서 7건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 6종 · 반복 39회 · 문서 12건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.6,
+              "evidence": "회고/개선 표현 4종 · 반복 27회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 58회 · 문서 10건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 25종 · 반복 75회 · 문서 18건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.08,
+              "evidence": "정서/부담 표현 4종 · 반복 12회 · 문서 8건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 1.82,
+              "evidence": "탐색/불확실 표현 1종 · 반복 4회 · 문서 2건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "저는 고등학교 때부터 음악 전공을 했었습니다. 대학교를 중퇴하고 음악에 대해 회의감을 느껴 전공과는 다른 직무인 세무회계, 사회복지, 각종 서비스업 매니저 업무를 수행해 본 경험이 있습니다. 다양한 직종에서 일해봤지만 어느 한 곳에서 1년 이상 끈기 있게 근무해 본 경험이 없습니다. 저의 끈기가 부족하기도 했지만 업무의…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "프로젝트 게임 밸런스 조절 _"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 기획 초반에는 아이디어를 낸 팀원이 의견만 제시했다고 하여 다함께 방향성을 잡기로 했습니다. 하지만 각자 생각하는 방향성은 달랐고, 설계하는 범위 / 방식도 전혀 맞지 않았습니다. 서로 토론을 통하여 의견을 점점 좁혀갔고, 어느정도 협의된 부분부터 기획서를 작성했습니다. 프로젝트를 진행하며 저를 포함하여…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 56.6,
         "growthRankScore": 66.0,
@@ -254373,7 +261993,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-11",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -254381,8 +262001,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 1,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-한가영-2025-12-12-6",
@@ -254485,7 +262105,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-31",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -254493,8 +262113,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 4,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-한가영-2026-01-02-19",
@@ -254645,9 +262265,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-11",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2025-12-12",
@@ -254701,9 +262321,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2025-12-31",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-01-02",
@@ -254756,7 +262376,13 @@ window.STUDENT_TIMELINE_DATA = {
       ],
       "projectTeamHistory": [],
       "peerRelationships": [],
-      "peerFeedback": [],
+      "peerFeedback": [
+        {
+          "from": "이동현",
+          "type": "complaint",
+          "snippet": "상황 - 에서 한 말 12/15(월) - 1주차 발표 💡특이 사항 1/5(월) - TIL에서 한가영에 대한 불만 표시 팀 내에 조원이 AI를 과제에 사용하는 것이 의심됩니다. 첨삭이나 자료 서칭이 아닌 그대로 붙여넣은 듯한 문장 형태가"
+        }
+      ],
       "learningFlowCases": [
         {
           "caseId": "한가영-flow-1",
@@ -254777,18 +262403,49 @@ window.STUDENT_TIMELINE_DATA = {
         },
         {
           "caseId": "한가영-flow-2",
+          "caseType": "oversleep_condition_rhythm",
+          "label": "늦잠 지각 리듬 관찰",
+          "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+          "severity": "caution",
+          "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+          "evidence": [
+            "늦잠 지각 2건",
+            "14일 내 최대 1건",
+            "최소 발생 간격 20일",
+            "최근 발생일 2025-12-31"
+          ],
+          "startDate": "2025-12-11",
+          "endDate": "2025-12-31"
+        },
+        {
+          "caseId": "한가영-flow-3",
           "caseType": "health_project_strain",
           "label": "건강-프로젝트 부담",
           "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
           "severity": "caution",
           "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
           "evidence": [
-            "건강형 출결 5건",
+            "건강/컨디션형 출결 7건",
             "지연 체크인 0건",
             "프로젝트 제출률 0.0%"
           ],
-          "startDate": "2025-12-18",
+          "startDate": "2025-12-11",
           "endDate": "2026-01-08"
+        },
+        {
+          "caseId": "한가영-flow-4",
+          "caseType": "collaboration_conflict_signal",
+          "label": "협업 갈등 신호",
+          "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+          "severity": "caution",
+          "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+          "evidence": [
+            "타 학생 불만/갈등 언급 1건",
+            "프로젝트 이슈 키워드 0건",
+            "이동현 언급: 상황 - 에서 한 말 12/15(월) - 1주차 발표 💡특이 사항 1/5(월) - TIL에서 한가영에 대한 불만 표시 팀 내에 조원이 AI를 과제에 사용하는 것이 의심됩니다. 첨삭이나 자료 서칭이 아닌 그대로 붙여넣은 듯한 문장 형태가"
+          ],
+          "startDate": "",
+          "endDate": ""
         }
       ],
       "careerDocuments": {
@@ -254868,7 +262525,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한가영-m3",
@@ -254883,7 +262540,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한가영-m4",
@@ -254898,7 +262555,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한가영-m5",
@@ -254913,7 +262570,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한가영-m6",
@@ -254928,7 +262585,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "자기조절 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -254936,17 +262593,17 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "한가영-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2025-12-08",
+          "startDate": "2025-12-15",
           "endDate": "2025-12-21",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "reasonSummary": "출결 배경 확인이 필요한 구간"
         },
         {
           "statusPeriodId": "한가영-status-2",
-          "statusType": "경고",
+          "statusType": "집중 관찰",
           "severity": "warning",
-          "startDate": "2025-12-29",
+          "startDate": "2026-01-05",
           "endDate": "2026-01-11",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "reasonSummary": "집중 확인이 필요한 구간"
         }
       ],
       "currentProfile": {
@@ -254957,7 +262614,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 2,
         "careerAgency": 1,
         "confidence": "High",
-        "note": "자기조절 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-01-23"
       },
       "weeklyTimeline": [
@@ -255009,29 +262666,29 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2025-12-14",
           "counts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2025-12-11"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 외출",
               "summary": "외출",
               "severity": "info",
               "date": "2025-12-12"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2025-12-11"
             },
             {
               "type": "attendance",
@@ -255144,29 +262801,29 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-04",
           "counts": {
             "attendance": 3,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2025-12-31"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 공가",
               "summary": "공가 (병가)",
               "severity": "info",
               "date": "2026-01-02"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2025-12-31"
             },
             {
               "type": "attendance",
@@ -255284,7 +262941,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-01-26"
             }
@@ -255309,7 +262966,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -255408,7 +263065,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-03-02"
             }
@@ -255433,7 +263090,7 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         },
         {
@@ -255855,7 +263512,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "자기조절 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -255880,14 +263537,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "자기조절 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 15,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 5,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 7,
+        "conditionAttendanceIssues": 2,
         "lateCount": 5,
         "absenceCount": 1,
         "counselingCount": 1,
@@ -255901,7 +263559,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "노답",
         "hasStaffProfile": true,
         "hasCadetCard": false,
-        "currentStatus": "경고"
+        "currentStatus": "집중 관찰"
       },
       "milestones": [
         {
@@ -256006,10 +263664,10 @@ window.STUDENT_TIMELINE_DATA = {
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 15,
-            "attendanceRisk": 2,
+            "attendanceRisk": 0,
             "counseling": 1,
             "project": 0,
             "career": 0,
@@ -256029,7 +263687,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2025-12-11",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -256097,7 +263755,7 @@ window.STUDENT_TIMELINE_DATA = {
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -256147,7 +263805,7 @@ window.STUDENT_TIMELINE_DATA = {
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -256197,7 +263855,7 @@ window.STUDENT_TIMELINE_DATA = {
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -256247,7 +263905,7 @@ window.STUDENT_TIMELINE_DATA = {
             "engagement"
           ],
           "confidence": "High",
-          "note": "자기조절 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -256266,7 +263924,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 40,
         "growthDelta": -0.4,
         "growthIndex": 38,
-        "supportIndex": 100,
+        "supportIndex": 90,
         "tags": [
           "support_priority",
           "attendance_watch"
@@ -256278,7 +263936,7 @@ window.STUDENT_TIMELINE_DATA = {
             "reasons": [
               "현재 평균 1.6/4",
               "주의 프로파일 4개",
-              "현재 상태 경고"
+              "현재 상태 집중 관찰"
             ]
           },
           "growth_high": {
@@ -256292,12 +263950,11 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
               "프로젝트 제출률 0.0%",
-              "현재 상태 경고",
+              "현재 상태 집중 관찰",
               "프로파일 1점 이하 영역 존재",
               "주의 프로파일 4개",
-              "학습 흐름 케이스 건강 관리 관찰, 건강-프로젝트 부담"
+              "학습 흐름 케이스 건강 관리 관찰, 늦잠 지각 리듬 관찰, 건강-프로젝트 부담"
             ]
           },
           "collaboration_strength": {
@@ -256307,6 +263964,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 0.0%",
               "회고 품질 1.0/4",
               "프로젝트 역할 수행 1.0/4",
+              "타 학생 불만/갈등 언급 1건",
               "협업 변화 유지 (+0.0)"
             ]
           },
@@ -256322,9 +263980,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": true,
             "reasons": [
-              "판단 반영 출결 2건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 7건",
+              "컨디션 케이스 2건",
               "참여 지속성 1/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -256355,6 +264015,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 0,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 1,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 1.0,
           "checkinCount": 0,
@@ -256367,22 +264028,96 @@ window.STUDENT_TIMELINE_DATA = {
           "projectIssueCount": 0,
           "punctuality": 1.25,
           "peopleSeriousness": 1.24,
-          "riskSignal": 0.0,
-          "collaborationReadinessScore": 25.0,
+          "riskSignal": 0.35,
+          "collaborationReadinessScore": 16.25,
           "profileScore": 1,
           "lateCount": 5,
           "trajectory": {
-            "earlyScore": 25.0,
-            "currentScore": 25.0,
+            "earlyScore": 16.25,
+            "currentScore": 16.25,
             "delta": 0.0,
             "label": "유지",
             "phaseScores": []
           }
         },
-        "profileRankScore": 12.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "여",
+            "education": "",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 0,
+            "checkin": 0,
+            "retro": 0,
+            "careerDocument": 0
+          },
+          "sourceTotal": 1,
+          "textLength": 262,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 1.0,
+              "evidence": "구체 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 1.64,
+              "evidence": "실행/개선 표현 2종 · 반복 4회 · 문서 1건",
+              "level": "낮음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 1.0,
+              "evidence": "회고/개선 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 1.44,
+              "evidence": "관계/협업 표현 1종 · 반복 1회 · 문서 1건",
+              "level": "낮음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 1.67,
+              "evidence": "진로/직무 표현 2종 · 반복 5회 · 문서 1건",
+              "level": "낮음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.0,
+              "evidence": "정서/부담 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 1.0,
+              "evidence": "탐색/불확실 표현 0종 · 반복 0회 · 문서 0건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "주도성 표현"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "비전공자로 초보지만 하는데까지 열심히 해보겠습니다. 게임기획자를 꿈꾸는데 꼭 취업까지 성공하고싶습니다. 게임기획자가 되고싶어서요 열심히 참여를 하여 좋은 게임 만들어서 제 가족들 먹여살리고 싶습니다. 열심히 하여 실질적은 결과를 만들어 내고 싶습니다. 꿈을 꾸었지만, 꿈꾸기만 하지않고 실제로 이뤄보고싶습니다! 게임 개발…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 1건에서 진로 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 16.0,
         "growthRankScore": -40.0,
-        "supportRankScore": 136,
-        "collaborationRankScore": 25.0,
+        "supportRankScore": 100,
+        "collaborationRankScore": 16.25,
         "careerRankScore": 33.75
       }
     },
@@ -258827,6 +266562,7 @@ window.STUDENT_TIMELINE_DATA = {
         "attendanceIssues": 2,
         "attendanceRiskIssues": 0,
         "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 0,
         "lateCount": 0,
         "absenceCount": 0,
         "counselingCount": 0,
@@ -259353,6 +267089,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.2%",
               "회고 품질 2.6/4",
               "프로젝트 역할 수행 2.3/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+17.5)"
             ]
           },
@@ -259368,9 +267105,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 0건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -259401,6 +267140,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 4,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 26,
@@ -259446,6 +267186,94 @@ window.STUDENT_TIMELINE_DATA = {
               }
             ]
           }
+        },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "서올호서직업전문학교 애니메이션&게임그래픽과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 7727,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.99,
+              "evidence": "구체 표현 8종 · 반복 26회 · 문서 9건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.74,
+              "evidence": "실행/개선 표현 6종 · 반복 19회 · 문서 11건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 4.0,
+              "evidence": "회고/개선 표현 5종 · 반복 40회 · 문서 11건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 7종 · 반복 62회 · 문서 11건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 18종 · 반복 61회 · 문서 14건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.58,
+              "evidence": "정서/부담 표현 6종 · 반복 13회 · 문서 11건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.49,
+              "evidence": "탐색/불확실 표현 5종 · 반복 18회 · 문서 7건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "성찰 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "웹툰 작가로 목표로 준비 하다가 어려움을 느껴 고민하다가 가장 관심이 많은 분야인 게임과 관련된 직업을 찾아 기획자로서 진로를 결정했습니다. 잘 부탁드립니다. 웹툰 작가를 목표로 준비 하였으나 어려움을 느끼고 진로를 변경 하게 되었습니다. 2D 원화, 3D 그래픽 등의 아트 계열 직군으로 가기에는 경쟁력이 떨어진다고 판…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "마케팅용 이미지 작업 오늘 내로 끝내고 싶었지만 아쉽게도 실패 했습니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 기획서 작성 당시에는 나름 괜찮은 기획서라 생각 했지만 다시 돌이켜 보면 기획서에 설명이 부족해 구두로 설명 해야 했던 지점이 많았던 것 같습니다. 뿐 만 아니라 미처 생각지 못 한 부분에서 다른 팀원 분들의 질문이 들어와 결국 구두로 설명하기 이전에 다시 기획서에 생각을 정리해 작성한 뒤 추후에 소통하는…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 성찰 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
         },
         "profileRankScore": 56.6,
         "growthRankScore": 66.0,
@@ -259843,7 +267671,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-23",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -259851,8 +267679,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 16,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-한재환-2026-03-24",
@@ -260348,9 +268176,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-23",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-05-04",
@@ -260849,7 +268677,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한재환-m5",
@@ -260864,7 +268692,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한재환-m6",
@@ -260879,7 +268707,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 1
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
       "statusPeriods": [
@@ -260887,9 +268715,9 @@ window.STUDENT_TIMELINE_DATA = {
           "statusPeriodId": "한재환-status-1",
           "statusType": "주의",
           "severity": "caution",
-          "startDate": "2026-03-23",
+          "startDate": "2026-03-30",
           "endDate": "2026-04-05",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
+          "reasonSummary": "프로젝트 활동이 밀집된 구간"
         }
       ],
       "currentProfile": {
@@ -260900,7 +268728,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 1,
         "confidence": "High",
-        "note": "진로 목적성 구체화 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -261463,23 +269291,16 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-29",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 5,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-03-23"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
@@ -261500,6 +269321,13 @@ window.STUDENT_TIMELINE_DATA = {
               "summary": "데이터 테이블 정규화, 규격 수정",
               "severity": "info",
               "date": "2026-03-25"
+            },
+            {
+              "type": "project",
+              "title": "3차 프로젝트 데일리 체크인",
+              "summary": "데이터 테이블 리뷰, 재작성",
+              "severity": "info",
+              "date": "2026-03-24"
             }
           ],
           "snapshot": null
@@ -261933,7 +269761,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "진로 목적성 구체화 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -261959,14 +269787,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "진로 목적성 구체화 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 4,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 2,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 3,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 0,
@@ -262272,10 +270101,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 18,
             "career": 0,
@@ -262365,7 +270194,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -262434,7 +270263,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -262453,7 +270282,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 75,
         "growthDelta": 1.0,
         "growthIndex": 80,
-        "supportIndex": 46,
+        "supportIndex": 36,
         "tags": [
           "growth_high"
         ],
@@ -262489,6 +270318,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 96.3%",
               "회고 품질 2.84/4",
               "프로젝트 역할 수행 1.75/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-1.0)"
             ]
           },
@@ -262504,9 +270334,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 3건",
+              "컨디션 케이스 0건",
               "참여 지속성 4/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -262536,6 +270368,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.54,
           "checkinCount": 27,
@@ -262582,9 +270415,96 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "대진대학교(생물학과, 휴학)",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 27,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 31,
+          "textLength": 5352,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 2.19,
+              "evidence": "구체 표현 3종 · 반복 6회 · 문서 3건",
+              "level": "낮음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 2.91,
+              "evidence": "실행/개선 표현 5종 · 반복 13회 · 문서 4건",
+              "level": "보통"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.06,
+              "evidence": "회고/개선 표현 3종 · 반복 17회 · 문서 5건",
+              "level": "보통"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.48,
+              "evidence": "관계/협업 표현 8종 · 반복 15회 · 문서 6건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 10종 · 반복 45회 · 문서 20건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 1.66,
+              "evidence": "정서/부담 표현 1종 · 반복 3회 · 문서 3건",
+              "level": "낮음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.52,
+              "evidence": "탐색/불확실 표현 6종 · 반복 20회 · 문서 8건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "관계/협업 언어",
+            "성찰 표현"
+          ],
+          "cautionTraits": [
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "편의점, 홈플러스, 다이소에서 일하다가 꿈을 쫒고 싶은 마음이 강해졌습니다. 그래서 가장 좋아하던 게임 혹은 문학에 마지막으로 불 태워보고 싶어 이곳저곳 찾다가 가장 평가가 좋은 이곳에 지원하게 되었습니다. 꿈과 전혀 상관없는 근무 그리고 백수로 한심스럽게 긴 시간을 보냈기에 정말 마지막이라는 생각으로 그동안 잃어버린…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "QA 부족한 저를 잘 가르쳐 주신 팀원들께 감사 인사 드립니다."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 방향성으로 가긴 했지만 여러 가지 이유, 예시로 기술 부족, 애매함 등으로 기획한 WBS 대로 가지 않아 아쉬움을 느낍니다. 그래도 서로 기획서를 보고 바로바로 캐치해 움직이고 팀장님인 시온님 역시 바로바로 기획서에 작성해 방향성이 틀리지 않게 갈 수 있었습니다. 협업에 대하여 이전보다 나은 모습을 보였지…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 31건에서 진로 언어, 관계/협업 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
         "profileRankScore": 60.0,
         "growthRankScore": 124.0,
-        "supportRankScore": 48,
+        "supportRankScore": 40,
         "collaborationRankScore": 67.25,
         "careerRankScore": 41.25
       }
@@ -262760,7 +270680,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-16",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -262768,8 +270688,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 6,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "1차 프로젝트-한지우-2026-01-20",
@@ -263056,7 +270976,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-20",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -263064,8 +270984,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 15,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "3차 프로젝트-한지우-2026-03-23",
@@ -263594,17 +271514,17 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-01-16",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-20",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-05-07",
@@ -264005,7 +271925,7 @@ window.STUDENT_TIMELINE_DATA = {
           "evidence": [
             "회고 2건",
             "성찰 점수 4/4",
-            "초기 대비 성장 +1.00"
+            "초기 대비 성장 +1.33"
           ],
           "startDate": "2026-01-26",
           "endDate": "2026-02-27"
@@ -264128,14 +272048,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 1,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한지우-m5",
@@ -264143,14 +272063,14 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 1,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         },
         {
           "snapshotId": "한지우-m6",
@@ -264158,43 +272078,26 @@ window.STUDENT_TIMELINE_DATA = {
           "snapshotType": "4차 프로젝트 종료 ~ 종강",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 1,
             "reflection": 4,
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "도전 대응 지원 필요"
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "한지우-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-01-12",
-          "endDate": "2026-01-18",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        },
-        {
-          "statusPeriodId": "한지우-status-2",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-16",
-          "endDate": "2026-03-22",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 4,
-        "engagement": 2,
+        "engagement": 4,
         "collaboration": 3,
         "resilience": 1,
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "도전 대응 지원 필요",
+        "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -264391,21 +272294,21 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-01-18",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "안정적인 학습 흐름",
           "notes": [
             {
               "type": "attendance",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "date": "2026-01-16"
             }
           ],
@@ -264732,27 +272635,27 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-22",
           "counts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 4,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "프로젝트 활동이 밀집된 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-03-20"
-            },
             {
               "type": "project",
               "title": "3차 프로젝트 데일리 체크인",
               "summary": "플밍반분들과 간단하게 우리가 만들어야할 게임에 대해서 파악하는 시간을 가진것 같습니다",
+              "severity": "info",
+              "date": "2026-03-20"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
               "severity": "info",
               "date": "2026-03-20"
             },
@@ -265250,7 +273153,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "도전 대응 지원 필요",
+              "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -265261,7 +273164,7 @@ window.STUDENT_TIMELINE_DATA = {
             "snapshotType": "현재",
             "scores": {
               "selfRegulation": 4,
-              "engagement": 2,
+              "engagement": 4,
               "collaboration": 3,
               "resilience": 1,
               "reflection": 4,
@@ -265276,14 +273179,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "도전 대응 지원 필요"
+            "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 8,
-        "attendanceRiskIssues": 2,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 2,
+        "conditionAttendanceIssues": 2,
         "lateCount": 2,
         "absenceCount": 0,
         "counselingCount": 0,
@@ -265297,7 +273201,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -265398,7 +273302,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "도전 대응 지원 필요",
           "eventCounts": {
             "attendance": 6,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 5,
             "career": 0,
@@ -265558,7 +273462,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 1,
             "reflection": 4,
@@ -265572,21 +273476,21 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
-          "growthDelta": -0.16,
+          "profileAverage": 3.0,
+          "growthDelta": 0.17,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
             "resilience",
-            "engagement"
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 17,
             "career": 0,
@@ -265630,7 +273534,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-20",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             }
           ],
@@ -265652,7 +273556,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 1,
             "reflection": 4,
@@ -265666,18 +273570,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
             "resilience",
-            "engagement"
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 1,
             "attendanceRisk": 0,
@@ -265722,7 +273626,7 @@ window.STUDENT_TIMELINE_DATA = {
           "participationReason": "",
           "scores": {
             "selfRegulation": 4,
-            "engagement": 2,
+            "engagement": 4,
             "collaboration": 3,
             "resilience": 1,
             "reflection": 4,
@@ -265736,18 +273640,18 @@ window.STUDENT_TIMELINE_DATA = {
             "resilience",
             "selfRegulation"
           ],
-          "profileAverage": 2.67,
+          "profileAverage": 3.0,
           "growthDelta": 0.0,
           "strengthKeys": [
             "selfRegulation",
-            "reflection"
+            "engagement"
           ],
           "cautionKeys": [
             "resilience",
-            "engagement"
+            "careerAgency"
           ],
           "confidence": "High",
-          "note": "도전 대응 지원 필요",
+          "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -265762,41 +273666,37 @@ window.STUDENT_TIMELINE_DATA = {
         }
       ],
       "derived": {
-        "profileAverage": 2.67,
-        "profileIndex": 67,
-        "growthDelta": 1.0,
-        "growthIndex": 80,
-        "supportIndex": 92,
+        "profileAverage": 3.0,
+        "profileIndex": 75,
+        "growthDelta": 1.33,
+        "growthIndex": 90,
+        "supportIndex": 18,
         "tags": [
-          "support_priority",
-          "collaboration_strength",
-          "attendance_watch"
+          "growth_high",
+          "collaboration_strength"
         ],
-        "primaryTag": "support_priority",
+        "primaryTag": "growth_high",
         "tagReasons": {
           "overall_strong": {
             "qualified": false,
             "reasons": [
-              "현재 평균 2.67/4",
-              "주의 프로파일 3개",
-              "현재 상태 주의"
+              "현재 평균 3.0/4",
+              "주의 프로파일 2개",
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
-            "qualified": false,
+            "qualified": true,
             "reasons": [
-              "초기 대비 성장 +1.00",
-              "성장 구간 2개",
-              "현재 평균 2.67/4"
+              "초기 대비 성장 +1.33",
+              "성장 구간 3개",
+              "현재 평균 3.0/4"
             ]
           },
           "support_priority": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "현재 상태 주의",
-              "프로파일 1점 이하 영역 존재",
-              "주의 프로파일 3개"
+              "프로파일 1점 이하 영역 존재"
             ]
           },
           "collaboration_strength": {
@@ -265806,6 +273706,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.84/4",
               "프로젝트 역할 수행 2.66/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 유지 (-3.2)"
             ]
           },
@@ -265819,11 +273720,13 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           },
           "attendance_watch": {
-            "qualified": true,
+            "qualified": false,
             "reasons": [
-              "판단 반영 출결 2건",
-              "참여 지속성 2/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 2건",
+              "컨디션 케이스 0건",
+              "참여 지속성 4/4",
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -265835,11 +273738,11 @@ window.STUDENT_TIMELINE_DATA = {
         },
         "strengthKeys": [
           "selfRegulation",
-          "reflection"
+          "engagement"
         ],
         "cautionKeys": [
           "resilience",
-          "engagement"
+          "careerAgency"
         ],
         "careerReadiness": {
           "purposeClarity": 2.8,
@@ -265854,6 +273757,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 1,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 28,
@@ -265900,9 +273804,97 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 45.4,
-        "growthRankScore": 116.0,
-        "supportRankScore": 96,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "30-34세",
+            "gender": "여",
+            "education": "대구예술대학교 한국미술컨텐츠학과",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 28,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 32,
+          "textLength": 6314,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.21,
+              "evidence": "구체 표현 6종 · 반복 14회 · 문서 6건",
+              "level": "높음"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 4.0,
+              "evidence": "실행/개선 표현 7종 · 반복 27회 · 문서 14건",
+              "level": "높음"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.23,
+              "evidence": "회고/개선 표현 4종 · 반복 21회 · 문서 7건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 4.0,
+              "evidence": "관계/협업 표현 9종 · 반복 42회 · 문서 10건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 22종 · 반복 48회 · 문서 14건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 3.55,
+              "evidence": "정서/부담 표현 5종 · 반복 14회 · 문서 9건",
+              "level": "높음"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 3.24,
+              "evidence": "탐색/불확실 표현 6종 · 반복 12회 · 문서 7건",
+              "level": "높음"
+            }
+          },
+          "dominantTraits": [
+            "주도성 표현",
+            "관계/협업 언어",
+            "진로 언어"
+          ],
+          "cautionTraits": [
+            "정서/부담 표현",
+            "탐색/불확실 표현"
+          ],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요 제 이름은 한지우라고 합니다. 34살이구요 취미는 그림그리기랑 유튜브시청, 음악듣기와 게임이 있습니다 게임을 워낙 좋아해서 여러가지 게임을 해본것 같습니다 적성에 맞는 게임은 rpg게임류를 전반적으로 오래 재미있게 즐긴것같아요! 롤,사이퍼즈,클로저스,엘소드를 했었고 지금도 rpg게임을 즐겨하고 있습니다.라테일…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-08",
+              "excerpt": "오전에 TC논의, 갱신된 빌드파일 플레이 QA진행 했습니다 내일 드뎌 발표회군요 다들 고생많으셨습니다!"
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 이번 두번째 프로젝트에서는 분위기가 괜찬아서 맘 편하게 기획을 했었던 시간이 였습니다 팀장님의 컨펌을 토대로 기획서를 들고가면 명확하게 알려주셔서 되게 좋았습니다 팀장님의 오더로 다른 팀원분들께서도 잘 이해하셔서 잘 돌아갔다고 생각합니다 기획서 작성에 좀 더 경험을 더 쌓아야 겠다를 느낀것 같습니다 소통은…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 32건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+        },
+        "profileRankScore": 64.0,
+        "growthRankScore": 157.0,
+        "supportRankScore": 20,
         "collaborationRankScore": 74.75,
         "careerRankScore": 58.75
       }
@@ -266208,7 +274200,7 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-03",
           "endDate": "",
           "type": "attendance",
-          "severity": "caution",
+          "severity": "info",
           "title": "출결 이슈 · 지각",
           "summary": "지각 (늦잠)",
           "detail": "지각 (늦잠)",
@@ -266216,8 +274208,8 @@ window.STUDENT_TIMELINE_DATA = {
           "sourceLabel": "출결 기입 시트",
           "relatedWeek": 13,
           "isEstimated": false,
-          "attendanceCategory": "behavioral",
-          "scoreImpact": "behavioral"
+          "attendanceCategory": "condition",
+          "scoreImpact": "condition"
         },
         {
           "id": "attendance-홍태광-2026-03-04-15",
@@ -266794,9 +274786,9 @@ window.STUDENT_TIMELINE_DATA = {
           "date": "2026-03-03",
           "kind": "지각",
           "detail": "지각 (늦잠)",
-          "severity": "caution",
-          "category": "behavioral",
-          "impact": "behavioral"
+          "severity": "info",
+          "category": "condition",
+          "impact": "condition"
         },
         {
           "date": "2026-03-04",
@@ -267324,7 +275316,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         },
         {
           "snapshotId": "홍태광-m6",
@@ -267339,19 +275331,10 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency": 2
           },
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요"
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
         }
       ],
-      "statusPeriods": [
-        {
-          "statusPeriodId": "홍태광-status-1",
-          "statusType": "주의",
-          "severity": "caution",
-          "startDate": "2026-03-02",
-          "endDate": "2026-03-08",
-          "reasonSummary": "출결 위험 신호를 확인한 구간"
-        }
-      ],
+      "statusPeriods": [],
       "currentProfile": {
         "selfRegulation": 3,
         "engagement": 3,
@@ -267360,7 +275343,7 @@ window.STUDENT_TIMELINE_DATA = {
         "reflection": 4,
         "careerAgency": 2,
         "confidence": "High",
-        "note": "진로 목적성 구체화 필요",
+        "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
         "updatedAt": "2026-08-03"
       },
       "weeklyTimeline": [
@@ -267799,29 +275782,29 @@ window.STUDENT_TIMELINE_DATA = {
           "endDate": "2026-03-08",
           "counts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "project": 0,
             "retro": 0,
             "counseling": 0,
             "admission": 0,
             "career": 0
           },
-          "severity": "caution",
-          "headline": "출결 위험 신호를 확인한 구간",
+          "severity": "info",
+          "headline": "출결 배경 확인이 필요한 구간",
           "notes": [
-            {
-              "type": "attendance",
-              "title": "출결 이슈 · 지각",
-              "summary": "지각 (늦잠)",
-              "severity": "caution",
-              "date": "2026-03-03"
-            },
             {
               "type": "attendance",
               "title": "출결 이슈 · 외출",
               "summary": "외출 (국취제)",
               "severity": "info",
               "date": "2026-03-04"
+            },
+            {
+              "type": "attendance",
+              "title": "출결 이슈 · 지각",
+              "summary": "지각 (늦잠)",
+              "severity": "info",
+              "date": "2026-03-03"
             },
             {
               "type": "snapshot",
@@ -268405,7 +276388,7 @@ window.STUDENT_TIMELINE_DATA = {
             {
               "type": "snapshot",
               "title": "성향 스냅샷 갱신",
-              "summary": "진로 목적성 구체화 필요",
+              "summary": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
               "severity": "info",
               "date": "2026-08-03"
             }
@@ -268431,14 +276414,15 @@ window.STUDENT_TIMELINE_DATA = {
               "selfRegulation"
             ],
             "confidence": "High",
-            "note": "진로 목적성 구체화 필요"
+            "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
           }
         }
       ],
       "stats": {
         "attendanceIssues": 6,
-        "attendanceRiskIssues": 1,
-        "healthAttendanceIssues": 0,
+        "attendanceRiskIssues": 0,
+        "healthAttendanceIssues": 1,
+        "conditionAttendanceIssues": 1,
         "lateCount": 1,
         "absenceCount": 0,
         "counselingCount": 0,
@@ -268452,7 +276436,7 @@ window.STUDENT_TIMELINE_DATA = {
         "dropoutReason": "",
         "hasStaffProfile": true,
         "hasCadetCard": true,
-        "currentStatus": "주의"
+        "currentStatus": "안정"
       },
       "milestones": [
         {
@@ -268747,7 +276731,7 @@ window.STUDENT_TIMELINE_DATA = {
           "note": "진로 목적성 구체화 필요",
           "eventCounts": {
             "attendance": 2,
-            "attendanceRisk": 1,
+            "attendanceRisk": 0,
             "counseling": 0,
             "project": 16,
             "career": 0,
@@ -268759,7 +276743,7 @@ window.STUDENT_TIMELINE_DATA = {
               "date": "2026-03-03",
               "title": "출결 이슈 · 지각",
               "summary": "지각 (늦잠)",
-              "severity": "caution",
+              "severity": "info",
               "type": "attendance"
             },
             {
@@ -268837,7 +276821,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 4,
             "attendanceRisk": 0,
@@ -268930,7 +276914,7 @@ window.STUDENT_TIMELINE_DATA = {
             "careerAgency"
           ],
           "confidence": "High",
-          "note": "진로 목적성 구체화 필요",
+          "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
           "eventCounts": {
             "attendance": 0,
             "attendanceRisk": 0,
@@ -268949,7 +276933,7 @@ window.STUDENT_TIMELINE_DATA = {
         "profileIndex": 75,
         "growthDelta": 1.0,
         "growthIndex": 80,
-        "supportIndex": 28,
+        "supportIndex": 0,
         "tags": [
           "growth_high"
         ],
@@ -268960,7 +276944,7 @@ window.STUDENT_TIMELINE_DATA = {
             "reasons": [
               "현재 평균 3.0/4",
               "주의 프로파일 1개",
-              "현재 상태 주의"
+              "현재 상태 안정"
             ]
           },
           "growth_high": {
@@ -268974,7 +276958,7 @@ window.STUDENT_TIMELINE_DATA = {
           "support_priority": {
             "qualified": false,
             "reasons": [
-              "현재 상태 주의"
+              "출결, 제출률, 현재 상태, 프로파일 저점이 집중 지원 기준 미만입니다."
             ]
           },
           "collaboration_strength": {
@@ -268984,6 +276968,7 @@ window.STUDENT_TIMELINE_DATA = {
               "체크인 정시율 100.0%",
               "회고 품질 2.72/4",
               "프로젝트 역할 수행 2.16/4",
+              "타 학생 불만/갈등 언급 0건",
               "협업 변화 개선 (+18.2)"
             ]
           },
@@ -268999,9 +276984,11 @@ window.STUDENT_TIMELINE_DATA = {
           "attendance_watch": {
             "qualified": false,
             "reasons": [
-              "판단 반영 출결 1건",
+              "무단/무연락 결석 0건",
+              "건강/컨디션 출결 1건",
+              "컨디션 케이스 0건",
               "참여 지속성 3/4",
-              "판단 반영 출결은 늦잠 지각 또는 무단 결석만 포함합니다."
+              "늦잠 지각은 태도형 위험이 아니라 건강/컨디션 관리 흐름으로 해석합니다."
             ]
           },
           "steady_path": {
@@ -269031,6 +277018,7 @@ window.STUDENT_TIMELINE_DATA = {
         "collaborationReadiness": {
           "peerPraiseCount": 2,
           "peerAvoidCount": 0,
+          "peerComplaintCount": 0,
           "relationshipPreferenceNote": "비선호/선호 언급은 관계 선호 참고값이며 협업 점수에는 직접 반영하지 않습니다.",
           "checkinConsistency": 3.7,
           "checkinCount": 26,
@@ -269077,9 +277065,94 @@ window.STUDENT_TIMELINE_DATA = {
             ]
           }
         },
-        "profileRankScore": 64.0,
+        "expressionProfile": {
+          "basicContext": {
+            "ageBand": "25-29세",
+            "gender": "남",
+            "education": "영남이공대 디자인스쿨",
+            "note": "나이, 성별, 학력은 점수 근거가 아니라 학생의 표현과 선택을 이해하기 위한 맥락 정보입니다."
+          },
+          "sourceCounts": {
+            "admission": 1,
+            "cadetCard": 1,
+            "checkin": 26,
+            "retro": 2,
+            "careerDocument": 0
+          },
+          "sourceTotal": 30,
+          "textLength": 3875,
+          "dimensions": {
+            "specificity": {
+              "label": "구체성",
+              "score": 3.16,
+              "evidence": "구체 표현 6종 · 반복 12회 · 문서 6건",
+              "level": "보통"
+            },
+            "agency": {
+              "label": "주도성 표현",
+              "score": 3.13,
+              "evidence": "실행/개선 표현 5종 · 반복 10회 · 문서 5건",
+              "level": "보통"
+            },
+            "reflection": {
+              "label": "성찰 표현",
+              "score": 3.48,
+              "evidence": "회고/개선 표현 4종 · 반복 19회 · 문서 8건",
+              "level": "높음"
+            },
+            "relation": {
+              "label": "관계/협업 언어",
+              "score": 3.38,
+              "evidence": "관계/협업 표현 4종 · 반복 21회 · 문서 9건",
+              "level": "높음"
+            },
+            "career": {
+              "label": "진로 언어",
+              "score": 4.0,
+              "evidence": "진로/직무 표현 14종 · 반복 27회 · 문서 9건",
+              "level": "높음"
+            },
+            "emotion": {
+              "label": "정서/부담 표현",
+              "score": 2.33,
+              "evidence": "정서/부담 표현 3종 · 반복 3회 · 문서 3건",
+              "level": "보통"
+            },
+            "uncertainty": {
+              "label": "탐색/불확실 표현",
+              "score": 1.82,
+              "evidence": "탐색/불확실 표현 2종 · 반복 5회 · 문서 3건",
+              "level": "낮음"
+            }
+          },
+          "dominantTraits": [
+            "진로 언어",
+            "성찰 표현",
+            "관계/협업 언어"
+          ],
+          "cautionTraits": [],
+          "samples": [
+            {
+              "label": "모집서류",
+              "date": "",
+              "excerpt": "안녕하세요. 홍태광이라고 합니다. 저는 디자인 쪽을 전공했으며 이때까지 캐릭터 디자인을 연습해왔으며 최근까지 그림 커미션을 받으며 지내왔습니다. 나라의 부름을 받아 사회복무를 진행하는 도중에 잠시 그 길에서 멈추게 되었고 문득, 한 생각이 떠오르게 되었습니다. '나는 왜 캐릭터를 잘 그리려 했을까?' 그런 생각이 들자,…"
+            },
+            {
+              "label": "데일리체크인 · 3차 프로젝트",
+              "date": "2026-04-07",
+              "excerpt": "QA 보조 드디어 내일이군요..."
+            },
+            {
+              "label": "프로젝트 회고 · 2차 프로젝트",
+              "date": "2026-02-27",
+              "excerpt": "기획에 대하여 나린과 오금의 이미지는 기획서에서 크게 벗어나지는 않게 구현되었다. 나린의 경우 팀원들의 의견을 받기 위해 4개의 헤어스타일을 제작해 가장 어울리는 헤어스타일에 대한 투표를 했었다. 나린의 아버지의 경우 20대의 모습이 시나리오 변경으로 기획서 제작 없이 추가 작업했던 기억이 있음 ‘성장을 했는가’ 라는…"
+            }
+          ],
+          "summary": "학생이 직접 작성한 자료 30건에서 진로 언어, 성찰 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+        },
+        "profileRankScore": 68.0,
         "growthRankScore": 116.0,
-        "supportRankScore": 28,
+        "supportRankScore": 0,
         "collaborationRankScore": 69.25,
         "careerRankScore": 44.25
       }

@@ -17,6 +17,7 @@
 - `project_team_history.json`: 프로젝트별 팀 배치와 역할 이력
 - `peer_relationships.json`: 반복 협업 팀원 요약
 - `career_documents.json`: 1차/2차 취업 문서와 피드백 이력
+- `expression_profile.json`: 학생 직접 작성 문서 기반 자기표현/발화 특징
 - `overview.md`: 사람이 빠르게 읽을 수 있는 학생 요약
 
 주의사항

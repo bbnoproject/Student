@@ -79,6 +79,67 @@
     dropout: { label: "과정이탈", tone: "neutral", description: "이탈 기록이 있는 학생" },
   };
 
+  const CASE_FILTER_COPY = {
+    all: {
+      label: "전체",
+      tone: "neutral",
+      caseTypes: [],
+    },
+    health_rhythm: {
+      label: "컨디션/리듬",
+      tone: "warning",
+      caseTypes: [
+        "health_management_watch",
+        "health_project_strain",
+        "condition_management_sequence",
+        "daily_checkin_pattern",
+      ],
+    },
+  };
+
+  const PURPOSE_CARDS = [
+    {
+      title: "학생 분류",
+      tone: "brand",
+      href: "#students",
+      summary: "유사한 특징을 가진 학생군을 빠르게 파악합니다.",
+      current: "운영 분류, 상태 분류, 분류 사유를 학생관리에서 확인합니다.",
+      next: "유사 학생 비교와 분류 근거 축적을 더 강화합니다.",
+    },
+    {
+      title: "학생 파악",
+      tone: "success",
+      href: "#students",
+      summary: "과정 시작부터 현재까지의 변화와 위험 신호를 봅니다.",
+      current: "학생 상세에서 협업 변화, 학습 흐름 케이스, 마일스톤을 확인합니다.",
+      next: "이상 신호가 발생한 날짜와 원인 데이터를 더 직접 연결합니다.",
+    },
+    {
+      title: "과정 파악",
+      tone: "mint",
+      href: "#overview",
+      summary: "전체 학생 성질과 과정 운영 리듬을 요약합니다.",
+      current: "개요에서 분포, 기본 통계, 반복 케이스를 확인합니다.",
+      next: "기수별 비교와 운영 개입 효과 분석을 추가합니다.",
+    },
+    {
+      title: "과정 보고서",
+      tone: "violet",
+      href: "#process",
+      summary: "모집부터 종강까지의 흐름을 시간선 보고서로 봅니다.",
+      current: "학습과정에서 과정 개요와 마일스톤별 상세를 확인합니다.",
+      next: "보고서 출력/PDF/요약 문장 생성을 붙입니다.",
+    },
+    {
+      title: "학생 멘토링",
+      tone: "warning",
+      href: "#feedback",
+      summary: "학생 개인 정보와 진로 자료를 상담/취업 지원에 활용합니다.",
+      current: "피드백 메뉴에서 학생 데이터와 제출 문서를 중간다리 JSON으로 묶습니다.",
+      next: "Gemini API, 문서 파서, 멘토링 메모 저장을 연결합니다.",
+    },
+  ];
+
   const TABLE_COLUMNS = [
     { key: "name", label: "학생", type: "text" },
     { key: "status", label: "상태", type: "text" },
@@ -88,7 +149,7 @@
     { key: "support", label: "지원", type: "number" },
     { key: "collaboration", label: "협업", type: "number" },
     { key: "career", label: "진로", type: "number" },
-    { key: "attendanceRisk", label: "위험출결", type: "number" },
+    { key: "attendanceRisk", label: "무단/위험", type: "number" },
     { key: "projectRate", label: "제출률", type: "number" },
   ];
 
@@ -101,6 +162,7 @@
     processView: initialRoute.processView,
     milestoneTab: "milestone",
     activeTag: "all",
+    activeCase: "all",
     statusFilter: "all",
     sortKey: "name",
     sortDirection: "asc",
@@ -193,6 +255,17 @@
     return TAG_COPY[tag] || TAG_COPY.steady_path;
   }
 
+  function caseFilterMeta(caseFilter) {
+    return CASE_FILTER_COPY[caseFilter] || CASE_FILTER_COPY.all;
+  }
+
+  function matchesCaseFilter(student, caseFilter) {
+    const meta = caseFilterMeta(caseFilter);
+    if (!meta.caseTypes.length) return true;
+    const typeSet = new Set(meta.caseTypes);
+    return (student.learningFlowCases || []).some((item) => typeSet.has(item.caseType));
+  }
+
   function statusGroup(student) {
     if (App.hasDropoutRecord(student)) return "dropout";
     const status = student?.stats?.managementStatus || student?.managementStatus || App.effectiveManagementStatus(student);
@@ -275,6 +348,10 @@
 
     if (state.activeTag !== "all") {
       students = students.filter((student) => student.derived?.primaryTag === state.activeTag);
+    }
+
+    if (state.activeCase !== "all") {
+      students = students.filter((student) => matchesCaseFilter(student, state.activeCase));
     }
 
     if (query) {
@@ -588,6 +665,178 @@
     `;
   }
 
+  function purposeMetric(title, students) {
+    const counts = statusCounts();
+    const caseCount = App.rawData.dashboard?.learningCaseLibrary?.length || 0;
+    const milestoneCount = App.rawData.milestones?.length || 0;
+    const metrics = {
+      "학생 분류": `${CATEGORY_ORDER.length}개 분류`,
+      "학생 파악": `${caseCount}개 케이스`,
+      "과정 파악": `${counts.general}명 진행`,
+      "과정 보고서": `${milestoneCount}개 단계`,
+      "학생 멘토링": `${students.length}명 대상`,
+    };
+    return metrics[title] || "-";
+  }
+
+  function topNames(students, limit = 3) {
+    return students
+      .slice(0, limit)
+      .map((student) => student.name)
+      .filter(Boolean)
+      .join(", ") || "대상 없음";
+  }
+
+  function studentsWithCase(students, caseTypes) {
+    const typeSet = new Set(caseTypes);
+    return students
+      .filter((student) => (student.learningFlowCases || []).some((item) => typeSet.has(item.caseType)))
+      .sort((a, b) => {
+        const warningScore = (student) =>
+          (student.learningFlowCases || []).filter((item) => typeSet.has(item.caseType) && item.severity === "warning").length;
+        return warningScore(b) - warningScore(a) || (b.stats?.healthAttendanceIssues || 0) - (a.stats?.healthAttendanceIssues || 0) || a.name.localeCompare(b.name, "ko-KR");
+      });
+  }
+
+  function rankedStudents(students, mapper) {
+    return [...students].sort((a, b) => (Number(mapper(b)) || 0) - (Number(mapper(a)) || 0) || a.name.localeCompare(b.name, "ko-KR"));
+  }
+
+  function renderActionCard(item) {
+    const attrs = item.attrs || "";
+    const tagName = item.href ? "a" : "button";
+    const href = item.href ? ` href="${escape(item.href)}"` : ` type="button"`;
+    return `
+      <${tagName} class="overview-action-card ${App.toneClass(item.tone)}" ${href} ${attrs}>
+        <span>${escape(item.kicker)}</span>
+        <strong>${escape(item.metric)}</strong>
+        <h3>${escape(item.title)}</h3>
+        <p>${escape(item.copy)}</p>
+        <small>${escape(item.names)}</small>
+        <em>${escape(item.action)}</em>
+      </${tagName}>
+    `;
+  }
+
+  function renderOverviewActionBoard(students) {
+    const milestones = App.rawData.milestones || [];
+    const currentId = currentMilestoneId(milestones);
+    const currentIndex = Math.max(0, milestones.findIndex((milestone) => milestone.id === currentId));
+    const currentMilestone = milestones[currentIndex];
+    const supportStudents = rankedStudents(
+      students.filter((student) => student.derived?.primaryTag === "support_priority"),
+      (student) => student.derived?.supportRankScore || student.derived?.supportIndex
+    );
+    const healthStudents = studentsWithCase(students, [
+      "health_management_watch",
+      "health_project_strain",
+      "condition_management_sequence",
+      "daily_checkin_pattern",
+    ]);
+    const collaborationStudents = rankedStudents(
+      students.filter((student) => student.derived?.primaryTag === "collaboration_strength"),
+      (student) => student.derived?.collaborationRankScore || student.derived?.collaborationReadiness?.collaborationReadinessScore
+    );
+    const careerStudents = rankedStudents(
+      students.filter((student) => student.derived?.primaryTag === "career_progress" || (student.stats?.careerDocumentRounds || 0) > 0),
+      (student) => student.derived?.careerRankScore || student.derived?.careerReadiness?.careerReadinessScore
+    );
+    const items = [
+      {
+        kicker: "Focus",
+        metric: `${supportStudents.length}명`,
+        title: "집중지원 우선 확인",
+        copy: "지원 우선도가 높은 학생을 먼저 열어 분류 사유와 최근 흐름을 확인합니다.",
+        names: topNames(supportStudents),
+        action: "지원순으로 보기",
+        tone: "danger",
+        attrs: `data-student-filter-action data-filter-status="general" data-filter-tag="support_priority" data-filter-sort="support" data-filter-direction="desc"`,
+      },
+      {
+        kicker: "Health & Rhythm",
+        metric: `${healthStudents.length}명`,
+        title: "컨디션/리듬 신호",
+        copy: "병가, 체크인 지연, 다음 날 지각/병가처럼 시간 흐름이 이어지는 케이스를 봅니다.",
+        names: topNames(healthStudents),
+        action: "케이스로 보기",
+        tone: "warning",
+        attrs: `data-student-filter-action data-filter-status="general" data-filter-tag="all" data-filter-case="health_rhythm" data-filter-sort="attendanceRisk" data-filter-direction="desc"`,
+      },
+      {
+        kicker: "Collaboration",
+        metric: `${collaborationStudents.length}명`,
+        title: "협업 강점 검토",
+        copy: "데일리체크인, 회고, 역할 수행에서 협업 신호가 좋은 학생을 확인합니다.",
+        names: topNames(collaborationStudents),
+        action: "협업순으로 보기",
+        tone: "mint",
+        attrs: `data-student-filter-action data-filter-status="general" data-filter-tag="collaboration_strength" data-filter-sort="collaboration" data-filter-direction="desc"`,
+      },
+      {
+        kicker: "Career",
+        metric: `${careerStudents.length}명`,
+        title: "진로 피드백 준비",
+        copy: "목적, 자기 강점, 자기 색깔이 드러나는 학생 데이터를 문서 피드백으로 연결합니다.",
+        names: topNames(careerStudents),
+        action: "피드백으로 이동",
+        tone: "violet",
+        href: "#feedback",
+      },
+      {
+        kicker: "Report",
+        metric: currentMilestone ? `M${currentIndex + 1}` : "-",
+        title: "현재 구간 보고서",
+        copy: currentMilestone ? `${App.shortMilestoneLabel(currentMilestone.label)} 구간의 주요 특이사항과 확인 학생을 봅니다.` : "현재 구간 정보를 찾을 수 없습니다.",
+        names: currentMilestone ? App.formatRange(currentMilestone.startDate, currentMilestone.endDate) : "구간 없음",
+        action: "마일스톤 열기",
+        tone: "brand",
+        attrs: `data-process-view="${escape(currentId || "overview")}"`,
+      },
+    ];
+    return `
+      <section class="panel overview-action-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Next Actions</span>
+            <h2>지금 볼 운영 포커스</h2>
+          </div>
+          <p class="panel-copy">개요에서 바로 학생관리, 학습과정, 피드백으로 이어지는 실무 동선을 모았습니다.</p>
+        </div>
+        <div class="overview-action-grid">
+          ${items.map(renderActionCard).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderPurposeBoard(students) {
+    return `
+      <section class="panel purpose-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Purpose Map</span>
+            <h2>운영 목적별 활용 지도</h2>
+          </div>
+          <p class="panel-copy">이 문서는 학생을 분류하고, 변화를 파악하고, 과정 운영과 보고, 멘토링까지 연결하는 운영 도구입니다.</p>
+        </div>
+        <div class="purpose-grid">
+          ${PURPOSE_CARDS.map(
+            (item, index) => `
+              <a class="purpose-card ${App.toneClass(item.tone)}" href="${escape(item.href)}">
+                <span>0${index + 1}</span>
+                <strong>${escape(item.title)}</strong>
+                <em>${escape(purposeMetric(item.title, students))}</em>
+                <p>${escape(item.summary)}</p>
+                <small><b>현재</b> ${escape(item.current)}</small>
+                <small><b>다음</b> ${escape(item.next)}</small>
+              </a>
+            `
+          ).join("")}
+        </div>
+      </section>
+    `;
+  }
+
   function renderOverviewPage() {
     const courseStudents = activeCourseStudents();
     const counts = statusCounts();
@@ -605,6 +854,8 @@
           ${renderMetric("제출률", formatPercent(avgProject, 1), `평균 성장 ${formatNumber(avgGrowth, 1)}`, "mint")}
         </div>
       </section>
+      ${renderOverviewActionBoard(courseStudents)}
+      ${renderPurposeBoard(courseStudents)}
       ${renderDistributionDiagram(courseStudents)}
       ${renderDemographics(courseStudents)}
       ${renderCaseLibraryOverview()}
@@ -1751,7 +2002,8 @@
   }
 
   function renderStatusFilter() {
-    const counts = statusCounts();
+    const basis = App.rawData.students.filter((student) => matchesCaseFilter(student, state.activeCase));
+    const counts = statusCounts(basis);
     return `
       <section class="status-summary-grid">
         ${Object.keys(STATUS_COPY)
@@ -1783,7 +2035,9 @@
   }
 
   function renderCategoryOverview() {
-    const students = App.rawData.students.filter((student) => state.statusFilter === "all" || statusGroup(student) === state.statusFilter);
+    const students = App.rawData.students
+      .filter((student) => state.statusFilter === "all" || statusGroup(student) === state.statusFilter)
+      .filter((student) => matchesCaseFilter(student, state.activeCase));
     return `
       <section class="panel category-panel">
         <div class="panel-head compact">
@@ -1800,9 +2054,68 @@
     `;
   }
 
+  function filterChip(label, value, tone = "neutral") {
+    return `<span class="filter-state-chip ${App.toneClass(tone)}"><b>${escape(label)}</b>${escape(value)}</span>`;
+  }
+
+  function renderStudentCommandBar(students) {
+    const status = statusMeta(state.statusFilter);
+    const tag = state.activeTag === "all" ? null : tagMeta(state.activeTag);
+    const caseFilter = caseFilterMeta(state.activeCase);
+    const sortColumn = TABLE_COLUMNS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
+    const hasFilters = state.statusFilter !== "all" || state.activeTag !== "all" || state.activeCase !== "all" || Boolean(state.query.trim());
+    const quickSorts = [
+      { key: "name", label: "가나다" },
+      { key: "support", label: "지원" },
+      { key: "collaboration", label: "협업" },
+      { key: "career", label: "진로" },
+      { key: "attendanceRisk", label: "위험출결" },
+      { key: "projectRate", label: "제출률" },
+    ];
+    return `
+      <section class="panel student-command-panel">
+        <div class="student-command-main">
+          <div>
+            <span class="panel-kicker">Current View</span>
+            <h2>학생관리 탐색 기준</h2>
+            <p>상태와 운영 분류는 한 화면에서 함께 적용됩니다. 수치 기준은 표 머리글이나 아래 빠른 정렬로 바꿀 수 있습니다.</p>
+          </div>
+          <div class="student-command-count">
+            <strong>${students.length}</strong>
+            <span>표시 중</span>
+          </div>
+        </div>
+        <div class="filter-state-row">
+          ${filterChip("상태", status.label, status.tone)}
+          ${filterChip("분류", tag ? tag.label : "전체", tag ? tag.tone : "neutral")}
+          ${filterChip("케이스", caseFilter.label, caseFilter.tone)}
+          ${filterChip("정렬", `${sortColumn.label} ${state.sortDirection === "asc" ? "오름차순" : "내림차순"}`, "brand")}
+          ${state.query.trim() ? filterChip("검색", state.query.trim(), "mint") : filterChip("검색", "없음", "neutral")}
+          ${hasFilters ? `<button type="button" class="soft-action compact-action" data-reset-student-filters>필터 초기화</button>` : ""}
+        </div>
+        <div class="student-sort-row" aria-label="빠른 정렬">
+          ${quickSorts
+            .map(
+              (item) => `
+                <button type="button" class="student-sort-chip ${state.sortKey === item.key ? "is-active" : ""}" data-table-sort="${escape(item.key)}">
+                  ${escape(item.label)}${sortGlyph(item.key)}
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
   function sortGlyph(key) {
     if (state.sortKey !== key) return "";
     return state.sortDirection === "asc" ? " ▲" : " ▼";
+  }
+
+  function classificationReasonSummary(student, tag) {
+    const reasons = student.derived?.tagReasons?.[tag]?.reasons || [];
+    return reasons[0] || tagMeta(tag).description;
   }
 
   function renderStudentRow(student) {
@@ -1816,7 +2129,7 @@
           <small>${escape(student.education || "학력 미기재")}</small>
         </td>
         <td>${statusPill(statusGroup(student))}</td>
-        <td>${tagPill(primaryTag)}</td>
+        <td>${tagPill(primaryTag)}<small>${escape(classificationReasonSummary(student, primaryTag))}</small></td>
         <td>${formatNumber(derived.profileRankScore || derived.profileIndex, 1)}</td>
         <td>${formatNumber(derived.growthRankScore || derived.growthIndex, 1)}</td>
         <td>${formatNumber(derived.supportRankScore || derived.supportIndex, 1)}</td>
@@ -1860,6 +2173,7 @@
   function renderStudentsPage() {
     const students = filteredStudents();
     return `
+      ${renderStudentCommandBar(students)}
       ${renderStatusFilter()}
       ${renderCategoryOverview()}
       <section class="panel student-management-panel">
@@ -1946,7 +2260,9 @@
         "저장된 학생 데이터에 없는 사실을 새로 만들지 않는다.",
         "협업 평가는 프로젝트 데일리체크인, 회고, 역할 수행을 중심으로 참고한다.",
         "진로 평가는 문서 제출량보다 목적, 강점, 자기 스타일의 선명도를 우선한다.",
-        "병가와 건강형 출결은 태도 문제가 아니라 건강 관리 신호로 분리한다.",
+        "병가, 건강형 출결, 늦잠 지각은 태도 문제가 아니라 건강/컨디션 관리 신호로 분리한다.",
+        "협업 위험은 타 학생의 불만, 프로젝트 불화, 소통 저해가 있는지 시간·팀·커리큘럼 맥락과 함께 확인한다.",
+        "기본 정보는 점수 근거가 아니라 학생이 직접 쓴 문서의 표현과 선택을 이해하기 위한 맥락으로만 사용한다.",
       ],
     };
   }
@@ -1995,9 +2311,10 @@
         },
         stats: student.stats || {},
         careerReadiness: derived.careerReadiness || {},
+        expressionProfile: derived.expressionProfile || {},
         collaborationReadiness: {
           ...(derived.collaborationReadiness || {}),
-          interpretation: "협업은 반복 팀원이나 선호/비선호가 아니라 체크인, 회고, 역할 수행, 지각 여부를 중심으로 해석합니다.",
+          interpretation: "협업은 반복 팀원이나 선호/비선호가 아니라 체크인, 회고, 역할 수행, 타 학생의 불만/갈등 언급, 프로젝트 맥락을 중심으로 해석합니다.",
         },
         learningFlowCases: (student.learningFlowCases || []).map((item) => ({
           label: item.label,
@@ -2180,6 +2497,35 @@
     render();
   }
 
+  function goToStudentsWithFilters({ status = "all", tag = "all", caseFilter = "all", sort = "name", direction = "asc" }) {
+    state.statusFilter = status;
+    state.activeTag = tag;
+    state.activeCase = caseFilter;
+    state.sortKey = sort;
+    state.sortDirection = direction;
+    state.activePage = "students";
+    if (window.location.hash !== "#students") {
+      window.location.hash = "#students";
+    } else {
+      render();
+    }
+  }
+
+  function resetStudentFilters() {
+    state.statusFilter = "all";
+    state.activeTag = "all";
+    state.activeCase = "all";
+    state.sortKey = "name";
+    state.sortDirection = "asc";
+    state.query = "";
+    if (searchInput) searchInput.value = "";
+    if (quickSearch) {
+      quickSearch.innerHTML = "";
+      quickSearch.classList.remove("is-visible");
+    }
+    render();
+  }
+
   async function handleFileUpload(file) {
     if (!file) return;
     state.feedbackFileName = file.name;
@@ -2208,6 +2554,7 @@
     const tagButton = event.target.closest("[data-tag]");
     if (tagButton) {
       state.activeTag = tagButton.dataset.tag || "all";
+      state.activeCase = "all";
       render();
       return;
     }
@@ -2215,7 +2562,25 @@
     const statusButton = event.target.closest("[data-status-filter]");
     if (statusButton) {
       state.statusFilter = statusButton.dataset.statusFilter || "all";
+      state.activeCase = "all";
       render();
+      return;
+    }
+
+    const overviewFilterButton = event.target.closest("[data-student-filter-action]");
+    if (overviewFilterButton) {
+      goToStudentsWithFilters({
+        status: overviewFilterButton.dataset.filterStatus || "all",
+        tag: overviewFilterButton.dataset.filterTag || "all",
+        caseFilter: overviewFilterButton.dataset.filterCase || "all",
+        sort: overviewFilterButton.dataset.filterSort || "name",
+        direction: overviewFilterButton.dataset.filterDirection || "asc",
+      });
+      return;
+    }
+
+    if (event.target.closest("[data-reset-student-filters]")) {
+      resetStudentFilters();
       return;
     }
 

@@ -368,27 +368,27 @@
     "endDate": "2026-02-22",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 2,
       "retro": 0,
       "counseling": 1,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "면담 개입이 있었던 구간",
     "notes": [
-      {
-        "type": "attendance",
-        "title": "출결 이슈 · 지각",
-        "summary": "지각 (늦잠)",
-        "severity": "caution",
-        "date": "2026-02-20"
-      },
       {
         "type": "project",
         "title": "2차 프로젝트 데일리 체크인",
         "summary": "시스템 추가 수정 및 보완, 데이터 테이블, 개발 작업을 위한 기획서 내용 분류",
+        "severity": "info",
+        "date": "2026-02-20"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (늦잠)",
         "severity": "info",
         "date": "2026-02-20"
       },
@@ -450,21 +450,21 @@
     "endDate": "2026-03-08",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 0,
       "retro": 1,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
     "notes": [
       {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
         "summary": "지각 (늦잠)",
-        "severity": "caution",
+        "severity": "info",
         "date": "2026-03-04"
       },
       {
@@ -676,27 +676,27 @@
     "endDate": "2026-04-12",
     "counts": {
       "attendance": 1,
-      "attendanceRisk": 1,
+      "attendanceRisk": 0,
       "project": 2,
       "retro": 0,
       "counseling": 0,
       "admission": 0,
       "career": 0
     },
-    "severity": "caution",
-    "headline": "출결 위험 신호를 확인한 구간",
+    "severity": "info",
+    "headline": "프로젝트 활동이 밀집된 구간",
     "notes": [
-      {
-        "type": "attendance",
-        "title": "출결 이슈 · 지각",
-        "summary": "지각 (늦잠)",
-        "severity": "caution",
-        "date": "2026-04-08"
-      },
       {
         "type": "project",
         "title": "3차 프로젝트 데일리 체크인",
         "summary": "최종빌드, 포스터 및 홍보물 제작",
+        "severity": "info",
+        "date": "2026-04-08"
+      },
+      {
+        "type": "attendance",
+        "title": "출결 이슈 · 지각",
+        "summary": "지각 (늦잠)",
         "severity": "info",
         "date": "2026-04-08"
       },
@@ -1093,7 +1093,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "자기조절 지원 필요",
+        "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "severity": "info",
         "date": "2026-08-03"
       }
@@ -1103,8 +1103,8 @@
       "snapshotDate": "2026-08-03",
       "snapshotType": "현재",
       "scores": {
-        "selfRegulation": 2,
-        "engagement": 2,
+        "selfRegulation": 3,
+        "engagement": 3,
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
@@ -1119,7 +1119,7 @@
         "selfRegulation"
       ],
       "confidence": "High",
-      "note": "자기조절 지원 필요"
+      "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
   }
 ]

@@ -73,7 +73,9 @@
   }
 
   function renderStudentDashboard(student) {
-    const actualMilestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated && milestone.participated !== false);
+    const actualMilestones = (student.milestones || []).filter(
+      (milestone) => !milestone.isEstimated && milestone.participated !== false && Number.isFinite(Number(milestone.profileAverage))
+    );
     const collaborationReadiness = student.derived?.collaborationReadiness || {};
     const dropoutDate = student.dropoutInfo?.date || student.stats?.dropoutDate || "";
     return `
@@ -81,10 +83,12 @@
         ${App.metricCard("현재 상태", student.stats?.currentStatus || "-", "현재 운영 신호", App.statusTone(student.stats?.currentStatus))}
         ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? `이탈 시점 ${App.formatDate(dropoutDate)}` : "현재 관리 분류", App.statusTone(student.managementStatus))}
         ${App.metricCard("프로젝트 제출률", `${student.stats?.projectSubmissionRate || 0}%`, "프로젝트 데일리 기록 기준", "brand")}
-        ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `늦잠/무단 ${student.stats?.attendanceRiskIssues || 0}건 · 건강 ${student.stats?.healthAttendanceIssues || 0}건`, "warning")}
+        ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `무단/무연락 ${student.stats?.attendanceRiskIssues || 0}건 · 건강/컨디션 ${student.stats?.healthAttendanceIssues || 0}건`, "warning")}
         ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
         ${App.metricCard("프로젝트 협업", `${Math.round(collaborationReadiness.collaborationReadinessScore || 0)}점`, `변화 ${collaborationReadiness.trajectory?.label || "유지"} ${collaborationReadiness.trajectory?.delta || 0}`, "violet")}
       </section>
+
+      ${App.renderExpressionProfile(student)}
 
       <section class="panel section-panel">
         <div class="panel-head">
@@ -126,24 +130,26 @@
         ${App.growthChart(actualMilestones)}
         <div class="milestone-analysis-list">
           ${actualMilestones
-            .map(
-              (milestone, index) => `
-                <article class="milestone-analysis-row ${milestone.growthDelta > 0 ? "is-up" : milestone.growthDelta < 0 ? "is-down" : ""}">
+            .map((milestone, index) => {
+              const growthDelta = Number(milestone.growthDelta) || 0;
+              const profileAverage = Number(milestone.profileAverage) || 0;
+              return `
+                <article class="milestone-analysis-row ${growthDelta > 0 ? "is-up" : growthDelta < 0 ? "is-down" : ""}">
                   <div class="milestone-analysis-name">
                     <span class="milestone-index">M${index + 1}</span>
                     <strong>${App.escapeHtml(App.shortMilestoneLabel(milestone.label))}</strong>
                     <small>${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</small>
                   </div>
                   <div class="milestone-score-row">
-                    <strong>${App.escapeHtml(milestone.profileAverage.toFixed(2))}</strong>
-                    <span class="growth-chip ${milestone.growthDelta > 0 ? "is-up" : milestone.growthDelta < 0 ? "is-down" : ""}">
-                      ${milestone.growthDelta > 0 ? "+" : ""}${App.escapeHtml(milestone.growthDelta.toFixed(2))}
+                    <strong>${App.escapeHtml(profileAverage.toFixed(2))}</strong>
+                    <span class="growth-chip ${growthDelta > 0 ? "is-up" : growthDelta < 0 ? "is-down" : ""}">
+                      ${growthDelta > 0 ? "+" : ""}${App.escapeHtml(growthDelta.toFixed(2))}
                     </span>
                   </div>
                   <p>${App.escapeHtml(milestone.note)} ${App.escapeHtml(App.milestoneStory(milestone))}</p>
                 </article>
-              `
-            )
+              `;
+            })
             .join("")}
         </div>
       </section>
@@ -344,6 +350,8 @@
   }
 
   function renderMilestoneDetailCard(milestone, index) {
+    const growthDelta = Number(milestone.growthDelta) || 0;
+    const profileAverage = Number(milestone.profileAverage) || 0;
     return `
       <article class="detail-milestone-card">
         <div class="detail-milestone-head">
@@ -353,7 +361,7 @@
             <p class="milestone-period">${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</p>
           </div>
           <div class="detail-milestone-side">
-            <span class="score-chip tone-brand">${App.escapeHtml(milestone.profileAverage.toFixed(2))}</span>
+            <span class="score-chip tone-brand">${App.escapeHtml(profileAverage.toFixed(2))}</span>
           </div>
         </div>
 
@@ -374,7 +382,7 @@
           </div>
           <div class="detail-block">
             <span class="mini-label">변화량</span>
-            <p>${milestone.growthDelta > 0 ? "+" : ""}${App.escapeHtml(milestone.growthDelta.toFixed(2))}</p>
+            <p>${growthDelta > 0 ? "+" : ""}${App.escapeHtml(growthDelta.toFixed(2))}</p>
           </div>
           <div class="detail-block">
             <span class="mini-label">이벤트 수</span>

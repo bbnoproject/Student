@@ -14,5 +14,21 @@
     ],
     "startDate": "2026-04-17",
     "endDate": "2026-04-29"
+  },
+  {
+    "caseId": "오동건-flow-2",
+    "caseType": "oversleep_condition_rhythm",
+    "label": "늦잠 지각 리듬 관찰",
+    "description": "늦잠 지각이 최근 짧은 주기로 반복되어 컨디션 관리 확인이 필요한 케이스",
+    "severity": "caution",
+    "summary": "늦잠 지각이 최근 짧은 주기로 반복되어 건강/컨디션 관리 흐름을 확인해야 합니다.",
+    "evidence": [
+      "늦잠 지각 2건",
+      "14일 내 최대 2건",
+      "최소 발생 간격 14일",
+      "최근 발생일 2026-04-15"
+    ],
+    "startDate": "2026-04-01",
+    "endDate": "2026-04-15"
   }
 ]

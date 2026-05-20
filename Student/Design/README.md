@@ -182,3 +182,5 @@
 - `STUDENT_TIMELINE_VIEW.md`: 학생 상세 타임테이블 뷰 기획
 - `DATA_REPROCESSING_STANDARD.md`: 교육학 연구 기반 데이터 재가공 기준
 - `PAGE_PLAN.md`: 메인 로비와 학생 페이지 중심 화면 기획
+- `PURPOSE_DRIVEN_PLAN.md`: 학생 분류, 학생 파악, 과정 파악, 과정 보고서, 학생 멘토링 목적 기반 기획
+- `HTML_PAGE_PLAN.md`: 수정된 목적 기반 기획을 실제 HTML 페이지와 해시 라우트 구조로 옮긴 화면 기획

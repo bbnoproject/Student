@@ -1,6 +1,21 @@
 [
   {
     "caseId": "김태훈-flow-1",
+    "caseType": "collaboration_conflict_signal",
+    "label": "협업 갈등 신호",
+    "description": "프로젝트 진행 중 타 학생의 불만, 갈등, 불화 언급이 확인된 케이스",
+    "severity": "caution",
+    "summary": "프로젝트 진행 중 타 학생의 불만/갈등 언급이 확인되어 협업 맥락을 확인해야 합니다.",
+    "evidence": [
+      "타 학생 불만/갈등 언급 1건",
+      "프로젝트 이슈 키워드 1건",
+      "예인해 언급: 만 불만이 많은 인원 특징 고집 타직군경력자 나이 27세(00년생) 긍정적관계 맹지훈 서진호 부정적관계 강태성 김시온 김지훈 김태환 김태훈 이석훈 이승진 이원홍 게임 선호 서브컬쳐 세븐나이트 리버스 MBTI ENTP 희망 직무 🔖 총평(업데이트 날짜 : 2"
+    ],
+    "startDate": "",
+    "endDate": ""
+  },
+  {
+    "caseId": "김태훈-flow-2",
     "caseType": "reflection_growth_link",
     "label": "회고 기반 성장",
     "description": "프로젝트 회고와 성장 지표가 함께 상승한 케이스",

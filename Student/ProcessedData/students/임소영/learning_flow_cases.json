@@ -17,21 +17,6 @@
     "endDate": "2026-04-23"
   },
   {
-    "caseId": "임소영-flow-2",
-    "caseType": "health_project_strain",
-    "label": "건강-프로젝트 부담",
-    "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
-    "severity": "caution",
-    "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
-    "evidence": [
-      "건강형 출결 6건",
-      "지연 체크인 10건",
-      "프로젝트 제출률 82.1%"
-    ],
-    "startDate": "2026-02-13",
-    "endDate": "2026-04-23"
-  },
-  {
     "caseId": "임소영-flow-3",
     "caseType": "daily_checkin_pattern",
     "label": "데일리체크인 리듬 흔들림",
@@ -47,5 +32,20 @@
     ],
     "startDate": "2026-02-13",
     "endDate": "2026-03-31"
+  },
+  {
+    "caseId": "임소영-flow-2",
+    "caseType": "health_project_strain",
+    "label": "건강-프로젝트 부담",
+    "description": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 나타난 케이스",
+    "severity": "caution",
+    "summary": "건강형 출결과 프로젝트 제출/체크인 흔들림이 함께 보여 학습 부담 조절이 필요합니다.",
+    "evidence": [
+      "건강/컨디션형 출결 7건",
+      "지연 체크인 10건",
+      "프로젝트 제출률 82.1%"
+    ],
+    "startDate": "2026-02-06",
+    "endDate": "2026-04-23"
   }
 ]

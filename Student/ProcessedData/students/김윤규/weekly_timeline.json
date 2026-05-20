@@ -520,7 +520,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "전반적으로 안정적인 성장 흐름",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -532,7 +532,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "careerAgency": 3
@@ -546,7 +546,7 @@
         "selfRegulation"
       ],
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "협업 상황 면담 권장"
     }
   },
   {
@@ -1158,7 +1158,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3

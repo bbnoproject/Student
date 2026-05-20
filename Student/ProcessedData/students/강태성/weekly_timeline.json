@@ -275,7 +275,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 2
@@ -454,7 +454,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "도전 대응 지원 필요",
+        "summary": "협업 상황 면담 권장",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -466,7 +466,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2
@@ -480,7 +480,7 @@
         "selfRegulation"
       ],
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "협업 상황 면담 권장"
     }
   },
   {
@@ -1060,7 +1060,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 3

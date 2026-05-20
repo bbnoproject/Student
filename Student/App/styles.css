@@ -68,7 +68,7 @@ body {
 }
 
 body {
-  padding: 10px 24px 24px;
+  padding: 12px 22px 28px;
 }
 
 button,
@@ -83,7 +83,7 @@ textarea {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
 }
 
 .app-topbar,
@@ -108,12 +108,12 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .app-topbar {
   position: sticky;
-  top: 10px;
+  top: 8px;
   z-index: 30;
-  padding: 10px 14px;
+  padding: 9px 12px;
   display: grid;
-  grid-template-columns: minmax(170px, 0.7fr) minmax(320px, 1fr) minmax(260px, 0.8fr);
-  gap: 14px;
+  grid-template-columns: minmax(160px, 0.58fr) minmax(360px, 1.1fr) minmax(260px, 0.72fr);
+  gap: 12px;
   align-items: center;
   backdrop-filter: blur(18px);
 }
@@ -187,7 +187,7 @@ body[data-theme="dark"] .detail-milestone-card {
 }
 
 .top-nav-link {
-  padding: 8px 13px;
+  padding: 7px 13px;
   border-radius: 999px;
   color: var(--text-soft);
   font-size: 13px;
@@ -222,7 +222,7 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .search-stack input {
   width: 100%;
-  padding: 10px 12px;
+  padding: 9px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface-strong);
@@ -326,13 +326,13 @@ body[data-theme="dark"] .detail-milestone-card {
 .two-column-grid,
 .detail-section-grid {
   display: grid;
-  gap: 18px;
+  gap: 14px;
 }
 
 .hero-panel,
 .panel,
 .detail-milestone-card {
-  padding: 24px;
+  padding: 18px;
 }
 
 .lobby-hero {
@@ -351,6 +351,7 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .metric-card {
   padding: 14px;
+  min-height: 0;
   border-radius: 10px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -369,7 +370,7 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .metric-value {
   display: block;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
   line-height: 1;
   margin-bottom: 6px;
 }
@@ -381,7 +382,7 @@ body[data-theme="dark"] .detail-milestone-card {
 .spotlight-panel {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 14px;
 }
 
 .panel-head,
@@ -407,7 +408,7 @@ body[data-theme="dark"] .detail-milestone-card {
 .student-tabs h3,
 .detail-milestone-card h4 {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
 }
 
 .chip-filter-row,
@@ -637,7 +638,7 @@ body[data-theme="dark"] .detail-milestone-card {
 .student-hero {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 14px;
 }
 
 .student-hero-grid {
@@ -666,19 +667,19 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .student-basic-panel,
 .student-profile-panel {
-  padding: 18px;
+  padding: 16px 18px;
 }
 
 .student-summary-head {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
+  gap: 14px;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .compact-profile-score {
-  min-width: 132px;
+  min-width: 116px;
   padding: 12px;
   border-radius: 10px;
   border: 1px solid var(--border);
@@ -700,16 +701,16 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .student-basic-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  margin: 18px 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px 18px;
+  margin: 14px 0;
 }
 
 .student-basic-grid span {
   display: block;
   font-size: 12px;
   color: var(--text-soft);
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .student-basic-grid strong {
@@ -934,6 +935,71 @@ body[data-theme="dark"] .detail-milestone-card {
   line-height: 1.5;
 }
 
+.expression-panel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+}
+
+.expression-context-grid,
+.expression-sample-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.expression-context-grid article,
+.expression-sample-list article,
+.expression-dimension-row {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.expression-context-grid span,
+.expression-sample-list span,
+.expression-dimension-row span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.expression-context-grid strong,
+.expression-sample-list strong {
+  display: block;
+  margin: 6px 0;
+}
+
+.expression-context-grid p,
+.expression-sample-list p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.expression-dimension-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.expression-dimension-row {
+  display: grid;
+  gap: 10px;
+}
+
+.expression-dimension-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.expression-dimension-row .profile-track {
+  height: 8px;
+}
+
 .collaboration-trajectory-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -995,6 +1061,24 @@ body[data-theme="dark"] .detail-milestone-card {
 
 .compact-snapshot-grid {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.student-tabs {
+  position: sticky;
+  top: 78px;
+  z-index: 20;
+  width: fit-content;
+  padding: 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.student-tabs .tab-chip {
+  border-radius: 9px;
 }
 
 .student-edit-form {
@@ -1349,6 +1433,7 @@ body[data-theme="dark"] .detail-milestone-card {
   .snapshot-grid,
   .student-basic-grid,
   .compact-snapshot-grid,
+  .expression-context-grid,
   .profile-bar-list,
   .detail-milestone-grid,
   .edit-form-grid {
@@ -1430,6 +1515,9 @@ body[data-theme="dark"] .detail-milestone-card {
   .snapshot-grid,
   .student-basic-grid,
   .compact-snapshot-grid,
+  .expression-context-grid,
+  .expression-dimension-list,
+  .expression-sample-list,
   .profile-bar-list,
   .detail-milestone-grid,
   .edit-form-grid {
