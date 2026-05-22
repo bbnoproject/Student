@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import json
 import re
+import zipfile
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import date, datetime, time, timedelta
@@ -14,6 +15,7 @@ from typing import Any
 
 from openpyxl import load_workbook
 from openpyxl.utils.datetime import from_excel
+from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -116,6 +118,33 @@ COLLAB_COMPLAINT_KEYWORDS = [
     "조율이 어려",
     "진행이 어려",
 ]
+
+PRACTICE_STRENGTH_KEYWORDS = {
+    "system_design": {
+        "label": "시스템/밸런스 설계",
+        "keywords": ["시스템", "밸런스", "테이블", "수식", "경제", "BM", "지표", "공식", "규칙"],
+    },
+    "content_design": {
+        "label": "콘텐츠/레벨 디자인",
+        "keywords": ["레벨", "맵", "던전", "기믹", "동선", "스테이지", "퀘스트", "콘텐츠", "플레이"],
+    },
+    "narrative_world": {
+        "label": "세계관/서사/연출",
+        "keywords": ["스토리", "세계관", "시나리오", "연출", "캐릭터", "감정", "서사", "미장센"],
+    },
+    "ai_tooling": {
+        "label": "AI 활용/자동화",
+        "keywords": ["AI", "Gemini", "제미나이", "생성형", "프롬프트", "커스텀 봇", "자동화", "봇"],
+    },
+    "market_research": {
+        "label": "시장/BM/유저 분석",
+        "keywords": ["시장", "유저", "타겟", "분석", "매출", "지표", "BM", "리텐션", "퍼널"],
+    },
+    "communication": {
+        "label": "문서화/커뮤니케이션",
+        "keywords": ["정리", "문서", "보고서", "가이드", "튜토리얼", "설득", "소통", "피드백"],
+    },
+}
 
 COLLAB_SERIOUSNESS_KEYWORDS = [
     "소통",
@@ -970,6 +999,14 @@ def collect_self_authored_sources(student: dict[str, Any]) -> list[dict[str, str
         ).strip()
         if text:
             sources.append({"domain": "careerDocument", "label": f"진로 문서 · {round_item.get('roundLabel', '')}", "date": round_item.get("date", ""), "text": text})
+    for item in student.get("morningPresentations", []):
+        text = item.get("topic", "").strip()
+        if text:
+            sources.append({"domain": "morningPresentation", "label": "아침 발표", "date": item.get("presentationDate", ""), "text": text})
+    for item in student.get("practiceSubmissions", []):
+        text = "\n".join([item.get("assignment", ""), item.get("fileName", ""), item.get("excerpt", "")]).strip()
+        if text:
+            sources.append({"domain": "practiceSubmission", "label": f"실습 제출 · {item.get('assignment', '')}", "date": item.get("date", ""), "text": text})
     return sources
 
 
@@ -981,6 +1018,8 @@ def source_counts(sources: list[dict[str, str]]) -> dict[str, int]:
         "checkin": counts.get("checkin", 0),
         "retro": counts.get("retro", 0),
         "careerDocument": counts.get("careerDocument", 0),
+        "morningPresentation": counts.get("morningPresentation", 0),
+        "practiceSubmission": counts.get("practiceSubmission", 0),
     }
 
 
@@ -1746,6 +1785,11 @@ def build_students() -> tuple[list[dict[str, Any]], dict[str, dict[str, Any]]]:
             "peerRelationships": [],
             "peerFeedback": [],
             "learningFlowCases": [],
+            "morningPresentations": [],
+            "practiceSubmissions": [],
+            "careerGuidance": {},
+            "strengthProfile": {},
+            "studentGroupSignals": [],
             "careerDocuments": {"rounds": [], "summary": {}},
             "staffProfile": {},
             "cadetCard": {},
@@ -1868,9 +1912,17 @@ def add_admission_data(students_by_name: dict[str, dict[str, Any]], course_start
             "experience": ["학습 및 업무 경험", "업무 경험"],
             "career": ["취업 분야"],
             "goal": ["수료 후 자신의 목표"],
+            "cameraMic": ["캠 + 마이크"],
+            "healthIssue": ["본인이 앓고 있는 지병", "지병 혹은 질환이 있나요"],
+            "healthIssueDetail": ["지병 혹은 질환이 있다면"],
             "conflict": ["갈등"],
             "failure": ["실수나 실패"],
             "peer": ["타인의 부족한 부분"],
+            "financialHardship": ["참여에 영향을 줄 경제적인 어려움", "경제적인 어려움"],
+            "financialHardshipDetail": ["어려움이 있다면 어떤 상황"],
+            "industryConnection": ["게임 업계 관련 종사자"],
+            "referral": ["추천을 받았다면"],
+            "concern": ["걱정되는 부분"],
         },
     )
 
@@ -1888,9 +1940,17 @@ def add_admission_data(students_by_name: dict[str, dict[str, Any]], course_start
             "experience": clean_text(row[columns["experience"]]) if columns["experience"] >= 0 else "",
             "career": clean_text(row[columns["career"]]) if columns["career"] >= 0 else "",
             "goal": clean_text(row[columns["goal"]]) if columns["goal"] >= 0 else "",
+            "cameraMic": clean_text(row[columns["cameraMic"]]) if columns["cameraMic"] >= 0 else "",
+            "healthIssue": clean_text(row[columns["healthIssue"]]) if columns["healthIssue"] >= 0 else "",
+            "healthIssueDetail": clean_text(row[columns["healthIssueDetail"]]) if columns["healthIssueDetail"] >= 0 else "",
             "conflict": clean_text(row[columns["conflict"]]) if columns["conflict"] >= 0 else "",
             "failure": clean_text(row[columns["failure"]]) if columns["failure"] >= 0 else "",
             "peer": clean_text(row[columns["peer"]]) if columns["peer"] >= 0 else "",
+            "financialHardship": clean_text(row[columns["financialHardship"]]) if columns["financialHardship"] >= 0 else "",
+            "financialHardshipDetail": clean_text(row[columns["financialHardshipDetail"]]) if columns["financialHardshipDetail"] >= 0 else "",
+            "industryConnection": clean_text(row[columns["industryConnection"]]) if columns["industryConnection"] >= 0 else "",
+            "referral": clean_text(row[columns["referral"]]) if columns["referral"] >= 0 else "",
+            "concern": clean_text(row[columns["concern"]]) if columns["concern"] >= 0 else "",
         }
         if submitted_at:
             student["timelineEvents"].append(
@@ -2678,6 +2738,197 @@ def add_career_document_data(students_by_name: dict[str, dict[str, Any]], weeks:
                 )
 
 
+def parse_morning_presentation_line(line: str) -> dict[str, str] | None:
+    raw = unescape(line).replace("\t", " ")
+    text = clean_text(raw)
+    if not text or text.startswith("*") or text.startswith("지각일"):
+        return None
+    dates = list(re.finditer(r"\d{4}-\d{2}-\d{2}", text))
+    if not dates:
+        return None
+    if len(dates) >= 2:
+        late_date = parse_date(dates[0].group(0))
+        presentation_date = parse_date(dates[1].group(0))
+        rest = text[dates[1].end() :].strip()
+    else:
+        late_date = None
+        presentation_date = parse_date(dates[0].group(0))
+        rest = text[dates[0].end() :].strip()
+    if not presentation_date:
+        return None
+    name_match = re.match(r"([가-힣A-Za-z0-9]+)\s+(.+)", rest)
+    if not name_match:
+        return None
+    return {
+        "lateDate": late_date.isoformat() if late_date else "",
+        "presentationDate": presentation_date.isoformat(),
+        "name": clean_text(name_match.group(1)),
+        "topic": clean_text(name_match.group(2)),
+        "isVolunteer": not bool(late_date),
+    }
+
+
+def add_morning_presentation_data(students_by_name: dict[str, dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
+    path = DATA_DIR / "아침 발표.md"
+    if not path.exists():
+        return
+    for raw_line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        entry = parse_morning_presentation_line(raw_line)
+        if not entry:
+            continue
+        student = students_by_name.get(normalize_name(entry["name"]))
+        if not student:
+            continue
+        student["morningPresentations"].append(entry)
+        event_date = parse_date(entry["presentationDate"])
+        if not event_date:
+            continue
+        source_reason = "자원 발표" if entry["isVolunteer"] else f"지각 후 발표 · 지각일 {entry['lateDate']}"
+        student["timelineEvents"].append(
+            {
+                "id": f"morning-presentation-{student['id']}-{entry['presentationDate']}-{len(student['morningPresentations'])}",
+                "date": entry["presentationDate"],
+                "endDate": "",
+                "type": "morning_presentation",
+                "severity": "success" if entry["isVolunteer"] else "info",
+                "title": "아침 발표",
+                "summary": short_text(entry["topic"]),
+                "detail": f"{source_reason}\n발표 주제: {entry['topic']}",
+                "projectPhase": "",
+                "sourceLabel": "아침 발표.md",
+                "relatedWeek": week_for_date(event_date, weeks),
+                "isEstimated": False,
+            }
+        )
+
+
+def extract_pdf_text(path: Path, max_pages: int = 3, max_chars: int = 6000) -> str:
+    try:
+        reader = PdfReader(str(path))
+        return clean_text("\n".join((page.extract_text() or "") for page in reader.pages[:max_pages]))[:max_chars]
+    except Exception:
+        return ""
+
+
+def extract_xlsx_text(path: Path, max_cells: int = 120, max_chars: int = 6000) -> str:
+    try:
+        wb = load_workbook(path, read_only=True, data_only=True)
+        values = []
+        for ws in wb.worksheets[:2]:
+            for row in ws.iter_rows(values_only=True):
+                for value in row:
+                    text = clean_text(value)
+                    if text:
+                        values.append(text)
+                    if len(values) >= max_cells:
+                        return "\n".join(values)[:max_chars]
+        return "\n".join(values)[:max_chars]
+    except Exception:
+        return ""
+
+
+def extract_docx_text(path: Path, max_chars: int = 6000) -> str:
+    try:
+        with zipfile.ZipFile(path) as archive:
+            xml_text = archive.read("word/document.xml").decode("utf-8", errors="ignore")
+        return clean_text(re.sub(r"<[^>]+>", " ", xml_text))[:max_chars]
+    except Exception:
+        return ""
+
+
+def extract_submission_text(path: Path) -> str:
+    suffix = path.suffix.lower()
+    if suffix == ".pdf":
+        return extract_pdf_text(path)
+    if suffix in {".xlsx", ".xlsm"}:
+        return extract_xlsx_text(path)
+    if suffix == ".docx":
+        return extract_docx_text(path)
+    if suffix in {".txt", ".md"}:
+        try:
+            return clean_text(path.read_text(encoding="utf-8", errors="ignore"))[:6000]
+        except Exception:
+            return ""
+    return ""
+
+
+def infer_submission_date(path: Path) -> str:
+    text = path.name
+    for pattern in [r"(20\d{2})[.\-_년 ]{0,2}(\d{1,2})[.\-_월 ]{0,2}(\d{1,2})", r"(\d{2})[.\-_](\d{1,2})[.\-_](\d{1,2})", r"(\d{6})"]:
+        match = re.search(pattern, text)
+        if not match:
+            continue
+        try:
+            if len(match.groups()) == 1:
+                token = match.group(1)
+                return date(2000 + int(token[:2]), int(token[2:4]), int(token[4:6])).isoformat()
+            year = int(match.group(1))
+            if year < 100:
+                year += 2000
+            return date(year, int(match.group(2)), int(match.group(3))).isoformat()
+        except ValueError:
+            continue
+    return ""
+
+
+def practice_strength_hits(text: str) -> dict[str, int]:
+    hits = {}
+    for key, meta in PRACTICE_STRENGTH_KEYWORDS.items():
+        count = keyword_occurrence_count(text, meta["keywords"])
+        if count > 0:
+            hits[key] = count
+    return hits
+
+
+def add_practice_submission_data(students_by_name: dict[str, dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
+    base_dir = DATA_DIR / "실습 제출"
+    if not base_dir.exists():
+        return
+    supported = {".pdf", ".xlsx", ".xlsm", ".docx", ".txt", ".md"}
+    for path in sorted(item for item in base_dir.rglob("*") if item.is_file() and item.suffix.lower() in supported):
+        student = match_student_from_text(path.name, students_by_name)
+        if not student:
+            continue
+        relative_parts = path.relative_to(base_dir).parts
+        module = relative_parts[0].replace(" (File responses)", "") if len(relative_parts) >= 1 else "실습"
+        assignment = relative_parts[-2].replace(" (File responses)", "") if len(relative_parts) >= 2 else module
+        extracted = extract_submission_text(path)
+        combined_text = "\n".join([module, assignment, path.stem, extracted])
+        strength_hits = practice_strength_hits(combined_text)
+        submission_date = infer_submission_date(path)
+        submission = {
+            "module": clean_text(module),
+            "assignment": clean_text(assignment),
+            "fileName": path.name,
+            "sourceFile": str(path.relative_to(DATA_DIR)).replace("\\", "/"),
+            "date": submission_date,
+            "fileType": path.suffix.lower().lstrip("."),
+            "excerpt": short_text(extracted or path.stem, 220),
+            "textExtracted": bool(extracted),
+            "strengthHits": strength_hits,
+        }
+        student["practiceSubmissions"].append(submission)
+        event_date = parse_date(submission_date)
+        if not event_date:
+            continue
+        student["timelineEvents"].append(
+            {
+                "id": f"practice-submission-{student['id']}-{submission_date}-{len(student['practiceSubmissions'])}",
+                "date": submission_date,
+                "endDate": "",
+                "type": "practice_submission",
+                "severity": "success" if extracted else "info",
+                "title": f"실습 제출 · {clean_text(assignment)}",
+                "summary": short_text(path.stem),
+                "detail": extracted or path.name,
+                "projectPhase": "",
+                "sourceLabel": "실습 제출",
+                "relatedWeek": week_for_date(event_date, weeks),
+                "isEstimated": False,
+            }
+        )
+
+
 def infer_missing_dropout_dates(students: list[dict[str, Any]], weeks: list[CurriculumWeek]) -> None:
     for student in students:
         dropout_info = student.get("dropoutInfo", {}) or {}
@@ -3284,6 +3535,10 @@ def build_evaluation_and_status(students: list[dict[str, Any]], curriculum: dict
             "leadershipRoleCount": sum(1 for item in student.get("projectTeamHistory", []) if item.get("role") in {"team_lead", "pm"}),
             "repeatedPeerCount": len([item for item in student.get("peerRelationships", []) if item.get("count", 0) >= 2]),
             "careerDocumentRounds": student.get("careerDocuments", {}).get("summary", {}).get("roundCount", 0),
+            "morningPresentationCount": len(student.get("morningPresentations", [])),
+            "volunteerPresentationCount": len([item for item in student.get("morningPresentations", []) if item.get("isVolunteer")]),
+            "practiceSubmissionCount": len(student.get("practiceSubmissions", [])),
+            "practiceTextExtractedCount": len([item for item in student.get("practiceSubmissions", []) if item.get("textExtracted")]),
             "managementStatus": student.get("managementStatus", "일반"),
             "dropoutDate": student.get("dropoutInfo", {}).get("date", ""),
             "dropoutReason": student.get("dropoutInfo", {}).get("reason", ""),
@@ -3561,10 +3816,12 @@ def summarize_milestone(
                 "date": event["date"],
                 "title": event["title"],
                 "summary": event["summary"],
+                "detail": event.get("detail", event["summary"]),
                 "severity": event["severity"],
                 "type": event["type"],
+                "sourceLabel": event.get("sourceLabel", ""),
             }
-            for event in events[:5]
+            for event in events
         ],
         "roles": [item.get("roleLabel", "") for item in role_history if item.get("roleLabel")],
         "careerRoundCount": len(career_rounds),
@@ -3804,6 +4061,392 @@ def classify_student(student: dict[str, Any], growth_high_threshold: float) -> d
     }
 
 
+def build_career_guidance(student: dict[str, Any]) -> dict[str, Any]:
+    strength_counter: Counter[str] = Counter()
+    evidence: list[str] = []
+    for submission in student.get("practiceSubmissions", []):
+        for key, count in submission.get("strengthHits", {}).items():
+            strength_counter[key] += count
+        if submission.get("excerpt"):
+            evidence.append(f"{submission.get('assignment', '실습')}: {submission['excerpt']}")
+    presentation_topics = [item.get("topic", "") for item in student.get("morningPresentations", []) if item.get("topic")]
+    presentation_text = "\n".join(presentation_topics)
+    for key, meta in PRACTICE_STRENGTH_KEYWORDS.items():
+        count = keyword_occurrence_count(presentation_text, meta["keywords"])
+        if count:
+            strength_counter[key] += count
+    profile_strengths = student.get("derived", {}).get("strengthKeys", [])
+    career = student.get("derived", {}).get("careerReadiness", {})
+    top_domains = [
+        {
+            "key": key,
+            "label": PRACTICE_STRENGTH_KEYWORDS[key]["label"],
+            "score": count,
+        }
+        for key, count in strength_counter.most_common(4)
+    ]
+    if not top_domains and profile_strengths:
+        fallback_labels = {
+            "reflection": "성찰 기반 성장",
+            "collaboration": "협업/소통",
+            "careerAgency": "진로 주도성",
+            "selfRegulation": "자기관리",
+            "engagement": "참여 지속성",
+            "resilience": "회복탄력성",
+        }
+        top_domains = [{"key": key, "label": fallback_labels.get(key, key), "score": 1} for key in profile_strengths[:3]]
+
+    selling_points = []
+    if top_domains:
+        selling_points.append(f"{top_domains[0]['label']} 관련 산출물과 발표 이력이 있어 포트폴리오의 첫 인상으로 활용할 수 있습니다.")
+    if student.get("stats", {}).get("volunteerPresentationCount", 0) > 0:
+        selling_points.append("지각 보완이 아닌 자원 발표 이력이 있어 관심사를 공개적으로 정리하고 공유한 경험을 강조할 수 있습니다.")
+    if career.get("purposeClarity", 0) >= 2.5:
+        selling_points.append("지원서·진로 문서에서 직무 목적성이 비교적 분명하게 드러납니다.")
+    if student.get("derived", {}).get("collaborationReadiness", {}).get("peerPraiseCount", 0) >= 2:
+        selling_points.append("동료 언급에서 긍정적 관계 신호가 있어 협업 사례로 전환할 수 있습니다.")
+    if not selling_points:
+        selling_points.append("현재 자료는 제출 이력과 기본 프로파일 중심이므로, 대표 산출물 1개를 골라 강점 문장으로 재정리하는 것이 우선입니다.")
+
+    portfolio_angles = []
+    for domain in top_domains[:3]:
+        portfolio_angles.append(f"{domain['label']} 사례: 관련 실습 제출물과 발표 주제를 연결해 문제 정의, 의도, 결과를 3단 구성으로 정리")
+    if not portfolio_angles:
+        portfolio_angles.append("대표 프로젝트/실습 1개를 선택해 맡은 역할, 판단 근거, 개선점을 정리")
+
+    return {
+        "topDomains": top_domains,
+        "sellingPoints": selling_points[:4],
+        "portfolioAngles": portfolio_angles[:4],
+        "evidence": evidence[:6],
+        "presentationTopics": presentation_topics[:8],
+        "submissionCount": len(student.get("practiceSubmissions", [])),
+        "presentationCount": len(student.get("morningPresentations", [])),
+    }
+
+
+def build_student_group_signals(student: dict[str, Any]) -> list[dict[str, Any]]:
+    signals = []
+    stats = student.get("stats", {})
+    derived = student.get("derived", {})
+    guidance = student.get("careerGuidance", {})
+    if stats.get("attendanceRiskIssues", 0) >= 2 or stats.get("currentStatus") in {"주의", "경고"}:
+        signals.append(
+            {
+                "key": "operation_watch",
+                "label": "운영 관찰군",
+                "basis": f"현재 상태 {stats.get('currentStatus', '-')} · 출결 기록 {stats.get('attendanceIssues', 0)}건",
+            }
+        )
+    if stats.get("practiceSubmissionCount", 0) >= 5 and guidance.get("topDomains"):
+        signals.append(
+            {
+                "key": "portfolio_material_ready",
+                "label": "포트폴리오 소재 보유군",
+                "basis": f"실습 제출 {stats.get('practiceSubmissionCount', 0)}건 · 대표 강점 {guidance['topDomains'][0]['label']}",
+            }
+        )
+    if stats.get("volunteerPresentationCount", 0) >= 1:
+        signals.append(
+            {
+                "key": "self_publication",
+                "label": "자발적 공유군",
+                "basis": f"자원 발표 {stats.get('volunteerPresentationCount', 0)}건",
+            }
+        )
+    if derived.get("careerReadiness", {}).get("careerReadinessScore", 0) >= 62:
+        signals.append(
+            {
+                "key": "career_ready",
+                "label": "취업 메시지 구체화군",
+                "basis": f"진로 준비 점수 {derived['careerReadiness']['careerReadinessScore']}",
+            }
+        )
+    if not signals:
+        signals.append(
+            {
+                "key": "steady_observation",
+                "label": "일반 관찰군",
+                "basis": "위험/강점 행동군 기준에 뚜렷하게 걸리지 않아 일반 관찰로 분류",
+            }
+        )
+    return signals
+
+
+def evidence_item(source_type: str, source_label: str, excerpt: str, **extra: Any) -> dict[str, Any]:
+    payload = {
+        "sourceType": source_type,
+        "sourceLabel": source_label,
+        "excerpt": short_text(excerpt, 260),
+    }
+    payload.update({key: value for key, value in extra.items() if value})
+    return payload
+
+
+def birth_year_from_student(student: dict[str, Any]) -> int | None:
+    parsed = parse_date(student.get("birthDate", ""))
+    return parsed.year if parsed else None
+
+
+def background_strengths(student: dict[str, Any]) -> list[dict[str, Any]]:
+    strengths = []
+    admission_experience = student.get("admission", {}).get("experience", "")
+    has_positive_experience = bool(admission_experience) and not any(
+        keyword in admission_experience for keyword in ["없습니다", "처음", "없음", "없다"]
+    )
+    education_text = " ".join(
+        filter(
+            None,
+            [
+                student.get("education", ""),
+                student.get("experience", ""),
+                admission_experience if has_positive_experience else "",
+                student.get("staffProfile", {}).get("properties", {}).get("특징", ""),
+            ],
+        )
+    )
+    education_evidence = []
+    if student.get("education"):
+        education_evidence.append(evidence_item("기본정보", "학력", student["education"]))
+    if student.get("experience"):
+        education_evidence.append(evidence_item("기본정보", "경력/전공", student["experience"]))
+    if has_positive_experience:
+        education_evidence.append(evidence_item("지원서", "게임 관련 학습/업무 경험", admission_experience))
+    background_keywords = [
+        "게임",
+        "프로그래밍",
+        "컴퓨터",
+        "소프트",
+        "개발",
+        "디자인",
+        "영상",
+        "애니메이션",
+        "마케팅",
+        "경영",
+        "비즈니스",
+        "통계",
+        "사회과학",
+        "QA",
+        "업계경력자",
+        "타직군경력자",
+    ]
+    if any(keyword in education_text for keyword in background_keywords):
+        strengths.append(
+            {
+                "category": "기본 배경",
+                "title": "전공/경력 배경을 게임기획 서사로 전환 가능",
+                "claim": "기본정보와 지원서에 직무 관련 전공, 타 직군 경력, 또는 게임 관련 경험이 확인되어 취업 서사의 출발점으로 사용할 수 있습니다.",
+                "evidence": education_evidence[:4],
+                "careerUse": "자기소개서에서는 '이전 배경이 게임기획 문제 해결에 어떻게 연결되는지'를 한 문장으로 고정해 활용합니다.",
+                "caution": "성별이나 나이 자체는 강점으로 쓰지 않고, 검증 가능한 학습/경력/산출물로만 설명해야 합니다.",
+            }
+        )
+
+    address = student.get("address", "")
+    if address and any(region in address for region in ["서울", "경기", "인천", "성남", "수원", "부천", "용인", "고양"]):
+        strengths.append(
+            {
+                "category": "기본 배경",
+                "title": "수도권 게임사 지원 접근성",
+                "claim": "거주지가 수도권 또는 수도권 인접 지역으로 확인되어 오프라인 면접, 하이브리드 근무, 경기권 게임사 지원에서 일정 대응력을 설명할 수 있습니다.",
+                "evidence": [evidence_item("기본정보", "거주지역", address)],
+                "careerUse": "근무 가능 지역을 묻는 면접에서 통근/이주 계획을 현실적으로 답변하는 근거로 사용합니다.",
+                "caution": "거주지는 역량 강점이 아니라 지원 가능성과 운영 참고 정보로만 다룹니다.",
+            }
+        )
+
+    birth_year = birth_year_from_student(student)
+    if birth_year and birth_year <= 1996 and any(keyword in education_text for keyword in ["경력", "업무", "회사", "QA", "마케팅", "디자인", "개발"]):
+        strengths.append(
+            {
+                "category": "기본 배경",
+                "title": "사회 경험 기반 실무 전환 서사",
+                "claim": "연령 자체가 아니라 이전 업무/경력 기록이 함께 확인되어 실무 커뮤니케이션과 책임 경험을 게임업계 전환 서사로 사용할 수 있습니다.",
+                "evidence": [
+                    evidence_item("기본정보", "생년", f"{birth_year}년생"),
+                    *education_evidence[:2],
+                ],
+                "careerUse": "신입 지원 시에도 '완전한 무경험자'가 아니라 실무 태도와 협업 경험을 갖춘 전환형 지원자로 설명합니다.",
+                "caution": "나이 표현은 차별적 요소가 될 수 있으므로 경력과 산출물 중심으로만 표현합니다.",
+            }
+        )
+    return strengths
+
+
+def motivation_profile(student: dict[str, Any]) -> dict[str, Any]:
+    admission = student.get("admission", {})
+    text_sources = [
+        ("지원서", "참여 신청 이유", admission.get("motivation", "")),
+        ("지원서", "희망 취업 분야", admission.get("career", "")),
+        ("지원서", "수료 후 목표", admission.get("goal", "")),
+        ("대원카드", "대원카드 원문", student.get("cadetCard", {}).get("fullText", "")),
+        ("면담", "면담 기록", "\n".join(item.get("content", "") for item in student.get("counselings", []))),
+        ("아침 발표", "발표 주제", "\n".join(item.get("topic", "") for item in student.get("morningPresentations", []))),
+    ]
+    full_text = "\n".join(text for _, _, text in text_sources if text)
+    career_hits = unique_keyword_hits(full_text, CAREER_PURPOSE_KEYWORDS + CAREER_ROLE_KEYWORDS)
+    action_hits = len(student.get("practiceSubmissions", [])) + len(student.get("careerDocuments", {}).get("rounds", []))
+    evidence = [
+        evidence_item(source_type, source_label, text)
+        for source_type, source_label, text in text_sources
+        if text
+    ][:5]
+    missing = []
+    if career_hits < 2:
+        missing.append("지원 동기가 직무명, 지원 회사 유형, 만들고 싶은 산출물과 충분히 연결되지 않았습니다.")
+    if action_hits < 4:
+        missing.append("동기를 뒷받침하는 실습/진로 문서 행동 근거가 아직 적습니다.")
+    if not admission.get("goal"):
+        missing.append("수료 후 목표 원문이 약하거나 비어 있어 면접용 목표 문장을 보완해야 합니다.")
+
+    if career_hits >= 4 and action_hits >= 5:
+        motivation_type = "명확"
+        reason = "지원서의 진로 언어와 이후 실습/문서 행동이 함께 확인되어 게임업계 진입 이유가 비교적 분명합니다."
+    elif career_hits >= 2 and action_hits >= 4:
+        motivation_type = "성장형"
+        reason = "초기 동기는 완전히 선명하지 않더라도 과정 중 실습과 발표를 통해 관심 영역이 구체화되고 있습니다."
+    elif any(keyword in full_text for keyword in ["전환", "이직", "경력", "회사", "업계"]):
+        motivation_type = "전환형"
+        reason = "이전 경험에서 게임업계로 이동하려는 맥락은 보이나, 희망 직무와 대표 산출물 연결을 더 정리해야 합니다."
+    else:
+        motivation_type = "약함"
+        reason = "게임을 좋아한다는 수준의 동기 또는 추상적 목표는 확인되지만, 직무 선택 이유와 행동 근거가 부족합니다."
+
+    return {
+        "type": motivation_type,
+        "reason": reason,
+        "evidence": evidence,
+        "missing": missing,
+        "coachingQuestions": [
+            "왜 게임업계여야 하는가?",
+            "왜 이 직무를 선택했는가?",
+            "가장 자신 있게 보여줄 산출물은 무엇이며, 그 산출물에서 본인의 판단은 무엇이었는가?",
+        ],
+    }
+
+
+def practice_strength_cards(student: dict[str, Any]) -> list[dict[str, Any]]:
+    by_domain: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for submission in student.get("practiceSubmissions", []):
+        for key, count in submission.get("strengthHits", {}).items():
+            by_domain[key].append({**submission, "hitCount": count})
+    cards = []
+    for key, submissions in sorted(by_domain.items(), key=lambda item: sum(sub.get("hitCount", 0) for sub in item[1]), reverse=True)[:4]:
+        meta = PRACTICE_STRENGTH_KEYWORDS[key]
+        examples = sorted(submissions, key=lambda item: item.get("hitCount", 0), reverse=True)[:3]
+        cards.append(
+            {
+                "category": "실습 과제",
+                "title": meta["label"],
+                "claim": f"{meta['label']} 관련 키워드와 산출물이 여러 실습에서 확인됩니다.",
+                "evidence": [
+                    evidence_item("실습 제출", item.get("assignment", "실습"), item.get("excerpt") or item.get("fileName", ""), fileName=item.get("fileName", ""), sourceFile=item.get("sourceFile", ""))
+                    for item in examples
+                ],
+                "careerUse": f"{meta['label']} 역량을 대표 포트폴리오 섹션으로 묶고, 문제 정의-기획 의도-검증/개선 순서로 설명합니다.",
+                "caution": "키워드 출현만으로 역량을 확정하지 말고, 실제 문서 안에서 본인의 판단과 결과물을 확인해야 합니다.",
+            }
+        )
+    return cards
+
+
+def behavior_trait_cards(student: dict[str, Any]) -> list[dict[str, Any]]:
+    cards = []
+    praise = [item for item in student.get("peerFeedback", []) if item.get("type") == "praise"]
+    complaints = [item for item in student.get("peerFeedback", []) if item.get("type") == "complaint"]
+    presentations = student.get("morningPresentations", [])
+    volunteer = [item for item in presentations if item.get("isVolunteer")]
+    if praise:
+        cards.append(
+            {
+                "category": "생활/주변 평가",
+                "title": "동료에게 긍정적으로 언급된 협업 신호",
+                "claim": "학생간 기록에서 배울 점, 함께하고 싶은 동료, 긍정 관계로 언급된 흔적이 확인됩니다.",
+                "evidence": [
+                    evidence_item("학생간 평가", f"{item.get('from', '')} 언급", item.get("snippet", ""))
+                    for item in praise[:4]
+                ],
+                "careerUse": "면접에서 협업 강점을 말할 때 동료에게 어떤 점을 인정받았는지 사례형으로 정리합니다.",
+                "caution": "간접 언급이므로 실제 프로젝트 역할, 산출물, 팀 내 행동과 함께 검증해야 합니다.",
+            }
+        )
+    if volunteer:
+        cards.append(
+            {
+                "category": "생활/주변 평가",
+                "title": "자발적 발표와 관심사 공유",
+                "claim": "지각 보완이 아닌 자원 발표 이력이 있어 관심사를 공개적으로 정리하고 공유한 행동이 확인됩니다.",
+                "evidence": [
+                    evidence_item("아침 발표", "자원 발표", item.get("topic", ""), date=item.get("presentationDate", ""))
+                    for item in volunteer[:4]
+                ],
+                "careerUse": "관심 분야를 스스로 학습하고 팀에 공유하는 태도, 발표/문서화 역량으로 연결합니다.",
+                "caution": "발표 주제와 지원 직무 사이의 연결 문장을 별도로 정리해야 합니다.",
+            }
+        )
+    if complaints or student.get("stats", {}).get("attendanceIssues", 0) >= 8:
+        evidence = [
+            evidence_item("학생간 평가", f"{item.get('from', '')} 언급", item.get("snippet", ""))
+            for item in complaints[:3]
+        ]
+        if student.get("stats", {}).get("attendanceIssues", 0) >= 8:
+            evidence.append(evidence_item("출결 기록", "출결 기록", f"출결 기록 {student['stats'].get('attendanceIssues', 0)}건 · 무단/무연락 {student['stats'].get('attendanceRiskIssues', 0)}건"))
+        cards.append(
+            {
+                "category": "개선점",
+                "title": "생활 리듬/협업 신뢰도 점검 필요",
+                "basis": "출결 기록 또는 주변 평가에서 취업 전 점검이 필요한 신호가 확인됩니다.",
+                "evidence": evidence,
+                "coachingQuestion": "반복되는 리듬 문제나 협업 우려를 줄이기 위해 어떤 관리 루틴을 만들었는가?",
+            }
+        )
+    return cards
+
+
+def build_strength_profile(student: dict[str, Any]) -> dict[str, Any]:
+    motivation = motivation_profile(student)
+    strengths = []
+    strengths.extend(background_strengths(student))
+    strengths.extend(practice_strength_cards(student))
+    behavior_cards = behavior_trait_cards(student)
+    strengths.extend([card for card in behavior_cards if card.get("category") != "개선점"])
+
+    improvements = [card for card in behavior_cards if card.get("category") == "개선점"]
+    if motivation["type"] in {"약함", "전환형"} or motivation.get("missing"):
+        improvements.append(
+            {
+                "title": "게임업계 진입 동기 보완",
+                "basis": motivation["reason"],
+                "evidence": motivation["evidence"][:3],
+                "coachingQuestion": "지원 직무와 대표 산출물을 기준으로 게임업계 진입 이유를 한 문단으로 다시 정리하세요.",
+            }
+        )
+    if student.get("stats", {}).get("practiceSubmissionCount", 0) < 3:
+        improvements.append(
+            {
+                "title": "검증 가능한 실습 산출물 부족",
+                "basis": f"연결된 실습 제출 {student.get('stats', {}).get('practiceSubmissionCount', 0)}건으로 강점 검증 자료가 부족합니다.",
+                "evidence": [evidence_item("실습 제출", "제출 집계", f"실습 제출 {student.get('stats', {}).get('practiceSubmissionCount', 0)}건")],
+                "coachingQuestion": "가장 직무와 가까운 실습 1개를 보완 제출하거나 기존 프로젝트 산출물을 정리하세요.",
+            }
+        )
+
+    confidence = "high" if len(strengths) >= 3 and sum(len(item.get("evidence", [])) for item in strengths) >= 5 else "medium" if strengths else "low"
+    headline = strengths[0]["title"] if strengths else "검증 가능한 강점 정리 필요"
+    return {
+        "overview": {
+            "headline": headline,
+            "confidence": confidence,
+            "summary": f"{headline} 중심으로 취업 서사를 구성하되, 개선점 {len(improvements)}개를 함께 코칭해야 합니다.",
+        },
+        "strengths": strengths[:8],
+        "improvements": improvements[:6],
+        "motivation": motivation,
+        "behaviorTraits": [card for card in behavior_cards if card.get("category") != "개선점"],
+        "employabilityAngles": student.get("careerGuidance", {}).get("portfolioAngles", [])[:4],
+    }
+
+
 def build_dashboard_summary(students: list[dict[str, Any]], milestones: list[dict[str, Any]]) -> dict[str, Any]:
     stable_count = sum(1 for student in students if student["stats"]["currentStatus"] == "안정")
     caution_count = sum(1 for student in students if student["stats"]["currentStatus"] == "주의")
@@ -3920,6 +4563,9 @@ def enrich_student_analysis(
 
     for student in students:
         student["derived"] = classify_student(student, growth_high_threshold)
+        student["careerGuidance"] = build_career_guidance(student)
+        student["strengthProfile"] = build_strength_profile(student)
+        student["studentGroupSignals"] = build_student_group_signals(student)
 
     dashboard = build_dashboard_summary(students, milestones)
     return phase_ranges, {
@@ -3944,6 +4590,8 @@ def build_payload() -> dict[str, Any]:
     add_attendance_data(students_by_name, weeks)
     add_counseling_data(students_by_name, weeks)
     add_career_document_data(students_by_name, weeks)
+    add_morning_presentation_data(students_by_name, weeks)
+    add_practice_submission_data(students_by_name, weeks)
     infer_missing_dropout_dates(students, weeks)
     add_peer_feedback_mentions(students)
     build_evaluation_and_status(students, curriculum, weeks, phase_dates)
@@ -3975,6 +4623,7 @@ def main() -> None:
     OUTPUT_FILE.write_text(
         "window.STUDENT_TIMELINE_DATA = " + json_text + ";\n",
         encoding="utf-8",
+        errors="replace",
     )
     print(f"Generated {OUTPUT_FILE}")
     print(f"Students: {len(payload['students'])}")

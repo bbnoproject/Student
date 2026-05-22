@@ -2,6 +2,7 @@
   --bg: #f7faff;
   --surface: #ffffff;
   --surface-strong: #ffffff;
+  --surface-raised: #f9fbff;
   --secondary: #eef5ff;
   --secondary-strong: #d8e9ff;
   --accent: #2563eb;
@@ -12,6 +13,7 @@
   --shadow: 0 14px 34px rgba(30, 64, 175, 0.08);
   --success: #16835b;
   --warning: #b7791f;
+  --warning-border: rgba(183, 121, 31, 0.24);
   --danger: #d33f49;
   --violet: #6d5bd0;
   --mint: #0f8f9c;
@@ -31,6 +33,7 @@ body[data-theme="dark"] {
   --bg: #0b1220;
   --surface: #111827;
   --surface-strong: #182235;
+  --surface-raised: #162033;
   --secondary: #162033;
   --secondary-strong: #22324d;
   --accent: #60a5fa;
@@ -41,6 +44,7 @@ body[data-theme="dark"] {
   --shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
   --success: #5ee0aa;
   --warning: #f2c36b;
+  --warning-border: rgba(242, 195, 107, 0.3);
   --danger: #ff8791;
   --violet: #b2a5ff;
   --mint: #75d7e1;
@@ -651,6 +655,13 @@ body[data-theme="dark"] .detail-milestone-card {
 .student-basic-panel,
 .student-profile-panel,
 .interpretation-card,
+.admission-context-card,
+.admission-interview-summary,
+.writing-evidence-card,
+.writing-copy-block,
+.staff-profile-meta-card,
+.source-section-card,
+.counseling-record-card,
 .detail-section-card,
 .detail-block,
 .milestone-card,
@@ -733,7 +744,17 @@ body[data-theme="dark"] .detail-milestone-card {
 .panel-copy,
 .student-intro,
 .student-profile-copy,
-.story-copy {
+.story-copy,
+.admission-context-card p,
+.admission-interview-summary p,
+.writing-copy-block p,
+.staff-profile-meta-card p,
+.source-section-card p,
+.counseling-record-card p,
+.career-guidance-card p,
+.guidance-list-card p,
+.group-signal-card p,
+.practice-submission-card p {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -752,6 +773,18 @@ body[data-theme="dark"] .detail-milestone-card {
   overflow: visible;
 }
 
+.five-metric-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.five-metric-radar {
+  width: min(100%, 360px);
+  overflow: visible;
+}
+
 .radar-grid,
 .radar-axis {
   fill: none;
@@ -765,6 +798,13 @@ body[data-theme="dark"] .detail-milestone-card {
   stroke-width: 2.5;
 }
 
+.radar-average-area {
+  fill: color-mix(in srgb, var(--text-soft) 12%, transparent);
+  stroke: var(--text-soft);
+  stroke-width: 2;
+  stroke-dasharray: 5 5;
+}
+
 .radar-dot {
   fill: var(--accent);
 }
@@ -773,6 +813,96 @@ body[data-theme="dark"] .detail-milestone-card {
   fill: var(--text-soft);
   font-size: 11px;
   text-anchor: middle;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.chart-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.legend-dot.is-student {
+  background: var(--accent);
+}
+
+.legend-dot.is-average {
+  background: var(--text-soft);
+}
+
+.five-metric-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.five-metric-card {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: start;
+}
+
+.five-metric-card span {
+  display: block;
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.five-metric-card strong {
+  color: var(--text);
+  font-size: 1.75rem;
+}
+
+.five-metric-card em {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--secondary);
+}
+
+.five-metric-card em.is-up {
+  color: #059669;
+}
+
+.five-metric-card em.is-down {
+  color: #dc2626;
+}
+
+.five-metric-card .profile-track,
+.five-metric-card p {
+  grid-column: 1 / -1;
+}
+
+.five-metric-card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 .profile-bar-list {
@@ -978,6 +1108,369 @@ body[data-theme="dark"] .detail-milestone-card {
   margin: 0;
   color: var(--text-soft);
   font-size: 13px;
+  line-height: 1.5;
+}
+
+.admission-context-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.admission-context-card {
+  padding: 15px;
+  display: grid;
+  gap: 8px;
+  border-color: color-mix(in srgb, currentColor 22%, var(--border));
+}
+
+.admission-context-card span,
+.admission-interview-summary span,
+.writing-evidence-head span,
+.writing-copy-block span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.admission-context-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 14px;
+}
+
+.admission-interview-summary {
+  margin-top: 12px;
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+  background: var(--secondary);
+}
+
+.admission-interview-summary p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.writing-evidence-list {
+  display: grid;
+  gap: 12px;
+}
+
+.writing-evidence-card {
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.writing-evidence-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.writing-evidence-head strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.writing-evidence-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.writing-copy-block {
+  padding: 14px;
+  background: var(--secondary);
+}
+
+.writing-copy-block.is-interpretation {
+  background: color-mix(in srgb, var(--brand) 8%, var(--surface));
+}
+
+.writing-copy-block p {
+  margin: 8px 0 0;
+  max-height: 220px;
+  overflow: auto;
+  color: var(--text-soft);
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.staff-profile-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.staff-profile-meta-card {
+  padding: 14px;
+  display: grid;
+  gap: 7px;
+  background: var(--surface);
+}
+
+.staff-profile-meta-card span,
+.source-section-head span,
+.counseling-record-head span,
+.counseling-record-head em {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.staff-profile-meta-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.source-section-list,
+.counseling-record-list {
+  display: grid;
+  gap: 12px;
+}
+
+.source-section-card,
+.counseling-record-card {
+  padding: 16px;
+  display: grid;
+  gap: 10px;
+  background: var(--surface);
+}
+
+.source-section-head,
+.counseling-record-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.source-section-head strong,
+.counseling-record-head strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.counseling-record-head div {
+  display: grid;
+  gap: 3px;
+}
+
+.source-section-card p,
+.counseling-record-card p {
+  margin: 0;
+  max-height: 280px;
+  overflow: auto;
+  color: var(--text-soft);
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.career-guidance-grid,
+.guidance-section-grid,
+.group-signal-grid,
+.strength-card-list,
+.strength-evidence-list,
+.improvement-card-list,
+.practice-summary-row {
+  display: grid;
+  gap: 12px;
+}
+
+.career-guidance-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  margin-bottom: 12px;
+}
+
+.guidance-section-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.group-signal-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.practice-summary-row {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 12px;
+}
+
+.career-guidance-card,
+.guidance-list-card,
+.group-signal-card,
+.strength-overview-card,
+.motivation-card,
+.strength-card,
+.strength-evidence-item,
+.strength-use-box,
+.improvement-card,
+.practice-submission-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 16px;
+}
+
+.career-guidance-card span,
+.strength-overview-card span,
+.strength-evidence-item span,
+.practice-submission-card small {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.career-guidance-card p,
+.guidance-list-card p,
+.group-signal-card p,
+.strength-overview-card p,
+.motivation-card p,
+.strength-card p,
+.strength-evidence-item p,
+.strength-use-box p,
+.improvement-card p,
+.practice-submission-card p {
+  margin: 8px 0 0;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.strength-overview-card strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--text);
+  font-size: 1.2rem;
+}
+
+.motivation-card {
+  margin-top: 12px;
+}
+
+.strength-card-list {
+  margin-top: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.strength-card {
+  display: grid;
+  gap: 12px;
+}
+
+.strength-evidence-list {
+  gap: 8px;
+}
+
+.strength-evidence-item {
+  padding: 12px;
+  background: var(--surface-raised);
+}
+
+.strength-evidence-item p {
+  white-space: pre-line;
+}
+
+.strength-evidence-item small {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.strength-use-box {
+  display: grid;
+  gap: 8px;
+  background: var(--brand-soft);
+}
+
+.strength-use-box p {
+  margin: 0;
+}
+
+.strength-use-box strong {
+  display: inline-block;
+  min-width: 76px;
+  color: var(--accent);
+}
+
+.improvement-card-list {
+  margin-top: 14px;
+}
+
+.guidance-list-card h4,
+.improvement-card-list h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.improvement-card {
+  display: grid;
+  gap: 10px;
+  border-color: var(--warning-border);
+}
+
+.improvement-card strong {
+  color: var(--text);
+}
+
+.improvement-card em {
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.improvement-note-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.improvement-note-list p {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--warning-soft);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.guidance-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.guidance-chip-list strong {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.group-signal-card strong {
+  color: var(--text);
+}
+
+.practice-submission-list {
+  display: grid;
+  gap: 12px;
+}
+
+.practice-submission-card small {
+  display: block;
+  margin-top: 10px;
   line-height: 1.5;
 }
 
@@ -1448,10 +1941,34 @@ body[data-theme="dark"] .detail-milestone-card {
 .interpretation-card p,
 .detail-section-card p,
 .detail-block p,
-.detail-event-item p {
+.detail-event-item p,
+.event-full-detail div {
   margin: 0;
   line-height: 1.7;
   color: var(--text-soft);
+}
+
+.event-full-detail {
+  margin-top: 10px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.event-full-detail summary {
+  cursor: pointer;
+  color: var(--brand);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.event-full-detail div {
+  margin-top: 10px;
+  max-height: 360px;
+  overflow: auto;
+  white-space: pre-line;
+  background: var(--secondary);
+  border-radius: 10px;
+  padding: 12px;
 }
 
 .detail-milestone-stack {
@@ -1504,6 +2021,12 @@ body[data-theme="dark"] .detail-milestone-card {
   .app-topbar,
   .lobby-hero,
   .student-hero-grid,
+  .five-metric-layout,
+  .career-guidance-grid,
+  .guidance-section-grid,
+  .group-signal-grid,
+  .strength-card-list,
+  .practice-summary-row,
   .milestone-analysis-row,
   .two-column-grid,
   .detail-section-grid {
@@ -1515,6 +2038,9 @@ body[data-theme="dark"] .detail-milestone-card {
   .student-basic-grid,
   .compact-snapshot-grid,
   .expression-context-grid,
+  .admission-context-grid,
+  .staff-profile-meta-grid,
+  .five-metric-summary,
   .profile-bar-list,
   .detail-milestone-grid,
   .edit-form-grid {
@@ -1599,6 +2125,11 @@ body[data-theme="dark"] .detail-milestone-card {
   .expression-context-grid,
   .expression-dimension-list,
   .expression-sample-list,
+  .admission-context-grid,
+  .writing-evidence-columns,
+  .strength-card-list,
+  .staff-profile-meta-grid,
+  .five-metric-summary,
   .profile-bar-list,
   .detail-milestone-grid,
   .edit-form-grid {

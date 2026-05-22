@@ -6,12 +6,29 @@
   const themeToggle = document.getElementById("theme-toggle");
 
   const fallbackStudentId = App.rawData.students[0]?.id || "";
+  const TAB_ALIASES = {
+    dashboard: "status",
+    detail: "records",
+  };
+  const STUDENT_TABS = [
+    { key: "status", label: "현황" },
+    { key: "score", label: "성적" },
+    { key: "evaluation", label: "평가" },
+    { key: "records", label: "기록" },
+    { key: "materials", label: "추가자료" },
+    { key: "basic", label: "기본정보" },
+  ];
+
+  function normalizeStudentTab(tab) {
+    const normalized = TAB_ALIASES[tab] || tab || "status";
+    return [...STUDENT_TABS.map((item) => item.key), "management"].includes(normalized) ? normalized : "status";
+  }
 
   const state = {
     theme: App.getSavedTheme(),
     query: "",
     studentId: App.getQueryParam("id") || fallbackStudentId,
-    studentTab: App.getQueryParam("tab") || "dashboard",
+    studentTab: normalizeStudentTab(App.getQueryParam("tab")),
     detailMilestoneId: "all",
     activeCriterion: "",
     focusClassification: App.getQueryParam("focus") || "",
@@ -36,7 +53,7 @@
             ${App.tagBadge(student.derived?.primaryTag)}
             ${
               state.studentTab === "management"
-                ? `<button type="button" class="secondary-action compact-action" data-tab="dashboard">개요로 돌아가기</button>`
+                ? `<button type="button" class="secondary-action compact-action" data-tab="status">개요로 돌아가기</button>`
                 : `<button type="button" class="primary-action compact-action" data-tab="management">정보 수정</button>`
             }
           </div>
@@ -73,6 +90,921 @@
     `;
   }
 
+  function plainText(value) {
+    return String(value || "").trim();
+  }
+
+  function valueOrEmpty(value) {
+    const text = plainText(value);
+    return text && text !== "-" ? text : "";
+  }
+
+  function renderAdmissionValue(primary, detail) {
+    const primaryText = valueOrEmpty(primary);
+    const detailText = valueOrEmpty(detail);
+    if (primaryText && detailText) return `${primaryText} · ${detailText}`;
+    return primaryText || detailText || "기록 없음";
+  }
+
+  function admissionSummaryTone(value) {
+    const text = plainText(value);
+    if (/예|있|어려움|복용|질환|지병|추천/i.test(text)) return "tone-warning";
+    if (/아니|없/i.test(text)) return "tone-mint";
+    return "tone-neutral";
+  }
+
+  function writingInterpretation(label, text, student) {
+    const profile = student.derived?.expressionProfile || {};
+    const dominant = profile.summary ? `표현 분석: ${profile.summary}` : "";
+    if (/자기소개/.test(label)) return "학생이 스스로 설명한 현재 배경과 과정 진입 전 자기 인식입니다.";
+    if (/지원|계기|포부/.test(label)) return "과정 참여 동기와 지속 동기를 확인하는 원문입니다.";
+    if (/경험|경력|취업|직무|분야/.test(label)) return "모집 단계에서 파악한 사전 경험, 희망 직무, 업계 이해 수준을 함께 보는 근거입니다.";
+    if (/목표|수료/.test(label)) return "수료 후 목표가 얼마나 구체적인지, 취업 방향과 연결되는지 확인하는 근거입니다.";
+    if (/갈등|협업/.test(label)) return "팀 프로젝트에서 갈등을 처리하는 방식과 소통 기준을 예측하는 근거입니다.";
+    if (/실수|실패/.test(label)) return "실패 이후 회복 방식과 피드백 수용 태도를 보는 근거입니다.";
+    if (/타인|부족/.test(label)) return "동료의 미흡함을 발견했을 때의 개입 방식과 협업 안전감을 보는 근거입니다.";
+    if (/강점|약점/.test(label)) return "학생이 인식하는 장단점과 운영 관찰 포인트를 비교하기 위한 원문입니다.";
+    if (/관심|기술|분야/.test(label)) return "관심 기술과 학습 욕구가 실제 프로젝트 선택과 맞물리는지 보는 근거입니다.";
+    return dominant || "학생이 직접 작성한 문장을 원문 기준으로 확인하는 근거입니다.";
+  }
+
+  function uniqueEvidenceItems(items) {
+    const seen = new Set();
+    return items.filter((item) => {
+      const text = valueOrEmpty(item.text);
+      if (!text) return false;
+      const key = `${item.source}::${item.label}::${text}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      item.text = text;
+      return true;
+    });
+  }
+
+  function writingEvidenceItems(student) {
+    const admission = student.admission || {};
+    const cadet = student.cadetCard || {};
+    const sections = cadet.sections || {};
+    const baseItems = [
+      { source: "지원서", label: "1분 자기소개", text: admission.intro },
+      { source: "지원서", label: "참여 신청 이유", text: admission.motivation },
+      { source: "지원서", label: "게임 관련 학습/업무 경험", text: admission.experience },
+      { source: "지원서", label: "희망 취업 분야", text: admission.career },
+      { source: "지원서", label: "수료 후 목표", text: admission.goal },
+      { source: "지원서", label: "지병/질환 여부", text: admission.healthIssue },
+      { source: "지원서", label: "지병/질환 상세", text: admission.healthIssueDetail },
+      { source: "지원서", label: "갈등 대처", text: admission.conflict },
+      { source: "지원서", label: "실수/실패 대응", text: admission.failure },
+      { source: "지원서", label: "타인의 부족한 부분 대응", text: admission.peer },
+      { source: "지원서", label: "경제적 어려움 여부", text: admission.financialHardship },
+      { source: "지원서", label: "경제적 어려움 상세", text: admission.financialHardshipDetail },
+      { source: "지원서", label: "게임업계 지인 여부", text: admission.industryConnection },
+      { source: "지원서", label: "추천인/업계 지인", text: admission.referral },
+      { source: "지원서", label: "걱정되는 부분/문의", text: admission.concern },
+      { source: "대원카드", label: "과정을 들어오게 된 계기와 포부", text: cadet.motivation || sections["과정을 들어오게 된 계기와 포부"] },
+      { source: "대원카드", label: "간단한 자기소개", text: cadet.intro || sections["간단한 자기소개"] },
+      { source: "대원카드", label: "나의 강점과 약점", text: cadet.strengthsAndWeaknesses || sections["나의 강점과 약점"] },
+      { source: "대원카드", label: "관심 기술/배우고 싶은 분야", text: cadet.interests || sections["관심 있는 기술 스택 / 배우고 싶은 분야"] },
+      { source: "대원카드", label: "과정에서 이루고 싶은 목표", text: cadet.goal || sections["과정에서 이루고 싶은 목표"] },
+      { source: "대원카드", label: "스트레스 해소 방법", text: cadet.stressRelief || sections["스트레스 해소 방법"] },
+      { source: "대원카드", label: "TMI", text: cadet.tmi || sections.TMI },
+      { source: "대원카드", label: "과정 수료 후 나의 모습 상상", text: cadet.futureSelf || sections["과정 수료 후 나의 모습 상상"] },
+    ];
+    const extraSectionItems = Object.entries(sections)
+      .filter(([label]) => label && label !== "본문")
+      .map(([label, text]) => ({ source: "대원카드", label, text }));
+    return uniqueEvidenceItems([...baseItems, ...extraSectionItems]);
+  }
+
+  function renderAdmissionContextPanel(student) {
+    const admission = student.admission || {};
+    const contextItems = [
+      {
+        label: "지병/건강 제약",
+        value: renderAdmissionValue(admission.healthIssue, admission.healthIssueDetail),
+        tone: admissionSummaryTone(`${admission.healthIssue || ""} ${admission.healthIssueDetail || ""}`),
+      },
+      {
+        label: "경제적 어려움",
+        value: renderAdmissionValue(admission.financialHardship, admission.financialHardshipDetail),
+        tone: admissionSummaryTone(`${admission.financialHardship || ""} ${admission.financialHardshipDetail || ""}`),
+      },
+      {
+        label: "게임업계 지인 여부",
+        value: renderAdmissionValue(admission.industryConnection, admission.referral),
+        tone: admissionSummaryTone(`${admission.industryConnection || ""} ${admission.referral || ""}`),
+      },
+      {
+        label: "경력사항/사전 경험",
+        value: renderAdmissionValue(admission.experience, admission.career),
+        tone: "tone-brand",
+      },
+      {
+        label: "화상수업 장비",
+        value: renderAdmissionValue(admission.cameraMic, ""),
+        tone: "tone-neutral",
+      },
+      {
+        label: "참여 걱정/문의",
+        value: renderAdmissionValue(admission.concern, ""),
+        tone: admissionSummaryTone(admission.concern),
+      },
+    ];
+
+    return `
+      <section class="panel section-panel admission-context-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Recruitment Context</span>
+            <h3>모집 단계 핵심 정보</h3>
+          </div>
+          <p class="panel-copy">지원서와 면접 단계에서 직접 확인한 운영 참고 정보입니다.</p>
+        </div>
+        <div class="admission-context-grid">
+          ${contextItems
+            .map(
+              (item) => `
+                <article class="admission-context-card ${item.tone}">
+                  <span>${App.escapeHtml(item.label)}</span>
+                  <p>${App.escapeHtml(item.value)}</p>
+                </article>
+              `
+            )
+            .join("")}
+        </div>
+        <div class="admission-interview-summary">
+          <span>면접 총평</span>
+          <p>${App.escapeHtml(admission.interviewSummary || "기록 없음")}</p>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderWritingEvidencePanel(student) {
+    const items = writingEvidenceItems(student);
+    return `
+      <section class="panel section-panel writing-evidence-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Original & Interpretation</span>
+            <h3>학생 작성 원문과 해석</h3>
+          </div>
+          <p class="panel-copy">지원서와 대원카드의 학생 작성 내용을 원문 옆에서 바로 해석합니다.</p>
+        </div>
+        <div class="writing-evidence-list">
+          ${
+            items.length
+              ? items
+                  .map(
+                    (item) => `
+                      <article class="writing-evidence-card">
+                        <div class="writing-evidence-head">
+                          <span>${App.escapeHtml(item.source)}</span>
+                          <strong>${App.escapeHtml(item.label)}</strong>
+                        </div>
+                        <div class="writing-evidence-columns">
+                          <div class="writing-copy-block">
+                            <span>원문</span>
+                            <p>${App.escapeHtml(item.text)}</p>
+                          </div>
+                          <div class="writing-copy-block is-interpretation">
+                            <span>해석</span>
+                            <p>${App.escapeHtml(writingInterpretation(item.label, item.text, student))}</p>
+                          </div>
+                        </div>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">지원서 또는 대원카드 원문이 아직 연결되지 않았습니다.</div>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStaffProfilePanel(student) {
+    const profile = student.staffProfile || {};
+    const properties = Object.entries(profile.properties || {}).filter(([, value]) => valueOrEmpty(value));
+    const sections = Object.entries(profile.sections || {}).filter(([, value]) => valueOrEmpty(value));
+    const hasProfile = properties.length || sections.length || valueOrEmpty(profile.fullText);
+
+    return `
+      <section class="panel section-panel staff-profile-panel-full">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Staff Student Profile</span>
+            <h3>운영진 학생 정보 전체</h3>
+          </div>
+          <p class="panel-copy">학생 정보 원본에서 추출된 속성, 총평, Good/Bad, 특이사항을 누락 없이 확인합니다.</p>
+        </div>
+        ${
+          hasProfile
+            ? `
+              <div class="staff-profile-meta-grid">
+                ${properties
+                  .map(
+                    ([label, value]) => `
+                      <article class="staff-profile-meta-card">
+                        <span>${App.escapeHtml(label)}</span>
+                        <p>${App.escapeHtml(value)}</p>
+                      </article>
+                    `
+                  )
+                  .join("")}
+                ${
+                  (profile.traits || []).length
+                    ? `<article class="staff-profile-meta-card"><span>특징 태그</span><p>${App.escapeHtml(profile.traits.join(", "))}</p></article>`
+                    : ""
+                }
+                ${
+                  (profile.positiveRelations || []).length
+                    ? `<article class="staff-profile-meta-card"><span>긍정적 관계</span><p>${App.escapeHtml(profile.positiveRelations.join(", "))}</p></article>`
+                    : ""
+                }
+                ${
+                  (profile.negativeRelations || []).length
+                    ? `<article class="staff-profile-meta-card"><span>부정적 관계</span><p>${App.escapeHtml(profile.negativeRelations.join(", "))}</p></article>`
+                    : ""
+                }
+              </div>
+              <div class="source-section-list">
+                ${
+                  sections.length
+                    ? sections
+                        .map(
+                          ([label, value]) => `
+                            <article class="source-section-card">
+                              <div class="source-section-head">
+                                <span>학생 정보</span>
+                                <strong>${App.escapeHtml(label)}</strong>
+                              </div>
+                              <p>${App.escapeHtml(value)}</p>
+                            </article>
+                          `
+                        )
+                        .join("")
+                    : `<article class="source-section-card"><div class="source-section-head"><span>학생 정보</span><strong>전체 원문</strong></div><p>${App.escapeHtml(profile.fullText)}</p></article>`
+                }
+              </div>
+            `
+            : `<div class="empty-state compact">운영진 학생 정보 원본이 아직 연결되지 않았습니다.</div>`
+        }
+      </section>
+    `;
+  }
+
+  function renderCounselingRecordsPanel(student) {
+    const counselings = [...(student.counselings || [])].sort((a, b) => String(a.date || "").localeCompare(String(b.date || "")));
+    return `
+      <section class="panel section-panel counseling-records-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Counseling Records</span>
+            <h3>면담 기록 전체</h3>
+          </div>
+          <p class="panel-copy">요약 이벤트가 아니라 원본 면담 항목 전체를 날짜순으로 표시합니다.</p>
+        </div>
+        <div class="counseling-record-list">
+          ${
+            counselings.length
+              ? counselings
+                  .map(
+                    (item, index) => `
+                      <article class="counseling-record-card">
+                        <div class="counseling-record-head">
+                          <div>
+                            <span>${App.escapeHtml(App.formatDate(item.date) || `면담 ${index + 1}`)}</span>
+                            <strong>${App.escapeHtml(item.title || "면담 기록")}</strong>
+                          </div>
+                          ${item.counselor ? `<em>${App.escapeHtml(item.counselor)}</em>` : ""}
+                        </div>
+                        <p>${App.escapeHtml(item.content || "내용 없음")}</p>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">면담 기록이 아직 연결되지 않았습니다.</div>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  function renderCareerGuidancePanel(student) {
+    const guidance = student.careerGuidance || {};
+    const topDomains = guidance.topDomains || [];
+    const sellingPoints = guidance.sellingPoints || [];
+    const portfolioAngles = guidance.portfolioAngles || [];
+    return `
+      <section class="panel section-panel career-guidance-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Career Coaching</span>
+            <h3>취업 지도용 강점 정리</h3>
+          </div>
+          <p class="panel-copy">실습 제출, 아침 발표, 자기 작성 자료를 바탕으로 학생이 취업 지원에서 활용할 수 있는 매력 포인트를 정리합니다.</p>
+        </div>
+        <div class="career-guidance-grid">
+          <article class="career-guidance-card">
+            <span>대표 강점 영역</span>
+            <div class="guidance-chip-list">
+              ${
+                topDomains.length
+                  ? topDomains.map((item) => `<strong>${App.escapeHtml(item.label)}</strong>`).join("")
+                  : `<strong>대표 강점 분석 대기</strong>`
+              }
+            </div>
+          </article>
+          <article class="career-guidance-card">
+            <span>자료 기반</span>
+            <p>실습 제출 ${App.escapeHtml(String(guidance.submissionCount || 0))}건 · 발표 ${App.escapeHtml(String(guidance.presentationCount || 0))}건</p>
+          </article>
+        </div>
+        <div class="guidance-section-grid">
+          <article class="guidance-list-card">
+            <h4>학생에게 알려줄 강점</h4>
+            ${sellingPoints.length ? sellingPoints.map((item) => `<p>${App.escapeHtml(item)}</p>`).join("") : `<p>강점 문장 생성을 위한 자료가 아직 부족합니다.</p>`}
+          </article>
+          <article class="guidance-list-card">
+            <h4>포트폴리오/면접 활용 방향</h4>
+            ${portfolioAngles.length ? portfolioAngles.map((item) => `<p>${App.escapeHtml(item)}</p>`).join("") : `<p>대표 산출물을 먼저 선별해야 합니다.</p>`}
+          </article>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderEvidenceList(evidence) {
+    const items = evidence || [];
+    return `
+      <div class="strength-evidence-list">
+        ${
+          items.length
+            ? items
+                .map(
+                  (item) => `
+                    <article class="strength-evidence-item">
+                      <span>${App.escapeHtml(item.sourceType || "자료")} · ${App.escapeHtml(item.sourceLabel || "근거")}</span>
+                      <p>${App.escapeHtml(item.excerpt || "근거 원문 없음")}</p>
+                      ${item.fileName ? `<small>${App.escapeHtml(item.fileName)}</small>` : ""}
+                    </article>
+                  `
+                )
+                .join("")
+            : `<div class="empty-state compact">검증 가능한 근거가 아직 없습니다.</div>`
+        }
+      </div>
+    `;
+  }
+
+  function renderStrengthProfilePanel(student) {
+    const profile = student.strengthProfile || {};
+    const overview = profile.overview || {};
+    const motivation = profile.motivation || {};
+    const strengths = profile.strengths || [];
+    const improvements = profile.improvements || [];
+    return `
+      <section class="panel section-panel strength-profile-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Verified Strength Profile</span>
+            <h3>검증 자료 기반 개별 강점</h3>
+          </div>
+          <p class="panel-copy">모든 강점과 개선점은 원문, 제출물, 평가, 행동 기록 같은 검증 가능한 자료와 함께 제시합니다.</p>
+        </div>
+        <div class="strength-overview-card">
+          <span>취업 지도용 한줄 강점 · 신뢰도 ${App.escapeHtml(overview.confidence || "low")}</span>
+          <strong>${App.escapeHtml(overview.headline || "강점 정리 필요")}</strong>
+          <p>${App.escapeHtml(overview.summary || "검증 가능한 자료를 더 모아야 합니다.")}</p>
+        </div>
+
+        <article class="motivation-card">
+          <div class="source-section-head">
+            <span>게임업계 진입 동기</span>
+            <strong>${App.escapeHtml(motivation.type || "판단 보류")}</strong>
+          </div>
+          <p>${App.escapeHtml(motivation.reason || "지원 동기 판단 근거가 부족합니다.")}</p>
+          ${renderEvidenceList(motivation.evidence || [])}
+          ${
+            (motivation.missing || []).length
+              ? `<div class="improvement-note-list">${motivation.missing.map((item) => `<p>${App.escapeHtml(item)}</p>`).join("")}</div>`
+              : ""
+          }
+        </article>
+
+        <div class="strength-card-list">
+          ${
+            strengths.length
+              ? strengths
+                  .map(
+                    (item) => `
+                      <article class="strength-card">
+                        <div class="source-section-head">
+                          <span>${App.escapeHtml(item.category || "강점")}</span>
+                          <strong>${App.escapeHtml(item.title || "강점")}</strong>
+                        </div>
+                        <p>${App.escapeHtml(item.claim || "")}</p>
+                        ${renderEvidenceList(item.evidence || [])}
+                        <div class="strength-use-box">
+                          <p><strong>취업 활용</strong>${App.escapeHtml(item.careerUse || "활용 문장 정리 필요")}</p>
+                          <p><strong>주의</strong>${App.escapeHtml(item.caution || "근거 자료와 실제 산출물을 함께 확인하세요.")}</p>
+                        </div>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">검증 가능한 강점 카드가 아직 없습니다.</div>`
+          }
+        </div>
+
+        <div class="improvement-card-list">
+          <h4>개선점과 코칭 질문</h4>
+          ${
+            improvements.length
+              ? improvements
+                  .map(
+                    (item) => `
+                      <article class="improvement-card">
+                        <strong>${App.escapeHtml(item.title || "개선점")}</strong>
+                        <p>${App.escapeHtml(item.basis || "")}</p>
+                        ${renderEvidenceList(item.evidence || [])}
+                        <em>${App.escapeHtml(item.coachingQuestion || "코칭 질문을 정리해야 합니다.")}</em>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">우선 개선점이 크게 감지되지 않았습니다.</div>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStudentGroupSignalsPanel(student) {
+    const signals = student.studentGroupSignals || [];
+    return `
+      <section class="panel section-panel group-signals-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Student Classification</span>
+            <h3>학생군 분류 신호</h3>
+          </div>
+          <p class="panel-copy">생활/제출/발표/진로 데이터를 묶어 같은 행동 패턴의 학생군을 파악합니다.</p>
+        </div>
+        <div class="group-signal-grid">
+          ${
+            signals.length
+              ? signals
+                  .map(
+                    (signal) => `
+                      <article class="group-signal-card">
+                        <strong>${App.escapeHtml(signal.label)}</strong>
+                        <p>${App.escapeHtml(signal.basis)}</p>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">분류 신호가 아직 없습니다.</div>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  function renderMorningPresentationPanel(student) {
+    const presentations = [...(student.morningPresentations || [])].sort((a, b) => String(a.presentationDate || "").localeCompare(String(b.presentationDate || "")));
+    return `
+      <section class="panel section-panel morning-presentation-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Morning Presentation</span>
+            <h3>아침 발표 이력</h3>
+          </div>
+          <p class="panel-copy">지각 보완 발표와 자원 발표를 구분해 관심사, 공유성, 자기표현 신호로 봅니다.</p>
+        </div>
+        <div class="source-section-list">
+          ${
+            presentations.length
+              ? presentations
+                  .map(
+                    (item) => `
+                      <article class="source-section-card">
+                        <div class="source-section-head">
+                          <span>${item.isVolunteer ? "자원 발표" : "지각 후 발표"}</span>
+                          <strong>${App.escapeHtml(App.formatDate(item.presentationDate))}</strong>
+                        </div>
+                        <p>${App.escapeHtml(item.topic || "발표 주제 없음")}${item.lateDate ? App.escapeHtml(`\n지각일: ${App.formatDate(item.lateDate)}`) : ""}</p>
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">아침 발표 이력이 없습니다.</div>`
+          }
+        </div>
+      </section>
+    `;
+  }
+
+  function renderPracticeSubmissionPanel(student) {
+    const submissions = student.practiceSubmissions || [];
+    const visible = submissions.slice(0, 18);
+    return `
+      <section class="panel section-panel practice-submission-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Practice Evidence</span>
+            <h3>실습 제출 분석</h3>
+          </div>
+          <p class="panel-copy">제출 파일을 학생 수준과 강점 파악 근거로 연결합니다. 텍스트 추출이 가능한 문서는 요약 근거를 함께 표시합니다.</p>
+        </div>
+        <div class="practice-summary-row">
+          ${App.metricCard("제출 수", `${submissions.length}건`, "실습 제출 폴더 기준", "brand")}
+          ${App.metricCard("텍스트 분석", `${submissions.filter((item) => item.textExtracted).length}건`, "PDF/XLSX/DOCX 추출 성공", "mint")}
+          ${App.metricCard("발표 이력", `${student.morningPresentations?.length || 0}건`, `자원 발표 ${(student.morningPresentations || []).filter((item) => item.isVolunteer).length}건`, "violet")}
+        </div>
+        <div class="practice-submission-list">
+          ${
+            visible.length
+              ? visible
+                  .map(
+                    (item) => {
+                      const strengths = Object.keys(item.strengthHits || {}).map((key) => key.replaceAll("_", " "));
+                      return `
+                        <article class="practice-submission-card">
+                          <div class="source-section-head">
+                            <span>${App.escapeHtml(item.module || "실습")}</span>
+                            <strong>${App.escapeHtml(item.assignment || item.fileName)}</strong>
+                          </div>
+                          <p>${App.escapeHtml(item.excerpt || item.fileName)}</p>
+                          <small>${App.escapeHtml(item.fileName)}${strengths.length ? App.escapeHtml(` · 신호 ${strengths.join(", ")}`) : ""}</small>
+                        </article>
+                      `;
+                    }
+                  )
+                  .join("")
+              : `<div class="empty-state compact">실습 제출물이 연결되지 않았습니다.</div>`
+          }
+        </div>
+        ${submissions.length > visible.length ? `<p class="panel-copy">외 ${App.escapeHtml(String(submissions.length - visible.length))}건은 데이터에 포함되어 있으며 대표 항목만 표시합니다.</p>` : ""}
+      </section>
+    `;
+  }
+
+  function actualMilestones(student) {
+    return (student.milestones || []).filter(
+      (milestone) => !milestone.isEstimated && milestone.participated !== false && Number.isFinite(Number(milestone.profileAverage))
+    );
+  }
+
+  function clampScore(value) {
+    return Math.max(0, Math.min(100, Math.round(Number(value) || 0)));
+  }
+
+  function fiveMetricScores(student) {
+    const profile = student.currentProfile || {};
+    const stats = student.stats || {};
+    const profileAverage = App.averageScore(profile);
+    const selfDriven = App.averageScore({
+      selfRegulation: profile.selfRegulation,
+      reflection: profile.reflection,
+      careerAgency: profile.careerAgency,
+    });
+    const attendancePenalty =
+      (Number(stats.attendanceRiskIssues) || 0) * 16 +
+      (Number(stats.lateCount) || 0) * 4 +
+      (Number(stats.absenceCount) || 0) * 5 +
+      (Number(stats.healthAttendanceIssues) || 0) * 2;
+    return {
+      attendance: clampScore(100 - attendancePenalty),
+      engagement: clampScore(((Number(profile.engagement) || 0) / 4) * 60 + (Number(stats.projectSubmissionRate) || 0) * 0.4),
+      output: clampScore(Number(stats.projectSubmissionRate) || 0),
+      achievement: clampScore((profileAverage / 4) * 100),
+      selfDirected: clampScore((selfDriven / 4) * 100),
+    };
+  }
+
+  function courseFiveMetricAverages() {
+    const totals = {};
+    const students = App.rawData.students || [];
+    students.forEach((student) => {
+      const scores = fiveMetricScores(student);
+      Object.entries(scores).forEach(([key, value]) => {
+        totals[key] = (totals[key] || 0) + value;
+      });
+    });
+    return Object.fromEntries(
+      Object.entries(totals).map(([key, value]) => [key, clampScore(value / Math.max(1, students.length))])
+    );
+  }
+
+  function renderFiveMetricRadar(scores, averages) {
+    const labels = [
+      ["attendance", "출석 성실성"],
+      ["engagement", "학습 참여도"],
+      ["output", "산출 수행력"],
+      ["achievement", "평가 성취도"],
+      ["selfDirected", "자기주도 학습력"],
+    ];
+    const size = 280;
+    const center = 140;
+    const radius = 92;
+    const polygonFor = (source) =>
+      labels
+        .map(([key], index) => {
+          const angle = -Math.PI / 2 + (index / labels.length) * Math.PI * 2;
+          const scaled = ((Number(source[key]) || 0) / 100) * radius;
+          return `${center + Math.cos(angle) * scaled},${center + Math.sin(angle) * scaled}`;
+        })
+        .join(" ");
+    const grid = [20, 40, 60, 80, 100]
+      .map((level) => {
+        const scaled = (level / 100) * radius;
+        const points = labels
+          .map((_, index) => {
+            const angle = -Math.PI / 2 + (index / labels.length) * Math.PI * 2;
+            return `${center + Math.cos(angle) * scaled},${center + Math.sin(angle) * scaled}`;
+          })
+          .join(" ");
+        return `<polygon points="${points}" class="radar-grid"></polygon>`;
+      })
+      .join("");
+    const axes = labels
+      .map(([, label], index) => {
+        const angle = -Math.PI / 2 + (index / labels.length) * Math.PI * 2;
+        const x = center + Math.cos(angle) * (radius + 36);
+        const y = center + Math.sin(angle) * (radius + 36);
+        return `
+          <line x1="${center}" y1="${center}" x2="${center + Math.cos(angle) * radius}" y2="${center + Math.sin(angle) * radius}" class="radar-axis"></line>
+          <text x="${x}" y="${y}" class="radar-label">${App.escapeHtml(label)}</text>
+        `;
+      })
+      .join("");
+    return `
+      <svg class="five-metric-radar" viewBox="0 0 ${size} ${size}" role="img" aria-label="5대 역량 지표 레이더 차트">
+        ${grid}
+        ${axes}
+        <polygon points="${polygonFor(averages)}" class="radar-average-area"></polygon>
+        <polygon points="${polygonFor(scores)}" class="radar-area"></polygon>
+      </svg>
+    `;
+  }
+
+  function renderFiveMetricPanel(student) {
+    const scores = fiveMetricScores(student);
+    const averages = courseFiveMetricAverages();
+    const metricLabels = {
+      attendance: "출석 성실성",
+      engagement: "학습 참여도",
+      output: "산출 수행력",
+      achievement: "평가 성취도",
+      selfDirected: "자기주도 학습력",
+    };
+    const metricNotes = {
+      attendance: "출결 위험, 지각, 결석, 건강/컨디션 출결을 함께 본 지표",
+      engagement: "참여 프로파일과 프로젝트 제출률을 함께 본 지표",
+      output: "프로젝트 데일리 기록 제출률 중심 지표",
+      achievement: "현재 6개 프로파일 평균을 100점 척도로 환산",
+      selfDirected: "자기조절, 성찰, 진로 주도성을 합산한 지표",
+    };
+    return `
+      <section class="panel section-panel five-metric-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Score</span>
+            <h3>5대 역량 지표</h3>
+          </div>
+          <p class="panel-copy">기존 학생 파악 페이지의 성적 관점을 현재 데이터 기준으로 재구성했습니다.</p>
+        </div>
+        <div class="five-metric-layout">
+          <div class="student-profile-panel">
+            ${renderFiveMetricRadar(scores, averages)}
+            <div class="chart-legend">
+              <span><i class="legend-dot is-student"></i>내 점수</span>
+              <span><i class="legend-dot is-average"></i>과정 평균</span>
+            </div>
+          </div>
+          <div class="five-metric-summary">
+            ${Object.entries(metricLabels)
+              .map(([key, label]) => {
+                const score = scores[key] || 0;
+                const average = averages[key] || 0;
+                return `
+                  <article class="five-metric-card">
+                    <div>
+                      <span>${App.escapeHtml(label)}</span>
+                      <strong>${App.escapeHtml(String(score))}</strong>
+                    </div>
+                    <em class="${score >= average ? "is-up" : "is-down"}">${score >= average ? "+" : ""}${App.escapeHtml(String(score - average))}</em>
+                    <div class="profile-track">
+                      <div class="profile-fill" style="width:${score}%"></div>
+                    </div>
+                    <p>반 평균 ${App.escapeHtml(String(average))} · ${App.escapeHtml(metricNotes[key])}</p>
+                  </article>
+                `;
+              })
+              .join("")}
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  function renderMilestoneGrowthPanel(student) {
+    const milestones = actualMilestones(student);
+    return `
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Timeline</span>
+            <h3>마일스톤 성장 곡선</h3>
+          </div>
+          <p class="panel-copy">아직 진행되지 않은 추정 구간은 제외합니다.</p>
+        </div>
+        ${App.growthChart(milestones)}
+        <div class="milestone-analysis-list">
+          ${milestones
+            .map((milestone, index) => {
+              const growthDelta = Number(milestone.growthDelta) || 0;
+              const profileAverage = Number(milestone.profileAverage) || 0;
+              return `
+                <article class="milestone-analysis-row ${growthDelta > 0 ? "is-up" : growthDelta < 0 ? "is-down" : ""}">
+                  <div class="milestone-analysis-name">
+                    <span class="milestone-index">M${index + 1}</span>
+                    <strong>${App.escapeHtml(App.shortMilestoneLabel(milestone.label))}</strong>
+                    <small>${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</small>
+                  </div>
+                  <div class="milestone-score-row">
+                    <strong>${App.escapeHtml(profileAverage.toFixed(2))}</strong>
+                    <span class="growth-chip ${growthDelta > 0 ? "is-up" : growthDelta < 0 ? "is-down" : ""}">
+                      ${growthDelta > 0 ? "+" : ""}${App.escapeHtml(growthDelta.toFixed(2))}
+                    </span>
+                  </div>
+                  <p>${App.escapeHtml(milestone.note)} ${App.escapeHtml(App.milestoneStory(milestone))}</p>
+                </article>
+              `;
+            })
+            .join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStatusTab(student) {
+    const collaborationReadiness = student.derived?.collaborationReadiness || {};
+    const dropoutDate = student.dropoutInfo?.date || student.stats?.dropoutDate || "";
+    return `
+      <section class="snapshot-grid compact-snapshot-grid">
+        ${App.metricCard("현재 상태", student.stats?.currentStatus || "-", "현재 운영 신호", App.statusTone(student.stats?.currentStatus))}
+        ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? `이탈 시점 ${App.formatDate(dropoutDate)}` : "현재 관리 분류", App.statusTone(student.managementStatus))}
+        ${App.metricCard("프로젝트 제출률", `${student.stats?.projectSubmissionRate || 0}%`, "프로젝트 데일리 기록 기준", "brand")}
+        ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `무단/무연락 ${student.stats?.attendanceRiskIssues || 0}건 · 건강/컨디션 ${student.stats?.healthAttendanceIssues || 0}건`, "warning")}
+        ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
+        ${App.metricCard("프로젝트 협업", `${Math.round(collaborationReadiness.collaborationReadinessScore || 0)}점`, `변화 ${collaborationReadiness.trajectory?.label || "유지"} ${collaborationReadiness.trajectory?.delta || 0}`, "violet")}
+      </section>
+      ${renderStrengthProfilePanel(student)}
+      ${renderStudentGroupSignalsPanel(student)}
+      ${renderCareerGuidancePanel(student)}
+      ${renderAdmissionContextPanel(student)}
+      ${renderOperationalAssessmentPanel(student)}
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Status Reason</span>
+            <h3>현재 상태 판단 이유</h3>
+          </div>
+          <p class="panel-copy">${App.escapeHtml(student.currentProfile?.note || "최근 운영 해석 없음")}</p>
+        </div>
+        <div class="reason-box">
+          <strong>${App.escapeHtml(student.stats?.currentStatus || "안정")}</strong>
+          <p>${App.escapeHtml(App.statusReason(student))}</p>
+        </div>
+      </section>
+      <section class="two-column-grid">
+        <section class="panel section-panel">
+          <div class="panel-head">
+            <div>
+              <span class="panel-kicker">Recent Events</span>
+              <h3>최근 주요 이벤트</h3>
+            </div>
+          </div>
+          <div class="event-list">${App.recentEventCards(student)}</div>
+        </section>
+        ${renderCurrentInterpretationPanel(student)}
+      </section>
+    `;
+  }
+
+  function renderCurrentInterpretationPanel(student) {
+    const collaborationReadiness = student.derived?.collaborationReadiness || {};
+    return `
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Interpretation</span>
+            <h3>현재 해석 포인트</h3>
+          </div>
+        </div>
+        <div class="interpretation-card">
+          <p><strong>주 분류:</strong> ${App.escapeHtml(App.primaryMetaLabel(student))}</p>
+          <p><strong>관리 상태:</strong> ${App.escapeHtml(student.managementStatus || "일반")}</p>
+          <p><strong>강점:</strong> ${App.escapeHtml(App.profileKeyText(student.derived?.strengthKeys))}</p>
+          <p><strong>관찰:</strong> ${App.escapeHtml(App.profileKeyText(student.derived?.cautionKeys))}</p>
+          <p><strong>최신 면담:</strong> ${App.escapeHtml(App.formatDate(student.stats?.latestCounselingDate))}</p>
+          <p><strong>협업 흐름:</strong> 체크인 정시율 ${App.escapeHtml(String(collaborationReadiness.checkinOnTimeRate || 0))}% · 회고 ${App.escapeHtml(String(collaborationReadiness.retroCount || 0))}건 · 변화 ${App.escapeHtml(String(collaborationReadiness.trajectory?.label || "유지"))}</p>
+          <p><strong>진로 문서:</strong> ${App.escapeHtml(String(student.stats?.careerDocumentRounds || 0))}회</p>
+        </div>
+        ${App.renderClassificationReasons(student)}
+      </section>
+    `;
+  }
+
+  function renderScoreTab(student) {
+    return `
+      ${renderFiveMetricPanel(student)}
+      ${renderMilestoneGrowthPanel(student)}
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Profile</span>
+            <h3>6개 교육학 준거 점수</h3>
+          </div>
+          <p class="panel-copy">기존 5대 지표와 별개로 현재 분석 모델의 세부 준거를 함께 봅니다.</p>
+        </div>
+        ${App.renderProfileReasonBars(student)}
+      </section>
+    `;
+  }
+
+  function renderEvaluationTab(student) {
+    return `
+      ${renderStrengthProfilePanel(student)}
+      ${renderCareerGuidancePanel(student)}
+      ${renderStudentGroupSignalsPanel(student)}
+      ${renderOperationalAssessmentPanel(student)}
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Evaluation Criteria</span>
+            <h3>현재 능력치와 평가 근거</h3>
+          </div>
+          <p class="panel-copy">6개 교육학 준거와 판단 기준을 근거 문장으로 확인합니다.</p>
+        </div>
+        ${App.renderProfileReasonBars(student)}
+      </section>
+      ${App.renderCollaborationTrajectory(student)}
+      ${App.renderLearningFlowCases(student)}
+      ${App.renderExpressionProfile(student)}
+    `;
+  }
+
+  function renderRecordsTab(student) {
+    return `
+      ${renderCounselingRecordsPanel(student)}
+      ${renderMorningPresentationPanel(student)}
+      ${renderStudentDetail(student)}
+    `;
+  }
+
+  function renderMaterialsTab(student) {
+    return `
+      ${renderAdmissionContextPanel(student)}
+      ${renderPracticeSubmissionPanel(student)}
+      ${renderMorningPresentationPanel(student)}
+      ${renderWritingEvidencePanel(student)}
+      ${renderStaffProfilePanel(student)}
+    `;
+  }
+
+  function renderBasicInfoTab(student) {
+    return `
+      <section class="panel section-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Basic Info</span>
+            <h3>기본정보</h3>
+          </div>
+          <p class="panel-copy">개인 기본값과 모집 단계 원천 출처를 분리해서 확인합니다.</p>
+        </div>
+        <div class="student-basic-grid expanded-basic-grid">
+          <div><span>이름</span><strong>${App.escapeHtml(student.name || "-")}</strong></div>
+          <div><span>성별</span><strong>${App.escapeHtml(student.gender || "-")}</strong></div>
+          <div><span>생년월일</span><strong>${App.escapeHtml(App.formatDate(student.birthDate))}</strong></div>
+          <div><span>연락처</span><strong>${App.escapeHtml(student.phone || "-")}</strong></div>
+          <div><span>거주지역</span><strong>${App.escapeHtml(student.address || "-")}</strong></div>
+          <div><span>학력</span><strong>${App.escapeHtml(student.education || "-")}</strong></div>
+          <div><span>과정</span><strong>${App.escapeHtml(student.course || "-")}</strong></div>
+          <div><span>기수</span><strong>${App.escapeHtml(student.cohort || "-")}</strong></div>
+          <div><span>지원서 제출</span><strong>${App.escapeHtml(App.formatDate(student.admission?.submittedAt))}</strong></div>
+          <div><span>지원 이메일</span><strong>${App.escapeHtml(student.admission?.email || "-")}</strong></div>
+          <div><span>면접 결과</span><strong>${App.escapeHtml(student.admission?.interviewResult || "-")}</strong></div>
+          <div><span>면접 점수</span><strong>${App.escapeHtml(String(student.admission?.interviewScore || "-"))}</strong></div>
+        </div>
+      </section>
+      ${renderAdmissionContextPanel(student)}
+    `;
+  }
+
   function renderStudentDashboard(student) {
     const actualMilestones = (student.milestones || []).filter(
       (milestone) => !milestone.isEstimated && milestone.participated !== false && Number.isFinite(Number(milestone.profileAverage))
@@ -90,6 +1022,14 @@
       </section>
 
       ${App.renderExpressionProfile(student)}
+
+      ${renderAdmissionContextPanel(student)}
+
+      ${renderWritingEvidencePanel(student)}
+
+      ${renderStaffProfilePanel(student)}
+
+      ${renderCounselingRecordsPanel(student)}
 
       ${renderOperationalAssessmentPanel(student)}
 
@@ -258,7 +1198,7 @@
             <span class="panel-kicker">Profile Editor</span>
             <h3>학생 정보 입력 및 수정</h3>
           </div>
-          <button type="button" class="secondary-action compact-action" data-tab="dashboard">개요로 돌아가기</button>
+          <button type="button" class="secondary-action compact-action" data-tab="status">개요로 돌아가기</button>
         </div>
         <p class="panel-copy">이 페이지에서 저장한 값은 이 브라우저의 로컬 편집값으로 보관되고, 홈 통계와 검색에 즉시 반영됩니다.</p>
 
@@ -405,6 +1345,31 @@
     `;
   }
 
+  function renderDetailEventItem(event) {
+    const summary = valueOrEmpty(event.summary) || "요약 없음";
+    const fullText = valueOrEmpty(event.detail) || valueOrEmpty(event.content) || summary;
+    const hasFullText = fullText && fullText !== summary;
+    return `
+      <article class="detail-event-item">
+        <div class="event-head">
+          <strong>${App.escapeHtml(event.title)}</strong>
+          <span class="event-meta">${App.escapeHtml(App.formatDate(event.date))}</span>
+        </div>
+        <p>${App.escapeHtml(summary)}</p>
+        ${
+          hasFullText
+            ? `
+              <details class="event-full-detail">
+                <summary>전문 보기</summary>
+                <div>${App.escapeHtml(fullText)}</div>
+              </details>
+            `
+            : ""
+        }
+      </article>
+    `;
+  }
+
   function renderMilestoneDetailCard(milestone, index) {
     const growthDelta = Number(milestone.growthDelta) || 0;
     const profileAverage = Number(milestone.profileAverage) || 0;
@@ -462,17 +1427,7 @@
             <div class="detail-event-list">
               ${milestone.events.length
                 ? milestone.events
-                    .map(
-                      (event) => `
-                        <article class="detail-event-item">
-                          <div class="event-head">
-                            <strong>${App.escapeHtml(event.title)}</strong>
-                            <span class="event-meta">${App.escapeHtml(App.formatDate(event.date))}</span>
-                          </div>
-                          <p>${App.escapeHtml(event.summary)}</p>
-                        </article>
-                      `
-                    )
+                    .map((event) => renderDetailEventItem(event))
                     .join("")
                 : `<div class="empty-state compact">이 구간에 연결된 대표 이벤트가 없습니다.</div>`}
             </div>
@@ -538,16 +1493,25 @@
       ${renderStudentHeader(student)}
 
       <nav class="student-tabs">
-        <button type="button" class="tab-chip ${state.studentTab === "dashboard" ? "is-active" : ""}" data-tab="dashboard">대시보드</button>
-        <button type="button" class="tab-chip ${state.studentTab === "detail" ? "is-active" : ""}" data-tab="detail">상세정보</button>
+        ${STUDENT_TABS.map(
+          (tab) => `<button type="button" class="tab-chip ${state.studentTab === tab.key ? "is-active" : ""}" data-tab="${App.escapeHtml(tab.key)}">${App.escapeHtml(tab.label)}</button>`
+        ).join("")}
       </nav>
 
       ${
-        state.studentTab === "dashboard"
-          ? renderStudentDashboard(student)
-          : state.studentTab === "management"
-            ? renderStudentManagement(student)
-            : renderStudentDetail(student)
+        state.studentTab === "management"
+          ? renderStudentManagement(student)
+          : state.studentTab === "score"
+            ? renderScoreTab(student)
+            : state.studentTab === "evaluation"
+              ? renderEvaluationTab(student)
+              : state.studentTab === "records"
+                ? renderRecordsTab(student)
+                : state.studentTab === "materials"
+                  ? renderMaterialsTab(student)
+                  : state.studentTab === "basic"
+                    ? renderBasicInfoTab(student)
+                    : renderStatusTab(student)
       }
       ${renderCriterionModal()}
     `;
@@ -605,7 +1569,7 @@
 
     const tabButton = event.target.closest("[data-tab]");
     if (tabButton) {
-      state.studentTab = tabButton.getAttribute("data-tab") || "dashboard";
+      state.studentTab = normalizeStudentTab(tabButton.getAttribute("data-tab"));
       render();
       return;
     }
