@@ -186,27 +186,27 @@
     overall_strong: {
       label: "종합 우수",
       tone: "success",
-      description: "6개 준거가 비교적 균형 있게 안정적인 학생",
+      description: "총점과 세부 역량이 균형 있게 안정적인 학생",
     },
     growth_high: {
-      label: "성장 우수",
+      label: "성장 가능성 우수",
       tone: "brand",
-      description: "마일스톤을 지나는 동안 상승 흐름이 분명한 학생",
+      description: "현재 수준, 상승 또는 고수준 유지, 근거 신뢰도가 함께 높은 학생",
     },
     support_priority: {
-      label: "집중 지원",
+      label: "지원 검토",
       tone: "danger",
-      description: "현재 개입과 점검이 우선 필요한 학생",
+      description: "총점과 별개로 운영 개입과 점검이 우선 필요한 학생",
     },
     collaboration_strength: {
       label: "협업 강점",
       tone: "mint",
-      description: "데일리체크인, 회고, 역할 수행 흐름에서 강점이 확인된 학생",
+      description: "동료 평가, 팀 역할, 회고, 체크인 흐름에서 협업 강점이 확인된 학생",
     },
     career_progress: {
-      label: "진로 준비 진전",
+      label: "진로역량 우수",
       tone: "violet",
-      description: "이력서/자기소개 등 진로 문서 학습이 진전된 학생",
+      description: "구체 목표, 객관 근거, 실행 계획이 비교적 명확한 학생",
     },
     attendance_watch: {
       label: "참여 회복 관찰",
@@ -222,11 +222,13 @@
 
   const SORT_OPTIONS = {
     name: { label: "가나다순", key: "name" },
-    profile: { label: "종합 프로파일", key: "profileRankScore" },
-    growth: { label: "성장 곡선", key: "growthRankScore" },
-    support: { label: "지원 우선도", key: "supportRankScore" },
-    collaboration: { label: "협업 강점", key: "collaborationRankScore" },
-    career: { label: "진로 준비", key: "careerRankScore" },
+    profile: { label: "총점", key: "totalRankScore" },
+    initial: { label: "초기역량", key: "initialCapabilityRankScore" },
+    growth: { label: "성장 가능성", key: "growthRankScore" },
+    participation: { label: "과정참여도", key: "participationRankScore" },
+    collaboration: { label: "협업", key: "collaborationRankScore" },
+    career: { label: "진로역량", key: "careerRankScore" },
+    support: { label: "지원 검토", key: "supportRankScore" },
   };
 
   function escapeHtml(value) {
@@ -333,9 +335,9 @@
     if (key === "careerAgency") {
       const readiness = student.derived?.careerReadiness;
       if (readiness) {
-        return `${ratingLabel} 평정입니다. 목적 명확성 ${readiness.purposeClarity}, 자기 강점 ${readiness.selfStrengthAwareness}, 자기 색깔 ${readiness.personalColor}을 함께 반영했습니다.`;
+        return `${ratingLabel} 평정입니다. 구체 직무/목표 ${readiness.hasConcreteGoal ? "있음" : "부족"}, 객관 근거 ${readiness.objectiveEvidenceScore || 0}점, 추상 표현 ${readiness.abstractExpressionCount || 0}건, 발표 주제 직무 관련성 ${readiness.presentationContent?.score || 0}점을 함께 반영했습니다.`;
       }
-      return score >= 3 ? `${ratingLabel} 평정입니다. 진로 방향, 자기 강점, 기획자 색깔의 연결이 비교적 드러납니다.` : `${ratingLabel} 평정입니다. 직무 목표와 자신만의 강점/색깔의 연결 근거가 부족합니다.`;
+      return score >= 3 ? `${ratingLabel} 평정입니다. 구체 직무 목표와 객관 자료가 비교적 확인됩니다.` : `${ratingLabel} 평정입니다. 직무 목표와 객관 근거가 부족합니다.`;
     }
     return "관련 기록을 종합해 산정한 보조 지표입니다.";
   }
@@ -356,6 +358,11 @@
 
   function studentSearchPool(student) {
     const tags = (student.derived?.tags || []).map((tag) => TAG_META[tag]?.label || tag);
+    const groupSignals = (student.studentGroupSignals || []).flatMap((signal) => [
+      signal.label,
+      signal.basis,
+      studentGroupSignalMeta(signal.key).description,
+    ]);
     const flowCases = (student.learningFlowCases || []).flatMap((item) => [
       item.label,
       item.summary,
@@ -376,6 +383,7 @@
       student.course,
       student.cohort,
       ...tags,
+      ...groupSignals,
       ...flowCases,
     ]
       .filter(Boolean)
@@ -408,6 +416,19 @@
     return Math.max(min, Math.min(max, Number(value) || 0));
   }
 
+  function firstFiniteNumber(...values) {
+    for (const value of values) {
+      if (value === null || value === undefined || value === "") continue;
+      const number = Number(value);
+      if (Number.isFinite(number)) return number;
+    }
+    return 0;
+  }
+
+  function score100(...values) {
+    return clamp(firstFiniteNumber(...values), 0, 100);
+  }
+
   function displayNumber(value, digits = 1) {
     const number = Number(value);
     if (!Number.isFinite(number)) return "0";
@@ -420,29 +441,53 @@
 
   const OPERATIONAL_HEALTH_CASES = ["health_management_watch", "health_project_strain", "oversleep_condition_rhythm", "condition_management_sequence"];
   const OPERATIONAL_CLASSIFICATION_COPY = {
+    overall: {
+      key: "overall",
+      group: "excellent",
+      groupLabel: "우수자",
+      label: "총점",
+      tone: "success",
+      basis: "초기역량은 낮은 비중으로 두고 성장·참여·협업·진로를 종합한 학생",
+    },
+    initial: {
+      key: "initial",
+      group: "excellent",
+      groupLabel: "우수자",
+      label: "초기역량",
+      tone: "brand",
+      basis: "전공, 기존 경험, 모집 서류의 사전 역량이 확인된 학생",
+    },
     growth: {
       key: "growth",
       group: "excellent",
       groupLabel: "우수자",
-      label: "발전도",
+      label: "성장 가능성",
       tone: "brand",
-      basis: "체크인·회고 이후 성장 변화가 큰 학생",
+      basis: "현재 수준, 상승 또는 고수준 유지, 근거 신뢰도가 함께 높은 학생",
     },
-    diligence: {
-      key: "diligence",
+    participation: {
+      key: "participation",
       group: "excellent",
       groupLabel: "우수자",
-      label: "성실도",
+      label: "과정참여도",
       tone: "success",
-      basis: "출결 위험이 낮고 제출·체크인 정시성이 높은 학생",
+      basis: "출석, 과제 제출, 데일리 체크인/TIL 응답이 안정적인 학생",
     },
-    focus: {
-      key: "focus",
+    collaboration: {
+      key: "collaboration",
       group: "excellent",
       groupLabel: "우수자",
-      label: "집중도",
+      label: "협업",
       tone: "mint",
-      basis: "오늘의 한마디·회고에서 기획 관점의 구체성이 높은 학생",
+      basis: "동료 평가, 팀 역할, PM/팀장 수행, 회고에서 협업 신뢰도가 확인된 학생",
+    },
+    career: {
+      key: "career",
+      group: "excellent",
+      groupLabel: "우수자",
+      label: "진로역량",
+      tone: "violet",
+      basis: "구체적인 직무 목표와 객관 근거, 실행 계획이 확인된 학생",
     },
     health: {
       key: "health",
@@ -470,7 +515,103 @@
     },
   };
 
-  const OPERATIONAL_CLASSIFICATION_ORDER = ["growth", "diligence", "focus", "health", "insincere", "character"];
+  const STUDENT_GROUP_SIGNAL_META = {
+    field_performance_risk: {
+      key: "field_performance_risk",
+      label: "현장평가 미진군",
+      shortLabel: "현장 미진",
+      tone: "danger",
+      description: "출결·제출 기록과 별개로 운영진 이해도, 실력, 수업 적응 평가에서 강한 우려가 확인된 학생군",
+      action: "작업물 결과보다 수업 이해도, 피드백 수용, 과제 품질을 먼저 재확인하고 보충 지도 또는 개별 면담을 배치합니다.",
+    },
+    peer_reputation_risk: {
+      key: "peer_reputation_risk",
+      label: "동료평판 위험군",
+      shortLabel: "동료 위험",
+      tone: "violet",
+      description: "학생들이 공개적으로 말하기 어려운 동료 비판·비선호 신호가 자료 안에서 확인된 학생군",
+      action: "같은 프로젝트 팀원의 체크인·회고·상담 근거를 우선 확인하고 팀 배치, 소통 방식, 갈등 중재 필요성을 판단합니다.",
+    },
+    evaluation_mismatch_review: {
+      key: "evaluation_mismatch_review",
+      label: "평가 불일치 검토군",
+      shortLabel: "불일치 검토",
+      tone: "warning",
+      description: "제출·체크인 기록은 안정적이지만 현장 실력 또는 이해도 평가는 낮아 오판 가능성이 큰 학생군",
+      action: "성실 기록으로 점수가 과대평가되지 않았는지 산출물 품질, 수업 이해도, 구두 설명 능력을 함께 재검토합니다.",
+    },
+    routine_participation_review: {
+      key: "routine_participation_review",
+      label: "기록/참여 루틴 검토군",
+      shortLabel: "루틴 검토",
+      tone: "warning",
+      description: "TIL, 참여도, 소통 루틴 메모가 있으나 실력 저평가로 바로 보기 어려운 학생군",
+      action: "실력 판단과 분리해 기록 습관, 참여 방식, 최신 프로젝트 기여 근거를 같이 확인합니다.",
+    },
+    role_conflict_review: {
+      key: "role_conflict_review",
+      label: "역할 갈등 검토군",
+      shortLabel: "역할 갈등",
+      tone: "violet",
+      description: "팀장·PM 역할 수행 중 단일 갈등 신호가 있으나 긍정 리더십 근거도 함께 있는 학생군",
+      action: "반복 갈등인지, 역할 조율 과정에서 생긴 단발 충돌인지 팀 회고와 이후 회복 여부를 확인합니다.",
+    },
+    operation_watch: {
+      key: "operation_watch",
+      label: "운영 관찰군",
+      shortLabel: "운영 관찰",
+      tone: "warning",
+      description: "출결, 건강, 상태 경고처럼 운영자가 먼저 리듬을 확인해야 하는 학생군",
+      action: "최근 2주 출결·체크인·면담 이력을 먼저 열어 반복 신호와 회복 여부를 확인합니다.",
+    },
+    portfolio_material_ready: {
+      key: "portfolio_material_ready",
+      label: "포트폴리오 소재 보유군",
+      shortLabel: "포트폴리오",
+      tone: "success",
+      description: "실습 제출물과 강점 근거가 있어 포트폴리오 사례로 전환할 수 있는 학생군",
+      action: "대표 제출물 1개를 골라 문제 정의, 의도, 결과, 개선점을 포트폴리오 문장으로 정리합니다.",
+    },
+    self_publication: {
+      key: "self_publication",
+      label: "자발적 공유군",
+      shortLabel: "자발 공유",
+      tone: "mint",
+      description: "자원 발표나 관심사 공유처럼 자기표현 행동이 관찰된 학생군",
+      action: "발표 주제와 제출물을 연결해 면접에서 말할 관심사와 학습 태도 근거로 다듬습니다.",
+    },
+    career_ready: {
+      key: "career_ready",
+      label: "취업 메시지 구체화군",
+      shortLabel: "취업 메시지",
+      tone: "violet",
+      description: "구체 직무 목표, 객관 자료, 피드백 반영 근거가 비교적 확인되는 학생군",
+      action: "자기소개서, 포트폴리오 소개문, 모의면접 답변을 한 문장 메시지로 정리합니다.",
+    },
+    steady_observation: {
+      key: "steady_observation",
+      label: "일반 관찰군",
+      shortLabel: "일반 관찰",
+      tone: "neutral",
+      description: "강한 위험/강점 신호가 아직 적어 기본 루틴을 유지하며 관찰할 학생군",
+      action: "제출물 1개와 체크인 표현을 추가 확인해 다음 운영 분류로 이동할 근거를 찾습니다.",
+    },
+  };
+
+  const STUDENT_GROUP_SIGNAL_KEYS = [
+    "field_performance_risk",
+    "peer_reputation_risk",
+    "evaluation_mismatch_review",
+    "routine_participation_review",
+    "role_conflict_review",
+    "operation_watch",
+    "portfolio_material_ready",
+    "self_publication",
+    "career_ready",
+    "steady_observation",
+  ];
+
+  const OPERATIONAL_CLASSIFICATION_ORDER = ["overall", "initial", "growth", "participation", "collaboration", "career", "health", "insincere", "character"];
 
   function hasCaseType(student, caseTypes, severity = "") {
     const typeSet = new Set(caseTypes);
@@ -514,6 +655,8 @@
     const derived = student.derived || {};
     const stats = student.stats || {};
     const readiness = derived.collaborationReadiness || {};
+    const riskFlags = derived.operationalRiskFlags || {};
+    const peerReputationRisk = riskFlags.peerReputation || {};
     const sourceCounts = derived.expressionProfile?.sourceCounts || {};
     const directTextCount = (sourceCounts.checkin || 0) + (sourceCounts.retro || 0) + (sourceCounts.careerDocument || 0);
     const focusScore = expressionFocusScore(student);
@@ -521,32 +664,72 @@
     const projectRate = Number(stats.projectSubmissionRate || 0);
     const attendanceRisk = Number(stats.attendanceRiskIssues || 0);
     const lateCount = Number(stats.lateCount || 0);
+    const healthOrConditionIssues = Number(stats.healthAttendanceIssues || 0) + Number(stats.conditionAttendanceIssues || 0);
     const peerComplaintCount = Number(readiness.peerComplaintCount || 0);
+    const peerAvoidCount = Number(readiness.peerAvoidCount || 0);
+    const peerComplaintWeight = Number(readiness.peerComplaintWeight || 0);
+    const peerAvoidWeight = Number(readiness.peerAvoidWeight || 0);
+    const peerCriticalWeight = peerComplaintWeight + peerAvoidWeight;
     const projectIssueCount = Number(readiness.projectIssueCount || 0);
     const personalColor = Number(derived.careerReadiness?.personalColor || 0);
+    const blocksExcellent = Boolean(riskFlags.blocksExcellent);
+    const repeatedPeerCritical = peerAvoidCount > 0 || peerComplaintCount >= 2 || peerCriticalWeight >= 3;
+    const singleRoleConflictReview = Boolean(peerReputationRisk.reviewOnly);
+    const totalScore = score100(derived.totalRankScore, derived.profileRankScore, derived.profileIndex);
+    const initialScore = score100(derived.initialCapabilityRankScore, derived.initialCapability?.score);
+    const growthPotentialScore = score100(derived.growthPotentialRankScore, derived.growthRankScore, derived.growthIndex);
+    const participationScore = score100(derived.participationRankScore, derived.participationReadiness?.score, diligence);
+    const collaborationScore = score100(derived.collaborationRankScore, readiness.collaborationReadinessScore);
+    const careerScore = score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore);
     const reasons = [];
     const metrics = [];
     let qualified = false;
     let score = 0;
 
-    if (key === "growth") {
-      qualified = derived.primaryTag === "growth_high";
-      score = Number(derived.growthRankScore || derived.growthIndex || 0);
-      metrics.push(`성장 지표 ${displayNumber(score)}`);
+    if (key === "overall") {
+      qualified = totalScore >= 78 && !blocksExcellent;
+      score = totalScore;
+      metrics.push(`총점 ${displayNumber(totalScore)}점`, `초기 ${displayNumber(initialScore)}점`, `성장 ${displayNumber(growthPotentialScore)}점`);
+      metrics.push(`참여 ${displayNumber(participationScore)}점`, `협업 ${displayNumber(collaborationScore)}점`, `진로 ${displayNumber(careerScore)}점`);
+      (derived.tagReasons?.overall_strong?.reasons || []).slice(0, 3).forEach((reason) => reasons.push(reason));
+      if (!reasons.length) reasons.push("지원 필요도는 총점에서 제외하고, 다섯 역량 점수를 가중 합산했습니다.");
+    } else if (key === "initial") {
+      qualified = initialScore >= 74;
+      score = initialScore;
+      metrics.push(`초기역량 ${displayNumber(initialScore)}점`, `신뢰도 ${derived.initialCapability?.confidence || "Low"}`);
+      (derived.initialCapability?.evidence || []).slice(0, 4).forEach((item) => reasons.push(item));
+      if (!reasons.length) reasons.push("전공, 모집 서류, 사전 경험을 낮은 비중의 참고 점수로 반영했습니다.");
+    } else if (key === "growth") {
+      qualified = growthPotentialScore >= 85 && !riskFlags.evaluationMismatch?.hardGate && !riskFlags.fieldPerformance?.hardGate;
+      score = growthPotentialScore;
+      metrics.push(`성장 가능성 ${displayNumber(score)}점`, `현재 수준 ${displayNumber(derived.growthPotential?.currentLevelScore || 0)}점`, `유지/상승 ${displayNumber(derived.growthPotential?.sustainScore || 0)}점`);
       (derived.tagReasons?.growth_high?.reasons || []).slice(0, 2).forEach((reason) => reasons.push(reason));
-      if (!reasons.length) reasons.push("체크인·회고 이후 성장 변화가 커 우수 발전도로 분류됩니다.");
-    } else if (key === "diligence") {
-      qualified = diligence >= 95 && attendanceRisk === 0;
-      score = diligence;
-      metrics.push(`성실도 점수 ${displayNumber(diligence)}점`, `제출률 ${displayPercent(projectRate)}`, `체크인 정시율 ${displayPercent(readiness.checkinOnTimeRate || 0)}`);
+      if (!reasons.length) reasons.push("현재 수준, 상승폭, 고수준 유지 여부, 근거 신뢰도를 함께 반영했습니다.");
+    } else if (key === "participation") {
+      qualified = participationScore >= 88 && attendanceRisk === 0 && projectRate >= 85;
+      score = participationScore;
+      const expectedCount = Number(derived.participationReadiness?.projectExpectedCount || stats.projectExpectedCount || 0);
+      const submittedCount = Number(derived.participationReadiness?.projectSubmissionCount || stats.projectSubmissionCount || 0);
+      metrics.push(`과정참여도 ${displayNumber(participationScore)}점`, `제출률 ${displayPercent(projectRate)}`, `체크인 정시율 ${displayPercent(readiness.checkinOnTimeRate || 0)}`);
+      if (expectedCount) metrics.push(`관측기간 제출 ${submittedCount}/${expectedCount}`);
+      metrics.push(`TIL/체크인 응답 ${displayNumber(derived.participationReadiness?.tilResponseScore || 0)}점`);
       reasons.push(`위험 출결 ${attendanceRisk}건, 지각 ${lateCount}건으로 출결 리스크가 낮습니다.`);
+      reasons.push(`프로젝트 제출률은 학생별 관측 종료일까지의 기대 응답 ${expectedCount || 0}건을 기준으로 계산했습니다.`);
       reasons.push(`프로젝트 제출률 ${displayPercent(projectRate)}와 체크인 정시율 ${displayPercent(readiness.checkinOnTimeRate || 0)}을 함께 반영했습니다.`);
-    } else if (key === "focus") {
-      qualified = focusScore >= 95 && personalColor >= 2.8 && directTextCount >= 3;
-      score = focusScore;
-      metrics.push(`표현 집중도 ${displayNumber(focusScore)}점`, `진로 자기색깔 ${displayNumber(personalColor)}`, `직접 작성 근거 ${directTextCount}건`);
-      reasons.push("체크인·회고·진로 문서에서 구체성, 주도성, 성찰, 진로 연결성이 높게 관찰됩니다.");
-      reasons.push(`작업물 자체보다 오늘의 한마디·프로젝트 회고·진로 문서의 직접 표현 ${directTextCount}건을 중심으로 봤습니다.`);
+    } else if (key === "collaboration") {
+      qualified = collaborationScore >= 72 && !peerReputationRisk.hardGate && peerCriticalWeight < 2.5;
+      score = collaborationScore;
+      metrics.push(`협업 ${displayNumber(collaborationScore)}점`, `동료 긍정 가중치 ${displayNumber(readiness.peerPositiveWeight || 0)}`, `동료 비판 가중치 ${displayNumber(peerCriticalWeight)}`);
+      metrics.push(`팀장/PM ${readiness.leadershipRoleCount || 0}회`, `회고 품질 ${displayNumber(readiness.retroQuality || 0)}/4`);
+      (derived.tagReasons?.collaboration_strength?.reasons || []).slice(0, 4).forEach((reason) => reasons.push(reason));
+      if (!reasons.length) reasons.push("동료 평가, 같은 프로젝트 팀원 언급, 팀 역할 수행, 회고 품질을 함께 반영했습니다.");
+    } else if (key === "career") {
+      qualified = careerScore >= 70 && derived.careerReadiness?.hasConcreteGoal && Number(derived.careerReadiness?.objectiveEvidenceScore || 0) >= 55;
+      score = careerScore;
+      metrics.push(`진로역량 ${displayNumber(careerScore)}점`, `목적 명확성 ${displayNumber(derived.careerReadiness?.purposeClarity || 0)}`, `객관 근거 ${displayNumber(derived.careerReadiness?.objectiveEvidenceScore || 0)}점`);
+      metrics.push(`구체 목표 ${derived.careerReadiness?.hasConcreteGoal ? "있음" : "부족"}`, `추상 표현 ${derived.careerReadiness?.abstractExpressionCount || 0}건`);
+      (derived.tagReasons?.career_progress?.reasons || []).slice(0, 4).forEach((reason) => reasons.push(reason));
+      if (!reasons.length) reasons.push("추상적 희망 표현보다 구체 목표, 객관 근거, 실행 계획, 발표 주제의 직무 관련성을 우선했습니다.");
     } else if (key === "health") {
       qualified = hasCaseType(student, OPERATIONAL_HEALTH_CASES, "warning");
       score = Number(stats.healthAttendanceIssues || 0) + Number(stats.conditionAttendanceIssues || 0);
@@ -554,19 +737,30 @@
       reasons.push(...learningCaseSummaries(student, OPERATIONAL_HEALTH_CASES, "warning"));
       if (!reasons.length) reasons.push("건강, 컨디션, 늦잠 리듬 관련 경고 케이스가 확인되어 건강 위험군으로 분류됩니다.");
     } else if (key === "insincere") {
-      qualified = projectRate < 80 || attendanceRisk > 0 || lateCount >= 3;
+      qualified =
+        projectRate < 70 ||
+        attendanceRisk > 0 ||
+        (projectRate < 80 && lateCount >= 3 && healthOrConditionIssues === 0) ||
+        (lateCount >= 5 && healthOrConditionIssues === 0);
       score = 100 - projectRate + lateCount * 3 + attendanceRisk * 12;
       metrics.push(`제출률 ${displayPercent(projectRate)}`, `위험 출결 ${attendanceRisk}건`, `지각 ${lateCount}건`);
-      if (projectRate < 80) reasons.push(`프로젝트 제출률이 ${displayPercent(projectRate)}로 80% 기준보다 낮습니다.`);
+      if (projectRate < 70) reasons.push(`프로젝트 제출률이 ${displayPercent(projectRate)}로 70% 기준보다 낮습니다.`);
+      if (projectRate < 80 && healthOrConditionIssues > 0) reasons.push("제출률과 지각은 건강/컨디션 맥락을 분리해 불성실로 단정하지 않습니다.");
       if (attendanceRisk > 0) reasons.push(`무단·무연락 등 위험 출결이 ${attendanceRisk}건 확인됩니다.`);
-      if (lateCount >= 3) reasons.push(`지각이 ${lateCount}건으로 반복 신호가 있습니다.`);
+      if (lateCount >= 3 && healthOrConditionIssues === 0) reasons.push(`지각이 ${lateCount}건으로 반복 신호가 있습니다.`);
     } else if (key === "character") {
-      qualified = peerComplaintCount >= 2 || projectIssueCount >= 8 || hasCaseType(student, ["collaboration_conflict_signal"], "warning");
-      score = projectIssueCount + peerComplaintCount * 3;
-      metrics.push(`학우 불만 ${peerComplaintCount}건`, `프로젝트 이슈 ${projectIssueCount}건`);
+      qualified =
+        peerReputationRisk.hardGate ||
+        repeatedPeerCritical ||
+        (projectIssueCount >= 10 && repeatedPeerCritical) ||
+        (hasCaseType(student, ["collaboration_conflict_signal"], "warning") && repeatedPeerCritical);
+      score = projectIssueCount + peerComplaintCount * 3 + peerAvoidCount * 5 + peerCriticalWeight * 4;
+      metrics.push(`동료 비판 가중치 ${displayNumber(peerCriticalWeight)}`, `비선호 ${peerAvoidCount}건`, `불만 ${peerComplaintCount}건`, `프로젝트 이슈 ${projectIssueCount}건`);
       reasons.push(...learningCaseSummaries(student, ["collaboration_conflict_signal"], "warning"));
-      if (peerComplaintCount >= 2) reasons.push(`다른 학우 관련 불만·불화 신호가 ${peerComplaintCount}건 확인됩니다.`);
-      if (projectIssueCount >= 8) reasons.push(`프로젝트 소통·진행 이슈가 ${projectIssueCount}건으로 높습니다.`);
+      (peerReputationRisk.reasons || []).slice(0, 3).forEach((reason) => reasons.push(reason));
+      if (repeatedPeerCritical) reasons.push(`동료 비판·비선호 신호의 총 가중치가 ${displayNumber(peerCriticalWeight)}로 확인됩니다.`);
+      if (singleRoleConflictReview) reasons.push("단일 갈등 신호는 팀장/역할 조율 검토로 분리해 봅니다.");
+      if (projectIssueCount >= 10) reasons.push(`프로젝트 소통·진행 이슈가 ${projectIssueCount}건으로 높습니다.`);
       if (!reasons.length) reasons.push("협업 갈등 또는 불만 언행이 누적되어 인성 위험군으로 분류됩니다.");
     }
 
@@ -618,12 +812,34 @@
   function studentPageHref(studentId, options = {}) {
     const params = new URLSearchParams({ id: studentId });
     if (options.focus) params.set("focus", options.focus);
+    if (options.group) params.set("group", options.group);
     if (options.tab) params.set("tab", options.tab);
     return `./student.html?${params.toString()}`;
   }
 
   function lobbyPageHref() {
     return "./index.html";
+  }
+
+  function studentGroupSignalMeta(key) {
+    return STUDENT_GROUP_SIGNAL_META[key] || {
+      key,
+      label: key || "학생군",
+      shortLabel: key || "학생군",
+      tone: "neutral",
+      description: "추가 정의가 필요한 학생군입니다.",
+      action: "근거 데이터를 확인해 운영 기준을 보강합니다.",
+    };
+  }
+
+  function studentGroupSignalByKey(student, key) {
+    if (!student || !key || key === "all") return null;
+    return (student.studentGroupSignals || []).find((signal) => signal.key === key) || null;
+  }
+
+  function studentHasGroupSignal(student, key) {
+    if (!key || key === "all") return true;
+    return Boolean(studentGroupSignalByKey(student, key));
   }
 
   function tagBadge(tag) {
@@ -966,6 +1182,13 @@
     const readiness = student.derived?.collaborationReadiness || {};
     const trajectory = readiness.trajectory || {};
     const phaseScores = trajectory.phaseScores || [];
+    const teamFeedback = readiness.teamPeerFeedback || [];
+    const feedbackLabels = {
+      praise: "긍정",
+      want: "함께하고 싶음",
+      complaint: "불만",
+      avoid: "회피",
+    };
     return `
       <section class="panel section-panel">
         <div class="panel-head">
@@ -973,7 +1196,7 @@
             <span class="panel-kicker">Collaboration Timeline</span>
             <h3>프로젝트 협업 변화</h3>
           </div>
-          <p class="panel-copy">협업은 관계 선호가 아니라 프로젝트 데일리체크인과 회고 내용을 중심으로 과거와 현재를 비교합니다.</p>
+          <p class="panel-copy">협업은 운영진 관찰, 같은 프로젝트 팀원 언급, PM/팀장 수행 회고, 체크인·회고 흐름을 분리해서 봅니다.</p>
         </div>
         <div class="collaboration-trajectory-grid">
           <article class="trajectory-summary">
@@ -989,6 +1212,50 @@
             <strong>${escapeHtml(`${trajectory.label || "유지"} ${trajectory.delta > 0 ? "+" : ""}${trajectory.delta || 0}`)}</strong>
           </article>
         </div>
+        <div class="collaboration-evidence-grid">
+          <article>
+            <span>같은 팀 긍정</span>
+            <strong>${escapeHtml(String(readiness.sameProjectPeerPositiveWeight || 0))}</strong>
+            <small>동일 프로젝트 팀원의 긍정·선호 언급 가중치</small>
+          </article>
+          <article>
+            <span>같은 팀 위험</span>
+            <strong>${escapeHtml(String((readiness.sameProjectPeerComplaintWeight || 0) + (readiness.sameProjectPeerAvoidWeight || 0)))}</strong>
+            <small>동일 프로젝트 팀원의 불만·회피 언급 가중치</small>
+          </article>
+          <article>
+            <span>PM/팀장 근거</span>
+            <strong>${escapeHtml(String(readiness.leadershipRoleCount || 0))}</strong>
+            <small>팀장 또는 PM 역할 수행 이력</small>
+          </article>
+          <article>
+            <span>점수 보정</span>
+            <strong>${escapeHtml(`+${readiness.peerPositiveBonus || 0} / -${readiness.peerRiskPenalty || 0}`)}</strong>
+            <small>동료 긍정·위험 발화의 최종 반영값</small>
+          </article>
+        </div>
+        ${
+          teamFeedback.length
+            ? `
+              <div class="collaboration-feedback-list">
+                ${teamFeedback
+                  .map(
+                    (item) => `
+                      <article>
+                        <div>
+                          <strong>${escapeHtml(`${item.from || "-"} · ${feedbackLabels[item.type] || item.type || "언급"}`)}</strong>
+                          <span>${escapeHtml([item.sourcePhase, (item.sharedTeams || [])[0]].filter(Boolean).join(" · ") || "프로젝트 맥락")}</span>
+                        </div>
+                        <p>${escapeHtml(item.snippet || "")}</p>
+                        <small>${escapeHtml(`근거 가중치 ${item.weight || 1} · 대상 역할 ${(item.targetRoles || []).join(", ") || "-"}`)}</small>
+                      </article>
+                    `
+                  )
+                  .join("")}
+              </div>
+            `
+            : ""
+        }
         <div class="trajectory-phase-list">
           ${phaseScores.length
             ? phaseScores
@@ -999,7 +1266,7 @@
                       <div class="trajectory-track">
                         <span style="width:${Math.max(4, Math.min(100, Number(item.score) || 0))}%"></span>
                       </div>
-                      <p>${escapeHtml(`점수 ${Math.round(item.score || 0)} · 체크인 ${item.checkinCount || 0}건 · 지연 ${item.lateCheckinCount || 0}건 · 회고 ${item.retroCount || 0}건`)}</p>
+                      <p>${escapeHtml(`점수 ${Math.round(item.score || 0)} · 체크인 ${item.checkinCount || 0}건 · 지연 ${item.lateCheckinCount || 0}건 · 회고 ${item.retroCount || 0}건 · 팀긍정 ${item.sameProjectPeerPositiveWeight || 0} · 팀위험 ${item.sameProjectPeerRiskWeight || 0}`)}</p>
                     </article>
                   `
                 )
@@ -1155,6 +1422,8 @@
     rawData,
     studentsById,
     MANAGEMENT_STATUS_META,
+    STUDENT_GROUP_SIGNAL_META,
+    STUDENT_GROUP_SIGNAL_KEYS,
     PROFILE_KEYS,
     PROFILE_LABELS,
     PROFILE_SHORT_LABELS,
@@ -1178,6 +1447,9 @@
     averageScore,
     studentById,
     studentSearchPool,
+    studentGroupSignalMeta,
+    studentGroupSignalByKey,
+    studentHasGroupSignal,
     quickSearchResults,
     getSavedTheme,
     setTheme,

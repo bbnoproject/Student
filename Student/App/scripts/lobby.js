@@ -20,34 +20,34 @@
 
   const TAG_COPY = {
     overall_strong: {
-      label: "종합우수",
+      label: "종합 우수",
       short: "종합",
       tone: "success",
-      description: "전반 지표가 고르게 높고 과정 적응이 안정적인 학생",
+      description: "총점과 세부 역량이 균형 있게 안정적인 학생",
     },
     growth_high: {
-      label: "성장우수",
+      label: "성장 가능성 우수",
       short: "성장",
       tone: "brand",
-      description: "초기 대비 성장 곡선이 뚜렷한 학생",
+      description: "현재 수준, 상승 또는 고수준 유지, 근거 신뢰도가 함께 높은 학생",
     },
     support_priority: {
-      label: "집중지원",
-      short: "지원",
+      label: "지원 검토",
+      short: "지원검토",
       tone: "danger",
-      description: "개입, 상담, 리듬 회복을 우선 확인할 학생",
+      description: "총점과 별개로 운영 개입과 점검이 우선 필요한 학생",
     },
     collaboration_strength: {
       label: "협업강점",
       short: "협업",
       tone: "mint",
-      description: "체크인, 회고, 역할 수행에서 협업 신호가 좋은 학생",
+      description: "동료 평가, 팀 역할, 회고, 체크인 흐름에서 협업 신호가 좋은 학생",
     },
     career_progress: {
-      label: "진로준비",
+      label: "진로역량 우수",
       short: "진로",
       tone: "violet",
-      description: "목적, 강점, 자기 색깔이 진로 문서에 드러나는 학생",
+      description: "구체 직무 목표와 객관 근거, 실행 계획이 확인되는 학생",
     },
     attendance_watch: {
       label: "참여관찰",
@@ -77,6 +77,13 @@
     general: { label: "일반", tone: "success", description: "과정 진행 중인 학생" },
     employed: { label: "취업", tone: "violet", description: "취업 또는 채용 연계 확인" },
     dropout: { label: "과정이탈", tone: "neutral", description: "이탈 기록이 있는 학생" },
+  };
+
+  const DEMOGRAPHIC_FILTER_COPY = {
+    all: { label: "전체", tone: "neutral" },
+    age: { label: "나이대", tone: "brand" },
+    gender: { label: "성별", tone: "mint" },
+    education: { label: "학력", tone: "success" },
   };
 
   const CASE_FILTER_COPY = {
@@ -144,11 +151,13 @@
     { key: "name", label: "학생", type: "text" },
     { key: "status", label: "상태", type: "text" },
     { key: "tag", label: "운영 분류", type: "text" },
-    { key: "profile", label: "종합", type: "number" },
+    { key: "profile", label: "총점", type: "number" },
+    { key: "initial", label: "초기", type: "number" },
     { key: "growth", label: "성장", type: "number" },
-    { key: "support", label: "지원", type: "number" },
+    { key: "participation", label: "참여", type: "number" },
     { key: "collaboration", label: "협업", type: "number" },
     { key: "career", label: "진로", type: "number" },
+    { key: "support", label: "지원", type: "number" },
     { key: "attendanceRisk", label: "무단/위험", type: "number" },
     { key: "projectRate", label: "제출률", type: "number" },
   ];
@@ -165,7 +174,11 @@
     activeCase: "all",
     statusFilter: "all",
     regionFilter: "all",
+    demographicFilterType: "all",
+    demographicFilterValue: "all",
     classificationFilter: "all",
+    studentGroupFilter: "all",
+    studentGroupMenuKey: "operation_watch",
     sortKey: "name",
     sortDirection: "asc",
     feedbackStudentId: "",
@@ -231,6 +244,19 @@
 
   function formatPercent(value, digits = 0) {
     return `${formatNumber(value, digits)}%`;
+  }
+
+  function firstFiniteNumber(...values) {
+    for (const value of values) {
+      if (value === null || value === undefined || value === "") continue;
+      const number = Number(value);
+      if (Number.isFinite(number)) return number;
+    }
+    return 0;
+  }
+
+  function score100(...values) {
+    return clamp(firstFiniteNumber(...values), 0, 100);
   }
 
   function parseDate(value) {
@@ -338,11 +364,13 @@
       name: student.name || "",
       status: statusLabel(student),
       tag: tagMeta(primaryTag).label,
-      profile: derived.profileRankScore || derived.profileIndex || 0,
-      growth: derived.growthRankScore || derived.growthIndex || 0,
-      support: derived.supportRankScore || derived.supportIndex || 0,
-      collaboration: derived.collaborationRankScore || derived.collaborationReadiness?.collaborationReadinessScore || 0,
-      career: derived.careerRankScore || derived.careerReadiness?.careerReadinessScore || 0,
+      profile: derived.totalRankScore || derived.profileRankScore || derived.profileIndex || 0,
+      initial: score100(derived.initialCapabilityRankScore, derived.initialCapability?.score),
+      growth: score100(derived.growthRankScore, derived.growthIndex),
+      participation: score100(derived.participationRankScore, derived.participationReadiness?.score),
+      support: score100(derived.supportRankScore, derived.supportIndex),
+      collaboration: score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore),
+      career: score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore),
       attendanceRisk: stats.attendanceRiskIssues || 0,
       projectRate: stats.projectSubmissionRate || 0,
     };
@@ -369,8 +397,16 @@
       students = students.filter((student) => matchesRegionFilter(student));
     }
 
+    if (state.demographicFilterType !== "all") {
+      students = students.filter((student) => matchesDemographicFilter(student));
+    }
+
     if (state.classificationFilter !== "all") {
       students = students.filter((student) => matchesClassificationFilter(student));
+    }
+
+    if (state.studentGroupFilter !== "all") {
+      students = students.filter((student) => matchesStudentGroupFilter(student));
     }
 
     if (query) {
@@ -494,6 +530,23 @@
     return region === "all" ? "전체" : region;
   }
 
+  function demographicValue(student, type) {
+    if (type === "age") return ageGroup(student);
+    if (type === "gender") return student.gender || "미상";
+    if (type === "education") return educationGroup(student);
+    return "";
+  }
+
+  function matchesDemographicFilter(student, type = state.demographicFilterType, value = state.demographicFilterValue) {
+    return type === "all" || value === "all" || demographicValue(student, type) === value;
+  }
+
+  function demographicFilterMeta(type = state.demographicFilterType, value = state.demographicFilterValue) {
+    if (type === "all" || value === "all") return { label: "전체", tone: "neutral" };
+    const meta = DEMOGRAPHIC_FILTER_COPY[type] || DEMOGRAPHIC_FILTER_COPY.all;
+    return { label: `${meta.label} · ${value}`, tone: meta.tone };
+  }
+
   function matchesClassificationFilter(student, key = state.classificationFilter) {
     return key === "all" || Boolean(App.studentOperationalAssessmentByKey(student, key)?.qualified);
   }
@@ -502,6 +555,16 @@
     return key === "all"
       ? { label: "전체", tone: "neutral", groupLabel: "운영포커스" }
       : App.operationalClassificationMeta(key) || { label: key, tone: "neutral", groupLabel: "운영포커스" };
+  }
+
+  function matchesStudentGroupFilter(student, key = state.studentGroupFilter) {
+    return App.studentHasGroupSignal(student, key);
+  }
+
+  function studentGroupFilterMeta(key) {
+    return key === "all"
+      ? { label: "전체", shortLabel: "전체", tone: "neutral", description: "전체 학생군", action: "필요한 학생군을 선택해 운영 판단을 좁힙니다." }
+      : App.studentGroupSignalMeta(key);
   }
 
   function regionDetailCounts(students) {
@@ -687,9 +750,9 @@
         <div class="panel-head">
           <div>
             <span class="panel-kicker">Cohort Snapshot</span>
-            <h2>이번 기수 기본 통계</h2>
+            <h2>기수 통계</h2>
           </div>
-          <p class="panel-copy">나이, 성별, 학력, 지역은 판단 점수가 아니라 운영 안내와 커뮤니케이션 톤을 정하기 위한 기본 맥락입니다.</p>
+          <p class="panel-copy">나이, 성별, 학력, 지역은 판단 점수가 아니라 운영 안내와 커뮤니케이션 톤을 정하기 위한 기본 맥락입니다. 각 분류를 누르면 해당 학생관리 데이터로 이동합니다.</p>
         </div>
         <div class="demographic-chart-grid">
           <article class="demographic-chart-card">
@@ -1621,7 +1684,7 @@
         questions: [
           "현재 수업 내용과 프로젝트 수행이 게임 기획자로서의 깊이로 이어지는가",
           "지금 개입해야 할 건강, 불성실, 협업 위험 신호는 무엇인가",
-          "발전도, 성실도, 집중도가 높은 학생을 어떤 근거로 구분할 수 있는가",
+          "총점, 성장가능성, 과정참여도, 협업, 진로역량이 높은 학생을 어떤 근거로 구분할 수 있는가",
         ],
         cautions: [
           "현재 구간은 데이터가 계속 쌓이는 중이므로 단일 사건보다 최근 1개월 반복성과 영향도를 우선합니다.",
@@ -2357,7 +2420,9 @@
     const basis = App.rawData.students
       .filter((student) => matchesCaseFilter(student, state.activeCase))
       .filter((student) => matchesRegionFilter(student))
-      .filter((student) => matchesClassificationFilter(student));
+      .filter((student) => matchesDemographicFilter(student))
+      .filter((student) => matchesClassificationFilter(student))
+      .filter((student) => matchesStudentGroupFilter(student));
     const counts = statusCounts(basis);
     return `
       <section class="status-summary-grid">
@@ -2394,7 +2459,9 @@
       .filter((student) => state.statusFilter === "all" || statusGroup(student) === state.statusFilter)
       .filter((student) => matchesCaseFilter(student, state.activeCase))
       .filter((student) => matchesRegionFilter(student))
-      .filter((student) => matchesClassificationFilter(student));
+      .filter((student) => matchesDemographicFilter(student))
+      .filter((student) => matchesClassificationFilter(student))
+      .filter((student) => matchesStudentGroupFilter(student));
     return `
       <section class="panel category-panel">
         <div class="panel-head compact">
@@ -2411,6 +2478,193 @@
     `;
   }
 
+  function studentGroupBasisStudents() {
+    const query = state.query.trim().toLowerCase();
+    let students = [...App.rawData.students]
+      .filter((student) => state.statusFilter === "all" || statusGroup(student) === state.statusFilter)
+      .filter((student) => state.activeTag === "all" || student.derived?.primaryTag === state.activeTag)
+      .filter((student) => matchesCaseFilter(student, state.activeCase))
+      .filter((student) => matchesRegionFilter(student))
+      .filter((student) => matchesDemographicFilter(student))
+      .filter((student) => matchesClassificationFilter(student));
+    if (query) {
+      students = students.filter((student) => App.studentSearchPool(student).includes(query));
+    }
+    return students;
+  }
+
+  function topValueRows(values, limit = 3) {
+    return sortedCountRows(
+      values
+        .filter(Boolean)
+        .reduce((acc, value) => {
+          acc[value] = (acc[value] || 0) + 1;
+          return acc;
+        }, {})
+    ).slice(0, limit);
+  }
+
+  function renderInlineRows(rows, emptyLabel = "뚜렷한 공통값 없음") {
+    if (!rows.length) return `<span>${escape(emptyLabel)}</span>`;
+    return rows.map((row) => `<span>${escape(row.label)} ${row.count}명</span>`).join("");
+  }
+
+  function studentGroupSortHint(key) {
+    return {
+      operation_watch: { sort: "support", direction: "desc" },
+      portfolio_material_ready: { sort: "projectRate", direction: "desc" },
+      self_publication: { sort: "collaboration", direction: "desc" },
+      career_ready: { sort: "career", direction: "desc" },
+      steady_observation: { sort: "name", direction: "asc" },
+    }[key] || { sort: "name", direction: "asc" };
+  }
+
+  function studentGroupSummary(key, basisStudents) {
+    const meta = App.studentGroupSignalMeta(key);
+    const students = basisStudents.filter((student) => App.studentHasGroupSignal(student, key));
+    const domainRows = topValueRows(
+      students.flatMap((student) => (student.careerGuidance?.topDomains || []).slice(0, 2).map((domain) => domain.label))
+    );
+    const statusRows = topValueRows(students.map((student) => student.stats?.currentStatus || "미상"));
+    const sampleStudents = rankedStudents(students, (student) => {
+      if (key === "portfolio_material_ready") return student.stats?.practiceSubmissionCount || 0;
+      if (key === "career_ready") return student.derived?.careerReadiness?.careerReadinessScore || 0;
+      if (key === "self_publication") return student.stats?.volunteerPresentationCount || 0;
+      if (key === "operation_watch") return score100(student.derived?.supportRankScore, student.stats?.attendanceIssues);
+      return student.derived?.totalRankScore || student.derived?.profileRankScore || 0;
+    }).slice(0, 3);
+    return {
+      ...meta,
+      students,
+      count: students.length,
+      ratio: basisStudents.length ? (students.length / basisStudents.length) * 100 : 0,
+      domainRows,
+      statusRows,
+      sampleStudents,
+      avgSubmissions: average(students, (student) => student.stats?.practiceSubmissionCount || 0),
+      avgCareerScore: average(students, (student) => student.derived?.careerReadiness?.careerReadinessScore || 0),
+      watchCount: students.filter((student) => ["주의", "경고", "집중 관찰"].includes(student.stats?.currentStatus)).length,
+    };
+  }
+
+  function studentGroupMenuKey(summaries) {
+    if (summaries.some((summary) => summary.key === state.studentGroupMenuKey)) return state.studentGroupMenuKey;
+    return summaries[0]?.key || "operation_watch";
+  }
+
+  function renderStudentGroupMenuItem(summary, selectedKey) {
+    const isSelected = summary.key === selectedKey;
+    const isFiltered = state.studentGroupFilter === summary.key;
+    return `
+      <button type="button" class="student-group-menu-item ${App.toneClass(summary.tone)} ${isSelected ? "is-active" : ""} ${isFiltered ? "is-filtered" : ""}" data-student-group-menu="${escape(summary.key)}">
+        <span>${escape(summary.shortLabel || summary.label)}</span>
+        <em>${summary.count}명</em>
+      </button>
+    `;
+  }
+
+  function renderStudentGroupDetail(summary) {
+    const sortHint = studentGroupSortHint(summary.key);
+    const isFiltered = state.studentGroupFilter === summary.key;
+    return `
+      <article class="student-group-card student-group-detail-card ${App.toneClass(summary.tone)} ${isFiltered ? "is-active" : ""}">
+        <div class="student-group-card-head">
+          <div>
+            <span>${escape(summary.shortLabel || summary.label)}</span>
+            <h3>${escape(summary.label)}</h3>
+          </div>
+          <strong>${summary.count}명</strong>
+        </div>
+        <p>${escape(summary.description)}</p>
+        <div class="student-group-meter" aria-label="${escape(`${summary.label} 비율 ${formatPercent(summary.ratio, 1)}`)}">
+          <span style="width:${clamp(summary.ratio, 0, 100)}%"></span>
+        </div>
+        <div class="student-group-metrics">
+          <span>비율 <b>${formatPercent(summary.ratio, 1)}</b></span>
+          <span>평균 제출 <b>${formatNumber(summary.avgSubmissions, 1)}건</b></span>
+          <span>진로 점수 <b>${formatNumber(summary.avgCareerScore, 1)}</b></span>
+          <span>주의/관찰 <b>${summary.watchCount}명</b></span>
+        </div>
+        <div class="student-group-evidence">
+          <div>
+            <b>공통 소재</b>
+            <div>${renderInlineRows(summary.domainRows, "대표 소재 부족")}</div>
+          </div>
+          <div>
+            <b>상태 분포</b>
+            <div>${renderInlineRows(summary.statusRows, "상태 미확인")}</div>
+          </div>
+        </div>
+        <div class="student-group-samples">
+          <b>대표 근거</b>
+          ${
+            summary.sampleStudents.length
+              ? summary.sampleStudents
+                  .map((student) => {
+                    const signal = App.studentGroupSignalByKey(student, summary.key);
+                    return `<span>${escape(student.name)} · ${escape(signal?.basis || "근거 확인 필요")}</span>`;
+                  })
+                  .join("")
+              : `<span>현재 필터 조건에서 해당 학생이 없습니다.</span>`
+          }
+        </div>
+        <div class="student-group-action">
+          <b>운영 액션</b>
+          <p>${escape(summary.action)}</p>
+        </div>
+        <div class="student-group-detail-actions">
+          <button
+            type="button"
+            class="primary-action student-group-filter-button"
+            data-student-group-filter="${escape(summary.key)}"
+            data-student-group-sort="${escape(sortHint.sort)}"
+            data-student-group-direction="${escape(sortHint.direction)}"
+            ${summary.count ? "" : "disabled"}
+          >
+            ${escape(summary.label)} ${isFiltered ? "필터 적용 중" : "학생 보기"}
+          </button>
+          <button type="button" class="soft-action student-group-filter-button" data-student-group-filter="all">
+            표 전체 보기
+          </button>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderStudentGroupOperations() {
+    const basisStudents = studentGroupBasisStudents();
+    const summaries = App.STUDENT_GROUP_SIGNAL_KEYS.map((key) => studentGroupSummary(key, basisStudents));
+    const selectedKey = studentGroupMenuKey(summaries);
+    const selectedSummary = summaries.find((summary) => summary.key === selectedKey) || summaries[0];
+    const activeSummary = state.studentGroupFilter === "all" ? null : summaries.find((summary) => summary.key === state.studentGroupFilter);
+    return `
+      <section class="panel student-group-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Group Operations</span>
+            <h2>학생 운영군 판단</h2>
+          </div>
+          <p class="panel-copy">좌측 운영군 메뉴를 선택하면 우측에 해당 그룹의 공통 데이터와 운영 액션이 표시됩니다.</p>
+        </div>
+        <div class="student-group-toolbar">
+          <div>
+            <strong>${basisStudents.length}명 기준</strong>
+            <span>${activeSummary ? `${activeSummary.label} ${activeSummary.count}명 필터링 중` : "좌측 메뉴는 판단 데이터를 바꾸고, 우측 버튼은 아래 표 필터를 적용합니다."}</span>
+          </div>
+          <button type="button" class="soft-action ${state.studentGroupFilter === "all" ? "is-active" : ""}" data-student-group-filter="all">전체 학생군</button>
+        </div>
+        <div class="student-group-workbench">
+          <nav class="student-group-menu" aria-label="학생 운영군 메뉴">
+            ${summaries.map((summary) => renderStudentGroupMenuItem(summary, selectedKey)).join("")}
+          </nav>
+          <div class="student-group-detail">
+            ${selectedSummary ? renderStudentGroupDetail(selectedSummary) : `<div class="empty-state compact">표시할 학생 운영군 데이터가 없습니다.</div>`}
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
   function filterChip(label, value, tone = "neutral") {
     return `<span class="filter-state-chip ${App.toneClass(tone)}"><b>${escape(label)}</b>${escape(value)}</span>`;
   }
@@ -2420,22 +2674,28 @@
     const tag = state.activeTag === "all" ? null : tagMeta(state.activeTag);
     const caseFilter = caseFilterMeta(state.activeCase);
     const region = regionFilterLabel(state.regionFilter);
+    const demographic = demographicFilterMeta();
     const classification = classificationFilterMeta(state.classificationFilter);
+    const studentGroup = studentGroupFilterMeta(state.studentGroupFilter);
     const sortColumn = TABLE_COLUMNS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
     const hasFilters =
       state.statusFilter !== "all" ||
       state.activeTag !== "all" ||
       state.activeCase !== "all" ||
       state.regionFilter !== "all" ||
+      state.demographicFilterType !== "all" ||
       state.classificationFilter !== "all" ||
+      state.studentGroupFilter !== "all" ||
       Boolean(state.query.trim());
     const quickSorts = [
       { key: "name", label: "가나다" },
-      { key: "support", label: "지원" },
+      { key: "profile", label: "총점" },
+      { key: "growth", label: "성장" },
+      { key: "participation", label: "참여" },
       { key: "collaboration", label: "협업" },
       { key: "career", label: "진로" },
+      { key: "support", label: "지원검토" },
       { key: "attendanceRisk", label: "위험출결" },
-      { key: "projectRate", label: "제출률" },
     ];
     return `
       <section class="panel student-command-panel">
@@ -2453,7 +2713,9 @@
         <div class="filter-state-row">
           ${filterChip("상태", status.label, status.tone)}
           ${filterChip("지역", region, state.regionFilter === "all" ? "neutral" : "brand")}
+          ${filterChip("기수통계", demographic.label, demographic.tone)}
           ${filterChip("운영포커스", `${classification.groupLabel === "운영포커스" ? "" : `${classification.groupLabel} · `}${classification.label}`, classification.tone)}
+          ${filterChip("학생군", studentGroup.label, studentGroup.tone)}
           ${filterChip("분류", tag ? tag.label : "전체", tag ? tag.tone : "neutral")}
           ${filterChip("케이스", caseFilter.label, caseFilter.tone)}
           ${filterChip("정렬", `${sortColumn.label} ${state.sortDirection === "asc" ? "오름차순" : "내림차순"}`, "brand")}
@@ -2485,12 +2747,53 @@
     return reasons[0] || tagMeta(tag).description;
   }
 
+  function score100Cell(value, tone, label) {
+    const score = score100(value);
+    return `
+      <span class="score100-cell score100-${escape(tone)}" title="${escape(`${label} ${formatNumber(score, 1)}점 / 100점`)}">
+        <b>${formatNumber(score, 1)}</b>
+        <i aria-hidden="true"><span style="width:${round(score, 1)}%"></span></i>
+      </span>
+    `;
+  }
+
+  function scoreColumnCell(label, value, tone) {
+    const score = score100(value);
+    return `
+      <span class="score-column-cell score100-${escape(tone)}" title="${escape(`${label} ${formatNumber(score, 1)}점 / 100점`)}" aria-label="${escape(`${label} ${formatNumber(score, 1)}점 / 100점`)}">
+        <b>${formatNumber(score, 0)}</b>
+        <i aria-hidden="true"><span style="width:${round(score, 1)}%"></span></i>
+      </span>
+    `;
+  }
+
+  function projectSubmissionRateCell(stats) {
+    const expected = Number(stats.projectExpectedCount || 0);
+    const submitted = Number(stats.projectSubmissionCount || 0);
+    const rate = Number(stats.projectSubmissionRate || 0);
+    const title = expected
+      ? `관측기간 제출 ${submitted}/${expected} · ${formatPercent(rate, 1)}`
+      : "관측기간 제출 기준 없음";
+    return `<span title="${escape(title)}">${formatPercent(rate, 1)}</span>`;
+  }
+
   function renderStudentRow(student) {
     const derived = student.derived || {};
     const stats = student.stats || {};
     const primaryTag = derived.primaryTag || "steady_path";
     const focusAssessment = state.classificationFilter === "all" ? null : App.studentOperationalAssessmentByKey(student, state.classificationFilter);
-    const studentHref = App.studentPageHref(student.id, focusAssessment?.qualified ? { focus: state.classificationFilter } : {});
+    const groupSignal = state.studentGroupFilter === "all" ? null : App.studentGroupSignalByKey(student, state.studentGroupFilter);
+    const totalScore = score100(derived.totalRankScore, derived.profileRankScore, derived.profileIndex);
+    const initialScore = score100(derived.initialCapabilityRankScore, derived.initialCapability?.score);
+    const growthScore = score100(derived.growthRankScore, derived.growthIndex);
+    const participationScore = score100(derived.participationRankScore, derived.participationReadiness?.score);
+    const supportScore = score100(derived.supportRankScore, derived.supportIndex);
+    const collaborationScore = score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore);
+    const careerScore = score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore);
+    const studentHref = App.studentPageHref(student.id, {
+      ...(focusAssessment?.qualified ? { focus: state.classificationFilter } : {}),
+      ...(groupSignal ? { group: state.studentGroupFilter, tab: "status" } : {}),
+    });
     return `
       <tr data-student-id="${escape(student.id)}">
         <td>
@@ -2502,14 +2805,17 @@
           ${tagPill(primaryTag)}
           <small>${escape(classificationReasonSummary(student, primaryTag))}</small>
           ${focusAssessment?.qualified ? `<small>${escape(`${focusAssessment.groupLabel} · ${focusAssessment.label}: ${focusAssessment.reasons[0] || focusAssessment.basis}`)}</small>` : ""}
+          ${groupSignal ? `<small>${escape(`${groupSignal.label}: ${groupSignal.basis}`)}</small>` : ""}
         </td>
-        <td>${formatNumber(derived.profileRankScore || derived.profileIndex, 1)}</td>
-        <td>${formatNumber(derived.growthRankScore || derived.growthIndex, 1)}</td>
-        <td>${formatNumber(derived.supportRankScore || derived.supportIndex, 1)}</td>
-        <td>${formatNumber(derived.collaborationRankScore || derived.collaborationReadiness?.collaborationReadinessScore, 1)}</td>
-        <td>${formatNumber(derived.careerRankScore || derived.careerReadiness?.careerReadinessScore, 1)}</td>
-        <td>${stats.attendanceRiskIssues || 0}</td>
-        <td>${formatPercent(stats.projectSubmissionRate || 0, 1)}</td>
+        <td>${scoreColumnCell("총점", totalScore, "total")}</td>
+        <td>${scoreColumnCell("초기역량", initialScore, "initial")}</td>
+        <td>${scoreColumnCell("성장 가능성", growthScore, "growth")}</td>
+        <td>${scoreColumnCell("과정참여도", participationScore, "participation")}</td>
+        <td>${scoreColumnCell("협업", collaborationScore, "collaboration")}</td>
+        <td>${scoreColumnCell("진로역량", careerScore, "career")}</td>
+        <td>${scoreColumnCell("지원 검토", supportScore, "support")}</td>
+        <td class="number-cell">${stats.attendanceRiskIssues || 0}</td>
+        <td class="number-cell">${projectSubmissionRateCell(stats)}</td>
       </tr>
     `;
   }
@@ -2549,13 +2855,14 @@
       ${renderStudentCommandBar(students)}
       ${renderStatusFilter()}
       ${renderCategoryOverview()}
+      ${renderStudentGroupOperations()}
       <section class="panel student-management-panel">
         <div class="panel-head">
           <div>
             <span class="panel-kicker">Student Management</span>
             <h2>학생 리스트와 상태 데이터</h2>
           </div>
-          <p class="panel-copy">학생은 기본 가나다순이며, 표 머리글의 수치를 누르면 해당 값으로 정렬됩니다.</p>
+          <p class="panel-copy">총점은 초기역량 비중을 낮게 두고 성장 가능성, 과정참여도, 협업, 진로역량을 합산합니다. 지원검토는 총점과 분리된 운영 개입 지표입니다.</p>
         </div>
         <div class="student-table-meta">
           <strong>${students.length}명 표시</strong>
@@ -2606,7 +2913,7 @@
         {
           key: "purpose_clarity",
           label: "목적의 명확성",
-          question: "지원 직무와 진로 목적이 구체적으로 드러나는가?",
+          question: "지원 직무, 목표 회사/직무 맥락, 포트폴리오 방향이 객관 자료로 확인되는가?",
         },
         {
           key: "strength_awareness",
@@ -2616,7 +2923,7 @@
         {
           key: "personal_color",
           label: "자기 스타일/색깔",
-          question: "다른 지원자와 구분되는 관점, 취향, 문제 해결 방식이 보이는가?",
+          question: "취향 나열이 아니라 게임 기획 문제를 바라보는 관점과 산출물 근거가 보이는가?",
         },
         {
           key: "evidence_alignment",
@@ -2631,8 +2938,8 @@
       ],
       guardrails: [
         "저장된 학생 데이터에 없는 사실을 새로 만들지 않는다.",
-        "협업 평가는 프로젝트 데일리체크인, 회고, 역할 수행을 중심으로 참고한다.",
-        "진로 평가는 문서 제출량보다 목적, 강점, 자기 스타일의 선명도를 우선한다.",
+        "협업 평가는 운영진 관찰, 프로젝트 데일리체크인, 회고, 같은 프로젝트 팀원 언급, PM/팀장 수행 근거를 분리해서 참고한다.",
+        "진로 평가는 추상적인 희망 표현을 긍정으로 보지 않고, 구체 직무 목표, 객관 자료, 피드백 반영, 발표 주제의 게임기획 관련성을 우선한다.",
         "병가, 건강형 출결, 늦잠 지각은 태도 문제가 아니라 건강/컨디션 관리 신호로 분리한다.",
         "협업 위험은 타 학생의 불만, 프로젝트 불화, 소통 저해가 있는지 시간·팀·커리큘럼 맥락과 함께 확인한다.",
         "기본 정보는 점수 근거가 아니라 학생이 직접 쓴 문서의 표현과 선택을 이해하기 위한 맥락으로만 사용한다.",
@@ -2676,18 +2983,22 @@
         profileScores: student.currentProfile || {},
         profileLabels: PROFILE_LABELS,
         rankScores: {
-          profile: derived.profileRankScore,
-          growth: derived.growthRankScore,
-          support: derived.supportRankScore,
-          collaboration: derived.collaborationRankScore,
-          career: derived.careerRankScore,
+          total: score100(derived.totalRankScore, derived.profileRankScore, derived.profileIndex),
+          profile: score100(derived.totalRankScore, derived.profileRankScore, derived.profileIndex),
+          initialCapability: score100(derived.initialCapabilityRankScore, derived.initialCapability?.score),
+          growth: score100(derived.growthRankScore, derived.growthIndex),
+          participation: score100(derived.participationRankScore, derived.participationReadiness?.score),
+          support: score100(derived.supportRankScore, derived.supportIndex),
+          collaboration: score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore),
+          career: score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore),
         },
+        rankScoreBasis: derived.rankScoreBasis || {},
         stats: student.stats || {},
         careerReadiness: derived.careerReadiness || {},
         expressionProfile: derived.expressionProfile || {},
         collaborationReadiness: {
           ...(derived.collaborationReadiness || {}),
-          interpretation: "협업은 반복 팀원이나 선호/비선호가 아니라 체크인, 회고, 역할 수행, 타 학생의 불만/갈등 언급, 프로젝트 맥락을 중심으로 해석합니다.",
+          interpretation: "협업은 반복 팀원이나 단순 선호/비선호가 아니라 운영진 관찰, 같은 프로젝트 팀원 언급, PM/팀장 수행 회고, 체크인·회고 흐름을 중심으로 해석합니다.",
         },
         learningFlowCases: (student.learningFlowCases || []).map((item) => ({
           label: item.label,
@@ -2732,17 +3043,17 @@
       `# ${student.name} 자기소개서 피드백 초안`,
       "",
       "## 종합 판단",
-      `${student.name} 학생은 현재 '${tag}' 분류로 보고 있으며, 자기소개서에서는 목적의 명확성, 자기 강점, 자기만의 스타일이 학생 데이터와 맞게 드러나는지 우선 확인합니다.`,
+      `${student.name} 학생은 현재 '${tag}' 분류로 보고 있으며, 자기소개서에서는 구체 직무 목표, 객관 근거, 피드백 반영, 게임 기획자로서 설명 가능한 발표/산출물 맥락이 학생 데이터와 맞게 드러나는지 우선 확인합니다.`,
       "",
       "## 데이터상 먼저 볼 지점",
       `- 진로 목적성 점수: ${formatNumber(career.careerReadinessScore || bridge.student.rankScores.career, 1)}`,
-      `- 목적 명확성: ${formatNumber(career.purposeClarity, 1)} / 강점 인식: ${formatNumber(career.selfStrengthAwareness, 1)} / 자기 색깔: ${formatNumber(career.personalColor, 1)}`,
+      `- 목적 명확성: ${formatNumber(career.purposeClarity, 1)} / 객관 근거: ${formatNumber(career.objectiveEvidenceScore, 1)} / 구체 목표: ${career.hasConcreteGoal ? "있음" : "부족"} / 추상 표현: ${formatNumber(career.abstractExpressionCount, 0)}건`,
       `- 주요 케이스: ${(bridge.student.learningFlowCases || []).slice(0, 3).map((item) => item.label).join(", ") || "특이 케이스 없음"}`,
       "",
       "## 피드백 방향",
-      "1. 지원동기 첫 문단에서 직무 목적을 더 빠르게 드러냅니다.",
+      "1. 지원동기 첫 문단에서 구체 직무와 지원 맥락을 더 빠르게 드러냅니다.",
       "2. 강점은 성격 표현보다 프로젝트, 회고, 문서 수정 이력 같은 근거와 연결합니다.",
-      "3. 자기만의 색깔은 취향 나열이 아니라 문제를 바라보는 방식으로 정리합니다.",
+      "3. 자기만의 색깔은 취향 나열이 아니라 게임 기획 문제를 바라보는 방식과 산출물로 정리합니다.",
       "4. 저장된 학생 데이터와 충돌하는 표현은 AI가 단정하지 말고 확인 질문으로 남깁니다.",
       "",
       "## API 연동 메모",
@@ -3008,6 +3319,55 @@
     });
   }
 
+  function goToStudentsByDemographic(type, value) {
+    if (!type || !value) return;
+    if (type === "region") {
+      goToStudentsByRegion(value);
+      return;
+    }
+    goToStudentsWithFilters({
+      status: "general",
+      tag: "all",
+      caseFilter: "all",
+      region: "all",
+      demographicType: type,
+      demographicValue: value,
+      sort: "name",
+      direction: "asc",
+    });
+  }
+
+  function chartDemographicClick(type, rows) {
+    return (event, elements, chart) => {
+      const selected = elements && elements[0];
+      if (!selected) return;
+      const value = rows?.[selected.index]?.label || chart?.data?.labels?.[selected.index];
+      if (value) goToStudentsByDemographic(type, value);
+    };
+  }
+
+  function chartPointerHover(event, elements) {
+    const target = event.native?.target;
+    if (target) target.style.cursor = elements?.length ? "pointer" : "default";
+  }
+
+  function demographicLegendOptions(type) {
+    return {
+      ...chartBaseOptions().plugins.legend,
+      onClick: (event, legendItem) => {
+        if (legendItem?.text) goToStudentsByDemographic(type, legendItem.text);
+      },
+      onHover: (event) => {
+        const target = event.native?.target;
+        if (target) target.style.cursor = "pointer";
+      },
+      onLeave: (event) => {
+        const target = event.native?.target;
+        if (target) target.style.cursor = "default";
+      },
+    };
+  }
+
   function goToStudentsByClassification(classification) {
     goToStudentsWithFilters({
       status: "general",
@@ -3068,10 +3428,7 @@
       options: chartBaseOptions({
         indexAxis: "y",
         onClick: chartClassificationClick(classification.excellent),
-        onHover: (event, elements) => {
-          const target = event.native?.target;
-          if (target) target.style.cursor = elements?.length ? "pointer" : "default";
-        },
+        onHover: chartPointerHover,
         plugins: {
           ...chartBaseOptions().plugins,
           legend: { display: false },
@@ -3095,10 +3452,7 @@
       options: chartBaseOptions({
         indexAxis: "y",
         onClick: chartClassificationClick(classification.risk),
-        onHover: (event, elements) => {
-          const target = event.native?.target;
-          if (target) target.style.cursor = elements?.length ? "pointer" : "default";
-        },
+        onHover: chartPointerHover,
         plugins: {
           ...chartBaseOptions().plugins,
           legend: { display: false },
@@ -3118,7 +3472,11 @@
         labels: ageRows.map((row) => row.label),
         datasets: [{ label: "인원", data: ageRows.map((row) => row.count), backgroundColor: chartColor("brand"), borderRadius: 8 }],
       },
-      options: chartBaseOptions({ plugins: { ...chartBaseOptions().plugins, legend: { display: false } } }),
+      options: chartBaseOptions({
+        onClick: chartDemographicClick("age", ageRows),
+        onHover: chartPointerHover,
+        plugins: { ...chartBaseOptions().plugins, legend: { display: false } },
+      }),
     });
     createOverviewChart("overview-gender-chart", {
       type: "doughnut",
@@ -3128,6 +3486,12 @@
       },
       options: chartBaseOptions({
         cutout: "62%",
+        onClick: chartDemographicClick("gender", genderRows),
+        onHover: chartPointerHover,
+        plugins: {
+          ...chartBaseOptions().plugins,
+          legend: demographicLegendOptions("gender"),
+        },
         scales: {},
       }),
     });
@@ -3137,7 +3501,12 @@
         labels: educationRows.map((row) => row.label),
         datasets: [{ label: "인원", data: educationRows.map((row) => row.count), backgroundColor: chartColor("success"), borderRadius: 8 }],
       },
-      options: chartBaseOptions({ indexAxis: "y", plugins: { ...chartBaseOptions().plugins, legend: { display: false } } }),
+      options: chartBaseOptions({
+        indexAxis: "y",
+        onClick: chartDemographicClick("education", educationRows),
+        onHover: chartPointerHover,
+        plugins: { ...chartBaseOptions().plugins, legend: { display: false } },
+      }),
     });
     createOverviewChart("overview-region-chart", {
       type: "doughnut",
@@ -3159,32 +3528,11 @@
       },
       options: chartBaseOptions({
         cutout: "62%",
-        onClick: (event, elements, chart) => {
-          const selected = elements && elements[0];
-          if (!selected) return;
-          const region = chart.data.labels[selected.index];
-          if (region) goToStudentsByRegion(region);
-        },
-        onHover: (event, elements) => {
-          const target = event.native?.target;
-          if (target) target.style.cursor = elements?.length ? "pointer" : "default";
-        },
+        onClick: chartDemographicClick("region", regionRows),
+        onHover: chartPointerHover,
         plugins: {
           ...chartBaseOptions().plugins,
-          legend: {
-            ...chartBaseOptions().plugins.legend,
-            onClick: (event, legendItem) => {
-              if (legendItem?.text) goToStudentsByRegion(legendItem.text);
-            },
-            onHover: (event) => {
-              const target = event.native?.target;
-              if (target) target.style.cursor = "pointer";
-            },
-            onLeave: (event) => {
-              const target = event.native?.target;
-              if (target) target.style.cursor = "default";
-            },
-          },
+          legend: demographicLegendOptions("region"),
           tooltip: {
             callbacks: {
               label: (context) => {
@@ -3487,12 +3835,26 @@
     render();
   }
 
-  function goToStudentsWithFilters({ status = "all", tag = "all", caseFilter = "all", region = "all", classification = "all", sort = "name", direction = "asc" }) {
+  function goToStudentsWithFilters({
+    status = "all",
+    tag = "all",
+    caseFilter = "all",
+    region = "all",
+    demographicType = "all",
+    demographicValue = "all",
+    classification = "all",
+    studentGroup = "all",
+    sort = "name",
+    direction = "asc",
+  }) {
     state.statusFilter = status;
     state.activeTag = tag;
     state.activeCase = caseFilter;
     state.regionFilter = region;
+    state.demographicFilterType = demographicType;
+    state.demographicFilterValue = demographicValue;
     state.classificationFilter = classification;
+    state.studentGroupFilter = studentGroup;
     state.sortKey = sort;
     state.sortDirection = direction;
     state.activePage = "students";
@@ -3508,7 +3870,10 @@
     state.activeTag = "all";
     state.activeCase = "all";
     state.regionFilter = "all";
+    state.demographicFilterType = "all";
+    state.demographicFilterValue = "all";
     state.classificationFilter = "all";
+    state.studentGroupFilter = "all";
     state.sortKey = "name";
     state.sortDirection = "asc";
     state.query = "";
@@ -3567,6 +3932,23 @@
       return;
     }
 
+    const studentGroupButton = event.target.closest("[data-student-group-filter]");
+    if (studentGroupButton) {
+      state.studentGroupFilter = studentGroupButton.dataset.studentGroupFilter || "all";
+      if (state.studentGroupFilter !== "all") state.studentGroupMenuKey = state.studentGroupFilter;
+      state.sortKey = studentGroupButton.dataset.studentGroupSort || state.sortKey;
+      state.sortDirection = studentGroupButton.dataset.studentGroupDirection || state.sortDirection;
+      render();
+      return;
+    }
+
+    const studentGroupMenuButton = event.target.closest("[data-student-group-menu]");
+    if (studentGroupMenuButton) {
+      state.studentGroupMenuKey = studentGroupMenuButton.dataset.studentGroupMenu || state.studentGroupMenuKey;
+      render();
+      return;
+    }
+
     const overviewFilterButton = event.target.closest("[data-student-filter-action]");
     if (overviewFilterButton) {
       goToStudentsWithFilters({
@@ -3574,6 +3956,7 @@
         tag: overviewFilterButton.dataset.filterTag || "all",
         caseFilter: overviewFilterButton.dataset.filterCase || "all",
         classification: overviewFilterButton.dataset.filterClassification || "all",
+        studentGroup: overviewFilterButton.dataset.filterStudentGroup || "all",
         sort: overviewFilterButton.dataset.filterSort || "name",
         direction: overviewFilterButton.dataset.filterDirection || "asc",
       });

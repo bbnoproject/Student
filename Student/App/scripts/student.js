@@ -32,6 +32,7 @@
     detailMilestoneId: "all",
     activeCriterion: "",
     focusClassification: App.getQueryParam("focus") || "",
+    focusStudentGroup: App.getQueryParam("group") || "",
   };
 
   function currentStudent() {
@@ -543,6 +544,7 @@
 
   function renderStudentGroupSignalsPanel(student) {
     const signals = student.studentGroupSignals || [];
+    const focusMeta = state.focusStudentGroup ? App.studentGroupSignalMeta(state.focusStudentGroup) : null;
     return `
       <section class="panel section-panel group-signals-panel">
         <div class="panel-head">
@@ -550,7 +552,11 @@
             <span class="panel-kicker">Student Classification</span>
             <h3>학생군 분류 신호</h3>
           </div>
-          <p class="panel-copy">생활/제출/발표/진로 데이터를 묶어 같은 행동 패턴의 학생군을 파악합니다.</p>
+          <p class="panel-copy">${
+            focusMeta
+              ? App.escapeHtml(`${focusMeta.label} 필터에서 열었습니다. 이 학생이 해당 그룹에 묶인 근거를 먼저 확인하세요.`)
+              : "생활/제출/발표/진로 데이터를 묶어 같은 행동 패턴의 학생군을 파악합니다."
+          }</p>
         </div>
         <div class="group-signal-grid">
           ${
@@ -558,7 +564,7 @@
               ? signals
                   .map(
                     (signal) => `
-                      <article class="group-signal-card">
+                      <article class="group-signal-card ${App.toneClass(App.studentGroupSignalMeta(signal.key).tone)} ${signal.key === state.focusStudentGroup ? "is-focus" : ""}">
                         <strong>${App.escapeHtml(signal.label)}</strong>
                         <p>${App.escapeHtml(signal.basis)}</p>
                       </article>
@@ -659,6 +665,98 @@
 
   function clampScore(value) {
     return Math.max(0, Math.min(100, Math.round(Number(value) || 0)));
+  }
+
+  function firstScore(...values) {
+    for (const value of values) {
+      const number = Number(value);
+      if (Number.isFinite(number)) return Math.max(0, Math.min(100, number));
+    }
+    return 0;
+  }
+
+  function scoreLabel(value) {
+    return `${firstScore(value).toLocaleString("ko-KR", { maximumFractionDigits: 1 })}점`;
+  }
+
+  function renderOperationalScorePanel(student) {
+    const derived = student.derived || {};
+    const initial = derived.initialCapability || {};
+    const growth = derived.growthPotential || {};
+    const participation = derived.participationReadiness || {};
+    const participationExpected = Number(participation.projectExpectedCount || student.stats?.projectExpectedCount || 0);
+    const participationSubmitted = Number(participation.projectSubmissionCount || student.stats?.projectSubmissionCount || 0);
+    const participationWindowCopy = participationExpected
+      ? `제출 ${participationSubmitted}/${participationExpected} (${participation.projectSubmissionRate || 0}%)`
+      : "관측기간 제출 기준 없음";
+    const career = derived.careerReadiness || {};
+    const collaboration = derived.collaborationReadiness || {};
+    const support = derived.operationalRiskFlags || {};
+    const scoreCards = [
+      {
+        label: "총점",
+        score: firstScore(derived.totalRankScore, derived.profileRankScore),
+        copy: "초기 10 · 진로 22 · 성장 28 · 참여 20 · 협업 20",
+        tone: "success",
+      },
+      {
+        label: "초기역량",
+        score: firstScore(derived.initialCapabilityRankScore, initial.score),
+        copy: initial.evidence?.slice(0, 2).join(" · ") || "전공/경험/지원서 기반",
+        tone: "brand",
+      },
+      {
+        label: "성장가능성",
+        score: firstScore(derived.growthPotentialRankScore, derived.growthRankScore),
+        copy: `${growth.pattern || "패턴 확인"} · 현재 ${scoreLabel(growth.currentLevelScore)} · 신뢰 ${scoreLabel(growth.confidenceScore)}`,
+        tone: "mint",
+      },
+      {
+        label: "과정참여도",
+        score: firstScore(derived.participationRankScore, participation.score),
+        copy: `${participationWindowCopy} · 체크인 ${participation.checkinOnTimeRate || 0}% · TIL ${scoreLabel(participation.tilResponseScore)}`,
+        tone: "success",
+      },
+      {
+        label: "협업",
+        score: firstScore(derived.collaborationRankScore, collaboration.collaborationReadinessScore),
+        copy: `동료 긍정 ${collaboration.peerPositiveWeight || 0} · 비판 ${Number(collaboration.peerComplaintWeight || 0) + Number(collaboration.peerAvoidWeight || 0)} · PM/팀장 ${collaboration.leadershipRoleCount || 0}회`,
+        tone: "violet",
+      },
+      {
+        label: "진로역량",
+        score: firstScore(derived.careerRankScore, career.careerReadinessScore),
+        copy: `구체 목표 ${career.hasConcreteGoal ? "있음" : "부족"} · 객관 근거 ${scoreLabel(career.objectiveEvidenceScore)} · 추상 ${career.abstractExpressionCount || 0}건`,
+        tone: "brand",
+      },
+      {
+        label: "지원검토",
+        score: firstScore(derived.supportRankScore, derived.supportIndex),
+        copy: `현장 ${support.fieldPerformance?.hardGate ? "하드" : support.fieldPerformance?.hasRisk ? "검토" : "낮음"} · 동료 ${support.peerReputation?.hardGate ? "하드" : support.peerReputation?.hasRisk ? "검토" : "낮음"} · 불일치 ${support.evaluationMismatch?.hasRisk ? "있음" : "낮음"}`,
+        tone: "warning",
+      },
+    ];
+    const basis = derived.rankScoreBasis || {};
+    return `
+      <section class="panel section-panel operational-score-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Score Model</span>
+            <h3>운영 분류 점수</h3>
+          </div>
+          <p class="panel-copy">지원검토는 총점에서 분리하고, 총점은 초기역량 비중을 낮게 둔 역량 합산으로 봅니다.</p>
+        </div>
+        <div class="snapshot-grid compact-snapshot-grid">
+          ${scoreCards.map((item) => App.metricCard(item.label, scoreLabel(item.score), item.copy, item.tone)).join("")}
+        </div>
+        <div class="assessment-reason-list">
+          ${["total", "initialCapability", "growth", "participation", "collaboration", "career", "support"]
+            .filter((key) => basis[key])
+            .map((key) => `<p>${App.escapeHtml(basis[key])}</p>`)
+            .join("")}
+        </div>
+      </section>
+    `;
   }
 
   function fiveMetricScores(student) {
@@ -862,6 +960,7 @@
         ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
         ${App.metricCard("프로젝트 협업", `${Math.round(collaborationReadiness.collaborationReadinessScore || 0)}점`, `변화 ${collaborationReadiness.trajectory?.label || "유지"} ${collaborationReadiness.trajectory?.delta || 0}`, "violet")}
       </section>
+      ${renderOperationalScorePanel(student)}
       ${renderStrengthProfilePanel(student)}
       ${renderStudentGroupSignalsPanel(student)}
       ${renderCareerGuidancePanel(student)}
@@ -921,6 +1020,7 @@
 
   function renderScoreTab(student) {
     return `
+      ${renderOperationalScorePanel(student)}
       ${renderFiveMetricPanel(student)}
       ${renderMilestoneGrowthPanel(student)}
       <section class="panel section-panel">
@@ -1020,6 +1120,8 @@
         ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
         ${App.metricCard("프로젝트 협업", `${Math.round(collaborationReadiness.collaborationReadinessScore || 0)}점`, `변화 ${collaborationReadiness.trajectory?.label || "유지"} ${collaborationReadiness.trajectory?.delta || 0}`, "violet")}
       </section>
+
+      ${renderOperationalScorePanel(student)}
 
       ${App.renderExpressionProfile(student)}
 
@@ -1145,12 +1247,12 @@
         <div class="panel-head">
           <div>
             <span class="panel-kicker">Operational Focus</span>
-            <h3>우수자/위험군 평가 근거</h3>
+            <h3>역량/위험군 평가 근거</h3>
           </div>
           <p class="panel-copy">${
             focusAssessment
               ? App.escapeHtml(`${focusLabel} 분류로 학생관리에서 열었습니다. 아래 기준과 근거를 먼저 확인하세요.`)
-              : "현재 학생이 우수자/위험군 기준에 해당하는 경우 그 이유를 표시합니다."
+              : "현재 학생이 역량 분류나 위험군 기준에 해당하는 경우 그 이유를 표시합니다."
           }</p>
         </div>
         <div class="operational-assessment-list">

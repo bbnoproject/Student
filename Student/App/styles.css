@@ -1320,6 +1320,15 @@ body[data-theme="dark"] .detail-milestone-card {
   padding: 16px;
 }
 
+.group-signal-card {
+  border-left: 4px solid currentColor;
+}
+
+.group-signal-card.is-focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .career-guidance-card span,
 .strength-overview-card span,
 .strength-evidence-item span,
@@ -1605,6 +1614,62 @@ body[data-theme="dark"] .detail-milestone-card {
 .trajectory-phase-list {
   display: grid;
   gap: 10px;
+}
+
+.collaboration-evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.collaboration-evidence-grid article,
+.collaboration-feedback-list article {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.collaboration-evidence-grid span,
+.collaboration-feedback-list span,
+.collaboration-feedback-list small {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.collaboration-evidence-grid strong {
+  display: block;
+  margin: 4px 0;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.collaboration-evidence-grid small,
+.collaboration-feedback-list small {
+  display: block;
+  line-height: 1.45;
+}
+
+.collaboration-feedback-list {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.collaboration-feedback-list article > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.collaboration-feedback-list p {
+  margin: 8px 0;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .trajectory-phase-row strong {
@@ -2037,6 +2102,7 @@ body[data-theme="dark"] .detail-milestone-card {
   .snapshot-grid,
   .student-basic-grid,
   .compact-snapshot-grid,
+  .collaboration-evidence-grid,
   .expression-context-grid,
   .admission-context-grid,
   .staff-profile-meta-grid,
@@ -2122,6 +2188,8 @@ body[data-theme="dark"] .detail-milestone-card {
   .snapshot-grid,
   .student-basic-grid,
   .compact-snapshot-grid,
+  .collaboration-trajectory-grid,
+  .collaboration-evidence-grid,
   .expression-context-grid,
   .expression-dimension-list,
   .expression-sample-list,
