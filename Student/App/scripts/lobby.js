@@ -177,8 +177,6 @@
     demographicFilterType: "all",
     demographicFilterValue: "all",
     classificationFilter: "all",
-    studentGroupFilter: "all",
-    studentGroupMenuKey: "operation_watch",
     sortKey: "name",
     sortDirection: "asc",
     feedbackStudentId: "",
@@ -405,10 +403,6 @@
       students = students.filter((student) => matchesClassificationFilter(student));
     }
 
-    if (state.studentGroupFilter !== "all") {
-      students = students.filter((student) => matchesStudentGroupFilter(student));
-    }
-
     if (query) {
       students = students.filter((student) => App.studentSearchPool(student).includes(query));
     }
@@ -555,16 +549,6 @@
     return key === "all"
       ? { label: "전체", tone: "neutral", groupLabel: "운영포커스" }
       : App.operationalClassificationMeta(key) || { label: key, tone: "neutral", groupLabel: "운영포커스" };
-  }
-
-  function matchesStudentGroupFilter(student, key = state.studentGroupFilter) {
-    return App.studentHasGroupSignal(student, key);
-  }
-
-  function studentGroupFilterMeta(key) {
-    return key === "all"
-      ? { label: "전체", shortLabel: "전체", tone: "neutral", description: "전체 학생군", action: "필요한 학생군을 선택해 운영 판단을 좁힙니다." }
-      : App.studentGroupSignalMeta(key);
   }
 
   function regionDetailCounts(students) {
@@ -2421,8 +2405,7 @@
       .filter((student) => matchesCaseFilter(student, state.activeCase))
       .filter((student) => matchesRegionFilter(student))
       .filter((student) => matchesDemographicFilter(student))
-      .filter((student) => matchesClassificationFilter(student))
-      .filter((student) => matchesStudentGroupFilter(student));
+      .filter((student) => matchesClassificationFilter(student));
     const counts = statusCounts(basis);
     return `
       <section class="status-summary-grid">
@@ -2460,8 +2443,7 @@
       .filter((student) => matchesCaseFilter(student, state.activeCase))
       .filter((student) => matchesRegionFilter(student))
       .filter((student) => matchesDemographicFilter(student))
-      .filter((student) => matchesClassificationFilter(student))
-      .filter((student) => matchesStudentGroupFilter(student));
+      .filter((student) => matchesClassificationFilter(student));
     return `
       <section class="panel category-panel">
         <div class="panel-head compact">
@@ -2478,193 +2460,6 @@
     `;
   }
 
-  function studentGroupBasisStudents() {
-    const query = state.query.trim().toLowerCase();
-    let students = [...App.rawData.students]
-      .filter((student) => state.statusFilter === "all" || statusGroup(student) === state.statusFilter)
-      .filter((student) => state.activeTag === "all" || student.derived?.primaryTag === state.activeTag)
-      .filter((student) => matchesCaseFilter(student, state.activeCase))
-      .filter((student) => matchesRegionFilter(student))
-      .filter((student) => matchesDemographicFilter(student))
-      .filter((student) => matchesClassificationFilter(student));
-    if (query) {
-      students = students.filter((student) => App.studentSearchPool(student).includes(query));
-    }
-    return students;
-  }
-
-  function topValueRows(values, limit = 3) {
-    return sortedCountRows(
-      values
-        .filter(Boolean)
-        .reduce((acc, value) => {
-          acc[value] = (acc[value] || 0) + 1;
-          return acc;
-        }, {})
-    ).slice(0, limit);
-  }
-
-  function renderInlineRows(rows, emptyLabel = "뚜렷한 공통값 없음") {
-    if (!rows.length) return `<span>${escape(emptyLabel)}</span>`;
-    return rows.map((row) => `<span>${escape(row.label)} ${row.count}명</span>`).join("");
-  }
-
-  function studentGroupSortHint(key) {
-    return {
-      operation_watch: { sort: "support", direction: "desc" },
-      portfolio_material_ready: { sort: "projectRate", direction: "desc" },
-      self_publication: { sort: "collaboration", direction: "desc" },
-      career_ready: { sort: "career", direction: "desc" },
-      steady_observation: { sort: "name", direction: "asc" },
-    }[key] || { sort: "name", direction: "asc" };
-  }
-
-  function studentGroupSummary(key, basisStudents) {
-    const meta = App.studentGroupSignalMeta(key);
-    const students = basisStudents.filter((student) => App.studentHasGroupSignal(student, key));
-    const domainRows = topValueRows(
-      students.flatMap((student) => (student.careerGuidance?.topDomains || []).slice(0, 2).map((domain) => domain.label))
-    );
-    const statusRows = topValueRows(students.map((student) => student.stats?.currentStatus || "미상"));
-    const sampleStudents = rankedStudents(students, (student) => {
-      if (key === "portfolio_material_ready") return student.stats?.practiceSubmissionCount || 0;
-      if (key === "career_ready") return student.derived?.careerReadiness?.careerReadinessScore || 0;
-      if (key === "self_publication") return student.stats?.volunteerPresentationCount || 0;
-      if (key === "operation_watch") return score100(student.derived?.supportRankScore, student.stats?.attendanceIssues);
-      return student.derived?.totalRankScore || student.derived?.profileRankScore || 0;
-    }).slice(0, 3);
-    return {
-      ...meta,
-      students,
-      count: students.length,
-      ratio: basisStudents.length ? (students.length / basisStudents.length) * 100 : 0,
-      domainRows,
-      statusRows,
-      sampleStudents,
-      avgSubmissions: average(students, (student) => student.stats?.practiceSubmissionCount || 0),
-      avgCareerScore: average(students, (student) => student.derived?.careerReadiness?.careerReadinessScore || 0),
-      watchCount: students.filter((student) => ["주의", "경고", "집중 관찰"].includes(student.stats?.currentStatus)).length,
-    };
-  }
-
-  function studentGroupMenuKey(summaries) {
-    if (summaries.some((summary) => summary.key === state.studentGroupMenuKey)) return state.studentGroupMenuKey;
-    return summaries[0]?.key || "operation_watch";
-  }
-
-  function renderStudentGroupMenuItem(summary, selectedKey) {
-    const isSelected = summary.key === selectedKey;
-    const isFiltered = state.studentGroupFilter === summary.key;
-    return `
-      <button type="button" class="student-group-menu-item ${App.toneClass(summary.tone)} ${isSelected ? "is-active" : ""} ${isFiltered ? "is-filtered" : ""}" data-student-group-menu="${escape(summary.key)}">
-        <span>${escape(summary.shortLabel || summary.label)}</span>
-        <em>${summary.count}명</em>
-      </button>
-    `;
-  }
-
-  function renderStudentGroupDetail(summary) {
-    const sortHint = studentGroupSortHint(summary.key);
-    const isFiltered = state.studentGroupFilter === summary.key;
-    return `
-      <article class="student-group-card student-group-detail-card ${App.toneClass(summary.tone)} ${isFiltered ? "is-active" : ""}">
-        <div class="student-group-card-head">
-          <div>
-            <span>${escape(summary.shortLabel || summary.label)}</span>
-            <h3>${escape(summary.label)}</h3>
-          </div>
-          <strong>${summary.count}명</strong>
-        </div>
-        <p>${escape(summary.description)}</p>
-        <div class="student-group-meter" aria-label="${escape(`${summary.label} 비율 ${formatPercent(summary.ratio, 1)}`)}">
-          <span style="width:${clamp(summary.ratio, 0, 100)}%"></span>
-        </div>
-        <div class="student-group-metrics">
-          <span>비율 <b>${formatPercent(summary.ratio, 1)}</b></span>
-          <span>평균 제출 <b>${formatNumber(summary.avgSubmissions, 1)}건</b></span>
-          <span>진로 점수 <b>${formatNumber(summary.avgCareerScore, 1)}</b></span>
-          <span>주의/관찰 <b>${summary.watchCount}명</b></span>
-        </div>
-        <div class="student-group-evidence">
-          <div>
-            <b>공통 소재</b>
-            <div>${renderInlineRows(summary.domainRows, "대표 소재 부족")}</div>
-          </div>
-          <div>
-            <b>상태 분포</b>
-            <div>${renderInlineRows(summary.statusRows, "상태 미확인")}</div>
-          </div>
-        </div>
-        <div class="student-group-samples">
-          <b>대표 근거</b>
-          ${
-            summary.sampleStudents.length
-              ? summary.sampleStudents
-                  .map((student) => {
-                    const signal = App.studentGroupSignalByKey(student, summary.key);
-                    return `<span>${escape(student.name)} · ${escape(signal?.basis || "근거 확인 필요")}</span>`;
-                  })
-                  .join("")
-              : `<span>현재 필터 조건에서 해당 학생이 없습니다.</span>`
-          }
-        </div>
-        <div class="student-group-action">
-          <b>운영 액션</b>
-          <p>${escape(summary.action)}</p>
-        </div>
-        <div class="student-group-detail-actions">
-          <button
-            type="button"
-            class="primary-action student-group-filter-button"
-            data-student-group-filter="${escape(summary.key)}"
-            data-student-group-sort="${escape(sortHint.sort)}"
-            data-student-group-direction="${escape(sortHint.direction)}"
-            ${summary.count ? "" : "disabled"}
-          >
-            ${escape(summary.label)} ${isFiltered ? "필터 적용 중" : "학생 보기"}
-          </button>
-          <button type="button" class="soft-action student-group-filter-button" data-student-group-filter="all">
-            표 전체 보기
-          </button>
-        </div>
-      </article>
-    `;
-  }
-
-  function renderStudentGroupOperations() {
-    const basisStudents = studentGroupBasisStudents();
-    const summaries = App.STUDENT_GROUP_SIGNAL_KEYS.map((key) => studentGroupSummary(key, basisStudents));
-    const selectedKey = studentGroupMenuKey(summaries);
-    const selectedSummary = summaries.find((summary) => summary.key === selectedKey) || summaries[0];
-    const activeSummary = state.studentGroupFilter === "all" ? null : summaries.find((summary) => summary.key === state.studentGroupFilter);
-    return `
-      <section class="panel student-group-panel">
-        <div class="panel-head">
-          <div>
-            <span class="panel-kicker">Group Operations</span>
-            <h2>학생 운영군 판단</h2>
-          </div>
-          <p class="panel-copy">좌측 운영군 메뉴를 선택하면 우측에 해당 그룹의 공통 데이터와 운영 액션이 표시됩니다.</p>
-        </div>
-        <div class="student-group-toolbar">
-          <div>
-            <strong>${basisStudents.length}명 기준</strong>
-            <span>${activeSummary ? `${activeSummary.label} ${activeSummary.count}명 필터링 중` : "좌측 메뉴는 판단 데이터를 바꾸고, 우측 버튼은 아래 표 필터를 적용합니다."}</span>
-          </div>
-          <button type="button" class="soft-action ${state.studentGroupFilter === "all" ? "is-active" : ""}" data-student-group-filter="all">전체 학생군</button>
-        </div>
-        <div class="student-group-workbench">
-          <nav class="student-group-menu" aria-label="학생 운영군 메뉴">
-            ${summaries.map((summary) => renderStudentGroupMenuItem(summary, selectedKey)).join("")}
-          </nav>
-          <div class="student-group-detail">
-            ${selectedSummary ? renderStudentGroupDetail(selectedSummary) : `<div class="empty-state compact">표시할 학생 운영군 데이터가 없습니다.</div>`}
-          </div>
-        </div>
-      </section>
-    `;
-  }
-
   function filterChip(label, value, tone = "neutral") {
     return `<span class="filter-state-chip ${App.toneClass(tone)}"><b>${escape(label)}</b>${escape(value)}</span>`;
   }
@@ -2676,7 +2471,6 @@
     const region = regionFilterLabel(state.regionFilter);
     const demographic = demographicFilterMeta();
     const classification = classificationFilterMeta(state.classificationFilter);
-    const studentGroup = studentGroupFilterMeta(state.studentGroupFilter);
     const sortColumn = TABLE_COLUMNS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
     const hasFilters =
       state.statusFilter !== "all" ||
@@ -2685,7 +2479,6 @@
       state.regionFilter !== "all" ||
       state.demographicFilterType !== "all" ||
       state.classificationFilter !== "all" ||
-      state.studentGroupFilter !== "all" ||
       Boolean(state.query.trim());
     const quickSorts = [
       { key: "name", label: "가나다" },
@@ -2715,7 +2508,6 @@
           ${filterChip("지역", region, state.regionFilter === "all" ? "neutral" : "brand")}
           ${filterChip("기수통계", demographic.label, demographic.tone)}
           ${filterChip("운영포커스", `${classification.groupLabel === "운영포커스" ? "" : `${classification.groupLabel} · `}${classification.label}`, classification.tone)}
-          ${filterChip("학생군", studentGroup.label, studentGroup.tone)}
           ${filterChip("분류", tag ? tag.label : "전체", tag ? tag.tone : "neutral")}
           ${filterChip("케이스", caseFilter.label, caseFilter.tone)}
           ${filterChip("정렬", `${sortColumn.label} ${state.sortDirection === "asc" ? "오름차순" : "내림차순"}`, "brand")}
@@ -2782,7 +2574,6 @@
     const stats = student.stats || {};
     const primaryTag = derived.primaryTag || "steady_path";
     const focusAssessment = state.classificationFilter === "all" ? null : App.studentOperationalAssessmentByKey(student, state.classificationFilter);
-    const groupSignal = state.studentGroupFilter === "all" ? null : App.studentGroupSignalByKey(student, state.studentGroupFilter);
     const totalScore = score100(derived.totalRankScore, derived.profileRankScore, derived.profileIndex);
     const initialScore = score100(derived.initialCapabilityRankScore, derived.initialCapability?.score);
     const growthScore = score100(derived.growthRankScore, derived.growthIndex);
@@ -2792,7 +2583,6 @@
     const careerScore = score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore);
     const studentHref = App.studentPageHref(student.id, {
       ...(focusAssessment?.qualified ? { focus: state.classificationFilter } : {}),
-      ...(groupSignal ? { group: state.studentGroupFilter, tab: "status" } : {}),
     });
     return `
       <tr data-student-id="${escape(student.id)}">
@@ -2805,7 +2595,6 @@
           ${tagPill(primaryTag)}
           <small>${escape(classificationReasonSummary(student, primaryTag))}</small>
           ${focusAssessment?.qualified ? `<small>${escape(`${focusAssessment.groupLabel} · ${focusAssessment.label}: ${focusAssessment.reasons[0] || focusAssessment.basis}`)}</small>` : ""}
-          ${groupSignal ? `<small>${escape(`${groupSignal.label}: ${groupSignal.basis}`)}</small>` : ""}
         </td>
         <td>${scoreColumnCell("총점", totalScore, "total")}</td>
         <td>${scoreColumnCell("초기역량", initialScore, "initial")}</td>
@@ -2855,7 +2644,6 @@
       ${renderStudentCommandBar(students)}
       ${renderStatusFilter()}
       ${renderCategoryOverview()}
-      ${renderStudentGroupOperations()}
       <section class="panel student-management-panel">
         <div class="panel-head">
           <div>
@@ -3843,7 +3631,6 @@
     demographicType = "all",
     demographicValue = "all",
     classification = "all",
-    studentGroup = "all",
     sort = "name",
     direction = "asc",
   }) {
@@ -3854,7 +3641,6 @@
     state.demographicFilterType = demographicType;
     state.demographicFilterValue = demographicValue;
     state.classificationFilter = classification;
-    state.studentGroupFilter = studentGroup;
     state.sortKey = sort;
     state.sortDirection = direction;
     state.activePage = "students";
@@ -3873,7 +3659,6 @@
     state.demographicFilterType = "all";
     state.demographicFilterValue = "all";
     state.classificationFilter = "all";
-    state.studentGroupFilter = "all";
     state.sortKey = "name";
     state.sortDirection = "asc";
     state.query = "";
@@ -3932,23 +3717,6 @@
       return;
     }
 
-    const studentGroupButton = event.target.closest("[data-student-group-filter]");
-    if (studentGroupButton) {
-      state.studentGroupFilter = studentGroupButton.dataset.studentGroupFilter || "all";
-      if (state.studentGroupFilter !== "all") state.studentGroupMenuKey = state.studentGroupFilter;
-      state.sortKey = studentGroupButton.dataset.studentGroupSort || state.sortKey;
-      state.sortDirection = studentGroupButton.dataset.studentGroupDirection || state.sortDirection;
-      render();
-      return;
-    }
-
-    const studentGroupMenuButton = event.target.closest("[data-student-group-menu]");
-    if (studentGroupMenuButton) {
-      state.studentGroupMenuKey = studentGroupMenuButton.dataset.studentGroupMenu || state.studentGroupMenuKey;
-      render();
-      return;
-    }
-
     const overviewFilterButton = event.target.closest("[data-student-filter-action]");
     if (overviewFilterButton) {
       goToStudentsWithFilters({
@@ -3956,7 +3724,6 @@
         tag: overviewFilterButton.dataset.filterTag || "all",
         caseFilter: overviewFilterButton.dataset.filterCase || "all",
         classification: overviewFilterButton.dataset.filterClassification || "all",
-        studentGroup: overviewFilterButton.dataset.filterStudentGroup || "all",
         sort: overviewFilterButton.dataset.filterSort || "name",
         direction: overviewFilterButton.dataset.filterDirection || "asc",
       });
