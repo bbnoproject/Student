@@ -24,7 +24,7 @@
       "collaboration": 2,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -54,10 +54,10 @@
       "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
-    "note": "전반적으로 안정적인 성장 흐름"
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
   },
   {
     "snapshotId": "이동현-m5",
@@ -69,10 +69,10 @@
       "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
-    "note": "전반적으로 안정적인 성장 흐름"
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
   },
   {
     "snapshotId": "이동현-m6",
@@ -84,9 +84,9 @@
       "collaboration": 3,
       "resilience": 3,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
-    "note": "전반적으로 안정적인 성장 흐름"
+    "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
   }
 ]

@@ -16,7 +16,7 @@
   },
   {
     "snapshotId": "한가영-m2",
-    "snapshotDate": "2026-01-23",
+    "snapshotDate": "2026-01-09",
     "snapshotType": "개강 ~ 1차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -31,7 +31,7 @@
   },
   {
     "snapshotId": "한가영-m3",
-    "snapshotDate": "2026-02-27",
+    "snapshotDate": "2026-01-09",
     "snapshotType": "1차 프로젝트 종료 ~ 2차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -46,7 +46,7 @@
   },
   {
     "snapshotId": "한가영-m4",
-    "snapshotDate": "2026-04-08",
+    "snapshotDate": "2026-01-09",
     "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -61,7 +61,7 @@
   },
   {
     "snapshotId": "한가영-m5",
-    "snapshotDate": "2026-06-05",
+    "snapshotDate": "2026-01-09",
     "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -76,7 +76,7 @@
   },
   {
     "snapshotId": "한가영-m6",
-    "snapshotDate": "2026-08-03",
+    "snapshotDate": "2026-01-09",
     "snapshotType": "4차 프로젝트 종료 ~ 종강",
     "scores": {
       "self_regulation": 1,

@@ -67,7 +67,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2025-12-08"
       }
@@ -82,7 +82,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -90,7 +90,7 @@
         "resilience"
       ],
       "confidence": "Medium",
-      "note": "회고 구조화 필요"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -283,10 +283,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 3,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -316,7 +316,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "2D 스프라이트 애니메이션",
+        "severity": "success",
+        "date": "2026-02-05"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -349,6 +357,13 @@
         "summary": "6팀 · 역할 팀원 · 팀원 5명",
         "severity": "info",
         "date": "2026-02-13"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "팀 프로젝트 이미지 생성용 프롬프트",
+        "severity": "success",
+        "date": "2026-02-12"
       }
     ],
     "snapshot": null
@@ -467,10 +482,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -1080,7 +1095,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",

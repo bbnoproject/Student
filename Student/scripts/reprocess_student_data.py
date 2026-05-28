@@ -1610,6 +1610,7 @@ def student_output_bundle(
         "weeklyTimeline": student.get("weeklyTimeline", []),
         "stats": student.get("stats", {}),
         "expressionProfile": student.get("derived", {}).get("expressionProfile", {}),
+        "jobFit": student.get("jobFit", {}),
         "currentProfile": {
             SNAPSHOT_KEY_MAP.get(key, key): value
             for key, value in student.get("currentProfile", {}).items()
@@ -1668,6 +1669,7 @@ def write_processed_output(payload: dict[str, Any], bundles: list[dict[str, Any]
 - `peer_relationships.json`: 반복 협업 팀원 요약
 - `career_documents.json`: 1차/2차 취업 문서와 피드백 이력
 - `expression_profile.json`: 학생 직접 작성 문서 기반 자기표현/발화 특징
+- `job_fit.json`: GameJob Crawler 공고 기반 학생별 직무 적합도와 추천 공고
 - `overview.md`: 사람이 빠르게 읽을 수 있는 학생 요약
 
 주의사항
@@ -1700,6 +1702,7 @@ def write_processed_output(payload: dict[str, Any], bundles: list[dict[str, Any]
         record(student_dir / "learning_evidence.json", "json", bundle["learningEvidence"])
         record(student_dir / "learning_flow_cases.json", "json", bundle["learningFlowCases"])
         record(student_dir / "expression_profile.json", "json", bundle["expressionProfile"])
+        record(student_dir / "job_fit.json", "json", bundle["jobFit"])
         record(student_dir / "evaluation_snapshots.json", "json", bundle["evaluationSnapshots"])
         record(student_dir / "status_periods.json", "json", bundle["statusPeriods"])
         record(student_dir / "timeline_events.json", "json", bundle["timelineEvents"])

@@ -330,7 +330,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "기획자를 위한 프로그래머 소통 가이드",
+        "severity": "success",
+        "date": "2026-02-02"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -363,6 +371,13 @@
         "summary": "9팀 · 역할 팀원 · 팀원 4명",
         "severity": "info",
         "date": "2026-02-13"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "안티그래비티를 이용한 mLua 바이브 코딩 방법",
+        "severity": "success",
+        "date": "2026-02-10"
       }
     ],
     "snapshot": null
@@ -521,7 +536,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "16비트 게임의 한계에 도전한 스토리텔링-1 (마더2)",
+        "severity": "success",
+        "date": "2026-03-10"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -732,6 +755,13 @@
         "summary": "휴가 (컨디션 이슈)",
         "severity": "info",
         "date": "2026-04-16"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "아마추어 번역가 6년 번역작업 후기",
+        "severity": "success",
+        "date": "2026-04-15"
       }
     ],
     "snapshot": null
@@ -1085,7 +1115,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",

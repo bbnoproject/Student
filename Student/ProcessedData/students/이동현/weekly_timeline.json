@@ -210,7 +210,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "공부를 잘하고 싶어요...",
+        "severity": "success",
+        "date": "2026-01-13"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -303,7 +311,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -340,6 +348,13 @@
         "summary": "휴가 (약속)",
         "severity": "info",
         "date": "2026-02-06"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "스터디 홍보",
+        "severity": "success",
+        "date": "2026-02-04"
       }
     ],
     "snapshot": null
@@ -374,6 +389,13 @@
         "summary": "14팀 · 역할 팀장 · 팀원 4명",
         "severity": "info",
         "date": "2026-02-13"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "AI활용 경험 회고",
+        "severity": "success",
+        "date": "2026-02-10"
       }
     ],
     "snapshot": null
@@ -495,7 +517,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -1075,7 +1097,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "전반적으로 안정적인 성장 흐름",
+        "summary": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
         "severity": "info",
         "date": "2026-08-03"
       }
@@ -1090,7 +1112,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -1101,7 +1123,7 @@
         "selfRegulation"
       ],
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     }
   }
 ]

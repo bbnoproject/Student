@@ -40,7 +40,7 @@
       {
         "type": "staff_profile",
         "title": "운영진 학생 정보 기록",
-        "summary": "🔖 (업데이트 날짜 : 2/4(수)) 지속적으로 게임 회사 면접 보러 다님. 성취도는 양호하나 참여도는 다소 부족. QA 경력이 있고 지속적으로 게임회사 면접을 보러 다니는 인원.",
+        "summary": "지속적으로 게임 회사 면접 보러 다님. 성취도는 양호하나 참여도는 다소 부족. QA 경력이 있고 지속적으로 게임회사 면접을 보러 다니는 인원.",
         "severity": "info",
         "date": ""
       }
@@ -89,7 +89,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -313,10 +313,10 @@
       "scores": {
         "selfRegulation": 2,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -642,403 +642,22 @@
         "summary": "이탈",
         "severity": "info",
         "date": "2026-03-16"
-      }
-    ],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 16,
-    "label": "W16",
-    "startDate": "2026-03-23",
-    "endDate": "2026-03-29",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 17,
-    "label": "W17",
-    "startDate": "2026-03-30",
-    "endDate": "2026-04-05",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 18,
-    "label": "W18",
-    "startDate": "2026-04-06",
-    "endDate": "2026-04-12",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 19,
-    "label": "W19",
-    "startDate": "2026-04-13",
-    "endDate": "2026-04-19",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 20,
-    "label": "W20",
-    "startDate": "2026-04-20",
-    "endDate": "2026-04-26",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 21,
-    "label": "W21",
-    "startDate": "2026-04-27",
-    "endDate": "2026-05-03",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 22,
-    "label": "W22",
-    "startDate": "2026-05-04",
-    "endDate": "2026-05-10",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 23,
-    "label": "W23",
-    "startDate": "2026-05-11",
-    "endDate": "2026-05-17",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 24,
-    "label": "W24",
-    "startDate": "2026-05-18",
-    "endDate": "2026-05-24",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 25,
-    "label": "W25",
-    "startDate": "2026-05-25",
-    "endDate": "2026-05-31",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 26,
-    "label": "W26",
-    "startDate": "2026-06-01",
-    "endDate": "2026-06-07",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 27,
-    "label": "W27",
-    "startDate": "2026-06-08",
-    "endDate": "2026-06-14",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 28,
-    "label": "W28",
-    "startDate": "2026-06-15",
-    "endDate": "2026-06-21",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 29,
-    "label": "W29",
-    "startDate": "2026-06-22",
-    "endDate": "2026-06-28",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 30,
-    "label": "W30",
-    "startDate": "2026-06-29",
-    "endDate": "2026-07-05",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 31,
-    "label": "W31",
-    "startDate": "2026-07-06",
-    "endDate": "2026-07-12",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 32,
-    "label": "W32",
-    "startDate": "2026-07-13",
-    "endDate": "2026-07-19",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 33,
-    "label": "W33",
-    "startDate": "2026-07-20",
-    "endDate": "2026-07-26",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 34,
-    "label": "W34",
-    "startDate": "2026-07-27",
-    "endDate": "2026-08-02",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [],
-    "snapshot": null
-  },
-  {
-    "weekIndex": 35,
-    "label": "W35",
-    "startDate": "2026-08-03",
-    "endDate": "2026-08-03",
-    "counts": {
-      "attendance": 0,
-      "attendanceRisk": 0,
-      "project": 0,
-      "retro": 0,
-      "counseling": 0,
-      "admission": 0,
-      "career": 0
-    },
-    "severity": "stable",
-    "headline": "안정적인 학습 흐름",
-    "notes": [
+      },
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
         "summary": "행정 및 외부 일정이 반복되어 맥락 확인 필요",
         "severity": "info",
-        "date": "2026-08-03"
+        "date": "2026-03-16"
       }
     ],
     "snapshot": {
       "snapshotId": "김수환-현재",
-      "snapshotDate": "2026-08-03",
+      "snapshotDate": "2026-03-16",
       "snapshotType": "현재",
       "scores": {
-        "selfRegulation": 1,
-        "engagement": 1,
+        "selfRegulation": 2,
+        "engagement": 2,
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,

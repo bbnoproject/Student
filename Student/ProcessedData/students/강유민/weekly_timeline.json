@@ -254,6 +254,13 @@
     "headline": "프로젝트 활동이 밀집된 구간",
     "notes": [
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "연출과 페이소스",
+        "severity": "info",
+        "date": "2026-01-30"
+      },
+      {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
         "summary": "지각 (실업급여)",
@@ -282,7 +289,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 2
@@ -481,10 +488,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -1061,10 +1068,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",

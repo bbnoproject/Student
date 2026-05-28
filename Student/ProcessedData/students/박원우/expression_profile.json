@@ -10,39 +10,41 @@
     "cadetCard": 1,
     "checkin": 21,
     "retro": 1,
-    "careerDocument": 0
+    "careerDocument": 0,
+    "morningPresentation": 0,
+    "practiceSubmission": 6
   },
-  "sourceTotal": 24,
-  "textLength": 3354,
+  "sourceTotal": 30,
+  "textLength": 4976,
   "dimensions": {
     "specificity": {
       "label": "구체성",
-      "score": 3.11,
-      "evidence": "구체 표현 6종 · 반복 10회 · 문서 6건",
-      "level": "보통"
+      "score": 3.59,
+      "evidence": "구체 표현 6종 · 반복 14회 · 문서 8건",
+      "level": "높음"
     },
     "agency": {
       "label": "주도성 표현",
-      "score": 3.47,
-      "evidence": "실행/개선 표현 4종 · 반복 22회 · 문서 7건",
+      "score": 4.0,
+      "evidence": "실행/개선 표현 5종 · 반복 26회 · 문서 9건",
       "level": "높음"
     },
     "reflection": {
       "label": "성찰 표현",
-      "score": 2.54,
-      "evidence": "회고/개선 표현 3종 · 반복 11회 · 문서 3건",
+      "score": 2.96,
+      "evidence": "회고/개선 표현 3종 · 반복 13회 · 문서 5건",
       "level": "보통"
     },
     "relation": {
       "label": "관계/협업 언어",
       "score": 4.0,
-      "evidence": "관계/협업 표현 9종 · 반복 20회 · 문서 8건",
+      "evidence": "관계/협업 표현 9종 · 반복 21회 · 문서 9건",
       "level": "높음"
     },
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 21종 · 반복 49회 · 문서 11건",
+      "evidence": "진로/직무 표현 25종 · 반복 72회 · 문서 17건",
       "level": "높음"
     },
     "emotion": {
@@ -59,9 +61,9 @@
     }
   },
   "dominantTraits": [
+    "주도성 표현",
     "관계/협업 언어",
-    "진로 언어",
-    "주도성 표현"
+    "진로 언어"
   ],
   "cautionTraits": [],
   "samples": [
@@ -81,5 +83,5 @@
       "excerpt": "기획에 대하여 팀에서 방향성을 설정하여 세부사항까지 논의를 끝낸후 필요한점과 진행되는 수순 요구도까지 세밀하게 작성되어 기획서를 이행하는데 문제가 없었음 협업에 대하여 프로젝트를 진행함에있어 부족한점을 팀원과 논의하고 개선점과 역할분배를 통한 건설적인 진행을 하였음 다음 프로젝트를 위해 이번 프로젝트에서 적극적으로 참여…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 24건에서 관계/협업 언어, 진로 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
+  "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 관계/협업 언어, 진로 언어 중심의 표현 특징이 관찰됩니다."
 }

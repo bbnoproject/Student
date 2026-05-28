@@ -161,6 +161,7 @@
     { key: "attendanceRisk", label: "무단/위험", type: "number" },
     { key: "projectRate", label: "제출률", type: "number" },
   ];
+  const SORT_OPTIONS = [...TABLE_COLUMNS, { key: "jobFit", label: "직무적합", type: "number" }];
 
   const initialRoute = routeFromHash();
 
@@ -369,6 +370,7 @@
       support: score100(derived.supportRankScore, derived.supportIndex),
       collaboration: score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore),
       career: score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore),
+      jobFit: score100(student.jobFit?.score),
       attendanceRisk: stats.attendanceRiskIssues || 0,
       projectRate: stats.projectSubmissionRate || 0,
     };
@@ -407,7 +409,7 @@
       students = students.filter((student) => App.studentSearchPool(student).includes(query));
     }
 
-    const column = TABLE_COLUMNS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
+    const column = SORT_OPTIONS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
     const direction = state.sortDirection === "desc" ? -1 : 1;
     students.sort((a, b) => {
       const left = studentSortValue(a, column.key);
@@ -2460,6 +2462,96 @@
     `;
   }
 
+  function jobFitTone(score) {
+    const value = score100(score);
+    if (value >= 76) return "success";
+    if (value >= 66) return "brand";
+    if (value >= 56) return "warning";
+    return "neutral";
+  }
+
+  function topJobFitRole(student) {
+    return student.jobFit?.topRoles?.[0] || null;
+  }
+
+  function renderJobFitOverview(students) {
+    const market = App.rawData.jobMarket || {};
+    const activeStudents = students.filter((student) => !App.hasDropoutRecord(student));
+    const ranked = activeStudents
+      .filter((student) => score100(student.jobFit?.score) > 0)
+      .sort((a, b) => score100(b.jobFit?.score) - score100(a.jobFit?.score));
+    const averageFit = ranked.length ? average(ranked, (student) => student.jobFit?.score) : 0;
+    const labelCounts = ranked.reduce((acc, student) => {
+      const label = student.jobFit?.label || "판단 보류";
+      acc[label] = (acc[label] || 0) + 1;
+      return acc;
+    }, {});
+    const roleRows = (market.roleSummary || []).slice(0, 6).map((role) => ({
+      ...role,
+      studentCount: activeStudents.filter((student) => topJobFitRole(student)?.key === role.key).length,
+    }));
+    return `
+      <section class="panel job-fit-overview-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">GameJob Fit</span>
+            <h2>채용공고 기반 직무 적합도</h2>
+          </div>
+          <p class="panel-copy">
+            <a href="${escape(market.sourceUrl || "https://rkdghkclgns-design.github.io/gamejob-crawler/")}" target="_blank" rel="noopener">GameJob Crawler</a>
+            ${escape(String(market.planningJobs || 0))}건 · ${escape(market.latestUpdatedAt || "갱신일 미확인")}
+          </p>
+        </div>
+        <div class="job-fit-overview-grid">
+          <article class="job-fit-summary-card ${App.toneClass(jobFitTone(averageFit))}">
+            <span>표시 학생 평균</span>
+            <strong>${formatNumber(averageFit, 1)}</strong>
+            <p>총점/지원검토와 분리된 취업 직무 매칭 지표입니다.</p>
+            <button type="button" class="soft-action compact-action" data-table-sort="jobFit">직무적합순</button>
+          </article>
+          <article class="job-fit-label-card">
+            <span>지원 우선도</span>
+            <div>
+              ${Object.entries(labelCounts)
+                .map(([label, count]) => `<p><b>${escape(label)}</b><strong>${escape(String(count))}명</strong></p>`)
+                .join("") || `<p><b>판단 보류</b><strong>0명</strong></p>`}
+            </div>
+          </article>
+          <article class="job-fit-role-card">
+            <span>공고 수요와 학생 직무군</span>
+            <div class="job-fit-role-stack">
+              ${roleRows
+                .map(
+                  (role) => `
+                    <p>
+                      <b>${escape(role.label)}</b>
+                      <span>공고 ${escape(String(role.count || 0))}건 · 학생 ${escape(String(role.studentCount || 0))}명</span>
+                    </p>
+                  `
+                )
+                .join("") || `<p><b>직무군 없음</b><span>공고 데이터가 없습니다.</span></p>`}
+            </div>
+          </article>
+        </div>
+        <div class="job-fit-student-strip">
+          ${ranked
+            .slice(0, 8)
+            .map((student) => {
+              const role = topJobFitRole(student);
+              return `
+                <a class="job-fit-student-card" href="${escape(App.studentPageHref(student.id, { tab: "status" }))}">
+                  <span>${escape(student.jobFit?.label || "판단 보류")}</span>
+                  <strong>${escape(student.name)} · ${formatNumber(score100(student.jobFit?.score), 0)}</strong>
+                  <small>${escape(role?.label || "직무군 근거 부족")} · 매칭 ${escape(String(student.jobFit?.matchedJobCount || 0))}건</small>
+                </a>
+              `;
+            })
+            .join("") || `<div class="empty-state compact">현재 필터 조건에서 직무 적합도 산정 대상이 없습니다.</div>`}
+        </div>
+      </section>
+    `;
+  }
+
   function filterChip(label, value, tone = "neutral") {
     return `<span class="filter-state-chip ${App.toneClass(tone)}"><b>${escape(label)}</b>${escape(value)}</span>`;
   }
@@ -2471,7 +2563,7 @@
     const region = regionFilterLabel(state.regionFilter);
     const demographic = demographicFilterMeta();
     const classification = classificationFilterMeta(state.classificationFilter);
-    const sortColumn = TABLE_COLUMNS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
+    const sortColumn = SORT_OPTIONS.find((item) => item.key === state.sortKey) || TABLE_COLUMNS[0];
     const hasFilters =
       state.statusFilter !== "all" ||
       state.activeTag !== "all" ||
@@ -2488,6 +2580,7 @@
       { key: "collaboration", label: "협업" },
       { key: "career", label: "진로" },
       { key: "support", label: "지원검토" },
+      { key: "jobFit", label: "직무적합" },
       { key: "attendanceRisk", label: "위험출결" },
     ];
     return `
@@ -2581,6 +2674,8 @@
     const supportScore = score100(derived.supportRankScore, derived.supportIndex);
     const collaborationScore = score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore);
     const careerScore = score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore);
+    const jobFitScore = score100(student.jobFit?.score);
+    const jobFitRole = topJobFitRole(student);
     const studentHref = App.studentPageHref(student.id, {
       ...(focusAssessment?.qualified ? { focus: state.classificationFilter } : {}),
     });
@@ -2589,6 +2684,7 @@
         <td>
           <a class="student-name-link" href="${escape(studentHref)}">${escape(student.name)}</a>
           <small>${escape(student.education || "학력 미기재")}</small>
+          <small>직무 ${formatNumber(jobFitScore, 0)} · ${escape(jobFitRole?.label || student.jobFit?.label || "판단 보류")}</small>
         </td>
         <td>${statusPill(statusGroup(student))}</td>
         <td>
@@ -2644,6 +2740,7 @@
       ${renderStudentCommandBar(students)}
       ${renderStatusFilter()}
       ${renderCategoryOverview()}
+      ${renderJobFitOverview(students)}
       <section class="panel student-management-panel">
         <div class="panel-head">
           <div>

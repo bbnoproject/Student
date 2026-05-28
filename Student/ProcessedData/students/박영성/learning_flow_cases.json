@@ -1,20 +1,5 @@
 [
   {
-    "caseId": "박영성-flow-3",
-    "caseType": "career_revision_progress",
-    "label": "진로 문서 개선",
-    "description": "진로 문서 수정/피드백과 진로 준비도가 함께 확인된 케이스",
-    "severity": "success",
-    "summary": "진로 문서 수정 이력과 진로 준비도가 함께 확인됩니다.",
-    "evidence": [
-      "진로 문서 라운드 2회",
-      "진로 준비 점수 78.0",
-      "자기소개 수정 이력 있음"
-    ],
-    "startDate": "2026-04-20",
-    "endDate": "2026-05-03"
-  },
-  {
     "caseId": "박영성-flow-2",
     "caseType": "reflection_growth_link",
     "label": "회고 기반 성장",
@@ -24,7 +9,7 @@
     "evidence": [
       "회고 2건",
       "성찰 점수 4/4",
-      "초기 대비 성장 +0.84"
+      "초기 대비 성장 +1.00"
     ],
     "startDate": "2026-01-26",
     "endDate": "2026-02-27"
@@ -38,7 +23,7 @@
     "summary": "면담 기록 이후 성장 곡선이 회복되어 개입 반응이 긍정적으로 보입니다.",
     "evidence": [
       "면담 2건",
-      "초기 대비 성장 +0.84",
+      "초기 대비 성장 +1.00",
       "성장 구간 2개"
     ],
     "startDate": "2026-01-07",

@@ -157,6 +157,13 @@
     "headline": "안정적인 학습 흐름",
     "notes": [
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "게임 개발자들의 축제 게임잼은 무엇인가?",
+        "severity": "info",
+        "date": "2025-12-31"
+      },
+      {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
         "summary": "지각 (늦잠)",

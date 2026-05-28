@@ -37,8 +37,8 @@
       "engagement"
     ],
     "title": "운영진 학생 정보 기록",
-    "summary": "총평 🔖 (업데이트 날짜 : ) Good 날짜 - 내용 Bad 날짜 - 내용 💡특이 사항 날짜 - 내용 💻 Zep 날짜 - 내용 💬 DM ~ 12/8 : 개강 전 : 날짜 - 내용",
-    "detail": "총평\n🔖 (업데이트 날짜 : )\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n날짜 - 내용\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
+    "summary": "Good 날짜 - 내용 Bad 날짜 - 내용 💡특이 사항 날짜 - 내용 💻 Zep 날짜 - 내용 💬 DM ~ 12/8 : 개강 전 : 날짜 - 내용",
+    "detail": "Good\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n날짜 - 내용\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
     "severity": "stable",
     "provenance": {
       "sourceFile": "학생 정보/오종호 2be1c30b8ab381a18963d0781e42653f.html",

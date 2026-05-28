@@ -103,7 +103,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -433,6 +433,13 @@
         "date": "2026-02-13"
       },
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "성공한 게임은 왜 성공했는가",
+        "severity": "info",
+        "date": "2026-02-11"
+      },
+      {
         "type": "counseling",
         "title": "1차 정기 면담",
         "summary": "### 내용 ##### 1. 수업적응 - 수업도 잘 하고 실습도 괜찮았다고 합니다. ##### 2. 목표 - 신규 프로젝트를 하고 싶지만, 3N에서 프로세스를 이해하는 것을 시작하고 싶다고 합니다. - 시나리오는 안 맞는 것 같고, PM도 생각해보고…",
@@ -563,10 +570,10 @@
       "scores": {
         "selfRegulation": 2,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -1169,7 +1176,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",

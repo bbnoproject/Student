@@ -1,0 +1,279 @@
+{
+  "score": 51.57,
+  "label": "우선순위 낮음",
+  "summary": "시장/BM/유저 분석 중심으로 0개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "market_bm",
+      "label": "시장/BM/유저 분석",
+      "score": 20.4,
+      "marketCount": 63
+    },
+    {
+      "key": "system_balance",
+      "label": "시스템/밸런스 기획",
+      "score": 16.95,
+      "marketCount": 155
+    },
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 15.22,
+      "marketCount": 90
+    },
+    {
+      "key": "pm_leadership",
+      "label": "PM/프로젝트 관리",
+      "score": 10.04,
+      "marketCount": 61
+    },
+    {
+      "key": "narrative_world",
+      "label": "시나리오/세계관 기획",
+      "score": 9.0,
+      "marketCount": 96
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-280022",
+      "title": "[Stand Egg] 협동 디펜스 기획자 채용",
+      "company": "㈜스탠드에그",
+      "score": 51.57,
+      "roleAlignment": 18.27,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "system_balance",
+        "content_live"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "유료화"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=280022",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: 레벨, 게임기획, 시나리오, PM",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279079",
+      "title": "[카오스 제로 나이트메어] UI 및 아이콘 작업자 (6개월 계약직)",
+      "company": "(주)스마일게이트 슈퍼크리에이티브 지점",
+      "score": 49.45,
+      "roleAlignment": 11.21,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "content_live",
+        "market_bm"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "모바일",
+        "레벨",
+        "게임기획",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "유료화",
+        "기획",
+        "전투",
+        "게임디자인"
+      ],
+      "experience": "무관",
+      "employmentType": "계약직 (계약기간 : 6개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279079",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 레벨, 게임기획, 기획, 전투",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279189",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 빌드매니저(BM) 모집",
+      "company": "빅파이어게임즈",
+      "score": 49.02,
+      "roleAlignment": 9.76,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "pm_leadership",
+        "market_bm",
+        "system_balance"
+      ],
+      "primaryRole": "pm_leadership",
+      "keywords": [
+        "클라이언트",
+        "게임기획",
+        "PM",
+        "시스템기획",
+        "Unity",
+        "모니터링",
+        "QA",
+        "게임테스터",
+        "시스템버전관리",
+        "업데이트테스트",
+        "CI",
+        "BM"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279189",
+      "reasons": [
+        "PM/프로젝트 관리 접점",
+        "키워드 일치: 게임기획, PM, QA, BM",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-278577",
+      "title": "[디벨로켓] 게임기획 과정 강사 채용",
+      "company": "㈜디벨로켓",
+      "score": 48.97,
+      "roleAlignment": 9.61,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "content_live",
+        "narrative_world"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "SNG",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "계약직 후 정규직 전환 검토 (계약기간 : 1년)",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278577",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 레벨, 게임기획, 시나리오, PM",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279188",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 퀘스트 디자이너 모집",
+      "company": "빅파이어게임즈",
+      "score": 48.92,
+      "roleAlignment": 9.44,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "pm_leadership",
+        "system_balance"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "PC",
+        "콘솔"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279188",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 레벨, 게임기획, 시나리오, PM",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-278431",
+      "title": "2026년 웹젠레드스타 수시채용",
+      "company": "(주)웹젠",
+      "score": 48.91,
+      "roleAlignment": 9.4,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "narrative_world",
+        "content_live"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "C++",
+        "모바일",
+        "배경",
+        "레벨",
+        "원화",
+        "컨셉",
+        "배경원화",
+        "캐릭터",
+        "게임기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "~ 06/30(화)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278431",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 배경, 레벨, 캐릭터, 게임기획",
+        "경력요구 무관"
+      ]
+    }
+  ],
+  "matchedJobCount": 0,
+  "gaps": [
+    "지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접용 사례로 정리해야 합니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

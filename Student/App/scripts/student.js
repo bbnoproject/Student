@@ -11,7 +11,7 @@
     detail: "records",
   };
   const STUDENT_TABS = [
-    { key: "status", label: "현황" },
+    { key: "status", label: "성장지도" },
     { key: "score", label: "성적" },
     { key: "evaluation", label: "평가" },
     { key: "records", label: "기록" },
@@ -41,7 +41,15 @@
 
   function renderStudentHeader(student) {
     const primaryMeta = App.TAG_META[student.derived?.primaryTag] || App.TAG_META.steady_path;
-    const profileAverage = App.averageScore(student.currentProfile);
+    const direction = growthMapDirection(student);
+    const totalScore = firstScore(student.derived?.totalRankScore, student.derived?.profileRankScore);
+    const keywordStripHtml = `
+      <div class="student-keyword-strip">
+        <span class="${App.toneClass(App.statusTone(student.stats?.currentStatus))}"><em>상태</em><strong>${App.escapeHtml(student.stats?.currentStatus || "안정")}</strong></span>
+        <span class="tone-brand"><em>대표 색</em><strong>${App.escapeHtml(compactKeyword(direction.headline, "강점 보류", 16))}</strong></span>
+        <span class="tone-violet"><em>방향</em><strong>${App.escapeHtml(compactKeyword(direction.domains, "방향 보류", 24))}</strong></span>
+      </div>
+    `;
     return `
       <section class="hero-panel student-hero">
         <div class="student-hero-top">
@@ -60,33 +68,33 @@
           </div>
         </div>
 
-        <section class="student-basic-panel">
-          <div class="student-summary-head">
-            <div>
-              <p class="eyebrow">개인정보 개요</p>
-              <h2>${App.escapeHtml(student.name)}</h2>
-              <p class="student-intro">${App.escapeHtml(primaryMeta.description)}</p>
+        <div class="student-hero-grid">
+          <section class="student-basic-panel">
+            <div class="student-summary-head">
+              <div>
+                <p class="eyebrow">개인정보 개요</p>
+                <h2>${App.escapeHtml(student.name)}</h2>
+                <p class="student-intro">${App.escapeHtml(primaryMeta.description)}</p>
+              </div>
+              <div class="compact-profile-score">
+                <span>총점</span>
+                <strong>${App.escapeHtml(scoreLabel(totalScore))}</strong>
+              </div>
             </div>
-            <div class="compact-profile-score">
-              <span>프로파일 평균</span>
-              <strong>${App.escapeHtml(profileAverage.toFixed(2))}</strong>
+
+            ${keywordStripHtml}
+
+            <div class="student-basic-grid">
+              <div><span>성별</span><strong>${App.escapeHtml(student.gender || "-")}</strong></div>
+              <div><span>생년월일</span><strong>${App.escapeHtml(App.formatDate(student.birthDate))}</strong></div>
+              <div><span>거주지역</span><strong>${App.escapeHtml(student.address || "-")}</strong></div>
+              <div><span>연락처</span><strong>${App.escapeHtml(student.phone || "-")}</strong></div>
+              <div><span>학력</span><strong>${App.escapeHtml(student.education || "-")}</strong></div>
+              <div><span>과정/기수</span><strong>${App.escapeHtml(`${student.course || "-"} / ${student.cohort || "-"}`)}</strong></div>
             </div>
-          </div>
 
-          <div class="student-basic-grid">
-            <div><span>성별</span><strong>${App.escapeHtml(student.gender || "-")}</strong></div>
-            <div><span>생년월일</span><strong>${App.escapeHtml(App.formatDate(student.birthDate))}</strong></div>
-            <div><span>거주지역</span><strong>${App.escapeHtml(student.address || "-")}</strong></div>
-            <div><span>연락처</span><strong>${App.escapeHtml(student.phone || "-")}</strong></div>
-            <div><span>학력</span><strong>${App.escapeHtml(student.education || "-")}</strong></div>
-            <div><span>과정/기수</span><strong>${App.escapeHtml(`${student.course || "-"} / ${student.cohort || "-"}`)}</strong></div>
-          </div>
-
-          <div class="pill-row">
-            ${App.domainPills(student.derived?.strengthKeys, "강점 추출 없음")}
-            ${App.domainPills(student.derived?.cautionKeys, "관찰 없음")}
-          </div>
-        </section>
+          </section>
+        </div>
       </section>
     `;
   }
@@ -679,6 +687,266 @@
     return `${firstScore(value).toLocaleString("ko-KR", { maximumFractionDigits: 1 })}점`;
   }
 
+  function compactText(value, fallback = "기록 확인 필요", maxLength = 150) {
+    const text = valueOrEmpty(value) || fallback;
+    return text.length > maxLength ? `${text.slice(0, maxLength).trim()}...` : text;
+  }
+
+  function isReliablePeerFeedback(item, studentName = "") {
+    const snippet = valueOrEmpty(item?.snippet);
+    if (!snippet) return false;
+    if (/^[,.;:·\-–—\s]*(은|는|을|를|도|만|의|에|에서|로|으로)(\s|$)/.test(snippet)) return false;
+    if (studentName && !snippet.includes(studentName)) return false;
+    const quality = item?.attributionQuality || "direct_mention";
+    return quality === "direct_mention" || quality === "relation_list";
+  }
+
+  function evidenceLabel(evidence) {
+    const items = (evidence || [])
+      .map((item) => [item.sourceType, item.sourceLabel].filter(Boolean).join(" · "))
+      .filter(Boolean);
+    return items.slice(0, 2).join(" / ") || "근거 자료 확인 필요";
+  }
+
+  function compactKeyword(value, fallback = "확인 필요", maxLength = 18) {
+    const text = valueOrEmpty(value) || fallback;
+    return text.length > maxLength ? `${text.slice(0, maxLength).trim()}...` : text;
+  }
+
+  function domainPercentile(key, score) {
+    const target = Number(score);
+    if (!key || !Number.isFinite(target)) return 0;
+    const scores = (App.rawData.students || [])
+      .map((student) => (student.careerGuidance?.topDomains || []).find((item) => item.key === key)?.score)
+      .map(Number)
+      .filter((value) => Number.isFinite(value));
+    if (!scores.length) return 0;
+    return Math.round((scores.filter((value) => value <= target).length / scores.length) * 100);
+  }
+
+  function plannerColorFromText(text, fallback = "기획 색깔") {
+    if (/내러티브|시나리오|세계관|스토리|연출|애니메이션|문화콘텐츠|PV/i.test(text)) {
+      return { keyword: "내러티브/연출", title: "내러티브와 연출 감각을 기획 언어로 바꾸는 색" };
+    }
+    if (/시스템|밸런스|데이터|규칙|역기획|UI\/UX|테이블|레벨/i.test(text)) {
+      return { keyword: "시스템 구조화", title: "규칙과 구조를 문서로 정리하는 시스템 기획 색" };
+    }
+    if (/BM|시장|유저|지표|분석|라이브|업데이트/i.test(text)) {
+      return { keyword: "분석형 기획", title: "시장과 유저 흐름을 해석하는 분석형 기획 색" };
+    }
+    if (/팀장|PM|리더|조율|화합|방향성|협업/i.test(text)) {
+      return { keyword: "조율형 리더십", title: "팀의 방향을 안정화하는 조율형 기획 색" };
+    }
+    return { keyword: fallback, title: `${fallback}을 포트폴리오 언어로 정리할 후보` };
+  }
+
+  function evidenceFromStrength(item) {
+    return (item.evidence || [])
+      .map((evidence) => evidence.excerpt || evidence.sourceLabel || evidence.sourceType || "")
+      .filter(Boolean)
+      .slice(0, 2);
+  }
+
+  function buildSignatureStrengths(student) {
+    const guidance = student.careerGuidance || {};
+    const collaboration = student.derived?.collaborationReadiness || {};
+    const profileStrengths = Array.isArray(student.strengthProfile?.strengths) ? student.strengthProfile.strengths : [];
+    const priorText = [student.education, student.admission?.experience, student.admission?.career, student.admission?.goal].filter(Boolean).join(" ");
+    const candidates = [];
+    const addCandidate = (candidate) => {
+      if (!candidate || !candidate.title) return;
+      const key = candidate.key || candidate.title;
+      if (candidates.some((item) => item.key === key || item.keyword === candidate.keyword)) return;
+      candidates.push({
+        confidence: "강점 후보",
+        tone: "neutral",
+        evidence: [],
+        caution: "제출 여부만으로는 강점으로 확정하지 않고, 원문과 산출물 질을 함께 확인해야 합니다.",
+        ...candidate,
+        key,
+      });
+    };
+
+    if (/인턴|회사|근무|경력|게임잼|해커톤|공모|팬 게임|역기획|넥토리얼|포트폴리오|PV|전공|문화콘텐츠|컴퓨터공학/i.test(priorText)) {
+      const color = plannerColorFromText(priorText, "경험 기반");
+      const hasRareExperience = /인턴|회사|근무|게임잼|해커톤|팬 게임|역기획|넥토리얼|공모/i.test(priorText);
+      addCandidate({
+        key: "prior-experience",
+        keyword: color.keyword,
+        title: color.title,
+        confidence: hasRareExperience ? "강한 근거" : "확인 필요",
+        tone: hasRareExperience ? "brand" : "neutral",
+        score: hasRareExperience ? 92 : 68,
+        reason: compactText(priorText, "전공/경험 기반 색깔 확인 필요", 190),
+        evidence: [student.education, student.admission?.experience, student.admission?.goal].filter(Boolean).slice(0, 3),
+        caution: hasRareExperience ? "경험이 실제 기획 판단으로 연결되는지 산출물과 면담에서 확인합니다." : "전공은 출발점일 뿐이며, 기획 산출물의 판단력이 함께 확인되어야 합니다.",
+      });
+    }
+
+    const qualityFeedback = (collaboration.teamPeerFeedback || []).filter((item) => {
+      const text = item.snippet || "";
+      return isReliablePeerFeedback(item, student.name) && item.type === "praise" && /기획|논리|방향|정리|이해|리더|화합|조율|책임|피드백|문서|설계|분석|안정|확고/i.test(text);
+    });
+    if (qualityFeedback.length) {
+      const text = qualityFeedback.map((item) => item.snippet).join(" ");
+      const color = plannerColorFromText(text, "동료 검증");
+      addCandidate({
+        key: "peer-quality",
+        keyword: color.keyword,
+        title: color.title,
+        confidence: "동료 검증",
+        tone: "violet",
+        score: 86 + Math.min(8, qualityFeedback.length * 2),
+        reason: compactText(qualityFeedback[0].snippet, "동료 평가에서 기획자적 강점이 언급되었습니다.", 190),
+        evidence: qualityFeedback.slice(0, 3).map((item) => `${item.from} · ${item.sourcePhase || "기록"} · ${compactText(item.snippet, "", 90)}`),
+        caution: "동료 칭찬도 관계성의 영향을 받을 수 있어, 같은 맥락의 산출물과 함께 확인합니다.",
+      });
+    }
+
+    if ((collaboration.leadershipRoleCount || 0) >= 2 || (collaboration.leadershipPeerPositiveWeight || 0) >= 3) {
+      addCandidate({
+        key: "leadership",
+        keyword: "팀 리딩",
+        title: "반복된 팀장/PM 맥락에서 검증되는 운영형 기획 색",
+        confidence: "역할 검증",
+        tone: "success",
+        score: 82 + Math.min(10, Number(collaboration.leadershipRoleCount || 0) * 3),
+        reason: `팀장/PM 역할 ${collaboration.leadershipRoleCount || 0}회, 리더십 긍정 가중 ${collaboration.leadershipPeerPositiveWeight || 0}로 확인됩니다.`,
+        evidence: (collaboration.teamPeerFeedback || [])
+          .filter((item) => isReliablePeerFeedback(item, student.name) && item.type === "praise" && /팀장|리더|방향|화합|조율|안정/i.test(item.snippet || ""))
+          .slice(0, 3)
+          .map((item) => `${item.from} · ${compactText(item.snippet, "", 90)}`),
+        caution: "리더 경험은 횟수보다 팀원이 체감한 방향성, 갈등 조율, 산출물 완성도를 함께 봅니다.",
+      });
+    }
+
+    (guidance.topDomains || []).forEach((domain) => {
+      const percentile = domainPercentile(domain.key, domain.score);
+      const matchingStrength = profileStrengths.find((item) => item.title === domain.label || `${item.title || ""} ${item.claim || ""}`.includes(domain.label));
+      const evidence = matchingStrength ? evidenceFromStrength(matchingStrength) : (guidance.evidence || []).filter((item) => item.includes(domain.label)).slice(0, 2);
+      if ((Number(domain.score) >= 45 || percentile >= 85) && evidence.length >= 2) {
+        addCandidate({
+          key: `domain-${domain.key}`,
+          keyword: domain.label,
+          title: `${domain.label}을 자기 색으로 밀어볼 수 있는 후보`,
+          confidence: percentile >= 90 ? "상위권 신호" : "검증 필요",
+          tone: percentile >= 90 ? "brand" : "neutral",
+          score: 50 + Math.min(18, Number(domain.score) / 5) + (percentile >= 90 ? 6 : 0),
+          reason: `${domain.label} 관련 근거가 기수 내 ${percentile}백분위 수준으로 반복 확인됩니다.`,
+          evidence,
+          caution: "반복 키워드가 곧 실력은 아닙니다. 문제 정의, 판단 이유, 개선안의 깊이를 원문에서 확인해야 합니다.",
+        });
+      }
+    });
+
+    if (!candidates.length) {
+      addCandidate({
+        key: "insufficient",
+        keyword: "강점 보류",
+        title: "아직 독보적인 기획자 색깔을 확정하기 어렵습니다",
+        confidence: "보류",
+        tone: "warning",
+        score: 0,
+        reason: "현재 자료만으로는 이 학생만의 매력적인 기획 색깔을 확정하기 어렵습니다.",
+        evidence: ["제출 여부보다 산출물의 판단력, 프로젝트 행동, 동료/강사 관찰을 추가 확인해야 합니다."],
+        caution: "강점 후보를 억지로 만들지 말고 다음 면담과 산출물 리뷰에서 확인해야 합니다.",
+      });
+    }
+
+    return candidates.sort((a, b) => (b.score || 0) - (a.score || 0)).slice(0, 4);
+  }
+
+  function growthMapDirection(student) {
+    const signatures = buildSignatureStrengths(student);
+    const primary = signatures[0] || {};
+    const improvement = (student.strengthProfile?.improvements || [])[0] || {};
+    const keywords = signatures
+      .filter((item) => item.keyword && item.keyword !== "강점 보류")
+      .slice(0, 3)
+      .map((item) => item.keyword);
+    return {
+      headline: primary.keyword || "강점 보류",
+      summary: primary.title || "독보적인 강점 후보를 더 확인해야 합니다.",
+      domains: keywords.join(" · ") || "방향 보류",
+      portfolio: primary.reason || "포트폴리오 방향은 강점 근거를 더 확인한 뒤 정리합니다.",
+      coachingQuestion: improvement.coachingQuestion || primary.caution || "이 강점이 실제 산출물에서 어떻게 드러나는지 다음 면담에서 확인합니다.",
+      signatures,
+    };
+  }
+
+  function renderGrowthMapPanel(student) {
+    const direction = growthMapDirection(student);
+    const signatures = direction.signatures || [];
+    const primary = signatures[0] || {};
+    const dropoutDate = student.dropoutInfo?.date || student.stats?.dropoutDate || "";
+    const dataWindow = dropoutDate
+      ? `이탈 시점 ${App.formatDate(dropoutDate)}까지`
+      : `${App.formatDate(student.stats?.dataStartDate)} - ${App.formatDate(student.stats?.dataEndDate)}`;
+
+    return `
+      <section class="panel section-panel growth-map-panel">
+        <div class="growth-map-head">
+          <div>
+            <span class="panel-kicker">Growth Map</span>
+            <h3>${App.escapeHtml(student.name)}의 기획자 색깔</h3>
+            <p>단순 수행 기록은 제외하고, 전공·경험·프로젝트 행동·동료 언급·산출물 맥락에서 매력적인 강점 후보만 올립니다.</p>
+          </div>
+          <div class="growth-map-observation">
+            <span>데이터 반영 기간</span>
+            <strong>${App.escapeHtml(dataWindow)}</strong>
+          </div>
+        </div>
+
+        <div class="growth-map-layout">
+          <article class="planner-color-card ${App.toneClass(primary.tone)}">
+            <span>${App.escapeHtml(primary.confidence || "강점 후보")}</span>
+            <h4>${App.escapeHtml(primary.title || "강점 후보 확인 필요")}</h4>
+            <p>${App.escapeHtml(compactText(primary.reason, "현재 자료만으로는 대표 강점을 확정하기 어렵습니다.", 260))}</p>
+            <div class="signature-evidence-list">
+              ${(primary.evidence || []).slice(0, 3).map((item) => `<em>${App.escapeHtml(compactText(item, "", 120))}</em>`).join("")}
+            </div>
+          </article>
+
+          <aside class="growth-coaching-card">
+            <span>미래 방향</span>
+            <strong>${App.escapeHtml(direction.domains)}</strong>
+            <p>${App.escapeHtml(compactText(direction.portfolio, "포트폴리오 방향 정리 필요", 210))}</p>
+            <div>
+              <span>다음 코칭 질문</span>
+              <p>${App.escapeHtml(direction.coachingQuestion)}</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="growth-strength-section">
+          <div class="growth-section-title">
+            <span>강점 후보 검증</span>
+            <strong>좋아 보이는 키워드가 아니라, 실제 기획자 매력으로 밀 수 있는지 냉정하게 봅니다.</strong>
+          </div>
+          <div class="growth-strength-grid">
+            ${
+              signatures.slice(1).length
+                ? signatures
+                    .slice(1)
+                    .map(
+                      (item) => `
+                        <article class="growth-strength-card">
+                          <span>${App.escapeHtml(item.confidence || "강점 후보")}</span>
+                          <h4>${App.escapeHtml(item.title)}</h4>
+                          <p>${App.escapeHtml(compactText(item.reason, "근거 확인 필요", 145))}</p>
+                          <small>${App.escapeHtml(item.caution || evidenceLabel(item.evidence))}</small>
+                        </article>
+                      `
+                    )
+                    .join("")
+                : `<div class="empty-state compact">대표 색깔 외에 추가로 확정할 강점은 아직 보류합니다.</div>`
+            }
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
   function renderOperationalScorePanel(student) {
     const derived = student.derived || {};
     const initial = derived.initialCapability || {};
@@ -692,27 +960,21 @@
     const career = derived.careerReadiness || {};
     const collaboration = derived.collaborationReadiness || {};
     const support = derived.operationalRiskFlags || {};
-    const scoreCards = [
+    const competencyScores = [
       {
         label: "총점",
         score: firstScore(derived.totalRankScore, derived.profileRankScore),
-        copy: "초기 10 · 진로 22 · 성장 28 · 참여 20 · 협업 20",
+        copy: "성장·참여·협업·진로 중심 종합",
         tone: "success",
       },
       {
-        label: "초기역량",
-        score: firstScore(derived.initialCapabilityRankScore, initial.score),
-        copy: initial.evidence?.slice(0, 2).join(" · ") || "전공/경험/지원서 기반",
-        tone: "brand",
-      },
-      {
-        label: "성장가능성",
+        label: "성장",
         score: firstScore(derived.growthPotentialRankScore, derived.growthRankScore),
         copy: `${growth.pattern || "패턴 확인"} · 현재 ${scoreLabel(growth.currentLevelScore)} · 신뢰 ${scoreLabel(growth.confidenceScore)}`,
         tone: "mint",
       },
       {
-        label: "과정참여도",
+        label: "참여",
         score: firstScore(derived.participationRankScore, participation.score),
         copy: `${participationWindowCopy} · 체크인 ${participation.checkinOnTimeRate || 0}% · TIL ${scoreLabel(participation.tilResponseScore)}`,
         tone: "success",
@@ -724,37 +986,176 @@
         tone: "violet",
       },
       {
-        label: "진로역량",
+        label: "진로",
         score: firstScore(derived.careerRankScore, career.careerReadinessScore),
         copy: `구체 목표 ${career.hasConcreteGoal ? "있음" : "부족"} · 객관 근거 ${scoreLabel(career.objectiveEvidenceScore)} · 추상 ${career.abstractExpressionCount || 0}건`,
         tone: "brand",
       },
       {
-        label: "지원검토",
-        score: firstScore(derived.supportRankScore, derived.supportIndex),
-        copy: `현장 ${support.fieldPerformance?.hardGate ? "하드" : support.fieldPerformance?.hasRisk ? "검토" : "낮음"} · 동료 ${support.peerReputation?.hardGate ? "하드" : support.peerReputation?.hasRisk ? "검토" : "낮음"} · 불일치 ${support.evaluationMismatch?.hasRisk ? "있음" : "낮음"}`,
-        tone: "warning",
+        label: "초기",
+        score: firstScore(derived.initialCapabilityRankScore, initial.score),
+        copy: initial.evidence?.slice(0, 2).join(" · ") || "전공/경험/지원서 기반",
+        tone: "neutral",
       },
     ];
-    const basis = derived.rankScoreBasis || {};
+    const supportScore = {
+      label: "지원검토",
+      score: firstScore(derived.supportRankScore, derived.supportIndex),
+      copy: `현장 ${support.fieldPerformance?.hardGate ? "하드" : support.fieldPerformance?.hasRisk ? "검토" : "낮음"} · 동료 ${support.peerReputation?.hardGate ? "하드" : support.peerReputation?.hasRisk ? "검토" : "낮음"} · 불일치 ${support.evaluationMismatch?.hasRisk ? "있음" : "낮음"}`,
+      tone: "warning",
+    };
+    const nonTotalScores = competencyScores.filter((item) => item.label !== "총점");
+    const strongest = [...nonTotalScores].sort((a, b) => b.score - a.score)[0] || competencyScores[0];
+    const weakest = [...nonTotalScores].sort((a, b) => a.score - b.score)[0] || competencyScores[0];
+    const scoreRows = [
+      ...competencyScores.filter((item) => item.label !== "총점"),
+      {
+        ...supportScore,
+        separate: true,
+      },
+    ];
     return `
-      <section class="panel section-panel operational-score-panel">
+      <section class="panel section-panel operational-score-panel score-board-panel">
         <div class="panel-head">
           <div>
             <span class="panel-kicker">Score Model</span>
             <h3>운영 분류 점수</h3>
           </div>
-          <p class="panel-copy">지원검토는 총점에서 분리하고, 총점은 초기역량 비중을 낮게 둔 역량 합산으로 봅니다.</p>
+          <p class="panel-copy">총점은 역량 판단, 지원검토는 개입 우선도입니다. 두 지표를 섞지 않고 핵심만 먼저 보여줍니다.</p>
         </div>
-        <div class="snapshot-grid compact-snapshot-grid">
-          ${scoreCards.map((item) => App.metricCard(item.label, scoreLabel(item.score), item.copy, item.tone)).join("")}
+
+        <div class="score-summary-grid">
+          <article class="score-total-card ${App.toneClass("success")}">
+            <span>역량 총점</span>
+            <strong>${App.escapeHtml(scoreLabel(competencyScores[0].score))}</strong>
+            <p>${App.escapeHtml(competencyScores[0].copy)}</p>
+          </article>
+          <article class="score-total-card ${App.toneClass("warning")}">
+            <span>지원검토</span>
+            <strong>${App.escapeHtml(scoreLabel(supportScore.score))}</strong>
+            <p>총점과 분리된 운영 개입 우선도</p>
+          </article>
+          <article class="score-insight-card">
+            <span>가장 강한 축</span>
+            <strong>${App.escapeHtml(strongest.label)} · ${App.escapeHtml(scoreLabel(strongest.score))}</strong>
+            <p>${App.escapeHtml(compactText(strongest.copy, "근거 확인 필요", 120))}</p>
+          </article>
+          <article class="score-insight-card is-watch">
+            <span>먼저 확인할 축</span>
+            <strong>${App.escapeHtml(weakest.label)} · ${App.escapeHtml(scoreLabel(weakest.score))}</strong>
+            <p>${App.escapeHtml(compactText(weakest.copy, "근거 확인 필요", 120))}</p>
+          </article>
         </div>
-        <div class="assessment-reason-list">
-          ${["total", "initialCapability", "growth", "participation", "collaboration", "career", "support"]
-            .filter((key) => basis[key])
-            .map((key) => `<p>${App.escapeHtml(basis[key])}</p>`)
+
+        <div class="score-board-list">
+          ${scoreRows
+            .map(
+              (item) => `
+                <article class="score-board-row ${item.separate ? "is-separate" : ""}">
+                  <div>
+                    <span>${App.escapeHtml(item.label)}</span>
+                    <strong>${App.escapeHtml(scoreLabel(item.score))}</strong>
+                  </div>
+                  <div class="score-track" aria-hidden="true">
+                    <span class="${App.toneClass(item.tone)}" style="width:${firstScore(item.score)}%"></span>
+                  </div>
+                  <p>${App.escapeHtml(compactText(item.copy, "근거 확인 필요", 105))}</p>
+                </article>
+              `
+            )
             .join("")}
         </div>
+      </section>
+    `;
+  }
+
+  function jobFitTone(score) {
+    const value = firstScore(score);
+    if (value >= 76) return "success";
+    if (value >= 66) return "brand";
+    if (value >= 56) return "warning";
+    return "neutral";
+  }
+
+  function renderJobFitPanel(student) {
+    const fit = student.jobFit || {};
+    const topRoles = fit.topRoles || [];
+    const jobs = fit.recommendedJobs || [];
+    const market = App.rawData.jobMarket || {};
+    const score = firstScore(fit.score);
+    return `
+      <section class="panel section-panel job-fit-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">GameJob Match</span>
+            <h3>채용공고 직무 적합도</h3>
+          </div>
+          <p class="panel-copy">게임잡 공고 ${App.escapeHtml(String(market.planningJobs || 0))}건 기준 · ${App.escapeHtml(fit.marketDate || market.latestUpdatedAt || "날짜 미확인")}</p>
+        </div>
+        <div class="job-fit-hero ${App.toneClass(jobFitTone(score))}">
+          <div>
+            <span>${App.escapeHtml(fit.label || "판단 보류")}</span>
+            <strong>${App.escapeHtml(scoreLabel(score))}</strong>
+            <p>${App.escapeHtml(fit.summary || "공고 매칭 데이터가 아직 없습니다.")}</p>
+          </div>
+          <a class="soft-action compact-action" href="${App.escapeHtml(fit.sourceUrl || market.sourceUrl || "https://rkdghkclgns-design.github.io/gamejob-crawler/")}" target="_blank" rel="noopener">공고 원본</a>
+        </div>
+        <div class="job-fit-grid">
+          <section>
+            <div class="growth-section-title">
+              <span>적합 직무군</span>
+              <strong>학생의 산출물/진로문서와 공고 키워드가 만나는 영역입니다.</strong>
+            </div>
+            <div class="job-role-list">
+              ${
+                topRoles.length
+                  ? topRoles
+                      .map(
+                        (role) => `
+                          <article>
+                            <div>
+                              <strong>${App.escapeHtml(role.label)}</strong>
+                              <span>${App.escapeHtml(scoreLabel(role.score))} · 공고 ${App.escapeHtml(String(role.marketCount || 0))}건</span>
+                            </div>
+                            <i aria-hidden="true"><span style="width:${firstScore(role.score)}%"></span></i>
+                          </article>
+                        `
+                      )
+                      .join("")
+                  : `<div class="empty-state compact">직무군 매칭 근거가 부족합니다.</div>`
+              }
+            </div>
+          </section>
+          <section>
+            <div class="growth-section-title">
+              <span>보완 포인트</span>
+              <strong>지원 전 포트폴리오와 면접 답변에서 먼저 메워야 할 부분입니다.</strong>
+            </div>
+            <div class="job-gap-list">
+              ${(fit.gaps || []).map((gap) => `<p>${App.escapeHtml(gap)}</p>`).join("") || `<p>보완 포인트가 아직 산정되지 않았습니다.</p>`}
+            </div>
+          </section>
+        </div>
+        <div class="job-card-list">
+          ${jobs.length
+            ? jobs
+                .map(
+                  (job) => `
+                    <a class="job-match-card" href="${App.escapeHtml(job.link || "#")}" target="_blank" rel="noopener">
+                      <div>
+                        <strong>${App.escapeHtml(job.company || "-")}</strong>
+                        <span>${App.escapeHtml(scoreLabel(job.score))}</span>
+                      </div>
+                      <h4>${App.escapeHtml(job.title || "공고 제목 없음")}</h4>
+                      <p>${App.escapeHtml((job.reasons || []).join(" · ") || "매칭 근거 확인 필요")}</p>
+                      <small>${App.escapeHtml([job.experience, job.employmentType, job.deadline].filter(Boolean).join(" · "))}</small>
+                    </a>
+                  `
+                )
+                .join("")
+            : `<div class="empty-state compact">추천 공고가 아직 없습니다.</div>`}
+        </div>
+        <p class="panel-copy">${App.escapeHtml(fit.basis || "공고 데이터와 학생 자료를 별도 지표로 비교합니다.")}</p>
       </section>
     `;
   }
@@ -949,36 +1350,10 @@
   }
 
   function renderStatusTab(student) {
-    const collaborationReadiness = student.derived?.collaborationReadiness || {};
-    const dropoutDate = student.dropoutInfo?.date || student.stats?.dropoutDate || "";
     return `
-      <section class="snapshot-grid compact-snapshot-grid">
-        ${App.metricCard("현재 상태", student.stats?.currentStatus || "-", "현재 운영 신호", App.statusTone(student.stats?.currentStatus))}
-        ${App.metricCard("관리 상태", student.managementStatus || "일반", student.managementStatus === "이탈" ? `이탈 시점 ${App.formatDate(dropoutDate)}` : "현재 관리 분류", App.statusTone(student.managementStatus))}
-        ${App.metricCard("프로젝트 제출률", `${student.stats?.projectSubmissionRate || 0}%`, "프로젝트 데일리 기록 기준", "brand")}
-        ${App.metricCard("출결 기록", `${student.stats?.attendanceIssues || 0}건`, `무단/무연락 ${student.stats?.attendanceRiskIssues || 0}건 · 건강/컨디션 ${student.stats?.healthAttendanceIssues || 0}건`, "warning")}
-        ${App.metricCard("면담", `${student.stats?.counselingCount || 0}건`, "기록된 전체 면담 수", "mint")}
-        ${App.metricCard("프로젝트 협업", `${Math.round(collaborationReadiness.collaborationReadinessScore || 0)}점`, `변화 ${collaborationReadiness.trajectory?.label || "유지"} ${collaborationReadiness.trajectory?.delta || 0}`, "violet")}
-      </section>
+      ${renderGrowthMapPanel(student)}
       ${renderOperationalScorePanel(student)}
-      ${renderStrengthProfilePanel(student)}
-      ${renderStudentGroupSignalsPanel(student)}
-      ${renderCareerGuidancePanel(student)}
-      ${renderAdmissionContextPanel(student)}
-      ${renderOperationalAssessmentPanel(student)}
-      <section class="panel section-panel">
-        <div class="panel-head">
-          <div>
-            <span class="panel-kicker">Status Reason</span>
-            <h3>현재 상태 판단 이유</h3>
-          </div>
-          <p class="panel-copy">${App.escapeHtml(student.currentProfile?.note || "최근 운영 해석 없음")}</p>
-        </div>
-        <div class="reason-box">
-          <strong>${App.escapeHtml(student.stats?.currentStatus || "안정")}</strong>
-          <p>${App.escapeHtml(App.statusReason(student))}</p>
-        </div>
-      </section>
+      ${renderJobFitPanel(student)}
       <section class="two-column-grid">
         <section class="panel section-panel">
           <div class="panel-head">
@@ -991,6 +1366,7 @@
         </section>
         ${renderCurrentInterpretationPanel(student)}
       </section>
+      ${renderOperationalAssessmentPanel(student)}
     `;
   }
 
@@ -1472,6 +1848,26 @@
     `;
   }
 
+  function renderMilestoneSummaryCard(milestone, index) {
+    const growthDelta = Number(milestone.growthDelta) || 0;
+    const profileAverage = Number(milestone.profileAverage) || 0;
+    const eventCounts = milestone.eventCounts || {};
+    const eventTotal = Object.values(eventCounts).reduce((sum, value) => sum + (Number(value) || 0), 0);
+    return `
+      <button type="button" class="milestone-summary-card" data-milestone="${App.escapeHtml(milestone.id)}">
+        <span class="milestone-summary-index">M${index + 1}</span>
+        <strong>${App.escapeHtml(App.shortMilestoneLabel(milestone.label))}</strong>
+        <small>${App.escapeHtml(App.formatRange(milestone.startDate, milestone.endDate))}</small>
+        <p>${App.escapeHtml(compactText(milestone.note || App.milestoneStory(milestone), "요약 기록 없음", 120))}</p>
+        <span class="milestone-summary-metrics">
+          <em>평균 ${App.escapeHtml(profileAverage.toFixed(1))}</em>
+          <em>변화 ${growthDelta > 0 ? "+" : ""}${App.escapeHtml(growthDelta.toFixed(1))}</em>
+          <em>기록 ${App.escapeHtml(String(eventTotal))}건</em>
+        </span>
+      </button>
+    `;
+  }
+
   function renderMilestoneDetailCard(milestone, index) {
     const growthDelta = Number(milestone.growthDelta) || 0;
     const profileAverage = Number(milestone.profileAverage) || 0;
@@ -1548,8 +1944,9 @@
 
   function renderStudentDetail(student) {
     const milestones = (student.milestones || []).filter((milestone) => !milestone.isEstimated && milestone.participated !== false);
+    const isOverview = state.detailMilestoneId === "all";
     const visibleMilestones =
-      state.detailMilestoneId === "all"
+      isOverview
         ? milestones
         : milestones.filter((milestone) => milestone.id === state.detailMilestoneId);
 
@@ -1560,7 +1957,7 @@
             <span class="panel-kicker">Detail</span>
             <h3>마일스톤별 상세 정보</h3>
           </div>
-          <p class="panel-copy">특이사항, 히스토리, 운영 메모를 구간별로 모아봅니다.</p>
+          <p class="panel-copy">전체 구간에서는 요약만 보고, 상세 이벤트와 전문은 마일스톤을 선택해 확인합니다.</p>
         </div>
         <div class="chip-filter-row">
           <button type="button" class="filter-chip ${state.detailMilestoneId === "all" ? "is-active" : ""}" data-milestone="all">전체 구간</button>
@@ -1580,9 +1977,19 @@
         </div>
       </section>
 
-      <div class="detail-milestone-stack">
-        ${visibleMilestones.map((milestone) => renderMilestoneDetailCard(milestone, milestones.indexOf(milestone))).join("")}
-      </div>
+      ${
+        isOverview
+          ? `
+            <section class="milestone-summary-grid">
+              ${milestones.map((milestone, index) => renderMilestoneSummaryCard(milestone, index)).join("")}
+            </section>
+          `
+          : `
+            <div class="detail-milestone-stack">
+              ${visibleMilestones.map((milestone) => renderMilestoneDetailCard(milestone, milestones.indexOf(milestone))).join("")}
+            </div>
+          `
+      }
     `;
   }
 

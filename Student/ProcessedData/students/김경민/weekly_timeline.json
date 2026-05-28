@@ -298,10 +298,10 @@
       "scores": {
         "selfRegulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -470,7 +470,7 @@
         "collaboration": 2,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",

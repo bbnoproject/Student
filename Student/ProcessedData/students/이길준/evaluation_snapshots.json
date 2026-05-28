@@ -16,7 +16,7 @@
   },
   {
     "snapshotId": "이길준-m2",
-    "snapshotDate": "2026-01-23",
+    "snapshotDate": "2026-01-21",
     "snapshotType": "개강 ~ 1차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -24,14 +24,14 @@
       "collaboration": null,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
   },
   {
     "snapshotId": "이길준-m3",
-    "snapshotDate": "2026-02-27",
+    "snapshotDate": "2026-01-21",
     "snapshotType": "1차 프로젝트 종료 ~ 2차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -39,14 +39,14 @@
       "collaboration": null,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
   },
   {
     "snapshotId": "이길준-m4",
-    "snapshotDate": "2026-04-08",
+    "snapshotDate": "2026-01-21",
     "snapshotType": "2차 프로젝트 종료 ~ 3차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -54,14 +54,14 @@
       "collaboration": null,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
   },
   {
     "snapshotId": "이길준-m5",
-    "snapshotDate": "2026-06-05",
+    "snapshotDate": "2026-01-21",
     "snapshotType": "3차 프로젝트 종료 ~ 4차 프로젝트 종료",
     "scores": {
       "self_regulation": 1,
@@ -69,14 +69,14 @@
       "collaboration": null,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"
   },
   {
     "snapshotId": "이길준-m6",
-    "snapshotDate": "2026-08-03",
+    "snapshotDate": "2026-01-21",
     "snapshotType": "4차 프로젝트 종료 ~ 종강",
     "scores": {
       "self_regulation": 1,
@@ -84,7 +84,7 @@
       "collaboration": null,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "자기조절 지원 필요"

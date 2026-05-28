@@ -9,7 +9,7 @@
       "collaboration": null,
       "resilience": 3,
       "reflection": 2,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "Medium",
     "note": "회고 구조화 필요"
@@ -24,7 +24,7 @@
       "collaboration": 2,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"
@@ -39,7 +39,7 @@
       "collaboration": 3,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "도전 대응 지원 필요"

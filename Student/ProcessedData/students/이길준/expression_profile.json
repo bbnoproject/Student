@@ -10,40 +10,42 @@
     "cadetCard": 0,
     "checkin": 0,
     "retro": 0,
-    "careerDocument": 0
+    "careerDocument": 0,
+    "morningPresentation": 0,
+    "practiceSubmission": 4
   },
-  "sourceTotal": 1,
-  "textLength": 1105,
+  "sourceTotal": 5,
+  "textLength": 2188,
   "dimensions": {
     "specificity": {
       "label": "구체성",
-      "score": 1.44,
-      "evidence": "구체 표현 1종 · 반복 1회 · 문서 1건",
+      "score": 1.99,
+      "evidence": "구체 표현 2종 · 반복 3회 · 문서 3건",
       "level": "낮음"
     },
     "agency": {
       "label": "주도성 표현",
-      "score": 1.79,
-      "evidence": "실행/개선 표현 2종 · 반복 10회 · 문서 1건",
-      "level": "낮음"
+      "score": 2.45,
+      "evidence": "실행/개선 표현 3종 · 반복 13회 · 문서 4건",
+      "level": "보통"
     },
     "reflection": {
       "label": "성찰 표현",
-      "score": 1.5,
-      "evidence": "회고/개선 표현 1종 · 반복 3회 · 문서 1건",
+      "score": 1.94,
+      "evidence": "회고/개선 표현 2종 · 반복 4회 · 문서 2건",
       "level": "낮음"
     },
     "relation": {
       "label": "관계/협업 언어",
-      "score": 1.59,
-      "evidence": "관계/협업 표현 2종 · 반복 2회 · 문서 1건",
+      "score": 2.29,
+      "evidence": "관계/협업 표현 4종 · 반복 5회 · 문서 3건",
       "level": "낮음"
     },
     "career": {
       "label": "진로 언어",
-      "score": 2.51,
-      "evidence": "진로/직무 표현 8종 · 반복 10회 · 문서 1건",
-      "level": "보통"
+      "score": 3.37,
+      "evidence": "진로/직무 표현 9종 · 반복 21회 · 문서 4건",
+      "level": "높음"
     },
     "emotion": {
       "label": "정서/부담 표현",
@@ -59,7 +61,8 @@
     }
   },
   "dominantTraits": [
-    "진로 언어"
+    "진로 언어",
+    "주도성 표현"
   ],
   "cautionTraits": [],
   "samples": [
@@ -69,5 +72,5 @@
       "excerpt": "안녕하세요, 미대입시 이후 25살 부터 6년간 의류회사에서 의류 디자인,의류 그래픽개발 및 생산을 담당하였습니다. 미래에는 회사에 종속되기 보다, 현자 '나'라는 사람을 브랜딩하고 무엇을 기획할 것인가? 가 가장 중요할것이라고 판단이 되었고, ai를 이용하여 1인개발 및 창업을 꿈꾸게 되었습니다. 제것을 만들기 이전에…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 1건에서 진로 언어 중심의 표현 특징이 관찰됩니다."
+  "summary": "학생이 직접 작성한 자료 5건에서 진로 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
 }

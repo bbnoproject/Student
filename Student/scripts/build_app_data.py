@@ -23,6 +23,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "Data"
 APP_DIR = ROOT / "App"
 OUTPUT_FILE = APP_DIR / "data.js"
+GAMEJOB_JOBS_FILE = DATA_DIR / "gamejob_crawler" / "all-jobs.json"
+GAMEJOB_SOURCE_URL = "https://rkdghkclgns-design.github.io/gamejob-crawler/"
 
 EXPECTED_PROJECT_PHASE_LABELS = [
     "1차 프로젝트",
@@ -73,6 +75,8 @@ NEGATIVE_COLLAB_KEYWORDS = [
 
 COLLAB_PEER_PRAISE_KEYWORDS = [
     "칭찬",
+    "좋다",
+    "좋았",
     "좋았습니다",
     "도와",
     "배려",
@@ -88,6 +92,10 @@ COLLAB_PEER_PRAISE_KEYWORDS = [
     "잘 받아",
     "잘 정리",
     "잘 이끌",
+    "든든",
+    "감사",
+    "배울점",
+    "배울 점",
 ]
 
 COLLAB_WANT_KEYWORDS = [
@@ -173,6 +181,50 @@ PRACTICE_STRENGTH_KEYWORDS = {
         "label": "문서화/커뮤니케이션",
         "keywords": ["정리", "문서", "보고서", "가이드", "튜토리얼", "설득", "소통", "피드백"],
     },
+}
+
+JOB_ROLE_META = {
+    "system_balance": {
+        "label": "시스템/밸런스 기획",
+        "keywords": ["시스템기획", "시스템 기획", "밸런스", "전투기획", "전투 기획", "경제", "수식", "테이블", "보상", "성장", "몬스터전투", "PC전투", "규칙"],
+    },
+    "level_design": {
+        "label": "레벨/던전/퀘스트 기획",
+        "keywords": ["레벨", "레벨기획", "던전", "퀘스트", "월드", "맵", "스테이지", "필드", "몬스터 배치", "공간", "동선"],
+    },
+    "content_live": {
+        "label": "콘텐츠/라이브 기획",
+        "keywords": ["컨텐츠", "콘텐츠", "이벤트", "라이브", "업데이트", "운영기획", "서비스기획", "모바일게임기획", "캐주얼", "상점", "아이템"],
+    },
+    "narrative_world": {
+        "label": "시나리오/세계관 기획",
+        "keywords": ["시나리오", "내러티브", "세계관", "스토리", "설정", "컨셉", "캐릭터", "대사", "퀘스트 스크립트"],
+    },
+    "market_bm": {
+        "label": "시장/BM/유저 분석",
+        "keywords": ["BM", "사업", "매출", "상품", "유료화", "경제", "시장", "데이터", "지표", "리텐션", "분석", "라이브서비스"],
+    },
+    "ui_ux": {
+        "label": "UI/UX/플랫폼 기획",
+        "keywords": ["UI", "UX", "인터페이스", "플랫폼", "웹서비스", "유저경험", "튜토리얼", "온보딩", "접근성"],
+    },
+    "technical_ai": {
+        "label": "테크니컬/AI 활용 기획",
+        "keywords": ["AI", "인공지능", "툴", "자동화", "SQL", "Python", "Unity", "유니티", "Unreal", "언리얼", "블루프린트", "C++", "C#", "테크니컬"],
+    },
+    "pm_leadership": {
+        "label": "PM/프로젝트 관리",
+        "keywords": ["PM", "프로젝트 관리", "일정", "리딩", "리더십", "스크럼", "프로세스", "협업", "커뮤니케이션", "관리"],
+    },
+}
+
+STUDENT_DOMAIN_TO_JOB_ROLES = {
+    "system_design": {"system_balance": 1.0, "level_design": 0.35, "technical_ai": 0.15},
+    "content_design": {"content_live": 0.85, "level_design": 0.75, "system_balance": 0.25},
+    "narrative_world": {"narrative_world": 1.0, "content_live": 0.25},
+    "market_research": {"market_bm": 1.0, "content_live": 0.25, "pm_leadership": 0.15},
+    "ai_tooling": {"technical_ai": 1.0, "ui_ux": 0.2, "system_balance": 0.15},
+    "communication": {"pm_leadership": 0.85, "ui_ux": 0.2},
 }
 
 COLLAB_SERIOUSNESS_KEYWORDS = [
@@ -579,6 +631,13 @@ def short_text(value: Any, limit: int = 140) -> str:
     return text[: limit - 1].rstrip() + "…"
 
 
+ORPHAN_TEXT_START_RE = re.compile(r"^[,.;:·\-–—\s]*(은|는|을|를|도|만|의|에|에서|로|으로)(\s|$)")
+
+
+def starts_with_orphan_particle(value: Any) -> bool:
+    return bool(ORPHAN_TEXT_START_RE.search(compact_text(value)))
+
+
 def slugify_name(name: str) -> str:
     slug = re.sub(r"[^0-9A-Za-z가-힣]+", "-", name.strip())
     return slug.strip("-").lower()
@@ -675,17 +734,41 @@ def split_notion_sections(text: str) -> dict[str, str]:
         "TMI",
         "과정 수료 후 나의 모습 상상",
     ]
+
+    def match_section_heading(line: str) -> tuple[str, str] | None:
+        candidate = re.sub(r"^[^0-9A-Za-z가-힣]+", "", clean_text(line)).strip()
+        for name in sorted(section_names, key=len, reverse=True):
+            if candidate == name:
+                return name, ""
+            if not candidate.startswith(name):
+                continue
+            tail = candidate[len(name) :].strip()
+            if not tail:
+                return name, ""
+            if tail.startswith(("은", "는", "이", "가", "을", "를", "도", "만", "의", "에", "에서", "로", "으로")):
+                continue
+            if tail.startswith(("*", ":", "：", "(", "（")):
+                remainder = ""
+                if tail.startswith((":","：")):
+                    remainder = clean_text(tail[1:])
+                return name, remainder
+            # Notion heading exports sometimes keep descriptive helper text after
+            # a short heading, e.g. "TMI 모든 것 가능 / 내가 좋아하는 것들".
+            if len(candidate) <= len(name) + 70 and not re.search(r"(다|요|니다)[.!?。！？]?$", candidate):
+                return name, ""
+        return None
+
     lines = [clean_text(line) for line in text.splitlines() if clean_text(line)]
     sections: dict[str, list[str]] = {}
     current = "본문"
     for line in lines:
-        matched = next((name for name in section_names if name in line), "")
+        matched = match_section_heading(line)
         if matched:
-            current = matched
-            sections.setdefault(current, [])
-            remainder = clean_text(line.replace(matched, ""))
+            name, remainder = matched
+            current = name
+            sections.setdefault(name, [])
             if remainder and re.search(r"[0-9A-Za-z가-힣]", remainder):
-                sections[current].append(remainder)
+                sections[name].append(remainder)
             continue
         sections.setdefault(current, []).append(line)
     return {key: clean_text("\n".join(value)) for key, value in sections.items() if clean_text("\n".join(value))}
@@ -2380,15 +2463,72 @@ def is_late_event(event: dict[str, Any]) -> bool:
     return "지각" in text
 
 
-def text_windows_for_name(text: str, name: str, window: int = 90) -> list[str]:
+def direct_name_reference(text: str, name: str) -> bool:
+    if not text or not name:
+        return False
+    escaped = re.escape(name)
+    boundary = r"(^|[^0-9A-Za-z가-힣])"
+    direct_patterns = [
+        rf"{boundary}{escaped}\s*(?:님|학생|씨)?\s*[:：]",
+        rf"{boundary}{escaped}\s*(?:님|학생|씨)",
+        rf"^\s*[-*•·]?\s*{escaped}\s*(?:[-–—]|은|는|이|가|을|를|도|에게|께|와|과|의)",
+    ]
+    return any(re.search(pattern, text) for pattern in direct_patterns)
+
+
+def known_student_names_in_text(text: str, names: list[str]) -> list[str]:
+    normalized_text = normalize_name(text)
+    return [
+        name
+        for name in names
+        if name and normalize_name(name) in normalized_text
+    ]
+
+
+def likely_group_name_list(text: str, target_name: str, names: list[str]) -> bool:
+    if direct_name_reference(text, target_name):
+        return False
+    mentioned = known_student_names_in_text(text, names)
+    return len(mentioned) >= 2 and target_name in mentioned
+
+
+def feedback_units(text: str) -> list[str]:
+    units: list[str] = []
+    for raw_line in clean_text(text).splitlines():
+        line = clean_text(raw_line)
+        if not line:
+            continue
+        if len(line) <= 260:
+            units.append(line)
+            continue
+        chunks = re.split(r"(?<=[.!?。！？])\s+|(?<=다\.)\s+|(?<=요\.)\s+|(?<=니다\.)\s+", line)
+        units.extend(clean_text(chunk) for chunk in chunks if clean_text(chunk))
+    return units
+
+
+def feedback_mentions_for_name(text: str, name: str, names: list[str]) -> list[dict[str, str]]:
     if not text or not name:
         return []
-    windows = []
-    for match in re.finditer(re.escape(name), text):
-        start = max(0, match.start() - window)
-        end = min(len(text), match.end() + window)
-        windows.append(text[start:end])
-    return windows
+    mentions: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for unit in feedback_units(text):
+        if name not in unit:
+            continue
+        if likely_group_name_list(unit, name, names):
+            continue
+        if not direct_name_reference(unit, name):
+            continue
+        snippet = short_text(re.sub(r"^\s*[-*•·]\s*", "", unit), 220)
+        if not snippet or snippet in seen or starts_with_orphan_particle(snippet):
+            continue
+        seen.add(snippet)
+        mentions.append(
+            {
+                "text": snippet,
+                "quality": "direct_mention",
+            }
+        )
+    return mentions
 
 
 def shared_project_context(
@@ -2745,6 +2885,8 @@ def score_collaboration_readiness(
                 "targetRoles": item.get("targetRoles", []),
                 "weight": item.get("weight", 1.0),
                 "snippet": item.get("snippet", ""),
+                "attributionQuality": item.get("attributionQuality", ""),
+                "evidenceLabel": item.get("evidenceLabel", ""),
             }
             for item in peer_feedback
             if item.get("sameProject")
@@ -2814,52 +2956,103 @@ def add_peer_feedback_mentions(students: list[dict[str, Any]]) -> None:
             continue
 
         seen_mentions: set[tuple[str, str, str, str, str, str]] = set()
+
+        def add_feedback(
+            target: dict[str, Any],
+            target_name: str,
+            feedback_type: str,
+            snippet: str,
+            source_domain: str,
+            source_phase: str = "",
+            source_date: str = "",
+            attribution_quality: str = "direct_mention",
+            evidence_label: str = "",
+        ) -> None:
+            snippet = short_text(snippet, 220)
+            if not snippet or starts_with_orphan_particle(snippet):
+                return
+            dedupe_key = (
+                target_name,
+                source.get("name", ""),
+                feedback_type,
+                source_domain,
+                source_phase,
+                snippet,
+            )
+            if dedupe_key in seen_mentions:
+                return
+            seen_mentions.add(dedupe_key)
+            context = shared_project_context(source, target_name, source_phase, target)
+            weight = peer_feedback_weight(feedback_type, source_domain, context["sameProject"])
+            if attribution_quality == "relation_list":
+                weight = round(weight * 0.7, 2)
+            target["peerFeedback"].append(
+                {
+                    "from": source.get("name", ""),
+                    "type": feedback_type,
+                    "snippet": snippet,
+                    "sourceDomain": source_domain,
+                    "sourcePhase": source_phase,
+                    "sourceDate": source_date,
+                    "sameProject": context["sameProject"],
+                    "sharedPhases": context["sharedPhases"],
+                    "sharedTeams": context["sharedTeams"],
+                    "sourceRoles": context["sourceRoles"],
+                    "targetRoles": context["targetRoles"],
+                    "weight": weight,
+                    "attributionQuality": attribution_quality,
+                    "evidenceLabel": evidence_label,
+                }
+            )
+
+        staff_profile = source.get("staffProfile", {})
+        relation_specs = [
+            ("positiveRelations", "praise", "운영진 학생 정보의 긍정적 관계 목록"),
+            ("negativeRelations", "avoid", "운영진 학생 정보의 부정적 관계 목록"),
+        ]
         for target_name in names:
             if target_name == source.get("name"):
                 continue
             target = by_name[target_name]
+            target_key = normalize_name(target_name)
+            for relation_key, feedback_type, label in relation_specs:
+                relation_names = staff_profile.get(relation_key, [])
+                if not any(normalize_name(item) == target_key for item in relation_names):
+                    continue
+                add_feedback(
+                    target,
+                    target_name,
+                    feedback_type,
+                    f"{source.get('name', '')} 기록: {label}에 {target_name} 포함",
+                    "staffProfile",
+                    attribution_quality="relation_list",
+                    evidence_label=label,
+                )
+
             for segment in source_segments:
-                for window in text_windows_for_name(segment["text"], target_name):
+                for mention in feedback_mentions_for_name(segment["text"], target_name, names):
+                    snippet = mention["text"]
                     feedback_type = ""
-                    if unique_keyword_hits(window, COLLAB_AVOID_KEYWORDS):
+                    if unique_keyword_hits(snippet, COLLAB_AVOID_KEYWORDS):
                         feedback_type = "avoid"
-                    elif collaboration_complaint_hits(window):
+                    elif collaboration_complaint_hits(snippet):
                         feedback_type = "complaint"
-                    elif unique_keyword_hits(window, COLLAB_WANT_KEYWORDS):
+                    elif unique_keyword_hits(snippet, COLLAB_WANT_KEYWORDS):
                         feedback_type = "want"
-                    elif unique_keyword_hits(window, COLLAB_PEER_PRAISE_KEYWORDS):
+                    elif unique_keyword_hits(snippet, COLLAB_PEER_PRAISE_KEYWORDS):
                         feedback_type = "praise"
                     if not feedback_type:
                         continue
-                    snippet = short_text(window, 180)
-                    dedupe_key = (
+                    add_feedback(
+                        target,
                         target_name,
-                        source.get("name", ""),
                         feedback_type,
+                        snippet,
                         segment["domain"],
                         segment["phase"],
-                        snippet,
-                    )
-                    if dedupe_key in seen_mentions:
-                        continue
-                    seen_mentions.add(dedupe_key)
-                    context = shared_project_context(source, target_name, segment["phase"], target)
-                    weight = peer_feedback_weight(feedback_type, segment["domain"], context["sameProject"])
-                    target["peerFeedback"].append(
-                        {
-                            "from": source.get("name", ""),
-                            "type": feedback_type,
-                            "snippet": snippet,
-                            "sourceDomain": segment["domain"],
-                            "sourcePhase": segment["phase"],
-                            "sourceDate": segment["date"],
-                            "sameProject": context["sameProject"],
-                            "sharedPhases": context["sharedPhases"],
-                            "sharedTeams": context["sharedTeams"],
-                            "sourceRoles": context["sourceRoles"],
-                            "targetRoles": context["targetRoles"],
-                            "weight": weight,
-                        }
+                        segment["date"],
+                        mention["quality"],
+                        "직접 이름 언급",
                     )
 
 
@@ -6281,6 +6474,465 @@ def build_dashboard_summary(students: list[dict[str, Any]], milestones: list[dic
     }
 
 
+def build_data_integrity_audit(students: list[dict[str, Any]]) -> dict[str, Any]:
+    names = [student.get("name", "") for student in students if student.get("name")]
+    issues: list[dict[str, Any]] = []
+    counts: Counter[str] = Counter()
+
+    def add_issue(issue_type: str, student: dict[str, Any], field: str, detail: str, sample: str = "") -> None:
+        counts[issue_type] += 1
+        if len(issues) >= 120:
+            return
+        issues.append(
+            {
+                "type": issue_type,
+                "studentId": student.get("id", ""),
+                "studentName": student.get("name", ""),
+                "field": field,
+                "detail": detail,
+                "sample": short_text(sample, 220),
+            }
+        )
+
+    for student in students:
+        student_name = student.get("name", "")
+        student_key = normalize_name(student_name)
+        for source_key, source_label in [("cadetCard", "대원카드"), ("staffProfile", "운영진 학생 정보")]:
+            source = student.get(source_key, {})
+            if not source:
+                continue
+            source_identity = normalize_name(
+                " ".join(
+                    [
+                        source.get("sourceFile", ""),
+                        source.get("title", ""),
+                        source.get("fullText", "")[:180],
+                    ]
+                )
+            )
+            if student_key and student_key not in source_identity:
+                add_issue(
+                    "source_student_name_mismatch",
+                    student,
+                    source_key,
+                    f"{source_label} 파일명/제목/첫 본문에서 학생명을 확인하지 못했습니다.",
+                    f"{source.get('sourceFile', '')} {source.get('title', '')}",
+                )
+            for field_key, value in (source.get("sections") or {}).items():
+                if starts_with_orphan_particle(value):
+                    add_issue(
+                        "orphan_section_start",
+                        student,
+                        f"{source_key}.sections.{field_key}",
+                        "섹션 본문이 조사로 시작해 제목 일부가 잘렸을 가능성이 있습니다.",
+                        value,
+                    )
+
+        for field_key, value in (student.get("admission") or {}).items():
+            if isinstance(value, str) and starts_with_orphan_particle(value):
+                add_issue(
+                    "orphan_admission_start",
+                    student,
+                    f"admission.{field_key}",
+                    "모집/대원카드 연결 필드가 조사로 시작해 앞부분이 잘렸을 가능성이 있습니다.",
+                    value,
+                )
+
+        for item in student.get("peerFeedback", []):
+            snippet = item.get("snippet", "")
+            if starts_with_orphan_particle(snippet):
+                add_issue(
+                    "orphan_peer_snippet_start",
+                    student,
+                    "peerFeedback.snippet",
+                    "동료평가 근거가 문장 중간에서 시작합니다.",
+                    snippet,
+                )
+            if student_name and student_name not in snippet:
+                add_issue(
+                    "peer_snippet_missing_target_name",
+                    student,
+                    "peerFeedback.snippet",
+                    "동료평가 근거 문장 안에 대상 학생명이 없습니다.",
+                    snippet,
+                )
+            if item.get("attributionQuality") not in {"direct_mention", "relation_list"}:
+                add_issue(
+                    "weak_peer_attribution",
+                    student,
+                    "peerFeedback.attributionQuality",
+                    "동료평가 근거 귀속 품질이 명확하지 않습니다.",
+                    snippet,
+                )
+            if likely_group_name_list(snippet, student_name, names) and item.get("attributionQuality") != "relation_list":
+                add_issue(
+                    "peer_group_list_context",
+                    student,
+                    "peerFeedback.snippet",
+                    "여러 학생 이름이 나열된 문장이 대상 학생의 평가처럼 귀속됐을 가능성이 있습니다.",
+                    snippet,
+                )
+
+    return {
+        "issueCount": sum(counts.values()),
+        "issueCounts": dict(sorted(counts.items())),
+        "sampleIssues": issues,
+    }
+
+
+def load_gamejob_jobs() -> list[dict[str, Any]]:
+    if not GAMEJOB_JOBS_FILE.exists():
+        return []
+    try:
+        jobs = json.loads(GAMEJOB_JOBS_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    if not isinstance(jobs, list):
+        return []
+    return [job for job in jobs if isinstance(job, dict)]
+
+
+def role_keyword_hits(text: str, keywords: list[str]) -> int:
+    lowered = text.lower()
+    return sum(1 for keyword in keywords if keyword and keyword.lower() in lowered)
+
+
+def job_text(job: dict[str, Any]) -> str:
+    return " ".join(
+        clean_text(job.get(key, ""))
+        for key in ["title", "jobField", "keywords", "mainGame", "gameCategory", "experience", "description"]
+    )
+
+
+def is_training_or_education_job(job: dict[str, Any]) -> bool:
+    text = " ".join(
+        clean_text(job.get(key, ""))
+        for key in ["title", "company", "employmentType", "keywords", "description"]
+    )
+    training_keywords = [
+        "교육생",
+        "연수생",
+        "취업연계",
+        "국비지원",
+        "국비 지원",
+        "아카데미",
+        "교육센터",
+        "훈련생",
+        "부트캠프",
+    ]
+    return any(keyword in text for keyword in training_keywords)
+
+
+def detect_job_roles(job: dict[str, Any]) -> dict[str, float]:
+    text = job_text(job)
+    title_keywords = " ".join([clean_text(job.get("title", "")), clean_text(job.get("keywords", ""))])
+    role_scores: dict[str, float] = {}
+    for role_key, meta in JOB_ROLE_META.items():
+        hits = role_keyword_hits(text, meta["keywords"])
+        title_hits = role_keyword_hits(title_keywords, meta["keywords"])
+        score = min(100.0, hits * 16 + title_hits * 8)
+        if score:
+            role_scores[role_key] = round(score, 2)
+    if not role_scores and "게임기획" in clean_text(job.get("jobField", "")):
+        role_scores["content_live"] = 35.0
+    return dict(sorted(role_scores.items(), key=lambda item: item[1], reverse=True))
+
+
+def split_job_keywords(value: str) -> list[str]:
+    return [
+        clean_text(item)
+        for item in re.split(r"[,/·|]", clean_text(value))
+        if clean_text(item) and len(clean_text(item)) >= 2
+    ][:12]
+
+
+def job_experience_level(value: str) -> int:
+    text = clean_text(value)
+    if "신입" in text or "무관" in text:
+        return 0
+    match = re.search(r"(\d+)\s*년", text)
+    return int(match.group(1)) if match else 0
+
+
+def student_job_corpus(student: dict[str, Any]) -> str:
+    guidance = student.get("careerGuidance", {})
+    strength_profile = student.get("strengthProfile", {})
+    strength_text = []
+    for item in strength_profile.get("strengths", []):
+        strength_text.extend([item.get("title", ""), item.get("claim", ""), item.get("careerUse", "")])
+        for evidence in item.get("evidence", []):
+            strength_text.append(evidence.get("excerpt", ""))
+    career_rounds = student.get("careerDocuments", {}).get("rounds", [])
+    career_round_text = []
+    for round_item in career_rounds[-2:]:
+        documents = round_item.get("documents", {})
+        career_round_text.extend([documents.get("selfIntroduction", ""), documents.get("resume", ""), round_item.get("feedback", "")])
+    return "\n".join(
+        [
+            student.get("education", ""),
+            student.get("specialNote", ""),
+            student.get("admission", {}).get("experience", ""),
+            student.get("admission", {}).get("career", ""),
+            student.get("admission", {}).get("goal", ""),
+            student.get("cadetCard", {}).get("motivation", ""),
+            student.get("cadetCard", {}).get("interests", ""),
+            student.get("cadetCard", {}).get("goal", ""),
+            "\n".join(guidance.get("sellingPoints", [])),
+            "\n".join(guidance.get("portfolioAngles", [])),
+            "\n".join(guidance.get("evidence", [])[:8]),
+            "\n".join(guidance.get("presentationTopics", [])),
+            "\n".join(strength_text[:16]),
+            "\n".join(career_round_text),
+        ]
+    )
+
+
+def student_role_profile(student: dict[str, Any]) -> dict[str, float]:
+    role_scores: defaultdict[str, float] = defaultdict(float)
+    guidance = student.get("careerGuidance", {})
+    for domain in guidance.get("topDomains", []):
+        domain_key = domain.get("key", "")
+        domain_score = safe_float(domain.get("score", 0))
+        for role_key, weight in STUDENT_DOMAIN_TO_JOB_ROLES.get(domain_key, {}).items():
+            role_scores[role_key] += min(52.0, domain_score * 1.15) * weight
+    corpus = student_job_corpus(student)
+    for role_key, meta in JOB_ROLE_META.items():
+        hits = role_keyword_hits(corpus, meta["keywords"])
+        if hits:
+            role_scores[role_key] += min(34.0, hits * 4.5)
+    return {
+        role_key: round(min(100.0, score), 2)
+        for role_key, score in sorted(role_scores.items(), key=lambda item: item[1], reverse=True)
+        if score >= 8
+    }
+
+
+def student_experience_fit(student: dict[str, Any], job: dict[str, Any], corpus: str) -> float:
+    required_years = job_experience_level(job.get("experience", ""))
+    if required_years <= 0:
+        return 100.0
+    initial = safe_float(student.get("derived", {}).get("initialCapabilityRankScore", 0))
+    career = safe_float(student.get("derived", {}).get("careerRankScore", 0))
+    has_prior_experience = bool(re.search(r"경력|근무|회사|인턴|게임기획\s*1년|1년간|PM|프로젝트", corpus, flags=re.I))
+    if required_years == 1:
+        return 82.0 if has_prior_experience or initial >= 78 else 58.0
+    if required_years == 2:
+        return 68.0 if has_prior_experience and initial >= 75 else 42.0
+    return 52.0 if has_prior_experience and (initial >= 82 or career >= 75) else 28.0
+
+
+def match_job_to_student(
+    student: dict[str, Any],
+    job: dict[str, Any],
+    student_roles: dict[str, float],
+    corpus: str,
+) -> dict[str, Any]:
+    job_roles = job.get("roleScores", {})
+    if not job_roles or not student_roles:
+        role_alignment = 0.0
+        matched_roles: list[str] = []
+    else:
+        contributions = [
+            (role_key, (safe_float(student_roles.get(role_key)) * safe_float(job_roles.get(role_key))) / 100)
+            for role_key in job_roles
+            if role_key in student_roles
+        ]
+        contributions = sorted(contributions, key=lambda item: item[1], reverse=True)
+        matched_roles = [role_key for role_key, value in contributions if value > 0][:3]
+        role_alignment = min(
+            100.0,
+            (contributions[0][1] * 0.78 if contributions else 0)
+            + sum(value for _, value in contributions[1:3]) * 0.25,
+        )
+    keywords = split_job_keywords(job.get("keywords", ""))
+    keyword_hits = [keyword for keyword in keywords if keyword and keyword.lower() in corpus.lower()]
+    keyword_fit = 100.0 if keywords and len(keyword_hits) >= min(4, len(keywords)) else (
+        (len(keyword_hits) / max(1, min(6, len(keywords)))) * 100 if keywords else 48.0
+    )
+    derived = student.get("derived", {})
+    career_score = safe_float(derived.get("careerRankScore"))
+    participation_score = safe_float(derived.get("participationRankScore"))
+    collaboration_score = safe_float(derived.get("collaborationRankScore"))
+    initial_score = safe_float(derived.get("initialCapabilityRankScore"))
+    growth_score = safe_float(derived.get("growthRankScore"))
+    total_score = safe_float(derived.get("totalRankScore"))
+    experience_fit = student_experience_fit(student, job, corpus)
+    score = weighted_score(
+        [
+            (role_alignment, 0.30),
+            (career_score, 0.22),
+            (keyword_fit, 0.10),
+            (initial_score, 0.10),
+            (growth_score, 0.08),
+            (collaboration_score, 0.08),
+            (experience_fit, 0.06),
+            (participation_score, 0.06),
+        ]
+    )
+    if job_experience_level(job.get("experience", "")) >= 3 and experience_fit < 45:
+        score = min(score, 60.0)
+    elif job_experience_level(job.get("experience", "")) >= 2 and experience_fit < 55:
+        score = min(score, 68.0)
+    if career_score < 45:
+        score = min(score, 62.0)
+    elif career_score < 55:
+        score = min(score, 68.0)
+    elif career_score < 65:
+        score = min(score, 76.0)
+    if total_score and total_score < 60:
+        score = min(score, 66.0)
+    if collaboration_score < 50:
+        score = min(score, 69.0)
+    if role_alignment < 35:
+        score = min(score, 62.0)
+    elif role_alignment < 50:
+        score = min(score, 70.0)
+    if keyword_fit < 35:
+        score = min(score, 72.0)
+    primary_role = matched_roles[0] if matched_roles else next(iter(job_roles), "")
+    reasons = []
+    if primary_role:
+        reasons.append(f"{JOB_ROLE_META.get(primary_role, {}).get('label', primary_role)} 접점")
+    if keyword_hits:
+        reasons.append("키워드 일치: " + ", ".join(keyword_hits[:4]))
+    if experience_fit < 60:
+        reasons.append(f"경력요구({job.get('experience', '-')}) 대비 보완 필요")
+    else:
+        reasons.append(f"경력요구 {job.get('experience', '-')}")
+    return {
+        "id": job.get("id", ""),
+        "title": clean_text(job.get("title", "")),
+        "company": clean_text(job.get("company", "")),
+        "score": round(score, 2),
+        "roleAlignment": round(role_alignment, 2),
+        "keywordFit": round(keyword_fit, 2),
+        "experienceFit": round(experience_fit, 2),
+        "matchedRoles": matched_roles,
+        "primaryRole": primary_role,
+        "keywords": keywords,
+        "experience": clean_text(job.get("experience", "")),
+        "employmentType": clean_text(job.get("employmentType", "")),
+        "deadline": clean_text(job.get("deadline", "")),
+        "updatedAt": clean_text(job.get("updatedAt", "")),
+        "link": clean_text(job.get("link", "")),
+        "reasons": reasons[:4],
+    }
+
+
+def job_fit_label(score: float) -> str:
+    if score >= 85:
+        return "즉시 지원 후보"
+    if score >= 68:
+        return "포트폴리오 보완 후 지원"
+    if score >= 56:
+        return "탐색/준비 후보"
+    return "우선순위 낮음"
+
+
+def job_fit_gaps(student: dict[str, Any], top_match: dict[str, Any] | None) -> list[str]:
+    gaps = []
+    derived = student.get("derived", {})
+    if safe_float(derived.get("careerRankScore")) < 65:
+        gaps.append("지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다.")
+    if safe_float(derived.get("collaborationRankScore")) < 58:
+        gaps.append("팀 프로젝트 역할과 동료 평가 근거를 면접용 사례로 정리해야 합니다.")
+    if top_match and top_match.get("experienceFit", 100) < 60:
+        gaps.append(f"상위 매칭 공고의 경력 조건({top_match.get('experience', '-')})을 대체할 포트폴리오 근거가 필요합니다.")
+    if top_match and top_match.get("keywordFit", 0) < 45:
+        gaps.append("공고 키워드와 직접 연결되는 기획서 제목/요약 문장을 보강해야 합니다.")
+    return gaps[:4] or ["현재 상위 매칭 공고 기준으로 큰 결격보다 포트폴리오 선명도 보완이 우선입니다."]
+
+
+def build_job_market_analysis(jobs: list[dict[str, Any]]) -> dict[str, Any]:
+    role_counter: Counter[str] = Counter()
+    experience_counter: Counter[str] = Counter()
+    keyword_counter: Counter[str] = Counter()
+    latest_dates = []
+    enriched_jobs = []
+    for job in jobs:
+        if "게임기획" not in clean_text(job.get("jobField", "")):
+            continue
+        if is_training_or_education_job(job):
+            continue
+        role_scores = detect_job_roles(job)
+        enriched = {**job, "roleScores": role_scores}
+        enriched_jobs.append(enriched)
+        for role_key in list(role_scores.keys())[:2]:
+            role_counter[role_key] += 1
+        experience_counter[clean_text(job.get("experience", "")) or "미기재"] += 1
+        for keyword in split_job_keywords(job.get("keywords", "")):
+            keyword_counter[keyword] += 1
+        if parse_date(job.get("updatedAt", "")):
+            latest_dates.append(parse_date(job.get("updatedAt", "")))
+    latest_date = max(latest_dates).isoformat() if latest_dates else ""
+    return {
+        "sourceUrl": GAMEJOB_SOURCE_URL,
+        "sourceFile": str(GAMEJOB_JOBS_FILE.relative_to(ROOT)).replace("\\", "/") if GAMEJOB_JOBS_FILE.exists() else "",
+        "latestUpdatedAt": latest_date,
+        "totalJobs": len(jobs),
+        "planningJobs": len(enriched_jobs),
+        "roleSummary": [
+            {"key": key, "label": JOB_ROLE_META.get(key, {}).get("label", key), "count": count}
+            for key, count in role_counter.most_common()
+        ],
+        "experienceSummary": [
+            {"label": key, "count": count}
+            for key, count in experience_counter.most_common()
+        ],
+        "keywordSummary": [
+            {"label": key, "count": count}
+            for key, count in keyword_counter.most_common(24)
+        ],
+        "jobs": enriched_jobs,
+    }
+
+
+def apply_job_fit_analysis(students: list[dict[str, Any]], job_market: dict[str, Any]) -> None:
+    jobs = job_market.get("jobs", [])
+    for student in students:
+        if student.get("managementStatus") == "이탈":
+            student["jobFit"] = {
+                "score": 0,
+                "label": "과정이탈",
+                "summary": "과정이탈 학생은 현재 직무 매칭 우선순위에서 제외합니다.",
+                "topRoles": [],
+                "recommendedJobs": [],
+                "gaps": [],
+            }
+            continue
+        corpus = student_job_corpus(student)
+        role_profile = student_role_profile(student)
+        matches = [
+            match_job_to_student(student, job, role_profile, corpus)
+            for job in jobs
+        ]
+        matches = sorted(matches, key=lambda item: item["score"], reverse=True)
+        strong_matches = [item for item in matches if item["score"] >= 68]
+        top_roles = [
+            {
+                "key": role_key,
+                "label": JOB_ROLE_META.get(role_key, {}).get("label", role_key),
+                "score": round(score, 2),
+                "marketCount": next((item["count"] for item in job_market.get("roleSummary", []) if item["key"] == role_key), 0),
+            }
+            for role_key, score in list(role_profile.items())[:5]
+        ]
+        best = matches[0] if matches else None
+        score = best["score"] if best else 0
+        student["jobFit"] = {
+            "score": round(score, 2),
+            "label": job_fit_label(score),
+            "summary": f"{top_roles[0]['label'] if top_roles else '직무'} 중심으로 {len(strong_matches)}개 공고가 68점 이상 매칭됩니다." if best else "매칭 가능한 공고 데이터가 없습니다.",
+            "marketDate": job_market.get("latestUpdatedAt", ""),
+            "sourceUrl": job_market.get("sourceUrl", ""),
+            "topRoles": top_roles,
+            "recommendedJobs": matches[:6],
+            "matchedJobCount": len(strong_matches),
+            "gaps": job_fit_gaps(student, best),
+            "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다.",
+        }
+
+
 def enrich_student_analysis(
     students: list[dict[str, Any]],
     curriculum: dict[str, Any],
@@ -6383,6 +7035,14 @@ def build_payload() -> dict[str, Any]:
     cap_student_records_to_observation_window(students, curriculum)
     build_evaluation_and_status(students, curriculum, weeks, phase_dates)
     phase_ranges, analysis = enrich_student_analysis(students, curriculum, phase_dates)
+    gamejob_jobs = load_gamejob_jobs()
+    gamejob_market = build_job_market_analysis(gamejob_jobs)
+    apply_job_fit_analysis(students, gamejob_market)
+    public_gamejob_market = {
+        key: value
+        for key, value in gamejob_market.items()
+        if key != "jobs"
+    }
 
     students = sorted(students, key=lambda item: item["name"])
     payload = {
@@ -6390,6 +7050,8 @@ def build_payload() -> dict[str, Any]:
         "curriculum": curriculum,
         "milestones": analysis["milestones"],
         "dashboard": analysis["dashboard"],
+        "jobMarket": public_gamejob_market,
+        "dataIntegrityAudit": build_data_integrity_audit(students),
         "projectPhases": [
             {
                 "phase": phase,

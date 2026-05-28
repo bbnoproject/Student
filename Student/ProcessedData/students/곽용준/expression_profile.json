@@ -10,21 +10,23 @@
     "cadetCard": 1,
     "checkin": 27,
     "retro": 1,
-    "careerDocument": 0
+    "careerDocument": 0,
+    "morningPresentation": 3,
+    "practiceSubmission": 8
   },
-  "sourceTotal": 30,
-  "textLength": 4571,
+  "sourceTotal": 41,
+  "textLength": 6679,
   "dimensions": {
     "specificity": {
       "label": "구체성",
-      "score": 3.25,
-      "evidence": "구체 표현 6종 · 반복 10회 · 문서 5건",
+      "score": 4.0,
+      "evidence": "구체 표현 8종 · 반복 15회 · 문서 9건",
       "level": "높음"
     },
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 6종 · 반복 30회 · 문서 9건",
+      "evidence": "실행/개선 표현 6종 · 반복 32회 · 문서 11건",
       "level": "높음"
     },
     "reflection": {
@@ -35,14 +37,14 @@
     },
     "relation": {
       "label": "관계/협업 언어",
-      "score": 3.86,
-      "evidence": "관계/협업 표현 5종 · 반복 20회 · 문서 11건",
+      "score": 4.0,
+      "evidence": "관계/협업 표현 5종 · 반복 21회 · 문서 12건",
       "level": "높음"
     },
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 20종 · 반복 42회 · 문서 14건",
+      "evidence": "진로/직무 표현 26종 · 반복 78회 · 문서 21건",
       "level": "높음"
     },
     "emotion": {
@@ -53,17 +55,19 @@
     },
     "uncertainty": {
       "label": "탐색/불확실 표현",
-      "score": 2.61,
-      "evidence": "탐색/불확실 표현 4종 · 반복 6회 · 문서 4건",
+      "score": 2.94,
+      "evidence": "탐색/불확실 표현 4종 · 반복 7회 · 문서 5건",
       "level": "보통"
     }
   },
   "dominantTraits": [
+    "구체성",
     "주도성 표현",
-    "진로 언어",
     "관계/협업 언어"
   ],
-  "cautionTraits": [],
+  "cautionTraits": [
+    "탐색/불확실 표현"
+  ],
   "samples": [
     {
       "label": "모집서류",
@@ -81,5 +85,5 @@
       "excerpt": "기획에 대하여 1. 팀에서 의도한 방향성을 기획하고 매일 확인을 받았습니다 2. 다른 팀원분들도 이해할 수 있도록 매일 화면 공유로 점검 받았습니다 3. 기획서의 내용이 부족하면 구두로 확인받고 즉각 수정, 피드백 후 반영하였습니다 협업에 대하여 1. 건설적인 대화를 진행 후 18:00 전 평가를 진행하였습니다 2. 작…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+  "summary": "학생이 직접 작성한 자료 41건에서 구체성, 주도성 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
 }

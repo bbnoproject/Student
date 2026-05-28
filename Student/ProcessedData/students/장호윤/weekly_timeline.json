@@ -40,7 +40,7 @@
       {
         "type": "staff_profile",
         "title": "운영진 학생 정보 기록",
-        "summary": "🔖 (업데이트 날짜 : )",
+        "summary": "운영진 학생 정보가 기록되었습니다.",
         "severity": "info",
         "date": ""
       }
@@ -493,7 +493,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -1087,7 +1087,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",

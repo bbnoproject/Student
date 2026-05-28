@@ -156,6 +156,13 @@
     "headline": "출결 배경 확인이 필요한 구간",
     "notes": [
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "일본으로의 게임 기획자 취업 경험 공유",
+        "severity": "info",
+        "date": "2026-01-02"
+      },
+      {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
         "summary": "지각 (국취제)",
@@ -353,7 +360,22 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "conventional commits",
+        "severity": "success",
+        "date": "2026-02-05"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "오샤베리킹 카피 게임 제작 발표",
+        "severity": "info",
+        "date": "2026-02-03"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -556,9 +578,16 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "info",
+    "severity": "stable",
     "headline": "안정적인 학습 흐름",
     "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "SEGA 게임 플래너 직무 소개",
+        "severity": "success",
+        "date": "2026-03-10"
+      },
       {
         "type": "attendance",
         "title": "출결 이슈 · 지각",

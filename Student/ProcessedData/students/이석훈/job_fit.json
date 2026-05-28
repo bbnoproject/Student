@@ -1,0 +1,280 @@
+{
+  "score": 53.78,
+  "label": "우선순위 낮음",
+  "summary": "시장/BM/유저 분석 중심으로 0개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "market_bm",
+      "label": "시장/BM/유저 분석",
+      "score": 31.7,
+      "marketCount": 63
+    },
+    {
+      "key": "narrative_world",
+      "label": "시나리오/세계관 기획",
+      "score": 28.35,
+      "marketCount": 96
+    },
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 18.39,
+      "marketCount": 90
+    },
+    {
+      "key": "technical_ai",
+      "label": "테크니컬/AI 활용 기획",
+      "score": 16.49,
+      "marketCount": 50
+    },
+    {
+      "key": "ui_ux",
+      "label": "UI/UX/플랫폼 기획",
+      "score": 13.96,
+      "marketCount": 47
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-279446",
+      "title": "[퍼즐원스튜디오] 모바일캐주얼 퍼즐게임 콘텐츠기획자",
+      "company": "퍼즐원스튜디오",
+      "score": 53.78,
+      "roleAlignment": 31.96,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "content_live",
+        "technical_ai"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "게임기획",
+        "시스템기획",
+        "AI",
+        "콘텐츠",
+        "콘텐츠기획",
+        "유니티",
+        "데이터분석",
+        "게임디자인",
+        "모바일게임",
+        "캐주얼",
+        "퍼즐"
+      ],
+      "experience": "무관",
+      "employmentType": "계약직 (계약기간 : 6개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279446",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: 게임기획, 콘텐츠, 유니티, 퍼즐",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-277809",
+      "title": "[글로벌 캐주얼 프로젝트] 게임 기획자 모집",
+      "company": "드리모",
+      "score": 53.62,
+      "roleAlignment": 31.45,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "content_live",
+        "technical_ai"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "PM",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=277809",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: UX, UI, 레벨, 게임기획",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-280503",
+      "title": "[신규 프로젝트] 시나리오 / 캐릭터 설정 기획 모집",
+      "company": "슈퍼플럭스",
+      "score": 52.56,
+      "roleAlignment": 27.92,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "market_bm",
+        "technical_ai"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=280503",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: UX, UI, 게임기획, 시나리오",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278030",
+      "title": "[순천] 웹툰 IP 기반 스토리 어드벤처 게임 개발 인재 모집(기획/프로그래머)",
+      "company": "㈜루노소프트",
+      "score": 52.35,
+      "roleAlignment": 27.22,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "content_live",
+        "market_bm"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "UX",
+        "UI",
+        "배경",
+        "원화",
+        "일러스트",
+        "캐릭터원화",
+        "컨셉",
+        "배경원화",
+        "포토샵",
+        "이펙트",
+        "게임기획",
+        "시나리오"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 계약직 (계약기간 : 협의 후 결정), 인턴직 (협의 후 결정)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278030",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: UX, UI, 배경, 게임기획",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278504",
+      "title": "[나날이 스튜디오] 게임 기획자",
+      "company": "㈜나날이",
+      "score": 52.1,
+      "roleAlignment": 26.37,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "content_live",
+        "narrative_world"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "PM",
+        "PD",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 계약직 후 정규직 전환 검토 (계약기간 : 협의 후 결정)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278504",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: UX, UI, 레벨, 게임기획",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279875",
+      "title": "[부산] 게임 기획자 모집",
+      "company": "㈜블루솜",
+      "score": 51.6,
+      "roleAlignment": 24.7,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "market_bm",
+        "content_live"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 계약직 후 정규직 전환 검토 (계약기간 : 3개월)",
+      "deadline": "~ 07/07(화)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279875",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: UX, UI, 레벨, 게임기획",
+        "경력요구 무관"
+      ]
+    }
+  ],
+  "matchedJobCount": 0,
+  "gaps": [
+    "지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접용 사례로 정리해야 합니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

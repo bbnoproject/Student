@@ -10,10 +10,12 @@
     "cadetCard": 1,
     "checkin": 14,
     "retro": 1,
-    "careerDocument": 1
+    "careerDocument": 1,
+    "morningPresentation": 0,
+    "practiceSubmission": 1
   },
-  "sourceTotal": 18,
-  "textLength": 7891,
+  "sourceTotal": 19,
+  "textLength": 8160,
   "dimensions": {
     "specificity": {
       "label": "구체성",
@@ -23,8 +25,8 @@
     },
     "agency": {
       "label": "주도성 표현",
-      "score": 2.72,
-      "evidence": "실행/개선 표현 4종 · 반복 13회 · 문서 6건",
+      "score": 3.08,
+      "evidence": "실행/개선 표현 4종 · 반복 15회 · 문서 7건",
       "level": "보통"
     },
     "reflection": {
@@ -42,7 +44,7 @@
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 25종 · 반복 120회 · 문서 13건",
+      "evidence": "진로/직무 표현 26종 · 반복 125회 · 문서 14건",
       "level": "높음"
     },
     "emotion": {
@@ -61,7 +63,7 @@
   "dominantTraits": [
     "진로 언어",
     "구체성",
-    "관계/협업 언어"
+    "주도성 표현"
   ],
   "cautionTraits": [],
   "samples": [
@@ -86,5 +88,5 @@
       "excerpt": "자기소개서 목차 1. 지원동기 2. 경험 3. 직무 역량 4. 마무리 저는 게임과 콘텐츠를 연결하는 기획자 입니다 지원동기 저는 처음에는 웹툰 작가를 목표로 했습니다. 제가 직접 만든 세계관 건설을 원했기 때문입니다. 그러나 그림체 발전에 한계를 부딪혔고, 결국 다른 직업을 찾게 되었습니다. 그 과정에서 게임 제작에 관…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 18건에서 진로 언어, 구체성, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+  "summary": "학생이 직접 작성한 자료 19건에서 진로 언어, 구체성, 주도성 표현 중심의 표현 특징이 관찰됩니다."
 }

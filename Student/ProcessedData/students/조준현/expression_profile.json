@@ -10,10 +10,12 @@
     "cadetCard": 1,
     "checkin": 25,
     "retro": 2,
-    "careerDocument": 0
+    "careerDocument": 0,
+    "morningPresentation": 1,
+    "practiceSubmission": 6
   },
-  "sourceTotal": 29,
-  "textLength": 6199,
+  "sourceTotal": 36,
+  "textLength": 7763,
   "dimensions": {
     "specificity": {
       "label": "구체성",
@@ -24,14 +26,14 @@
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 7종 · 반복 36회 · 문서 14건",
+      "evidence": "실행/개선 표현 8종 · 반복 39회 · 문서 17건",
       "level": "높음"
     },
     "reflection": {
       "label": "성찰 표현",
-      "score": 2.91,
-      "evidence": "회고/개선 표현 4종 · 반복 18회 · 문서 4건",
-      "level": "보통"
+      "score": 3.35,
+      "evidence": "회고/개선 표현 5종 · 반복 19회 · 문서 5건",
+      "level": "높음"
     },
     "relation": {
       "label": "관계/협업 언어",
@@ -42,7 +44,7 @@
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 27종 · 반복 64회 · 문서 13건",
+      "evidence": "진로/직무 표현 29종 · 반복 82회 · 문서 19건",
       "level": "높음"
     },
     "emotion": {
@@ -53,9 +55,9 @@
     },
     "uncertainty": {
       "label": "탐색/불확실 표현",
-      "score": 2.99,
-      "evidence": "탐색/불확실 표현 5종 · 반복 10회 · 문서 6건",
-      "level": "보통"
+      "score": 3.31,
+      "evidence": "탐색/불확실 표현 5종 · 반복 11회 · 문서 7건",
+      "level": "높음"
     }
   },
   "dominantTraits": [
@@ -83,5 +85,5 @@
       "excerpt": "기획에 대하여 팀에게 명확한 방향성과 의도는 진행하였지만 결국 메인 컨셉 기획만 진행했을뿐 세부 기획서를 작성하였는가에 대해서는 답할 수 없습니다 특히 항상 프로젝트를 진행하면 개발 = 기획을 포지션을 묶어서 주는 팀장의 위험성을 다시금 느끼는 상황이 되었기에 중간에 제가 진행한 개발을 마크다운문서로 뽑아 ai와 사람…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 29건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+  "summary": "학생이 직접 작성한 자료 36건에서 주도성 표현, 진로 언어, 관계/협업 언어 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
 }

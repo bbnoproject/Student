@@ -494,6 +494,13 @@
     "headline": "안정적인 학습 흐름",
     "notes": [
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "프로젝트를 통해 배운 것을 적용한 데이터 테이블",
+        "severity": "info",
+        "date": "2026-03-11"
+      },
+      {
         "type": "attendance",
         "title": "출결 이슈 · 공가",
         "summary": "공가 (예비군)",

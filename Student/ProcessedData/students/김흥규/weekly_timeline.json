@@ -67,7 +67,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2025-12-08"
       }
@@ -82,7 +82,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -90,7 +90,7 @@
         "resilience"
       ],
       "confidence": "Medium",
-      "note": "회고 구조화 필요"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -263,7 +263,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2026-01-26"
       }
@@ -275,10 +275,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 3,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -289,7 +289,7 @@
         "selfRegulation"
       ],
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -461,7 +461,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "협업 상황 면담 권장",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2026-03-02"
       }
@@ -473,10 +473,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -487,7 +487,7 @@
         "selfRegulation"
       ],
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -1067,10 +1067,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",

@@ -16,10 +16,10 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "협업 상황 면담 권장"
@@ -55,7 +55,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -89,15 +89,15 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 3,
         "career_agency": 2
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "도전 대응 지원 필요"
     },
-    "latestProfileNote": "협업 상황 면담 권장",
+    "latestProfileNote": "도전 대응 지원 필요",
     "evidenceCount": 41,
     "projectRoles": [
       "팀원",
@@ -166,7 +166,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -311,10 +311,10 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "협업 상황 면담 권장"
@@ -351,7 +351,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "도전 대응 지원 필요"
@@ -410,18 +410,18 @@
     "name": "김수환",
     "course": "게임 기획 부트캠프",
     "currentStatus": "주의",
-    "projectSubmissionRate": 28.6,
+    "projectSubmissionRate": 66.7,
     "attendanceIssues": 18,
     "attendanceRiskIssues": 0,
     "counselingCount": 2,
     "latestCounselingDate": "2026-01-23",
     "latestSnapshot": {
       "snapshotId": "김수환-m6",
-      "snapshotDate": "2026-08-03",
+      "snapshotDate": "2026-03-16",
       "snapshotType": "4차 프로젝트 종료 ~ 종강",
       "scores": {
-        "self_regulation": 1,
-        "engagement": 1,
+        "self_regulation": 2,
+        "engagement": 2,
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
@@ -556,7 +556,7 @@
     "name": "김재환",
     "course": "게임 기획 부트캠프",
     "currentStatus": "안정",
-    "projectSubmissionRate": 100.0,
+    "projectSubmissionRate": 100,
     "attendanceIssues": 3,
     "attendanceRiskIssues": 0,
     "counselingCount": 2,
@@ -568,7 +568,7 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 2
@@ -600,15 +600,15 @@
     "latestCounselingDate": "2026-04-16",
     "latestSnapshot": {
       "snapshotId": "김지훈-m6",
-      "snapshotDate": "2026-08-03",
+      "snapshotDate": "2026-04-16",
       "snapshotType": "4차 프로젝트 종료 ~ 종강",
       "scores": {
         "self_regulation": 1,
         "engagement": 1,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -643,7 +643,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -680,12 +680,12 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "진로 목적성 구체화 필요"
     },
-    "latestProfileNote": "전반적으로 안정적인 성장 흐름",
+    "latestProfileNote": "진로 목적성 구체화 필요",
     "evidenceCount": 51,
     "projectRoles": [
       "팀원",
@@ -717,7 +717,7 @@
         "collaboration": 1,
         "resilience": 3,
         "reflection": 3,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -774,7 +774,7 @@
     "name": "김흥규",
     "course": "게임 기획 부트캠프",
     "currentStatus": "안정",
-    "projectSubmissionRate": 100.0,
+    "projectSubmissionRate": 100,
     "attendanceIssues": 2,
     "attendanceRiskIssues": 0,
     "counselingCount": 2,
@@ -786,10 +786,10 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -826,7 +826,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -860,10 +860,10 @@
       "scores": {
         "self_regulation": 2,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -897,15 +897,15 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "협업 상황 면담 권장"
     },
-    "latestProfileNote": "도전 대응 지원 필요",
+    "latestProfileNote": "협업 상황 면담 권장",
     "evidenceCount": 45,
     "projectRoles": [
       "팀원",
@@ -937,7 +937,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -1045,15 +1045,15 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "도전 대응 지원 필요"
     },
-    "latestProfileNote": "협업 상황 면담 권장",
+    "latestProfileNote": "도전 대응 지원 필요",
     "evidenceCount": 46,
     "projectRoles": [
       "팀원",
@@ -1085,7 +1085,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -1156,7 +1156,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 2
@@ -1193,7 +1193,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 4,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 3
@@ -1270,7 +1270,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -1304,7 +1304,7 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 2
@@ -1378,10 +1378,10 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 4,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "도전 대응 지원 필요"
@@ -1452,7 +1452,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
         "career_agency": 2
@@ -1492,7 +1492,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -1526,7 +1526,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 4,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 2
@@ -1563,7 +1563,7 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 3
@@ -1600,7 +1600,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 2
@@ -1632,7 +1632,7 @@
     "latestCounselingDate": "2026-01-21",
     "latestSnapshot": {
       "snapshotId": "이길준-m6",
-      "snapshotDate": "2026-08-03",
+      "snapshotDate": "2026-01-21",
       "snapshotType": "4차 프로젝트 종료 ~ 종강",
       "scores": {
         "self_regulation": 1,
@@ -1640,7 +1640,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 3,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "자기조절 지원 필요"
@@ -1669,15 +1669,15 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "진로 목적성 구체화 필요"
     },
-    "latestProfileNote": "협업 상황 면담 권장",
+    "latestProfileNote": "진로 목적성 구체화 필요",
     "evidenceCount": 43,
     "projectRoles": [
       "팀원",
@@ -1745,12 +1745,12 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 1
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "진로 목적성 구체화 필요"
     },
-    "latestProfileNote": "도전 대응 지원 필요",
+    "latestProfileNote": "진로 목적성 구체화 필요",
     "evidenceCount": 46,
     "projectRoles": [
       "팀원",
@@ -1782,12 +1782,12 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
     },
-    "latestProfileNote": "전반적으로 안정적인 성장 흐름",
+    "latestProfileNote": "건강 및 컨디션 변동 맥락을 함께 살필 필요",
     "evidenceCount": 45,
     "projectRoles": [
       "팀원",
@@ -1816,10 +1816,10 @@
       "scores": {
         "self_regulation": 1,
         "engagement": 2,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -1851,7 +1851,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "career_agency": 3
@@ -1888,10 +1888,10 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -1962,15 +1962,15 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 3,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
-      "note": "전반적으로 안정적인 성장 흐름"
+      "note": "협업 상황 면담 권장"
     },
-    "latestProfileNote": "전반적으로 안정적인 성장 흐름",
+    "latestProfileNote": "협업 상황 면담 권장",
     "evidenceCount": 50,
     "projectRoles": [
       "팀원",
@@ -2002,7 +2002,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2035,10 +2035,10 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2109,7 +2109,7 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 3,
         "reflection": 4,
         "career_agency": 2
@@ -2134,7 +2134,7 @@
     "name": "이형진",
     "course": "게임 기획 부트캠프",
     "currentStatus": "주의",
-    "projectSubmissionRate": 85.7,
+    "projectSubmissionRate": 82.8,
     "attendanceIssues": 6,
     "attendanceRiskIssues": 0,
     "counselingCount": 2,
@@ -2149,7 +2149,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2220,10 +2220,10 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2257,15 +2257,15 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
-      "note": "도전 대응 지원 필요"
+      "note": "진로 목적성 구체화 필요"
     },
-    "latestProfileNote": "도전 대응 지원 필요",
+    "latestProfileNote": "진로 목적성 구체화 필요",
     "evidenceCount": 48,
     "projectRoles": [
       "팀원",
@@ -2294,15 +2294,15 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
-      "note": "협업 상황 면담 권장"
+      "note": "도전 대응 지원 필요"
     },
-    "latestProfileNote": "협업 상황 면담 권장",
+    "latestProfileNote": "도전 대응 지원 필요",
     "evidenceCount": 41,
     "projectRoles": [
       "팀원",
@@ -2370,7 +2370,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2407,7 +2407,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "도전 대응 지원 필요"
@@ -2515,10 +2515,10 @@
       "scores": {
         "self_regulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "행정 및 외부 일정이 반복되어 맥락 확인 필요"
@@ -2592,7 +2592,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 3,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2627,7 +2627,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 3
+        "career_agency": 2
       },
       "confidence": "High",
       "note": "도전 대응 지원 필요"
@@ -2701,7 +2701,7 @@
         "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2760,14 +2760,14 @@
     "name": "한가영",
     "course": "게임 기획 부트캠프",
     "currentStatus": "집중 관찰",
-    "projectSubmissionRate": 0.0,
+    "projectSubmissionRate": 0,
     "attendanceIssues": 15,
     "attendanceRiskIssues": 0,
     "counselingCount": 1,
     "latestCounselingDate": "2026-01-05",
     "latestSnapshot": {
       "snapshotId": "한가영-m6",
-      "snapshotDate": "2026-08-03",
+      "snapshotDate": "2026-01-09",
       "snapshotType": "4차 프로젝트 종료 ~ 종강",
       "scores": {
         "self_regulation": 1,
@@ -2807,7 +2807,7 @@
         "collaboration": 3,
         "resilience": 1,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"
@@ -2878,10 +2878,10 @@
       "scores": {
         "self_regulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 1,
         "reflection": 4,
-        "career_agency": 2
+        "career_agency": 1
       },
       "confidence": "High",
       "note": "건강 및 컨디션 변동 맥락을 함께 살필 필요"

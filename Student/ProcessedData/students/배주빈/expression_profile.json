@@ -10,10 +10,12 @@
     "cadetCard": 1,
     "checkin": 29,
     "retro": 2,
-    "careerDocument": 1
+    "careerDocument": 1,
+    "morningPresentation": 3,
+    "practiceSubmission": 8
   },
-  "sourceTotal": 34,
-  "textLength": 23378,
+  "sourceTotal": 45,
+  "textLength": 25348,
   "dimensions": {
     "specificity": {
       "label": "구체성",
@@ -24,7 +26,7 @@
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 11종 · 반복 91회 · 문서 23건",
+      "evidence": "실행/개선 표현 11종 · 반복 99회 · 문서 27건",
       "level": "높음"
     },
     "reflection": {
@@ -42,7 +44,7 @@
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 26종 · 반복 166회 · 문서 27건",
+      "evidence": "진로/직무 표현 28종 · 반복 188회 · 문서 35건",
       "level": "높음"
     },
     "emotion": {
@@ -53,8 +55,8 @@
     },
     "uncertainty": {
       "label": "탐색/불확실 표현",
-      "score": 3.66,
-      "evidence": "탐색/불확실 표현 4종 · 반복 20회 · 문서 10건",
+      "score": 4.0,
+      "evidence": "탐색/불확실 표현 4종 · 반복 22회 · 문서 11건",
       "level": "높음"
     }
   },
@@ -89,5 +91,5 @@
       "excerpt": "“ 누군가의 스팀 라이브러리에 담겨지기위해 ” [무력했던 과거와 성장] 게임 개발 관련 지식은 물론이고 MS Office 나 PPT, 발표 같은 실무에 관련된 많은 것들이 전무했고 넘어야 할 벽도 많았습니다. 단순히 유저가 아닌 창작자가 되고 싶다는 열망 하나가 벽을 넘기 위한 동력이 되었고 자연스레 배움의 과정을 걷게…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 34건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+  "summary": "학생이 직접 작성한 자료 45건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
 }

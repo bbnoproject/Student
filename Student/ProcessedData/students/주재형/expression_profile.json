@@ -10,27 +10,29 @@
     "cadetCard": 1,
     "checkin": 25,
     "retro": 2,
-    "careerDocument": 1
+    "careerDocument": 1,
+    "morningPresentation": 0,
+    "practiceSubmission": 11
   },
-  "sourceTotal": 30,
-  "textLength": 7269,
+  "sourceTotal": 41,
+  "textLength": 9788,
   "dimensions": {
     "specificity": {
       "label": "구체성",
-      "score": 3.33,
-      "evidence": "구체 표현 6종 · 반복 10회 · 문서 6건",
+      "score": 3.92,
+      "evidence": "구체 표현 6종 · 반복 15회 · 문서 9건",
       "level": "높음"
     },
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 7종 · 반복 30회 · 문서 8건",
+      "evidence": "실행/개선 표현 7종 · 반복 31회 · 문서 9건",
       "level": "높음"
     },
     "reflection": {
       "label": "성찰 표현",
-      "score": 3.79,
-      "evidence": "회고/개선 표현 5종 · 반복 33회 · 문서 6건",
+      "score": 4.0,
+      "evidence": "회고/개선 표현 5종 · 반복 35회 · 문서 8건",
       "level": "높음"
     },
     "relation": {
@@ -42,7 +44,7 @@
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 24종 · 반복 87회 · 문서 19건",
+      "evidence": "진로/직무 표현 29종 · 반복 128회 · 문서 29건",
       "level": "높음"
     },
     "emotion": {
@@ -60,8 +62,8 @@
   },
   "dominantTraits": [
     "주도성 표현",
-    "진로 언어",
-    "성찰 표현"
+    "성찰 표현",
+    "진로 언어"
   ],
   "cautionTraits": [
     "정서/부담 표현"
@@ -88,5 +90,5 @@
       "excerpt": "현실적인 구현 감각으로 아이디어를 구체화하는 기획자 주재형입니다. 성장과정 저는 4 남매 가정에서 자랐습니다. 즐거운 순간도 많았고, 그렇지 않은 순간도 많았습니다. 그 시간들 속에서 저는 장기적인 인간관계의 본질을 체득했습니다. 상대의 성격을 이해하고 배려하는 것. 서로의 자존심은 잠시 접어 두는 것. 가끔은 서로 엇…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 30건에서 주도성 표현, 진로 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
+  "summary": "학생이 직접 작성한 자료 41건에서 주도성 표현, 성찰 표현, 진로 언어 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현은 개인 맥락과 함께 확인합니다."
 }

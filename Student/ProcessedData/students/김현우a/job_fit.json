@@ -1,0 +1,281 @@
+{
+  "score": 52.22,
+  "label": "우선순위 낮음",
+  "summary": "시장/BM/유저 분석 중심으로 0개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "market_bm",
+      "label": "시장/BM/유저 분석",
+      "score": 27.2,
+      "marketCount": 63
+    },
+    {
+      "key": "system_balance",
+      "label": "시스템/밸런스 기획",
+      "score": 21.34,
+      "marketCount": 155
+    },
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 18.73,
+      "marketCount": 90
+    },
+    {
+      "key": "narrative_world",
+      "label": "시나리오/세계관 기획",
+      "score": 18.0,
+      "marketCount": 96
+    },
+    {
+      "key": "level_design",
+      "label": "레벨/던전/퀘스트 기획",
+      "score": 12.39,
+      "marketCount": 119
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-279823",
+      "title": "[미스틸게임즈] Gray Studio 채용",
+      "company": "㈜미스틸게임즈(Mistil Games)",
+      "score": 52.22,
+      "roleAlignment": 16.9,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "system_balance",
+        "level_design"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "배경",
+        "레벨",
+        "원화",
+        "캐릭터원화",
+        "컨셉",
+        "배경원화",
+        "캐릭터",
+        "애니메이션",
+        "이펙트",
+        "FX",
+        "게임기획",
+        "시나리오"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "~ 05/31(일)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279823",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 배경, 레벨, 원화, 캐릭터",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278431",
+      "title": "2026년 웹젠레드스타 수시채용",
+      "company": "(주)웹젠",
+      "score": 51.19,
+      "roleAlignment": 13.46,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "narrative_world",
+        "level_design"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "C++",
+        "모바일",
+        "배경",
+        "레벨",
+        "원화",
+        "컨셉",
+        "배경원화",
+        "캐릭터",
+        "게임기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "~ 06/30(화)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278431",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 배경, 레벨, 원화, 캐릭터",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-242585",
+      "title": "[블루아카이브] 기획, 프로그래밍, 아트 전분야, PM, QA 모집",
+      "company": "㈜넥슨게임즈",
+      "score": 51.13,
+      "roleAlignment": 13.26,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "level_design",
+        "content_live"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "클라이언트",
+        "VisualC",
+        "VisualC++",
+        "C++",
+        "배경",
+        "원화",
+        "캐릭터원화",
+        "배경원화",
+        "포토샵",
+        "몬스터",
+        "모델링",
+        "캐릭터"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=242585",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 배경, 원화, 모델링, 캐릭터",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-242584",
+      "title": "[DX 스튜디오] 전분야 모집",
+      "company": "㈜넥슨게임즈",
+      "score": 50.9,
+      "roleAlignment": 12.49,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "narrative_world",
+        "level_design"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "클라이언트",
+        "VisualC",
+        "VisualC++",
+        "C++",
+        "배경",
+        "원화",
+        "캐릭터원화",
+        "배경원화",
+        "포토샵",
+        "몬스터",
+        "모델링",
+        "캐릭터"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=242584",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 배경, 원화, 모델링, 캐릭터",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-242612",
+      "title": "[던전앤파이터 아라드] 전분야 모집",
+      "company": "㈜넥슨게임즈",
+      "score": 50.76,
+      "roleAlignment": 12.02,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "level_design",
+        "narrative_world"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "클라이언트",
+        "VisualC",
+        "VisualC++",
+        "C++",
+        "배경",
+        "원화",
+        "캐릭터원화",
+        "배경원화",
+        "포토샵",
+        "몬스터",
+        "모델링",
+        "캐릭터"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=242612",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 배경, 원화, 모델링, 캐릭터",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-242587",
+      "title": "[퍼스트 디센던트] 기획, 프로그래밍, 아트 전분야, 영상/연출 모집",
+      "company": "㈜넥슨게임즈",
+      "score": 50.76,
+      "roleAlignment": 12.04,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "system_balance",
+        "market_bm",
+        "content_live"
+      ],
+      "primaryRole": "system_balance",
+      "keywords": [
+        "클라이언트",
+        "VisualC",
+        "VisualC++",
+        "C++",
+        "배경",
+        "원화",
+        "캐릭터원화",
+        "배경원화",
+        "포토샵",
+        "몬스터",
+        "모델링",
+        "캐릭터"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=242587",
+      "reasons": [
+        "시스템/밸런스 기획 접점",
+        "키워드 일치: 배경, 원화, 모델링, 캐릭터",
+        "경력요구 무관"
+      ]
+    }
+  ],
+  "matchedJobCount": 0,
+  "gaps": [
+    "지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접용 사례로 정리해야 합니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

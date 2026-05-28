@@ -1,0 +1,269 @@
+{
+  "score": 83.31,
+  "label": "포트폴리오 보완 후 지원",
+  "summary": "콘텐츠/라이브 기획 중심으로 77개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 81.52,
+      "marketCount": 90
+    },
+    {
+      "key": "narrative_world",
+      "label": "시나리오/세계관 기획",
+      "score": 74.5,
+      "marketCount": 96
+    },
+    {
+      "key": "level_design",
+      "label": "레벨/던전/퀘스트 기획",
+      "score": 61.5,
+      "marketCount": 119
+    },
+    {
+      "key": "market_bm",
+      "label": "시장/BM/유저 분석",
+      "score": 43.3,
+      "marketCount": 63
+    },
+    {
+      "key": "pm_leadership",
+      "label": "PM/프로젝트 관리",
+      "score": 30.98,
+      "marketCount": 61
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-279921",
+      "title": "[신입] MMORPG 보상 콘텐츠 기획자",
+      "company": "㈜이스트게임즈",
+      "score": 83.31,
+      "roleAlignment": 85.07,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "content_live",
+        "narrative_world",
+        "level_design"
+      ],
+      "primaryRole": "content_live",
+      "keywords": [
+        "모바일",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "밸런스기획",
+        "컨텐츠"
+      ],
+      "experience": "신입",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279921",
+      "reasons": [
+        "콘텐츠/라이브 기획 접점",
+        "키워드 일치: 모바일, 컨셉, 게임기획, 시나리오",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-278504",
+      "title": "[나날이 스튜디오] 게임 기획자",
+      "company": "㈜나날이",
+      "score": 82.33,
+      "roleAlignment": 81.81,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "content_live",
+        "narrative_world",
+        "market_bm"
+      ],
+      "primaryRole": "content_live",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "PM",
+        "PD",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 계약직 후 정규직 전환 검토 (계약기간 : 협의 후 결정)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278504",
+      "reasons": [
+        "콘텐츠/라이브 기획 접점",
+        "키워드 일치: 모바일, UI, 레벨, 컨셉",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279920",
+      "title": "[경력] MMORPG 보상 콘텐츠 기획자",
+      "company": "㈜이스트게임즈",
+      "score": 82.23,
+      "roleAlignment": 85.07,
+      "keywordFit": 100.0,
+      "experienceFit": 82.0,
+      "matchedRoles": [
+        "content_live",
+        "narrative_world",
+        "level_design"
+      ],
+      "primaryRole": "content_live",
+      "keywords": [
+        "모바일",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "밸런스기획",
+        "컨텐츠"
+      ],
+      "experience": "경력 1년 이상",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279920",
+      "reasons": [
+        "콘텐츠/라이브 기획 접점",
+        "키워드 일치: 모바일, 컨셉, 게임기획, 시나리오",
+        "경력요구 경력 1년 이상"
+      ]
+    },
+    {
+      "id": "crawled-277809",
+      "title": "[글로벌 캐주얼 프로젝트] 게임 기획자 모집",
+      "company": "드리모",
+      "score": 82.17,
+      "roleAlignment": 81.27,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "content_live",
+        "market_bm",
+        "level_design"
+      ],
+      "primaryRole": "content_live",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "PM",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=277809",
+      "reasons": [
+        "콘텐츠/라이브 기획 접점",
+        "키워드 일치: 모바일, UI, 레벨, 컨셉",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-280503",
+      "title": "[신규 프로젝트] 시나리오 / 캐릭터 설정 기획 모집",
+      "company": "슈퍼플럭스",
+      "score": 81.97,
+      "roleAlignment": 80.59,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "content_live",
+        "level_design"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=280503",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 모바일, UI, 게임기획, 시나리오",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279188",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 퀘스트 디자이너 모집",
+      "company": "빅파이어게임즈",
+      "score": 81.12,
+      "roleAlignment": 77.76,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "level_design",
+        "content_live"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "PC",
+        "콘솔"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279188",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 레벨, 컨셉, 게임기획, 시나리오",
+        "경력요구 신입"
+      ]
+    }
+  ],
+  "matchedJobCount": 77,
+  "gaps": [
+    "현재 상위 매칭 공고 기준으로 큰 결격보다 포트폴리오 선명도 보완이 우선입니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

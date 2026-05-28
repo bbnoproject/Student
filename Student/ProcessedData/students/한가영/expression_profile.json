@@ -10,10 +10,12 @@
     "cadetCard": 0,
     "checkin": 0,
     "retro": 0,
-    "careerDocument": 0
+    "careerDocument": 0,
+    "morningPresentation": 0,
+    "practiceSubmission": 4
   },
-  "sourceTotal": 1,
-  "textLength": 262,
+  "sourceTotal": 5,
+  "textLength": 1287,
   "dimensions": {
     "specificity": {
       "label": "구체성",
@@ -23,14 +25,14 @@
     },
     "agency": {
       "label": "주도성 표현",
-      "score": 1.64,
-      "evidence": "실행/개선 표현 2종 · 반복 4회 · 문서 1건",
+      "score": 1.99,
+      "evidence": "실행/개선 표현 2종 · 반복 6회 · 문서 2건",
       "level": "낮음"
     },
     "reflection": {
       "label": "성찰 표현",
-      "score": 1.0,
-      "evidence": "회고/개선 표현 0종 · 반복 0회 · 문서 0건",
+      "score": 1.67,
+      "evidence": "회고/개선 표현 2종 · 반복 5회 · 문서 1건",
       "level": "낮음"
     },
     "relation": {
@@ -41,9 +43,9 @@
     },
     "career": {
       "label": "진로 언어",
-      "score": 1.67,
-      "evidence": "진로/직무 표현 2종 · 반복 5회 · 문서 1건",
-      "level": "낮음"
+      "score": 2.68,
+      "evidence": "진로/직무 표현 5종 · 반복 16회 · 문서 3건",
+      "level": "보통"
     },
     "emotion": {
       "label": "정서/부담 표현",
@@ -59,8 +61,7 @@
     }
   },
   "dominantTraits": [
-    "진로 언어",
-    "주도성 표현"
+    "진로 언어"
   ],
   "cautionTraits": [],
   "samples": [
@@ -70,5 +71,5 @@
       "excerpt": "비전공자로 초보지만 하는데까지 열심히 해보겠습니다. 게임기획자를 꿈꾸는데 꼭 취업까지 성공하고싶습니다. 게임기획자가 되고싶어서요 열심히 참여를 하여 좋은 게임 만들어서 제 가족들 먹여살리고 싶습니다. 열심히 하여 실질적은 결과를 만들어 내고 싶습니다. 꿈을 꾸었지만, 꿈꾸기만 하지않고 실제로 이뤄보고싶습니다! 게임 개발…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 1건에서 진로 언어, 주도성 표현 중심의 표현 특징이 관찰됩니다."
+  "summary": "학생이 직접 작성한 자료 5건에서 진로 언어 중심의 표현 특징이 관찰됩니다."
 }

@@ -332,7 +332,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "게임 검열",
+        "severity": "success",
+        "date": "2026-02-04"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -472,9 +480,16 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "stable",
+    "severity": "info",
     "headline": "안정적인 학습 흐름",
     "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "대한민국 게임업계의 이면, 크런치 문화",
+        "severity": "info",
+        "date": "2026-03-06"
+      },
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
@@ -490,7 +505,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2
@@ -735,6 +750,13 @@
     "severity": "info",
     "headline": "안정적인 학습 흐름",
     "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "4차 플젝 마무리",
+        "severity": "success",
+        "date": "2026-04-15"
+      },
       {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
@@ -1084,7 +1106,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2

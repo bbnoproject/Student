@@ -1,0 +1,281 @@
+{
+  "score": 63.47,
+  "label": "탐색/준비 후보",
+  "summary": "레벨/던전/퀘스트 기획 중심으로 0개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "level_design",
+      "label": "레벨/던전/퀘스트 기획",
+      "score": 46.79,
+      "marketCount": 119
+    },
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 45.57,
+      "marketCount": 90
+    },
+    {
+      "key": "system_balance",
+      "label": "시스템/밸런스 기획",
+      "score": 42.67,
+      "marketCount": 155
+    },
+    {
+      "key": "narrative_world",
+      "label": "시나리오/세계관 기획",
+      "score": 39.75,
+      "marketCount": 96
+    },
+    {
+      "key": "technical_ai",
+      "label": "테크니컬/AI 활용 기획",
+      "score": 20.27,
+      "marketCount": 50
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-278301",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 콘텐츠 디자이너 모집",
+      "company": "빅파이어게임즈",
+      "score": 63.47,
+      "roleAlignment": 48.69,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "content_live",
+        "narrative_world"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "PC",
+        "콘솔",
+        "SF"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278301",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 레벨, 컨셉, 게임기획, 시나리오",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-279188",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 퀘스트 디자이너 모집",
+      "company": "빅파이어게임즈",
+      "score": 63.17,
+      "roleAlignment": 47.71,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "narrative_world",
+        "content_live"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "PC",
+        "콘솔"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279188",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 레벨, 컨셉, 게임기획, 시나리오",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-280252",
+      "title": "[NX 스튜디오] [Project TAL] 게임 기획자 (계약직)",
+      "company": "㈜매드엔진",
+      "score": 61.94,
+      "roleAlignment": 43.6,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "narrative_world",
+        "system_balance"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "유료화"
+      ],
+      "experience": "무관",
+      "employmentType": "계약직 (계약기간 : 1년)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=280252",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 레벨, 컨셉, 게임기획, 시나리오",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278030",
+      "title": "[순천] 웹툰 IP 기반 스토리 어드벤처 게임 개발 인재 모집(기획/프로그래머)",
+      "company": "㈜루노소프트",
+      "score": 61.87,
+      "roleAlignment": 43.36,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "content_live",
+        "system_balance"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "UX",
+        "UI",
+        "배경",
+        "원화",
+        "일러스트",
+        "캐릭터원화",
+        "컨셉",
+        "배경원화",
+        "포토샵",
+        "이펙트",
+        "게임기획",
+        "시나리오"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 계약직 (계약기간 : 협의 후 결정), 인턴직 (협의 후 결정)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278030",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 배경, 컨셉, 게임기획, 시나리오",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279345",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 전투 디자이너 모집",
+      "company": "빅파이어게임즈",
+      "score": 61.62,
+      "roleAlignment": 42.54,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "narrative_world",
+        "content_live"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PM",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "PC",
+        "콘솔"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279345",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 레벨, 컨셉, 게임기획, 시나리오",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-279184",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] PVE 기획 디자이너 모집",
+      "company": "빅파이어게임즈",
+      "score": 61.62,
+      "roleAlignment": 42.54,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "narrative_world",
+        "content_live"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "PD",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "PC",
+        "콘솔",
+        "PVE"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279184",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 레벨, 컨셉, 게임기획, 시나리오",
+        "경력요구 신입"
+      ]
+    }
+  ],
+  "matchedJobCount": 0,
+  "gaps": [
+    "지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접용 사례로 정리해야 합니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

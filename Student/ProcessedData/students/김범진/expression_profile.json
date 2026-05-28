@@ -10,39 +10,41 @@
     "cadetCard": 1,
     "checkin": 26,
     "retro": 2,
-    "careerDocument": 1
+    "careerDocument": 1,
+    "morningPresentation": 2,
+    "practiceSubmission": 6
   },
-  "sourceTotal": 31,
-  "textLength": 8819,
+  "sourceTotal": 39,
+  "textLength": 10333,
   "dimensions": {
     "specificity": {
       "label": "구체성",
       "score": 4.0,
-      "evidence": "구체 표현 9종 · 반복 23회 · 문서 9건",
+      "evidence": "구체 표현 9종 · 반복 24회 · 문서 10건",
       "level": "높음"
     },
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 10종 · 반복 63회 · 문서 16건",
+      "evidence": "실행/개선 표현 10종 · 반복 66회 · 문서 18건",
       "level": "높음"
     },
     "reflection": {
       "label": "성찰 표현",
-      "score": 3.92,
-      "evidence": "회고/개선 표현 5종 · 반복 32회 · 문서 8건",
+      "score": 4.0,
+      "evidence": "회고/개선 표현 5종 · 반복 34회 · 문서 10건",
       "level": "높음"
     },
     "relation": {
       "label": "관계/협업 언어",
       "score": 4.0,
-      "evidence": "관계/협업 표현 8종 · 반복 53회 · 문서 16건",
+      "evidence": "관계/협업 표현 8종 · 반복 55회 · 문서 17건",
       "level": "높음"
     },
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 25종 · 반복 77회 · 문서 13건",
+      "evidence": "진로/직무 표현 27종 · 반복 110회 · 문서 18건",
       "level": "높음"
     },
     "emotion": {
@@ -61,7 +63,7 @@
   "dominantTraits": [
     "구체성",
     "주도성 표현",
-    "관계/협업 언어"
+    "성찰 표현"
   ],
   "cautionTraits": [],
   "samples": [
@@ -86,5 +88,5 @@
       "excerpt": "0 에서 1 을 만들어 낼 수 있는 지원자, 김범진입니다. 1. [핵심 가치] 기술의 토대 위에 설계하는 ' 살아있는 경험 ' 저는 게임을 단순한 오락의 집합체가 아닌, 유저가 새로운 세상과 교감하며 감정을 전이받는 ' 정교하게 설계된 상호작용의 총합 ' 이라고 믿습니다. 개발자로 활동하며 서비스의 뼈대를 만드는 법을…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 31건에서 구체성, 주도성 표현, 관계/협업 언어 중심의 표현 특징이 관찰됩니다."
+  "summary": "학생이 직접 작성한 자료 39건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다."
 }

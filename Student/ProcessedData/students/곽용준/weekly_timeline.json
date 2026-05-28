@@ -67,7 +67,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2025-12-08"
       }
@@ -82,7 +82,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -90,7 +90,7 @@
         "resilience"
       ],
       "confidence": "Medium",
-      "note": "회고 구조화 필요"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -231,6 +231,13 @@
         "date": "2026-01-15"
       },
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "서브컬쳐 (상)",
+        "severity": "info",
+        "date": "2026-01-12"
+      },
+      {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
         "summary": "지각 (늦잠)",
@@ -313,6 +320,13 @@
         "date": "2026-01-27"
       },
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "서브컬쳐 (중)",
+        "severity": "info",
+        "date": "2026-01-27"
+      },
+      {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
         "summary": "협업 상황 면담 권장",
@@ -358,9 +372,17 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "stable",
+    "severity": "info",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "서브컬쳐 (하)",
+        "severity": "info",
+        "date": "2026-02-02"
+      }
+    ],
     "snapshot": null
   },
   {

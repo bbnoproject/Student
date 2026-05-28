@@ -9,3 +9,612 @@ body[data-page="student"] .app-root {
 body[data-page="student"] .student-tabs {
   margin-top: -4px;
 }
+
+body[data-page="student"] .student-hero-grid {
+  align-items: start;
+}
+
+body[data-page="student"] .student-keyword-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 12px 0 14px;
+}
+
+body[data-page="student"] .student-keyword-strip > span {
+  min-height: 62px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body[data-page="student"] .student-keyword-strip em {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 800;
+  opacity: 0.72;
+}
+
+body[data-page="student"] .student-keyword-strip strong {
+  display: block;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+body[data-page="student"] .growth-map-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+body[data-page="student"] .growth-map-head,
+body[data-page="student"] .growth-map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.72fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+body[data-page="student"] .growth-map-head {
+  align-items: start;
+}
+
+body[data-page="student"] .growth-map-head p {
+  margin: 8px 0 0;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+body[data-page="student"] .growth-map-observation,
+body[data-page="student"] .growth-map-status-card,
+body[data-page="student"] .growth-map-direction-card,
+body[data-page="student"] .planner-color-card,
+body[data-page="student"] .growth-coaching-card,
+body[data-page="student"] .growth-strength-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+body[data-page="student"] .growth-map-observation {
+  padding: 12px 14px;
+  background: var(--secondary);
+}
+
+body[data-page="student"] .growth-map-observation span,
+body[data-page="student"] .growth-card-head span,
+body[data-page="student"] .planner-color-card > span,
+body[data-page="student"] .growth-coaching-card span,
+body[data-page="student"] .growth-section-title span,
+body[data-page="student"] .growth-strength-card span,
+body[data-page="student"] .growth-status-metrics span,
+body[data-page="student"] .growth-map-direction-card dt {
+  display: block;
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+body[data-page="student"] .growth-map-observation strong {
+  display: block;
+  margin-top: 6px;
+  line-height: 1.45;
+}
+
+body[data-page="student"] .growth-map-status-card,
+body[data-page="student"] .growth-map-direction-card {
+  padding: 16px;
+}
+
+body[data-page="student"] .planner-color-card,
+body[data-page="student"] .growth-coaching-card {
+  padding: 18px;
+}
+
+body[data-page="student"] .planner-color-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 5px solid currentColor;
+}
+
+body[data-page="student"] .planner-color-card h4 {
+  margin: 10px 0;
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1.35;
+}
+
+body[data-page="student"] .planner-color-card p,
+body[data-page="student"] .growth-coaching-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.65;
+}
+
+body[data-page="student"] .signature-evidence-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+body[data-page="student"] .signature-evidence-list em {
+  padding: 9px 10px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 68%, var(--secondary));
+  color: var(--text-soft);
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.45;
+}
+
+body[data-page="student"] .growth-coaching-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+body[data-page="student"] .growth-coaching-card strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+body[data-page="student"] .growth-card-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+body[data-page="student"] .growth-card-head strong {
+  max-width: 72%;
+  text-align: right;
+  line-height: 1.35;
+}
+
+body[data-page="student"] .growth-map-status-card p,
+body[data-page="student"] .growth-map-direction-card p {
+  margin: 12px 0 0;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+body[data-page="student"] .growth-status-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+
+body[data-page="student"] .growth-status-metrics > div {
+  min-height: 70px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body[data-page="student"] .growth-status-metrics strong {
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+body[data-page="student"] .growth-map-direction-card dl {
+  display: grid;
+  gap: 10px;
+  margin: 14px 0 0;
+}
+
+body[data-page="student"] .growth-map-direction-card div {
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+body[data-page="student"] .growth-map-direction-card dd {
+  margin: 4px 0 0;
+  line-height: 1.55;
+}
+
+body[data-page="student"] .growth-strength-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+body[data-page="student"] .growth-section-title {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+body[data-page="student"] .growth-section-title strong {
+  color: var(--text-soft);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+body[data-page="student"] .growth-strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body[data-page="student"] .growth-strength-card {
+  padding: 14px;
+}
+
+body[data-page="student"] .growth-strength-card h4 {
+  margin: 6px 0 8px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+body[data-page="student"] .growth-strength-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body[data-page="student"] .growth-strength-card small {
+  display: block;
+  margin-top: 10px;
+  color: var(--text-soft);
+  line-height: 1.45;
+}
+
+body[data-page="student"] .score-board-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+body[data-page="student"] .score-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr 1.2fr;
+  gap: 10px;
+}
+
+body[data-page="student"] .score-total-card,
+body[data-page="student"] .score-insight-card,
+body[data-page="student"] .score-board-row {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+body[data-page="student"] .score-total-card,
+body[data-page="student"] .score-insight-card {
+  min-height: 132px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body[data-page="student"] .score-total-card span,
+body[data-page="student"] .score-insight-card span,
+body[data-page="student"] .score-board-row span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+body[data-page="student"] .score-total-card strong {
+  color: inherit;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+body[data-page="student"] .score-insight-card strong {
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+body[data-page="student"] .score-total-card p,
+body[data-page="student"] .score-insight-card p,
+body[data-page="student"] .score-board-row p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+body[data-page="student"] .score-board-list {
+  display: grid;
+  gap: 8px;
+}
+
+body[data-page="student"] .score-board-row {
+  display: grid;
+  grid-template-columns: 120px minmax(160px, 1fr) minmax(220px, 1.2fr);
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+body[data-page="student"] .score-board-row.is-separate {
+  background: color-mix(in srgb, var(--warning-soft) 52%, var(--surface));
+}
+
+body[data-page="student"] .score-board-row div:first-child {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+body[data-page="student"] .score-board-row strong {
+  color: var(--text);
+}
+
+body[data-page="student"] .score-track {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--secondary);
+}
+
+body[data-page="student"] .score-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+}
+
+body[data-page="student"] .job-fit-panel {
+  display: grid;
+  gap: 16px;
+}
+
+body[data-page="student"] .job-fit-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid currentColor;
+  border-radius: 12px;
+}
+
+body[data-page="student"] .job-fit-hero div {
+  display: grid;
+  gap: 6px;
+}
+
+body[data-page="student"] .job-fit-hero span {
+  color: currentColor;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="student"] .job-fit-hero strong {
+  color: currentColor;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+body[data-page="student"] .job-fit-hero p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+body[data-page="student"] .soft-action {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 13px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+body[data-page="student"] .job-fit-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 14px;
+}
+
+body[data-page="student"] .job-fit-grid > section {
+  display: grid;
+  gap: 12px;
+}
+
+body[data-page="student"] .job-role-list,
+body[data-page="student"] .job-gap-list,
+body[data-page="student"] .job-card-list {
+  display: grid;
+  gap: 10px;
+}
+
+body[data-page="student"] .job-role-list article,
+body[data-page="student"] .job-gap-list p,
+body[data-page="student"] .job-match-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+body[data-page="student"] .job-role-list article {
+  display: grid;
+  gap: 9px;
+  padding: 12px;
+}
+
+body[data-page="student"] .job-role-list article > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+body[data-page="student"] .job-role-list strong {
+  color: var(--text);
+}
+
+body[data-page="student"] .job-role-list span,
+body[data-page="student"] .job-match-card small {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 850;
+}
+
+body[data-page="student"] .job-role-list i {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+}
+
+body[data-page="student"] .job-role-list i span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+body[data-page="student"] .job-gap-list p {
+  margin: 0;
+  padding: 11px 12px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+body[data-page="student"] .job-card-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body[data-page="student"] .job-match-card {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+body[data-page="student"] .job-match-card > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+body[data-page="student"] .job-match-card div span {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="student"] .job-match-card h4,
+body[data-page="student"] .job-match-card p,
+body[data-page="student"] .job-match-card small {
+  margin: 0;
+}
+
+body[data-page="student"] .job-match-card h4 {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+body[data-page="student"] .job-match-card p {
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1180px) {
+  body[data-page="student"] .growth-map-head,
+  body[data-page="student"] .growth-map-layout,
+  body[data-page="student"] .growth-strength-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="student"] .score-summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="student"] .growth-card-head strong {
+    max-width: none;
+  }
+
+  body[data-page="student"] .score-board-row {
+    grid-template-columns: 110px minmax(140px, 1fr);
+  }
+
+  body[data-page="student"] .job-fit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  body[data-page="student"] .score-board-row p {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  body[data-page="student"] .student-summary-head {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  body[data-page="student"] .compact-profile-score {
+    width: auto;
+    min-width: 88px;
+    padding: 10px;
+  }
+
+  body[data-page="student"] .compact-profile-score strong {
+    font-size: 1.25rem;
+  }
+
+  body[data-page="student"] .student-basic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 12px;
+  }
+
+  body[data-page="student"] .student-basic-grid > div:nth-child(3),
+  body[data-page="student"] .student-basic-grid > div:nth-child(5),
+  body[data-page="student"] .student-basic-grid > div:nth-child(6) {
+    grid-column: 1 / -1;
+  }
+
+  body[data-page="student"] .growth-card-head,
+  body[data-page="student"] .growth-section-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  body[data-page="student"] .growth-card-head strong {
+    text-align: left;
+  }
+
+  body[data-page="student"] .growth-status-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body[data-page="student"] .score-board-row {
+    grid-template-columns: 92px minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  body[data-page="student"] .job-fit-hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  body[data-page="student"] .job-card-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -10,15 +10,17 @@
     "cadetCard": 1,
     "checkin": 27,
     "retro": 2,
-    "careerDocument": 1
+    "careerDocument": 1,
+    "morningPresentation": 0,
+    "practiceSubmission": 4
   },
-  "sourceTotal": 32,
-  "textLength": 14961,
+  "sourceTotal": 36,
+  "textLength": 15971,
   "dimensions": {
     "specificity": {
       "label": "구체성",
       "score": 4.0,
-      "evidence": "구체 표현 6종 · 반복 25회 · 문서 9건",
+      "evidence": "구체 표현 6종 · 반복 28회 · 문서 11건",
       "level": "높음"
     },
     "agency": {
@@ -30,19 +32,19 @@
     "reflection": {
       "label": "성찰 표현",
       "score": 4.0,
-      "evidence": "회고/개선 표현 6종 · 반복 66회 · 문서 5건",
+      "evidence": "회고/개선 표현 6종 · 반복 68회 · 문서 6건",
       "level": "높음"
     },
     "relation": {
       "label": "관계/협업 언어",
       "score": 4.0,
-      "evidence": "관계/협업 표현 10종 · 반복 48회 · 문서 7건",
+      "evidence": "관계/협업 표현 10종 · 반복 49회 · 문서 8건",
       "level": "높음"
     },
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 24종 · 반복 115회 · 문서 17건",
+      "evidence": "진로/직무 표현 26종 · 반복 137회 · 문서 21건",
       "level": "높음"
     },
     "emotion": {
@@ -89,5 +91,5 @@
       "excerpt": "자기소개서. (시나리오 기획자 ver.) 장윤우 목차 1. 성장과정 2. 직무 지원 동기 3. 주요 경험 4. 입사 후 포부 새가 높은 나무에 앉았다면, 그것은 나무를 믿은 것이 아니라 자신의 날개를 믿는 것이다. 저 자신의 날개를 믿고 날아오를 기획자, 장윤우입니다. 1. 성장과정 - 폭풍 속에서 살아남는 법을 배우다…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+  "summary": "학생이 직접 작성한 자료 36건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
 }

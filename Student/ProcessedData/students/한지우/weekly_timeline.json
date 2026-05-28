@@ -96,7 +96,7 @@
         "collaboration": null,
         "resilience": 1,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -299,10 +299,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 1,
         "reflection": 3,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -330,9 +330,17 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "stable",
+    "severity": "info",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "엔드필드로 보는 개발철학",
+        "severity": "info",
+        "date": "2026-02-06"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -490,7 +498,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 1,
         "reflection": 4,
         "careerAgency": 2
@@ -1063,7 +1071,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 2,
         "resilience": 1,
         "reflection": 4,
         "careerAgency": 2

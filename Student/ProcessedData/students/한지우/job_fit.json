@@ -1,0 +1,258 @@
+{
+  "score": 48.88,
+  "label": "우선순위 낮음",
+  "summary": "레벨/던전/퀘스트 기획 중심으로 0개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "level_design",
+      "label": "레벨/던전/퀘스트 기획",
+      "score": 22.07,
+      "marketCount": 119
+    },
+    {
+      "key": "narrative_world",
+      "label": "시나리오/세계관 기획",
+      "score": 20.4,
+      "marketCount": 96
+    },
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 19.52,
+      "marketCount": 90
+    },
+    {
+      "key": "system_balance",
+      "label": "시스템/밸런스 기획",
+      "score": 19.42,
+      "marketCount": 155
+    },
+    {
+      "key": "technical_ai",
+      "label": "테크니컬/AI 활용 기획",
+      "score": 16.24,
+      "marketCount": 50
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-279823",
+      "title": "[미스틸게임즈] Gray Studio 채용",
+      "company": "㈜미스틸게임즈(Mistil Games)",
+      "score": 48.88,
+      "roleAlignment": 19.86,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "level_design",
+        "system_balance"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "배경",
+        "레벨",
+        "원화",
+        "캐릭터원화",
+        "컨셉",
+        "배경원화",
+        "캐릭터",
+        "애니메이션",
+        "이펙트",
+        "FX",
+        "게임기획",
+        "시나리오"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "~ 05/31(일)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279823",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 배경, 레벨, 캐릭터, 시나리오",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279079",
+      "title": "[카오스 제로 나이트메어] UI 및 아이콘 작업자 (6개월 계약직)",
+      "company": "(주)스마일게이트 슈퍼크리에이티브 지점",
+      "score": 47.94,
+      "roleAlignment": 16.72,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "system_balance",
+        "technical_ai"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "모바일",
+        "레벨",
+        "게임기획",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠",
+        "유료화",
+        "기획",
+        "전투",
+        "게임디자인"
+      ],
+      "experience": "무관",
+      "employmentType": "계약직 (계약기간 : 6개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279079",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 레벨, 컨텐츠, 기획, 전투",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278431",
+      "title": "2026년 웹젠레드스타 수시채용",
+      "company": "(주)웹젠",
+      "score": 47.78,
+      "roleAlignment": 16.18,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "level_design",
+        "system_balance",
+        "narrative_world"
+      ],
+      "primaryRole": "level_design",
+      "keywords": [
+        "C++",
+        "모바일",
+        "배경",
+        "레벨",
+        "원화",
+        "컨셉",
+        "배경원화",
+        "캐릭터",
+        "게임기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "~ 06/30(화)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278431",
+      "reasons": [
+        "레벨/던전/퀘스트 기획 접점",
+        "키워드 일치: 배경, 레벨, 캐릭터, 컨텐츠",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278006",
+      "title": "[Project MAZE] 기획팀 전투 기획자 모집 (경력 무관)",
+      "company": "㈜콩스튜디오코리아",
+      "score": 47.18,
+      "roleAlignment": 14.18,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "system_balance",
+        "content_live"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "캐릭터",
+        "디자인",
+        "기획",
+        "전투",
+        "보스"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 계약직 후 정규직 전환 검토 (계약기간 : 협의 후 결정)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278006",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 캐릭터, 디자인, 기획, 전투",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-278434",
+      "title": "시나리오 작가 모집[경력/신입]",
+      "company": "노아시스템㈜",
+      "score": 45.19,
+      "roleAlignment": 7.54,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "narrative_world",
+        "content_live"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "시나리오",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직, 인턴직 후 정규직 전환 검토 (1개월~3개월 미만)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278434",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 시나리오, 컨텐츠",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279320",
+      "title": "[넷마블넥서스] ’세븐나이츠리버스’ 퀘스트/콘텐츠 기획자 채용",
+      "company": "넷마블넥서스",
+      "score": 45.13,
+      "roleAlignment": 21.76,
+      "keywordFit": 100.0,
+      "experienceFit": 28.0,
+      "matchedRoles": [
+        "narrative_world",
+        "content_live",
+        "technical_ai"
+      ],
+      "primaryRole": "narrative_world",
+      "keywords": [
+        "모바일",
+        "컨셉",
+        "게임기획",
+        "시나리오",
+        "퀘스트",
+        "컨텐츠",
+        "콘텐츠",
+        "연출"
+      ],
+      "experience": "경력 3년 이상",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279320",
+      "reasons": [
+        "시나리오/세계관 기획 접점",
+        "키워드 일치: 시나리오, 컨텐츠, 콘텐츠, 연출",
+        "경력요구(경력 3년 이상) 대비 보완 필요"
+      ]
+    }
+  ],
+  "matchedJobCount": 0,
+  "gaps": [
+    "지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접용 사례로 정리해야 합니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

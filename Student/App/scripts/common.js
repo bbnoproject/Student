@@ -368,6 +368,14 @@
       item.summary,
       ...(item.evidence || []),
     ]);
+    const jobFit = student.jobFit || {};
+    const jobFitText = [
+      jobFit.label,
+      jobFit.summary,
+      ...(jobFit.topRoles || []).flatMap((role) => [role.label, role.key]),
+      ...(jobFit.recommendedJobs || []).flatMap((job) => [job.company, job.title, ...(job.reasons || [])]),
+      ...(jobFit.gaps || []),
+    ];
     return [
       student.name,
       student.phone,
@@ -385,6 +393,7 @@
       ...tags,
       ...groupSignals,
       ...flowCases,
+      ...jobFitText,
     ]
       .filter(Boolean)
       .join(" ")
@@ -1182,7 +1191,14 @@
     const readiness = student.derived?.collaborationReadiness || {};
     const trajectory = readiness.trajectory || {};
     const phaseScores = trajectory.phaseScores || [];
-    const teamFeedback = readiness.teamPeerFeedback || [];
+    const teamFeedback = (readiness.teamPeerFeedback || []).filter((item) => {
+      const snippet = String(item.snippet || "").trim();
+      if (!snippet) return false;
+      if (/^[,.;:·\-–—\s]*(은|는|을|를|도|만|의|에|에서|로|으로)(\s|$)/.test(snippet)) return false;
+      if (student.name && !snippet.includes(student.name)) return false;
+      const quality = item.attributionQuality || "direct_mention";
+      return quality === "direct_mention" || quality === "relation_list";
+    });
     const feedbackLabels = {
       praise: "긍정",
       want: "함께하고 싶음",
@@ -1244,7 +1260,7 @@
                       <article>
                         <div>
                           <strong>${escapeHtml(`${item.from || "-"} · ${feedbackLabels[item.type] || item.type || "언급"}`)}</strong>
-                          <span>${escapeHtml([item.sourcePhase, (item.sharedTeams || [])[0]].filter(Boolean).join(" · ") || "프로젝트 맥락")}</span>
+                          <span>${escapeHtml([item.sourcePhase, (item.sharedTeams || [])[0], item.evidenceLabel].filter(Boolean).join(" · ") || "프로젝트 맥락")}</span>
                         </div>
                         <p>${escapeHtml(item.snippet || "")}</p>
                         <small>${escapeHtml(`근거 가중치 ${item.weight || 1} · 대상 역할 ${(item.targetRoles || []).join(", ") || "-"}`)}</small>

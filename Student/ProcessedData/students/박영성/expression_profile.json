@@ -10,39 +10,41 @@
     "cadetCard": 1,
     "checkin": 26,
     "retro": 2,
-    "careerDocument": 2
+    "careerDocument": 2,
+    "morningPresentation": 0,
+    "practiceSubmission": 6
   },
-  "sourceTotal": 32,
-  "textLength": 25605,
+  "sourceTotal": 38,
+  "textLength": 27187,
   "dimensions": {
     "specificity": {
       "label": "구체성",
       "score": 4.0,
-      "evidence": "구체 표현 9종 · 반복 90회 · 문서 17건",
+      "evidence": "구체 표현 9종 · 반복 92회 · 문서 19건",
       "level": "높음"
     },
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 12종 · 반복 112회 · 문서 24건",
+      "evidence": "실행/개선 표현 12종 · 반복 116회 · 문서 27건",
       "level": "높음"
     },
     "reflection": {
       "label": "성찰 표현",
       "score": 4.0,
-      "evidence": "회고/개선 표현 8종 · 반복 63회 · 문서 19건",
+      "evidence": "회고/개선 표현 8종 · 반복 65회 · 문서 21건",
       "level": "높음"
     },
     "relation": {
       "label": "관계/협업 언어",
       "score": 4.0,
-      "evidence": "관계/협업 표현 11종 · 반복 129회 · 문서 17건",
+      "evidence": "관계/협업 표현 11종 · 반복 132회 · 문서 19건",
       "level": "높음"
     },
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 31종 · 반복 200회 · 문서 26건",
+      "evidence": "진로/직무 표현 33종 · 반복 236회 · 문서 32건",
       "level": "높음"
     },
     "emotion": {
@@ -88,5 +90,5 @@
       "excerpt": "--- page 1 --- 모두와 함께 과정을 기획하는 지원자 박영성입니다 ! 지원 동기 지인이 주관하는 TRPG 에 참여하였으나 TRPG 룰북이 주최자가 원하던 테마와 컨셉에 부합하지 않는 문제가 있었습니다 . 그래서 직접 시스템과 컨텐츠를 기획해 게임에 적용하였고 , 사람들이 개선된 게임에 좋아해 주는 것에 보람과…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 32건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+  "summary": "학생이 직접 작성한 자료 38건에서 구체성, 주도성 표현, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
 }

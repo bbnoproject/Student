@@ -1,0 +1,253 @@
+{
+  "score": 59.94,
+  "label": "탐색/준비 후보",
+  "summary": "시장/BM/유저 분석 중심으로 0개 공고가 68점 이상 매칭됩니다.",
+  "marketDate": "2026-05-27",
+  "sourceUrl": "https://rkdghkclgns-design.github.io/gamejob-crawler/",
+  "topRoles": [
+    {
+      "key": "market_bm",
+      "label": "시장/BM/유저 분석",
+      "score": 48.95,
+      "marketCount": 63
+    },
+    {
+      "key": "technical_ai",
+      "label": "테크니컬/AI 활용 기획",
+      "score": 33.55,
+      "marketCount": 50
+    },
+    {
+      "key": "content_live",
+      "label": "콘텐츠/라이브 기획",
+      "score": 25.98,
+      "marketCount": 90
+    },
+    {
+      "key": "system_balance",
+      "label": "시스템/밸런스 기획",
+      "score": 20.02,
+      "marketCount": 155
+    },
+    {
+      "key": "ui_ux",
+      "label": "UI/UX/플랫폼 기획",
+      "score": 18.1,
+      "marketCount": 47
+    }
+  ],
+  "recommendedJobs": [
+    {
+      "id": "crawled-279446",
+      "title": "[퍼즐원스튜디오] 모바일캐주얼 퍼즐게임 콘텐츠기획자",
+      "company": "퍼즐원스튜디오",
+      "score": 59.94,
+      "roleAlignment": 50.04,
+      "keywordFit": 50.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "content_live",
+        "technical_ai"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "게임기획",
+        "시스템기획",
+        "AI",
+        "콘텐츠",
+        "콘텐츠기획",
+        "유니티",
+        "데이터분석",
+        "게임디자인",
+        "모바일게임",
+        "캐주얼",
+        "퍼즐"
+      ],
+      "experience": "무관",
+      "employmentType": "계약직 (계약기간 : 6개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279446",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: 게임기획, AI, 콘텐츠",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-277809",
+      "title": "[글로벌 캐주얼 프로젝트] 게임 기획자 모집",
+      "company": "드리모",
+      "score": 59.81,
+      "roleAlignment": 49.6,
+      "keywordFit": 50.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "technical_ai",
+        "content_live"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "UX",
+        "UI",
+        "레벨",
+        "컨셉",
+        "게임기획",
+        "PM",
+        "밸런스기획",
+        "레벨기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=277809",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: 컨셉, 게임기획, PM",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-279189",
+      "title": "[NC자회사][빅파이어게임즈][단기계약직] 빌드매니저(BM) 모집",
+      "company": "빅파이어게임즈",
+      "score": 59.61,
+      "roleAlignment": 32.25,
+      "keywordFit": 100.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "technical_ai",
+        "pm_leadership",
+        "market_bm"
+      ],
+      "primaryRole": "technical_ai",
+      "keywords": [
+        "클라이언트",
+        "게임기획",
+        "PM",
+        "시스템기획",
+        "Unity",
+        "모니터링",
+        "QA",
+        "게임테스터",
+        "시스템버전관리",
+        "업데이트테스트",
+        "CI",
+        "BM"
+      ],
+      "experience": "신입",
+      "employmentType": "계약직 (계약기간 : 3개월)",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=279189",
+      "reasons": [
+        "테크니컬/AI 활용 기획 접점",
+        "키워드 일치: 게임기획, PM, QA, BM",
+        "경력요구 신입"
+      ]
+    },
+    {
+      "id": "crawled-278401",
+      "title": "[더 스파이크 크로스] (PM) 프로덕트 매니저",
+      "company": "선시안 (SUNCYAN In",
+      "score": 58.95,
+      "roleAlignment": 36.47,
+      "keywordFit": 100.0,
+      "experienceFit": 68.0,
+      "matchedRoles": [
+        "market_bm",
+        "pm_leadership",
+        "content_live"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "PM",
+        "게임"
+      ],
+      "experience": "경력 2년 이상",
+      "employmentType": "정규직",
+      "deadline": "채용시 마감",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=278401",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: PM, 게임",
+        "경력요구 경력 2년 이상"
+      ]
+    },
+    {
+      "id": "crawled-280125",
+      "title": "[라스트오리진] 시스템 / 컨텐츠 기획자 ( 3년 이상 )",
+      "company": "㈜엔에이케이소프트",
+      "score": 58.83,
+      "roleAlignment": 49.68,
+      "keywordFit": 40.0,
+      "experienceFit": 100.0,
+      "matchedRoles": [
+        "market_bm",
+        "content_live",
+        "system_balance"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "모바일",
+        "컨셉",
+        "게임기획",
+        "시스템기획",
+        "컨텐츠"
+      ],
+      "experience": "무관",
+      "employmentType": "정규직",
+      "deadline": "상시채용",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=280125",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: 컨셉, 게임기획",
+        "경력요구 무관"
+      ]
+    },
+    {
+      "id": "crawled-280224",
+      "title": "[NC][리니지W] BM 기획자 모집",
+      "company": "NC",
+      "score": 57.48,
+      "roleAlignment": 42.66,
+      "keywordFit": 66.67,
+      "experienceFit": 68.0,
+      "matchedRoles": [
+        "market_bm",
+        "system_balance",
+        "content_live"
+      ],
+      "primaryRole": "market_bm",
+      "keywords": [
+        "게임기획",
+        "BM",
+        "상품기획"
+      ],
+      "experience": "경력 2년 이상",
+      "employmentType": "정규직",
+      "deadline": "~ 06/30(화)",
+      "updatedAt": "2026-05-27",
+      "link": "https://www.gamejob.co.kr/Recruit/GI_Read/View?GI_No=280224",
+      "reasons": [
+        "시장/BM/유저 분석 접점",
+        "키워드 일치: 게임기획, BM",
+        "경력요구 경력 2년 이상"
+      ]
+    }
+  ],
+  "matchedJobCount": 0,
+  "gaps": [
+    "지원 직무와 대표 산출물을 더 구체적으로 묶어야 합니다."
+  ],
+  "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다."
+}

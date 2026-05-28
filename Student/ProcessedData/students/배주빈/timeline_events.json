@@ -29,7 +29,7 @@
     "severity": "stable",
     "title": "운영진 학생 정보 기록",
     "summary": "성격은 괜찮으나 성취도 미진.",
-    "detail": "한줄평\n성격은 괜찮으나 성취도 미진.\n\n총평\n🔖 (업데이트 날짜 : )\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n날짜 - 내용\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
+    "detail": "한줄평\n성격은 괜찮으나 성취도 미진.\n\nGood\n날짜 - 내용\n\nBad\n날짜 - 내용\n💡특이 사항\n날짜 - 내용\n💻 Zep\n날짜 - 내용\n💬 DM\n~ 12/8 : 개강 전 :\n날짜 - 내용",
     "constructs": [
       "collaboration",
       "engagement"

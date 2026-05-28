@@ -10,21 +10,23 @@
     "cadetCard": 0,
     "checkin": 28,
     "retro": 2,
-    "careerDocument": 0
+    "careerDocument": 0,
+    "morningPresentation": 0,
+    "practiceSubmission": 5
   },
-  "sourceTotal": 31,
-  "textLength": 6632,
+  "sourceTotal": 36,
+  "textLength": 7927,
   "dimensions": {
     "specificity": {
       "label": "구체성",
-      "score": 3.44,
-      "evidence": "구체 표현 7종 · 반복 24회 · 문서 7건",
+      "score": 3.89,
+      "evidence": "구체 표현 8종 · 반복 25회 · 문서 8건",
       "level": "높음"
     },
     "agency": {
       "label": "주도성 표현",
       "score": 4.0,
-      "evidence": "실행/개선 표현 7종 · 반복 42회 · 문서 15건",
+      "evidence": "실행/개선 표현 7종 · 반복 43회 · 문서 16건",
       "level": "높음"
     },
     "reflection": {
@@ -42,14 +44,14 @@
     "career": {
       "label": "진로 언어",
       "score": 4.0,
-      "evidence": "진로/직무 표현 18종 · 반복 39회 · 문서 17건",
+      "evidence": "진로/직무 표현 20종 · 반복 56회 · 문서 22건",
       "level": "높음"
     },
     "emotion": {
       "label": "정서/부담 표현",
-      "score": 3.17,
-      "evidence": "정서/부담 표현 7종 · 반복 10회 · 문서 8건",
-      "level": "보통"
+      "score": 3.5,
+      "evidence": "정서/부담 표현 7종 · 반복 11회 · 문서 9건",
+      "level": "높음"
     },
     "uncertainty": {
       "label": "탐색/불확실 표현",
@@ -61,7 +63,7 @@
   "dominantTraits": [
     "주도성 표현",
     "진로 언어",
-    "성찰 표현"
+    "구체성"
   ],
   "cautionTraits": [
     "정서/부담 표현",
@@ -84,5 +86,5 @@
       "excerpt": "기획에 대하여 1. 팀에서는 스컬 같은 머리를 바꾸는(변신하는) 플랫포머 게임에 보스전은 미니게임으로 하자고 했지만 그 뒤로는 각자 해야할 파트를 각자 했을 뿐 기획적으로 의견을 교환하거나 소통한 적은 없는것 같습니다. 문제가 생기면 팀장님에게 물어보고 고치는 전체적인 방향성은 팀장님도 잘 모르는 듯한 느낌을 받았습니다…"
     }
   ],
-  "summary": "학생이 직접 작성한 자료 31건에서 주도성 표현, 진로 언어, 성찰 표현 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
+  "summary": "학생이 직접 작성한 자료 36건에서 주도성 표현, 진로 언어, 구체성 중심의 표현 특징이 관찰됩니다. 다만 정서/부담 표현, 탐색/불확실 표현은 개인 맥락과 함께 확인합니다."
 }

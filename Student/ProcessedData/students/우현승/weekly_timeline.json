@@ -96,7 +96,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -201,7 +201,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "게임 음악",
+        "severity": "success",
+        "date": "2026-01-16"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -291,10 +299,10 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -492,7 +500,7 @@
         "collaboration": 2,
         "resilience": 2,
         "reflection": 3,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -755,6 +763,13 @@
     "headline": "취업 문서 학습이 진행된 구간",
     "notes": [
       {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "나의 직군 찾기",
+        "severity": "info",
+        "date": "2026-04-23"
+      },
+      {
         "type": "career",
         "title": "1차 자기소개서 작성",
         "summary": "“ 약점은 보완하고 강점은 뚜렷하게, 올라운더로 성장하는 기획자 우현승입니다 ” 1. 게임 기획자가 되려는 이유 어렸을 때부터 창작에 관심이 많았습니다. 캐릭터를 만들고, 만화를 그리며 새로운 세계관을 만들어보고, 대학생까지 실용음악을 전공하면서 작…",
@@ -840,9 +855,17 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "stable",
+    "severity": "info",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "PROJECT:UNDEFINED",
+        "severity": "info",
+        "date": "2026-05-04"
+      }
+    ],
     "snapshot": null
   },
   {

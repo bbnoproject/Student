@@ -67,7 +67,7 @@
       {
         "type": "snapshot",
         "title": "성향 스냅샷 갱신",
-        "summary": "회고 구조화 필요",
+        "summary": "진로 목적성 구체화 필요",
         "severity": "info",
         "date": "2025-12-08"
       }
@@ -82,7 +82,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -90,7 +90,7 @@
         "resilience"
       ],
       "confidence": "Medium",
-      "note": "회고 구조화 필요"
+      "note": "진로 목적성 구체화 필요"
     }
   },
   {
@@ -193,7 +193,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "야, 너두 독서 할 수 있어",
+        "severity": "success",
+        "date": "2026-01-15"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -323,7 +331,15 @@
     },
     "severity": "stable",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "게임잼 후기",
+        "severity": "success",
+        "date": "2026-02-04"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -356,6 +372,13 @@
         "summary": "2팀 · 역할 팀원 · 팀원 5명",
         "severity": "info",
         "date": "2026-02-13"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "타르코프",
+        "severity": "success",
+        "date": "2026-02-09"
       }
     ],
     "snapshot": null
@@ -456,9 +479,16 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "info",
+    "severity": "stable",
     "headline": "면담 개입이 있었던 구간",
     "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "영화 미장센에 대하여",
+        "severity": "success",
+        "date": "2026-03-04"
+      },
       {
         "type": "counseling",
         "title": "프로젝트 면담 (이석훈 관련)",
@@ -512,9 +542,16 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "info",
+    "severity": "stable",
     "headline": "안정적인 학습 흐름",
     "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "영화 미장센에 대하여 2",
+        "severity": "success",
+        "date": "2026-03-12"
+      },
       {
         "type": "attendance",
         "title": "출결 이슈 · 공가",
@@ -1070,7 +1107,7 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 3,
         "resilience": 2,
         "reflection": 4,
         "careerAgency": 2

@@ -1444,6 +1444,126 @@ body[data-page="lobby"] .student-table td small {
   white-space: nowrap;
 }
 
+body[data-page="lobby"] .job-fit-overview-panel {
+  display: grid;
+  gap: 14px;
+}
+
+body[data-page="lobby"] .job-fit-overview-panel .panel-copy a {
+  color: var(--accent);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+body[data-page="lobby"] .job-fit-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.72fr) minmax(240px, 0.92fr) minmax(0, 1.36fr);
+  gap: 12px;
+}
+
+body[data-page="lobby"] .job-fit-summary-card,
+body[data-page="lobby"] .job-fit-label-card,
+body[data-page="lobby"] .job-fit-role-card,
+body[data-page="lobby"] .job-fit-student-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+body[data-page="lobby"] .job-fit-summary-card,
+body[data-page="lobby"] .job-fit-label-card,
+body[data-page="lobby"] .job-fit-role-card {
+  min-height: 148px;
+  padding: 14px;
+}
+
+body[data-page="lobby"] .job-fit-summary-card {
+  display: grid;
+  align-content: space-between;
+  gap: 9px;
+  color: var(--text);
+}
+
+body[data-page="lobby"] .job-fit-summary-card > span,
+body[data-page="lobby"] .job-fit-label-card > span,
+body[data-page="lobby"] .job-fit-role-card > span,
+body[data-page="lobby"] .job-fit-student-card span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+body[data-page="lobby"] .job-fit-summary-card strong {
+  color: currentColor;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+body[data-page="lobby"] .job-fit-summary-card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+body[data-page="lobby"] .job-fit-label-card,
+body[data-page="lobby"] .job-fit-role-card {
+  display: grid;
+  gap: 10px;
+}
+
+body[data-page="lobby"] .job-fit-label-card div,
+body[data-page="lobby"] .job-fit-role-stack {
+  display: grid;
+  gap: 8px;
+}
+
+body[data-page="lobby"] .job-fit-label-card p,
+body[data-page="lobby"] .job-fit-role-card p {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+body[data-page="lobby"] .job-fit-label-card strong,
+body[data-page="lobby"] .job-fit-role-card span {
+  color: var(--text-soft);
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .job-fit-student-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+body[data-page="lobby"] .job-fit-student-card {
+  display: grid;
+  gap: 5px;
+  padding: 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+body[data-page="lobby"] .job-fit-student-card strong,
+body[data-page="lobby"] .job-fit-student-card small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body[data-page="lobby"] .job-fit-student-card small {
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
 body[data-page="lobby"] .process-timeline {
   display: grid;
   gap: 14px;
@@ -2554,7 +2674,8 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .milestone-purpose-grid,
   body[data-page="lobby"] .milestone-course-grid,
   body[data-page="lobby"] .project-operation-grid,
-  body[data-page="lobby"] .milestone-detail-grid {
+  body[data-page="lobby"] .milestone-detail-grid,
+  body[data-page="lobby"] .job-fit-overview-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2591,6 +2712,10 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .process-brief-grid {
     grid-template-columns: 1fr;
   }
+
+  body[data-page="lobby"] .job-fit-student-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 680px) {
@@ -2615,7 +2740,8 @@ body[data-page="lobby"] .feedback-output {
   body[data-page="lobby"] .project-special-list,
   body[data-page="lobby"] .urgent-student-list,
   body[data-page="lobby"] .milestone-case-list,
-  body[data-page="lobby"] .milestone-student-sample-list {
+  body[data-page="lobby"] .milestone-student-sample-list,
+  body[data-page="lobby"] .job-fit-student-strip {
     grid-template-columns: 1fr;
   }
 

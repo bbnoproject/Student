@@ -294,7 +294,7 @@
         "collaboration": 3,
         "resilience": 3,
         "reflection": 3,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -365,6 +365,13 @@
         "summary": "9팀 · 역할 팀원 · 팀원 4명",
         "severity": "info",
         "date": "2026-02-13"
+      },
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "STRETCHES",
+        "severity": "info",
+        "date": "2026-02-12"
       }
     ],
     "snapshot": null
@@ -483,10 +490,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 4,
-        "collaboration": 3,
+        "collaboration": 4,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",

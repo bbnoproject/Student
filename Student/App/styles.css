@@ -2042,6 +2042,85 @@ body[data-theme="dark"] .detail-milestone-card {
   gap: 18px;
 }
 
+.milestone-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.milestone-summary-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 10px;
+  align-items: start;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.milestone-summary-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--brand) 48%, var(--border));
+  box-shadow: var(--shadow-soft);
+}
+
+.milestone-summary-card strong,
+.milestone-summary-card small,
+.milestone-summary-card p,
+.milestone-summary-metrics {
+  grid-column: 1 / -1;
+}
+
+.milestone-summary-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.milestone-summary-card strong {
+  font-size: 1rem;
+}
+
+.milestone-summary-card small {
+  color: var(--text-soft);
+  font-weight: 800;
+}
+
+.milestone-summary-card p {
+  margin: 0;
+  min-height: 3.6em;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.milestone-summary-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.milestone-summary-metrics em {
+  padding: 5px 8px;
+  border-radius: 8px;
+  background: var(--secondary);
+  color: var(--text);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+}
+
 .detail-milestone-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2069,7 +2148,8 @@ body[data-theme="dark"] .detail-milestone-card {
   .spotlight-grid,
   .student-grid,
   .compact-snapshot-grid,
-  .milestone-row {
+  .milestone-row,
+  .milestone-summary-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2116,7 +2196,8 @@ body[data-theme="dark"] .detail-milestone-card {
   .spotlight-grid,
   .student-grid,
   .story-grid,
-  .milestone-row {
+  .milestone-row,
+  .milestone-summary-grid {
     grid-template-columns: 1fr;
   }
 

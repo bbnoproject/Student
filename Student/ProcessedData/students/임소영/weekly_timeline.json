@@ -96,7 +96,7 @@
         "collaboration": null,
         "resilience": 3,
         "reflection": 2,
-        "careerAgency": 2
+        "careerAgency": 1
       },
       "judgedKeys": [
         "careerAgency",
@@ -328,7 +328,7 @@
       "scores": {
         "selfRegulation": 4,
         "engagement": 4,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 3,
         "careerAgency": 2
@@ -362,6 +362,13 @@
     "severity": "info",
     "headline": "안정적인 학습 흐름",
     "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "재벌집 막내아들의 결말 그리고 게임적 상상력",
+        "severity": "info",
+        "date": "2026-02-06"
+      },
       {
         "type": "attendance",
         "title": "출결 이슈 · 지각",
@@ -520,10 +527,10 @@
       "scores": {
         "selfRegulation": 2,
         "engagement": 3,
-        "collaboration": 3,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",
@@ -854,9 +861,17 @@
       "admission": 0,
       "career": 0
     },
-    "severity": "stable",
+    "severity": "info",
     "headline": "안정적인 학습 흐름",
-    "notes": [],
+    "notes": [
+      {
+        "type": "morning_presentation",
+        "title": "아침 발표",
+        "summary": "보이지 않는 시스템 산나비, 실크송",
+        "severity": "info",
+        "date": "2026-05-15"
+      }
+    ],
     "snapshot": null
   },
   {
@@ -1100,10 +1115,10 @@
       "scores": {
         "selfRegulation": 3,
         "engagement": 3,
-        "collaboration": 2,
+        "collaboration": 1,
         "resilience": 3,
         "reflection": 4,
-        "careerAgency": 3
+        "careerAgency": 2
       },
       "judgedKeys": [
         "careerAgency",

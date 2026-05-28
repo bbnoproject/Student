@@ -21,10 +21,10 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 2
+      "career_agency": 1
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"
@@ -36,13 +36,13 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
       "career_agency": 2
     },
     "confidence": "High",
-    "note": "도전 대응 지원 필요"
+    "note": "협업 상황 면담 권장"
   },
   {
     "snapshotId": "김재환-m4",
@@ -51,13 +51,13 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
       "career_agency": 2
     },
     "confidence": "High",
-    "note": "도전 대응 지원 필요"
+    "note": "협업 상황 면담 권장"
   },
   {
     "snapshotId": "김재환-m5",
@@ -66,7 +66,7 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
       "career_agency": 2
@@ -81,7 +81,7 @@
     "scores": {
       "self_regulation": 4,
       "engagement": 4,
-      "collaboration": 3,
+      "collaboration": 2,
       "resilience": 2,
       "reflection": 4,
       "career_agency": 2

@@ -36,10 +36,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 4,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 3,
       "reflection": 3,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"
@@ -51,10 +51,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 3,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"
@@ -66,10 +66,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 3,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"
@@ -81,10 +81,10 @@
     "scores": {
       "self_regulation": 3,
       "engagement": 3,
-      "collaboration": 2,
+      "collaboration": 1,
       "resilience": 2,
       "reflection": 4,
-      "career_agency": 3
+      "career_agency": 2
     },
     "confidence": "High",
     "note": "협업 상황 면담 권장"
