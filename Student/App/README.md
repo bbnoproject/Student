@@ -226,3 +226,36 @@ http://127.0.0.1:8765/student.html?id=곽용준&tab=evaluation
 - 각 마일스톤 상세에는 `Analysis Purpose` 섹션이 있습니다.
 - `Analysis Purpose`는 분석 목적, 수업/자료 범위, 분석 질문, 판단 주의를 보여줍니다.
 - 모집 단계는 초기 스펙, 개인정보, 모집 서류, 면접 서술, 지병/건강 제약/경제적 어려움, 자기보고 데이터 신뢰도를 분석합니다.
+
+# 2026-06-04 수정사항 요약
+
+이번 수정은 학생관리 화면과 학생 상세 화면에서 `현장 기획자 핏(plannerFit)`을 확인할 수 있도록 만든 작업입니다. 기존 `jobFit`은 GameJob 공고와 학생 데이터의 직무/키워드 매칭을 보는 지표로 유지하고, `plannerFit`은 교육 운영자가 현장에서 느끼는 "게임기획자로 성장할 가능성"을 별도 판단하기 위한 지표로 분리했습니다.
+
+`plannerFit`은 실습 제출량만으로 높게 나오지 않도록 조정했습니다. 현재 산식은 `직무 방향성 28%`, `초기 준비도 22%`, `협업 안정성 20%`, `성장 흡수력 13%`, `실습 사고력 8%`, `실행 안정성 7%`, `공고 연결성 2%`를 반영합니다. 즉, 많이 제출한 학생보다 게임기획을 시작하려는 이유가 구체적이고, 초기 역량/협업 안정/성장 신호가 함께 확인되는 학생을 더 높게 봅니다.
+
+반영 파일은 다음과 같습니다.
+
+- `scripts/build_app_data.py`: 전체 학생의 `plannerFit` 산식 생성
+- `scripts/reprocess_student_data.py`: 학생별 `ProcessedData/students/{studentId}/planner_fit.json` 생성
+- `App/data.js`: 전체 학생 80명의 `plannerFit` 데이터 포함
+- `App/scripts/lobby.js`: 학생관리 화면에 `현장 기획자 핏` 요약 패널과 `기획핏` 정렬 추가
+- `App/scripts/student.js`: 학생 상세 `현황` 탭에 `plannerFit` 구성 점수, 근거, 보완점 표시
+- `App/scripts/common.js`: 검색 대상에 `plannerFit` 라벨/요약/근거 포함
+- `App/index.html`, `App/student.html`: 캐시 쿼리 갱신
+
+재생성 결과 학생별 `planner_fit.json`은 80개 생성됩니다. 활동 학생 76명 기준 전체 평균은 65.8점이고, 사용자 피드백을 일반화한 검증 표본 평균은 73.4점입니다. 검증 표본의 개별 명단은 파일이나 영구 컨텍스트에 기록하지 않습니다.
+
+검증 명령은 아래 순서로 실행했습니다.
+
+```powershell
+& "C:\Users\안중재\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m py_compile Student\scripts\build_app_data.py Student\scripts\reprocess_student_data.py
+& "C:\Users\안중재\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" --check Student\App\scripts\common.js
+& "C:\Users\안중재\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" --check Student\App\scripts\lobby.js
+& "C:\Users\안중재\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe" --check Student\App\scripts\student.js
+$env:PYTHONIOENCODING='utf-8'
+& "C:\Users\안중재\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" Student\scripts\build_app_data.py
+& "C:\Users\안중재\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" Student\scripts\reprocess_student_data.py
+git diff --check
+```
+
+브라우저 자동 조작 도구는 해당 세션에서 노출되지 않아 클릭 기반 검증은 수행하지 못했습니다. 대신 `index.html`, `student.html`의 로컬 서버 응답 200과 JS/Python 정적 검사를 확인했습니다.

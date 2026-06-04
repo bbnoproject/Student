@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>학생 데이터 분석 히스토리</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d8e0ea;
+      --panel: #ffffff;
+      --soft: #f6f8fb;
+      --blue: #2563eb;
+      --blue-soft: #eaf1ff;
+      --green: #047857;
+      --green-soft: #e8f7f0;
+      --amber: #a15c07;
+      --amber-soft: #fff4de;
+      --red: #b42318;
+      --red-soft: #fff1f1;
+      --shadow: 0 18px 52px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Pretendard", "Noto Sans KR", "Segoe UI", Arial, sans-serif;
+      line-height: 1.62;
+      background:
+        linear-gradient(180deg, #eef5ff 0, #f7f9fc 390px),
+        #f7f9fc;
+    }
+
+    main {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 42px 0 72px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 6px;
+      font-size: clamp(24px, 3vw, 34px);
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .hero {
+      padding: 26px 0 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero p {
+      max-width: 900px;
+      font-size: 17px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 22px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.94);
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border-radius: 7px;
+      color: #334155;
+      background: #f8fafc;
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: #ffffff;
+      background: var(--blue);
+    }
+
+    .metric-grid,
+    .card-grid,
+    .two-grid,
+    .step-grid,
+    .evidence-grid,
+    .action-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .metric-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 26px;
+    }
+
+    .card-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .two-grid,
+    .action-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .step-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      counter-reset: step;
+    }
+
+    .evidence-grid {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .page {
+      position: relative;
+      min-height: calc(100vh - 118px);
+      margin: 38px auto 52px;
+      padding: 34px 34px 62px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+      box-shadow: var(--shadow);
+      scroll-margin-top: 92px;
+      break-after: page;
+      page-break-after: always;
+    }
+
+    .page::after {
+      content: attr(data-page-label);
+      position: absolute;
+      right: 28px;
+      bottom: 22px;
+      color: #94a3b8;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      inset: 14px;
+      border: 1px solid #edf2f7;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+
+    .page-head {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      align-items: start;
+      margin-bottom: 22px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .page-no {
+      display: inline-grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 8px;
+      color: #ffffff;
+      background: var(--blue);
+      font-weight: 900;
+    }
+
+    .page-head p {
+      max-width: 880px;
+      margin-bottom: 0;
+    }
+
+    .metric,
+    .card,
+    .step,
+    .timeline-item,
+    .notice,
+    .data-row {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .metric {
+      padding: 16px;
+    }
+
+    .metric span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .metric strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 27px;
+      line-height: 1.1;
+    }
+
+    .card,
+    .notice {
+      padding: 18px;
+    }
+
+    .card ul,
+    .notice ul {
+      margin: 12px 0 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .card li + li,
+    .notice li + li {
+      margin-top: 6px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: #1e3a8a;
+      background: var(--blue-soft);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .tag.green {
+      color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .tag.amber {
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .tag.red {
+      color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .step {
+      padding: 18px 16px 16px;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 14px;
+      border-radius: 50%;
+      color: #ffffff;
+      background: var(--blue);
+      font-weight: 900;
+    }
+
+    .step p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: 17px;
+      width: 2px;
+      background: var(--line);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-left: 44px;
+      padding: 18px;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: -53px;
+      width: 14px;
+      height: 14px;
+      border: 4px solid #ffffff;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 1px var(--blue);
+    }
+
+    .timeline-item time {
+      display: inline-flex;
+      margin-bottom: 8px;
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .timeline-item p {
+      margin-bottom: 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      min-width: 820px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #334155;
+      background: #f1f5f9;
+      font-size: 13px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    td {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .data-row {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    .data-row strong {
+      color: var(--ink);
+    }
+
+    .data-row p {
+      margin-bottom: 0;
+    }
+
+    .notice {
+      background: #fbfdff;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .metric-grid,
+      .card-grid,
+      .two-grid,
+      .step-grid,
+      .evidence-grid,
+      .action-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .page {
+        min-height: auto;
+        padding: 22px 18px 56px;
+      }
+
+      .page-head,
+      .data-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      main {
+        width: 100%;
+        padding: 0;
+      }
+
+      .hero,
+      .nav {
+        display: none;
+      }
+
+      .page {
+        min-height: 100vh;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+        break-after: page;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <h1>학생 데이터 분석 히스토리</h1>
+      <p>
+        이 문서는 학생 관리 대시보드가 어떤 데이터를 수집했고, 어떤 순서로 분석/가공/화면 반영을 진행했으며, 현재 결과와 한계가 무엇인지 정리한 페이지형 히스토리 문서입니다.
+        구조는 <strong>개요, 준비, 작업, 결과/한계, 이후 행동</strong> 다섯 페이지로 구분했습니다.
+      </p>
+      <div class="metric-grid">
+        <article class="metric">
+          <span>전체 학생</span>
+          <strong>80명</strong>
+        </article>
+        <article class="metric">
+          <span>활동 학생 기준</span>
+          <strong>76명</strong>
+        </article>
+        <article class="metric">
+          <span>실습 제출 반영</span>
+          <strong>519건</strong>
+        </article>
+        <article class="metric">
+          <span>아침 발표 반영</span>
+          <strong>97건</strong>
+        </article>
+      </div>
+    </header>
+
+    <nav class="nav" aria-label="히스토리 페이지 이동">
+      <a href="#overview">01 개요</a>
+      <a href="#prepare">02 준비</a>
+      <a href="#work">03 작업</a>
+      <a href="#result-limit">04 결과/한계</a>
+      <a href="#next-action">05 이후 행동</a>
+    </nav>
+
+    <section class="page" id="overview" data-page-label="Page 01 / 개요">
+      <div class="page-head">
+        <span class="page-no">01</span>
+        <div>
+          <h2>개요</h2>
+          <p>이 작업의 목적은 학생 데이터를 단순 점수표로 만드는 것이 아니라, 과정 운영, 취업 지도, 학생 분류에 쓸 수 있는 검증 가능한 판단 자료로 재구성하는 것입니다.</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>과정 운영</h3>
+          <p>현재 위험 신호가 있는 학생, 지원이 필요한 학생, 이탈/건강/루틴 문제가 있는 학생을 빠르게 찾습니다.</p>
+          <div class="tag-list">
+            <span class="tag amber">출결</span>
+            <span class="tag amber">지원우선순위</span>
+            <span class="tag amber">운영 리스크</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>취업 지도</h3>
+          <p>학생이 스스로 모르는 강점과 특징을 검증 자료와 함께 정리하고, 지원서/면접/포트폴리오에 쓸 수 있게 만듭니다.</p>
+          <div class="tag-list">
+            <span class="tag green">강점 분석</span>
+            <span class="tag green">직무 적합도</span>
+            <span class="tag green">현장 기획자 핏</span>
+          </div>
+        </article>
+        <article class="card">
+          <h3>학생 분류</h3>
+          <p>학생 생활과 행동 패턴을 분석해, 특정 그룹 학생들이 보인 공통 행동과 지도 전략을 도출합니다.</p>
+          <div class="tag-list">
+            <span class="tag">학생군 신호</span>
+            <span class="tag">마일스톤</span>
+            <span class="tag">행동 패턴</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="two-grid" style="margin-top: 14px;">
+        <article class="card">
+          <h3>현재 앱에서 확인 가능한 핵심 정보</h3>
+          <ul>
+            <li>학생별 모집 단계 원문/해석, 지병, 경제적 어려움, 게임업계 지인 여부, 경력사항</li>
+            <li>면담 기록 전체, 학생 정보, 발표 이력, 실습 제출물</li>
+            <li>마일스톤별 이벤트 상세와 요약</li>
+            <li>취업 강점, 개선점, 공고 매칭, 현장 기획자 핏</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>현재 정리된 분석 자료</h3>
+          <ul>
+            <li>화면에서 바로 확인할 수 있는 통합 학생 데이터</li>
+            <li>학생별 요약, 근거, 평가 흐름을 나눈 개별 분석 자료</li>
+            <li>채용 공고와 학생 데이터를 비교한 직무 적합도</li>
+            <li>실습 산출물과 성장 신호를 바탕으로 한 현장 기획자 핏</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="page" id="prepare" data-page-label="Page 02 / 준비">
+      <div class="page-head">
+        <span class="page-no">02</span>
+        <div>
+          <h2>준비</h2>
+          <p>분석 전에 원본 데이터 범위, 파생 데이터 생성 방식, 해석 기준을 정리했습니다. 준비 단계의 핵심은 데이터가 어디서 왔고 무엇을 근거로 삼을지 분리하는 것입니다.</p>
+        </div>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>수집된 원본 데이터</h3>
+          <ul>
+            <li>모집 단계 지원 정보: 지원 동기, 개인정보, 지병/건강 제약, 경제적 어려움, 게임업계 지인 여부</li>
+            <li>운영진이 관리하던 학생 정보와 학생 자기소개성 자료</li>
+            <li>출결, 지각, 결석, 생활 리스크 단서</li>
+            <li>학생별 상담/면담 기록</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>학습/프로젝트 데이터</h3>
+          <ul>
+            <li>프로젝트 데일리 체크인과 회고</li>
+            <li>프로젝트별 팀 배치와 역할 이력</li>
+            <li>지각 보완 발표와 자원 발표 이력</li>
+            <li>과제 산출물, 원문 발췌, 제출 맥락</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>취업/외부 데이터</h3>
+          <ul>
+            <li>이력서, 자기소개서, 포트폴리오 등 취업 문서와 자기표현 자료</li>
+            <li>GameJob Crawler 기반 채용 공고 데이터</li>
+            <li>교육/국비지원성 공고는 추천 대상에서 제외</li>
+            <li>공고 기반 직무 적합도와 현장 판단 기반 기획자 핏을 분리</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="step-grid" style="margin-top: 18px;">
+        <article class="step">
+          <h3>원본 확인</h3>
+          <p>엑셀, 문서, 발표 기록, 제출 자료 등 다양한 원본 자료를 확인했습니다.</p>
+        </article>
+        <article class="step">
+          <h3>학생별 연결</h3>
+          <p>이름/ID 기준으로 모집부터 현재까지의 자료를 학생 단위로 묶었습니다.</p>
+        </article>
+        <article class="step">
+          <h3>근거 보존</h3>
+          <p>요약만 남기지 않고 원문, 발췌, 제출 맥락을 보존하도록 했습니다.</p>
+        </article>
+        <article class="step">
+          <h3>해석 기준 분리</h3>
+          <p>운영 판단, 취업 지도, 직무 매칭, 현장 기획자 핏을 서로 다른 지표로 나눴습니다.</p>
+        </article>
+      </div>
+
+      <div class="notice" style="margin-top: 18px;">
+        <h3>준비 단계에서 정한 원칙</h3>
+        <ul>
+          <li>화면에 보이는 분석 결과는 원본 자료를 재가공한 결과입니다. 실제 수정은 원본 자료와 분석 기준에서 진행해야 합니다.</li>
+          <li>이탈자는 이탈일 이후 기록을 평가에서 제외합니다.</li>
+          <li>학생 이름을 특정한 고평가 표본은 산식 보정에만 사용하고, 보고 문서에는 기록하지 않습니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page" id="work" data-page-label="Page 03 / 작업">
+      <div class="page-head">
+        <span class="page-no">03</span>
+        <div>
+          <h2>작업</h2>
+          <p>작업은 데이터 연결, 학생 상세 강화, UI 단순화, 직무 적합도 추가, 현장 기획자 핏 재채점 순서로 진행되었습니다.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <time>2026-05-13 ~ 2026-05-15</time>
+          <h3>원본 구조 파악과 파이프라인 정리</h3>
+          <p>원본 자료, 화면 데이터, 학생별 분석 자료의 역할을 나누고, 원본 데이터를 보고 가능한 형태로 바꾸는 흐름을 문서화했습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-05-20</time>
+          <h3>학생별 분석 자료 안정화</h3>
+          <p>학생별 분석 자료 재생성을 검증하고, 학생이 직접 작성한 문서 기반의 자기표현 분석을 만들었습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-05-21</time>
+          <h3>화면 목적과 마일스톤 기준 정리</h3>
+          <p>모집 단계부터 현재까지의 마일스톤을 기준으로 학생을 읽도록 화면 목적을 정리했습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-05-22</time>
+          <h3>학생 상세 강화</h3>
+          <p>아침 발표, 실습 제출, 모집 단계 추가 항목, 면담 전체, 학생 작성 원문/해석을 학생 상세에 연결했습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-05-23 ~ 2026-05-27</time>
+          <h3>학생군 신호와 UI 단순화</h3>
+          <p>학생군 신호를 만들었고, 이후 학생관리 화면의 복잡한 워크벤치는 제거해 검색/상태/리스트 중심으로 단순화했습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-05-28</time>
+          <h3>GameJob 기반 직무 적합도 추가</h3>
+          <p>공고 데이터와 학생의 진로/산출물/참여 데이터를 비교해 직무 적합도를 만들었습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-06-02</time>
+          <h3>현장 기획자 핏 재채점</h3>
+          <p>현장 기획자 핏을 추가하고, 실습 제출량보다 직무 방향성, 초기 준비도, 협업 안정성, 성장 흡수력을 더 크게 반영하도록 재측정했습니다.</p>
+        </article>
+        <article class="timeline-item">
+          <time>2026-06-04</time>
+          <h3>히스토리 문서화</h3>
+          <p>수집 데이터, 작업 순서, 결과와 한계, 이후 행동을 HTML 문서로 정리했습니다.</p>
+        </article>
+      </div>
+
+      <div class="table-wrap" style="margin-top: 18px;">
+        <table>
+          <thead>
+            <tr>
+              <th>작업 결과</th>
+              <th>역할</th>
+              <th>확인 위치</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>검증 자료 기반 강점 분석</td>
+              <td>학생별 강점, 개선점, 취업 활용 포인트를 검증 자료와 함께 정리</td>
+              <td>학생 상세 현황</td>
+            </tr>
+            <tr>
+              <td>직무 적합도</td>
+              <td>GameJob 공고와 학생 데이터의 직무/키워드 매칭</td>
+              <td>학생관리와 학생 상세</td>
+            </tr>
+            <tr>
+              <td>현장 기획자 핏</td>
+              <td>현장 기획자 후보 판단을 위한 별도 재채점 지표</td>
+              <td>학생관리와 학생 상세</td>
+            </tr>
+            <tr>
+              <td>학생군 신호</td>
+              <td>운영자가 확인해야 할 학생군 신호</td>
+              <td>학생 상세 근거 패널</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="page" id="result-limit" data-page-label="Page 04 / 결과와 한계">
+      <div class="page-head">
+        <span class="page-no">04</span>
+        <div>
+          <h2>결과/한계</h2>
+          <p>현재까지 얻은 결과와 함께, 이 분석을 어디까지 신뢰해야 하는지 한계를 같이 정리합니다.</p>
+        </div>
+      </div>
+
+      <div class="metric-grid">
+        <article class="metric">
+          <span>학생별 분석 자료</span>
+          <strong>1530개</strong>
+        </article>
+        <article class="metric">
+          <span>학생별 기획자 핏</span>
+          <strong>80개</strong>
+        </article>
+        <article class="metric">
+          <span>활동 학생 기획자 핏 평균</span>
+          <strong>65.8</strong>
+        </article>
+        <article class="metric">
+          <span>검증 표본 기획자 핏 평균</span>
+          <strong>73.4</strong>
+        </article>
+      </div>
+
+      <div class="two-grid" style="margin-top: 18px;">
+        <article class="card">
+          <h3>결과</h3>
+          <ul>
+            <li>모집, 출결, 프로젝트, 면담, 취업 문서, 발표, 실습 제출을 학생별로 통합했습니다.</li>
+            <li>학생 상세에서 원문과 해석, 요약과 전문, 마일스톤별 상세 정보를 함께 볼 수 있게 했습니다.</li>
+            <li>학생 강점은 검증 가능한 근거와 함께 제시되도록 구성했습니다.</li>
+            <li>공고 매칭과 현장 기획자 판단을 분리해 볼 수 있게 했습니다.</li>
+            <li>학생관리 화면은 복잡한 워크벤치를 제거하고 검색/정렬/요약 중심으로 단순화했습니다.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>한계</h3>
+          <ul>
+            <li>자료가 많은 학생이 더 풍부하게 분석될 수 있어, 데이터량 편향이 있습니다.</li>
+            <li>문서 텍스트 추출은 자료 품질과 폰트 문제에 영향을 받습니다.</li>
+            <li>면담 기록과 운영진 메모는 기록자의 관점과 기록 시점에 따라 편향될 수 있습니다.</li>
+            <li>직무 적합도는 공고 매칭 지표이지 전체 역량 점수가 아닙니다.</li>
+            <li>현장 기획자 핏은 판단 보조 지표이지 합격/불합격 판정이 아닙니다.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="notice" style="margin-top: 18px;">
+        <h3>해석 주의</h3>
+        <ul>
+          <li>지원우선순위는 좋은 학생 순위가 아니라 운영 개입 필요성을 보는 신호입니다.</li>
+          <li>총점, 성장가능성, 협업, 진로역량, 실습 사고력은 서로 다른 목적의 지표이므로 하나의 숫자로 합치면 왜곡될 수 있습니다.</li>
+          <li>조용한 기여, 수업 중 질문 태도, 현장 반응처럼 기록되지 않은 정보는 자동 분석에서 낮게 반영될 수 있습니다.</li>
+          <li>반대로 문서화 능력이 좋은 학생은 실제 실행력보다 높게 보일 수 있으므로 산출물, 팀 기록, 면담을 함께 확인해야 합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page" id="next-action" data-page-label="Page 05 / 이후 행동">
+      <div class="page-head">
+        <span class="page-no">05</span>
+        <div>
+          <h2>이후 행동</h2>
+          <p>분석 신뢰도를 높이려면 데이터의 양보다 일관성, 시점, 평가 기준, 결과 검증 데이터가 더 중요합니다. 이후 수집해야 할 데이터와 운영 행동을 정리합니다.</p>
+        </div>
+      </div>
+
+      <div class="action-grid">
+        <article class="card">
+          <h3>1. 실습 평가 루브릭 데이터</h3>
+          <p>현재 실습 제출물은 양과 텍스트 단서 중심으로 분석됩니다. 신뢰도를 높이려면 과제별 평가 기준이 필요합니다.</p>
+          <ul>
+            <li>과제별 목표: 기획 의도, 시스템 이해, UX 사고, 밸런스, 문서 완성도</li>
+            <li>평가자 점수와 짧은 피드백</li>
+            <li>수정 전/후 제출본과 반영 여부</li>
+            <li>좋은 산출물 예시와 낮은 산출물 예시 기준</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag green">실습 품질 신뢰도 상승</span>
+            <span class="tag">기획자 핏 보정</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>2. 현장 관찰 메모의 표준화</h3>
+          <p>운영자가 현장에서 느끼는 판단은 중요하지만, 기록 형식이 다르면 자동 분석이 흔들립니다.</p>
+          <ul>
+            <li>수업 중 질문/반응/몰입도 기록</li>
+            <li>팀 회의에서 맡은 역할과 실제 기여</li>
+            <li>문제 발생 시 대응 방식</li>
+            <li>반복되는 긍정/부정 행동 패턴</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag green">현장 판단 보정</span>
+            <span class="tag">운영 리스크 정확도 상승</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>3. 동료평가의 맥락 데이터</h3>
+          <p>동료평가는 강하지만 위험한 자료입니다. 단순 호감/비호감이 아니라 맥락과 사건 단위로 수집해야 합니다.</p>
+          <ul>
+            <li>같은 프로젝트 팀에서의 구체 행동</li>
+            <li>PM, 서기, 발표, 시스템 설계 등 역할별 기여</li>
+            <li>갈등이 있었다면 원인, 중재, 이후 변화</li>
+            <li>동료가 추천하는 강점과 함께 일하기 어려웠던 지점</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag amber">협업 점수 보정</span>
+            <span class="tag">갈등 오판 감소</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>4. 취업 결과와 포트폴리오 결과</h3>
+          <p>점수 산식이 실제 결과와 맞는지 검증하려면 후속 결과 데이터가 필요합니다.</p>
+          <ul>
+            <li>포트폴리오 완성 여부와 완성도 평가</li>
+            <li>지원 직무, 지원 회사, 서류 합격/불합격</li>
+            <li>면접 피드백과 탈락/합격 사유</li>
+            <li>최종 취업 직무와 입사 후 적응 정보</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag green">직무 적합도 검증</span>
+            <span class="tag green">기획자 핏 검증</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>5. 학생 자기보고의 주기적 수집</h3>
+          <p>지원 동기와 진로 방향은 시간이 지나며 바뀝니다. 모집 단계 자료만으로 판단하면 최신성이 떨어집니다.</p>
+          <ul>
+            <li>월 1회 진로 목표 업데이트</li>
+            <li>본인이 느끼는 강점/약점 변화</li>
+            <li>원하는 게임 직무와 이유</li>
+            <li>최근 만든 산출물 중 가장 자신 있는 자료</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag">동기 최신화</span>
+            <span class="tag">진로 방향성 보정</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>6. 데이터 수집 방식의 고정</h3>
+          <p>분석 신뢰도는 좋은 알고리즘보다 일관된 입력에서 먼저 올라갑니다.</p>
+          <ul>
+            <li>날짜, 평가자, 자료 출처, 평가 목적을 항상 같이 기록</li>
+            <li>요약과 원문을 분리해 저장</li>
+            <li>학생별 누락 데이터 체크리스트 운영</li>
+            <li>중요 평가 항목은 최소 2개 이상 근거로 판단</li>
+          </ul>
+          <div class="tag-list">
+            <span class="tag red">누락 방지</span>
+            <span class="tag green">분석 신뢰도 상승</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="table-wrap" style="margin-top: 18px;">
+        <table>
+          <thead>
+            <tr>
+              <th>추가 수집 데이터</th>
+              <th>올라가는 신뢰도</th>
+              <th>우선순위</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>과제별 루브릭 평가와 피드백</td>
+              <td>실습 품질, 기획 사고력, 성장 흡수력 판단</td>
+              <td>매우 높음</td>
+            </tr>
+            <tr>
+              <td>표준화된 현장 관찰 메모</td>
+              <td>운영 리스크, 수업 태도, 실제 참여도 판단</td>
+              <td>매우 높음</td>
+            </tr>
+            <tr>
+              <td>맥락 있는 동료평가</td>
+              <td>협업 안정성, 갈등 신호, 역할 수행 판단</td>
+              <td>높음</td>
+            </tr>
+            <tr>
+              <td>포트폴리오/지원/면접 결과</td>
+              <td>직무 적합도와 현장 기획자 핏 산식 검증</td>
+              <td>높음</td>
+            </tr>
+            <tr>
+              <td>정기 자기보고</td>
+              <td>동기, 진로 방향성, 자기인식 변화 추적</td>
+              <td>중간</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      작성일: 2026-06-04 · 학생 데이터 분석 히스토리 보고 자료
+    </footer>
+  </main>
+</body>
+</html>
