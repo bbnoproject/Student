@@ -1,0 +1,46 @@
+{
+  "score": 57.3,
+  "label": "기초 보완 후보",
+  "tone": "neutral",
+  "summary": "시장/BM/유저 분석, AI 활용/자동화을 중심으로 포트폴리오를 가공하면 기초 보완 후보로 볼 수 있습니다.",
+  "components": {
+    "outputThinking": 77.6,
+    "growthAbsorption": 83.88,
+    "executionStability": 90.73,
+    "collaborationStability": 54.0,
+    "directionPotential": 48.91,
+    "initialReadiness": 55.0,
+    "jobConnection": 62.0
+  },
+  "evidence": [
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "기획자 튜토리얼",
+      "excerpt": "나의 최고의 게임 https://www.notion.so/_-BEST-TOP5- 2c67ce4770e18046aa68e75a53e2b00f?source=copy_link 우리의 최고의 게임 https://docs.google.com/presentation/d/1YXygzKzto4YR2TShZLJoFc685iBEr4vCJwUWScoS AoI/edit?slide=id.g3b05e171b6e_0…",
+      "fileName": "장근혁_기획자 튜토리얼 - Keunhyeok Chang.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "나의 목표 정하기",
+      "excerpt": "기획자를 목표하는 이유 https://www.notion.so/_-2c37ce4770e180e49645cfbe99666e55?source=copy_link 게임업계 분석 https://www.notion.so/_-2c47ce4770e180f1aaeaea7668228e78?source=copy_link 나에게 필요한 것 https://www.notion.so/_-2c57ce4770e18072…",
+      "fileName": "장근혁_나의 목표 정하기 - Keunhyeok Chang(1).pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "나의 목표 정하기",
+      "excerpt": "기획자를 목표하는 이유 https://www.notion.so/_-2c37ce4770e180e49645cfbe99666e55?source=copy_link 게임업계 분석 https://www.notion.so/_-2c47ce4770e180f1aaeaea7668228e78?source=copy_link 나에게 필요한 것 https://www.notion.so/_-2c57ce4770e18072…",
+      "fileName": "장근혁_나의 목표 정하기 - Keunhyeok Chang.pdf"
+    }
+  ],
+  "signals": [
+    "동기 유형: 명확",
+    "대표 강점: 시장/BM/유저 분석, AI 활용/자동화"
+  ],
+  "gaps": [
+    "실습 산출물의 기획 사고력은 있으나 공고 키워드로 번역된 문장이 부족합니다.",
+    "지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.",
+    "제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다."
+  ],
+  "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다."
+}

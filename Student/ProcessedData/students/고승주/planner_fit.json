@@ -1,0 +1,45 @@
+{
+  "score": 72.0,
+  "label": "강한 기획자 후보",
+  "tone": "brand",
+  "summary": "콘텐츠/레벨 디자인, AI 활용/자동화을 중심으로 포트폴리오를 가공하면 강한 기획자 후보로 볼 수 있습니다.",
+  "components": {
+    "outputThinking": 76.87,
+    "growthAbsorption": 74.69,
+    "executionStability": 92.77,
+    "collaborationStability": 64.9,
+    "directionPotential": 66.86,
+    "initialReadiness": 71.0,
+    "jobConnection": 68.0
+  },
+  "evidence": [
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "기획자 튜토리얼",
+      "excerpt": "고승주_기획자 튜토리얼 - 고승주",
+      "fileName": "고승주_기획자 튜토리얼 - 고승주.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "컨셉 기획",
+      "excerpt": "Escape from Duckov 컨셉 기획 분석 기획4기_고승주 2025.12.16 중심 테마 [Escape from Tarkov]의 핵심 재미는 유지하면서 ‘오리’를 이용한 패러디를 통해 하드코어한 게임성을 완화, 캐주얼한 익스트랙션 슈터 경험 제공 Escape from Duckov 장르 : 탑다운 PvE 익스트랙션 슈터 플랫폼 : PC 출시일 : 2025.10.16 엔진 : 유니티 기…",
+      "fileName": "고승주_덕코프_컨셉 기획 - 고승주.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "크리스마스 이벤트 기획",
+      "excerpt": "고승주_덕코프_이벤트 기획 - 고승주",
+      "fileName": "고승주_덕코프_이벤트 기획 - 고승주.pdf"
+    }
+  ],
+  "signals": [
+    "동기 유형: 명확",
+    "대표 강점: 콘텐츠/레벨 디자인, AI 활용/자동화"
+  ],
+  "gaps": [
+    "지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.",
+    "제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다."
+  ],
+  "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다."
+}

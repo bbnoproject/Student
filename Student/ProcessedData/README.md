@@ -19,6 +19,7 @@
 - `career_documents.json`: 1차/2차 취업 문서와 피드백 이력
 - `expression_profile.json`: 학생 직접 작성 문서 기반 자기표현/발화 특징
 - `job_fit.json`: GameJob Crawler 공고 기반 학생별 직무 적합도와 추천 공고
+- `planner_fit.json`: 실습 산출물과 성장 신호 기반 현장 기획자 핏
 - `overview.md`: 사람이 빠르게 읽을 수 있는 학생 요약
 
 주의사항

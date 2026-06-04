@@ -1077,6 +1077,105 @@
     return "neutral";
   }
 
+  function plannerFitTone(score) {
+    const value = firstScore(score);
+    if (value >= 82) return "success";
+    if (value >= 72) return "brand";
+    if (value >= 62) return "warning";
+    return "neutral";
+  }
+
+  function plannerComponentLabel(key) {
+    return {
+      outputThinking: "실습 사고력",
+      growthAbsorption: "성장/흡수",
+      executionStability: "실행 안정",
+      collaborationStability: "협업 안정",
+      directionPotential: "직무 방향",
+      initialReadiness: "초기 준비도",
+      jobConnection: "공고 연결",
+    }[key] || key;
+  }
+
+  function renderPlannerFitPanel(student) {
+    const fit = student.plannerFit || {};
+    const score = firstScore(fit.score);
+    const components = Object.entries(fit.components || {});
+    const evidence = fit.evidence || [];
+    return `
+      <section class="panel section-panel job-fit-panel planner-fit-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Planner Fit</span>
+            <h3>현장 기획자 핏</h3>
+          </div>
+          <p class="panel-copy">공고 키워드보다 실습 산출물, 성장/흡수력, 실행 안정성, 협업 안정성을 우선해 다시 측정한 지표입니다.</p>
+        </div>
+        <div class="job-fit-hero ${App.toneClass(plannerFitTone(score))}">
+          <div>
+            <span>${App.escapeHtml(fit.label || "판단 보류")}</span>
+            <strong>${App.escapeHtml(scoreLabel(score))}</strong>
+            <p>${App.escapeHtml(fit.summary || "기획자 핏 데이터가 아직 없습니다.")}</p>
+          </div>
+        </div>
+        <div class="job-fit-grid">
+          <section>
+            <div class="growth-section-title">
+              <span>구성 점수</span>
+              <strong>직무 공고 연결성은 마지막 보조 지표로만 반영합니다.</strong>
+            </div>
+            <div class="job-role-list">
+              ${
+                components.length
+                  ? components
+                      .map(
+                        ([key, value]) => `
+                          <article>
+                            <div>
+                              <strong>${App.escapeHtml(plannerComponentLabel(key))}</strong>
+                              <span>${App.escapeHtml(scoreLabel(value))}</span>
+                            </div>
+                            <i aria-hidden="true"><span style="width:${firstScore(value)}%"></span></i>
+                          </article>
+                        `
+                      )
+                      .join("")
+                  : `<div class="empty-state compact">구성 점수 근거가 부족합니다.</div>`
+              }
+            </div>
+          </section>
+          <section>
+            <div class="growth-section-title">
+              <span>보정/코칭 포인트</span>
+              <strong>문서 부족은 탈락이 아니라 가공해야 할 코칭 신호로 봅니다.</strong>
+            </div>
+            <div class="job-gap-list">
+              ${(fit.gaps || []).map((gap) => `<p>${App.escapeHtml(gap)}</p>`).join("") || `<p>보완 포인트가 아직 산정되지 않았습니다.</p>`}
+            </div>
+          </section>
+        </div>
+        <div class="strength-evidence-list">
+          ${
+            evidence.length
+              ? evidence
+                  .map(
+                    (item) => `
+                      <article class="strength-evidence-item">
+                        <span>${App.escapeHtml(item.sourceType || "자료")} · ${App.escapeHtml(item.sourceLabel || "근거")}</span>
+                        <p>${App.escapeHtml(item.excerpt || "근거 원문 없음")}</p>
+                        ${item.fileName ? `<small>${App.escapeHtml(item.fileName)}</small>` : ""}
+                      </article>
+                    `
+                  )
+                  .join("")
+              : `<div class="empty-state compact">대표 실습 근거가 아직 없습니다.</div>`
+          }
+        </div>
+        <p class="panel-copy">${App.escapeHtml(fit.basis || "실습 산출물과 성장 신호를 중심으로 별도 판단합니다.")}</p>
+      </section>
+    `;
+  }
+
   function renderJobFitPanel(student) {
     const fit = student.jobFit || {};
     const topRoles = fit.topRoles || [];
@@ -1353,6 +1452,7 @@
     return `
       ${renderGrowthMapPanel(student)}
       ${renderOperationalScorePanel(student)}
+      ${renderPlannerFitPanel(student)}
       ${renderJobFitPanel(student)}
       <section class="two-column-grid">
         <section class="panel section-panel">

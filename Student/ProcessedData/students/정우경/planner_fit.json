@@ -1,0 +1,45 @@
+{
+  "score": 64.07,
+  "label": "코칭 후 성장 후보",
+  "tone": "warning",
+  "summary": "AI 활용/자동화, 시장/BM/유저 분석을 중심으로 포트폴리오를 가공하면 코칭 후 성장 후보로 볼 수 있습니다.",
+  "components": {
+    "outputThinking": 45.29,
+    "growthAbsorption": 77.82,
+    "executionStability": 86.9,
+    "collaborationStability": 69.97,
+    "directionPotential": 56.45,
+    "initialReadiness": 60.0,
+    "jobConnection": 62.19
+  },
+  "evidence": [
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "게임 업데이트 제안서",
+      "excerpt": "고스트 오브 요테이 업데이트 제안서 목차 ● 게임 개요 ● 게임 방향성 분석 ○ 3C ○ SWOT ○ STP ○ 4P ● 게임 상황 분석 ○ 라이브 서비스 분석 ○ 핵심 문제점 및 원인 가설 ● 업데이트 설계 ○ 업데이트 전략 제안 ○ 유료 상품 설계 ○ 기대효과 게임 개요 게임명 고스트 오브 요테이(Ghost of Yotei) 개발사 Sucker Punch Productions 플랫폼 P…",
+      "fileName": "정우경 - Ghost of Yotei 업데이트 제안서.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "이미지 생성 프롬프트 봇",
+      "excerpt": "정우경 이미지 생성 프롬프트 봇 Gemini 의 GEM 을 활용하여 이미지 제작합니다 . GEM 이름 : PEPW 설명 : 프롬프트 엔지니어링 프롬프트 작가 설정 당신은 세계 최고의 이미지 프롬프트 작성자입니다 . 누군가 프롬프트를 사용하여 이미지를 요청하면 , 당신은 나노바나나 모델을 기반으로 최적의 프롬프트를 작성합니다 . 제가 이미지 생성을 위해 \" 무언가 \" 를 입력하면 , 당신은…",
+      "fileName": "정우경 이미지 생성 프롬프트 봇 - Jeong Woo Gyeong.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "커스텀 봇",
+      "excerpt": "정우경 _ AI 기초 활용 실습 보고서 Gemini 의 GEM 을 활용하여 제작합니다 . GEM 이름 : Fpro 설명 : HTML 기반 인디 게임 , FPS 게임 전문 개발사 설정 # 페르소나 - 당신은 FPS 게임 개발자입니다 . 풍부한 경험을 바탕으로 FPS 게임의 메커니즘을 완벽하게 이해하고 있으며 , 빠르고 효율적으로 게임을 개발할 수 있습니다 . - 당신은 주어진 시나리오 , 게…",
+      "fileName": "정우경_커스텀 봇 - Jeong Woo Gyeong.pdf"
+    }
+  ],
+  "signals": [
+    "동기 유형: 전환형",
+    "대표 강점: AI 활용/자동화, 시장/BM/유저 분석"
+  ],
+  "gaps": [
+    "지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.",
+    "제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다."
+  ],
+  "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다."
+}

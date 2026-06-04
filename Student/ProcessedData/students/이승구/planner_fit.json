@@ -1,0 +1,45 @@
+{
+  "score": 69.12,
+  "label": "코칭 후 성장 후보",
+  "tone": "warning",
+  "summary": "콘텐츠/레벨 디자인, 시스템/밸런스 설계을 중심으로 포트폴리오를 가공하면 코칭 후 성장 후보로 볼 수 있습니다.",
+  "components": {
+    "outputThinking": 62.5,
+    "growthAbsorption": 74.83,
+    "executionStability": 88.34,
+    "collaborationStability": 54.0,
+    "directionPotential": 83.54,
+    "initialReadiness": 75.0,
+    "jobConnection": 76.01
+  },
+  "evidence": [
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "기획자 튜토리얼",
+      "excerpt": "최고의 게임 이승구, 장호윤, 맹지훈, 이균호, 박현수, 이원홍 ＩＮＤＥＸ 목차 1 팀 소개 팀원 소개 3 재미 요소 스토리 전개 방식 주인공 서사 종족과 클래스 확률 요소 자유도 숨겨진 장소와 스토리 4 마무리 조별과제 느낀점 2 최고의 게임 선정 기준 선발 과정 최고의 게임 게임 소개 팀 소개 01",
+      "fileName": "이승구_기획자 튜토리얼 - Man3 Sausage.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "컨셉 기획",
+      "excerpt": "이승구_Brotato_컨셉 기획 - Man3 Sausage",
+      "fileName": "이승구_Brotato_컨셉 기획 - Man3 Sausage.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "크리스마스 이벤트 기획",
+      "excerpt": "(251217)이승구_이벤트기획_크리스마스2 - Man3 Sausage",
+      "fileName": "(251217)이승구_이벤트기획_크리스마스2 - Man3 Sausage.pdf"
+    }
+  ],
+  "signals": [
+    "동기 유형: 명확",
+    "대표 강점: 콘텐츠/레벨 디자인, 시스템/밸런스 설계"
+  ],
+  "gaps": [
+    "지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.",
+    "제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다."
+  ],
+  "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다."
+}

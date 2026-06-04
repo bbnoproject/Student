@@ -1,0 +1,45 @@
+{
+  "score": 71.91,
+  "label": "코칭 후 성장 후보",
+  "tone": "warning",
+  "summary": "시장/BM/유저 분석, 콘텐츠/레벨 디자인을 중심으로 포트폴리오를 가공하면 코칭 후 성장 후보로 볼 수 있습니다.",
+  "components": {
+    "outputThinking": 44.15,
+    "growthAbsorption": 89.28,
+    "executionStability": 95.59,
+    "collaborationStability": 67.29,
+    "directionPotential": 78.82,
+    "initialReadiness": 60.0,
+    "jobConnection": 67.5
+  },
+  "evidence": [
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "크리스마스 이벤트 기획",
+      "excerpt": "게임 개요 스페이스 오페라 / SF / TPS / 오픈 월드 / 루트 슈터 Windows, Nintendo Switch, PS4, PS5 Xbox Series X|S, XB1 방대한 우주 세계관과 수백 가지 이상의 장비 조합을 통해 자신만의 플레이 스타일을 만들어가기 Genre Platform Key Concept 핵심 콘텐츠 : 파밍 & 장비제작 단순한 레벨업이 아닌, 파밍 → 제작 →…",
+      "fileName": "권현민_크리스마스 이벤트 시스템 - 권현민.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "게임 분석 팀 실습",
+      "excerpt": "9조 : 피죤투 장윤우, 이찬규, 권현민, 김현우A, 김영도, 예인해, 이승구 1. 게임 개요 1. 게임 개요 2. 고객 분석 3. 경쟁 게임 분석 a. 마비노기 모바일 b. 에픽세븐 4. 자사분석 5. SWOT 분석 6. 마케팅 전략 분석 7. STP 정리 8. 핵심 성공 요인 분석 9. 4P 정리 10. IMC 전략 분석 11. 마케팅 효과 12. 고객 자료 재구성 13. 결론 14.…",
+      "fileName": "9조_권현민_(세븐나이츠리버스) 분석 - 권현민.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "게임 업데이트 제안서",
+      "excerpt": "업데이트제안서 (slide no.30 ~)WARFRAME 권현민 게임개요스페이스오페라 / SF / TPS / 오픈월드 / 루트슈터Windows, Nintendo Switch, PS4, PS5Xbox Series X| S, XB1방대한우주세계관과수백가지이상의장비조합을통해자신만의플레이스타일을만들어가기 GenrePlatform Key Concept 핵심콘텐츠 : 파밍 & 장비제작 단순한레벨업이아…",
+      "fileName": "권현민_(워프레임)업데이트 제안서 - 권현민.pdf"
+    }
+  ],
+  "signals": [
+    "동기 유형: 명확",
+    "대표 강점: 시장/BM/유저 분석, 콘텐츠/레벨 디자인"
+  ],
+  "gaps": [
+    "지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.",
+    "제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다."
+  ],
+  "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다."
+}

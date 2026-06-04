@@ -161,7 +161,11 @@
     { key: "attendanceRisk", label: "무단/위험", type: "number" },
     { key: "projectRate", label: "제출률", type: "number" },
   ];
-  const SORT_OPTIONS = [...TABLE_COLUMNS, { key: "jobFit", label: "직무적합", type: "number" }];
+  const SORT_OPTIONS = [
+    ...TABLE_COLUMNS,
+    { key: "plannerFit", label: "기획핏", type: "number" },
+    { key: "jobFit", label: "직무적합", type: "number" },
+  ];
 
   const initialRoute = routeFromHash();
 
@@ -370,6 +374,7 @@
       support: score100(derived.supportRankScore, derived.supportIndex),
       collaboration: score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore),
       career: score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore),
+      plannerFit: score100(student.plannerFit?.score),
       jobFit: score100(student.jobFit?.score),
       attendanceRisk: stats.attendanceRiskIssues || 0,
       projectRate: stats.projectSubmissionRate || 0,
@@ -2474,6 +2479,95 @@
     return student.jobFit?.topRoles?.[0] || null;
   }
 
+  function plannerFitTone(score) {
+    const value = score100(score);
+    if (value >= 82) return "success";
+    if (value >= 72) return "brand";
+    if (value >= 62) return "warning";
+    return "neutral";
+  }
+
+  function renderPlannerFitOverview(students) {
+    const activeStudents = students.filter((student) => !App.hasDropoutRecord(student));
+    const ranked = activeStudents
+      .filter((student) => score100(student.plannerFit?.score) > 0)
+      .sort((a, b) => score100(b.plannerFit?.score) - score100(a.plannerFit?.score));
+    const averageFit = ranked.length ? average(ranked, (student) => student.plannerFit?.score) : 0;
+    const labelCounts = ranked.reduce((acc, student) => {
+      const label = student.plannerFit?.label || "판단 보류";
+      acc[label] = (acc[label] || 0) + 1;
+      return acc;
+    }, {});
+    const componentRows = [
+      ["outputThinking", "실습 사고력"],
+      ["growthAbsorption", "성장/흡수"],
+      ["executionStability", "실행 안정"],
+      ["collaborationStability", "협업 안정"],
+      ["directionPotential", "직무 방향"],
+      ["jobConnection", "공고 연결"],
+    ].map(([key, label]) => ({
+      key,
+      label,
+      value: ranked.length ? average(ranked, (student) => student.plannerFit?.components?.[key]) : 0,
+    }));
+    return `
+      <section class="panel planner-fit-overview-panel">
+        <div class="panel-head">
+          <div>
+            <span class="panel-kicker">Planner Fit</span>
+            <h2>현장 기획자 핏</h2>
+          </div>
+          <p class="panel-copy">공고 키워드보다 실습 산출물, 성장/흡수력, 실행 안정성, 협업 안정성을 우선해 다시 측정한 지표입니다.</p>
+        </div>
+        <div class="job-fit-overview-grid">
+          <article class="job-fit-summary-card ${App.toneClass(plannerFitTone(averageFit))}">
+            <span>표시 학생 평균</span>
+            <strong>${formatNumber(averageFit, 1)}</strong>
+            <p>공고 매칭과 분리된 현장 기획자 후보 지표입니다.</p>
+            <button type="button" class="soft-action compact-action" data-table-sort="plannerFit">기획핏순</button>
+          </article>
+          <article class="job-fit-label-card">
+            <span>기획자 후보군</span>
+            <div>
+              ${Object.entries(labelCounts)
+                .map(([label, count]) => `<p><b>${escape(label)}</b><strong>${escape(String(count))}명</strong></p>`)
+                .join("") || `<p><b>판단 보류</b><strong>0명</strong></p>`}
+            </div>
+          </article>
+          <article class="job-fit-role-card">
+            <span>평균 구성 점수</span>
+            <div class="job-fit-role-stack">
+              ${componentRows
+                .map(
+                  (item) => `
+                    <p>
+                      <b>${escape(item.label)}</b>
+                      <span>${formatNumber(item.value, 1)}점</span>
+                    </p>
+                  `
+                )
+                .join("")}
+            </div>
+          </article>
+        </div>
+        <div class="job-fit-student-strip">
+          ${ranked
+            .slice(0, 8)
+            .map(
+              (student) => `
+                <a class="job-fit-student-card" href="${escape(App.studentPageHref(student.id, { tab: "status" }))}">
+                  <span>${escape(student.plannerFit?.label || "판단 보류")}</span>
+                  <strong>${escape(student.name)} · ${formatNumber(score100(student.plannerFit?.score), 0)}</strong>
+                  <small>${escape(student.plannerFit?.summary || "기획자 핏 근거 확인 필요")}</small>
+                </a>
+              `
+            )
+            .join("") || `<div class="empty-state compact">현재 필터 조건에서 기획자 핏 산정 대상이 없습니다.</div>`}
+        </div>
+      </section>
+    `;
+  }
+
   function renderJobFitOverview(students) {
     const market = App.rawData.jobMarket || {};
     const activeStudents = students.filter((student) => !App.hasDropoutRecord(student));
@@ -2580,6 +2674,7 @@
       { key: "collaboration", label: "협업" },
       { key: "career", label: "진로" },
       { key: "support", label: "지원검토" },
+      { key: "plannerFit", label: "기획핏" },
       { key: "jobFit", label: "직무적합" },
       { key: "attendanceRisk", label: "위험출결" },
     ];
@@ -2674,6 +2769,7 @@
     const supportScore = score100(derived.supportRankScore, derived.supportIndex);
     const collaborationScore = score100(derived.collaborationRankScore, derived.collaborationReadiness?.collaborationReadinessScore);
     const careerScore = score100(derived.careerRankScore, derived.careerReadiness?.careerReadinessScore);
+    const plannerFitScore = score100(student.plannerFit?.score);
     const jobFitScore = score100(student.jobFit?.score);
     const jobFitRole = topJobFitRole(student);
     const studentHref = App.studentPageHref(student.id, {
@@ -2684,6 +2780,7 @@
         <td>
           <a class="student-name-link" href="${escape(studentHref)}">${escape(student.name)}</a>
           <small>${escape(student.education || "학력 미기재")}</small>
+          <small>기획핏 ${formatNumber(plannerFitScore, 0)} · ${escape(student.plannerFit?.label || "판단 보류")}</small>
           <small>직무 ${formatNumber(jobFitScore, 0)} · ${escape(jobFitRole?.label || student.jobFit?.label || "판단 보류")}</small>
         </td>
         <td>${statusPill(statusGroup(student))}</td>
@@ -2740,6 +2837,7 @@
       ${renderStudentCommandBar(students)}
       ${renderStatusFilter()}
       ${renderCategoryOverview()}
+      ${renderPlannerFitOverview(students)}
       ${renderJobFitOverview(students)}
       <section class="panel student-management-panel">
         <div class="panel-head">

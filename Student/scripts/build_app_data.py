@@ -6843,6 +6843,176 @@ def job_fit_gaps(student: dict[str, Any], top_match: dict[str, Any] | None) -> l
     return gaps[:4] or ["현재 상위 매칭 공고 기준으로 큰 결격보다 포트폴리오 선명도 보완이 우선입니다."]
 
 
+def planner_fit_label(score: float) -> str:
+    if score >= 82:
+        return "핵심 기획자 후보"
+    if score >= 72:
+        return "강한 기획자 후보"
+    if score >= 62:
+        return "코칭 후 성장 후보"
+    if score >= 50:
+        return "기초 보완 후보"
+    return "우선순위 낮음"
+
+
+def planner_fit_tone(score: float) -> str:
+    if score >= 82:
+        return "success"
+    if score >= 72:
+        return "brand"
+    if score >= 62:
+        return "warning"
+    return "neutral"
+
+
+def planner_output_score(student: dict[str, Any]) -> tuple[float, list[dict[str, Any]]]:
+    stats = student.get("stats", {})
+    guidance = student.get("careerGuidance", {})
+    strength_profile = student.get("strengthProfile", {})
+    domains = guidance.get("topDomains", [])
+    practice_count = safe_float(stats.get("practiceSubmissionCount", 0))
+    extracted_count = safe_float(stats.get("practiceTextExtractedCount", 0))
+    domain_score = min(88.0, sum(safe_float(domain.get("score", 0)) for domain in domains[:3]) * 0.52)
+    diversity_bonus = min(10.0, len(domains) * 2.5)
+    submission_score = min(86.0, practice_count * 6.0 + extracted_count * 3.0)
+    strength_evidence = sum(len(card.get("evidence", [])) for card in strength_profile.get("strengths", [])[:5])
+    evidence_score = min(82.0, strength_evidence * 7.5)
+    score = weighted_score(
+        [
+            (domain_score + diversity_bonus, 0.42),
+            (submission_score, 0.30),
+            (evidence_score, 0.18),
+            (safe_float(student.get("jobFit", {}).get("score", 0)), 0.10),
+        ]
+    )
+    evidence = []
+    for submission in student.get("practiceSubmissions", [])[:3]:
+        evidence.append(
+            evidence_item(
+                "실습 제출",
+                submission.get("assignment", "실습"),
+                submission.get("excerpt") or submission.get("fileName", ""),
+                fileName=submission.get("fileName", ""),
+            )
+        )
+    return min(100.0, score), evidence[:4]
+
+
+def planner_direction_score(student: dict[str, Any]) -> tuple[float, list[str]]:
+    derived = student.get("derived", {})
+    strength_profile = student.get("strengthProfile", {})
+    motivation = strength_profile.get("motivation", {})
+    top_domains = student.get("careerGuidance", {}).get("topDomains", [])
+    career_score = safe_float(derived.get("careerRankScore", derived.get("careerReadiness", {}).get("careerReadinessScore", 0)))
+    motivation_bonus = {
+        "명확": 16.0,
+        "성장형": 10.0,
+        "전환형": 6.0,
+        "약함": 0.0,
+    }.get(motivation.get("type", ""), 4.0)
+    domain_bonus = min(14.0, len(top_domains) * 3.5)
+    score = min(100.0, career_score * 0.72 + motivation_bonus + domain_bonus)
+    notes = []
+    if motivation.get("type"):
+        notes.append(f"동기 유형: {motivation.get('type')}")
+    if top_domains:
+        notes.append("대표 강점: " + ", ".join(domain.get("label", "") for domain in top_domains[:2] if domain.get("label")))
+    return score, notes
+
+
+def planner_stability_score(student: dict[str, Any]) -> float:
+    derived = student.get("derived", {})
+    stats = student.get("stats", {})
+    participation = safe_float(derived.get("participationRankScore", derived.get("participationReadiness", {}).get("score", 0)))
+    support = safe_float(derived.get("supportRankScore", 0))
+    attendance_risk = safe_float(stats.get("attendanceRiskIssues", 0))
+    health_issues = safe_float(stats.get("healthAttendanceIssues", 0))
+    penalty = min(22.0, attendance_risk * 4.0 + max(0.0, support - 65.0) * 0.18 + health_issues * 0.8)
+    return max(0.0, min(100.0, participation - penalty))
+
+
+def planner_gap_notes(student: dict[str, Any], component_scores: dict[str, float]) -> list[str]:
+    notes = []
+    job_fit = safe_float(student.get("jobFit", {}).get("score", 0))
+    if component_scores.get("outputThinking", 0) >= 72 and job_fit < 68:
+        notes.append("실습 산출물의 기획 사고력은 있으나 공고 키워드로 번역된 문장이 부족합니다.")
+    if component_scores.get("direction", 0) < 62:
+        notes.append("지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.")
+    if component_scores.get("collaboration", 0) < 58:
+        notes.append("팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.")
+    if component_scores.get("execution", 0) < 62:
+        notes.append("제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다.")
+    return notes[:4] or ["공고 매칭보다 실습 산출물과 성장 신호를 먼저 포트폴리오 서사로 정리합니다."]
+
+
+def build_planner_fit(student: dict[str, Any]) -> dict[str, Any]:
+    if student.get("managementStatus") == "이탈":
+        return {
+            "score": 0,
+            "label": "과정이탈",
+            "summary": "과정이탈 학생은 현재 기획자 핏 우선순위에서 제외합니다.",
+            "components": {},
+            "evidence": [],
+            "gaps": [],
+            "basis": "기획자 핏은 이탈 전후 데이터를 혼합하지 않으며, 과정이탈자는 별도 관리합니다.",
+        }
+
+    derived = student.get("derived", {})
+    output_score, output_evidence = planner_output_score(student)
+    direction_score, direction_notes = planner_direction_score(student)
+    growth_score = safe_float(derived.get("growthRankScore", derived.get("growthIndex", 0)))
+    execution_score = planner_stability_score(student)
+    collaboration_score = safe_float(derived.get("collaborationRankScore", derived.get("collaborationReadiness", {}).get("collaborationReadinessScore", 0)))
+    initial_score = safe_float(derived.get("initialCapabilityRankScore", derived.get("initialCapability", {}).get("score", 0)))
+    job_fit_score = safe_float(student.get("jobFit", {}).get("score", 0))
+
+    # 현장 기획자 핏은 공고 문구보다 실습 사고력과 성장/실행 신호를 우선한다.
+    score = weighted_score(
+        [
+            (output_score, 0.08),
+            (growth_score, 0.13),
+            (execution_score, 0.07),
+            (collaboration_score, 0.20),
+            (direction_score, 0.28),
+            (initial_score, 0.22),
+            (job_fit_score, 0.02),
+        ]
+    )
+    support_score = safe_float(derived.get("supportRankScore", 0))
+    if support_score >= 72 and collaboration_score < 62:
+        score -= 4.0
+    if output_score >= 70 and growth_score >= 74 and execution_score >= 78 and initial_score >= 68:
+        score = max(score, 72.0)
+    if output_score >= 76 and collaboration_score >= 68 and direction_score >= 64:
+        score = max(score, 76.0)
+    if execution_score < 45 or collaboration_score < 42:
+        score = min(score, 68.0)
+
+    components = {
+        "outputThinking": round(output_score, 2),
+        "growthAbsorption": round(growth_score, 2),
+        "executionStability": round(execution_score, 2),
+        "collaborationStability": round(collaboration_score, 2),
+        "directionPotential": round(direction_score, 2),
+        "initialReadiness": round(initial_score, 2),
+        "jobConnection": round(job_fit_score, 2),
+    }
+    label = planner_fit_label(score)
+    top_domains = student.get("careerGuidance", {}).get("topDomains", [])
+    domain_text = ", ".join(domain.get("label", "") for domain in top_domains[:2] if domain.get("label")) or "대표 산출물"
+    return {
+        "score": round(score, 2),
+        "label": label,
+        "tone": planner_fit_tone(score),
+        "summary": f"{domain_text}을 중심으로 포트폴리오를 가공하면 {label}로 볼 수 있습니다.",
+        "components": components,
+        "evidence": output_evidence,
+        "signals": direction_notes[:4],
+        "gaps": planner_gap_notes(student, components),
+        "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다.",
+    }
+
+
 def build_job_market_analysis(jobs: list[dict[str, Any]]) -> dict[str, Any]:
     role_counter: Counter[str] = Counter()
     experience_counter: Counter[str] = Counter()
@@ -6931,6 +7101,11 @@ def apply_job_fit_analysis(students: list[dict[str, Any]], job_market: dict[str,
             "gaps": job_fit_gaps(student, best),
             "basis": "게임잡 공고의 직무 키워드·경력요구·상세 설명을 학생의 진로문서, 대표 산출물, 발표, 협업/참여 지표와 비교했습니다. 직무 키워드만 맞아도 높게 보지 않고, 구체 직무 목표와 포트폴리오 근거가 약하면 상한을 둡니다. 총점·지원검토와는 별도 지표입니다.",
         }
+
+
+def apply_planner_fit_analysis(students: list[dict[str, Any]]) -> None:
+    for student in students:
+        student["plannerFit"] = build_planner_fit(student)
 
 
 def enrich_student_analysis(
@@ -7038,6 +7213,7 @@ def build_payload() -> dict[str, Any]:
     gamejob_jobs = load_gamejob_jobs()
     gamejob_market = build_job_market_analysis(gamejob_jobs)
     apply_job_fit_analysis(students, gamejob_market)
+    apply_planner_fit_analysis(students)
     public_gamejob_market = {
         key: value
         for key, value in gamejob_market.items()

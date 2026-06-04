@@ -369,12 +369,20 @@
       ...(item.evidence || []),
     ]);
     const jobFit = student.jobFit || {};
+    const plannerFit = student.plannerFit || {};
     const jobFitText = [
       jobFit.label,
       jobFit.summary,
       ...(jobFit.topRoles || []).flatMap((role) => [role.label, role.key]),
       ...(jobFit.recommendedJobs || []).flatMap((job) => [job.company, job.title, ...(job.reasons || [])]),
       ...(jobFit.gaps || []),
+    ];
+    const plannerFitText = [
+      plannerFit.label,
+      plannerFit.summary,
+      ...(plannerFit.gaps || []),
+      ...(plannerFit.signals || []),
+      plannerFit.basis,
     ];
     return [
       student.name,
@@ -394,6 +402,7 @@
       ...groupSignals,
       ...flowCases,
       ...jobFitText,
+      ...plannerFitText,
     ]
       .filter(Boolean)
       .join(" ")

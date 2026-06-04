@@ -1,0 +1,45 @@
+{
+  "score": 72.36,
+  "label": "강한 기획자 후보",
+  "tone": "brand",
+  "summary": "AI 활용/자동화, 세계관/서사/연출을 중심으로 포트폴리오를 가공하면 강한 기획자 후보로 볼 수 있습니다.",
+  "components": {
+    "outputThinking": 81.52,
+    "growthAbsorption": 83.47,
+    "executionStability": 85.98,
+    "collaborationStability": 64.93,
+    "directionPotential": 69.66,
+    "initialReadiness": 68.0,
+    "jobConnection": 76.0
+  },
+  "evidence": [
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "기획자 튜토리얼",
+      "excerpt": "AI기획 4기 정석현 1주차 교과목 마무리 [나의 최고의 게임], [우리의 최고의 게임]『나의 최고의 게임 TOP 5』1. 언더테일- 게임 소개언더테일은 Toby Fox가 개발한 도트그래픽의 스토리 진행형 어드벤처 게임이다.폐허에 떨어진 주인공이 다양한 몬스터들을 만나며 벌어지는 이야기를 다룬다.- 선정 이유탄탄한 스토리 라인과 세계관 설정, 참신하고 충격적인 연출, 엄청난 수의 떡밥과 그…",
+      "fileName": "정석현_기획자 튜토리얼 - 정석현.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "나의 목표 정하기",
+      "excerpt": "AI기획 4기 정석현 1주차 교과목 마무리 [게임 기획 직무의 이해] 문서 작성 링크1.기획자를 목표하는 이유https://drive.google.com/file/d/1HumgQT9Nvh3QfzQ0cwS0Y8V8k2F6q1--/view?usp=sharing2. 게임 업계 분석https://docs.google.com/spreadsheets/d/1GNAC707tcTo_p_e8Ec71sXsEJ…",
+      "fileName": "정석현_나의 목표 정하기 - 정석현.pdf"
+    },
+    {
+      "sourceType": "실습 제출",
+      "sourceLabel": "컨셉 기획",
+      "excerpt": "정석현_컨셉 기획 - 정석현",
+      "fileName": "정석현_컨셉 기획 - 정석현.pdf"
+    }
+  ],
+  "signals": [
+    "동기 유형: 명확",
+    "대표 강점: AI 활용/자동화, 세계관/서사/연출"
+  ],
+  "gaps": [
+    "지원 직무와 대표 산출물을 한 문단으로 묶는 코칭이 필요합니다.",
+    "팀 프로젝트 역할과 동료 평가 근거를 면접 사례로 정리해야 합니다.",
+    "제출/출결/기록 루틴의 안정성을 먼저 보완해야 합니다."
+  ],
+  "basis": "기획자 핏은 공고 키워드 일치보다 실습 산출물의 문제 정의·기획 구조화·유저 관점, 성장/흡수력, 실행 안정성, 협업 안정성을 우선합니다. 진로문서 부족은 탈락 사유가 아니라 코칭 필요 신호로 분리합니다."
+}
